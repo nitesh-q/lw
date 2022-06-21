@@ -979,6 +979,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .menu > .nav-item > .nav-link:after {
   display: none;
 }
+/* .menu > .nav-item:last-child{
+  height: 2px;
+  border-left: 5px solid #000000;
+} */
 
 .menu > .nav-item.submenu .dropdown-menu {
   margin: 0px;
@@ -1039,6 +1043,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .menu > .nav-item.submenu .dropdown-menu .nav-item:first-child {
   padding-top: 25px;
 }
+
 
 @media (min-width: 992px) {
   .menu > .nav-item.submenu .dropdown-menu .nav-item:first-child > .dropdown-menu {
@@ -3405,7 +3410,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   left: 0;
   top: 0;
   z-index: -1;
-  background: url("../img/home5/shap_tecture.png") no-repeat scroll center 0/cover;
+  background: url("../images/home5/shap_tecture.png") no-repeat scroll center 0/cover;
 }
 
 /*=============== saas banner area ================*/
@@ -3431,7 +3436,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 /*============= app_banner_area css ===========*/
 .app_banner_area {
-  background: url(../img/home7/banner.png) no-repeat scroll center 100%;
+  background: url(../images/home7/banner.png) no-repeat scroll center 100%;
   padding-top: 230px;
   padding-bottom: 210px;
   overflow: hidden;
@@ -3961,7 +3966,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .new_startup_banner_area:before {
   content: "";
-  background: url("../img/new/startup_banner_bg.png") no-repeat scroll center bottom;
+  background: url("../images/new/startup_banner_bg.png") no-repeat scroll center bottom;
   position: absolute;
   left: 0;
   width: 100%;
@@ -4044,7 +4049,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   top: 0;
   left: 0;
   position: absolute;
-  background: url("../img/new/startup_shap.png") no-repeat scroll center bottom/cover;
+  background: url("../images/new/startup_shap.png") no-repeat scroll center bottom/cover;
   z-index: -1;
 }
 
@@ -4113,7 +4118,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   right: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/new/digital_img.png") no-repeat scroll right 0;
+  background: url("../images/new/digital_img.png") no-repeat scroll right 0;
   top: 0;
   z-index: -1;
 }
@@ -6336,7 +6341,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .payment_features_img:before {
   content: "";
-  background: url(../img/new/shape_bg.png) no-repeat scroll center left;
+  background: url(../images/new/shape_bg.png) no-repeat scroll center left;
   position: absolute;
   left: -65px;
   top: -20px;
@@ -6472,7 +6477,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .perfect_solution_area .perfect_solution_right .bg_img {
-  background: url("../img/new/solution_01.jpg") no-repeat scroll center 0;
+  background: url("../images/new/solution_01.jpg") no-repeat scroll center 0;
   position: absolute;
   left: 0;
   top: 0;
@@ -6483,7 +6488,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .perfect_solution_area .perfect_solution_right .bg_img.bg_two {
-  background: url("../img/new/solution_02.jpg") no-repeat scroll center 0;
+  background: url("../images/new/solution_02.jpg") no-repeat scroll center 0;
 }
 
 /*=========== startup_fuatures_area css ==========*/
@@ -6595,7 +6600,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .startup_tab_img:before {
   content: "";
   height: 100%;
-  background: url("../img/new/tab_shape_bg.png") no-repeat scroll center 0/contain;
+  background: url("../images/new/tab_shape_bg.png") no-repeat scroll center 0/contain;
   top: 0px;
   right: -55px;
   left: -55px;
@@ -6693,12 +6698,22 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .startup_fuatures_area_two .startup_tab .nav-item:hover:nth-child(5) .nav-link {
   border-color: #fa6666;
 }
+.seo_features_content{
+  margin-top: 50px;
+}
 
 .seo_features_content h2 {
   font-size: 30px;
   line-height: 40px;
-  color: #263b5e;
+  color: #7444FD;
   font-weight: 600;
+  margin-bottom: 25px;
+}
+.seo_features_content h3 {
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  font-weight: bold;
   margin-bottom: 25px;
 }
 
@@ -6761,6 +6776,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .seo_features_img img {
   margin-right: -80px;
+  width: 100%;
 }
 
 .seo_features_img .round_circle {
@@ -7657,7 +7673,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   padding-bottom: 150px;
   position: relative;
   z-index: 2;
-  background: url("../img/home9/shape_two.png") no-repeat scroll center 0;
+  background: url("../images/home9/shape_two.png") no-repeat scroll center 0;
   background-size: cover;
 }
 
@@ -7680,7 +7696,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .pay_icon {
-  background: url("../img/home9/icon_shape_two.png") no-repeat scroll center 0;
+  background: url("../images/home9/icon_shape_two.png") no-repeat scroll center 0;
   width: 110px;
   height: 103px;
   text-align: center;
@@ -7724,7 +7740,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   right: 0;
   top: 0;
   bottom: 0;
-  background: url(../img/new/new_shape.png) no-repeat scroll left 0;
+  background: url(../images/new/new_shape.png) no-repeat scroll left 0;
   z-index: -1;
   background-size: contain;
 }
@@ -8241,7 +8257,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   content: "";
   width: 100%;
   height: 100%;
-  background: url("../img/saas/map.png") no-repeat scroll center 0;
+  background: url("../images/saas/map.png") no-repeat scroll center 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -8567,7 +8583,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   top: 0;
   left: 0;
   position: absolute;
-  background: url("../img/home2/action_bg.png") no-repeat scroll center 0;
+  background: url("../images/home2/action_bg.png") no-repeat scroll center 0;
 }
 
 .call_action_area .action_one {
@@ -8748,7 +8764,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   height: 100px;
   left: 0;
   z-index: -1;
-  background: url("../img/home4/action_shap.png") no-repeat scroll center top;
+  background: url("../images/home4/action_shap.png") no-repeat scroll center top;
   top: 0;
   background-size: contain;
 }
@@ -8798,7 +8814,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   height: 100%;
   top: 0;
   left: 0;
-  background: url("../img/new/price_bg.png") no-repeat scroll center;
+  background: url("../images/new/price_bg.png") no-repeat scroll center;
   position: absolute;
   z-index: -1;
 }
@@ -9969,7 +9985,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   height: 100%;
   top: 0;
   left: 0;
-  background: url("../img/new/feedback_shap.png") no-repeat scroll center 0;
+  background: url("../images/new/feedback_shap.png") no-repeat scroll center 0;
   position: absolute;
   z-index: -1;
 }
@@ -10405,7 +10421,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   height: 85px;
   top: -82px;
   left: 0;
-  background: url("../img/home9/triangle_top.png") no-repeat;
+  background: url("../images/home9/triangle_top.png") no-repeat;
 }
 
 .payment_clients_area .clients_bg_shape_right {
@@ -10555,7 +10571,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   height: 85px;
   top: 0px;
   left: 0;
-  background: url("../img/home9/triangle_bottom.png") no-repeat;
+  background: url("../images/home9/triangle_bottom.png") no-repeat;
   background-size: contain;
 }
 
@@ -10776,7 +10792,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .stratup_testimonial_info:before {
   content: "";
-  background: url("../img/new/testimonial_bg.png") no-repeat scroll center 0/contain;
+  background: url("../images/new/testimonial_bg.png") no-repeat scroll center 0/contain;
   width: 100%;
   height: 100%;
   top: 0;
@@ -10833,7 +10849,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .testimonial_area_five .stratup_testimonial_info:before {
-  background: url("../img/new/testimonial_bg_two.png") no-repeat scroll center 0/contain;
+  background: url("../images/new/testimonial_bg_two.png") no-repeat scroll center 0/contain;
 }
 
 .testimonial_area_five .testimonial_title h6 {
@@ -10858,7 +10874,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   position: absolute;
   left: 85px;
   top: -80px;
-  background: url("../img/new/leaf.png") no-repeat scroll;
+  background: url("../images/new/leaf.png") no-repeat scroll;
   z-index: -2;
 }
 
@@ -10879,9 +10895,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 4px;
-  background: -webkit-linear-gradient(40deg, rgba(58, 43, 220, 0.9) 0%, rgba(23, 199, 189, 0.9) 100%), url("../img/new/video_bg.jpg") no-repeat;
-  background: -o-linear-gradient(40deg, rgba(58, 43, 220, 0.9) 0%, rgba(23, 199, 189, 0.9) 100%), url("../img/new/video_bg.jpg") no-repeat;
-  background: linear-gradient(50deg, rgba(58, 43, 220, 0.9) 0%, rgba(23, 199, 189, 0.9) 100%), url("../img/new/video_bg.jpg") no-repeat;
+  background: -webkit-linear-gradient(40deg, rgba(58, 43, 220, 0.9) 0%, rgba(23, 199, 189, 0.9) 100%), url("../images/new/video_bg.jpg") no-repeat;
+  background: -o-linear-gradient(40deg, rgba(58, 43, 220, 0.9) 0%, rgba(23, 199, 189, 0.9) 100%), url("../images/new/video_bg.jpg") no-repeat;
+  background: linear-gradient(50deg, rgba(58, 43, 220, 0.9) 0%, rgba(23, 199, 189, 0.9) 100%), url("../images/new/video_bg.jpg") no-repeat;
   background-size: cover;
   -webkit-box-shadow: 0px 50px 70px 0px rgba(0, 11, 40, 0.24);
   box-shadow: 0px 50px 70px 0px rgba(0, 11, 40, 0.24);
@@ -10994,7 +11010,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .seo_fact_info:before {
   content: "";
-  background: url("../img/seo/shap.png") no-repeat scroll center center;
+  background: url("../images/seo/shap.png") no-repeat scroll center center;
   position: absolute;
   left: 0;
   width: 100%;
@@ -11062,14 +11078,19 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin-top: 120px;
 }
 
+
 .seo_call_to_action_area {
   background: #5e2ced;
+  width: 100%;
+  justify-content: center;
 }
+
 
 .seo_call_action_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -11083,6 +11104,12 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   line-height: 54px;
   color: #fff;
   font-weight: 600;
+}
+.seo_call_action_text p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  font-weight: 300;
 }
 
 .seo_call_action_text .about_btn {
@@ -12365,8 +12392,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   height: 60px;
   border-radius: 4px;
   background-color: white;
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
-  box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(12, 0, 46, 0.04);
+  box-shadow: 2px 2px 4px 0px rgba(12, 0, 46, 0.04);
   width: 100%;
   border: 1px solid #fff;
   padding-left: 30px;
@@ -12896,7 +12923,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .seo_subscribe_area .overlay_img {
-  background: url("../img/seo/cloud_bg.png") no-repeat scroll center 0/cover;
+  background: url("../images/seo/cloud_bg.png") no-repeat scroll center 0/cover;
   position: absolute;
   top: 0;
   width: 100%;
@@ -12979,9 +13006,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 /*====================================================*/
 /*================= error_area css ==================*/
 .error_area {
-  background: -moz-linear-gradient(180deg, rgba(94, 44, 237, 0.93) 0%, rgba(164, 133, 253, 0.9) 100%), url("../img/error_bg.png") no-repeat scroll center 100%;
-  background: -webkit-linear-gradient(180deg, rgba(94, 44, 237, 0.93) 0%, rgba(164, 133, 253, 0.9) 100%), url("../img/error_bg.png") no-repeat scroll center 100%;
-  background: -ms-linear-gradient(180deg, rgba(94, 44, 237, 0.93) 0%, rgba(164, 133, 253, 0.9) 100%), url("../img/error_bg.png") no-repeat scroll center 100%;
+  background: -moz-linear-gradient(180deg, rgba(94, 44, 237, 0.93) 0%, rgba(164, 133, 253, 0.9) 100%), url("../images/error_bg.png") no-repeat scroll center 100%;
+  background: -webkit-linear-gradient(180deg, rgba(94, 44, 237, 0.93) 0%, rgba(164, 133, 253, 0.9) 100%), url("../images/error_bg.png") no-repeat scroll center 100%;
+  background: -ms-linear-gradient(180deg, rgba(94, 44, 237, 0.93) 0%, rgba(164, 133, 253, 0.9) 100%), url("../images/error_bg.png") no-repeat scroll center 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13127,7 +13154,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../img/new/case/parallax.png") no-repeat scroll center center;
+  background: url("../images/new/case/parallax.png") no-repeat scroll center center;
   z-index: -1;
 }
 
@@ -17593,7 +17620,7 @@ input[type="text"] {
 .split_banner .contact_bg {
   position: absolute;
   top: 0;
-  background: url("../img/new/home-split/contact.png");
+  background: url("../images/new/home-split/contact.png");
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -17832,7 +17859,7 @@ input[type="text"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/hosting/map.png") no-repeat scroll center 0/cover;
+  background: url("../images/hosting/map.png") no-repeat scroll center 0/cover;
   z-index: -1;
 }
 
@@ -18371,7 +18398,7 @@ a .h_head:hover {
 }
 
 .h_map {
-  background: url("../img/hosting/region_map.png") no-repeat scroll center top;
+  background: url("../images/hosting/region_map.png") no-repeat scroll center top;
   height: 595px;
 }
 
@@ -18628,7 +18655,7 @@ a .h_head:hover {
   content: "";
   width: 100%;
   height: 100%;
-  background: url(../img/pos/wave_two.png) no-repeat scroll center bottom;
+  background: url(../images/pos/wave_two.png) no-repeat scroll center bottom;
   position: absolute;
   left: 0;
   top: -100%;
@@ -19331,7 +19358,7 @@ a .h_head:hover {
 
 /*=========== erp_analytics_area css ============*/
 .erp_analytics_area {
-  background: url("../img/erp-home/background.png") no-repeat scroll center 0/cover;
+  background: url("../images/erp-home/background.png") no-repeat scroll center 0/cover;
   padding: 100px 0px 220px;
 }
 
@@ -19495,7 +19522,7 @@ a .h_head:hover {
 .erp_call_action_area:before {
   content: "";
   position: absolute;
-  background: url("../img/erp-home/shape.png") no-repeat scroll center bottom/cover;
+  background: url("../images/erp-home/shape.png") no-repeat scroll center bottom/cover;
   width: 100%;
   left: 0;
   height: 100%;
@@ -19853,7 +19880,7 @@ a .h_head:hover {
   content: "";
   width: 100%;
   height: 10px;
-  background: url("../img/pos/shape_bg.png") no-repeat scroll center bottom/cover;
+  background: url("../images/pos/shape_bg.png") no-repeat scroll center bottom/cover;
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -20633,7 +20660,7 @@ a .h_head:hover {
 
 .support_testimonial_info .testimonial_slider .testimonial_item:before {
   content: "";
-  background: url(../img/new-home/back_bg.png) no-repeat scroll center center;
+  background: url(../images/new-home/back_bg.png) no-repeat scroll center center;
   position: absolute;
   left: 0;
   top: 0;
@@ -21965,7 +21992,7 @@ a .h_head:hover {
 }
 
 .analytices_action_area_two:after {
-  background: url("../img/home-software/down_bg.png") no-repeat scroll;
+  background: url("../images/home-software/down_bg.png") no-repeat scroll;
   top: -70%;
 }
 
@@ -22700,7 +22727,7 @@ a .h_head:hover {
 
 .footer_nine_area .footer_shap {
   position: absolute;
-  background: url("../img/home9/footer.png") no-repeat scroll center;
+  background: url("../images/home9/footer.png") no-repeat scroll center;
   left: 0;
   width: 100%;
   background-size: cover;
@@ -22829,11 +22856,11 @@ a .h_head:hover {
 }
 
 .footer_nine_bottom .flag_selector .flag-icon.flag-icon-us {
-  background-image: url(../img/home9/flag.png);
+  background-image: url(../images/home9/flag.png);
 }
 
 .footer_nine_bottom .flag_selector .flag-icon.flag-icon-mx {
-  background-image: url(../img/home9/flag.png);
+  background-image: url(../images/home9/flag.png);
 }
 
 .footer_nine_bottom .flag_selector .dropdown-menu {
@@ -22996,13 +23023,13 @@ a .h_head:hover {
 .new_footer_top .footer_bg {
   position: absolute;
   bottom: 0;
-  background: url("../img/seo/footer_bg.png") no-repeat scroll center 0;
+  background: url("../images/seo/footer_bg.png") no-repeat scroll center 0;
   width: 100%;
   height: 266px;
 }
 
 .new_footer_top .footer_bg .footer_bg_one {
-  background: url("../img/seo/car.png") no-repeat center center;
+  background: url("../images/seo/car.png") no-repeat center center;
   width: 70px;
   height: 50px;
   position: absolute;
@@ -23013,7 +23040,7 @@ a .h_head:hover {
 }
 
 .new_footer_top .footer_bg .footer_bg_two {
-  background: url("../img/seo/bike.png") no-repeat center center;
+  background: url("../images/seo/bike.png") no-repeat center center;
   width: 50px;
   height: 52px;
   bottom: 0;
@@ -23526,7 +23553,7 @@ a .h_head:hover {
   height: 560px;
   z-index: -1;
   left: 0;
-  background: url("../img/home-software/down_bg.png") no-repeat scroll;
+  background: url("../images/home-software/down_bg.png") no-repeat scroll;
   bottom: 0;
   background-size: cover;
 }
@@ -23984,7 +24011,7 @@ a .h_head:hover {
 
 .tracking_getting_area {
   text-align: center;
-  background: url("../img/home-tracking/cta_pattern_bg.jpg") no-repeat scroll center 0/cover;
+  background: url("../images/home-tracking/cta_pattern_bg.jpg") no-repeat scroll center 0/cover;
 }
 
 .tracking_getting_area h2 {
@@ -24661,7 +24688,7 @@ a .h_head:hover {
 
 .event_price_item:before {
   content: "";
-  background: url("../img/home-event/price_shap.png") no-repeat scroll center bottom;
+  background: url("../images/home-event/price_shap.png") no-repeat scroll center bottom;
   position: absolute;
   bottom: -22px;
   left: 0;
@@ -24742,7 +24769,7 @@ a .h_head:hover {
 }
 
 .event_fact_area .seo_fact_info:before {
-  background: url("../img/home-event/dot.png") no-repeat center center;
+  background: url("../images/home-event/dot.png") no-repeat center center;
 }
 
 .event_fact_area .seo_fact_info .seo_fact_item {
@@ -25166,7 +25193,7 @@ a .h_head:hover {
 }
 
 .chat_get_started_area {
-  background: url("../img/home-chat/get_started_bg.png") no-repeat scroll center bottom;
+  background: url("../images/home-chat/get_started_bg.png") no-repeat scroll center bottom;
   height: 712px;
   padding-top: 120px;
 }
@@ -25199,6 +25226,7 @@ a .h_head:hover {
 .h_footer_track:before, .h_footer_track:after {
   display: none;
 }
+
 
 /*============= chat_clients_area css ===========*/
 

@@ -1,8 +1,14 @@
-import * as React from "react";
-import Home from "../../pages/home";
+import  React from "react";
+import CustomNavbar from "../CustomNavbar";
 
-const Layout = ({ pageTitle, children }) => {
-  return <Home />;
+const Layout = ({ children,FooterData }) => {
+  return (
+    <div className="body_wrapper">
+       <CustomNavbar cClass="custom_container p0" hbtnClass="new_btn"/>
+      {children}
+      <FooterTwo FooterData={FooterData}/>
+    </div>
+  );
 };
 
 export default Layout;

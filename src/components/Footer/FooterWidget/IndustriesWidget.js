@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Reveal from "react-reveal/Reveal";
-class AboutWidget extends Component {
+class IndustriesWidget extends Component {
   render() {
     let FooterData = this.props.FooterData;
     var { ftitle } = this.props;
@@ -13,7 +13,7 @@ class AboutWidget extends Component {
           >
             <h3 className="f-title f_600 t_color f_size_18 mb_40">{ftitle}</h3>
             <ul className="list-unstyled f_list">
-              {FooterData.About.map((item) => {
+              {FooterData.IndustrieWidgets.map((item) => {
                 return (
                   <li key={item.id}>
                     <a href="/">{item.text}</a>
@@ -28,4 +28,4 @@ class AboutWidget extends Component {
   }
 }
 
-export default AboutWidget;
+export default IndustriesWidget;

@@ -53,7 +53,7 @@ class Testimonial extends Component {
                                             return(
                                                 <div className="item" key={item.id}>
                                                     <div className="author_img">
-                                                        <img src={require ("../../img/" + item.image)} alt=""/>
+                                                        <img src={ item.image} alt=""/>
                                                     </div>
                                                     <p>{item.description}</p>
                                                     <h5>{item.authorName}</h5>
