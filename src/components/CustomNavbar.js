@@ -1,24 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import logo from "../images/logo.png";
-import home_chat from "../images/mega-menu-img/home-chat.jpg";
-import home_track from "../images/mega-menu-img/home-track.jpg";
-import home_event from "../images/mega-menu-img/home-event.jpg";
-import home12 from "../images/mega-menu-img/home12.jpg";
-import erp from "../images/mega-menu-img/erp.jpg";
-import hosting from "../images/mega-menu-img/hosting.jpg";
-import home_security from "../images/mega-menu-img/home-security.jpg";
-import support from "../images/mega-menu-img/home-security.jpg";
-import Prototyping_Tool from "../images/mega-menu-img/Prototyping_Tool.jpg";
-import home3 from "../images/mega-menu-img/home3.jpg"
-import home4 from "../images/mega-menu-img/home4.jpg"
-import home11 from "../images/mega-menu-img/home11.jpg";
-import home14 from "../images/mega-menu-img/home14.jpg";
-import home15 from "../images/mega-menu-img/home15.jpg";
-import home16 from "../images/mega-menu-img/home16.jpg";
-
-
-
+import AppLogo from "../images/icon/logo.png";
 import Sticky from "react-stickynode";
 
 class CustomNavbar extends Component {
@@ -29,8 +11,9 @@ class CustomNavbar extends Component {
         <header className="header_area">
           <nav className={`navbar navbar-expand-lg menu_one ${mClass}`}>
             <div className={`container ${cClass}`}>
-              <Link className={`navbar-brand ${slogo} `} to="/">
-                <img src={logo} alt="logo" />
+              <Link className="navbar-logo" to="/">
+                <img src={AppLogo} alt="logo" />
+                99minds
               </Link>
               <button
                 className="navbar-toggler collapsed"
@@ -59,9 +42,9 @@ class CustomNavbar extends Component {
                 id="navbarSupportedContent"
               >
                 <ul className={`navbar-nav menu ml-auto ${nClass}`}>
-                <li className="nav-item">
+                  <li className="nav-item">
                     <Link title="Pricing" className="nav-link" to="/Contact">
-                    Home
+                      Home
                     </Link>
                   </li>
                   <li className="dropdown submenu nav-item">
@@ -74,7 +57,7 @@ class CustomNavbar extends Component {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Service
+                      Service<i className="ti-angle-down"></i>
                     </Link>
                     <ul role="menu" className=" dropdown-menu">
                       <li className="nav-item">
@@ -84,7 +67,7 @@ class CustomNavbar extends Component {
                           className="nav-link"
                           to="/Service"
                         >
-                         Product
+                          Product
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -101,7 +84,7 @@ class CustomNavbar extends Component {
                   </li>
                   <li className="nav-item">
                     <Link title="Pricing" className="nav-link" to="/Contact">
-                     Integrations
+                      Integrations
                     </Link>
                   </li>
                   <li className="dropdown submenu nav-item">
@@ -114,7 +97,7 @@ class CustomNavbar extends Component {
                       aria-expanded="false"
                       to="#"
                     >
-                     Resources
+                      Resources<i className="ti-angle-down"></i>
                     </Link>
                     <ul role="menu" className=" dropdown-menu">
                       <li className="nav-item">
@@ -164,7 +147,7 @@ class CustomNavbar extends Component {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                   Developers
+                      Developers<i className="ti-angle-down"></i>
                     </a>
                     <ul className="dropdown-menu">
                       <li className="nav-item">
@@ -184,7 +167,9 @@ class CustomNavbar extends Component {
                       </li>
                     </ul>
                   </li>
-    
+                  <div className="d-flex align-items-center">
+                    <hr className="line_vertical" />
+                  </div>
                   <li className="nav-item">
                     <Link title="Pricing" className="nav-link" to="/Contact">
                       Sign In
@@ -192,7 +177,7 @@ class CustomNavbar extends Component {
                   </li>
                 </ul>
                 <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
-                 Book a Demo
+                  Book a Demo
                 </a>
               </div>
             </div>

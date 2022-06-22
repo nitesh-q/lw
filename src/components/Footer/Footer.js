@@ -4,7 +4,6 @@ import logo from "../../images/logo.png";
 import ServicesWidget from "./FooterWidget/ServicesWidget";
 import IndustriesWidget from "./FooterWidget/IndustriesWidget";
 import AboutWidget from "./FooterWidget/AboutWidget";
-import { ServicesWidgets, IndustrieWidgets } from "../../helpers/constants";
 class Footer extends Component {
   render() {
     var { fClass } = this.props;

@@ -174,6 +174,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .f_size_15 {
   font-size: 15px;
 }
+.f_size_12 {
+  font-size: 15px;
+}
+
 
 .l_height60 {
   line-height: 60px;
@@ -231,6 +235,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .f_900 {
   font-weight: 900;
 }
+.f_bold{
+  font-weight: bold;
+}
 
 .t_color {
   color: #051441;
@@ -279,6 +286,12 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .mt_40 {
   margin-top: 40px;
 }
+.mt_15{
+  margin-top: 15px;
+}
+.mt_20{
+  margin-top: 20px;
+}
 
 .mt_70 {
   margin-top: 70px;
@@ -301,6 +314,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .mb_20 {
+  margin-bottom: 20px;
+}
+.mb_10 {
   margin-bottom: 20px;
 }
 
@@ -392,10 +408,29 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   padding-top: 40px;
 }
 
+.pad{
+  padding: 50px;
+}
+
 .sec_pad {
   padding: 120px 0px;
 }
 
+.bg_color{
+  background-color: #F9F9FD;
+}
+.border_none{
+  border: none;
+}
+
+.line_vertical {
+  width: 2px;
+  height: 15px !important;
+  float: left;
+  background-color: #c4c4ca;
+  margin: 15px;
+  
+}
 /*====================================================*/
 /*====================================================*/
 .btn_hover {
@@ -454,7 +489,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 .btn_get_two {
   -webkit-box-shadow: none;
-  box-shadow: none;
+  box-shadow: 0 0 50px;
   background: #5e2ced;
   border-color: #5e2ced;
   color: #fff;
@@ -929,6 +964,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 .navbar-brand img + img {
   display: block;
+}
+.navbar-logo{
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .sticky_logo img{
@@ -6820,6 +6859,141 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 /*====================================================*/
+.customer_engagement_one{
+  margin-top: 50px;
+
+}
+.customer_engagement_content{
+  margin-top: 50px;
+}
+
+.customer_engagement_content h2 {
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.customer_engagement_content h3 {
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.customer_engagement_content p {
+  font-size: 16px;
+  color: #6a7695;
+  font-weight: 300;
+}
+
+.customer_engagement_content h6 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #263b5e;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+.customer_engagement_content ul li{
+  color: #000000;
+  font-weight: 400;
+}
+.customer_engagement_content ul li span{
+  color: #7b7b93;
+  font-weight: 400;
+}
+.customer_engagement_content ul li::marker {
+  color: #20D489;
+}
+
+.customer_engagement_content .seo_btn {
+  margin-top: 40px;
+}
+
+.customer_engagement_content .customer_engagement_item {
+  padding-right: 150px;
+  margin-top: 50px;
+}
+
+.customer_engagement_content .customer_engagement_item .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #f1ebfe;
+  text-align: center;
+  line-height: 70px;
+  margin-right: 30px;
+}
+
+.customer_engagement_content .customer_engagement_item .icon.two {
+  background: #fcf1e7;
+}
+
+.customer_engagement_content .customer_engagement_item h3 {
+  font-size: 20px;
+  color: #263b5e;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.customer_engagement_content .customer_engagement_item p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #6a7695;
+  margin-bottom: 0;
+}
+
+.customer_engagement_img {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.customer_engagement_img img {
+  margin-right: -80px;
+  width: 100%;
+}
+
+.customer_engagement_img .round_circle {
+  position: absolute;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  background: #5e2ced;
+  right: -126px;
+  z-index: -1;
+  opacity: 0.06;
+}
+
+.customer_engagement_img .round_circle.two {
+  width: 360px;
+  height: 360px;
+  left: 84px;
+  right: auto;
+  top: 74px;
+  z-index: -2;
+}
+
+.customer_engagement_img.customer_engagement_img_two img {
+  margin-left: -170px;
+  margin-right: 0;
+}
+
+.customer_engagement_img.customer_engagement_img_two .round_circle {
+  left: -86px;
+  right: auto;
+  width: 500px;
+  height: 500px;
+  background: #dfac0b;
+}
+
+.customer_engagement_img.customer_engagement_img_two .round_circle.two {
+  right: 60px;
+  width: 370px;
+  height: 370px;
+  left: auto;
+}
 /*====================================================*/
 /*=========== service_area css ============*/
 .service_area {
@@ -7375,18 +7549,24 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 /*============== developer_product_area css ================*/
 .developer_product_area {
-  background: #f9f9fc;
-  padding: 160px 0px;
+  background: #ffffff;
+  padding: 50px 0px;
 }
 
 .developer_product_content {
   padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .developer_product_content .develor_tab {
   display: inline-block;
-  border-bottom: 2px solid #e1e3ed;
   padding: 0px 40px 0px 10px;
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .developer_product_content .develor_tab .nav-item {
@@ -7395,8 +7575,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .developer_product_content .develor_tab .nav-item .nav-link {
-  font: 400 16px "Poppins", sans-serif;
-  color: #677294;
+  font: 700 16px "Poppins", sans-serif;
+  color: #000000;
   border: 0px;
   padding: 0px 0px 10px;
   position: relative;
@@ -8014,15 +8194,20 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 /*============= seo_service_area css =============*/
 .seo_service_item {
-  background-color: white;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
-  box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
-  padding: 60px 40px 38px;
-  margin-bottom: 30px;
+  background-color: #FBFBFD;
+ border: 1px solid #F1F3F8;
+  padding: 30px;
+  height: 200px;
+  /* margin-bottom: 30px; */
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .seo_service_item h4 {
@@ -8061,10 +8246,53 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   color: #5e2ced;
 }
 
-.seo_service_item:hover {
+/* .seo_service_item:hover {
   -webkit-box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1);
   box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1);
+} */
+/*============= home_integration css =============*/
+.home_integration_item {
+  background-color: #FBFBFD;
+ border: 1px solid #F1F3F8;
+  padding: 30px;
+  height: 200px;
+  /* margin-bottom: 30px; */
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
+
+.home_integration h4 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #263b5e;
+  font-weight: 500;
+  margin-top: 35px;
+  margin-bottom: 16px;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.home_integration h4:hover {
+  color: #5e2ced;
+}
+
+.home_integration p {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 30px;
+  color: #6a7695;
+  margin-bottom: 40px;
+}
+
+
 
 /*=========== case_studies_area css ==========*/
 .case_studies_slider{
@@ -9315,21 +9543,28 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   background-color: white;
   -webkit-box-shadow: 0px 20px 40px 0px rgba(12, 0, 46, 0.06);
   box-shadow: 0px 20px 40px 0px rgba(12, 0, 46, 0.06);
-  padding: 50px;
+  
 }
 
 .agency_testimonial_info .testimonial_slider .testimonial_item {
+  height: 200px;
   z-index: 0;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  display: flex !important;
+  flex-direction: row;
+}
+.agency_testimonial_info .testimonial_slider .testimonial_item .author_img{
+  height: 100%;
+  width: 500px;
+  display: inline-block;
+  overflow: hidden;
 }
 
 .agency_testimonial_info .testimonial_slider .testimonial_item .author_img img {
-  max-width: 100%;
-  width: auto;
-  display: inline-block;
-  border-radius: 50%;
+  object-fit: cover;
+  /* display: inline-block; */
 }
 
 .agency_testimonial_info .testimonial_slider .testimonial_item .author_description {
@@ -9350,7 +9585,11 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   font-weight: 300;
   font-size: 16px;
   line-height: 30px;
-  margin-bottom: 50px;
+  text-align: start;
+}
+.agency_testimonial_info .testimonial_slider .testimonial_item h6 {
+  text-align: start;
+
 }
 
 .agency_testimonial_info .testimonial_slider .active {
@@ -9468,15 +9707,15 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .partner_info {
-  text-align: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+
 }
 
 .partner_info .logo_item {
   width: calc(100% / 5);
   margin-bottom: 60px;
+  margin-right: 10px;
 }
 
 .partner_info .logo_item img {
@@ -9633,7 +9872,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .partner_logo_area_four {
-  padding-top: 80px;
+  padding-top: 20px;
   margin-bottom: -40px;
 }
 
@@ -11082,6 +11321,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .seo_call_to_action_area {
   background: #5e2ced;
   width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -11117,6 +11359,46 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 /*====================================================*/
+.try_call_to_action_area {
+  background: #5e2ced;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+
+.try_call_action_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.try_call_action_text h2 {
+  font-size: 40px;
+  line-height: 54px;
+  color: #fff;
+  font-weight: 600;
+}
+.try_call_action_text p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.try_call_action_text .about_btn {
+  border: 1px solid #fff;
+}
 /*====================================================*/
 /*================= app_screenshot_area css =============*/
 .app_screenshot_area {
@@ -12389,7 +12671,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .text_box input[type="text"], .text_box textarea, .text_box input[type="password"], .text_box input[type="email"] {
   font: 400 15px/60px "Poppins", sans-serif;
   color: #222d39;
-  height: 60px;
+  height: 54px;
   border-radius: 4px;
   background-color: white;
   -webkit-box-shadow: 2px 2px 4px 0px rgba(12, 0, 46, 0.04);
@@ -23338,6 +23620,7 @@ a .h_head:hover {
 
 .pricing_area_four .sec_title h2 {
   margin-bottom: 0px;
+
 }
 
 .pricing_area_four .sec_title p {

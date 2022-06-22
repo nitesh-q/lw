@@ -2,17 +2,23 @@ import React from "react";
 import CustomNavbar from "../components/CustomNavbar";
 import Fade from "react-reveal/Fade";
 import feature_img from "../images/home/feature_img.png";
-import features_img_two from "../images/seo/features_img_two.png";
-
+import Partner_01 from "../images/home3/logo_01.png";
 import Footer from "../components/Footer/Footer";
-import { FooterData } from "../helpers/constants";
-import Portfoliofull4col from "../components/Portfoliofull4col";
+import { FooterData, BannerData } from "../config/constants";
+import Testimonial from "../components/Testimonial";
+import CustomerEngagement from "../components/CustomerEngagement";
+import MarketingAutomation from "../components/MarketingAutomation";
+import StudySlider from "../components/StudySlider";
+import BigCommerce from "../images/integrations/BigCommerce.png";
+import Kalviyo from "../images/integrations/Kalviyo.png";
+import Omnisend from "../images/integrations/Omnisend.png";
+import TrustedMarchents from "../components/TrustedMarchents";
+;
 
 const Home = () => (
   <div className="body_wrapper">
-    <CustomNavbar cClass="custom_container p0" hbtnClass="new_btn" />
-    {/* <Portfoliofull4col/> */}
     <React.Fragment>
+      <CustomNavbar cClass="custom_container p0" hbtnClass="new_btn" />
       <section className="seo_features_one sec_pad">
         <div className="container">
           <div className="row flex-row-reverse">
@@ -47,56 +53,109 @@ const Home = () => (
                       </button>
                     </form>
                   </div>
+                  <div className={`partner_logo_area_four `}>
+                    <h4 className="f_size_18 f_bold f_p  l_height28 ">
+                      We Support
+                    </h4>
+                    <div className="row partner_info">
+                      <div
+                        className="logo_item wow fadeInLeft"
+                        data-wow-delay="0.1s"
+                      >
+                        <a href=".#">
+                          <img src={Partner_01} alt="" />
+                        </a>
+                      </div>
+                      <div
+                        className="logo_item wow fadeInLeft"
+                        data-wow-delay="0.1s"
+                      >
+                        <a href=".#">
+                          <img src={Partner_01} alt="" />
+                        </a>
+                      </div>
+                      <div
+                        className="logo_item wow fadeInLeft"
+                        data-wow-delay="0.1s"
+                      >
+                        <a href=".#">
+                          <img src={Partner_01} alt="" />
+                        </a>
+                      </div>
+                      <div
+                        className="logo_item wow fadeInLeft"
+                        data-wow-delay="0.1s"
+                      >
+                        <a href=".#">
+                          <img src={Partner_01} alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </Fade>
             </div>
           </div>
         </div>
       </section>
-      <section className="seo_features_one sec_pad">
+     <TrustedMarchents  BannerData={BannerData} bgColor={`bg_color`} />
+      <CustomerEngagement />
+      <MarketingAutomation />
+      <Testimonial BannerData={BannerData} bgColor={`bg_color`} />
+      {/* ==============integration section============ */}
+      <section className="seo_service_area sec_pad">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="seo_features_img seo_features_img_two">
-                <div className="round_circle"></div>
-                <div className="round_circle two"></div>
-                <img src={features_img_two} alt="features_img_two" />
-              </div>
-            </div>
-            <div className="col-lg-6 d-flex align-items-center">
-              <Fade bottom cascade>
-                <div className="seo_features_content">
-                  <h2 className="wow fadeInUp">
-                    Get tips & tricks on how to skyrocket your sales.
-                  </h2>
-                  <h6 className="wow fadeInUp">
-                    What a plonker bamboozled so I said say what a load of
-                    rubbish owt to do with me haggle.
-                  </h6>
-                  <p className="wow fadeInUp">
-                    Cheeky bugger gosh codswallop chap bamboozled blatant
-                    cracking goal brown bread, pear shaped cor blimey guvnor
-                    easy peasy lemon squeezy hotpot spiffing good time, chancer
-                    a spend a penny spiffing I don't want no agro tinkety tonk
-                    old fruit.
-                  </p>
-                  <a
-                    href=".#"
-                    className="seo_btn seo_btn_one btn_hover wow fadeInUp"
-                  >
-                    Learn More
+          <h2 className="f_size_30 f_600 t_color3 l_height40 text-center mb_10">
+            Integrations
+          </h2>
+          <p className="text-center">
+            Empower Your Brick & Click Store With Powerful Integrations
+          </p>
+          <div className="row ">
+            <Fade bottom duration={500}>
+              <div className="col-lg-4 col-md-6">
+                <div className="home_integration_item">
+                  <a href=".#">
+                    <img src={BigCommerce} alt="" />
                   </a>
+                  <p className="text-center mt_20">
+                    Bits and bobs cup of tea bubble and squeak brolly.
+                  </p>
                 </div>
-              </Fade>
-            </div>
+              </div>
+            </Fade>
+            <Fade bottom duration={700}>
+              <div className="col-lg-4 col-md-6">
+                <div className="home_integration_item">
+                  <a href=".#">
+                    <img src={Kalviyo} alt="" />
+                  </a>
+                  <p className="text-center mt_20">
+                    Bits and bobs cup of tea bubble and squeak brolly.
+                  </p>
+                </div>
+              </div>
+            </Fade>
+            <Fade bottom duration={1000}>
+              <div className="col-lg-4 col-md-6">
+                <div className="home_integration_item">
+                  <a href=".#">
+                    <img src={Omnisend} alt="" />
+                  </a>
+                  <p className="text-center mt_20">
+                    Bits and bobs cup of tea bubble and squeak brolly.
+                  </p>
+                </div>
+              </div>
+            </Fade>
           </div>
         </div>
       </section>
-      <section className="seo_call_to_action_area sec_pad">
-        <div className="container">
-          <div className="row">
+      <section className=" sec_pad">
+        <div className="container try_call_to_action_area">
+          <div className="row w-100">
             <div className="col-lg-6">
-              <div className="seo_call_action_text">
+              <div className="try_call_action_text">
                 <h2>Try 99minds now</h2>
                 <p>
                   The free demo comes with no commitments <br></br>and no credit
@@ -105,7 +164,7 @@ const Home = () => (
               </div>
             </div>
             <div className="col-lg-3">
-            <form action="#" className="contact_form_box" method="post">
+              <form action="#" className="contact_form_box" method="post">
                 <div className="form-group text_box">
                   <input
                     type="text"
@@ -124,9 +183,8 @@ const Home = () => (
           </div>
         </div>
       </section>
+      <Footer FooterData={FooterData} />
     </React.Fragment>
-
-    <Footer FooterData={FooterData} />
   </div>
 );
 export default Home;

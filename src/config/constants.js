@@ -1,5 +1,5 @@
 import member_01 from "../images/new/member_01.jpg";
-
+import author_01 from "../images/testimonials/01.png"
 export const FooterData = {
   CompanyWidget: [
     {
@@ -30,6 +30,7 @@ export const FooterData = {
       url: "#",
       text: "Referral Programs",
     },
+    
     {
       id: 5,
       url: "#",
@@ -398,3 +399,50 @@ export const FooterData = {
     },
   ],
 };
+export const BannerData = {
+  AgencyText : [
+      {
+          id: 1,
+          btitle : 'Starategic design and technology agency',
+          description : 'Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.',
+      }
+  ],
+  ClientsLogo: [
+      {
+          id : 1,
+          image: 'logo_01.png'
+      },
+      {
+          id : 2,
+          image: 'logo_02.png'
+      },
+      {
+          id : 3,
+          image: 'logo_03.png',
+      },
+      {
+          id : 4,
+          image: 'logo_04.png',
+      },
+      {
+          id : 5,
+          image: 'logo_05.png'
+      }
+  ],
+  AgencyTestimonial: [
+      {
+          id: 1,
+          image: author_01,
+          Name: 'Benjaimn,Marketing Team Lead,Besttop',
+          authorPost: 'UI/UX designer',
+          description: `Why I say old chap that is spiffing barney, nancy boy bleeder chimney pot Richard cheers the little rotter so I said, easy peasy buggered blower bevvy A bit of how's your father.!`,
+      },
+      {
+          id: 2,
+          image: author_01,
+          Name: 'Benjaimn,Marketing Team Lead,Besttop',
+          authorPost: 'UI/UX designer',
+          description: `Why I say old chap that is spiffing barney, nancy boy bleeder chimney pot Richard cheers the little rotter so I said, easy peasy buggered blower bevvy A bit of how's your father.!`,
+      }
+  ]
+}

@@ -8,12 +8,12 @@ import Slider from "react-slick/";
 class StudySlider extends Component {
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
-      arrows: false,
+      arrows: true,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 6000*10,
       slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [
