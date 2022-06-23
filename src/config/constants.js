@@ -1,6 +1,6 @@
 import member_01 from "../images/new/member_01.jpg";
 import author_01 from "../images/testimonials/01.png"
-export const FooterData = {
+export  const FooterData = {
   CompanyWidget: [
     {
       id: 1,
@@ -9,141 +9,103 @@ export const FooterData = {
         "Don’t miss any updates of our new templates and extensions.!",
     },
   ],
-  ServicesWidgets: [
-    {
-      id: 1,
-      url: "#",
-      text: "Gift Cards",
-    },
-    {
-      id: 2,
-      url: "#",
-      text: "Loyalty Programs",
-    },
-    {
-      id: 3,
-      url: "#",
-      text: "Coupons",
-    },
-    {
-      id: 4,
-      url: "#",
-      text: "Referral Programs",
-    },
-    
-    {
-      id: 5,
-      url: "#",
-      text: "Discounts",
-    },
-    {
-      id: 6,
-      url: "#",
-      text: "Bundling",
-    },
-    {
-      id: 7,
-      url: "#",
-      text: "Geolocation",
-    },
-    {
-      id: 8,
-      url: "#",
-      text: "Promotion Engine",
-    },
-  ],
-  IndustrieWidgets: [
-    {
-      id: 1,
-      url: "#",
-      text: "Finance",
-    },
-    {
-      id: 2,
-      url: "#",
-      text: "Public Sector",
-    },
-    {
-      id: 3,
-      url: "#",
-      text: "Smart Office",
-    },
-    {
-      id: 4,
-      url: "#",
-      text: "Retail",
-    },
-  ],
   AboutWidget: [
     {
       id: 1,
-      title: "Download",
+      title: "Services",
       menuItems: [
         {
           id: 1,
           url: "#",
-          text: "Company",
+          text: "Gift Cards",
         },
         {
           id: 2,
           url: "#",
-          text: "Android App",
+          text: "Loyalty Programs",
         },
         {
           id: 3,
           url: "#",
-          text: "ios App",
+          text: "Coupons",
         },
         {
           id: 4,
           url: "#",
-          text: "Desktop",
+          text: "Referral Programs",
         },
+        
         {
           id: 5,
           url: "#",
-          text: "Projects",
+          text: "Discounts",
         },
         {
           id: 6,
           url: "#",
-          text: "My tasks",
+          text: "Bundling",
+        },
+        {
+          id: 7,
+          url: "#",
+          text: "Geolocation",
+        },
+        {
+          id: 8,
+          url: "#",
+          text: "Promotion Engine",
         },
       ],
     },
     {
       id: 2,
-      title: "Help",
-      menuItems: [
+      title: "Industries",
+      menuItems:[
         {
           id: 1,
           url: "#",
-          text: "FAQ",
+          text: "Finance",
         },
         {
           id: 2,
           url: "#",
-          text: "Term & conditions",
+          text: "Public Sector",
         },
         {
           id: 3,
           url: "#",
-          text: "Reporting",
+          text: "Smart Office",
         },
         {
           id: 4,
           url: "#",
-          text: "Documentation",
+          text: "Retail",
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: "About Us",
+      menuItems:[
+        {
+          id: 1,
+          url: "#",
+          text: "About Us",
         },
         {
-          id: 5,
+          id: 2,
           url: "#",
-          text: "Support Policy",
+          text: "Blogs",
         },
         {
-          id: 6,
+          id: 3,
           url: "#",
-          text: "Privacy",
+          text: "Contact",
+        },
+        {
+          id: 4,
+          url: "#",
+          text: "Join Us",
         },
       ],
     },
@@ -226,13 +188,11 @@ export const FooterData = {
       icon: "ti-pinterest",
     },
   ],
-  FooterHeader:
-    "99minds helps you create exciting (and effective) offerings for your customers without any hassles.",
   copywrite: "Copyright © 2021 99minds Inc. All rights reserved.",
   TestimonialText: [
     {
       id: 1,
-      image: member_01,
+      image: "new/member_01.jpg",
       description:
         "He nicked it hanky panky Eaton naff it's your round quaint cheeky cheers, tomfoolery bonnet posh blimey what a plonker vagabond, zonked Elizabeth give us a bell.?",
       authorName: "Phillip Anthropy",
@@ -240,7 +200,7 @@ export const FooterData = {
     },
     {
       id: 2,
-      image: member_01,
+      image: "new/member_01.jpg",
       description:
         "He nicked it hanky panky Eaton naff it's your round quaint cheeky cheers, tomfoolery bonnet posh blimey what a plonker vagabond, zonked Elizabeth give us a bell.?",
       authorName: "Phillip Anthropy",
@@ -248,7 +208,7 @@ export const FooterData = {
     },
     {
       id: 3,
-      image: member_01,
+      image: "new/member_01.jpg",
       description:
         "He nicked it hanky panky Eaton naff it's your round quaint cheeky cheers, tomfoolery bonnet posh blimey what a plonker vagabond, zonked Elizabeth give us a bell.?",
       authorName: "Phillip Anthropy",
@@ -256,7 +216,7 @@ export const FooterData = {
     },
     {
       id: 4,
-      image: member_01,
+      image: "new/member_01.jpg",
       description:
         "He nicked it hanky panky Eaton naff it's your round quaint cheeky cheers, tomfoolery bonnet posh blimey what a plonker vagabond, zonked Elizabeth give us a bell.?",
       authorName: "Phillip Anthropy",
@@ -334,71 +294,105 @@ export const FooterData = {
       item: "Feedback",
     },
   ],
-  Services: [
+  about: [
     {
       id: 1,
       url: "#",
-      text: "Gift Cards",
+      text: "Company",
     },
     {
       id: 2,
       url: "#",
-      text: "Loyalty Programs",
+      text: "Leadership",
     },
     {
       id: 3,
       url: "#",
-      text: "Coupons",
+      text: "Diversity",
     },
     {
       id: 4,
       url: "#",
-      text: "Referral Programs",
+      text: "Jobs",
     },
     {
       id: 5,
       url: "#",
-      text: "Discounts",
+      text: "Press",
     },
     {
       id: 6,
       url: "#",
-      text: "Bundling",
-    },
-    {
-      id: 7,
-      url: "#",
-      text: "Geolocation",
-    },
-    {
-      id: 8,
-      url: "#",
-      text: "Promotion Engine",
+      text: "Wavelength",
     },
   ],
-  About: [
+  Solution: [
     {
       id: 1,
       url: "#",
-      text: "About Us",
+      text: "Project Management",
     },
     {
       id: 2,
       url: "#",
-      text: "Blogs",
+      text: "Agile",
     },
     {
       id: 3,
       url: "#",
-      text: "Contact",
+      text: "Task Management",
     },
     {
       id: 4,
       url: "#",
-      text: "Join Us",
+      text: "Reporting",
+    },
+    {
+      id: 5,
+      url: "#",
+      text: "Work Tracking",
+    },
+    {
+      id: 6,
+      url: "#",
+      text: "See All Uses",
+    },
+  ],
+  teamSolution: [
+    {
+      id: 1,
+      url: "#",
+      text: "Engineering",
+    },
+    {
+      id: 2,
+      url: "#",
+      text: "Designers",
+    },
+    {
+      id: 3,
+      url: "#",
+      text: "Sales",
+    },
+    {
+      id: 4,
+      url: "#",
+      text: "Developers",
+    },
+    {
+      id: 5,
+      url: "#",
+      text: "Marketing",
+    },
+    {
+      id: 6,
+      url: "#",
+      text: "See All team",
     },
   ],
 };
+
+
 export const BannerData = {
   AgencyText : [
       {

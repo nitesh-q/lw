@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import feature_img from "../images/home/feature_img.png";
-import Partner_01 from "../images/home3/logo_01.png";
+
 import { BannerData, CustomerEngagement } from "../config/constants";
 import Testimonial from "../components/Testimonial";
 import TabComponent from "../components/TabComponent";
@@ -16,6 +16,7 @@ import Woo from "../images/trusted-merchents/woo.png"
 import Shopify from "../images/trusted-merchents/shopify.png"
 import Commerce from "../images/trusted-merchents/commerce.png"
 import Miva from "../images/trusted-merchents/miva.png"
+
 
 
 const Home = () => (

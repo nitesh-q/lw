@@ -1,106 +1,103 @@
-import React, { Component } from "react";
-import Reveal from "react-reveal/Reveal";
-import AppLogo from "../../images/logo/logo.png";
-import ServicesWidget from "./FooterWidget/ServicesWidget";
-import IndustriesWidget from "./FooterWidget/IndustriesWidget";
-import AboutWidget from "./FooterWidget/AboutWidget";
+import React , {Component} from 'react';
+import {Link} from 'gatsby';
+import Reveal from 'react-reveal/Reveal'
 class Footer extends Component {
-  render() {
-    var { fClass } = this.props;
-    let FooterData = this.props.FooterData;
-    return (
-      <footer className={`footer_area footer_area_four f_bg ${fClass}`}>
-        <div className="footer_top">
-          <div className="container">
-            <p className="mb-0 f_400 pb-5">{FooterData.FooterHeader}</p>
-
-            <div className="row pt-2">
-              {FooterData.CompanyWidget.map((widget) => {
-                return (
-                  <Reveal effect="fadeInUp" key={widget.id}>
-                    <div className="col-lg-3 col-md-6">
-                      <div
-                        className="f_widget company_widget wow fadeInLeft"
-                        data-wow-delay="0.2s"
-                      >
-                        <a href="index.html" className="f-logo">
-                          <img className="app_logo" src={AppLogo} alt="" />
-                        </a>
-                        <div className="widget-wrap">
-                          <p className="f_400 f_p f_size_15 mb-0 l_height34">
-                            <span>Email:</span>{" "}
-                            <a
-                              href="mailto:saasland@gmail.com"
-                              className="f_400"
-                            >
-                              support@99minds.com
-                            </a>
-                          </p>
-                          <p className="f_400 f_p f_size_15 mb-0 l_height34">
-                            <span>Phone:</span>{" "}
-                            <a href="tel:948256347968" className="f_400">
-                              +948 256 347 968
-                            </a>
-                          </p>
+    render(){
+        let FooterData = this.props.FooterData;
+        return(
+            <footer className="new_footer_area bg_color">
+                <div className="new_footer_top">
+                    <div className="container">
+                        <div className="row">
+                            {
+                                FooterData.CompanyWidget.map(widget=>{
+                                    return(
+                                        <Reveal effect="fadeInLeft" duration={500} key={1}>
+                                            <div className="col-lg-3 col-md-6" >
+                                                <div className="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s">
+                                                    <h3 className="f-title f_600 t_color f_size_18">{widget.title}</h3>
+                                                    <p>{widget.description}</p>
+                                                    <form action="#" className="f_subscribe_two mailchimp" method="post">
+                                                        <input type="text" name="EMAIL" className="form-control memail" placeholder="Email"/>
+                                                        <button className="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                                        <p className="mchimp-errmessage" style={{display: "none"}}></p>
+                                                        <p className="mchimp-sucmessage" style={{display: "none"}}></p>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </Reveal>
+                                    )
+                                })
+                            }
+                            {
+                                FooterData.AboutWidget.map(widget=>{
+                                    return(
+                                        <Reveal effect="fadeInLeft" duration={500} key={widget.id}>
+                                        <div className="col-lg-2 col-md-6">
+                                            <div className="f_widget about-widget pl_40 wow fadeInLeft" data-wow-delay="0.4s">
+                                                <h3 className="f-title f_600 t_color f_size_18">{widget.title}</h3>
+                                                <ul className="list-unstyled f_list">
+                                                    {
+                                                        widget.menuItems.map(item =>{
+                                                            return(
+                                                                <li key={item.id}><Link to="/">{item.text}</Link></li>
+                                                            )
+                                                        })
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        </Reveal>
+                                    )
+                                })
+                            }
+                            {
+                                FooterData.SocialLinks.map(widget=>{
+                                    return(
+                                        <Reveal effect="fadeInLeft" duration={500} key={widget.id}>
+                                        <div className="col-lg-3 col-md-6">
+                                            <div className="f_widget social-widget  wow fadeInLeft" data-wow-delay="0.4s">
+                                                <h3 className="f-title f_600 t_color f_size_18">{widget.title}</h3>
+                                                <div className="f_social_icon">
+                                                    {
+                                                        widget.menuItems.map(item =>{
+                                                            return(
+                                                                <Link to="/" key={item.id}><i className={item.icon}></i></Link>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </Reveal>
+                                    )
+                                })
+                            }
                         </div>
-                        <form
-                          action="#"
-                          className="f_subscribe mailchimp"
-                          method="post"
-                        >
-                          <input
-                            type="text"
-                            name="EMAIL"
-                            className="form-control memail"
-                            placeholder="Email"
-                          />
-                          <button className="btn btn-submit" type="submit">
-                            <i className="ti-arrow-right"></i>
-                          </button>
-                        </form>
-                      </div>
+                        
                     </div>
-                  </Reveal>
-                );
-              })}
-              <ServicesWidget ftitle="Services" FooterData={FooterData} />
-              <IndustriesWidget ftitle="Industries" FooterData={FooterData} />
-              <AboutWidget ftitle="About Us" FooterData={FooterData} />
-            </div>
-          </div>
-        </div>
-        <div className="footer_bottom">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-4 col-md-5 col-sm-6">
-                <p className="mb-0 f_size_15 f_400">{FooterData.copywrite}</p>
-              </div>
-              <div className="col-lg-4 col-md-3 col-sm-6">
-                <div className="f_social_icon_two text-center">
-                  {FooterData.socialIcon.map((item) => {
-                    return (
-                      <a href="/" key={item.id}>
-                        <i className={item.icon}></i>
-                      </a>
-                    );
-                  })}
+                    <div className="footer_bg">
+                        <div className="footer_bg_one"></div>
+                        <div className="footer_bg_two"></div>
+                    </div>
                 </div>
-              </div>
-              <div className="col-lg-4 col-md-4 col-sm-12">
-                <ul className="list-unstyled f_menu text-right">
-                  <li>
-                    <a href=".#">Terms of Use</a>
-                  </li>
-                  <li>
-                    <a href=".#">Privacy Policy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    );
-  }
+                <div className="footer_bottom">
+                    <div className="container">
+                        <div className="row align-items-center">
+                            <div className="col-lg-6 col-sm-7">
+                                <p className="mb-0 f_400">{FooterData.copywrite}</p>
+                            </div>
+                            <div className="col-lg-4 col-md-4 col-sm-12">
+                                <ul className="list-unstyled f_menu text-right">
+                                    <li><a href=".#">Terms of Use</a></li>
+                                    <li><a href=".#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        )
+    }
 }
 export default Footer;

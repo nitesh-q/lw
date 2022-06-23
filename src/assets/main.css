@@ -22358,9 +22358,13 @@ a .h_head:hover {
   border-bottom: 1px solid #e0e3ef;
   padding: 115px 0px 100px;
 }
-
+.noWrap_widget{
+  white-space: nowrap;
+  
+}
 .f_widget .widget-wrap {
   margin-top: 35px;
+  white-space: nowrap;
 }
 
 .f_widget .widget-wrap p span {
@@ -22380,6 +22384,7 @@ a .h_head:hover {
 
 .f_widget.about-widget .f_list {
   margin-bottom: 0px;
+  white-space: nowrap;
 }
 
 .f_widget.about-widget .f_list li {

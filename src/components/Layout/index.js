@@ -1,7 +1,8 @@
 import  React from "react";
 import CustomNavbar from "../CustomNavbar";
 import Footer from "../Footer/Footer";
-import { FooterData } from "../../config/constants";
+// import { FooterData } from "../../config/constants";
+import{ FooterData }from "../../config/constants";
 
 const Layout = ({ children }) => {
   return (
