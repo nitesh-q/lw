@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Reveal from "react-reveal/Reveal";
-import logo from "../../images/logo.png";
+import AppLogo from "../../images/logo/logo.png";
 import ServicesWidget from "./FooterWidget/ServicesWidget";
 import IndustriesWidget from "./FooterWidget/IndustriesWidget";
 import AboutWidget from "./FooterWidget/AboutWidget";
@@ -24,7 +24,7 @@ class Footer extends Component {
                         data-wow-delay="0.2s"
                       >
                         <a href="index.html" className="f-logo">
-                          <img src={logo} alt="" />
+                          <img className="app_logo" src={AppLogo} alt="" />
                         </a>
                         <div className="widget-wrap">
                           <p className="f_400 f_p f_size_15 mb-0 l_height34">

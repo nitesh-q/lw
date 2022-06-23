@@ -254,7 +254,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .t_color3 {
   color: #222d39;
 }
-
+.t_color4{
+  color: #bdbed6;
+}
 .d_p_color {
   color: #bdbed6;
 }
@@ -409,11 +411,14 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .pad{
-  padding: 50px;
+  padding: 0px 150px;
 }
 
 .sec_pad {
-  padding: 120px 0px;
+  padding: 120px 250px;
+}
+.slick_pad{
+  padding: 0px 250px;
 }
 
 .bg_color{
@@ -422,14 +427,15 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .border_none{
   border: none;
 }
-
+.app_logo{
+  height: 42px;
+}
 .line_vertical {
   width: 2px;
   height: 15px !important;
   float: left;
   background-color: #c4c4ca;
   margin: 15px;
-  
 }
 /*====================================================*/
 /*====================================================*/
@@ -6864,7 +6870,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 }
 .customer_engagement_content{
-  margin-top: 50px;
+  margin-top: 27px;
 }
 
 .customer_engagement_content h2 {
@@ -6874,19 +6880,22 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   font-weight: 600;
   margin-bottom: 25px;
 }
-.customer_engagement_content h3 {
-  font-size: 30px;
+.customer_engagement_content p {
+ 
+  font-size: 16px;
+  color: #6a7695;
+  font-weight: 400;
   line-height: 40px;
-  color: #000000;
+  margin-bottom: 25px;
+}
+.customer_engagement_content h3 {
+  font-size: 20px;
+  line-height: 20px;
+  color:#2C2C51;
   font-weight: bold;
   margin-bottom: 25px;
 }
 
-.customer_engagement_content p {
-  font-size: 16px;
-  color: #6a7695;
-  font-weight: 300;
-}
 
 .customer_engagement_content h6 {
   font-size: 18px;
@@ -6904,7 +6913,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   font-weight: 400;
 }
 .customer_engagement_content ul li::marker {
-  color: #20D489;
+  color: #51fe23;
 }
 
 .customer_engagement_content .seo_btn {
@@ -7550,7 +7559,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 /*============== developer_product_area css ================*/
 .developer_product_area {
   background: #ffffff;
-  padding: 50px 0px;
+  padding: 50px 250px;
 }
 
 .developer_product_content {
@@ -7613,7 +7622,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .developer_product_content .developer_tab_content p {
   line-height: 28px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #2C2C51;
 }
 
 .developer_product_content .developer_tab_content .details_btn {
@@ -9401,6 +9411,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .about_btn {
+  white-space: nowrap;
   font: 500 14px "Poppins", sans-serif;
   padding: 17px 28px;
   background: #fbfbfd;
@@ -9584,7 +9595,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .agency_testimonial_info .testimonial_slider .testimonial_item p {
   font-weight: 300;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 25px;
   text-align: start;
 }
 .agency_testimonial_info .testimonial_slider .testimonial_item h6 {
@@ -9657,7 +9668,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   text-align: center;
 }
 .agency_testimonial_info .slick-prev{
-  left: -150px;
+  left: -100px;
 }
 .agency_testimonial_info .slick-next:before{
   content: "\e649";
@@ -9683,7 +9694,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .agency_testimonial_info .slick-next {
-  right: -150px;
+  right: -100px;
 }
 .agency_testimonial_info .slick-dots{
   left: 0;
@@ -9720,8 +9731,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .partner_info .logo_item img {
   max-width: 100%;
-  -webkit-filter: contrast(0.3%);
-  filter: contrast(0.3%);
+ 
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -11368,6 +11378,18 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   justify-content: center;
   border-radius: 6px;
 }
+.try_call_to_action_area  li{
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #ffffff;
+  text-align: end;
+}
+.try_call_to_action_area li::marker{
+content: '✓';
+color: #51fe23;
+
+}
 
 
 .try_call_action_text {
@@ -11380,7 +11402,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+
 }
 
 .try_call_action_text h2 {
@@ -11399,6 +11421,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .try_call_action_text .about_btn {
   border: 1px solid #fff;
 }
+
 /*====================================================*/
 /*================= app_screenshot_area css =============*/
 .app_screenshot_area {
@@ -19693,34 +19716,77 @@ a .h_head:hover {
 
 .erp_testimonial_area .row{
   position: relative;
+  border-radius: 6px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0px 7px 40px 0px rgb(12 0 46 / 6%);
+
 }
 
-.erp_testimonial_area .slider_nav .prev, .erp_testimonial_area .slider_nav .next{
+.erp_testimonial_item {
+  padding: 3px ;
+}
+.erp_testimonial_area .slick-prev, .erp_testimonial_area .slick-next {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  border: 1px solid #f3f5f8;
+  background-color: white;
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.06);
+  box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.06);
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-size: 45px;
-  color: #c1c1d4;
-  transition: all 0.2s linear;
   cursor: pointer;
+  text-align: center;
+}
+.erp_testimonial_area .slick-track{
+  display: flex;
+ align-items: center;
+}
+.erp_testimonial_area .slick-prev{
+  left: -40px;
+}
+.erp_testimonial_area .slick-next:before{
+  content: "\e649";
+  font-family: 'themify';
+  color: #222d39;
+  line-height: 50px;
+  font-size: 15px;
+}
+.erp_testimonial_area .slick-prev:before{
+  content: "\e64a";
+  font-family: 'themify';
+  color: #222d39;
+  line-height: 50px;
+  font-size: 15px;
 }
 
-.erp_testimonial_area .slider_nav .prev:hover, .erp_testimonial_area .slider_nav .next:hover {
-  color: #4e78f4;
+
+.erp_testimonial_area .slick-prev:hover, .erp_testimonial_area .slick-next:hover {
+  background: #5e2ced;
+}
+.erp_testimonial_area .slick-prev:hover:before, .erp_testimonial_area .slick-next:hover:before {
+  color: #fff;
 }
 
-.erp_testimonial_area .slider_nav .prev{
-  left: -50px;
+.erp_testimonial_area .slick-next {
+  right: -40px;
 }
-
-.erp_testimonial_area .slider_nav .next{
-  right: -50px;
+.erp_testimonial_area .slick-dots{
+  left: 0;
+  bottom: 35px;
+  margin: 0px;
 }
-
-.erp_testimonial_item {
-  padding: 10px 25px;
+.erp_testimonial_area .slick-dots li{
+  margin: 0px;
+}
+.erp_testimonial_area .slick-dots li button{
+  background: #cfcfe7;
+  border-color: #cfcfe7;
 }
 
 .erp_testimonial_item .content {
@@ -19764,16 +19830,16 @@ a .h_head:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 30px;
-  padding-left: 50px;
+  padding-left: 12px;
+  margin:20px 20px;
 }
 
 .erp_testimonial_item .media img {
-  width: auto;
-  border-radius: 50%;
-  margin-right: 20px;
-}
+  width: 122px;
+  height: 52px;
+  object-fit: contain;
 
+}
 .erp_testimonial_item .media .media-body h5 {
   font-size: 18px;
   font-weight: 500;
@@ -22321,7 +22387,8 @@ a .h_head:hover {
 }
 
 .f_widget.about-widget .f_list li a {
-  font: 300 16px/20px "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   color: #677294;
   position: relative;
   -webkit-transition: color 0.2s linear;

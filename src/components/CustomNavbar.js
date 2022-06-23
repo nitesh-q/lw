@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import AppLogo from "../images/icon/logo.png";
+import AppLogo from "../images/logo/logo.png";
 import Sticky from "react-stickynode";
 
 class CustomNavbar extends Component {
@@ -12,8 +12,7 @@ class CustomNavbar extends Component {
           <nav className={`navbar navbar-expand-lg menu_one ${mClass}`}>
             <div className={`container ${cClass}`}>
               <Link className="navbar-logo" to="/">
-                <img src={AppLogo} alt="logo" />
-                99minds
+                <img className="app_logo" src={AppLogo} alt="logo" />
               </Link>
               <button
                 className="navbar-toggler collapsed"

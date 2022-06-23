@@ -446,3 +446,76 @@ export const BannerData = {
       }
   ]
 }
+export const CustomerEngagement = {
+  Head: [{ Title: "Customer Engagement & Retention Platform" }],
+  List: [
+    {
+      id: "giftcard",
+      label: "Gift Card",
+      selected:"true",
+    },
+    {
+      id: "storecredit",
+      label: "Store Credit",
+    },
+    // {
+    //   id: "loyalty",
+    //   label: "Loyalty",
+    // },
+    // {
+    //   id: "refferal",
+    //   label: "Refferal",
+    // },
+    {
+      id: "automation",
+      label: "Automation",
+      selected:"false",
+
+    },
+    {
+      id: "coupons",
+      label: "Coupans",
+      selected:"false",
+    },
+    {
+      id: "wallet",
+      label: "Wallet & Mobile Pass",
+      selected:"false",
+
+    },
+  ],
+};
+export const MarketingAutomation = {
+  Head: [{ Title: "Grew your store and drive revenue with Marketing Automation" }],
+  List: [
+    {
+      id: "refferal1",
+      label: "Refferal",
+    },
+    {
+      id: "onboarding",
+      label: "OnBoarding",
+    },
+    {
+      id: "upsell",
+      label: "UpSell",
+    },
+    {
+      id: "crosssell",
+      label: "Cross Sell",
+    },
+    {
+      id: "refund",
+      label: "Refund",
+    },
+    {
+      id: "reward",
+      label: "Reward",
+    },
+    {
+      id: "retain",
+      label: "Retain",
+    },
+   
+  ],
+};

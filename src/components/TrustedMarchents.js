@@ -1,6 +1,38 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Sectitle from "./Title/Sectitle";
+import Pinstrips from "../images/trusted-merchents/pinstrip.png";
+import Besttop from "../images/trusted-merchents/bestop.png";
+import Cornor from "../images/trusted-merchents/cornor.png";
+import Cariloha from "../images/trusted-merchents/cariloha.png";
+import fylnn from "../images/trusted-merchents/fylnn.png";
 
+const items = [
+  {
+    id: 1,
+    image: Pinstrips,
+  },
+  {
+    id: 2,
+    image: Besttop,
+  },
+  {
+    id: 3,
+    image: Cariloha,
+  },
+  {
+    id: 4,
+    image: Cornor,
+  },
+  {
+    id: 5,
+    image: fylnn,
+  },
+  {
+    id: 6,
+    image: Besttop,
+  },
+];
 
 class TrustedMarchents extends Component {
   render() {
@@ -10,38 +42,48 @@ class TrustedMarchents extends Component {
       speed: 500,
       arrows: true,
       autoplay: true,
-      autoplaySpeed: 10000,
-      slidesToShow: 1,
+      autoplaySpeed: 200000,
+      slidesToShow: 5,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     };
-    let BannerData = this.props.BannerData;
-    var { bgColor } = this.props;
     return (
-      <section className={`agency_testimonial_area sec_pad ${bgColor}`}>
-        <div className="container  pad">
-          <h2 className="f_size_30 f_600 t_color3 l_height40 text-center mb_10">
-            Testimonials
-          </h2>
-          <p className="text-center">Hear from our Clients</p>
-          <div className="agency_testimonial_info">
-            <Slider className="testimonial_slider" {...settings}>
-              {BannerData.AgencyTestimonial.map((item) => {
-                return (
-                  <div
-                    className="testimonial_item text-center left"
-                    key={item.id}
-                  >
-                    <div className="author_img">
-                      <img src={item.image} alt="author_01" />
-                    </div>
-                    <div className="mt_15">
-                      <p className="pr_20 pl_20">{item.description}</p>
-                      <h6 className="pr_20 pl_20">{item.Name}</h6>
+      <section className="erp_testimonial_area slick_pad ">
+        <div className="container">
+        <h3 className="f_size_20 f_600 t_color4 l_height40 text-center">
+            Trusted by 500+ Marchents
+          </h3>
+          <div className="row">
+            <div className="erp_testimonial_info">
+              <Slider className="erp_testimonial_slider" {...settings}>
+                {items.map((item) => (
+                 
+                    <div className="erp_testimonial_item">
+                      <div className="media">
+                        <div className="media-body">
+                          <img src={item.image} alt={item.id} />
+                     
+                      </div>
                     </div>
                   </div>
-                );
-              })}
-            </Slider>
+                ))}
+              </Slider>
+            </div>
           </div>
         </div>
       </section>

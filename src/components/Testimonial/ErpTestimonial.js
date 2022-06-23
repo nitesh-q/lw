@@ -1,56 +1,63 @@
 import React, {Component} from "react";
 import Slider from 'react-slick';
 import Sectitle from '../Title/Sectitle';
+import Pinstrips from '../../images/trusted-merchents/pinstrip.png'
+import Besttop from '../../images/trusted-merchents/bestop.png'
+import Cornor from '../../images/trusted-merchents/cornor.png'
+import Cariloha from '../../images/trusted-merchents/cariloha.png'
+import fylnn from '../../images/trusted-merchents/fylnn.png'
+
+
 class ErpTestimonial extends Component {
     constructor(){
         super();
-        this.next = this.next.bind(this);
-        this.previous = this.previous.bind(this);
+      
         this.state={
             items:[
                 {
                     "id": 1,
-                    "image": "testimonial_img.jpg",
-                    "description": "Loo car boot bodge smashing I up the duff horse play give us a bell, William bugger all mate happy days mush at public school tosser victoria sponge, say lurgy hunky-dory twit hotpot gutted mate.",
-                    "name": "Lance Bogrol,",
-                    "postion": "Chief Financial",
-                    "location": "Officer at Samumed"
+                    "image": Pinstrips,
+                   
                 },
                 {
                     "id": 2,
-                    "image": "testimonial_img2.jpg",
-                    "description": "Loo car boot bodge smashing I up the duff horse play give us a bell, William bugger all mate happy days mush at public school tosser victoria sponge, say lurgy hunky-dory twit hotpot gutted mate.",
-                    "name": "Lance Bogrol,",
-                    "postion": "Chief Financial",
-                    "location": "Officer at Samumed"
+                    "image": Besttop,
+                 
                 },
                 {
                     "id": 3,
-                    "image": "testimonial_img2.jpg",
-                    "description": "Loo car boot bodge smashing I up the duff horse play give us a bell, William bugger all mate happy days mush at public school tosser victoria sponge, say lurgy hunky-dory twit hotpot gutted mate.",
-                    "name": "Lance Bogrol,",
-                    "postion": "Chief Financial",
-                    "location": "Officer at Samumed"
+                    "image": Cariloha,
+            
+                },
+                {
+                    "id": 4,
+                    "image": Cornor,
+                
+                },
+                {
+                    "id": 5,
+                    "image": fylnn,
+                  
+                },
+                {
+                    "id": 6,
+                    "image": Besttop,
+                   
                 }
             ]
         }
 
     }
-    next() {
-    this.slider.slickNext();
-    }
-    previous() {
-    this.slider.slickPrev();
-    }
+
     render(){
         const settings = {
             dots: false,
             infinite: true,
             speed: 500,
-            arrows: false,
+            arrows: true,
             autoplay: true,
-            autoplaySpeed: 2000,
-            slidesToShow: 2,
+            autoplaySpeed: 200000,
+            slidesToShow: 5,
             slidesToScroll: 1,
             responsive: [
                 {
@@ -82,21 +89,10 @@ class ErpTestimonial extends Component {
                             {this.state.items.map(item =>(
                                 <div className="item" key={item.id}>
                                     <div className="erp_testimonial_item">
-                                        <div className="content">
-                                            <p>{item.description}</p>
-                                            <div className="ratting">
-                                                <a href="/#"><i className="icon_star"></i></a>
-                                                <a href="/#"><i className="icon_star"></i></a>
-                                                <a href="/#"><i className="icon_star"></i></a>
-                                                <a href="/#"><i className="icon_star"></i></a>
-                                                <a href="/#"><i className="icon_star"></i></a>
-                                            </div>
-                                        </div>
                                         <div className="media">
-                                            <img src={require ("../../img/erp-home/" + item.image)} alt=""/>
                                             <div className="media-body">
-                                                <h5>{item.name}<span>{item.postion}</span></h5>
-                                                <p>{item.location}</p>
+                                                <img src={item.image} alt={item.id} />
+                                                
                                             </div>
                                         </div>
                                     </div>

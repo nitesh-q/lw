@@ -13,6 +13,7 @@ class Testimonial extends Component {
       autoplaySpeed: 10000,
       slidesToShow: 1,
       slidesToScroll: 1,
+      
     };
     let BannerData = this.props.BannerData;
     var { bgColor } = this.props;
