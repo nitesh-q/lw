@@ -12,16 +12,14 @@ import Omnisend from "../images/integrations/Omnisend.png";
 import TrustedMarchents from "../components/TrustedMarchents";
 import Layout from "../components/Layout";
 import TryAction from "../components/TryAction";
-import Woo from "../images/trusted-merchents/woo.png"
-import Shopify from "../images/trusted-merchents/shopify.png"
-import Commerce from "../images/trusted-merchents/commerce.png"
-import Miva from "../images/trusted-merchents/miva.png"
-
-
+import Woo from "../images/trusted-merchents/woo.png";
+import Shopify from "../images/trusted-merchents/shopify.png";
+import Commerce from "../images/trusted-merchents/commerce.png";
+import Miva from "../images/trusted-merchents/miva.png";
 
 const Home = () => (
   <Layout>
-    <section className="seo_features_one sec_pad">
+    <section className="seo_features_one bg_color sec_pad">
       <div className="container">
         <div className="row flex-row-reverse">
           <div className="col-lg-6">
@@ -60,34 +58,22 @@ const Home = () => (
                     We Support
                   </h4>
                   <div className="row partner_info">
-                    <div
-                      className="logo_item "
-                      data-wow-delay="0.1s"
-                    >
+                    <div className="logo_item " data-wow-delay="0.1s">
                       <a href=".#">
                         <img src={Miva} alt="" />
                       </a>
                     </div>
-                    <div
-                      className="logo_item wow "
-                      data-wow-delay="0.1s"
-                    >
+                    <div className="logo_item wow " data-wow-delay="0.1s">
                       <a href=".#">
                         <img src={Shopify} alt="" />
                       </a>
                     </div>
-                    <div
-                      className="logo_item wow "
-                      data-wow-delay="0.1s"
-                    >
+                    <div className="logo_item wow " data-wow-delay="0.1s">
                       <a href=".#">
                         <img src={Woo} alt="" />
                       </a>
                     </div>
-                    <div
-                      className="logo_item wow "
-                      data-wow-delay="0.1s"
-                    >
+                    <div className="logo_item wow " data-wow-delay="0.1s">
                       <a href=".#">
                         <img src={Commerce} alt="" />
                       </a>

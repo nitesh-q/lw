@@ -6,6 +6,12 @@
         margin-top: -320px;
     }
 }
+@media(min-width:991px){
+    .sign_in{
+        display:none;
+        }
+        
+}
 @media(max-width:1650px){
     .about_content{
         padding: 100px 30px;
@@ -1287,6 +1293,17 @@
 
 
 @media (max-width:991px){
+
+    .sign_in_bg{
+        background: none !important;
+    }  
+    .line_vertical{
+        display: none;
+    }
+    .hide{
+        display: none;
+    }
+    
     .navbar_fixed .header_area .menu_one {
         padding: 15px 0px;
     }
@@ -1471,7 +1488,7 @@
         padding: 120px 0px;
     }
     .partner_info .logo_item{
-        width: calc(100% / 3);
+        width: calc(100% / 5);
     }
     .saas_featured_info{
         margin-top: 60px;
@@ -2833,8 +2850,39 @@
         padding-top: 70px
     }
     .agency_testimonial_info .testimonial_slider{
-        padding: 50px 20px;
+        padding: 0px 10px 20px;
     }
+    .agency_testimonial_info .slick-prev{
+        left: -30px;
+      }
+      .agency_testimonial_info .slick-next{
+        right: -30px;
+      }
+    .agency_testimonial_info .testimonial_slider .testimonial_item {
+        z-index: 0;
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+      }
+      .agency_testimonial_info .testimonial_slider .testimonial_item .author_img{
+        height: 100%;
+        display: inline-block;
+        overflow: hidden;
+      }
+      
+      .agency_testimonial_info .testimonial_slider .testimonial_item .author_img img {
+        object-fit: cover;
+        /* display: inline-block; */
+      }
+      /* .agency_testimonial_info .testimonial_slider .testimonial_item .author_img img {
+        max-width: 100%;
+        width: auto;
+        display: inline-block;
+        border-radius: 50%;
+      } */
     .sec_pad,.prototype_service_info{
         padding: 70px 0px;
     }
@@ -4030,7 +4078,7 @@
         margin-left: 25px;
     }
     .partner_info .logo_item{
-        width: calc(100% / 2);
+        width: calc(100% / 5);
     }
     .fun_fact_content .fact_item h1{
         font-size: 60px;
@@ -4921,7 +4969,7 @@
         border-radius: 3px;
     }
     .partner_info .logo_item{
-        width: 100%;
+        width: calc(100% / 5);
     }
     .app_img .phone_img{
         max-width: 55%;

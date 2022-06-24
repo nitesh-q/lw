@@ -17,9 +17,9 @@ const TabComponent = ({ data }) => {
     <section className="developer_product_area sec_pad">
       <div className="container">
         {data.Head.map((item) => (
-          <h2 className="f_size_30 f_600 t_color3 l_height40 text-center mb_50">
+          <h1 className="text-center mb_50">
             {item.Title}
-          </h2>
+          </h1>
         ))}
 
         <div className="row">
@@ -196,11 +196,11 @@ const TabComponent = ({ data }) => {
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Store Credit</h2>
-                              <p>
+                              <h6>
                                 Offering your customers’ store credit can be a
                                 great way of improving customer retention.
                                 Merchant can use Store credit:
-                              </p>
+                              </h6>
                               <ul>
                                 <li>
                                   <span>
@@ -228,11 +228,11 @@ const TabComponent = ({ data }) => {
                                   </span>
                                 </li>
                               </ul>
-                              <p>
+                              <h6>
                                 In 99minds, Store credit can be quickly added to
                                 customer accounts from the control panel and
                                 automation using workflow engine.
-                              </p>
+                              </h6>
 
                               <div className="col-lg-9">
                                 <button
@@ -267,12 +267,12 @@ const TabComponent = ({ data }) => {
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Automation</h2>
-                              <p>
+                              <h6>
                                 For ecommerce/retailers brands, Customer
                                 acquisition & retention automation enables you
                                 to focus on acquiring new customers, and retain
                                 customers using:
-                              </p>
+                              </h6>
                               <ul>
                                 <li>
                                   <span>Pre-built workflow template</span>
@@ -325,10 +325,10 @@ const TabComponent = ({ data }) => {
                             <div className="customer_engagement_content ">
                               <h2>Coupons</h2>
                               <h3>Robust coupon creation</h3>
-                              <p>
+                              <h6>
                                 Generate millions of unique coupons in a few
                                 clicks, set rules, coupon lengths, etc.
-                              </p>
+                              </h6>
                               <ul>
                                 <li>
                                   <span>Bulk Coupons Generation</span>
@@ -380,11 +380,11 @@ const TabComponent = ({ data }) => {
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Loyalty</h2>
-                              <p>
+                              <h6>
                                 Reward your customers for purchases and other
                                 actions with points which can be redeemed for
                                 discounts.
-                              </p>
+                              </h6>
                               <ul>
                                 <li>
                                   <span>VIP tiers</span>
@@ -436,10 +436,10 @@ const TabComponent = ({ data }) => {
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Wallet & Mobile Pass</h2>
-                              <p>
+                              <h6>
                                 Empower customers to store gift cards, loyalty
                                 points, coupons,store credit.
-                              </p>
+                              </h6>
                               <ul>
                                 <li>
                                   <span>
@@ -482,10 +482,10 @@ const TabComponent = ({ data }) => {
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Referral</h2>
-                              <p>
+                              <h6>
                                 Boost your organic sales by adding a customer
                                 referral program to your eCommerce store
-                              </p>
+                              </h6>
                               <ul>
                                 <li>
                                   <span>Customizable Widget</span>

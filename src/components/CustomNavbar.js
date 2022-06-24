@@ -11,9 +11,6 @@ class CustomNavbar extends Component {
         <header className="header_area">
           <nav className={`navbar navbar-expand-lg menu_one ${mClass}`}>
             <div className={`container ${cClass}`}>
-              <Link className="navbar-logo" to="/">
-                <img className="app_logo" src={AppLogo} alt="logo" />
-              </Link>
               <button
                 className="navbar-toggler collapsed"
                 type="button"
@@ -35,7 +32,9 @@ class CustomNavbar extends Component {
                   </span>
                 </span>
               </button>
-
+              <Link className="navbar-brand" to="/">
+                <img  src={AppLogo} alt="logo" />
+              </Link>
               <div
                 className={`collapse navbar-collapse justify-content-end `}
                 id="navbarSupportedContent"
@@ -51,14 +50,15 @@ class CustomNavbar extends Component {
                       to="./"
                       title="Pages"
                       className="dropdown-toggle nav-link"
-                      data-toggle="dropdown"
+                      data-bs-toggle="dropdown"
                       role="button"
+                      id="navbarDropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
                       Service<i className="ti-angle-down"></i>
                     </Link>
-                    <ul role="menu" className=" dropdown-menu">
+                    <ul role="menu" className=" dropdown-menu" aria-labelledby="navbarDropdown">
                       <li className="nav-item">
                         <Link
                           exact
@@ -66,7 +66,7 @@ class CustomNavbar extends Component {
                           className="nav-link"
                           to="/Service"
                         >
-                          Product
+                          Service
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -90,7 +90,7 @@ class CustomNavbar extends Component {
                     <Link
                       title="Pages"
                       className="dropdown-toggle nav-link"
-                      data-toggle="dropdown"
+                      data-bs-toggle="dropdown"
                       role="button"
                       aria-haspopup="true"
                       aria-expanded="false"
@@ -105,7 +105,7 @@ class CustomNavbar extends Component {
                           className="nav-link"
                           to="/Portfolio-2col"
                         >
-                          Portfolio 2col
+                         Resources-1
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -114,7 +114,7 @@ class CustomNavbar extends Component {
                           className="nav-link"
                           to="/Portfolio-3col"
                         >
-                          Portfolio 3col
+                          Resources-2
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -123,7 +123,7 @@ class CustomNavbar extends Component {
                           className="nav-link"
                           to="/Portfolio-fullwidth-4col"
                         >
-                          Portfolio fullwidth
+                        Resources-3
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -132,7 +132,7 @@ class CustomNavbar extends Component {
                           className="nav-link"
                           to="/PortfolioSingle"
                         >
-                          Portfolio Single
+                        Resources-4
                         </Link>
                       </li>
                     </ul>
@@ -142,7 +142,7 @@ class CustomNavbar extends Component {
                       className="nav-link dropdown-toggle"
                       href=".#"
                       role="button"
-                      data-toggle="dropdown"
+                      data-bs-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
@@ -151,17 +151,17 @@ class CustomNavbar extends Component {
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <Link to="/Bloglist" className="nav-link">
-                          Blog List
+                          Developer-1
                         </Link>
                       </li>
                       <li className="nav-item">
                         <Link to="/BlogGridPage" className="nav-link">
-                          Blog Grid
+                        Developer-2
                         </Link>
                       </li>
                       <li className="nav-item">
                         <Link to="/BlogSingle" className="nav-link">
-                          Blog Single
+                        Developer-3
                         </Link>
                       </li>
                     </ul>
@@ -169,7 +169,7 @@ class CustomNavbar extends Component {
                   <div className="d-flex align-items-center">
                     <hr className="line_vertical" />
                   </div>
-                  <li className="nav-item">
+                  <li className="nav-item hide">
                     <Link title="Pricing" className="nav-link" to="/Contact">
                       Sign In
                     </Link>
@@ -178,6 +178,15 @@ class CustomNavbar extends Component {
                 <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
                   Book a Demo
                 </a>
+              </div>
+              <div className="sign_in  bg_color">
+                <ul className={`navbar-nav menu ml-auto pl_10 sign_in_bg`}>
+                  <li className="nav-item">
+                    <Link title="Pricing" className="nav-link" to="/Contact">
+                      Sign In
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </nav>

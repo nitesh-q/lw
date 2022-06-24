@@ -34,7 +34,7 @@ const TryAction = () => (
             </div>
           </div>
 
-          <div className="row w-100 t">
+          <div className="row w-100 ">
             <li className="col "> No Credit Card Reaquired</li>
             <li className="col"> Free Sign Up</li>
             <li className="col"> 24/7 Support</li>
