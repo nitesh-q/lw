@@ -14,7 +14,7 @@ const TryAction = () => (
         </div>
 
         <div className="col-lg-6">
-          <div className="row w-100">
+          <div className="row w-100 service">
             <div className="col">
               <form action="#" className="contact_form_box" method="post">
                 <div className="form-group text_box">
@@ -34,7 +34,7 @@ const TryAction = () => (
             </div>
           </div>
 
-          <div className="row w-100 ">
+          <div className="row w-100 service ">
             <li className="col "> No Credit Card Reaquired</li>
             <li className="col"> Free Sign Up</li>
             <li className="col"> 24/7 Support</li>
