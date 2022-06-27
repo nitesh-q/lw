@@ -1,9 +1,16 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Bestop from "../images/trusted-merchents/bestop.png"
-
+import Bestop from "../../images/trusted-merchents/bestop.png";
 
 class Testimonial extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      TestimonialConfig: props.TestimonialConfig,
+      bgColor: props.bgColor,
+    };
+  }
+
   render() {
     const settings = {
       dots: false,
@@ -14,20 +21,17 @@ class Testimonial extends Component {
       autoplaySpeed: 1000000,
       slidesToShow: 1,
       slidesToScroll: 1,
-      
     };
-    let BannerData = this.props.BannerData;
-    var { bgColor } = this.props;
+    let { TestimonialConfig } = this.state;
+    var { bgColor } = this.state;
     return (
       <section className={`agency_testimonial_area ${bgColor}`}>
         <div className="container">
-          <h2 className="text-center mb_10">
-            Testimonials
-          </h2>
+          <h2 className="text-center mb_10">Testimonials</h2>
           <p className="text-center">Hear from our Clients</p>
           <div className="agency_testimonial_info">
             <Slider className="testimonial_slider" {...settings}>
-              {BannerData.AgencyTestimonial.map((item) => {
+              {TestimonialConfig.Testimonial.map((item) => {
                 return (
                   <div
                     className="testimonial_item text-center left"
@@ -38,8 +42,12 @@ class Testimonial extends Component {
                     </div>
                     <div className="mt_15">
                       <p className="pr_20 pl_20">{item.description}</p>
-                      <h6 className="pr_20 pl_20">{item.Name}</h6>
-                      <img className="pr_20 pl_20 h_30" src={Bestop} alt=""/>
+                      <h6 className="pr_20 pl_20 mt_20">{item.Name}</h6>
+                      <img
+                        className="pr_20 pl_20 h_30 mt_20"
+                        src={Bestop}
+                        alt=""
+                      />
                     </div>
                   </div>
                 );

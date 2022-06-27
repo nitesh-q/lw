@@ -1,6 +1,6 @@
 import React from "react";
 const TryAction = () => (
-  <section className=" sec_pad">
+  <section className=" sec_pad pt_0">
     <div className="container try_call_to_action_area">
       <div className="row w-100">
         <div className="col-lg-6">

@@ -1,15 +1,15 @@
-import  React from "react";
-import CustomNavbar from "../CustomNavbar";
-import Footer from "../Footer/Footer";
-// import { FooterData } from "../../config/constants";
-import{ FooterData }from "../../config/constants";
+import React from "react";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import FooterConfig from "../../config/footer.config";
+
 
 const Layout = ({ children }) => {
   return (
     <div className="body_wrapper">
-       <CustomNavbar cClass="custom_container p0" hbtnClass="new_btn"/>
+      <Navbar cClass="custom_container p0" hbtnClass="new_btn" />
       {children}
-      <Footer FooterData={FooterData}/>
+      <Footer FooterConfig={FooterConfig} />
     </div>
   );
 };

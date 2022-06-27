@@ -8,18 +8,12 @@ import Refferal_img from "../images/home/refferal.png";
 import Coupons_img from "../images/home/coupon.png";
 import Wallet_img from "../images/home/wallet.png";
 
-
-
-
-
 const TabComponent = ({ data }) => {
   return (
     <section className="developer_product_area sec_pad">
       <div className="container">
         {data.Head.map((item) => (
-          <h1 className="text-center mb_50">
-            {item.Title}
-          </h1>
+          <h1 className="text-center mb_50">{item.Title}</h1>
         ))}
 
         <div className="row">
@@ -27,13 +21,13 @@ const TabComponent = ({ data }) => {
             <div className="developer_product_content">
               <ul
                 className="nav nav-tabs develor_tab mb-30 border_none"
-                id="myTab2"
+                id="myTab1"
                 role="tablist"
               >
-                {data.List.map((item) => (
-                  <li className="nav-item">
+                {data.List.map((item, index) => (
+                  <li className="nav-item" key={index}>
                     <a
-                      className="nav-link "
+                      className={`nav-link ${index === 0 ? "active" : ""}`}
                       data-tab={`${item.id}-tab`}
                       id={`${item.id}-tab`}
                       data-bs-toggle="tab"
@@ -114,47 +108,50 @@ const TabComponent = ({ data }) => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_500 reduce_height">
                           <div className="customer_engagement_img">
                             <img src={Giftcard_img} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5 ">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Gift Cards</h2>
                               <ul>
                                 <li>
-                                  Sell:
+                                  Sell :
                                   <span>
+                                    {" "}
                                     eGift (Digital) & Physical Gift card online,
                                     and in-store{" "}
                                   </span>
                                 </li>
                                 <li>
-                                  Omnichannel:
+                                  Omnichannel :
                                   <span>
+                                    {" "}
                                     eGift (Digital) & Physical Gift card online,
                                     and in-store{" "}
                                   </span>
                                 </li>
                                 <li>
-                                  eGift Card:
+                                  eGift Card :
                                   <span>
+                                    {" "}
                                     Customer can send gift card via email,
                                     Social media, SMS/Text, and Print-at-home.
                                   </span>
                                 </li>
                                 <li>
-                                  {" "}
-                                  Physical Gift Card:{" "}
+                                  Physical Gift Card :
                                   <span>
+                                    {" "}
                                     We offer Print-on-demand physical gift card
                                     and fulfilment/shipping services.
                                   </span>
                                 </li>
                                 <li>
-                                  Schedule:
+                                  Schedule :
                                   <span>
                                     {" "}
                                     Out of Stock Gift card & Schedule delivery
@@ -187,12 +184,12 @@ const TabComponent = ({ data }) => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_500 reduce_250px">
                           <div className="customer_engagement_img">
                             <img src={StoreCredit_img} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Store Credit</h2>
@@ -258,12 +255,12 @@ const TabComponent = ({ data }) => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_500 reduce_250px">
                           <div className="customer_engagement_img">
                             <img src={Automation_img} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Automation</h2>
@@ -315,12 +312,12 @@ const TabComponent = ({ data }) => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_500 reduce_250px">
                           <div className="customer_engagement_img">
                             <img src={Coupons_img} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Coupons</h2>
@@ -371,12 +368,12 @@ const TabComponent = ({ data }) => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_500 reduce_250px">
                           <div className="customer_engagement_img">
                             <img src={Loyalty_img} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Loyalty</h2>
@@ -427,12 +424,12 @@ const TabComponent = ({ data }) => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_500 reduce_250px">
                           <div className="customer_engagement_img">
                             <img src={Wallet_img} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Wallet & Mobile Pass</h2>

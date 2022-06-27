@@ -51,6 +51,22 @@
     }
 }
 @media (max-width: 1550px){
+    .seo_features_content .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .seo_features_content  li{
+        font-size: 14px;
+        font-weight: 500;
+        white-space: nowrap;
+        color: #113260;
+        text-align: left;
+      }
+      .seo_features_content  li::marker{
+      content: '✓';
+      color: #51fe23;
+      }
     .s_features_item .s_features_img img{
         max-width: 100%;
     }
@@ -418,6 +434,33 @@
 }
 
 @media (max-width:1199px){
+    .seo_features_content .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .seo_features_content  li{
+        font-size: 14px;
+        font-weight: 500;
+        white-space: nowrap;
+        color: #113260;
+        text-align: left;
+      }
+      .seo_features_content  li::marker{
+      content: '✓';
+      color: #51fe23;
+      }
+    .developer_product_area h1 {
+        font-size: 30px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        color: #282835;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      
+      }
     .s_service_item{
         padding: 50px 22px 40px;
     }
@@ -1294,6 +1337,7 @@
 
 @media (max-width:991px){
 
+
     .sign_in_bg{
         background: none !important;
     }  
@@ -1302,6 +1346,9 @@
     }
     .hide{
         display: none;
+    }
+    .reduce_height{
+        height: 300px !important ;
     }
     
     .btn_get_two {
@@ -1325,6 +1372,22 @@
       content: '✓';
       color: #51fe23;
       
+      }
+      .seo_features_content .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .seo_features_content  li{
+        font-size: 14px;
+        font-weight: 500;
+        white-space: nowrap;
+        color: #113260;
+        text-align: left;
+      }
+      .seo_features_content  li::marker{
+      content: '✓';
+      color: #51fe23;
       }
       
       
@@ -2843,9 +2906,56 @@
     .navbar_fixed .header_area .menu_eight{
         padding: 15px 0px;
     }
+    .agency_service_area{
+        padding: 70px 0px;
+    }
+    .agency_featured_area {
+        padding-top: 120px;
+    }
+    .agency_testimonial_area,.software_featured_area{
+        padding-top: 70px
+    }
+    .agency_testimonial_info .testimonial_slider{
+        padding: 0px 10px 20px;
+    }
+    .agency_testimonial_info .slick-prev{
+        left: -30px;
+      }
+      .agency_testimonial_info .slick-next{
+        right: -30px;
+      }
+    .agency_testimonial_info .testimonial_slider .testimonial_item {
+        height: 200px;
+        z-index: 0;
+        transition: all 0.2s linear;
+        display: flex !important;
+        flex-direction: row;
+    
+      }
+      .agency_testimonial_info .testimonial_slider .testimonial_item .author_img{
+        height: 100%;
+        display: inline-block;
+        overflow: hidden;
+      }
+      
+      .agency_testimonial_info .testimonial_slider .testimonial_item .author_img img {
+        object-fit: cover;
+        /* display: inline-block; */
+      }
 }
 
 @media (max-width:768px){
+    .developer_product_area h1 {
+        font-size: 25px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        color: #282835;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      
+      }
     .sec_title br,.prototype_service_info h2 br,.hosting_title h2 br{
         display: none;
     }
@@ -4077,6 +4187,47 @@
 }
 
 @media (max-width:576px){
+    .reduce_height{
+        height: 250px !important ;
+    }
+
+    .agency_service_area{
+        padding: 70px 0px;
+    }
+    .agency_featured_area {
+        padding-top: 120px;
+    }
+    .agency_testimonial_area,.software_featured_area{
+        padding-top: 70px
+    }
+    .agency_testimonial_info .testimonial_slider{
+        padding: 0px 10px 20px;
+    }
+    .agency_testimonial_info .slick-prev{
+        left: -30px;
+      }
+      .agency_testimonial_info .slick-next{
+        right: -30px;
+      }
+    .agency_testimonial_info .testimonial_slider .testimonial_item {
+        height:450px;
+        z-index: 0;
+        transition: all 0.2s linear;
+        display: flex !important;
+        flex-direction: column;
+    
+      }
+      .agency_testimonial_info .testimonial_slider .testimonial_item .author_img{
+        height: 100%;
+        display: inline-block;
+        overflow: hidden;
+      }
+      
+      .agency_testimonial_info .testimonial_slider .testimonial_item .author_img img {
+        object-fit: cover;
+        /* display: inline-block; */
+      }
+    
     .security_features_inner .s_features_item,.security_features_inner{
         margin-left: 0;
         margin-right: 0;

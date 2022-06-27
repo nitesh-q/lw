@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Sectitle from "./Title/Sectitle";
-import Pinstrips from "../images/trusted-merchents/pinstrip.png";
-import Besttop from "../images/trusted-merchents/bestop.png";
-import Cornor from "../images/trusted-merchents/cornor.png";
-import Cariloha from "../images/trusted-merchents/cariloha.png";
-import fylnn from "../images/trusted-merchents/fylnn.png";
+import Pinstrips from "../../images/trusted-merchents/pinstrip.png";
+import Besttop from "../../images/trusted-merchents/bestop.png";
+import Cornor from "../../images/trusted-merchents/cornor.png";
+import Cariloha from "../../images/trusted-merchents/cariloha.png";
+import fylnn from "../../images/trusted-merchents/fylnn.png";
+import TrustedMarchentsConfig from "../../config/TrustedMarchents.config";
 
 const items = [
   {
@@ -86,13 +86,13 @@ class TrustedMarchents extends Component {
     return (
       <section className="erp_testimonial_area slick_pad ">
         <div className="container">
-          <h3 className="f_size_20 f_600 t_color4 l_height40 text-center">
+          <h3 className="f_size_20 f_600 t_color4 l_height40 text-center mb_15">
             Trusted by 500+ Marchents
           </h3>
           <div className="row">
             <div className="erp_testimonial_info">
               <Slider className="erp_testimonial_slider" {...settings}>
-                {items.map((item) => (
+                {TrustedMarchentsConfig.Marchenct.map((item) => (
                   <div className="erp_testimonial_item">
                     <div className="media">
                       <div className="media-body">

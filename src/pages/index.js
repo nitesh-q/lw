@@ -16,6 +16,7 @@ import "popper.js"
 const IndexPage = () => {
   return <div>
     <Home />
+    
   </div>
   
  ;

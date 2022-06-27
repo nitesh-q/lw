@@ -11,7 +11,7 @@ import Partner_01 from "../images/home3/logo_01.png";
 
 const MarketingAutomation = () => {
   return (
-    <section className="developer_product_area">
+    <section className="developer_product_area pt_0">
       <div className="container">
         <h2 className="f_size_30 f_600 t_color3 l_height40 text-center mb_50">
           Grew your store and drive revenue with Marketing Automation
@@ -62,6 +62,7 @@ const MarketingAutomation = () => {
                     href="#upsell"
                     role="tab"
                     aria-controls="upsell"
+                    
                     aria-selected="true"
                   >
                     Upsell
@@ -134,19 +135,19 @@ const MarketingAutomation = () => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_400 reduce_height">
                           <div className="customer_engagement_img">
                             <img src={Reward} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Refer a Friend</h2>
-                              <h6>
+                              <p>
                                 Boost yo organic seles by adding a customer
                                 refferal program to your eCommerce store
-                              </h6>
+                              </p>
                               <div className="col-lg-9">
                                 <button
                                   className="btn btn_get btn_get_two mt-3"
@@ -171,20 +172,20 @@ const MarketingAutomation = () => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_400 reduce_height">
                           <div className="customer_engagement_img">
                             <img src={OnBoarding} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>New User Signup</h2>
-                              <h6>
+                              <p>
                                 When someone creates a new account, trigger a
                                 one-time discount email immeadiately after
                                 completion of the Sign-up form
-                              </h6>
+                              </p>
 
                               <div className="col-lg-9">
                                 <button
@@ -210,19 +211,19 @@ const MarketingAutomation = () => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_400 reduce_height">
                           <div className="customer_engagement_img">
                             <img src={Upsell} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Sell more products</h2>
-                              <h6>
+                              <p>
                                 Based on Customer's Order data, Send Promotional
                                 Store Credit to Customer{" "}
-                              </h6>
+                              </p>
 
                               <div className="col-lg-9">
                                 <button
@@ -248,19 +249,19 @@ const MarketingAutomation = () => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_400 reduce_height">
                           <div className="customer_engagement_img">
                             <img src={CrossSell} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Sell more related products</h2>
-                              <h6>
+                              <p>
                                 Send Coupons/Gift card specific to relevent
                                 product in the order for future purchase
-                              </h6>
+                              </p>
                               <div className="col-lg-9">
                                 <button
                                   className="btn btn_get btn_get_two mt-3"
@@ -285,19 +286,19 @@ const MarketingAutomation = () => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_400 reduce_height">
                           <div className="customer_engagement_img">
                             <img src={Refund} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Use Store credit to refund customer</h2>
-                              <h6>
+                              <p>
                                 Issue store credit/gift card as refund after
                                 goods return
-                              </h6>
+                              </p>
                               <div className="col-lg-9">
                                 <button
                                   className="btn btn_get btn_get_two mt-3"
@@ -322,19 +323,19 @@ const MarketingAutomation = () => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_400 reduce_height">
                           <div className="customer_engagement_img">
                             <img src={Reward} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Use reward to nurture customers</h2>
-                              <h6>
+                              <p>
                                 Reward users with store credit/gift card after
                                 reaching order count threshold
-                              </h6>
+                              </p>
                               <div className="col-lg-9">
                                 <button
                                   className="btn btn_get btn_get_two mt-3"
@@ -359,20 +360,20 @@ const MarketingAutomation = () => {
                   <section className="customer_engagement_one">
                     <div className="container">
                       <div className="row flex-row-reverse">
-                        <div className="col-lg-6">
+                        <div className="col-lg-7 h_400 reduce_height">
                           <div className="customer_engagement_img">
                             <img src={Reward} alt="features_img" />
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-5">
                           <Fade bottom cascade>
                             <div className="customer_engagement_content ">
                               <h2>Use reward to retain customers</h2>
-                              <h6>
+                              <p>
                                 Automatically trigger a retention campaign when
                                 users meet segment conditions such as inactive
                                 or canceled
-                              </h6>
+                              </p>
 
                               <div className="col-lg-9">
                                 <button

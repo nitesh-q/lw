@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import AppLogo from "../images/logo/logo.png";
+import AppLogo from "../../images/logo/logo.png";
 import Sticky from "react-stickynode";
 
 class CustomNavbar extends Component {
@@ -41,7 +41,7 @@ class CustomNavbar extends Component {
               >
                 <ul className={`navbar-nav menu ml-auto ${nClass}`}>
                   <li className="nav-item">
-                    <Link title="Pricing" className="nav-link" to="/Contact">
+                    <Link title="home" className="nav-link" to="/">
                       Home
                     </Link>
                   </li>
@@ -56,7 +56,9 @@ class CustomNavbar extends Component {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Service<i className="ti-angle-down"></i>
+                      Service
+                        <i className="ti-angle-down icon"></i>
+                      
                     </Link>
                     <ul role="menu" className=" dropdown-menu" aria-labelledby="navbarDropdown">
                       <li className="nav-item">
@@ -64,7 +66,7 @@ class CustomNavbar extends Component {
                           exact
                           title="Service"
                           className="nav-link"
-                          to="/Service"
+                          to="/giftcard"
                         >
                           Service
                         </Link>
@@ -96,7 +98,7 @@ class CustomNavbar extends Component {
                       aria-expanded="false"
                       to="#"
                     >
-                      Resources<i className="ti-angle-down"></i>
+                      Resources<i className="ti-angle-down icon"></i>
                     </Link>
                     <ul role="menu" className=" dropdown-menu">
                       <li className="nav-item">
@@ -146,7 +148,7 @@ class CustomNavbar extends Component {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Developers<i className="ti-angle-down"></i>
+                      Developers<i className="ti-angle-down icon"></i>
                     </a>
                     <ul className="dropdown-menu">
                       <li className="nav-item">
