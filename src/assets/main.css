@@ -417,7 +417,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .sec_pad {
-  padding: 120px 250px;
+  padding: 120px 190px;
 }
 .slick_pad{
   padding: 0px 50px;
@@ -499,10 +499,12 @@ height: 30px;
 }
 .btn_get_two {
   -webkit-box-shadow: none;
-  box-shadow: 0 0 50px;
-  background: #5e2ced;
-  border-color: #5e2ced;
+  /* box-shadow: 0 0 50px; */
+  background: #7444FD;
+  border-color: #7444FD;
   color: #fff;
+  /* box-shadow: 0px 20px 30px 0px rgb(61 100 244 / 16%); */
+
 }
 
 .btn_get_two:hover {
@@ -6756,10 +6758,10 @@ height: 30px;
 }
 
 .seo_features_content h2 {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 35px;
+  /* line-height: 40px; */
   color: #7444FD;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 25px;
 }
 .seo_features_content h3 {
@@ -6771,9 +6773,9 @@ height: 30px;
 }
 
 .seo_features_content p {
-  font-size: 16px;
-  color: #6a7695;
-  font-weight: 300;
+  font-size: 24pxpx;
+  color:  #677294;
+  font-weight: 600;
 }
 
 .seo_features_content h6 {
@@ -6788,6 +6790,18 @@ height: 30px;
   margin-top: 40px;
 }
 
+.seo_features_content  li{
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #113260;
+  text-align: end;
+}
+.seo_features_content li::marker{
+content: '✓';
+color: #51fe23;
+
+}
 .seo_features_content .seo_features_item {
   padding-right: 150px;
   margin-top: 50px;
@@ -6826,11 +6840,11 @@ height: 30px;
   position: relative;
   z-index: 1;
 }
-
+/* 
 .seo_features_img img {
   margin-right: -80px;
   width: 100%;
-}
+} */
 
 .seo_features_img .round_circle {
   position: absolute;
