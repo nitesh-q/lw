@@ -33,7 +33,7 @@ class CustomNavbar extends Component {
                 </span>
               </button>
               <Link className="navbar-brand" to="/">
-                <img  src={AppLogo} alt="logo" />
+                <img src={AppLogo} alt="logo" />
               </Link>
               <div
                 className={`collapse navbar-collapse justify-content-end `}
@@ -56,11 +56,14 @@ class CustomNavbar extends Component {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Service
-                        <i className="ti-angle-down icon"></i>
-                      
+                      Products
+                      <i className="ti-angle-down icon"></i>
                     </Link>
-                    <ul role="menu" className=" dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul
+                      role="menu"
+                      className=" dropdown-menu"
+                      aria-labelledby="navbarDropdown"
+                    >
                       <li className="nav-item">
                         <Link
                           exact
@@ -68,7 +71,7 @@ class CustomNavbar extends Component {
                           className="nav-link"
                           to="/giftcard"
                         >
-                          Service
+                          Gift Card
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -78,7 +81,7 @@ class CustomNavbar extends Component {
                           className="nav-link"
                           to="/ServiceDetails"
                         >
-                          Service Details
+                          Product-2
                         </Link>
                       </li>
                     </ul>
@@ -107,7 +110,7 @@ class CustomNavbar extends Component {
                           className="nav-link"
                           to="/Portfolio-2col"
                         >
-                         Resources-1
+                          Resources-1
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -125,7 +128,7 @@ class CustomNavbar extends Component {
                           className="nav-link"
                           to="/Portfolio-fullwidth-4col"
                         >
-                        Resources-3
+                          Resources-3
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -134,7 +137,7 @@ class CustomNavbar extends Component {
                           className="nav-link"
                           to="/PortfolioSingle"
                         >
-                        Resources-4
+                          Resources-4
                         </Link>
                       </li>
                     </ul>
@@ -158,12 +161,12 @@ class CustomNavbar extends Component {
                       </li>
                       <li className="nav-item">
                         <Link to="/BlogGridPage" className="nav-link">
-                        Developer-2
+                          Developer-2
                         </Link>
                       </li>
                       <li className="nav-item">
                         <Link to="/BlogSingle" className="nav-link">
-                        Developer-3
+                          Developer-3
                         </Link>
                       </li>
                     </ul>
@@ -181,10 +184,10 @@ class CustomNavbar extends Component {
                   Book a Demo
                 </a>
               </div>
-              <div className="sign_in  bg_color">
-                <ul className={`navbar-nav menu ml-auto pl_10 sign_in_bg`}>
+              <div className="sign_in  ">
+                <ul className={` navbar-nav sign_in_bg`}>
                   <li className="nav-item">
-                    <Link title="Pricing" className="nav-link" to="/Contact">
+                    <Link title="Pricing" className="nav-link" to="/giftcard">
                       Sign In
                     </Link>
                   </li>

@@ -47,7 +47,7 @@ export const CustomerEngagement = {
     },
     {
       id: "coupons",
-      label: "Coupans",
+      label: "Coupons",
       selected: "false",
     },
     {

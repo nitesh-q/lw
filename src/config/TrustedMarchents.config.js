@@ -23,7 +23,7 @@ export default {
     },
     {
       id: 6,
-      image: Icons.Besttop.default,
+      image: Icons.Cariloha.default,
     },
   ]
 }

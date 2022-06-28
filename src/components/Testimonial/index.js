@@ -18,7 +18,7 @@ class Testimonial extends Component {
       speed: 500,
       arrows: true,
       autoplay: true,
-      autoplaySpeed: 1000000,
+      autoplaySpeed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1,
     };
@@ -45,7 +45,7 @@ class Testimonial extends Component {
                       <h6 className="pr_20 pl_20 mt_20">{item.Name}</h6>
                       <img
                         className="pr_20 pl_20 h_30 mt_20"
-                        src={Bestop}
+                        src={item.company}
                         alt=""
                       />
                     </div>

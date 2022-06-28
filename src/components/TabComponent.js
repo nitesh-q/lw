@@ -13,7 +13,7 @@ const TabComponent = ({ data }) => {
     <section className="developer_product_area sec_pad">
       <div className="container">
         {data.Head.map((item) => (
-          <h1 className="text-center mb_50">{item.Title}</h1>
+          <h2 className="f_size_30 f_600 t_color3 l_height40 text-center mb_50">{item.Title}</h2>
         ))}
 
         <div className="row">

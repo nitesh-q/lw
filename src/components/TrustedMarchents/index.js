@@ -1,38 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Pinstrips from "../../images/trusted-merchents/pinstrip.png";
-import Besttop from "../../images/trusted-merchents/bestop.png";
-import Cornor from "../../images/trusted-merchents/cornor.png";
-import Cariloha from "../../images/trusted-merchents/cariloha.png";
-import fylnn from "../../images/trusted-merchents/fylnn.png";
 import TrustedMarchentsConfig from "../../config/TrustedMarchents.config";
 
-const items = [
-  {
-    id: 1,
-    image: Pinstrips,
-  },
-  {
-    id: 2,
-    image: Besttop,
-  },
-  {
-    id: 3,
-    image: Cariloha,
-  },
-  {
-    id: 4,
-    image: Cornor,
-  },
-  {
-    id: 5,
-    image: fylnn,
-  },
-  {
-    id: 6,
-    image: Besttop,
-  },
-];
 
 class TrustedMarchents extends Component {
   render() {
@@ -42,7 +11,7 @@ class TrustedMarchents extends Component {
       speed: 500,
       arrows: true,
       autoplay: true,
-      autoplaySpeed: 200000,
+      autoplaySpeed: 2000,
       slidesToShow: 5,
       slidesToScroll: 1,
       responsive: [
@@ -70,14 +39,14 @@ class TrustedMarchents extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 1.8,
+            slidesToShow: 2,
             slidesToScroll: 1,
           },
         },
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: .9,
+            slidesToShow: .85,
             slidesToScroll: 1,
           },
         },

@@ -20,7 +20,7 @@ const integrations = [
 const IntegrationCard = ({title, icon}) => {
   return (<> 
     <Fade bottom duration={500}>
-      <div className="col-lg-4 col-md-6">
+      <div className="col-lg-4 col-md-6 space">
         <div className="home_integration_item">
           <a href=".#">
             <img src={icon } alt="" />
