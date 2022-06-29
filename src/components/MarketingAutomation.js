@@ -13,10 +13,9 @@ const MarketingAutomation = () => {
   return (
     <section className="developer_product_area pt_0">
       <div className="container">
-        <h2 className="f_size_30 f_600 t_color3 l_height40 text-center mb_50">
+        {/* <h2 className="f_size_30 f_600 t_color3 l_height40 text-center mb_50">
           Grow your store and drive revenue with Marketing Automation
-        </h2>
-
+        </h2> */}
         <div className="row">
           <div className="col-lg-12 d-flex align-items-center">
             <div className="developer_product_content">

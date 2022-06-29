@@ -5,10 +5,14 @@
     .erp_banner_area_two .animation_img{
         margin-top: -320px;
     }
+ 
 }
 @media(min-width:991px){
-    .sign_in{
+    .demo_btn{
         display:none;
+        }
+        .showfooter{
+            display:none
         }
         
 }
@@ -49,6 +53,24 @@
         right: -130px;
         bottom: 330px;
     }
+}
+@media (max-width:2000px){
+    .seo_features_content .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .seo_features_content  li{
+        font-size: 14px;
+        font-weight: 500;
+        white-space: nowrap;
+        color: #113260;
+        text-align: left;
+      }
+      .seo_features_content  li::marker{
+      content: '✓';
+      color: #51fe23;
+      }
 }
 @media (max-width: 1550px){
     .seo_features_content .flex{
@@ -390,6 +412,8 @@
     }
 }
 
+
+
 @media (max-width:1350px){
     .payment_banner_content {
         max-width: 556px;
@@ -433,7 +457,10 @@
     
 }
 
-@media (max-width:1199px){
+@media  (max-width:1199px){
+    .menu_one .btn_get {
+        margin-left: 20px;
+      }
     .seo_features_content .flex{
         display: flex;
         flex-direction: column;
@@ -1337,7 +1364,9 @@
 
 @media (max-width:991px){
 
-
+    .hidefooter{
+        display: none;
+    }
     /* .sign_in_bg{
         background: none !important;
     }   */
@@ -1371,11 +1400,11 @@
         text-align: left;
         margin-top: 10px;
       }
-      .try_call_to_action_area li::marker{
+      /* .try_call_to_action_area li::marker{
       content: '✓';
       color: #51fe23;
       
-      }
+      } */
       .seo_features_content .flex{
         display: flex;
         flex-direction: column;
@@ -5081,6 +5110,9 @@
 }
 
 @media (max-width:480px){
+    .erp_testimonial_item .media img{
+        width: 185px;
+    }
     .feedback_area_three{
         height: auto;
     }

@@ -12,6 +12,7 @@ import {
 } from "../../components";
 import TestimonialConfig from "../../config/testimonial.config";
 import BannerConfig from "../../config/Banner.config";
+import Header from "../../components/Common/Header";
 
 const Home = () => (
   <Layout>
@@ -19,9 +20,13 @@ const Home = () => (
       BannerConfig={BannerConfig.Home}
       Supported={true}
       StartedFreeForm={true}
+      AllService={false}
     />
     <TrustedMarchents />
     <TabComponent data={CustomerEngagement} />
+    <Header
+      title={"Grow your store and drive revenue with Marketing Automation "}
+    />
     <MarketingAutomation />
     <Testimonial TestimonialConfig={TestimonialConfig} bgColor={`bg_color`} />
     <Integration

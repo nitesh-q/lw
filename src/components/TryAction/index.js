@@ -3,7 +3,7 @@ const TryAction = () => (
   <section className=" sec_pad pt_0">
     <div className="container try_call_to_action_area">
       <div className="row w-100">
-        <div className="col-lg-6">
+        <div className="col-lg-6  ">
           <div className="try_call_action_text">
             <h2>Try 99minds now</h2>
             <p>
@@ -35,9 +35,11 @@ const TryAction = () => (
           </div>
 
           <div className="row w-100 service ">
+          
             <li className="col "> No Credit Card Reaquired</li>
             <li className="col"> Free Sign Up</li>
             <li className="col"> 24/7 Support</li>
+          
           </div>
         </div>
       </div>

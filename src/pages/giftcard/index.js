@@ -51,6 +51,9 @@ const GiftCard = () => {
       <Banner
         BannerConfig={BannerConfig.GiftCard}
         bannerTitle={`bannerTitle`}
+        AllService={true}
+        mClass={'mb_90'}
+
       />
       <TrustedMarchents />
       <section className="security_integration_area chat_integration_area pb_0">

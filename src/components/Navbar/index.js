@@ -180,16 +180,23 @@ class CustomNavbar extends Component {
                     </Link>
                   </li>
                 </ul>
-                <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
-                  Book a Demo
+                <a className={`btn_get btn_hover demo`} href="#get-app">
+                 Book a Demo
                 </a>
+                <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
+                  Sign Up
+                </a>
+                
               </div>
-              <div className="sign_in  ">
+              <div className="demo_btn  ">
                 <ul className={` navbar-nav sign_in_bg`}>
                   <li className="nav-item">
-                    <Link title="Pricing" className="nav-link" to="/giftcard">
-                      Sign In
-                    </Link>
+                    <a
+                      className={`btn_get btn_hover `}
+                      href="#get-app"
+                    >
+                      Book a Demo
+                    </a>
                   </li>
                 </ul>
               </div>

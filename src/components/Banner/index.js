@@ -4,7 +4,7 @@ import Icons from "../../shared/assets";
 import { SupportedBrand, StartedFree } from "../../components";
 import { Reveal } from "react-reveal";
 
-const Banner = ({ BannerConfig, Supported, StartedFreeForm, bannerTitle }) => {
+const Banner = ({ BannerConfig, Supported, StartedFreeForm, bannerTitle,AllService,mClass }) => {
   return (
     <section className="seo_features_one bg_color sec_pad">
       <div className="container">
@@ -12,11 +12,14 @@ const Banner = ({ BannerConfig, Supported, StartedFreeForm, bannerTitle }) => {
           <div className="col-lg-7 ">
             {BannerConfig.map((i) => {
               return (
-            <Reveal effect="fadeInRight" duration={2000}>
-
-                <div className="seo_features_img">
-                  <img className="img-fluid" src={i.image} alt="features_img" />
-                </div>
+                <Reveal effect="fadeInRight" duration={2000}>
+                  <div className="seo_features_img">
+                    <img
+                      className="img-fluid"
+                      src={i.image}
+                      alt="features_img"
+                    />
+                  </div>
                 </Reveal>
               );
             })}
@@ -51,15 +54,21 @@ const Banner = ({ BannerConfig, Supported, StartedFreeForm, bannerTitle }) => {
                         className="agency_banner_btn_two wow fadeInLeft"
                         data-wow-delay="0.7s"
                       >
-                       learn more
+                        learn more
                       </a>
                     </div>
                   )}
                 </div>
-                <div className="row mt_15 flex ">
+                <div className={`row mt_15 flex ${mClass} `}>
                   <li className="col "> No Credit Card Reaquired</li>
-                  <li className="col"> Free Sign Up</li>
-                  <li className="col"> 24/7 Support</li>
+                  {AllService ? (
+                    <>
+                      <li className="col"> Free Sign Up</li>
+                      <li className="col"> 24/7 Support</li>
+                    </>
+                  ) : (
+                    ""
+                  )}
                 </div>
                 {Supported ? <SupportedBrand /> : ""}
               </div>

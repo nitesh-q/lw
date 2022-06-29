@@ -15,6 +15,7 @@ const Icons = {
   Giftcard: require("../images/home/giftcard.png"),
   Author_01: require("../images/testimonials/01.png"),
   Besttop_01: require("../images/testimonials/bestop1.png"),
+  GiftBanner: require("../images/giftcard/giftBanner.png"),
   Giftcard_01: require("../images/giftcard/giftcard.png"),
   Ellipse_01: require("../images/giftcard/ellipse_01.png"),
   Ellipse_02: require("../images/giftcard/ellipse_02.png"),
