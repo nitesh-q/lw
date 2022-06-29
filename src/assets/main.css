@@ -6863,7 +6863,7 @@ height: 30px;
   text-align: end;
 }
 .seo_features_content li::marker{
-content: '✓';
+  content: url(../images/icon/tick-Arrow.svg);
 color: #51fe23;
 }
 .seo_features_content .seo_features_item {
@@ -9792,6 +9792,7 @@ color: #051441;
   transform: translateY(-50%);
   cursor: pointer;
   text-align: center;
+  z-index: 1;
 }
 .agency_testimonial_info .slick-prev{
   left: -100px;
@@ -11511,11 +11512,30 @@ color: #051441;
   color: #ffffff;
   text-align: end;
 }
+/* .try_call_to_action_area li::after{
+background: url(../images/icon/tick-Arrow.svg);
+color: #51fe23;
+position: absolute;
+} */
 .try_call_to_action_area li::marker{
-content: '✓';
+content: url(../images/icon/tick-Arrow.svg);
 color: #51fe23;
 
-}
+position: absolute;
+  }
+/* .try_call_to_action_area li::before {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 0;
+  top: 3px;
+  content: "";
+  color: red;
+  background: url(../images/icon/tick-Arrow.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} */
 
 
 .try_call_action_text {
@@ -19925,6 +19945,7 @@ a .h_head:hover {
   transform: translateY(-50%);
   cursor: pointer;
   text-align: center;
+  z-index: 1;
 }
 .erp_testimonial_area .slick-track{
   display: flex;

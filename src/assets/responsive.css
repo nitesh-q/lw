@@ -68,7 +68,7 @@
         text-align: left;
       }
       .seo_features_content  li::marker{
-      content: '✓';
+      content: url(../images/icon/tick-Arrow.svg);
       color: #51fe23;
       }
 }
@@ -86,7 +86,8 @@
         text-align: left;
       }
       .seo_features_content  li::marker{
-      content: '✓';
+        content: url(../images/icon/tick-Arrow.svg);
+
       color: #51fe23;
       }
     .s_features_item .s_features_img img{
@@ -474,7 +475,8 @@
         text-align: left;
       }
       .seo_features_content  li::marker{
-      content: '✓';
+        content: url(../images/icon/tick-Arrow.svg);
+
       color: #51fe23;
       }
     .developer_product_area h1 {
@@ -1418,7 +1420,7 @@
         text-align: left;
       }
       .seo_features_content  li::marker{
-      content: '✓';
+      content: url(../images/icon/tick-Arrow.svg);
       color: #51fe23;
       }
       
