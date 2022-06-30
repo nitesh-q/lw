@@ -6,11 +6,14 @@ import {
   Banner,
   TrustedMarchents,
   Features,
+  Header,
+  TabComponent,
 } from "../../components";
 import Layout from "../../components/Layout";
-import TestimonialConfig from "../../config/testimonial.config";
-import BannerConfig from "../../config/Banner.config";
+// import TestimonialConfig from "../../config/testimonial.config";
+// import BannerConfig from "../../config/banner.config";
 import Icons from "../../shared/assets";
+import { TestimonialConfig, BannerConfig, GiftCardConfig } from "../../config";
 
 const report = [
   {
@@ -52,11 +55,10 @@ const GiftCard = () => {
         BannerConfig={BannerConfig.GiftCard}
         bannerTitle={`bannerTitle`}
         AllService={true}
-        mClass={'mb_90'}
-
+        mClass={"mb_90"}
       />
       <TrustedMarchents />
-      <section className="security_integration_area chat_integration_area pb_0">
+      <section className="security_integration_area chat_integration_area pb_0 pt_200">
         <div className="container">
           <div className="chat_title text-center">
             <h2 className="wow fadeInUp">
@@ -120,8 +122,17 @@ const GiftCard = () => {
         desc={sale}
         url="#"
       />
+       <Header
+      title={"Gift Card & Platform features"}
+    />
+    <TabComponent Tab={GiftCardConfig} pClass={"pt_0"} />
       <Testimonial TestimonialConfig={TestimonialConfig} bgColor={`bg_color`} />
-      <Integration />
+      <Integration
+        title={"Integrations"}
+        description={
+          "Empower Your Brick & Click Store With Powerful Integrations"
+        }
+      />
       <TryAction />
     </Layout>
   );

@@ -27,6 +27,7 @@ const Icons = {
   Ellipse_01: require("../images/giftcard/ellipse_01.png"),
   Ellipse_02: require("../images/giftcard/ellipse_02.png"),
   Report: require("../images/giftcard/report.png"),
+  Reload:require("../images/giftcard/reload.png")
 };
 
 export default Icons;

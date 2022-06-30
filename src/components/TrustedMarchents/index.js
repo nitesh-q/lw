@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import TrustedMarchentsConfig from "../../config/TrustedMarchents.config";
+import {TrustedMarchentsConfig} from "../../config";
 
 
 class TrustedMarchents extends Component {

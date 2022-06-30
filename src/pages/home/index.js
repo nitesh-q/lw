@@ -1,6 +1,4 @@
 import React from "react";
-import { BannerData, CustomerEngagement } from "../../config/constants";
-import TabComponent from "../../components/TabComponent";
 import MarketingAutomation from "../../components/MarketingAutomation";
 import Layout from "../../components/Layout";
 import {
@@ -9,11 +7,10 @@ import {
   Testimonial,
   TrustedMarchents,
   TryAction,
+  Header,
+  TabComponent,
 } from "../../components";
-import TestimonialConfig from "../../config/testimonial.config";
-import BannerConfig from "../../config/Banner.config";
-import homeTabConfig from "../../config/homeTab.config";
-import Header from "../../components/Common/Header";
+import { HomeTabConfig1,BannerConfig,TestimonialConfig } from "../../config";
 
 const Home = () => (
   <Layout>
@@ -24,7 +21,7 @@ const Home = () => (
       AllService={false}
     />
     <TrustedMarchents />
-    <TabComponent Tab={homeTabConfig} pClass={'pt_200'} />
+    <TabComponent Tab={HomeTabConfig1} pClass={"pt_200"} />
     <Header
       title={"Grow your store and drive revenue with Marketing Automation "}
     />

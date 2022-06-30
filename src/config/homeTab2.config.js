@@ -1,10 +1,11 @@
 import Icons from "../shared/assets";
 
 export default {
+    
   Head: [{ Title: "Customer Engagement & Retention Platform" }],
   Pannel: [
     {
-      id: "giftcard",
+      id: "refferal1",
       label: "Gift Card",
       selected: "true",
       image: Icons.Giftcard_img.default,

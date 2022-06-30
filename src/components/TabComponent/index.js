@@ -2,9 +2,8 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
 
-
 const TabComponent = ({ Tab, pClass }) => {
-  const [activeTab ,setActiveTab] = useState(Tab.Pannel[0].id) 
+  const [activeTab, setActiveTab] = useState(Tab.Pannel[0].id);
   return (
     <section className={`developer_product_area sec_pad ${pClass} `}>
       <div className="container">
@@ -15,7 +14,7 @@ const TabComponent = ({ Tab, pClass }) => {
         ))}
 
         <div className="row">
-          <div className="col-lg-12 d-flex align-items-center">
+          <div className="col-lg-12 d-flex align-items-center justify-content-center">
             <div className="developer_product_content">
               <ul
                 className="nav nav-tabs develor_tab mb-30 border_none"
@@ -23,9 +22,15 @@ const TabComponent = ({ Tab, pClass }) => {
                 role="tablist"
               >
                 {Tab.Pannel.map((item, index) => (
-                  <li className="nav-item" key={index} onClick={()=>setActiveTab(item.id)}>
+                  <li
+                    className="nav-item"
+                    key={index}
+                    onClick={() => setActiveTab(item.id)}
+                  >
                     <a
-                      className={`nav-link ${activeTab === item.id ? "active" : ""}`}
+                      className={`nav-link ${
+                        activeTab === item.id ? "active" : ""
+                      }`}
                       data-tab={`${item.id}-tab`}
                       id={`${item.id}-tab`}
                       data-bs-toggle="tab"
@@ -33,69 +38,79 @@ const TabComponent = ({ Tab, pClass }) => {
                       role="tab"
                       aria-controls={item.id}
                       aria-selected={item.selected}
-                      
                     >
                       {item.label}
                     </a>
                   </li>
                 ))}
               </ul>
-              {Tab.Pannel.map((item, index) => (
-                activeTab === item.id ? 
-                <div className="tab-content developer_tab_content">
-                  <div
-                    className={`tab-pane fade show active`}
-                    id={item.id}
-                    role="tabpanel"
-                    aria-labelledby={`${item.id}-tab`}
-                  >
-                    <section className="customer_engagement_one">
-                      <div className="container">
-                        <div className="row flex-row-reverse">
-                          <div className="col-lg-7 h_500 reduce_height">
-                            <div className="customer_engagement_img">
-                              <img src={item.image} alt="features_img" />
+              {Tab.Pannel.map((item, index) =>
+                activeTab === item.id ? (
+                  <div className="tab-content developer_tab_content">
+                    <div
+                      className={`tab-pane fade show active`}
+                      id={item.id}
+                      role="tabpanel"
+                      aria-labelledby={`${item.id}-tab`}
+                    >
+                      <section className="customer_engagement_one">
+                        <div className="container">
+                          <div className="row flex-row-reverse">
+                            <div className="col-lg-7 h_500 reduce_height">
+                              <div className="customer_engagement_img">
+                              <Fade bottom cascade  >
+                                <img src={item.image} alt="features_img" />
+                                </Fade>
+                              </div>
+                            </div>
+                            <div className="col-lg-5 ">
+                              <Fade bottom cascade  >
+                                <div className="customer_engagement_content ">
+                                  <h2>{item.title}</h2>
+                                  <h3>{item.title2}</h3>
+                                  <h6>{item.description1}</h6>
+                                  {item.subTitle.map((i) => {
+                                    return (
+                                      <ul>
+                                        <li>
+                                          {i.title}
+                                          <span>{i.description}</span>
+                                        </li>
+                                      </ul>
+                                    );
+                                  })}
+                                  <h6>{item.description2}</h6>
+
+                                  <div className="col-lg-9">
+                                    <button
+                                      className="btn btn_get btn_get_two mt-3"
+                                      type="submit"
+                                    >
+                                      Get Started for Free
+                                    </button>
+                                  </div>
+                                </div>
+                              </Fade>
                             </div>
                           </div>
-                          <div className="col-lg-5 ">
-                            <Fade bottom cascade>
-                              <div className="customer_engagement_content ">
-                                <h2>{item.title}</h2>
-                                <h3>{item.title2}</h3>
-                                <h6>{item.description1}</h6>
-                                {item.subTitle.map((i)=>{
-                                  return(
-                                    <ul>
-                                    <li>
-                                      {i.title}
-                                      <span>
-                                        {i.description}
-                                      </span>
-                                    </li>
-                                  </ul>
-                                  )
-                                })}
-                               <h6>{item.description2}</h6>
-
-                                <div className="col-lg-9">
-                                  <button
-                                    className="btn btn_get btn_get_two mt-3"
-                                    type="submit"
-                                  >
-                                    Get Started for Free
-                                  </button>
-                                </div>
-                              </div>
-                            </Fade>
-                          </div>
                         </div>
-                      </div>
-                    </section>
+                      </section>
+                    </div>
                   </div>
-                </div>
-                :""
-              ))}
-              {/* <div className="tab-content developer_tab_content">
+                ) : (
+                  ""
+                )
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+export default TabComponent;
+{
+  /* <div className="tab-content developer_tab_content">
                 <div
                   className="tab-pane fade show active"
                   id="giftcard"
@@ -510,12 +525,5 @@ const TabComponent = ({ Tab, pClass }) => {
                     </div>
                   </section>
                 </div>
-              </div> */}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-export default TabComponent;
+              </div> */
+}
