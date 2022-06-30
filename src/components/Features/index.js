@@ -43,10 +43,10 @@ const Features = ({
           <div className={col2}>
             <div className={`chat_features_content ${pClass}`}>
               <h2>{title}</h2>
-              {desc.map((i) => {
+              {desc.map((i,index) => {
                 return (
                   <ul>
-                    <li>{i.desc}</li>
+                    <li key={index}>{i.desc}</li>
                   </ul>
                 );
               })}

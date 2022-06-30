@@ -50,12 +50,13 @@ class Footer extends Component {
         <div className="new_footer_top">
           <div className="container">
             <div className="row">
-              {footerConfig.CompanyWidget.map((widget) => {
+              {footerConfig.CompanyWidget.map((widget,index) => {
                 return (
-                  <RevealWrapper className={"col-lg-3 col-md-6"}>
+                  <RevealWrapper key={index} className={"col-lg-3 col-md-6"}>
                     <div
                       className="f_widget company_widget wow fadeInLeft"
                       data-wow-delay="0.2s"
+                      
                     >
                       <h3 className="f-title f_600 t_color f_size_18">
                         {widget.title}
@@ -91,20 +92,21 @@ class Footer extends Component {
                   </RevealWrapper>
                 );
               })}
-              {footerConfig.AboutWidget.map((widget) => {
+              {footerConfig.AboutWidget.map((widget,index) => {
                 return (
-                  <RevealWrapper className={"col-lg-2 col-md-6"}>
+                  <RevealWrapper  key={index} className={"col-lg-2 col-md-6"}>
                     <div
                       className="f_widget about-widget pl_40 wow fadeInLeft"
                       data-wow-delay="0.4s"
+                     
                     >
                       <h3 className="f-title f_600 t_color f_size_18">
                         {widget.title}
                       </h3>
                       <ul className="list-unstyled f_list">
-                        {widget.menuItems.map((item) => {
+                        {widget.menuItems.map((item,index) => {
                           return (
-                            <li key={item.id}>
+                            <li key={index}>
                               <Link to="/">{item.text}</Link>
                             </li>
                           );
@@ -114,21 +116,21 @@ class Footer extends Component {
                   </RevealWrapper>
                 );
               })}
-              {footerConfig.SocialLinks.map((widget) => {
+              {footerConfig.SocialLinks.map((widget,index) => {
                 return (
-                  <RevealWrapper className={"col-lg-3 col-md-6"}>
-                    <div
+                  <RevealWrapper key={index} className={"col-lg-3 col-md-6"}>
+                    <div 
                       className="f_widget social-widget  wow fadeInLeft"
                       data-wow-delay="0.4s"
                     >
-                      <h3 className="f-title f_600 t_color f_size_18">
+                      <h3  className="f-title f_600 t_color f_size_18">
                         {widget.title}
                       </h3>
                       <div className="f_social_icon">
-                        {widget.menuItems.map((item) => {
+                        {widget.menuItems.map((item,index) => {
                           return (
-                            <Link to="/" key={item.id}>
-                              <i className={item.icon}></i>
+                            <Link to="/" key={index} >
+                              <i  className={item.icon}></i>
                             </Link>
                           );
                         })}

@@ -1,5 +1,4 @@
 import React from "react";
-import MarketingAutomation from "../../components/MarketingAutomation";
 import Layout from "../../components/Layout";
 import {
   Banner,
@@ -10,7 +9,12 @@ import {
   Header,
   TabComponent,
 } from "../../components";
-import { HomeTabConfig1,BannerConfig,TestimonialConfig } from "../../config";
+import {
+  HomeTabConfig1,
+  BannerConfig,
+  TestimonialConfig,
+  HomeTabConfig2,
+} from "../../config";
 
 const Home = () => (
   <Layout>
@@ -25,7 +29,7 @@ const Home = () => (
     <Header
       title={"Grow your store and drive revenue with Marketing Automation "}
     />
-    <MarketingAutomation />
+    <TabComponent Tab={HomeTabConfig2} pClass={"pt_0"} rClass={"reduce_height"} />
     <Testimonial TestimonialConfig={TestimonialConfig} bgColor={`bg_color`} />
     <Integration
       title={"Integrations"}

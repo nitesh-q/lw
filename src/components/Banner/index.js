@@ -4,20 +4,28 @@ import Icons from "../../shared/assets";
 import { SupportedBrand, StartedFree } from "../../components";
 import { Reveal } from "react-reveal";
 
-const Banner = ({ BannerConfig, Supported, StartedFreeForm, bannerTitle,AllService,mClass }) => {
+const Banner = ({
+  BannerConfig,
+  Supported,
+  StartedFreeForm,
+  bannerTitle,
+  AllService,
+  mClass,
+}) => {
   return (
     <section className="seo_features_one bg_color sec_pad">
       <div className="container">
         <div className="row flex-row-reverse">
           <div className="col-lg-7 ">
-            {BannerConfig.map((i) => {
+            {BannerConfig.map((i, index) => {
               return (
                 <Reveal effect="fadeInRight" duration={3000}>
                   <div className="seo_features_img">
                     <img
                       className="img-fluid"
+                      key={index}
                       src={i.image}
-                      alt="features_img"
+                      alt={i.id}
                     />
                   </div>
                 </Reveal>
@@ -27,10 +35,12 @@ const Banner = ({ BannerConfig, Supported, StartedFreeForm, bannerTitle,AllServi
           <div className="col-lg-5">
             <Fade bottom cascade>
               <div className="seo_features_content ">
-                {BannerConfig.map((i) => {
+                {BannerConfig.map((i, index) => {
                   return (
                     <>
-                      <h2 className={`${bannerTitle}`}>{i.title}</h2>
+                      <h2 key={index} className={`${bannerTitle}`}>
+                        {i.title}
+                      </h2>
                       <h2>{i.subTitle}</h2>
                       <p>{i.description}</p>
                     </>

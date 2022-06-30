@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import {TrustedMarchentsConfig} from "../../config";
-
+import { TrustedMarchentsConfig } from "../../config";
 
 class TrustedMarchents extends Component {
   render() {
@@ -46,7 +45,7 @@ class TrustedMarchents extends Component {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: .85,
+            slidesToShow: 0.85,
             slidesToScroll: 1,
           },
         },
@@ -61,8 +60,8 @@ class TrustedMarchents extends Component {
           <div className="row">
             <div className="erp_testimonial_info">
               <Slider className="erp_testimonial_slider" {...settings}>
-                {TrustedMarchentsConfig.Marchenct.map((item) => (
-                  <div className="erp_testimonial_item">
+                {TrustedMarchentsConfig.Marchenct.map((item, index) => (
+                  <div key={index} className="erp_testimonial_item">
                     <div className="media">
                       <div className="media-body">
                         <img src={item.image} alt={item.id} />
@@ -79,8 +78,6 @@ class TrustedMarchents extends Component {
   }
 }
 export default TrustedMarchents;
-
-
 
 // import React from 'react';
 // // import Sectitle from './Title/Sectitle';

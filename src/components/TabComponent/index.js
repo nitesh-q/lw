@@ -1,14 +1,65 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
+import Slider from "react-slick";
 
-const TabComponent = ({ Tab, pClass }) => {
+const TabComponent = ({ Tab, pClass, rClass }) => {
   const [activeTab, setActiveTab] = useState(Tab.Pannel[0].id);
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 20000,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    // responsive: [
+    //   {
+    //     breakpoint: 1200,
+    //     settings: {
+    //       slidesToShow: 4,
+    //       slidesToScroll: 2,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 2,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       slidesToShow: 1.9,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 1.9,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 0.85,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
+  };
   return (
     <section className={`developer_product_area sec_pad ${pClass} `}>
       <div className="container">
-        {Tab.Head.map((item) => (
-          <h2 className="f_size_30 f_600 t_color3 l_height40 text-center mb_50">
+        {Tab.Head.map((item, index) => (
+          <h2
+            key={index}
+            className="f_size_30 f_600 t_color3 l_height40 text-center mb_50"
+          >
             {item.Title}
           </h2>
         ))}
@@ -22,31 +73,36 @@ const TabComponent = ({ Tab, pClass }) => {
                 role="tablist"
               >
                 {Tab.Pannel.map((item, index) => (
-                  <li
-                    className="nav-item"
-                    key={index}
-                    onClick={() => setActiveTab(item.id)}
-                  >
-                    <a
-                      className={`nav-link ${
-                        activeTab === item.id ? "active" : ""
-                      }`}
-                      data-tab={`${item.id}-tab`}
-                      id={`${item.id}-tab`}
-                      data-bs-toggle="tab"
-                      href={`#${item.id}`}
-                      role="tab"
-                      aria-controls={item.id}
-                      aria-selected={item.selected}
+                  <>
+                    <li
+                      className="nav-item"
+                      key={index}
+                      onClick={() => setActiveTab(item.id)}
                     >
-                      {item.label}
-                    </a>
-                  </li>
+                      <a
+                        className={`nav-link ${
+                          activeTab === item.id ? "active" : ""
+                        }`}
+                        data-tab={`${item.id}-tab`}
+                        id={`${item.id}-tab`}
+                        data-bs-toggle="tab"
+                        href={`#${item.id}`}
+                        role="tab"
+                        aria-controls={item.id}
+                        aria-selected={item.selected}
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  </>
                 ))}
               </ul>
               {Tab.Pannel.map((item, index) =>
                 activeTab === item.id ? (
-                  <div className="tab-content developer_tab_content">
+                  <div
+                    key={index}
+                    className="tab-content developer_tab_content"
+                  >
                     <div
                       className={`tab-pane fade show active`}
                       id={item.id}
@@ -56,22 +112,22 @@ const TabComponent = ({ Tab, pClass }) => {
                       <section className="customer_engagement_one">
                         <div className="container">
                           <div className="row flex-row-reverse">
-                            <div className="col-lg-7 h_500 reduce_height">
+                            <div className={`col-lg-7 h_500 ${rClass}`}>
                               <div className="customer_engagement_img">
-                              <Fade bottom cascade  >
-                                <img src={item.image} alt="features_img" />
+                                <Fade bottom cascade>
+                                  <img src={item.image} alt="features_img" />
                                 </Fade>
                               </div>
                             </div>
-                            <div className="col-lg-5 ">
-                              <Fade bottom cascade  >
+                            <div className="col-lg-5 d-flex justify-content-center align-items-start  ">
+                              <Fade bottom cascade>
                                 <div className="customer_engagement_content ">
                                   <h2>{item.title}</h2>
                                   <h3>{item.title2}</h3>
                                   <h6>{item.description1}</h6>
-                                  {item.subTitle.map((i) => {
+                                  {item.subTitle.map((i, index) => {
                                     return (
-                                      <ul>
+                                      <ul key={index}>
                                         <li>
                                           {i.title}
                                           <span>{i.description}</span>
