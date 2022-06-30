@@ -1,19 +1,17 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import Giftcard_img from "../images/home/giftcard.png";
-import StoreCredit_img from "../images/home/store.png";
-import Automation_img from "../images/home/automation.png";
-import Loyalty_img from "../images/home/loyalty.png";
-import Refferal_img from "../images/home/refferal.png";
-import Coupons_img from "../images/home/coupon.png";
-import Wallet_img from "../images/home/wallet.png";
+import { useState } from "react";
 
-const TabComponent = ({ data }) => {
+
+const TabComponent = ({ Tab, pClass }) => {
+  const [activeTab ,setActiveTab] = useState(Tab.Pannel[0].id) 
   return (
-    <section className="developer_product_area sec_pad">
+    <section className={`developer_product_area sec_pad ${pClass} `}>
       <div className="container">
-        {data.Head.map((item) => (
-          <h2 className="f_size_30 f_600 t_color3 l_height40 text-center mb_50">{item.Title}</h2>
+        {Tab.Head.map((item) => (
+          <h2 className="f_size_30 f_600 t_color3 l_height40 text-center mb_50">
+            {item.Title}
+          </h2>
         ))}
 
         <div className="row">
@@ -24,10 +22,10 @@ const TabComponent = ({ data }) => {
                 id="myTab1"
                 role="tablist"
               >
-                {data.List.map((item, index) => (
-                  <li className="nav-item" key={index}>
+                {Tab.Pannel.map((item, index) => (
+                  <li className="nav-item" key={index} onClick={()=>setActiveTab(item.id)}>
                     <a
-                      className={`nav-link ${index === 0 ? "active" : ""}`}
+                      className={`nav-link ${activeTab === item.id ? "active" : ""}`}
                       data-tab={`${item.id}-tab`}
                       id={`${item.id}-tab`}
                       data-bs-toggle="tab"
@@ -35,17 +33,18 @@ const TabComponent = ({ data }) => {
                       role="tab"
                       aria-controls={item.id}
                       aria-selected={item.selected}
+                      
                     >
                       {item.label}
                     </a>
                   </li>
                 ))}
               </ul>
-              {/* {data.List.map((item) => (
-              <div className="tab-content developer_tab_content">
-              
+              {Tab.Pannel.map((item, index) => (
+                activeTab === item.id ? 
+                <div className="tab-content developer_tab_content">
                   <div
-                    className="tab-pane fade show active"
+                    className={`tab-pane fade show active`}
                     id={item.id}
                     role="tabpanel"
                     aria-labelledby={`${item.id}-tab`}
@@ -53,32 +52,30 @@ const TabComponent = ({ data }) => {
                     <section className="customer_engagement_one">
                       <div className="container">
                         <div className="row flex-row-reverse">
-                          <div className="col-lg-6">
+                          <div className="col-lg-7 h_500 reduce_height">
                             <div className="customer_engagement_img">
-                              <img src={Giftcard_img} alt="features_img" />
+                              <img src={item.image} alt="features_img" />
                             </div>
                           </div>
-                          <div className="col-lg-6">
+                          <div className="col-lg-5 ">
                             <Fade bottom cascade>
                               <div className="customer_engagement_content ">
-                                <h2>{item.label}</h2>
-                                <ul>
-                                  <li>
-                                    Sell:{" "}
-                                    <span>
-                                      eGift (Digital) & Physical Gift card
-                                      online, and in-store{" "}
-                                    </span>
-                                  </li>
-                                  <li>
-                                    Omnichannel:{" "}
-                                    <span>
-                                      eGift (Digital) & Physical Gift card
-                                      online, and in-store{" "}
-                                    </span>
-                                  </li>
-                                  <li>eGift Card</li>
-                                </ul>
+                                <h2>{item.title}</h2>
+                                <h3>{item.title2}</h3>
+                                <h6>{item.description1}</h6>
+                                {item.subTitle.map((i)=>{
+                                  return(
+                                    <ul>
+                                    <li>
+                                      {i.title}
+                                      <span>
+                                        {i.description}
+                                      </span>
+                                    </li>
+                                  </ul>
+                                  )
+                                })}
+                               <h6>{item.description2}</h6>
 
                                 <div className="col-lg-9">
                                   <button
@@ -95,10 +92,10 @@ const TabComponent = ({ data }) => {
                       </div>
                     </section>
                   </div>
-                
-              </div>
-              ))} */}
-              <div className="tab-content developer_tab_content">
+                </div>
+                :""
+              ))}
+              {/* <div className="tab-content developer_tab_content">
                 <div
                   className="tab-pane fade show active"
                   id="giftcard"
@@ -513,7 +510,7 @@ const TabComponent = ({ data }) => {
                     </div>
                   </section>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

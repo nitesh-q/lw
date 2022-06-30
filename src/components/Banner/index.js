@@ -12,7 +12,7 @@ const Banner = ({ BannerConfig, Supported, StartedFreeForm, bannerTitle,AllServi
           <div className="col-lg-7 ">
             {BannerConfig.map((i) => {
               return (
-                <Reveal effect="fadeInRight" duration={2000}>
+                <Reveal effect="fadeInRight" duration={3000}>
                   <div className="seo_features_img">
                     <img
                       className="img-fluid"

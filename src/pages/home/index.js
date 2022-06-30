@@ -12,6 +12,7 @@ import {
 } from "../../components";
 import TestimonialConfig from "../../config/testimonial.config";
 import BannerConfig from "../../config/Banner.config";
+import homeTabConfig from "../../config/homeTab.config";
 import Header from "../../components/Common/Header";
 
 const Home = () => (
@@ -23,7 +24,7 @@ const Home = () => (
       AllService={false}
     />
     <TrustedMarchents />
-    <TabComponent data={CustomerEngagement} />
+    <TabComponent Tab={homeTabConfig} pClass={'pt_200'} />
     <Header
       title={"Grow your store and drive revenue with Marketing Automation "}
     />

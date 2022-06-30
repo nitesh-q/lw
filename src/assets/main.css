@@ -411,6 +411,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .pt_120 {
   padding-top: 40px;
 }
+.pt_200{
+  padding-top: 200px;
+}
 .pt_0{
   padding-top: 0px !important;
 }
@@ -423,7 +426,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .sec_pad {
-  padding: 120px 190px;
+  padding: 120px 0px;
 }
 .slick_pad{
   padding: 0px 50px;
@@ -443,11 +446,20 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .h_30{
 height: 30px;
 }
+.h_25{
+  height: 25px;
+}
+.h_18{
+  height: 18px;
+}
 .h_500{
   height: 500px;
 }
 .h_400{
   height: 400px;
+}
+.w_98{
+  width: 98%;
 }
 
 .line_vertical {
@@ -6819,11 +6831,11 @@ height: 30px;
   border-color: #fa6666;
 }
 .seo_features_content{
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .seo_features_content h2 {
-  font-size: 40px;
+  font-size: 32px;
   /* line-height: 40px; */
   color: #7444FD;
   font-weight: bold;
@@ -6838,7 +6850,7 @@ height: 30px;
 }
 
 .seo_features_content p {
-  font-size: 24px;
+  font-size: 18px;
   color:  #677294;
   font-weight: 600;
 }
@@ -11510,7 +11522,7 @@ color: #051441;
   font-weight: 600;
   white-space: nowrap;
   color: #ffffff;
-  text-align: end;
+  text-align: center;
 }
 /* .try_call_to_action_area li::after{
 background: url(../images/icon/tick-Arrow.svg);

@@ -55,6 +55,15 @@
     }
 }
 @media (max-width:2000px){
+    .container.custom_container{
+        max-width: 1200px;
+    }
+    .menu > .nav-item + .nav-item {
+        margin-left: 25px;
+    }
+    .menu_one .btn_get {
+        margin-left: 25px;
+    }
     .seo_features_content .flex{
         display: flex;
         flex-direction: row;
@@ -73,6 +82,12 @@
       }
 }
 @media (max-width: 1550px){
+    .menu > .nav-item + .nav-item {
+        margin-left: 25px;
+    }
+    .menu_one .btn_get {
+        margin-left: 25px;
+    }
     .seo_features_content .flex{
         display: flex;
         flex-direction: row;
@@ -107,7 +122,7 @@
         max-width: 100%;
     }
     .container.custom_container{
-        max-width: 1170px;
+        max-width: 1190px;
     }
     .service_item{
         padding: 47px 15px 0px;
@@ -222,6 +237,9 @@
 }
 
 @media (max-width:1450px){
+    .menu > .nav-item + .nav-item {
+        margin-left: 20px;
+    }
     .app_banner_area{
         background-size: cover;
         padding-bottom: 100px;
@@ -416,6 +434,9 @@
 
 
 @media (max-width:1350px){
+    .menu > .nav-item + .nav-item {
+        margin-left: 20px;
+    }
     .payment_banner_content {
         max-width: 556px;
     }
@@ -455,8 +476,16 @@
     .chat_banner_area .offset-lg-2{
         margin-left: 80px;
     }
+    .try_call_to_action_area  li{
+        font-size: 12px;
+        font-weight: 600;
+        white-space: nowrap;
+        color: #ffffff;
+        text-align: left;
+      }
     
 }
+
 
 @media  (max-width:1199px){
     .menu_one .btn_get {
@@ -1359,6 +1388,32 @@
     }
     .tracking_pr_item .tracking_content {
         padding: 26px 30px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    
+    .try_call_to_action_area{
+        height: 250px;
+    }
+    .try_action_service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .action_about_btn_col{
+        width: 100%;
+    }
+    .about_btn {
+        white-space: nowrap;
+        font: 500 14px "Poppins", sans-serif;
+        padding: 17px 28px;
+        background: #fbfbfd;
+        box-shadow: 0px 20px 30px 0px rgb(12 0 46 / 10%);
+        border-radius: 3px;
+        color: #5e2ced;
+        display: flex;
+        justify-content: center;
+        transition: all 0.3s ease;
     }
 }
 

@@ -32,7 +32,7 @@ class CustomNavbar extends Component {
                   </span>
                 </span>
               </button>
-              <Link className="navbar-brand" to="/">
+              <Link className="navbar-brand pt_0" to="/">
                 <img src={AppLogo} alt="logo" />
               </Link>
               <div
@@ -180,7 +180,7 @@ class CustomNavbar extends Component {
                     </Link>
                   </li>
                 </ul>
-                <a className={`btn_get btn_hover demo`} href="#get-app">
+                <a className={`btn_get btn_hover demo hide`} href="#get-app">
                  Book a Demo
                 </a>
                 <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
@@ -204,6 +204,7 @@ class CustomNavbar extends Component {
           </nav>
         </header>
       </Sticky>
+      
     );
   }
 }

@@ -1,4 +1,11 @@
 const Icons = {
+  Giftcard_img: require("../images/home/giftcard.png"),
+  StoreCredit_img: require("../images/home/store.png"),
+  Automation_img: require("../images/home/automation.png"),
+  Loyalty_img: require("../images/home/loyalty.png"),
+  Refferal_img: require("../images/home/refferal.png"),
+  Coupons_img: require("../images/home/coupon.png"),
+  Wallet_img: require("../images/home/wallet.png"),
   Woo: require("../images/trusted-merchents/woo.png"),
   Shopify: require("../images/trusted-merchents/shopify.png"),
   Commerce: require("../images/trusted-merchents/commerce.png"),
@@ -20,10 +27,6 @@ const Icons = {
   Ellipse_01: require("../images/giftcard/ellipse_01.png"),
   Ellipse_02: require("../images/giftcard/ellipse_02.png"),
   Report: require("../images/giftcard/report.png"),
-
-
-
-
 };
 
 export default Icons;
