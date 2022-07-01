@@ -177,6 +177,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .f_size_12 {
   font-size: 15px;
 }
+.l_sapcing1{
+
+  letter-spacing: 0.18px
+}
 
 
 .l_height60 {
@@ -210,6 +214,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .f_p {
   font-family: "Poppins", sans-serif;
 }
+
 
 /*=========== font-weight ==============*/
 .f_300 {
@@ -256,6 +261,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 .t_color4{
   color: #bdbed6;
+}
+.t_color5{
+  color: #8891aa;;
 }
 .d_p_color {
   color: #bdbed6;
@@ -461,6 +469,15 @@ height: 30px;
 .w_98{
   width: 98%;
 }
+.w_120{
+  width: 120px;
+}
+.w_128{
+  width: 128px;
+}
+.w_100{
+  width: 100px;
+}
 
 .line_vertical {
   width: 2px;
@@ -565,7 +582,7 @@ height: 30px;
   box-shadow: none;
 }
 .btn_get.new_btn:hover{
-  box-shadow: 0px 20px 24px 0px rgba(0, 11, 40, 0.1);
+  box-shadow: 0px 20px 24px 0px #0C002E1A;
 }
 .btn_get_two {
   -webkit-box-shadow: none;
@@ -574,6 +591,7 @@ height: 30px;
   border-color: #7444FD;
   color: #fff;
   box-shadow: 0px 20px 30px 0px rgb(61 100 244 / 16%);
+  white-space: nowrap;
 
 }
 
@@ -6840,6 +6858,8 @@ height: 30px;
   color: #7444FD;
   font-weight: bold;
   margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+
 }
 .seo_features_content h3 {
   font-size: 30px;
@@ -6847,12 +6867,20 @@ height: 30px;
   color: #000000;
   font-weight: bold;
   margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .seo_features_content p {
   font-size: 18px;
   color:  #677294;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+  font-family: "Poppins", sans-serif;
+    
 }
 
 .seo_features_content h6 {
@@ -6974,6 +7002,8 @@ color: #51fe23;
   font-size: 30px;
   color: #051441;
   font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
 }
 .customer_engagement_content p {
   font-size: 16px;
@@ -6981,6 +7011,7 @@ color: #51fe23;
   font-weight: 500;
   margin-bottom: 25px;
   padding-right: 90px ;
+  letter-spacing: 0.18px
 }
 .customer_engagement_content h3 {
   font-size: 20px;
@@ -6988,6 +7019,7 @@ color: #51fe23;
   color:#2C2C51;
   font-weight: bold;
   margin-bottom: 25px;
+  letter-spacing: 0.18px
 }
 
 
@@ -6998,6 +7030,7 @@ color: #51fe23;
   font-weight: 500;
   margin-bottom: 20px;
   margin-top: 20px;
+  letter-spacing: 0.18px
 
 }
 .customer_engagement_content ul li{
@@ -7005,12 +7038,14 @@ color: #51fe23;
   font-weight: 500;
   font-family: "Poppins";
   font-size: 16px;
+  letter-spacing: 0.18px
 }
 .customer_engagement_content ul li span{
   color: #7b7b93;
   font-weight: 400;
   font-family: "Poppins";
   font-size: 16px;
+  letter-spacing: 0.18px
 }
 .customer_engagement_content ul li::marker {
   color: #51fe23;
@@ -12895,7 +12930,7 @@ position: relative;
 }
 
 .text_box {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .text_box input[type="text"], .text_box textarea, .text_box input[type="password"], .text_box input[type="email"] {
@@ -12904,10 +12939,9 @@ position: relative;
   height: 54px;
   border-radius: 4px;
   background-color: white;
-  -webkit-box-shadow: 2px 2px 4px 0px rgba(12, 0, 46, 0.04);
-  box-shadow: 2px 2px 4px 0px rgba(12, 0, 46, 0.04);
+  box-shadow: 0px 20px 30px 0px rgb(61 100 244 / 16%);
   width: 100%;
-  border: 1px solid #fff;
+  border: 1px solid #0c002e1a ;
   padding-left: 30px;
 }
 
@@ -12941,7 +12975,7 @@ position: relative;
   padding-left: 40px;
 }
 .contact_form_box {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .contact_form_box .btn_three {
   min-width: 180px;
@@ -20054,8 +20088,18 @@ a .h_head:hover {
   width: 150px;
   height: 90px;
   object-fit: contain;
-
+  /* filter: contrast(110%); */
+  transition: all 0.4s ease-in-out;
+  opacity: 0.5;
 }
+.erp_testimonial_item .media img:hover {
+
+  opacity: 3;
+}
+
+
+
+
 .erp_testimonial_item .media .media-body h5 {
   font-size: 18px;
   font-weight: 500;
@@ -25029,7 +25073,7 @@ a .h_head:hover {
   background-color: white; */
   /* -webkit-box-shadow: 0px 40px 60px 0px rgba(92, 10, 20, 0.08);
   box-shadow: 0px 40px 60px 0px rgba(92, 10, 20, 0.08); */
-  height: 200px;
+  height: 150px;
   padding: 30px;
   background-color: #fbfbfd;
   border: 1px solid #f1f3f8;

@@ -70,7 +70,7 @@ const Banner = ({
                   )}
                 </div>
                 <div className={`row mt_15 flex ${mClass} `}>
-                  <li className="col "> No Credit Card Reaquired</li>
+                  <li className="col "> No Credit Card Required</li>
                   {AllService ? (
                     <>
                       <li className="col"> Free Sign Up</li>

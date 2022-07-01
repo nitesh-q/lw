@@ -10,7 +10,7 @@ export default {
   AboutWidget: [
     {
       id: 1,
-      title: "Services",
+      title: "Products",
       menuItems: [
         { id: 1, url: "#", text: "Gift Cards" },
         { id: 2, url: "#", text: "Loyalty Programs" },

@@ -19,16 +19,16 @@ const SupportedBrand = () => {
             </div>
           );
         })} */}
-        <div className="logo_item " data-wow-delay="0.1s">
+        <div className="logo_item w_100 " data-wow-delay="0.1s">
           <img className="h_18" src={Icons.Miva.default} alt="" />
         </div>
-        <div className="logo_item wow " data-wow-delay="0.1s">
+        <div className="logo_item wow w_110" data-wow-delay="0.1s">
           <img className="h_25" src={Icons.Shopify.default} alt="" />
         </div>
-        <div className="logo_item wow " data-wow-delay="0.1s">
+        <div className="logo_item wow w_120 " data-wow-delay="0.1s">
           <img className="h_25" src={Icons.Woo.default} alt="" />
         </div>
-        <div className="logo_item wow " data-wow-delay="0.1s">
+        <div className="logo_item wow w_128" data-wow-delay="0.1s">
           <img className="h_25" src={Icons.Commerce.default} alt="" />
         </div>
       </div>

@@ -25,7 +25,7 @@ const Home = () => (
       AllService={false}
     />
     <TrustedMarchents />
-    <TabComponent Tab={HomeTabConfig1} pClass={"pt_200"} />
+    <TabComponent Tab={HomeTabConfig1} pClass={"pt_200"} rClass={"reduce_height"} />
     <Header
       title={"Grow your store and drive revenue with Marketing Automation "}
     />

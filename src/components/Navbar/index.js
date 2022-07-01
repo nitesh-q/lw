@@ -86,10 +86,56 @@ class CustomNavbar extends Component {
                       </li>
                     </ul>
                   </li>
-                  <li className="nav-item">
-                    <Link title="Pricing" className="nav-link" to="/Contact">
-                      Integrations
+                  <li className="dropdown submenu nav-item">
+                    <Link
+                      title="Pages"
+                      className="dropdown-toggle nav-link"
+                      data-bs-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      to="#"
+                    >
+                      Integration<i className="ti-angle-down icon"></i>
                     </Link>
+                    <ul role="menu" className=" dropdown-menu">
+                      <li className="nav-item">
+                        <Link
+                          title="Portfolio 2"
+                          className="nav-link"
+                          to="/Portfolio-2col"
+                        >
+                          Integration-1
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          title="Portfolio 3"
+                          className="nav-link"
+                          to="/Portfolio-3col"
+                        >
+                          Integration-2
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          title="Portfolio Fullwidth"
+                          className="nav-link"
+                          to="/Portfolio-fullwidth-4col"
+                        >
+                          Integration-3
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          title="PortfolioSingle"
+                          className="nav-link"
+                          to="/PortfolioSingle"
+                        >
+                          Integration-4
+                        </Link>
+                      </li>
+                    </ul>
                   </li>
                   <li className="dropdown submenu nav-item">
                     <Link

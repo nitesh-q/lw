@@ -8,7 +8,7 @@ const TryAction = () => (
             <h2>Try 99minds now</h2>
             <p>
               The free demo comes with no commitments <br></br>and no credit
-              card reaquired
+              card required
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ const TryAction = () => (
 
           <div className="row w-100 service ">
           
-            <li className="col "> No Credit Card Reaquired</li>
+            <li className="col "> No Credit Card Required</li>
             <li className="col"> Free Sign Up</li>
             <li className="col"> 24/7 Support</li>
           

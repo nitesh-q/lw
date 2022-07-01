@@ -8,6 +8,18 @@
  
 }
 @media(min-width:991px){
+    .w_120{
+        width: 120px !important;
+      }
+      .w_128{
+        width: 128px !important;
+      }
+      .w_110{
+        width: 110px !important;
+      }
+      .w_100{
+width: 100 !important;
+      }
     .demo_btn{
         display:none;
         }
@@ -1419,6 +1431,7 @@
 
 
 @media (max-width:991px){
+   
 
     .hidefooter{
         display: none;
@@ -4286,7 +4299,7 @@
 
 @media (max-width:576px){
     .reduce_height{
-        height: 250px !important ;
+        height: 216px !important ;
     }
 
     .agency_service_area{
