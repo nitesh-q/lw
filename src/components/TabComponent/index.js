@@ -80,7 +80,7 @@ const TabComponent = ({ Tab, pClass, rClass }) => {
                                 {item.subTitle.map((i, index) => {
                                   return (
                                     <ul
-                                      className="d-flex justify-content-start"
+                                      className="d-flex justify-content-start pl_1"
                                       key={index}
                                     >
                                       <li>

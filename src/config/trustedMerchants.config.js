@@ -1,6 +1,6 @@
 import Icons from "../shared/assets";
 export default {
-    Marchenct:[
+  Merchant: [
     {
       id: 1,
       image: Icons.Pinstrips.default,
@@ -25,5 +25,5 @@ export default {
       id: 6,
       image: Icons.Cariloha.default,
     },
-  ]
-}
+  ],
+};

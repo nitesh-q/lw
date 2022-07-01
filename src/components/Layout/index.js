@@ -4,10 +4,10 @@ import Footer from "../Footer";
 import FooterConfig from "../../config/footer.config";
 
 
-const Layout = ({ children }) => {
+const Layout = ({ children,slogo,mClass,nClass }) => {
   return (
     <div className="body_wrapper">
-      <Navbar cClass="custom_container p0" hbtnClass="new_btn" />
+      <Navbar cClass="custom_container p0" hbtnClass="new_btn" mClass={mClass} slogo={slogo} nClass={nClass} />
       {children}
       <Footer FooterConfig={FooterConfig} />
     </div>

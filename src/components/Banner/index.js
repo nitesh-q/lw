@@ -86,6 +86,7 @@ const Banner = ({
           </div>
         </div>
       </div>
+      <img className="svg_intro_bottom" src={require ('../../images/home9/shape.png')} alt=""/>
     </section>
   );
 };

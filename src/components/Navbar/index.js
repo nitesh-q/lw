@@ -32,8 +32,10 @@ class CustomNavbar extends Component {
                   </span>
                 </span>
               </button>
-              <Link className="navbar-brand pt_0" to="/">
+              <Link className={`navbar-brand pt_0 `} to="/">
                 <img src={AppLogo} alt="logo" />
+                {/* <img src={AppLogo} alt="logo" /> */}
+
               </Link>
               <div
                 className={`collapse navbar-collapse justify-content-end `}
@@ -226,12 +228,12 @@ class CustomNavbar extends Component {
                     </Link>
                   </li>
                 </ul>
-                <a className={`btn_get btn_hover demo hide`} href="#get-app">
+                <a className={`btn_get btn_hover demo hide ${hbtnClass}`} href="#get-app">
                  Book a Demo
                 </a>
-                <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
+                {/* <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
                   Sign Up
-                </a>
+                </a> */}
                 
               </div>
               <div className="demo_btn  ">

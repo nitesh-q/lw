@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { TrustedMarchentsConfig } from "../../config";
+import { TrustedMerchantsConfig } from "../../config";
 
-class TrustedMarchents extends Component {
+class TrustedMerchants extends Component {
   render() {
     const settings = {
       dots: false,
@@ -55,12 +55,12 @@ class TrustedMarchents extends Component {
       <section className="erp_testimonial_area slick_pad ">
         <div className="container">
           <h3 className="f_size_20 f_600 t_color5 l_height40 text-center mb_15">
-            Trusted by 500+ Marchents
+            Trusted by 500+ Merchants
           </h3>
           <div className="row">
             <div className="erp_testimonial_info">
               <Slider className="erp_testimonial_slider" {...settings}>
-                {TrustedMarchentsConfig.Marchenct.map((item, index) => (
+                {TrustedMerchantsConfig.Merchant.map((item, index) => (
                   <div key={index} className="erp_testimonial_item">
                     <div className="media">
                       <div className="media-body  wow fadeInLeft" data-wow-delay="0.1s">
@@ -77,4 +77,4 @@ class TrustedMarchents extends Component {
     );
   }
 }
-export default TrustedMarchents;
+export default TrustedMerchants;

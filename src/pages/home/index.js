@@ -4,7 +4,7 @@ import {
   Banner,
   Integration,
   Testimonial,
-  TrustedMarchents,
+  TrustedMerchants,
   TryAction,
   Header,
   TabComponent,
@@ -24,7 +24,7 @@ const Home = () => (
       StartedFreeForm={true}
       AllService={false}
     />
-    <TrustedMarchents />
+    <TrustedMerchants />
     <TabComponent Tab={HomeTabConfig1} pClass={"pt_200"} rClass={"reduce_height"} />
     <Header
       title={"Grow your store and drive revenue with Marketing Automation "}

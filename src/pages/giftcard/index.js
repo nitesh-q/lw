@@ -4,7 +4,7 @@ import {
   Testimonial,
   TryAction,
   Banner,
-  TrustedMarchents,
+  TrustedMerchants,
   Features,
   Header,
   TabComponent,
@@ -14,6 +14,7 @@ import Layout from "../../components/Layout";
 // import BannerConfig from "../../config/banner.config";
 import Icons from "../../shared/assets";
 import { TestimonialConfig, BannerConfig, GiftCardConfig } from "../../config";
+import GiftCardBanner from "../../components/GiftCardBanner";
 
 const report = [
   {
@@ -50,14 +51,16 @@ const sale = [
 ];
 const GiftCard = () => {
   return (
-    <Layout>
+    // <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
+    <Layout >
       <Banner
         BannerConfig={BannerConfig.GiftCard}
         bannerTitle={`bannerTitle`}
         AllService={true}
         mClass={"mb_90"}
       />
-      <TrustedMarchents />
+      {/* <GiftCardBanner /> */}
+      <TrustedMerchants />
       <section className="security_integration_area chat_integration_area pb_0 pt_200">
         <div className="container">
           <div className="chat_title text-center">
@@ -74,10 +77,7 @@ const GiftCard = () => {
         pClass="pr_70"
         col1="col-lg-6 offset-lg-1"
         col2="col-lg-5"
-        img1={Icons.Ellipse_01.default}
-        img2={Icons.Giftcard_01.default}
-        img1Class={`chat_two_right`}
-        img2Class={`chat_one_right`}
+        img1={Icons.Giftcard_01.default}
         title="Gift Card Designs"
         desc={report}
         url="#"
@@ -87,10 +87,7 @@ const GiftCard = () => {
         pClass="pl_70"
         col1="col-lg-6"
         col2="col-lg-5 offset-lg-1"
-        img1={Icons.Ellipse_02.default}
-        img2={Icons.Report.default}
-        img1Class={`chat_two_left`}
-        img2Class={`chat_one_left`}
+        img1={Icons.Report.default}
         title="First ever"
         desc={report}
         url="#"
@@ -101,10 +98,7 @@ const GiftCard = () => {
         pClass="pr_70"
         col1="col-lg-6 offset-lg-1"
         col2="col-lg-5"
-        img1={Icons.Ellipse_01.default}
-        img2={Icons.Giftcard_01.default}
-        img1Class={`chat_two_right`}
-        img2Class={`chat_one_right`}
+        img1={Icons.Schedule.default}
         title="Schedule Delivery & Gift card for Out of Stock inventory"
         desc={schedule}
         url="#"
@@ -114,10 +108,7 @@ const GiftCard = () => {
         pClass="pl_70"
         col1="col-lg-6"
         col2="col-lg-5 offset-lg-1"
-        img1={Icons.Ellipse_02.default}
-        img2={Icons.Report.default}
-        img1Class={`chat_two_left`}
-        img2Class={`chat_one_left`}
+        img1={Icons.Sale.default}
         title="Point of Sale"
         desc={sale}
         url="#"

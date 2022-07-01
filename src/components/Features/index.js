@@ -22,21 +22,12 @@ const Features = ({
           <div className={col1}>
             <div className="chat_features_img chat_features_img_one">
             <Reveal effect="fadeInRight" duration={1000}>
-              <img
-                className={`p_absoulte ${img1Class}`}
+              {/* <img
+               className="chat_one"
                 data-parallax='{"x": 0, "y": -80}'
                 src={img1}
                 alt=""
-              />
-              </Reveal>
-            <Reveal effect="fadeInRight" duration={2000}>
-
-              <img
-                className={`${img2Class}`}
-                data-parallax='{"x": 0, "y": 80}'
-                src={img2}
-                alt=""
-              />
+              /> */}
               </Reveal>
             </div>
           </div>
@@ -45,7 +36,7 @@ const Features = ({
               <h2>{title}</h2>
               {desc.map((i,index) => {
                 return (
-                  <ul>
+                  <ul className="pl_1">
                     <li key={index}>{i.desc}</li>
                   </ul>
                 );

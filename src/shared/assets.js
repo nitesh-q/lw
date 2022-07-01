@@ -24,6 +24,8 @@ const Icons = {
   Besttop_01: require("../images/testimonials/bestop1.png"),
   GiftBanner: require("../images/giftcard/giftBanner.png"),
   Giftcard_01: require("../images/giftcard/giftcard.png"),
+  Schedule: require("../images/giftcard/schedule.png"),
+  Sale: require("../images/giftcard/sale.png"),
   Ellipse_01: require("../images/giftcard/ellipse_01.png"),
   Ellipse_02: require("../images/giftcard/ellipse_02.png"),
   Report: require("../images/giftcard/report.png"),
@@ -33,6 +35,8 @@ const Icons = {
   Upsell: require("../images/home/upsell.png"),
   Refund: require("../images/home/refund.png"),
   Reward: require("../images/home/reward.png"),
+  Banner1: require ('../images/home9/shape.png')
+
 };
 
 export default Icons;
