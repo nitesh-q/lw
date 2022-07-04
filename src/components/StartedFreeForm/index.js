@@ -11,7 +11,7 @@ const StartedFree = () => {
             type="text"
             name="email"
             id="email"
-            placeholder="1234567890@protonmail.com"
+            placeholder="Enter mail"
           />
         </div>
       </form>
