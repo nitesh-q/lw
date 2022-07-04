@@ -1,13 +1,14 @@
 import React from "react";
 
-const Header = ({ title }) => {
+const Header = ({ title,description,className }) => {
   return (
-    <section className="erp_action_area mb_50">
+    <section className={`erp_action_area  ${className}`}>
       <div className="container ">
         <div className="row align-items-center">
-          <h2 className="f_size_30 f_600 t_color3 l_height40 text-center l_sapcing1 ">
+          <h2>
             {title}
           </h2>
+          <p>{description}</p>
         </div>
       </div>
     </section>

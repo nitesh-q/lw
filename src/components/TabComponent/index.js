@@ -1,7 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
-import Slider from "react-slick";
 
 const TabComponent = ({ Tab, pClass, rClass }) => {
   const [activeTab, setActiveTab] = useState(Tab.Pannel[0].id);

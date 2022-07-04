@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Bestop from "../../images/trusted-merchents/bestop.png";
 
 class Testimonial extends Component {
   constructor(props) {
@@ -18,7 +17,7 @@ class Testimonial extends Component {
       speed: 500,
       arrows: true,
       autoplay: true,
-      autoplaySpeed: 30000,
+      autoplaySpeed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1,
     };

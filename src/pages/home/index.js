@@ -27,6 +27,7 @@ const Home = () => (
     <TrustedMerchants />
     <TabComponent Tab={HomeTabConfig1} pClass={"pt_200"} rClass={"reduce_height"} />
     <Header
+      className={"mb_50"}
       title={"Grow your store and drive revenue with Marketing Automation "}
     />
     <TabComponent Tab={HomeTabConfig2} pClass={"pt_0"} rClass={"reduce_height"} />

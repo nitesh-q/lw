@@ -10,11 +10,9 @@ import {
   TabComponent,
 } from "../../components";
 import Layout from "../../components/Layout";
-// import TestimonialConfig from "../../config/testimonial.config";
-// import BannerConfig from "../../config/banner.config";
 import Icons from "../../shared/assets";
 import { TestimonialConfig, BannerConfig, GiftCardConfig } from "../../config";
-import GiftCardBanner from "../../components/GiftCardBanner";
+
 
 const report = [
   {
@@ -58,19 +56,16 @@ const GiftCard = () => {
         bannerTitle={`bannerTitle`}
         AllService={true}
         mClass={"mb_90"}
+        wClass={"mw_125"}
       />
       {/* <GiftCardBanner /> */}
       <TrustedMerchants />
-      <section className="security_integration_area chat_integration_area pb_0 pt_200">
-        <div className="container">
-          <div className="chat_title text-center">
-            <h2 className="wow fadeInUp">
-              <span>Gift Card & Platform features. </span>
-            </h2>
-            <p>All your gift card needs, covered</p>
-          </div>
-        </div>
-      </section>
+     
+      <Header
+      className={"bg_white mt_125"}
+       title={"Gift Card & Platform features."}
+       description={"All your gift card needs, covered"}
+     />
       <Features
         ptClass="pt_0"
         rowClass="flex-row-reverse"
@@ -114,6 +109,7 @@ const GiftCard = () => {
         url="#"
       />
        <Header
+       
       title={"Gift Card & Platform features"}
     />
     <TabComponent Tab={GiftCardConfig} pClass={"pt_0"} />

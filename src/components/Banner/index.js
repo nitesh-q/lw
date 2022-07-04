@@ -1,6 +1,5 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import Icons from "../../shared/assets";
 import { SupportedBrand, StartedFree } from "../../components";
 import { Reveal } from "react-reveal";
 
@@ -11,6 +10,7 @@ const Banner = ({
   bannerTitle,
   AllService,
   mClass,
+  wClass
 }) => {
   return (
     <section className="seo_features_one bg_color sec_pad">
@@ -22,7 +22,7 @@ const Banner = ({
                 <Reveal effect="fadeInRight" duration={3000}>
                   <div className="seo_features_img">
                     <img
-                      className="img-fluid"
+                      className={`img-fluid ${wClass}`}
                       key={index}
                       src={i.image}
                       alt={i.id}

@@ -10,7 +10,7 @@ class TrustedMerchants extends Component {
       speed: 500,
       arrows: true,
       autoplay: true,
-      autoplaySpeed: 20000,
+      autoplaySpeed: 2000,
       slidesToShow: 5,
       slidesToScroll: 1,
       responsive: [

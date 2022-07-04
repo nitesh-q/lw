@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://99minds-gatsby.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
   ],
 }

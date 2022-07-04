@@ -19,19 +19,18 @@ const Features = ({
     <section className={`chat_features_area ${ptClass}`}>
       <div className="container">
         <div className={`row align-items-center ${rowClass}`}>
-          <div className={col1}>
+          <div className='col-lg-6'>
             <div className="chat_features_img chat_features_img_one">
             <Reveal effect="fadeInRight" duration={1000}>
-              {/* <img
+              <img
                className="chat_one"
-                data-parallax='{"x": 0, "y": -80}'
                 src={img1}
                 alt=""
-              /> */}
+              />
               </Reveal>
             </div>
           </div>
-          <div className={col2}>
+          <div className='col-lg-6'>
             <div className={`chat_features_content ${pClass}`}>
               <h2>{title}</h2>
               {desc.map((i,index) => {

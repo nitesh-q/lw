@@ -6,19 +6,17 @@ export default {
       id: 1,
       title: "Engage,Acquire & Retain Customers",
       subTitle: "",
-      image:Icons.FeatureImg.default,
+      image:Icons.HomeBanner.default,
       description:`Enrich your Customer Journey with a Gift Card, Store Credit, and Loyalty Program. Empower them to share your brand experience with Refferrals`,
     }
   ],
   GiftCard: [
     {
       id: 1,
-      title: "Gift Card campaigns",
-      subTitle: "made super easy",
+      title: "Launch a complete gifting program with",
+      subTitle: "Physical and eGift cards.",
       image:Icons.GiftBanner.default,
-      description: ` Ramp up your sales by launching a gift card program with
-      ease using 99minds. With a simple integration that works online and offline .
-      Get readt to reap various benifits of zero hassle.`,
+      description: `Customers with gift cards usually spend 32% more than gift card value`,
     }
   ],
 };
