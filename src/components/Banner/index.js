@@ -9,7 +9,7 @@ const Banner = ({
   BannerConfig,
   Supported,
   StartedFreeForm,
-  bannerTitle,
+  TitleClass,
   AllService,
   mClass,
   wClass
@@ -40,7 +40,7 @@ const Banner = ({
                 {BannerConfig.map((i, index) => {
                   return (
                     <>
-                      <h2 key={index} className={`${bannerTitle}`}>
+                      <h2 key={index} className={`${TitleClass}`}>
                         {i.title}
                       </h2>
                       <h2>{i.subTitle}</h2>

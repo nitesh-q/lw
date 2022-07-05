@@ -14,6 +14,16 @@ import Icons from "../../shared/assets";
 import { TestimonialConfig, BannerConfig, GiftCardConfig } from "../../config";
 
 
+const giftcard = [
+  {
+    id:1,
+    desc:"100’s of beautiful Gift Cards based on themes"
+  },
+  {
+  id:2,
+  desc:"Upload your brand design Gift Cards"
+  }
+]
 const report = [
   {
     id: 1,
@@ -53,7 +63,7 @@ const GiftCard = () => {
     <Layout >
       <Banner
         BannerConfig={BannerConfig.GiftCard}
-        bannerTitle={`bannerTitle`}
+        TitleClass={`bannerTitle`}
         AllService={true}
         mClass={"mb_90"}
         wClass={"mw_125"}
@@ -74,7 +84,7 @@ const GiftCard = () => {
         col2="col-lg-5"
         img1={Icons.Giftcard_01.default}
         title="Gift Card Designs"
-        desc={report}
+        desc1={giftcard}
         url="#"
       />
       <Features
@@ -84,7 +94,7 @@ const GiftCard = () => {
         col2="col-lg-5 offset-lg-1"
         img1={Icons.Report.default}
         title="First ever"
-        desc={report}
+        desc1={report}
         url="#"
       />
       <Features
@@ -95,7 +105,7 @@ const GiftCard = () => {
         col2="col-lg-5"
         img1={Icons.Schedule.default}
         title="Schedule Delivery & Gift card for Out of Stock inventory"
-        desc={schedule}
+        desc1={schedule}
         url="#"
       />
       <Features
@@ -105,11 +115,11 @@ const GiftCard = () => {
         col2="col-lg-5 offset-lg-1"
         img1={Icons.Sale.default}
         title="Point of Sale"
-        desc={sale}
+        desc1={sale}
         url="#"
       />
        <Header
-       
+       className={"mt_120"}
       title={"Gift Card & Platform features"}
     />
     <TabComponent Tab={GiftCardConfig} pClass={"pt_0"} />

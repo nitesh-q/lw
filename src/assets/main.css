@@ -318,6 +318,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin-top: 100px;
 }
 
+.mt_120 {
+  margin-top: 120px;
+}
 .mt_125 {
   margin-top: 125px;
 }
@@ -25736,7 +25739,7 @@ a .h_head:hover {
 
 /*============= chat_features_area css ===========*/
 .chat_features_area {
-  padding: 120px 0px;
+  padding: 0px 0px;
 }
 
 .chat_features_img {

@@ -81,9 +81,9 @@ class CustomNavbar extends Component {
                           exact
                           title="Service Details"
                           className="nav-link"
-                          to="/ServiceDetails"
+                          to="/loyalty"
                         >
-                          Product-2
+                         Loyalty
                         </Link>
                       </li>
                     </ul>

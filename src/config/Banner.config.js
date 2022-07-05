@@ -19,4 +19,13 @@ export default {
       description: `Customers with gift cards usually spend 32% more than gift card value`,
     }
   ],
+  Loyalty: [
+    {
+      id: 1,
+      title: "Loyalty Programs",
+      subTitle: "Forge a strong relationship with your customers",
+      image:Icons.LoyaltyBanner.default,
+      description: `Growth is good, but retention is forever`,
+    }
+  ],
 };

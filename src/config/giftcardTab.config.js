@@ -31,7 +31,7 @@ export default {
       id: "uploadPhoto",
       label: "Upload Photo & Video ",
       selected: "false",
-      image: Icons.Reload.default,
+      image: Icons.Upload.default,
       title: "Upload Photo & Video",
       description1:"",
       description2:"",

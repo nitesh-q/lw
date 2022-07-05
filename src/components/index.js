@@ -8,3 +8,5 @@ export { default as StartedFree } from "./StartedFreeForm";
 export { default as Features } from "./Features";
 export { default as Header } from "./Common/Header";
 export { default as TabComponent } from "./TabComponent";
+export { default as Services } from "./Services";
+

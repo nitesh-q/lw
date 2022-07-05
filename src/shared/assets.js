@@ -42,8 +42,20 @@ const Icons = {
   Sale: require("../images/giftcard/sale.png"),
   Report: require("../images/giftcard/report.png"),
   Reload: require("../images/giftcard/reload.png"),
+  Upload: require("../images/giftcard/upload.png"),
+
  
+
+  //....................Giftcard Page ......................
+  LoyaltyBanner: require("../images/loyalty/loyaltyBanner.png"),
+  CustomLoyalty: require("../images/loyalty/customLoyalty.png"),
+  LoyaltyPoints: require("../images/loyalty/loyaltyPoints.png"),
+  LoyaltyReward: require("../images/loyalty/loyaltyReward.png"),
+  VipTier: require("../images/loyalty/vipTier.png"),
+
+
   Banner1: require ('../images/home9/shape.png')
+
 
 };
 
