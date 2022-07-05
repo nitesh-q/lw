@@ -26,6 +26,9 @@ const FooterBottom = ({ term, policy, copywrite }) => {
               <li>
                 <a href=".#">{policy}</a>
               </li>
+              <li>
+                <a href="/sitemap/sitemap-0.xml">Sitemap</a>
+              </li>
             </ul>
           </div>
         </div>

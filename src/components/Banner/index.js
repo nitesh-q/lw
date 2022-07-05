@@ -2,6 +2,8 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import { SupportedBrand, StartedFree } from "../../components";
 import { Reveal } from "react-reveal";
+import { StaticImage } from 'gatsby-plugin-image'
+;
 
 const Banner = ({
   BannerConfig,
