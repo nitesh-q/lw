@@ -3857,6 +3857,24 @@ font-weight: 800;
 }
 
 /* ===========================.n_hero_banner_area================================ */
+@media (max-width:2500px) {
+  .n_hero_banner_area .svg {
+    position: absolute;
+    bottom: -40px;
+    height: 350px;
+    width: 174%;
+    left: 0px;
+  }
+}
+  @media (max-width:1650px) {
+    .n_hero_banner_area .svg {
+      position: absolute;
+      bottom: -84px;
+      height: 350px;
+      width: 174%;
+      left: -226px;
+    }
+}
 .n_hero_banner_area {
   min-height: 100vh;
   position: relative;
@@ -3869,13 +3887,13 @@ font-weight: 800;
 
   overflow: hidden;
 }
-.n_hero_banner_area .svg {
-  position: absolute;
-  bottom: -84px;
-  height: 350px;
-  width: 174%;
-  left: -226px;
-}
+/* .n_hero_banner_area .svg {
+    position: absolute;
+    bottom: -84px;
+    height: 350px;
+    width: 174%;
+    left: -226px;
+} */
 .n_hero_content{
   margin-top: 70px;
 }

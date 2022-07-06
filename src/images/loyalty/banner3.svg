@@ -1,8 +1,8 @@
  <svg id="hero_shape2_normal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
                         <linearGradient id="PSgrad_0" x1="0%" x2="76.604%" y1="64.279%" y2="0%">
-                            <stop offset="0%" stop-color="#e0d7fb" stop-opacity="1"></stop>
-                            <stop offset="100%" stop-color="#e0d7fb" stop-opacity="1"></stop>
+                            <stop offset="0%" stop-color="#e0d7fb" stop-Opacity="1"></stop>
+                            <stop offset="100%" stop-color="#e0d7fb" stop-Opacity="1"></stop>
                         </linearGradient>
                     </defs>
                     <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M0.000,246.000 C0.000,246.000 326.728,190.237 710.653,123.017 C937.017,83.384 1398.662,3.976 1398.662,3.976 C1398.662,3.976 1524.189,5.641 1668.565,26.591 C1813.299,47.594 1920.000,84.745 1920.000,84.745 L1920.000,323.000 L0.000,323.000 L0.000,246.000 Z"></path>

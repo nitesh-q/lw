@@ -65,7 +65,7 @@ width: 100 !important;
         bottom: 330px;
     }
 }
-@media (max-width:2000px){
+{
     .container.custom_container{
         max-width: 1200px;
     }
