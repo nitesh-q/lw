@@ -48,10 +48,14 @@ const Icons = {
 
   //....................Giftcard Page ......................
   LoyaltyBanner: require("../images/loyalty/loyaltyBanner.png"),
+  LoyaltyBanner1: require("../images/loyalty/loyaltyBanner1.png"),
+  BannerImg1: require("../images/loyalty/3d.png"),
+  BannerImg2: require("../images/loyalty/header-btm-shape.png"),
   CustomLoyalty: require("../images/loyalty/customLoyalty.png"),
   LoyaltyPoints: require("../images/loyalty/loyaltyPoints.png"),
   LoyaltyReward: require("../images/loyalty/loyaltyReward.png"),
   VipTier: require("../images/loyalty/vipTier.png"),
+  RewardPage: require("../images/loyalty/rewardPage.png"),
 
 
   Banner1: require ('../images/home9/shape.png')

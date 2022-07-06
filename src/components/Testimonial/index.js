@@ -1,33 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 
-class Testimonial extends Component {
-  constructor(props) {
-    super();
-    this.state = {
-      TestimonialConfig: props.TestimonialConfig,
-      bgColor: props.bgColor,
-    };
-  }
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
 
-  render() {
-    const settings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      arrows: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    };
-    let { TestimonialConfig } = this.state;
-    var { bgColor } = this.state;
+const Testimonial = ({TestimonialConfig,bgColor,title,subTitle}) => {
+ 
+
     return (
       <section className={`agency_testimonial_area ${bgColor}`}>
         <div className="container">
-          <h2 className="text-center mb_10">Testimonials</h2>
-          <p className="text-center">Hear from our Clients</p>
+          <h2 className="text-center mb_10">{title}</h2>
+          <p className="text-center">{subTitle}</p>
           <div className="agency_testimonial_info">
             <Slider className="testimonial_slider" {...settings}>
               {TestimonialConfig.Testimonial.map((item,index) => {
@@ -57,5 +49,4 @@ class Testimonial extends Component {
       </section>
     );
   }
-}
 export default Testimonial;

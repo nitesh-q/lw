@@ -35,7 +35,7 @@ const Banner = ({
             })}
           </div>
           <div className="col-lg-5">
-            <Fade bottom cascade>
+          <Reveal bottom cascade>
               <div className="seo_features_content ">
                 {BannerConfig.map((i, index) => {
                   return (
@@ -84,7 +84,7 @@ const Banner = ({
                 </div>
                 {Supported ? <SupportedBrand /> : ""}
               </div>
-            </Fade>
+            </Reveal>
           </div>
         </div>
       </div>

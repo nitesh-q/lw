@@ -1,7 +1,16 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { Banner, TrustedMerchants, Header, Features, Testimonial, TryAction, Services } from "../../components";
-import {BannerConfig,TestimonialConfig} from "../../config";
+import {
+  TrustedMerchants,
+  Header,
+  Features,
+  Testimonial,
+  TryAction,
+  Services,
+  LoyaltyBanner,
+  TabComponent
+} from "../../components";
+import { BannerConfig, TestimonialConfig,LoyaltyConfig } from "../../config";
 import Icons from "../../shared/assets";
 
 const customLoyalty = [
@@ -31,23 +40,22 @@ const vipTier = [
   { id: 2, desc: "Calendar year vs. Lifetime" },
 ];
 const loyaltyPoints = [];
-const loyaltyReward = [];
+const loyaltyReward = [
+  { id: 1, desc: "Free product" },
+  { id: 2, desc: "Amount discount" },
+  { id: 3, desc: "Percentage discount" },
+  { id: 4, desc: "Accelerated points earning" },
+];
 
 const Loyalty = () => {
   return (
-    <Layout>
-      <Banner
-        BannerConfig={BannerConfig.Loyalty}
-        TitleClass={`bannerTitle`}
-        AllService={true}
-        mClass={"mb_90"}
-        // wClass={"mw_125"}
-      />
+    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
+      <LoyaltyBanner />
       <TrustedMerchants />
       <Header
         className={"bg_white mt_125"}
         title={
-          "The features you need to build an effective loyalty programs right for your brand"
+          "Build an effective Customer loyalty programs right for yor hand "
         }
         description={"All your required key features under one roof"}
       />
@@ -59,7 +67,7 @@ const Loyalty = () => {
         col2="col-lg-5"
         img1={Icons.CustomLoyalty.default}
         title="Custom Loyalty Program"
-        desc="Design Loyalty program right for your brand"
+        subTitle="Design Loyalty program right for your brand"
         desc1={customLoyalty}
         url="#"
       />
@@ -69,8 +77,9 @@ const Loyalty = () => {
         col1="col-lg-6"
         col2="col-lg-5 offset-lg-1"
         img1={Icons.VipTier.default}
-        title="VIP Tiers"
-        desc="Set up milestones to achieve VIP status Push your customers to reach the next VIP tier with challenging but achievable milestones!"
+        title="Configure VIP Tiers"
+        subTitle="Set up landmarks to accomplish VIP status"
+        desc="Encourage your customers to attain the next tier with contesting but achievable milestones!"
         desc1={vipTier}
         url="#"
       />
@@ -81,8 +90,9 @@ const Loyalty = () => {
         col1="col-lg-6 offset-lg-1"
         col2="col-lg-5"
         img1={Icons.LoyaltyPoints.default}
-        title="Loyalty Points"
-        desc="Earning Points for more than just purchases Customize loyalty widget and web page design as per your brand."
+        title="Select activities for earning Points"
+        subTitle="Earning Points for more than just purchases"
+        desc="Choose the terminology that makes sense for you: points, punches, or stars."
         desc1={loyaltyPoints}
         url="#"
       />
@@ -92,12 +102,26 @@ const Loyalty = () => {
         col1="col-lg-6"
         col2="col-lg-5 offset-lg-1"
         img1={Icons.LoyaltyReward.default}
-        title="Point of Sale"
-        desc={`Customize Reward widget and web page design as per your brand’s color, theme, etc.Customers can redeem points for awesome rewards like: Free product Amount discount Percentage discount Accelerated points earning`}
+        title="Offer Rewards"
+        subTitle="Customers can redeem points for awesome rewards like:"
         desc1={loyaltyReward}
         url="#"
       />
-      <Testimonial TestimonialConfig={TestimonialConfig} bgColor={`bg_color`} />
+        <Header
+      className={"mb_50"}
+      title={"Grow your store and drive revenue with Marketing Automation "}
+    />
+     <TabComponent
+      Tab={LoyaltyConfig}
+      pClass={"pt_0"}
+    //   rClass={"reduce_height"}
+    />
+      <Testimonial
+        title="Learn How Customer is using Coupons"
+        subTitle="Case Studies Carousel"
+        TestimonialConfig={TestimonialConfig}
+        bgColor={`bg_color`}
+      />
       <TryAction />
       <Services />
     </Layout>

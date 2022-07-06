@@ -1,6 +1,6 @@
 import React from "react";
-const TryAction = () => (
-  <section className=" sec_pad pt_0">
+const TryAction = ({pClass}) => (
+  <section className={` sec_pad ${pClass}`}>
     <div className="container try_call_to_action_area">
       <div className="row w_98">
         <div className="col-lg-6  ">

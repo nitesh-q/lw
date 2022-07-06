@@ -25,20 +25,33 @@ const Home = () => (
       AllService={false}
     />
     <TrustedMerchants />
-    <TabComponent Tab={HomeTabConfig1} pClass={"pt_200"} rClass={"reduce_height"} />
+    <TabComponent
+      Tab={HomeTabConfig1}
+      pClass={"pt_200"}
+      rClass={"reduce_height"}
+    />
     <Header
       className={"mb_50"}
       title={"Grow your store and drive revenue with Marketing Automation "}
     />
-    <TabComponent Tab={HomeTabConfig2} pClass={"pt_0"} rClass={"reduce_height"} />
-    <Testimonial TestimonialConfig={TestimonialConfig} bgColor={`bg_color`} />
+    <TabComponent
+      Tab={HomeTabConfig2}
+      pClass={"pt_0"}
+      rClass={"reduce_height"}
+    />
+    <Testimonial
+      title="Testimonials"
+      subTitle="Hear from our Clients"
+      TestimonialConfig={TestimonialConfig}
+      bgColor={`bg_color`}
+    />
     <Integration
       title={"Integrations"}
       description={
         "Empower Your Brick & Click Store With Powerful Integrations"
       }
     />
-    <TryAction />
+    <TryAction pClass={"pt_0"} />
   </Layout>
 );
 export default Home;

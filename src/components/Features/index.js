@@ -3,12 +3,9 @@ import { Reveal } from "react-reveal";
 
 const Features = ({
   img1,
-  img2,
   rowClass,
-  col1,
-  col2,
-  url,
   title,
+  subTitle,
   desc,
   desc1,
   pClass,
@@ -30,6 +27,7 @@ const Features = ({
           <div className="col-lg-6">
             <div className={`chat_features_content ${pClass}`}>
               <h2>{title}</h2>
+              <h6>{subTitle}</h6>
               <p>{desc}</p>
               {desc1.map((i, index) => {
                 return (
@@ -46,7 +44,7 @@ const Features = ({
                 className="btn btn_get btn_get_two fadeInLeft"
                 data-wow-delay="0.5s"
               >
-                Define CTA
+                Try it free
               </a>
             </div>
           </div>

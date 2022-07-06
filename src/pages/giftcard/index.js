@@ -13,17 +13,16 @@ import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
 import { TestimonialConfig, BannerConfig, GiftCardConfig } from "../../config";
 
-
 const giftcard = [
   {
-    id:1,
-    desc:"100’s of beautiful Gift Cards based on themes"
+    id: 1,
+    desc: "100’s of beautiful Gift Cards based on themes",
   },
   {
-  id:2,
-  desc:"Upload your brand design Gift Cards"
-  }
-]
+    id: 2,
+    desc: "Upload your brand design Gift Cards",
+  },
+];
 const report = [
   {
     id: 1,
@@ -60,7 +59,7 @@ const sale = [
 const GiftCard = () => {
   return (
     // <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-    <Layout >
+    <Layout>
       <Banner
         BannerConfig={BannerConfig.GiftCard}
         TitleClass={`bannerTitle`}
@@ -70,12 +69,12 @@ const GiftCard = () => {
       />
       {/* <GiftCardBanner /> */}
       <TrustedMerchants />
-     
+
       <Header
-      className={"bg_white mt_125"}
-       title={"Gift Card & Platform features."}
-       description={"All your gift card needs, covered"}
-     />
+        className={"bg_white mt_125"}
+        title={"Gift Card & Platform features."}
+        description={"All your gift card needs, covered"}
+      />
       <Features
         ptClass="pt_0"
         rowClass="flex-row-reverse"
@@ -118,19 +117,21 @@ const GiftCard = () => {
         desc1={sale}
         url="#"
       />
-       <Header
-       className={"mt_120"}
-      title={"Gift Card & Platform features"}
-    />
-    <TabComponent Tab={GiftCardConfig} pClass={"pt_0"} />
-      <Testimonial TestimonialConfig={TestimonialConfig} bgColor={`bg_color`} />
+      <Header className={"mt_120"} title={"Gift Card & Platform features"} />
+      <TabComponent Tab={GiftCardConfig} pClass={"pt_0"} />
+      <Testimonial
+        title="Testimonials"
+        subTitle="Hear from our Clients"
+        TestimonialConfig={TestimonialConfig}
+        bgColor={`bg_color`}
+      />
       <Integration
         title={"Integrations"}
         description={
           "Empower Your Brick & Click Store With Powerful Integrations"
         }
       />
-      <TryAction />
+      <TryAction pClass={"pt_0"} />
     </Layout>
   );
 };

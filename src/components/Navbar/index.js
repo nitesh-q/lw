@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import AppLogo from "../../images/logo/logo.png";
+import Logo from "../../images/logo/logo.png";
+import Logo1 from "../../images/logo/logo1.png"
 import Sticky from "react-stickynode";
 
 class CustomNavbar extends Component {
@@ -8,6 +9,7 @@ class CustomNavbar extends Component {
     var { mClass, nClass, cClass, slogo, hbtnClass } = this.props;
     return (
       <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
+
         <header className="header_area">
           <nav className={`navbar navbar-expand-lg menu_one ${mClass}`}>
             <div className={`container ${cClass}`}>
@@ -32,9 +34,9 @@ class CustomNavbar extends Component {
                   </span>
                 </span>
               </button>
-              <Link className={`navbar-brand pt_0 `} to="/">
-                <img src={AppLogo} alt="logo" />
-                {/* <img src={AppLogo} alt="logo" /> */}
+              <Link className={`navbar-brand pt_0 ${slogo} `} to="/">
+                <img src={Logo1} alt="logo1" />
+                <img src={Logo} alt="logo" />
 
               </Link>
               <div
