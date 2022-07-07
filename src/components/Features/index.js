@@ -9,22 +9,24 @@ const Features = ({
   desc,
   desc1,
   pClass,
+  col1,
+  col2,
   img1Class,
   img2Class,
   ptClass,
 }) => {
   return (
-    <section className={`chat_features_area ${ptClass}`}>
-      <div className="container">
+    <section className={`chat_features_area`}>
+      <div className=" container container-fluid">
         <div className={`row align-items-center ${rowClass}`}>
-          <div className="col-lg-6">
+          <div className={`${col1}`}>
             <div className="chat_features_img chat_features_img_one">
               <Reveal effect="fadeInRight" duration={1000}>
-                <img className="chat_one" src={img1} alt="" />
+                <img className="chat_one img-fluid" src={img1} alt="" />
               </Reveal>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className={`${col2}`}>
             <div className={`chat_features_content ${pClass}`}>
               <h2>{title}</h2>
               <h6>{subTitle}</h6>

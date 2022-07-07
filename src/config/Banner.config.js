@@ -28,4 +28,22 @@ export default {
       description: `Growth is good, but retention is forever`,
     }
   ],
+  Coupons: [
+    {
+      id: 1,
+      title: "Coupons",
+      subTitle: "Powerful Coupon Generator",
+      // image:"",
+      description: `Bulk, Dynamic & Personalize coupons generation for your Store`,
+    }
+  ],
+  Referral: [
+    {
+      id: 1,
+      title: "Referral Programs",
+      subTitle: "made super easy",
+      // image:"",
+      description: `Ramp us your sales by launching a gift card program with ease using 99minds. With a simple integration that works online an offline. Get ready to reap various benifits of zero hassle `,
+    }
+  ],
 };

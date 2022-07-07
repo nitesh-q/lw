@@ -65,7 +65,7 @@ width: 100 !important;
         bottom: 330px;
     }
 }
-{
+@media (max-width:2000px){
     .container.custom_container{
         max-width: 1200px;
     }
@@ -2956,8 +2956,8 @@ width: 100 !important;
         display: block;
     }
     .chat_features_img{
-        max-width: 500px;
-        margin-bottom: 60px;
+        /* max-width: 500px;
+        margin-bottom: 60px; */
     }
     .chat_features_img.chat_features_img_one .chat_one{
         top: -80px;

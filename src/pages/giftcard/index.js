@@ -76,7 +76,6 @@ const GiftCard = () => {
         description={"All your gift card needs, covered"}
       />
       <Features
-        ptClass="pt_0"
         rowClass="flex-row-reverse"
         pClass="pr_70"
         col1="col-lg-6 offset-lg-1"
@@ -87,7 +86,6 @@ const GiftCard = () => {
         url="#"
       />
       <Features
-        ptClass="pt_0"
         pClass="pl_70"
         col1="col-lg-6"
         col2="col-lg-5 offset-lg-1"
@@ -97,7 +95,6 @@ const GiftCard = () => {
         url="#"
       />
       <Features
-        ptClass="pt_0"
         rowClass="flex-row-reverse"
         pClass="pr_70"
         col1="col-lg-6 offset-lg-1"
@@ -108,7 +105,6 @@ const GiftCard = () => {
         url="#"
       />
       <Features
-        ptClass="pt_0"
         pClass="pl_70"
         col1="col-lg-6"
         col2="col-lg-5 offset-lg-1"

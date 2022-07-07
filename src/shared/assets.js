@@ -58,7 +58,12 @@ const Icons = {
   RewardPage: require("../images/loyalty/rewardPage.png"),
 
 
-  Banner1: require ('../images/home9/shape.png')
+  Banner1: require ('../images/home9/shape.png'),
+  Work1:require("../images/home4/work1.png"),
+  Work2:require("../images/home4/work2.png"),
+  Work3:require("../images/home4/work3.png")
+
+
 
 
 };
