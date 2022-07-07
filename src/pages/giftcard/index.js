@@ -61,7 +61,7 @@ const GiftCard = () => {
     // <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
     <Layout>
       <Banner
-        BannerConfig={BannerConfig.GiftCard}
+        BannerConfig={BannerConfig.GIFTCARD}
         TitleClass={`bannerTitle`}
         AllService={true}
         mClass={"mb_90"}
@@ -119,12 +119,14 @@ const GiftCard = () => {
       />
       <Header className={"mt_120"} title={"Gift Card & Platform features"} />
       <TabComponent Tab={GiftCardConfig} pClass={"pt_0"} />
+
       <Testimonial
         title="Testimonials"
         subTitle="Hear from our Clients"
-        TestimonialConfig={TestimonialConfig}
+        sliderData={TestimonialConfig.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
+
       <Integration
         title={"Integrations"}
         description={

@@ -8,9 +8,9 @@ import {
   TryAction,
   Services,
   LoyaltyBanner,
-  TabComponent
+  TabComponent,
 } from "../../components";
-import { BannerConfig, TestimonialConfig,LoyaltyConfig } from "../../config";
+import { BannerConfig, TestimonialConfig, LoyaltyConfig } from "../../config";
 import Icons from "../../shared/assets";
 
 const customLoyalty = [
@@ -59,6 +59,7 @@ const Loyalty = () => {
         }
         description={"All your required key features under one roof"}
       />
+
       <Features
         ptClass="pt_0"
         rowClass="flex-row-reverse"
@@ -71,6 +72,7 @@ const Loyalty = () => {
         desc1={customLoyalty}
         url="#"
       />
+
       <Features
         ptClass="pt_0"
         pClass="pl_70"
@@ -83,6 +85,7 @@ const Loyalty = () => {
         desc1={vipTier}
         url="#"
       />
+
       <Features
         ptClass="pt_0"
         rowClass="flex-row-reverse"
@@ -96,6 +99,7 @@ const Loyalty = () => {
         desc1={loyaltyPoints}
         url="#"
       />
+
       <Features
         ptClass="pt_0"
         pClass="pl_70"
@@ -107,19 +111,22 @@ const Loyalty = () => {
         desc1={loyaltyReward}
         url="#"
       />
-        <Header
-      className={"mb_50"}
-      title={"Grow your store and drive revenue with Marketing Automation "}
-    />
-     <TabComponent
-      Tab={LoyaltyConfig}
-      pClass={"pt_0"}
-    //   rClass={"reduce_height"}
-    />
+
+      <Header
+        className={"mb_50"}
+        title={"Grow your store and drive revenue with Marketing Automation "}
+      />
+
+      <TabComponent
+        Tab={LoyaltyConfig}
+        pClass={"pt_0"}
+        //   rClass={"reduce_height"}
+      />
+
       <Testimonial
         title="Learn How Customer is using Coupons"
         subTitle="Case Studies Carousel"
-        TestimonialConfig={TestimonialConfig}
+        sliderData={TestimonialConfig.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
       <TryAction />
