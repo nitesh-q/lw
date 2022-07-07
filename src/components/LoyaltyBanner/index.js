@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Reveal from "react-reveal/Reveal";
 import Icons from "../../shared/assets";
 import Banner3 from "../../images/loyalty/banner3.svg";
+import Banner4 from "../../images/loyalty/banner3(1).svg";
 
 const LoyaltyBanner = () => {
   return (
@@ -20,7 +21,12 @@ const LoyaltyBanner = () => {
           src={Icons.BannerImg2.default}
         ></img>
       </div>
-      <img className="svg" src={Banner3}></img>
+      
+
+      <img className="svg" src={Banner4}></img>
+      <img className="svg_two" src={Banner3}></img>
+
+    
       <div className="container">
         <div className="row">
           <div className="col-lg-5">
