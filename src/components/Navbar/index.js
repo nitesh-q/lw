@@ -71,9 +71,9 @@ class CustomNavbar extends Component {
                       <li className="nav-item">
                         <Link
                           exact
-                          title="Service"
+                          title="Gift Card"
                           className="nav-link"
-                          to="/giftcard"
+                          to="/gift"
                         >
                           Gift Card
                         </Link>
@@ -81,7 +81,7 @@ class CustomNavbar extends Component {
                       <li className="nav-item">
                         <Link
                           exact
-                          title="Service Details"
+                          title="Loyalty"
                           className="nav-link"
                           to="/loyalty"
                         >

@@ -2,12 +2,12 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
 
-const TabComponent = ({ Tab, pClass, rClass }) => {
-  const [activeTab, setActiveTab] = useState(Tab.Pannel[0].id);
+const TabComponent = ({ config, pClass, rClass }) => {
+  const [activeTab, setActiveTab] = useState(config.PANNEL_DATA[0].id);
   return (
     <section className={`developer_product_area sec_pad ${pClass} `}>
       <div className="container">
-        {Tab.Head.map((item, index) => (
+        {config.HEAD.map((item, index) => (
           <h2
             key={index}
             className="f_size_30 f_600 t_color3 l_height40 text-center mb_50 l_sapcing1"
@@ -24,7 +24,7 @@ const TabComponent = ({ Tab, pClass, rClass }) => {
                 id="myTab1"
                 role="tablist"
               >
-                {Tab.Pannel.map((item, index) => (
+                {config.PANNEL_DATA.map((item, index) => (
                   <>
                     <li
                       className="nav-item"
@@ -50,7 +50,7 @@ const TabComponent = ({ Tab, pClass, rClass }) => {
                 ))}
               </ul>
             </div>
-            {Tab.Pannel.map((item, index) =>
+            {config.PANNEL_DATA.map((item, index) =>
               activeTab === item.id ? (
                 <div key={index} className="tab-content developer_tab_content ">
                   <div

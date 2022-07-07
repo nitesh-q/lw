@@ -10,7 +10,9 @@ import {
   LoyaltyBanner,
   TabComponent,
 } from "../../components";
-import { BannerConfig, TestimonialConfig, LoyaltyConfig } from "../../config";
+import {  TestimonialConfig, } from "../../config";
+import { LOYALTY_CONFIG } from "../../config/loyaltyTab.config";
+
 import Icons from "../../shared/assets";
 
 const customLoyalty = [
@@ -118,7 +120,7 @@ const Loyalty = () => {
       />
 
       <TabComponent
-        Tab={LoyaltyConfig}
+        config={LOYALTY_CONFIG}
         pClass={"pt_0"}
         //   rClass={"reduce_height"}
       />

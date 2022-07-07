@@ -1,8 +1,8 @@
 import Icons from "../shared/assets";
 
-export default {
-  Head: [{ Title: "" }],
-  Pannel: [
+export const GIFTCARD_CONFIG = {
+  HEAD: [{ Title: "" }],
+  PANNEL_DATA: [
     {
       id: "reload",
       label: "Reload/Top Up",

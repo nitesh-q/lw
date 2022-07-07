@@ -1,8 +1,8 @@
 import Icons from "../shared/assets";
 
-export default {
-  Head: [{ Title: "" }],
-  Pannel: [
+export const LOYALTY_CONFIG ={
+  HEAD: [{ Title: "" }],
+  PANNEL_DATA: [
     {
       id: "controlPanel",
       label: "Control Panel",

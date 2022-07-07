@@ -11,7 +11,8 @@ import {
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import { TestimonialConfig, BannerConfig, GiftCardConfig } from "../../config";
+import { TestimonialConfig, BannerConfig,} from "../../config";
+import { GIFTCARD_CONFIG } from "../../config/giftcardTab.config";
 
 const giftcard = [
   {
@@ -58,7 +59,6 @@ const sale = [
 ];
 const GiftCard = () => {
   return (
-    // <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
     <Layout>
       <Banner
         BannerConfig={BannerConfig.GIFTCARD}
@@ -67,7 +67,7 @@ const GiftCard = () => {
         mClass={"mb_90"}
         wClass={"mw_125"}
       />
-      {/* <GiftCardBanner /> */}
+
       <TrustedMerchants />
 
       <Header
@@ -118,7 +118,7 @@ const GiftCard = () => {
         url="#"
       />
       <Header className={"mt_120"} title={"Gift Card & Platform features"} />
-      <TabComponent Tab={GiftCardConfig} pClass={"pt_0"} />
+      <TabComponent config={GIFTCARD_CONFIG} pClass={"pt_0"} />
 
       <Testimonial
         title="Testimonials"
