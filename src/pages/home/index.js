@@ -10,10 +10,10 @@ import {
   TabComponent,
 } from "../../components";
 import {
-  HOMETAB_CONFIG1,
+  HOME_TAB1_CONFIG,
   BANNERS_CONFIG,
   TESTIMONIAL_CONFIG,
-  HOMETAB_CONFIG2,
+  HOME_TAB2_CONFIG,
 } from "../../config";
 
 const Home = () => (
@@ -26,7 +26,7 @@ const Home = () => (
     />
     <TrustedMerchants />
     <TabComponent
-      config={HOMETAB_CONFIG1}
+      config={HOME_TAB1_CONFIG}
       pClass={"pt_200"}
       rClass={"reduce_height"}
     />
@@ -35,7 +35,7 @@ const Home = () => (
       title={"Grow your store and drive revenue with Marketing Automation "}
     />
     <TabComponent
-      config={HOMETAB_CONFIG2}
+      config={HOME_TAB2_CONFIG}
       pClass={"pt_0"}
       rClass={"reduce_height"}
     />
@@ -43,7 +43,6 @@ const Home = () => (
       title="Testimonials"
       subTitle="Hear from our Clients"
       sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
-
       bgColor={`bg_color`}
     />
     <Integration

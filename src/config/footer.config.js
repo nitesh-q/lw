@@ -24,15 +24,15 @@ export const FOOTER_CONFIG = {
     },
   ],
 
-  ABOUT_WIDGET: [
+  WIDGETS: [
     {
       id: 1,
       title: "Products",
       menuItems: [
-        { id: 1, url: "#", text: "Gift Cards" },
-        { id: 2, url: "#", text: "Loyalty Programs" },
-        { id: 3, url: "#", text: "Coupons" },
-        { id: 4, url: "#", text: "Referral Programs" },
+        { id: 1, url: "/giftcard", text: "Gift Cards" },
+        { id: 2, url: "/loyalty", text: "Loyalty Programs" },
+        { id: 3, url: "/coupons", text: "Coupons" },
+        { id: 4, url: "/referral", text: "Referral Programs" },
         { id: 5, url: "#", text: "Discounts" },
         { id: 6, url: "#", text: "Bundling" },
         { id: 7, url: "#", text: "Geolocation" },

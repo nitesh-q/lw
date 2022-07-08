@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Reveal from "react-reveal/Reveal";
 import SocialLink from "./SocialLink";
-import AboutWidget from "./AboutWidget";
+import AboutWidget from "./Widget";
 import CompanyWidget from "./CompanyWidget";
 import CopyWriteSection from "./CopyWriteSection";
 
@@ -32,7 +32,7 @@ const Footer = ({ config }) => {
               );
             })}
 
-            {config.ABOUT_WIDGET.map((widget, index) => {
+            {config.WIDGETS.map((widget, index) => {
               return (
                 <RevealWrapper key={index} className={"col-lg-2 col-md-6"}>
                   <AboutWidget items={widget.menuItems} title={widget.title} />

@@ -1,5 +1,70 @@
 import Icons from "../shared/assets";
 
+export const RELOAD_LIST = [
+  {
+    id: 1,
+    title: "",
+    description: " Reload Gift card @store, @online",
+  },
+  {
+    id: 2,
+    title: "",
+    description: "Add Promotional $ value to Gift card from Admin Panel",
+  },
+];
+
+export const UPLOAD_PHOTO_LIST = [
+  {
+    id: 1,
+    title: "",
+    description: " Reload Gift card @store, @online",
+  },
+  {
+    id: 2,
+    title: "",
+    description: "Add Promotional $ value to Gift card from Admin Panel",
+  },
+];
+
+export const SKU_LIST = [
+  {
+    id: 1,
+    title: "",
+    description: " Reload Gift card @store, @online",
+  },
+  {
+    id: 2,
+    title: "",
+    description: "Add Promotional $ value to Gift card from Admin Panel",
+  },
+];
+
+export const MOBILE_WALLET_LIST = [
+  {
+    id: 1,
+    title: "",
+    description: " Reload Gift card @store, @online",
+  },
+  {
+    id: 2,
+    title: "",
+    description: "Add Promotional $ value to Gift card from Admin Panel",
+  },
+];
+
+export const MIGRATION_LIST = [
+  {
+    id: 1,
+    title: "",
+    description: " Reload Gift card @store, @online",
+  },
+  {
+    id: 2,
+    title: "",
+    description: "Add Promotional $ value to Gift card from Admin Panel",
+  },
+];
+
 export const GIFTCARD_TABS_CONFIG = {
   HEAD: [{ Title: "" }],
   PANNEL_DATA: [
@@ -9,21 +74,9 @@ export const GIFTCARD_TABS_CONFIG = {
       selected: "true",
       image: Icons.Reload.default,
       title: "Reload/Top Up Gift Card ",
-      list: "",
       description1: "",
       description2: "",
-      list: [
-        {
-          id: 1,
-          title: "",
-          description: " Reload Gift card @store, @online",
-        },
-        {
-          id: 2,
-          title: "",
-          description: "Add Promotional $ value to Gift card from Admin Panel",
-        },
-      ],
+      list: RELOAD_LIST,
     },
     {
       id: "uploadPhoto",
@@ -33,18 +86,7 @@ export const GIFTCARD_TABS_CONFIG = {
       title: "Upload Photo & Video",
       description1: "",
       description2: "",
-      list: [
-        {
-          id: 1,
-          title: "",
-          description: " Reload Gift card @store, @online",
-        },
-        {
-          id: 2,
-          title: "",
-          description: "Add Promotional $ value to Gift card from Admin Panel",
-        },
-      ],
+      list: UPLOAD_PHOTO_LIST,
     },
     {
       id: "sku",
@@ -55,18 +97,7 @@ export const GIFTCARD_TABS_CONFIG = {
       subTitle: "",
       description1: "",
       description2: "",
-      list: [
-        {
-          id: 1,
-          title: "",
-          description: " Reload Gift card @store, @online",
-        },
-        {
-          id: 2,
-          title: "",
-          description: "Add Promotional $ value to Gift card from Admin Panel",
-        },
-      ],
+      list: SKU_LIST,
     },
 
     {
@@ -76,18 +107,7 @@ export const GIFTCARD_TABS_CONFIG = {
       title: "Mobile Wallet Pass",
       description1: "  ",
       description2: "",
-      list: [
-        {
-          id: 1,
-          title: "",
-          description: " Reload Gift card @store, @online",
-        },
-        {
-          id: 2,
-          title: "",
-          description: "Add Promotional $ value to Gift card from Admin Panel",
-        },
-      ],
+      list: MOBILE_WALLET_LIST,
     },
     {
       id: "migration",
@@ -97,18 +117,7 @@ export const GIFTCARD_TABS_CONFIG = {
       subTitle: "",
       description1: "",
       description2: "",
-      list: [
-        {
-          id: 1,
-          title: "",
-          description: " Reload Gift card @store, @online",
-        },
-        {
-          id: 2,
-          title: "",
-          description: "Add Promotional $ value to Gift card from Admin Panel",
-        },
-      ],
+      list: MIGRATION_LIST,
     },
   ],
 };
@@ -154,7 +163,13 @@ export const GIFTCARD_FEATURES_CONFIG = {
     },
   ],
   SALE: [
-    { id: 1, desc: "Reload Gift card @store, @online" },
-    { id: 2, desc: "Add Promotional $ value to Gift card from Admin Panel" },
+    {
+      id: 1,
+      desc: "Reload Gift card @store, @online",
+    },
+    {
+      id: 2,
+      desc: "Add Promotional $ value to Gift card from Admin Panel",
+    },
   ],
 };

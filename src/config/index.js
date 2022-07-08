@@ -1,9 +1,9 @@
-export * from "./banner.config";
+export * from "./banners.config";
 export * from "./trustedMerchants.config";
 export * from "./footer.config";
 export * from "./testimonial.config";
-export * from "./homeTab1.config";
-export * from "./homeTab2.config";
-export * from "./giftcard.config";
-export * from "./loyalty.config";
+export * from "./homePage.config";
+export * from "./giftcardPage.config";
+export * from "./loyaltyPage.config";
+export * from "./referralPage.config";
 export { default as Constants } from "./constants";

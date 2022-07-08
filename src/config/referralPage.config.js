@@ -1,6 +1,8 @@
 import Icons from "../shared/assets";
 
-export default {
+
+
+export const REFERRAL_TAB_CONFIG = {
 HEAD: [{ Title: "" }],
 PANNEL_DATA: [
     {
@@ -23,3 +25,32 @@ PANNEL_DATA: [
     },
   ],
 };
+
+export const REFERRAL_FEATURES_CONFIG ={
+  INTEGRATIONS : [
+    {
+      id: 1,
+      desc: "Schedule Gift card delivery up to 180 days",
+    },
+    {
+      id: 2,
+      desc: "Out of stock gift card to retain customer",
+    },
+  ],
+  POS: [{
+    id: 1,
+    desc: "Schedule Gift card delivery up to 180 days",
+  },
+  {
+    id: 2,
+    desc: "Out of stock gift card to retain customer",
+  },],
+  MULTI_CURRENCY :[{
+      id: 1,
+      desc: "Schedule Gift card delivery up to 180 days",
+    },
+    {
+      id: 2,
+      desc: "Out of stock gift card to retain customer",
+    },]
+}

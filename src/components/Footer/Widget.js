@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "gatsby";
 
 /**
- * Social links
+ * Abut Widgets
  * @param {*} param0
  * @returns
  */
-const AboutWidget = ({ title, items }) => {
+const Widget = ({ title, items }) => {
   return (
     <div
       className="f_widget about-widget pl_40 wow fadeInLeft"
@@ -17,7 +17,7 @@ const AboutWidget = ({ title, items }) => {
         {items.map((item, index) => {
           return (
             <li key={index}>
-              <Link to="/">{item.text}</Link>
+              <Link to={item.url}>{item.text}</Link>
             </li>
           );
         })}
@@ -25,4 +25,4 @@ const AboutWidget = ({ title, items }) => {
     </div>
   );
 };
-export default AboutWidget;
+export default Widget;

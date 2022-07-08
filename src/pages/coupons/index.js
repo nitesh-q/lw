@@ -13,9 +13,7 @@ import {
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
 import {
-  TestimonialConfig,
   BANNERS_CONFIG,
-  GiftCardConfig,
   TESTIMONIAL_CONFIG,
 } from "../../config";
 
@@ -77,8 +75,6 @@ const GiftCard = () => {
         list={customerReward}
         url="#"
       />
-      {/* <Header className={"mt_120"} title={"Gift Card & Platform features"} /> */}
-      {/* <TabComponent Tab={GiftCardConfig} pClass={"pt_0"} /> */}
       <Testimonial
         title="Testimonials"
         subTitle="Hear from our Clients"
