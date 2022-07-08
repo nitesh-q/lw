@@ -63,7 +63,10 @@ class TrustedMerchants extends Component {
                 {TrustedMerchantsConfig.Merchant.map((item, index) => (
                   <div key={index} className="erp_testimonial_item">
                     <div className="media">
-                      <div className="media-body  wow fadeInLeft" data-wow-delay="0.1s">
+                      <div
+                        className="media-body  wow fadeInLeft"
+                        data-wow-delay="0.1s"
+                      >
                         <img src={item.image} alt={item.id} />
                       </div>
                     </div>

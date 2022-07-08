@@ -73,7 +73,7 @@ class CustomNavbar extends Component {
                           exact
                           title="Gift Card"
                           className="nav-link"
-                          to="/giftcard"
+                          to="/gift"
                         >
                           Gift Card
                         </Link>

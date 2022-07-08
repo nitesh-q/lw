@@ -19,7 +19,7 @@ import {
 const Home = () => (
   <Layout>
     <Banner
-      BannerConfig={BannerConfig.Home}
+      BannerConfig={BannerConfig.HOME}
       Supported={true}
       StartedFreeForm={true}
       AllService={false}
@@ -42,7 +42,7 @@ const Home = () => (
     <Testimonial
       title="Testimonials"
       subTitle="Hear from our Clients"
-      TestimonialConfig={TestimonialConfig}
+      sliderData={TestimonialConfig.TESTIMONIAL_SLIDER_DATA}
       bgColor={`bg_color`}
     />
     <Integration

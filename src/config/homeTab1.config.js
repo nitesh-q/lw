@@ -1,7 +1,6 @@
 import Icons from "../shared/assets";
 
 export default {
-    
   Head: [{ Title: "Customer Engagement & Retention Platform" }],
   Pannel: [
     {
@@ -10,7 +9,7 @@ export default {
       selected: "true",
       image: Icons.Giftcard_img.default,
       title: "Gift Cards",
-      title2:"",
+      title2: "",
       description1: "",
       description2: "",
       subTitle: [
@@ -52,7 +51,7 @@ export default {
       selected: "false",
       image: Icons.StoreCredit_img.default,
       title: "Store Credit",
-      title2:"",
+      title2: "",
       description1:
         "Offering your customers’ store credit can be a great way of improving customer retention.Merchant can use Store credit:",
       description2:
@@ -109,7 +108,7 @@ export default {
       label: "Refferal",
       image: Icons.Refferal_img.default,
       title: "Referral",
-      title2:"",
+      title2: "",
       description1:
         "  Boost your organic sales by adding a customer referral program to your eCommerce store",
       description2: "",

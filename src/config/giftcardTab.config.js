@@ -1,9 +1,8 @@
 import Icons from "../shared/assets";
 
-export default {
-    
-  Head: [{ Title: "" }],
-  Pannel: [
+export const GIFTCARD_CONFIG = {
+  HEAD: [{ Title: "" }],
+  PANNEL_DATA: [
     {
       id: "reload",
       label: "Reload/Top Up",
@@ -16,14 +15,12 @@ export default {
         {
           id: 1,
           title: "",
-          description:
-            " Reload Gift card @store, @online",
+          description: " Reload Gift card @store, @online",
         },
         {
           id: 2,
           title: "",
-          description:
-            "Add Promotional $ value to Gift card from Admin Panel",
+          description: "Add Promotional $ value to Gift card from Admin Panel",
         },
       ],
     },
@@ -33,20 +30,18 @@ export default {
       selected: "false",
       image: Icons.Upload.default,
       title: "Upload Photo & Video",
-      description1:"",
-      description2:"",
+      description1: "",
+      description2: "",
       subTitle: [
         {
           id: 1,
           title: "",
-          description:
-            " Reload Gift card @store, @online",
+          description: " Reload Gift card @store, @online",
         },
         {
           id: 2,
           title: "",
-          description:
-            "Add Promotional $ value to Gift card from Admin Panel",
+          description: "Add Promotional $ value to Gift card from Admin Panel",
         },
       ],
     },
@@ -57,21 +52,18 @@ export default {
       image: Icons.Reload.default,
       title: "SKU Based Gift Card",
       title2: "",
-      description1:
-       "",
+      description1: "",
       description2: "",
       subTitle: [
         {
           id: 1,
           title: "",
-          description:
-            " Reload Gift card @store, @online",
+          description: " Reload Gift card @store, @online",
         },
         {
           id: 2,
           title: "",
-          description:
-            "Add Promotional $ value to Gift card from Admin Panel",
+          description: "Add Promotional $ value to Gift card from Admin Panel",
         },
       ],
     },
@@ -81,21 +73,18 @@ export default {
       label: "Mobile Wallet Pass",
       image: Icons.Reload.default,
       title: "Mobile Wallet Pass",
-      description1:
-        "  ",
+      description1: "  ",
       description2: "",
       subTitle: [
         {
           id: 1,
           title: "",
-          description:
-            " Reload Gift card @store, @online",
+          description: " Reload Gift card @store, @online",
         },
         {
           id: 2,
           title: "",
-          description:
-            "Add Promotional $ value to Gift card from Admin Panel",
+          description: "Add Promotional $ value to Gift card from Admin Panel",
         },
       ],
     },
@@ -105,23 +94,20 @@ export default {
       image: Icons.Reload.default,
       title: "Gift Card Migration",
       title2: "",
-      description1:"",
+      description1: "",
       description2: "",
       subTitle: [
         {
           id: 1,
           title: "",
-          description:
-            " Reload Gift card @store, @online",
+          description: " Reload Gift card @store, @online",
         },
         {
           id: 2,
           title: "",
-          description:
-            "Add Promotional $ value to Gift card from Admin Panel",
+          description: "Add Promotional $ value to Gift card from Admin Panel",
         },
       ],
-  
     },
   ],
 };

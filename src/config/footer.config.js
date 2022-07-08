@@ -1,5 +1,21 @@
-export default {
-  CompanyWidget: [
+export const FOOTER_SEQUENCE = [
+  "COMPANY_WIDGET",
+  "ABOUT_WIDGET",
+  "TERM_CONDITION",
+  "SOCIAL_LINKS",
+  "SOCIAL_ICONS",
+  "COPY_WRITE",
+  "TESTTIMONIAL_TEXT",
+  "ABOUT_LINKS",
+  "HELP_LINKS",
+  "PRIVACY_LINKS",
+  "ABOUT",
+  "SOLUTIONS",
+  "TEAM_SOLUTION",
+];
+
+export const FOOTER_CONFIG = {
+  COMPANY_WIDGET: [
     {
       id: 1,
       title: "Get In Touch",
@@ -7,7 +23,8 @@ export default {
         "Don’t miss any updates of our new templates and extensions.!",
     },
   ],
-  AboutWidget: [
+
+  ABOUT_WIDGET: [
     {
       id: 1,
       title: "Products",
@@ -43,7 +60,8 @@ export default {
       ],
     },
   ],
-  termsCondition: [
+
+  TERM_CONDITION: [
     {
       id: 1,
       title: "Team Solutions",
@@ -55,7 +73,8 @@ export default {
       ],
     },
   ],
-  SocialLinks: [
+
+  SOCIAL_LINKS: [
     {
       id: 1,
       title: "Team Solutions",
@@ -83,7 +102,8 @@ export default {
       ],
     },
   ],
-  socialIcon: [
+
+  SOCIAL_ICONS: [
     {
       id: 1,
       url: "https://www.facebook.com/",
@@ -105,8 +125,10 @@ export default {
       icon: "ti-pinterest",
     },
   ],
-  copywrite: `Copyright © ${new Date().getFullYear()} 99minds Inc. All rights reserved.`,
-  TestimonialText: [
+
+  COPY_WRITE: `Copyright © ${new Date().getFullYear()} 99minds Inc. All rights reserved.`,
+
+  TESTTIMONIAL_TEXT: [
     {
       id: 1,
       image: "new/member_01.jpg",
@@ -140,7 +162,8 @@ export default {
       authorPost: "UI/UX designer",
     },
   ],
-  aboutLinks: [
+
+  ABOUT_LINKS: [
     {
       id: 1,
       url: "#",
@@ -167,7 +190,8 @@ export default {
       item: "Jobs",
     },
   ],
-  helpLinks: [
+
+  HELP_LINKS: [
     {
       id: 1,
       url: "#",
@@ -194,7 +218,8 @@ export default {
       item: "Shop",
     },
   ],
-  PrivacyLinks: [
+
+  PRIVACY_LINKS: [
     {
       id: 1,
       url: "#",
@@ -211,7 +236,8 @@ export default {
       item: "Feedback",
     },
   ],
-  about: [
+
+  ABOUT: [
     {
       id: 1,
       url: "#",
@@ -243,7 +269,8 @@ export default {
       text: "Wavelength",
     },
   ],
-  Solution: [
+
+  SOLUTIONS: [
     {
       id: 1,
       url: "#",
@@ -275,7 +302,8 @@ export default {
       text: "See All Uses",
     },
   ],
-  teamSolution: [
+
+  TEAM_SOLUTION: [
     {
       id: 1,
       url: "#",
