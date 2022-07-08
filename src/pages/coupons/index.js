@@ -1,25 +1,51 @@
 import React from "react";
 import {
-  Integration,
   Testimonial,
   TryAction,
   Banner,
   TrustedMerchants,
   Features,
   Header,
-  TabComponent,
   Services,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import {
-  BANNERS_CONFIG,
-  TESTIMONIAL_CONFIG,
-} from "../../config";
+import { BANNERS_CONFIG, TESTIMONIAL_CONFIG } from "../../config";
 
-const couponMarkting = [];
-const customCoupons = [];
-const customerReward = [];
+const COUPON_FEATURES = [
+  {
+    pClass: "pr_70",
+    rowClass: "flex-row-reverse",
+    col1: "col-lg-6 offset-lg-1",
+    col2: "col-lg-5",
+    img1: Icons.Work1.default,
+    title: "Advanced coupon marketing software",
+    subTitle: "",
+    desc: "Efficiently create millions of randomly generated coupons. Set expiry dates and link customer IDs to single coupons.",
+    list: [],
+  },
+  {
+    pClass: "pl_70",
+    col1: "col-lg-6",
+    col2: "col-lg-5 offset-lg-1",
+    img1: Icons.Work2.default,
+    title: "Custom-made coupons",
+    subTitle: "",
+    desc: "SKU-based Coupon Category based coupon BOGO Coupon",
+    list: [],
+  },
+  {
+    pClass: "pr_70",
+    rowClass: "flex-row-reverse",
+    col1: "col-lg-6 offset-lg-1",
+    col2: "col-lg-5",
+    img1: Icons.Work3.default,
+    title: "Reward your customers the way they want",
+    subTitle: "",
+    desc: "Track coupon usage using coupons transactions associated with Customer & Order ID",
+    list: [],
+  },
+];
 
 const GiftCard = () => {
   return (
@@ -38,43 +64,10 @@ const GiftCard = () => {
         title={"Key features."}
         description={"All your gift card needs, covered"}
       />
-      <Features
-        ptClass="pt_0"
-        rowClass="flex-row-reverse"
-        pClass="pr_70"
-        col1="col-lg-6 offset-lg-1"
-        col2="col-lg-5"
-        img1={Icons.Work1.default}
-        title="Advanced coupon marketing software"
-        subTitle=""
-        desc="Efficiently create millions of randomly generated coupons. Set expiry dates and link customer IDs to single coupons."
-        list={couponMarkting}
-        url="#"
-      />
-      <Features
-        ptClass="pt_0"
-        pClass="pl_70"
-        col1="col-lg-6"
-        col2="col-lg-5 offset-lg-1"
-        img1={Icons.Work2.default}
-        title="Custom-made coupons"
-        desc="SKU-based Coupon Category based coupon BOGO Coupon"
-        list={customCoupons}
-        url="#"
-      />
-      <Features
-        ptClass="pt_0"
-        rowClass="flex-row-reverse"
-        pClass="pr_70"
-        col1="col-lg-6 offset-lg-1"
-        img1={Icons.Work3.default}
-        col2="col-lg-5"
-        title="Reward your customers the way they want"
-        subTitle=""
-        desc="Track coupon usage using coupons transactions associated with Customer & Order ID"
-        list={customerReward}
-        url="#"
-      />
+      {COUPON_FEATURES.map((card) => (
+        <Features ptClass="pt_0" pClass="pr_70" {...{ ...card }} url="#" />
+      ))}
+
       <Testimonial
         title="Testimonials"
         subTitle="Hear from our Clients"

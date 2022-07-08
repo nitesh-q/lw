@@ -1,15 +1,21 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 import Logo from "../../images/logo/logo.png";
-import Logo1 from "../../images/logo/logo1.png"
+import Logo1 from "../../images/logo/logo1.png";
 import Sticky from "react-stickynode";
+import {
+  ROUTES,
+  ROUTES_LABEL,
+  CHILDRENS,
+  CHILD_ROUTES,
+  ADD_DEVIDER_BEFORE,
+} from "../../config";
 
 class CustomNavbar extends Component {
   render() {
     var { mClass, nClass, cClass, slogo, hbtnClass } = this.props;
     return (
       <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
-
         <header className="header_area">
           <nav className={`navbar navbar-expand-lg menu_one ${mClass}`}>
             <div className={`container ${cClass}`}>
@@ -34,237 +40,95 @@ class CustomNavbar extends Component {
                   </span>
                 </span>
               </button>
+
               <Link className={`navbar-brand pt_0 ${slogo} `} to="/">
                 <img src={Logo1} alt="logo1" />
                 <img src={Logo} alt="logo" />
-
               </Link>
               <div
                 className={`collapse navbar-collapse justify-content-end `}
                 id="navbarSupportedContent"
               >
                 <ul className={`navbar-nav menu ml-auto ${nClass}`}>
-                  <li className="nav-item">
-                    <Link title="home" className="nav-link" to="/">
-                      Home
-                    </Link>
-                  </li>
-                  <li className="dropdown submenu nav-item">
-                    <Link
-                      to="./"
-                      title="Pages"
-                      className="dropdown-toggle nav-link"
-                      data-bs-toggle="dropdown"
-                      role="button"
-                      id="navbarDropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Products
-                      <i className="ti-angle-down icon"></i>
-                    </Link>
-                    <ul
-                      role="menu"
-                      className=" dropdown-menu"
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li className="nav-item">
-                        <Link
-                          exact
-                          title="Gift Card"
-                          className="nav-link"
-                          to="/giftcard"
+                  {Object.keys(ROUTES).map((key, i) => {
+                    let _props = { className: "nav-link" };
+                    const isChild = !!(CHILDRENS[key] || []).length;
+                    if (isChild) {
+                      _props = {
+                        className: "dropdown-toggle nav-link",
+                        "data-bs-toggle": "dropdown",
+                      };
+                    }
+
+                    return (
+                      <>
+                        {!!ADD_DEVIDER_BEFORE[key] && (
+                          <div className="d-flex align-items-center">
+                            <hr className="line_vertical" />
+                          </div>
+                        )}
+
+                        <li
+                          key={i}
+                          className={
+                            isChild ? "dropdown submenu nav-item" : "nav-item"
+                          }
                         >
-                          Gift Card
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          exact
-                          title="Loyalty"
-                          className="nav-link"
-                          to="/loyalty"
-                        >
-                         Loyalty
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          exact
-                          title="Coupons"
-                          className="nav-link"
-                          to="/coupons"
-                        >
-                         Coupons
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          exact
-                          title="Coupons"
-                          className="nav-link"
-                          to="/referral"
-                        >
-                         Referral Program
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="dropdown submenu nav-item">
-                    <Link
-                      title="Pages"
-                      className="dropdown-toggle nav-link"
-                      data-bs-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      to="#"
-                    >
-                      Integration<i className="ti-angle-down icon"></i>
-                    </Link>
-                    <ul role="menu" className=" dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          title="Portfolio 2"
-                          className="nav-link"
-                          to="/Portfolio-2col"
-                        >
-                          Integration-1
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          title="Portfolio 3"
-                          className="nav-link"
-                          to="/Portfolio-3col"
-                        >
-                          Integration-2
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          title="Portfolio Fullwidth"
-                          className="nav-link"
-                          to="/Portfolio-fullwidth-4col"
-                        >
-                          Integration-3
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          title="PortfolioSingle"
-                          className="nav-link"
-                          to="/PortfolioSingle"
-                        >
-                          Integration-4
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="dropdown submenu nav-item">
-                    <Link
-                      title="Pages"
-                      className="dropdown-toggle nav-link"
-                      data-bs-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      to="#"
-                    >
-                      Resources<i className="ti-angle-down icon"></i>
-                    </Link>
-                    <ul role="menu" className=" dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          title="Portfolio 2"
-                          className="nav-link"
-                          to="/Portfolio-2col"
-                        >
-                          Resources-1
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          title="Portfolio 3"
-                          className="nav-link"
-                          to="/Portfolio-3col"
-                        >
-                          Resources-2
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          title="Portfolio Fullwidth"
-                          className="nav-link"
-                          to="/Portfolio-fullwidth-4col"
-                        >
-                          Resources-3
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          title="PortfolioSingle"
-                          className="nav-link"
-                          to="/PortfolioSingle"
-                        >
-                          Resources-4
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item dropdown submenu">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href=".#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Developers<i className="ti-angle-down icon"></i>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link to="/Bloglist" className="nav-link">
-                          Developer-1
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link to="/BlogGridPage" className="nav-link">
-                          Developer-2
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link to="/BlogSingle" className="nav-link">
-                          Developer-3
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <div className="d-flex align-items-center">
-                    <hr className="line_vertical" />
-                  </div>
-                  <li className="nav-item hide">
-                    <Link title="Pricing" className="nav-link" to="/Contact">
-                      Sign In
-                    </Link>
-                  </li>
+                          <Link
+                            title={ROUTES_LABEL[key]}
+                            className="nav-link"
+                            to="/"
+                            id={ROUTES_LABEL[key]}
+                            {..._props}
+                          >
+                            {ROUTES_LABEL[key]}
+
+                            {!!CHILDRENS[key].length && (
+                              <i className="ti-angle-down icon"></i>
+                            )}
+                          </Link>
+
+                          <ul
+                            role="menu"
+                            className="dropdown-menu"
+                            aria-labelledby={ROUTES[key]}
+                          >
+                            {!!CHILDRENS[key].length &&
+                              CHILDRENS[key].map((child, index) => {
+                                return (
+                                  <li key={index} className="nav-item">
+                                    <Link
+                                      exact
+                                      title="Gift Card"
+                                      className="nav-link"
+                                      to={CHILD_ROUTES[child]}
+                                    >
+                                      {ROUTES_LABEL[child]}
+                                    </Link>
+                                  </li>
+                                );
+                              })}
+                          </ul>
+                        </li>
+                      </>
+                    );
+                  })}
                 </ul>
-                <a className={`btn_get btn_hover demo hide ${hbtnClass}`} href="#get-app">
-                 Book a Demo
+
+                <a
+                  className={`btn_get btn_hover demo hide ${hbtnClass}`}
+                  href="#get-app"
+                >
+                  Book a Demo
                 </a>
                 {/* <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
                   Sign Up
                 </a> */}
-                
               </div>
               <div className="demo_btn  ">
                 <ul className={` navbar-nav sign_in_bg`}>
                   <li className="nav-item">
-                    <a
-                      className={`btn_get btn_hover `}
-                      href="#get-app"
-                    >
+                    <a className={`btn_get btn_hover `} href="#get-app">
                       Book a Demo
                     </a>
                   </li>
@@ -274,7 +138,6 @@ class CustomNavbar extends Component {
           </nav>
         </header>
       </Sticky>
-      
     );
   }
 }

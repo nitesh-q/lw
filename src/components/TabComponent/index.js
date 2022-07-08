@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import TabPannel from "./TabPannel";
 
 const TabComponent = ({ config, pClass, rClass }) => {
