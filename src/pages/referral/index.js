@@ -18,9 +18,40 @@ import {
   GIFTCARD_TABS_CONFIG,
 } from "../../config";
 
-const couponMarkting = [];
-const customCoupons = [];
-const customerReward = [];
+const REFERRAL_FEATURES = [
+  {
+    pClass: "pr_70",
+    rowClass: "flex-row-reverse",
+    col1: "col-lg-6 offset-lg-1",
+    col2: "col-lg-5",
+    img1: Icons.Work1.default,
+    title: "Online and in-store integrations",
+    desc: "Forget gift cards that work only online or offline. With 99minds, create campaigns that work absolutely everywhere.",
+    subTitle: "",
+    list: [],
+  },
+  {
+    pClass: "pl_70",
+    col1: "col-lg-6",
+    col2: "col-lg-5 offset-lg-1",
+    img1: Icons.Work2.default,
+    title: "Point of Sale (POS) Agnostic redemption",
+    desc: "Send and redeem physical and eGift cards issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed etc.",
+    subTitle: "",
+    list: [],
+  },
+  {
+    pClass: "pr_70",
+    rowClass: "flex-row-reverse",
+    col1: "col-lg-6 offset-lg-1",
+    col2: "col-lg-5",
+    img1: Icons.Work3.default,
+    title: "Multi-Currency Gift Cards",
+    subTitle: "",
+    desc: "Track coupon usage using coupons transactions associated with Customer & Order ID",
+    list: [],
+  },
+];
 
 const Referral = () => {
   return (
@@ -39,43 +70,10 @@ const Referral = () => {
         title={"Key features."}
         description={"All your gift card needs, covered"}
       />
-      <Features
-        ptClass="pt_0"
-        rowClass="flex-row-reverse"
-        pClass="pr_70"
-        col1="col-lg-6 offset-lg-1"
-        col2="col-lg-5"
-        img1={Icons.Work1.default}
-        title="Online and in-store integrations"
-        subTitle=""
-        desc="Forget gift cards that work only online or offline. With 99minds, create campaigns that work absolutely everywhere."
-        list={couponMarkting}
-        url="#"
-      />
-      <Features
-        ptClass="pt_0"
-        pClass="pl_70"
-        col1="col-lg-6"
-        col2="col-lg-5 offset-lg-1"
-        img1={Icons.Work2.default}
-        title="Point of Sale (POS) Agnostic redemption"
-        desc="Send and redeem physical and eGift cards issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed etc."
-        list={customCoupons}
-        url="#"
-      />
-      <Features
-        ptClass="pt_0"
-        rowClass="flex-row-reverse"
-        pClass="pr_70"
-        col1="col-lg-6 offset-lg-1"
-        col2="col-lg-5"
-        img1={Icons.Work3.default}
-        title="Multi-Currency Gift Cards"
-        subTitle=""
-        desc="Track coupon usage using coupons transactions associated with Customer & Order ID"
-        list={customerReward}
-        url="#"
-      />
+
+      {REFERRAL_FEATURES.map((card) => (
+        <Features ptClass="pt_0" {...{ ...card }} url="#" />
+      ))}
 
       <Header
         className={"mt_120"}

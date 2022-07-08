@@ -146,38 +146,3 @@ export const LOYALTY_TABS_CONFIG = {
   ],
 };
 
-export const LOYALTY_FEATURE_CONFIG = {
-  CUSTOM_LOYALTY: [
-    {
-      id: 1,
-      desc: "Point Program",
-    },
-    {
-      id: 2,
-      desc: "VIP Tiered Program",
-    },
-    {
-      id: 3,
-      desc: "Cash Back Program",
-    },
-    {
-      id: 4,
-      desc: "Premium Loyalty Program ( Fee-based loyalty program)",
-    },
-    {
-      id: 5,
-      desc: "Hybrid Loyalty Program",
-    },
-  ],
-  VIP_TIER: [
-    { id: 1, desc: "$ Dollar value vs. Points" },
-    { id: 2, desc: "Calendar year vs. Lifetime" },
-  ],
-  LOYALTY_POINTS: [],
-  LOYALTY_REWARD: [
-    { id: 1, desc: "Free product" },
-    { id: 2, desc: "Amount discount" },
-    { id: 3, desc: "Percentage discount" },
-    { id: 4, desc: "Accelerated points earning" },
-  ],
-};

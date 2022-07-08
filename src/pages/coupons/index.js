@@ -65,7 +65,7 @@ const GiftCard = () => {
         description={"All your gift card needs, covered"}
       />
       {COUPON_FEATURES.map((card) => (
-        <Features ptClass="pt_0" pClass="pr_70" {...{ ...card }} url="#" />
+        <Features ptClass="pt_0"  {...{ ...card }} url="#" />
       ))}
 
       <Testimonial

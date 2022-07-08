@@ -18,6 +18,70 @@ import {
 
 import Icons from "../../shared/assets";
 
+const CUSTOM_LOYALTY_FEATURES_LIST = [
+  { desc: "Point Program" },
+  { desc: "VIP Tiered Program" },
+  { desc: "Cash Back Program" },
+  { desc: "Premium Loyalty Program ( Fee-based loyalty program)" },
+  { desc: "Hybrid Loyalty Program" },
+];
+const VIP_TIER_FEATURES_LIST = [
+  { desc: "$ Dollar value vs. Points" },
+  { desc: "Calendar year vs. Lifetime" },
+];
+
+const LOYALTY_REWARD_FEATURES_LIST = [
+  { desc: "Free product" },
+  { desc: "Amount discount" },
+  { desc: "Percentage discount" },
+  { desc: "Accelerated points earning" },
+];
+
+const LOYALTY_FEATURES = [
+  {
+    pClass: "pr_70",
+    rowClass: "flex-row-reverse",
+    col1: "col-lg-6 offset-lg-1",
+    col2: "col-lg-5",
+    img1: Icons.CustomLoyalty.default,
+    title: "Custom Loyalty Program",
+    subTitle: "Design Loyalty program right for your brand",
+    desc: "",
+    list: CUSTOM_LOYALTY_FEATURES_LIST,
+  },
+  {
+    pClass: "pl_70",
+    col1: "col-lg-6",
+    col2: "col-lg-5 offset-lg-1",
+    img1: Icons.VipTier.default,
+    title: "Configure VIP Tiers",
+    subTitle: "Set up landmarks to accomplish VIP status",
+    desc: "Encourage your customers to attain the next tier with contesting but achievable milestones!",
+    list: VIP_TIER_FEATURES_LIST,
+  },
+  {
+    pClass: "pr_70",
+    rowClass: "flex-row-reverse",
+    col1: "col-lg-6 offset-lg-1",
+    col2: "col-lg-5",
+    img1: Icons.LoyaltyPoints.default,
+    title: "Select activities for earning Points",
+    subTitle: "Earning Points for more than just purchases",
+    desc: "Choose the terminology that makes sense for you: points, punches, or stars.",
+    list: [],
+  },
+  {
+    pClass: "pl_70",
+    col1: "col-lg-6",
+    col2: "col-lg-5 offset-lg-1",
+    img1: Icons.LoyaltyReward.default,
+    title: "Offer Rewards",
+    subTitle: "Customers can redeem points for awesome rewards like:",
+    desc: "",
+    list: LOYALTY_REWARD_FEATURES_LIST,
+  },
+];
+
 const Loyalty = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
@@ -31,53 +95,9 @@ const Loyalty = () => {
         description={"All your required key features under one roof"}
       />
 
-      <Features
-        rowClass="flex-row-reverse"
-        pClass="pr_70"
-        col1="col-lg-6 offset-lg-1"
-        col2="col-lg-5"
-        img1={Icons.CustomLoyalty.default}
-        title="Custom Loyalty Program"
-        subTitle="Design Loyalty program right for your brand"
-        list={LOYALTY_FEATURE_CONFIG.CUSTOM_LOYALTY}
-        url="#"
-      />
-
-      <Features
-        pClass="pl_70"
-        col1="col-lg-6"
-        col2="col-lg-5 offset-lg-1"
-        img1={Icons.VipTier.default}
-        title="Configure VIP Tiers"
-        subTitle="Set up landmarks to accomplish VIP status"
-        desc="Encourage your customers to attain the next tier with contesting but achievable milestones!"
-        list={LOYALTY_FEATURE_CONFIG.VIP_TIER}
-        url="#"
-      />
-
-      <Features
-        rowClass="flex-row-reverse"
-        pClass="pr_70"
-        col1="col-lg-6 offset-lg-1"
-        col2="col-lg-5"
-        img1={Icons.LoyaltyPoints.default}
-        title="Select activities for earning Points"
-        subTitle="Earning Points for more than just purchases"
-        desc="Choose the terminology that makes sense for you: points, punches, or stars."
-        list={LOYALTY_FEATURE_CONFIG.LOYALTY_POINTS}
-        url="#"
-      />
-
-      <Features
-        pClass="pl_70"
-        col1="col-lg-6"
-        col2="col-lg-5 offset-lg-1"
-        img1={Icons.LoyaltyReward.default}
-        title="Offer Rewards"
-        subTitle="Customers can redeem points for awesome rewards like:"
-        list={LOYALTY_FEATURE_CONFIG.LOYALTY_REWARD}
-        url="#"
-      />
+      {LOYALTY_FEATURES.map((card) => (
+        <Features ptClass="pt_0" {...{ ...card }} url="#" />
+      ))}
 
       <Header
         className={"mb_50"}
