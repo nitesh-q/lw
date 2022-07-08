@@ -12,7 +12,12 @@ import {
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import { TestimonialConfig, BannerConfig, GiftCardConfig } from "../../config";
+import {
+  TestimonialConfig,
+  BANNERS_CONFIG,
+  GiftCardConfig,
+  TESTIMONIAL_CONFIG,
+} from "../../config";
 
 const couponMarkting = [];
 const customCoupons = [];
@@ -22,9 +27,9 @@ const GiftCard = () => {
   return (
     <Layout>
       <Banner
-        BannerConfig={BannerConfig.Coupons}
-        TitleClass={`bannerTitle`}
-        AllService={true}
+        config={BANNERS_CONFIG.COUPONS}
+        titleClass={`bannerTitle`}
+        allService={true}
         mClass={"mb_90"}
         wClass={"mw_125"}
       />
@@ -45,7 +50,7 @@ const GiftCard = () => {
         title="Advanced coupon marketing software"
         subTitle=""
         desc="Efficiently create millions of randomly generated coupons. Set expiry dates and link customer IDs to single coupons."
-        desc1={couponMarkting}
+        list={couponMarkting}
         url="#"
       />
       <Features
@@ -54,10 +59,9 @@ const GiftCard = () => {
         col1="col-lg-6"
         col2="col-lg-5 offset-lg-1"
         img1={Icons.Work2.default}
-
         title="Custom-made coupons"
         desc="SKU-based Coupon Category based coupon BOGO Coupon"
-        desc1={customCoupons}
+        list={customCoupons}
         url="#"
       />
       <Features
@@ -70,7 +74,7 @@ const GiftCard = () => {
         title="Reward your customers the way they want"
         subTitle=""
         desc="Track coupon usage using coupons transactions associated with Customer & Order ID"
-        desc1={customerReward}
+        list={customerReward}
         url="#"
       />
       {/* <Header className={"mt_120"} title={"Gift Card & Platform features"} /> */}
@@ -78,7 +82,7 @@ const GiftCard = () => {
       <Testimonial
         title="Testimonials"
         subTitle="Hear from our Clients"
-        TestimonialConfig={TestimonialConfig}
+        sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
       <TryAction />

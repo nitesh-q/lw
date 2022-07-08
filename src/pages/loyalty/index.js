@@ -10,44 +10,13 @@ import {
   LoyaltyBanner,
   TabComponent,
 } from "../../components";
-import {  TestimonialConfig, } from "../../config";
-import { LOYALTY_CONFIG } from "../../config/loyaltyTab.config";
+import {
+  TESTIMONIAL_CONFIG,
+  LOYALTY_TABS_CONFIG,
+  LOYALTY_FEATURE_CONFIG,
+} from "../../config";
 
 import Icons from "../../shared/assets";
-
-const customLoyalty = [
-  {
-    id: 1,
-    desc: "Point Program",
-  },
-  {
-    id: 2,
-    desc: "VIP Tiered Program",
-  },
-  {
-    id: 3,
-    desc: "Cash Back Program",
-  },
-  {
-    id: 4,
-    desc: "Premium Loyalty Program ( Fee-based loyalty program)",
-  },
-  {
-    id: 5,
-    desc: "Hybrid Loyalty Program",
-  },
-];
-const vipTier = [
-  { id: 1, desc: "$ Dollar value vs. Points" },
-  { id: 2, desc: "Calendar year vs. Lifetime" },
-];
-const loyaltyPoints = [];
-const loyaltyReward = [
-  { id: 1, desc: "Free product" },
-  { id: 2, desc: "Amount discount" },
-  { id: 3, desc: "Percentage discount" },
-  { id: 4, desc: "Accelerated points earning" },
-];
 
 const Loyalty = () => {
   return (
@@ -63,7 +32,6 @@ const Loyalty = () => {
       />
 
       <Features
-      
         rowClass="flex-row-reverse"
         pClass="pr_70"
         col1="col-lg-6 offset-lg-1"
@@ -71,12 +39,11 @@ const Loyalty = () => {
         img1={Icons.CustomLoyalty.default}
         title="Custom Loyalty Program"
         subTitle="Design Loyalty program right for your brand"
-        desc1={customLoyalty}
+        list={LOYALTY_FEATURE_CONFIG.CUSTOM_LOYALTY}
         url="#"
       />
 
       <Features
-      
         pClass="pl_70"
         col1="col-lg-6"
         col2="col-lg-5 offset-lg-1"
@@ -84,12 +51,11 @@ const Loyalty = () => {
         title="Configure VIP Tiers"
         subTitle="Set up landmarks to accomplish VIP status"
         desc="Encourage your customers to attain the next tier with contesting but achievable milestones!"
-        desc1={vipTier}
+        list={LOYALTY_FEATURE_CONFIG.VIP_TIER}
         url="#"
       />
 
       <Features
-      
         rowClass="flex-row-reverse"
         pClass="pr_70"
         col1="col-lg-6 offset-lg-1"
@@ -98,19 +64,18 @@ const Loyalty = () => {
         title="Select activities for earning Points"
         subTitle="Earning Points for more than just purchases"
         desc="Choose the terminology that makes sense for you: points, punches, or stars."
-        desc1={loyaltyPoints}
+        list={LOYALTY_FEATURE_CONFIG.LOYALTY_POINTS}
         url="#"
       />
 
       <Features
-       
         pClass="pl_70"
         col1="col-lg-6"
         col2="col-lg-5 offset-lg-1"
         img1={Icons.LoyaltyReward.default}
         title="Offer Rewards"
         subTitle="Customers can redeem points for awesome rewards like:"
-        desc1={loyaltyReward}
+        list={LOYALTY_FEATURE_CONFIG.LOYALTY_REWARD}
         url="#"
       />
 
@@ -120,7 +85,7 @@ const Loyalty = () => {
       />
 
       <TabComponent
-        config={LOYALTY_CONFIG}
+        config={LOYALTY_TABS_CONFIG}
         pClass={"pt_0"}
         //   rClass={"reduce_height"}
       />
@@ -128,7 +93,7 @@ const Loyalty = () => {
       <Testimonial
         title="Learn How Customer is using Coupons"
         subTitle="Case Studies Carousel"
-        sliderData={TestimonialConfig.TESTIMONIAL_SLIDER_DATA}
+        sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
       <TryAction />

@@ -1,6 +1,6 @@
 import Icons from "../shared/assets";
 
-export default {
+export const TESTIMONIAL_CONFIG = {
   TESTIMONIAL_SLIDER_DATA: [
     {
       id: 1,

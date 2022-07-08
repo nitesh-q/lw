@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { TrustedMerchantsConfig } from "../../config";
+import { MERCHANTS_CONFIG } from "../../config";
 
 class TrustedMerchants extends Component {
   render() {
@@ -60,7 +60,7 @@ class TrustedMerchants extends Component {
           <div className="row">
             <div className="erp_testimonial_info">
               <Slider className="erp_testimonial_slider" {...settings}>
-                {TrustedMerchantsConfig.Merchant.map((item, index) => (
+                {MERCHANTS_CONFIG.MERCHANTS.map((item, index) => (
                   <div key={index} className="erp_testimonial_item">
                     <div className="media">
                       <div

@@ -7,12 +7,10 @@ const Features = ({
   title,
   subTitle,
   desc,
-  desc1,
+  list,
   pClass,
   col1,
   col2,
-  img1Class,
-  img2Class,
   ptClass,
 }) => {
   return (
@@ -31,7 +29,7 @@ const Features = ({
               <h2>{title}</h2>
               <h6>{subTitle}</h6>
               <p>{desc}</p>
-              {desc1.map((i, index) => {
+              {list.map((i, index) => {
                 return (
                   <>
                     <ul className="pl_1">

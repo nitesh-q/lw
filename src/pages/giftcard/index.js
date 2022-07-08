@@ -11,59 +11,20 @@ import {
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import { TestimonialConfig, BannerConfig,} from "../../config";
-import { GIFTCARD_CONFIG } from "../../config/giftcardTab.config";
+import {
+  TESTIMONIAL_CONFIG,
+  BANNERS_CONFIG,
+  GIFTCARD_TABS_CONFIG,
+  GIFTCARD_FEATURES_CONFIG,
+} from "../../config";
 
-const giftcard = [
-  {
-    id: 1,
-    desc: "100’s of beautiful Gift Cards based on themes",
-  },
-  {
-    id: 2,
-    desc: "Upload your brand design Gift Cards",
-  },
-];
-const report = [
-  {
-    id: 1,
-    desc: "Gift card life-cycle management, tracking, and visibility from issuance to order level redemption",
-  },
-  {
-    id: 2,
-    desc: "Gift card life-cycle management, tracking, and visibility from issuance to order level redemption",
-  },
-];
-
-const schedule = [
-  {
-    id: 1,
-    desc: "Schedule Gift card delivery up to 180 days",
-  },
-  {
-    id: 2,
-    desc: "Out of stock gift card to retain customer",
-  },
-  {
-    id: 3,
-    desc: "Gift card balance reminder email to customer",
-  },
-  {
-    id: 4,
-    desc: "Add Promotional fund to existing gift card",
-  },
-];
-const sale = [
-  { id: 1, desc: "Reload Gift card @store, @online" },
-  { id: 2, desc: "Add Promotional $ value to Gift card from Admin Panel" },
-];
 const GiftCard = () => {
   return (
     <Layout>
       <Banner
-        BannerConfig={BannerConfig.GIFTCARD}
-        TitleClass={`bannerTitle`}
-        AllService={true}
+        config={BANNERS_CONFIG.GIFTCARD}
+        titleClass={`bannerTitle`}
+        allService={true}
         mClass={"mb_90"}
         wClass={"mw_125"}
       />
@@ -82,7 +43,7 @@ const GiftCard = () => {
         col2="col-lg-5"
         img1={Icons.Giftcard_01.default}
         title="Gift Card Designs"
-        desc1={giftcard}
+        list={GIFTCARD_FEATURES_CONFIG.GIFTCARD}
         url="#"
       />
       <Features
@@ -91,7 +52,7 @@ const GiftCard = () => {
         col2="col-lg-5 offset-lg-1"
         img1={Icons.Report.default}
         title="First ever"
-        desc1={report}
+        list={GIFTCARD_FEATURES_CONFIG.REPORT}
         url="#"
       />
       <Features
@@ -101,7 +62,7 @@ const GiftCard = () => {
         col2="col-lg-5"
         img1={Icons.Schedule.default}
         title="Schedule Delivery & Gift card for Out of Stock inventory"
-        desc1={schedule}
+        list={GIFTCARD_FEATURES_CONFIG.SCHEDULE}
         url="#"
       />
       <Features
@@ -110,16 +71,16 @@ const GiftCard = () => {
         col2="col-lg-5 offset-lg-1"
         img1={Icons.Sale.default}
         title="Point of Sale"
-        desc1={sale}
+        list={GIFTCARD_FEATURES_CONFIG.SALE}
         url="#"
       />
       <Header className={"mt_120"} title={"Gift Card & Platform features"} />
-      <TabComponent config={GIFTCARD_CONFIG} pClass={"pt_0"} />
+      <TabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} />
 
       <Testimonial
         title="Testimonials"
         subTitle="Hear from our Clients"
-        sliderData={TestimonialConfig.TESTIMONIAL_SLIDER_DATA}
+        sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
 

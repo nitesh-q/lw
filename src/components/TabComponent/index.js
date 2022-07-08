@@ -74,9 +74,9 @@ const TabComponent = ({ config, pClass, rClass }) => {
                             <Fade bottom cascade>
                               <div className="customer_engagement_content d-flex-row justify-content-center align-items-start ">
                                 <h2 className="">{item.title}</h2>
-                                <h3 className="t">{item.title2}</h3>
+                                <h3 className="t">{item.subTitle}</h3>
                                 <h6 className="">{item.description1}</h6>
-                                {item.subTitle.map((i, index) => {
+                                {item.list.map((i, index) => {
                                   return (
                                     <ul
                                       className="d-flex justify-content-start pl_1"

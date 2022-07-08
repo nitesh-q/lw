@@ -1,16 +1,15 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 import { SupportedBrand, StartedFree } from "../../components";
 import { Reveal } from "react-reveal";
-import { StaticImage } from 'gatsby-plugin-image'
+
 ;
 
 const Banner = ({
-  BannerConfig,
-  Supported,
-  StartedFreeForm,
-  TitleClass,
-  AllService,
+  config,
+  supportedBrand,
+  startedFreeForm,
+  titleClass,
+  allService,
   mClass,
   wClass
 }) => {
@@ -19,7 +18,7 @@ const Banner = ({
       <div className="container">
         <div className="row flex-row-reverse">
           <div className="col-lg-7 ">
-            {BannerConfig.map((i, index) => {
+            {config.map((i, index) => {
               return (
                 <Reveal effect="fadeInRight" duration={3000}>
                   <div className="seo_features_img">
@@ -37,10 +36,10 @@ const Banner = ({
           <div className="col-lg-5">
           <Reveal bottom cascade>
               <div className="seo_features_content ">
-                {BannerConfig.map((i, index) => {
+                {config.map((i, index) => {
                   return (
                     <>
-                      <h2 key={index} className={`${TitleClass}`}>
+                      <h2 key={index} className={`${titleClass}`}>
                         {i.title}
                       </h2>
                       <h2>{i.subTitle}</h2>
@@ -50,7 +49,7 @@ const Banner = ({
                 })}
 
                 <div className="col-lg-9">
-                  {StartedFreeForm ? (
+                  {startedFreeForm ? (
                     <StartedFree />
                   ) : (
                     <div className="action_btn d-flex align-items-center mt_60">
@@ -73,7 +72,7 @@ const Banner = ({
                 </div>
                 <div className={`row mt_15 flex ${mClass} `}>
                   <li className="col "> No Credit Card Required</li>
-                  {AllService ? (
+                  {allService ? (
                     <>
                       <li className="col"> Free Sign Up</li>
                       <li className="col"> 24/7 Support</li>
@@ -82,7 +81,7 @@ const Banner = ({
                     ""
                   )}
                 </div>
-                {Supported ? <SupportedBrand /> : ""}
+                {supportedBrand ? <SupportedBrand /> : ""}
               </div>
             </Reveal>
           </div>

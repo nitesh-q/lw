@@ -1,6 +1,6 @@
 import Icons from "../shared/assets";
-export default {
-  Merchant: [
+export const MERCHANTS_CONFIG= {
+  MERCHANTS: [
     {
       id: 1,
       image: Icons.Pinstrips.default,

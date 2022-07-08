@@ -1,6 +1,6 @@
 import Icons from "../shared/assets";
 
-export default {
+export const BANNERS_CONFIG = {
   HOME: [
     {
       id: 1,
@@ -28,7 +28,7 @@ export default {
       description: `Growth is good, but retention is forever`,
     },
   ],
-  Coupons: [
+  COUPONS: [
     {
       id: 1,
       title: "Coupons",
@@ -37,7 +37,7 @@ export default {
       description: `Bulk, Dynamic & Personalize coupons generation for your Store`,
     }
   ],
-  Referral: [
+  REFERRAL: [
     {
       id: 1,
       title: "Referral Programs",

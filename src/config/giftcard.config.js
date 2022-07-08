@@ -1,6 +1,6 @@
 import Icons from "../shared/assets";
 
-export const GIFTCARD_CONFIG = {
+export const GIFTCARD_TABS_CONFIG = {
   HEAD: [{ Title: "" }],
   PANNEL_DATA: [
     {
@@ -9,9 +9,10 @@ export const GIFTCARD_CONFIG = {
       selected: "true",
       image: Icons.Reload.default,
       title: "Reload/Top Up Gift Card ",
+      list: "",
       description1: "",
       description2: "",
-      subTitle: [
+      list: [
         {
           id: 1,
           title: "",
@@ -32,7 +33,7 @@ export const GIFTCARD_CONFIG = {
       title: "Upload Photo & Video",
       description1: "",
       description2: "",
-      subTitle: [
+      list: [
         {
           id: 1,
           title: "",
@@ -51,10 +52,10 @@ export const GIFTCARD_CONFIG = {
       selected: "false",
       image: Icons.Reload.default,
       title: "SKU Based Gift Card",
-      title2: "",
+      subTitle: "",
       description1: "",
       description2: "",
-      subTitle: [
+      list: [
         {
           id: 1,
           title: "",
@@ -75,7 +76,7 @@ export const GIFTCARD_CONFIG = {
       title: "Mobile Wallet Pass",
       description1: "  ",
       description2: "",
-      subTitle: [
+      list: [
         {
           id: 1,
           title: "",
@@ -93,10 +94,10 @@ export const GIFTCARD_CONFIG = {
       label: "Gift Card Migration",
       image: Icons.Reload.default,
       title: "Gift Card Migration",
-      title2: "",
+      subTitle: "",
       description1: "",
       description2: "",
-      subTitle: [
+      list: [
         {
           id: 1,
           title: "",
@@ -109,5 +110,51 @@ export const GIFTCARD_CONFIG = {
         },
       ],
     },
+  ],
+};
+
+export const GIFTCARD_FEATURES_CONFIG = {
+  GIFTCARD: [
+    {
+      id: 1,
+      desc: "100’s of beautiful Gift Cards based on themes",
+    },
+    {
+      id: 2,
+      desc: "Upload your brand design Gift Cards",
+    },
+  ],
+  REPORT: [
+    {
+      id: 1,
+      desc: "Gift card life-cycle management, tracking, and visibility from issuance to order level redemption",
+    },
+    {
+      id: 2,
+      desc: "Gift card life-cycle management, tracking, and visibility from issuance to order level redemption",
+    },
+  ],
+
+  SCHEDULE: [
+    {
+      id: 1,
+      desc: "Schedule Gift card delivery up to 180 days",
+    },
+    {
+      id: 2,
+      desc: "Out of stock gift card to retain customer",
+    },
+    {
+      id: 3,
+      desc: "Gift card balance reminder email to customer",
+    },
+    {
+      id: 4,
+      desc: "Add Promotional fund to existing gift card",
+    },
+  ],
+  SALE: [
+    { id: 1, desc: "Reload Gift card @store, @online" },
+    { id: 2, desc: "Add Promotional $ value to Gift card from Admin Panel" },
   ],
 };

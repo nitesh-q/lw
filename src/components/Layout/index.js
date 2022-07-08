@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import { FOOTER_CONFIG } from "../../config/footer.config";
+import { FOOTER_CONFIG } from "../../config";
 import "../../assets/themify-icon/themify-icons.css";
 import "../../assets/simple-line-icon/simple-line-icons.css";
 import "../../assets/font-awesome/css/all.css";

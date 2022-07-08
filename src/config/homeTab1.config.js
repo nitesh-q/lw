@@ -1,18 +1,18 @@
 import Icons from "../shared/assets";
 
-export default {
-  Head: [{ Title: "Customer Engagement & Retention Platform" }],
-  Pannel: [
+export const HOMETAB_CONFIG1= {
+  HEAD: [{ Title: "Customer Engagement & Retention Platform" }],
+  PANNEL_DATA: [
     {
       id: "giftcard",
       label: "Gift Card",
       selected: "true",
       image: Icons.Giftcard_img.default,
       title: "Gift Cards",
-      title2: "",
+      subTitle: "",
       description1: "",
       description2: "",
-      subTitle: [
+      list: [
         {
           id: 1,
           title: "Sell :",
@@ -51,12 +51,12 @@ export default {
       selected: "false",
       image: Icons.StoreCredit_img.default,
       title: "Store Credit",
-      title2: "",
+      subTitle: "",
       description1:
         "Offering your customers’ store credit can be a great way of improving customer retention.Merchant can use Store credit:",
       description2:
         " In 99minds, Store credit can be quickly added to customer accounts from the control panel and automation using workflow engine.",
-      subTitle: [
+      list: [
         {
           id: 1,
           title: "",
@@ -90,11 +90,11 @@ export default {
       selected: "false",
       image: Icons.Loyalty_img.default,
       title: "Loyalty",
-      title2: "",
+      subTitle: "",
       description1:
         "Reward your customers for purchases and otheractions with points which can be redeemed for discounts.",
       description2: "",
-      subTitle: [
+      list: [
         { id: 1, title: "", description: "VIP tiers" },
         { id: 2, title: "", description: "Point Program" },
         { id: 3, title: "", description: "Cash Back Loyalty Programs" },
@@ -108,11 +108,11 @@ export default {
       label: "Refferal",
       image: Icons.Refferal_img.default,
       title: "Referral",
-      title2: "",
+      subTitle: "",
       description1:
         "  Boost your organic sales by adding a customer referral program to your eCommerce store",
       description2: "",
-      subTitle: [
+      list: [
         { id: 1, title: "", description: "Customizable Widget" },
         { id: 2, title: "", description: "Branded Template experience" },
         { id: 3, title: "", description: "Social Sharing link" },
@@ -124,11 +124,11 @@ export default {
       label: "Automation",
       image: Icons.Automation_img.default,
       title: "Automation",
-      title2: "",
+      subTitle: "",
       description1:
         " For ecommerce/retailers brands, Customer acquisition & retention automation enables you to focus on acquiring new customers, and retain customers using:",
       description2: "",
-      subTitle: [
+      list: [
         { id: 1, title: "", description: "Pre-built workflow template" },
         { id: 2, title: "", description: "Loyalty points & Rewards" },
         { id: 3, title: "", description: "Upsell using Gift Card" },
@@ -143,11 +143,11 @@ export default {
       selected: "false",
       image: Icons.Coupons_img.default,
       title: "Coupons",
-      title2: "Robust coupon creation",
+      subTitle: "Robust coupon creation",
       description1:
         " Generate millions of unique coupons in a few clicks, set rules, coupon lengths, etc.",
       description2: "",
-      subTitle: [
+      list: [
         { id: 1, title: "", description: "Bulk Coupons Generation" },
         { id: 2, title: "", description: "Dynamic Coupons" },
         { id: 3, title: "", description: "Unique Coupon code" },
@@ -161,11 +161,11 @@ export default {
       selected: "false",
       image: Icons.Wallet_img.default,
       title: "Wallet & Mobile Pass",
-      title2: "",
+      subTitle: "",
       description1:
         "  Empower customers to store gift cards, loyalty points, coupons,store credit.",
       description2: "",
-      subTitle: [
+      list: [
         {
           id: 1,
           title: "",
