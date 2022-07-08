@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import {
   Banner,
+  AppBanner,
   Integration,
   Testimonial,
   TrustedMerchants,
@@ -17,14 +18,20 @@ import {
 } from "../../config";
 
 const Home = () => (
-  <Layout>
-    <Banner
+  <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
+    {/* <Banner
+      config={BANNERS_CONFIG.HOME}
+      supportedBrand={true}
+      startedFreeForm={true}
+      allService={false}
+    /> */}
+    <AppBanner
       config={BANNERS_CONFIG.HOME}
       supportedBrand={true}
       startedFreeForm={true}
       allService={false}
     />
-    <TrustedMerchants />
+    {/* <TrustedMerchants /> */}
     <TabComponent
       config={HOME_TAB1_CONFIG}
       pClass={"pt_200"}

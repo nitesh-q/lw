@@ -1,6 +1,6 @@
 import React from "react";
 
-const StartedFree = () => {
+const StartedFree = ({btnClass}) => {
   return (
     <div className="row w-100 service">
     <div className="col">
@@ -17,7 +17,7 @@ const StartedFree = () => {
       </form>
     </div>
     <div className="col-lg-1">
-      <a href="/" className="btn btn_get btn_get_two ">
+      <a href="/" className={`btn btn_get btn_get_two ${btnClass}`}>
        Start Free Trial
       </a>
     </div>
