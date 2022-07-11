@@ -2,7 +2,6 @@ import React from "react";
 import { useRef } from "react";
 import Layout from "../../components/Layout";
 import {
-  Banner,
   AppBanner,
   Integration,
   Testimonial,
@@ -11,6 +10,7 @@ import {
   Header,
   TabComponent,
   SupportedBrand,
+  DigitalBanner,
 } from "../../components";
 import {
   HOME_TAB1_CONFIG,
@@ -20,7 +20,6 @@ import {
 } from "../../config";
 
 const Home = () => {
-  const div1 = useRef();
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       {/* <Banner
@@ -29,13 +28,16 @@ const Home = () => {
       startedFreeForm={true}
       allService={false}
     /> */}
-      <AppBanner
+      {/* <AppBanner
         config={BANNERS_CONFIG.HOME}
         supportedBrand={true}
         startedFreeForm={true}
         allService={false}
     
-      />
+      /> */}
+     
+      <DigitalBanner 
+         config={BANNERS_CONFIG.HOME} />
       <SupportedBrand  />
       <TrustedMerchants tClass={"top_0"} />
       <TabComponent
@@ -52,6 +54,7 @@ const Home = () => {
         config={HOME_TAB2_CONFIG}
         pClass={"pt_0"}
         rClass={"reduce_height"}
+        icon={true}
       />
       <Testimonial
         title="Testimonials"

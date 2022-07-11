@@ -12,8 +12,7 @@ import {
 } from "../../components";
 import {
   TESTIMONIAL_CONFIG,
-  LOYALTY_TABS_CONFIG,
-  LOYALTY_FEATURE_CONFIG,
+  LOYALTY_TABS_CONFIG
 } from "../../config";
 
 import Icons from "../../shared/assets";

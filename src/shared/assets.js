@@ -14,6 +14,7 @@ const Icons = {
   Upsell: require("../images/home/upsell.png"),
   Refund: require("../images/home/refund.png"),
   Reward: require("../images/home/reward.png"),
+  Icon: require("../images/home/ellipse_icon.png"),
 
   // .................trusted-merchants..................
   Woo: require("../images/trusted-merchents/woo.png"),
@@ -61,7 +62,12 @@ const Icons = {
   Banner1: require ('../images/home9/shape.png'),
   Work1:require("../images/home4/work1.png"),
   Work2:require("../images/home4/work2.png"),
-  Work3:require("../images/home4/work3.png")
+  Work3:require("../images/home4/work3.png"),
+
+  video1:require("../images/banners/video_img_01.png"),
+  video2:require("../images/banners/video_img_02.png")
+
+
 
 
 

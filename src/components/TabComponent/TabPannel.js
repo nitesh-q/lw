@@ -1,8 +1,9 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import Icons from "../../shared/assets";
 
 
-const TabPannel = ({ item, rClass }) => {
+const TabPannel = ({ item, rClass,icon }) => {
   return (
     <section className="customer_engagement_one d-flex-row justify-content-center align-items-start">
       <div className="container">
@@ -18,6 +19,7 @@ const TabPannel = ({ item, rClass }) => {
           <div className="col-lg-5   ">
             <Fade bottom cascade>
               <div className="customer_engagement_content d-flex-row justify-content-center align-items-start ">
+               {icon ? <img src={Icons.Icon.default} /> : ""}
                 <h2 className="">{item.title}</h2>
                 <h3 className="t">{item.subTitle}</h3>
                 <h6 className="">{item.description1}</h6>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TabPannel from "./TabPannel";
 
-const TabComponent = ({ config, pClass, rClass, mClass }) => {
+const TabComponent = ({ config, pClass, rClass, mClass,icon }) => {
   const [activeTab, setActiveTab] = useState(config.PANNEL_DATA[0].id);
   return (
     <section className={`developer_product_area sec_pad ${pClass} ${ mClass}`}>
@@ -58,7 +58,7 @@ const TabComponent = ({ config, pClass, rClass, mClass }) => {
                     role="tabpanel"
                     aria-labelledby={`${item.id}-tab`}
                   >
-                    <TabPannel item={item} rClass={rClass} />
+                    <TabPannel item={item} rClass={rClass} icon={icon} />
                   </div>
                 </div>
               ) : (

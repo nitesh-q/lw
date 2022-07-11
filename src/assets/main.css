@@ -564,6 +564,19 @@ background-color: #c4c4ca;
 .demo_btn li::marker{
  content: "";
 }
+
+.CTA_service li{
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #fff;
+  /* text-align: end; */
+}
+.CTA_service li::marker{
+  content: url(../images/icon/tick-Arrow.svg);
+color: #51fe23;
+}
+
 /*====================================================*/
 .scroll_btn{
   margin-top: 200px;
@@ -3652,6 +3665,79 @@ font-weight: 800;
   border-top-right-radius: 15px;
 }
 
+/* ================app_hero_banner_area========== */
+.app_hero_banner_area{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: -webkit-linear-gradient(40deg,#5f51fb 0%,#767cfd 64%,#8ca7ff 100%);
+  /* background-image: -moz-linear-gradient(40deg,#5f51fb 0%,#767cfd 64%,#8ca7ff 100%); */
+  /* background-image: -ms-linear-gradient(40deg,#5f51fb 0%,#767cfd 64%,#8ca7ff 100%); */
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+}
+
+
+.app_hero_banner_area .app_hero_banner_shap {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/banners/digital_img.png) no-repeat scroll right 0;
+    top: 0;
+    z-index: -1;
+}
+.app_hero_banner_area .round_shap {
+  position: absolute;
+  border-radius: 50%;
+  /* background-image: -moz-linear-gradient(50deg,#40dcfd 0%,#5286fd 36%,#632ffd 100%); */
+  background-image: -webkit-linear-gradient(50deg,#40dcfd 0%,#5286fd 36%,#632ffd 100%);
+  /* background-image: -ms-linear-gradient(50deg,#40dcfd 0%,#5286fd 36%,#632ffd 100%); */
+  border-radius: 50%;
+  z-index: -1;
+}
+.round_shap.one {
+  width: 200px;
+  height: 200px;
+  left: -100px;
+}
+.round_shap.two {
+  width: 520px;
+  height: 520px;
+  left: 38%;
+  bottom: -100px;
+}
+.round_shap.three {
+  width: 100px;
+  height: 100px;
+  left: 34%;
+  top: 200px;
+}
+.app_hero_banner_content{
+  color: #fff;
+    padding-right: 85px;
+}
+.app_hero_banner_content h2{
+  color: #fff;
+  font-family: Poppins,sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.app_hero_banner_content p{
+color: #fff;
+    font-family: Poppins,sans-se;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .18px;
+    line-height: 30px;
+}
 /*============= app_banner_area css ===========*/
 .app_banner_area {
   background: url(../images/home7/banner.png) no-repeat  center 100%;
@@ -7256,13 +7342,16 @@ color: #51fe23;
 .customer_engagement_content{
   margin-top: 40px;
 }
-
+.customer_engagement_content img {
+  height: 80px;
+}
 .customer_engagement_content h2 {
   font-size: 30px;
   color: #051441;
   font-weight: 600;
   display: flex;
   justify-content: flex-start;
+  margin-top: 10px;
 }
 .customer_engagement_content p {
   font-size: 16px;

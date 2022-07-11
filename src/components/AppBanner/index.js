@@ -4,6 +4,7 @@ import Icons from "../../shared/assets";
 import { BANNERS_CONFIG } from "../../config";
 import StartedFreeFrom from "../StartedFreeForm";
 import scrollTo from "gatsby-plugin-smoothscroll";
+import CTAService from "../Services/CTAService";
 const AppBanner = ({
   config,
   supportedBrand,
@@ -13,13 +14,6 @@ const AppBanner = ({
   mClass,
   wClass,
 }) => {
-  // function smoothScroll(target) {
-  //   const { top } = target.getBoundingClientRect();
-  //   window.scrollTo({
-  //     top: top + window.pageYOffset,
-  //     behavior: "smooth",
-  //   });
-  // }
   return (
     <section className="app_banner_area" id="home">
       <div className="container">
@@ -48,19 +42,7 @@ const AppBanner = ({
                 <div className="col-lg-12">
                   <StartedFreeFrom btnClass={"bg_white t_color1"} />
                 </div>
-                <div className="col-lg-12">
-                  <div className={`row mt_15 flex ${mClass} `}>
-                    <li className="col "> No Credit Card Required</li>
-                    {allService ? (
-                      <>
-                        <li className="col"> Free Sign Up</li>
-                        <li className="col"> 24/7 Support</li>
-                      </>
-                    ) : (
-                      ""
-                    )}
-                  </div>
-                </div>
+                <CTAService allService ={false}/>
                 <div className="scroll_btn">
                   <button
                     className="scroll_up_btn"

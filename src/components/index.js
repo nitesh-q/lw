@@ -12,5 +12,7 @@ export { default as Header } from "./Common/Header";
 export { default as TabComponent } from "./TabComponent";
 export { default as Services } from "./Services";
 export { default as CouponWork } from "./couponWork";
+export {default as CTAService} from "./Services/CTAService"
+export {default as DigitalBanner} from "./DigitalBanner"
 
 
