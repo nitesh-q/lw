@@ -99,6 +99,11 @@ width: 100 !important;
     .menu_one .btn_get {
         margin-left: 25px;
     }
+    .app_banner_area{
+        background-size: cover;
+        padding-bottom: 100px;
+        padding-top: 150px;
+    }
     .seo_features_content .flex{
         display: flex;
         flex-direction: row;

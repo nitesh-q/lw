@@ -7,6 +7,7 @@ import {
   Features,
   Header,
   Services,
+  CouponWork,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -21,8 +22,11 @@ const COUPON_FEATURES = [
     img1: Icons.Work1.default,
     title: "Advanced coupon marketing software",
     subTitle: "",
-    desc: "Efficiently create millions of randomly generated coupons. Set expiry dates and link customer IDs to single coupons.",
-    list: [],
+    desc: "",
+    list: [
+      { desc: "Efficiently create millions of randomly generated coupons." },
+      { desc: "Set expiry dates and link customer IDs to single coupons." },
+    ],
   },
   {
     pClass: "pl_70",
@@ -31,8 +35,12 @@ const COUPON_FEATURES = [
     img1: Icons.Work2.default,
     title: "Custom-made coupons",
     subTitle: "",
-    desc: "SKU-based Coupon Category based coupon BOGO Coupon",
-    list: [],
+    desc: "",
+    list: [
+      { desc: "SKU-based" },
+      { desc: "Coupon Category based coupon" },
+      { desc: "BOGO Coupon" },
+    ],
   },
   {
     pClass: "pr_70",
@@ -42,8 +50,12 @@ const COUPON_FEATURES = [
     img1: Icons.Work3.default,
     title: "Reward your customers the way they want",
     subTitle: "",
-    desc: "Track coupon usage using coupons transactions associated with Customer & Order ID",
-    list: [],
+    desc: "",
+    list: [
+      {
+        desc: "Track coupon usage using coupons transactions associated with Customer & Order ID",
+      },
+    ],
   },
 ];
 
@@ -65,8 +77,9 @@ const GiftCard = () => {
         description={"All your gift card needs, covered"}
       />
       {COUPON_FEATURES.map((card) => (
-        <Features ptClass="pt_0"  {...{ ...card }} url="#" />
+        <Features ptClass="pt_0" {...{ ...card }} url="#" />
       ))}
+      <CouponWork />
 
       <Testimonial
         title="Testimonials"

@@ -86,9 +86,9 @@ const Loyalty = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <LoyaltyBanner />
-      <TrustedMerchants />
+      <TrustedMerchants tClass={"top_0"} />
       <Header
-        className={"bg_white mt_125"}
+        className={"bg_white mt_125 pt_200"}
         title={
           "Build an effective Customer loyalty programs right for yor hand "
         }

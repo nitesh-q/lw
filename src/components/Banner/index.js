@@ -1,6 +1,7 @@
 import React from "react";
-import { SupportedBrand, StartedFree } from "../../components";
+import { SupportedBrand, startedFreeForm } from "../../components";
 import { Reveal } from "react-reveal";
+import StartedFreeForm from "../StartedFreeForm";
 
 ;
 
@@ -50,7 +51,7 @@ const Banner = ({
 
                 <div className="col-lg-9">
                   {startedFreeForm ? (
-                    <StartedFree />
+                    <StartedFreeForm />
                   ) : (
                     <div className="action_btn d-flex align-items-center mt_60">
                       <a

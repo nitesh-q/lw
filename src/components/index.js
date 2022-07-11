@@ -6,9 +6,11 @@ export { default as Testimonial } from "./Testimonial";
 export { default as TryAction } from "./TryAction";
 export { default as TrustedMerchants } from "./TrustedMerchants";
 export { default as SupportedBrand } from "./SupportedBrand";
-export { default as StartedFree } from "./StartedFreeForm";
+export { default as StartedFreeForm } from "./StartedFreeForm";
 export { default as Features } from "./Features";
 export { default as Header } from "./Common/Header";
 export { default as TabComponent } from "./TabComponent";
 export { default as Services } from "./Services";
+export { default as CouponWork } from "./couponWork";
+
 

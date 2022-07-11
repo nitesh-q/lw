@@ -1,9 +1,9 @@
 import React from "react";
 
-const StartedFree = ({btnClass}) => {
+const StartedFreeForm = ({btnClass}) => {
   return (
     <div className="row w-100 service">
-    <div className="col">
+    <div className="col-lg-8">
       <form action="#" className="contact_form_box" method="post">
         <div className="form-group text_box">
           <input
@@ -16,7 +16,7 @@ const StartedFree = ({btnClass}) => {
         </div>
       </form>
     </div>
-    <div className="col-lg-1">
+    <div className="col-lg-4">
       <a href="/" className={`btn btn_get btn_get_two ${btnClass}`}>
        Start Free Trial
       </a>
@@ -25,4 +25,4 @@ const StartedFree = ({btnClass}) => {
   );
 };
 
-export default StartedFree;
+export default StartedFreeForm;
