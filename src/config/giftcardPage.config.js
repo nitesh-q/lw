@@ -2,12 +2,10 @@ import Icons from "../shared/assets";
 
 export const RELOAD_LIST = [
   {
-    id: 1,
     title: "",
     description: " Reload Gift card @store, @online",
   },
   {
-    id: 2,
     title: "",
     description: "Add Promotional $ value to Gift card from Admin Panel",
   },
@@ -15,12 +13,10 @@ export const RELOAD_LIST = [
 
 export const UPLOAD_PHOTO_LIST = [
   {
-    id: 1,
     title: "",
     description: " Reload Gift card @store, @online",
   },
   {
-    id: 2,
     title: "",
     description: "Add Promotional $ value to Gift card from Admin Panel",
   },
@@ -28,12 +24,10 @@ export const UPLOAD_PHOTO_LIST = [
 
 export const SKU_LIST = [
   {
-    id: 1,
     title: "",
     description: " Reload Gift card @store, @online",
   },
   {
-    id: 2,
     title: "",
     description: "Add Promotional $ value to Gift card from Admin Panel",
   },
@@ -41,12 +35,10 @@ export const SKU_LIST = [
 
 export const MOBILE_WALLET_LIST = [
   {
-    id: 1,
     title: "",
     description: " Reload Gift card @store, @online",
   },
   {
-    id: 2,
     title: "",
     description: "Add Promotional $ value to Gift card from Admin Panel",
   },
@@ -54,12 +46,10 @@ export const MOBILE_WALLET_LIST = [
 
 export const MIGRATION_LIST = [
   {
-    id: 1,
     title: "",
     description: " Reload Gift card @store, @online",
   },
   {
-    id: 2,
     title: "",
     description: "Add Promotional $ value to Gift card from Admin Panel",
   },

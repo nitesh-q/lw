@@ -45,8 +45,6 @@ const Icons = {
   Reload: require("../images/giftcard/reload.png"),
   Upload: require("../images/giftcard/upload.png"),
 
- 
-
   //....................Giftcard Page ......................
   LoyaltyBanner: require("../images/loyalty/loyaltyBanner.png"),
   LoyaltyBanner1: require("../images/loyalty/loyaltyBanner1.png"),
@@ -59,25 +57,23 @@ const Icons = {
   RewardPage: require("../images/loyalty/rewardPage.png"),
 
   //....................Coupons Page ......................
-  Banner1: require ('../images/home9/shape.png'),
-  Work1:require("../images/home4/work1.png"),
-  Work2:require("../images/home4/work2.png"),
-  Work3:require("../images/home4/work3.png"),
-  Icon1:require("../images/coupons/icon1.png"),
-  Icon2:require("../images/coupons/icon2.png"),
-  Icon3:require("../images/coupons/icon3.png"),
+  Banner1: require("../images/home9/shape.png"),
+  Work1: require("../images/home4/work1.png"),
+  Work2: require("../images/home4/work2.png"),
+  Work3: require("../images/home4/work3.png"),
+  Icon1: require("../images/coupons/icon1.png"),
+  Icon2: require("../images/coupons/icon2.png"),
+  Icon3: require("../images/coupons/icon3.png"),
+
+  //....................Coupons Page ......................
+  AutomationBanner: require("../images/automation/automationBanner.png"),
+  AutomationLoyalty: require("../images/automation/automationloyalty.png"),
+  Workflow: require("../images/automation/workflow.png"),
+  Centralize: require("../images/automation/centralize.png"),
 
 
-
-
-  video1:require("../images/banners/video_img_01.png"),
-  video2:require("../images/banners/video_img_02.png")
-
-
-
-
-
-
+  video1: require("../images/banners/video_img_01.png"),
+  video2: require("../images/banners/video_img_02.png"),
 };
 
 export default Icons;

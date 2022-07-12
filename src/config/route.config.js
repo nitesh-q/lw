@@ -18,11 +18,13 @@ export const ROUTES_LABEL = {
   LOYALTY: "Loyalty",
   COUPONS: "Coupons",
   REFERRAL: "Referral Program",
+  AUTOMATION: "Automation",
+  DISCOUNTS: "Discounts",
+  BUILDING: "Building",
   INTEGRATION_1: "Integration 1",
   INTEGRATION_2: "Integration 2",
-  INTEGRATION_2: "Integration 3",
-  INTEGRATION_2: "Integration 4",
-
+  INTEGRATION_3: "Integration 3",
+  INTEGRATION_4: "Integration 4",
   RESOURCES_1: "Resources 1",
   RESOURCES_2: "Resources 2",
   DEVELOPERS_1: "Developers 1",
@@ -34,6 +36,9 @@ export const CHILD_ROUTES = {
   LOYALTY: "/loyalty",
   COUPONS: "/coupons",
   REFERRAL: "/referral",
+  DISCOUNTS: "/discounts",
+  AUTOMATION: "/automation",
+  BUILDING: "/building",
   RESOURCES_1: "/giftcard",
   RESOURCES_2: "/giftcard",
   DEVELOPERS_1: "/giftcard",
@@ -42,7 +47,15 @@ export const CHILD_ROUTES = {
 
 export const CHILDRENS = {
   HOME: [],
-  PRODUCTS: ["GIFTCARD", "LOYALTY", "COUPONS", "REFERRAL"],
+  PRODUCTS: [
+    "GIFTCARD",
+    "LOYALTY",
+    "COUPONS",
+    "REFERRAL",
+    "DISCOUNTS",
+    "AUTOMATION",
+    "BUILDING",
+  ],
   INTEGRATION: [
     "INTEGRATION_1",
     "INTEGRATION_2",

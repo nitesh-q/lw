@@ -7203,12 +7203,22 @@ width: 50%;
 .seo_features_content h2 {
   font-size: 32px;
   /* line-height: 40px; */
+  color: #222d39;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+
+}
+.seo_features_content h2 span {
+  font-size: 32px;
+  /* line-height: 40px; */
   color: #7444FD;
   font-weight: bold;
   margin-bottom: 25px;
   font-family: "Poppins", sans-serif;
 
 }
+
 .seo_features_content h3 {
   font-size: 30px;
   line-height: 40px;
@@ -9372,6 +9382,52 @@ color: #51fe23;
   border-color: #dfdcfe;
 }
 
+/* ============Work_section_css========== */
+.support_work_area {
+  background: #fff;
+}
+.support_work_area_container{
+  max-width: 800px;
+
+}
+.work_content .work_item{
+  width: 330px;
+  height: 220px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 30px 50px 0 #CFC9FA80;
+    padding: 30px 50px 0px;
+    border: 1px solid #CFC9FA;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s linear;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+.work_item h5{
+  color: #222D39;
+  font-size: 20px;
+  font-weight: bold;
+margin-bottom: 30px;
+margin-top: 20px;
+
+}
+.work_item p{
+  color: #677294;
+  font-size: 18px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  margin-bottom:0px ;
+}
+.work_item ul li{
+  color: #677294;
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 500;
+  margin-bottom:0px ;
+}
 /*================== call_action_area css ================*/
 .call_action_area {
   min-height: 900px;
@@ -21668,7 +21724,7 @@ a .h_head:hover {
 
 /*============ support_home_area css ============*/
 .support_price_area {
-  background: #fafafe;
+  background: #fff;
 }
 
 .support_price_area .price_content .price_item {

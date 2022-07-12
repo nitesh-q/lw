@@ -12,7 +12,6 @@ export const BANNERS_CONFIG = {
   ],
   GIFTCARD: [
     {
-      id: 1,
       title: "Launch a complete gifting program with",
       subTitle: "Physical and eGift cards.",
       image: Icons.GiftBanner.default,
@@ -21,7 +20,6 @@ export const BANNERS_CONFIG = {
   ],
   LOYALTY: [
     {
-      id: 1,
       title: "Loyalty Programs",
       subTitle: "Forge a strong relationship with your customers",
       image: Icons.LoyaltyBanner.default,
@@ -30,7 +28,6 @@ export const BANNERS_CONFIG = {
   ],
   COUPONS: [
     {
-      id: 1,
       title: "Powerful ",
       subTitle: "Coupon Generator",
       // image:"",
@@ -39,8 +36,31 @@ export const BANNERS_CONFIG = {
   ],
   REFERRAL: [
     {
-      id: 1,
       title: "Referral Programs",
+      subTitle: "made super easy",
+      // image:"",
+      description: `Ramp us your sales by launching a gift card program with ease using 99minds. With a simple integration that works online an offline. Get ready to reap various benifits of zero hassle `,
+    }
+  ],
+  AUTOMATION: [
+    {
+      title: "Powerful marketing",
+      subTitle: "automation for eCommerce",
+      image:Icons.AutomationBanner.default,
+      description: `Prebuilt Promotional workflows you need to grow store and make more money`,
+    }
+  ],
+ DISCOUNTS: [
+    {
+      title: "Discounts",
+      subTitle: "made super easy",
+      // image:"",
+      description: `Ramp us your sales by launching a gift card program with ease using 99minds. With a simple integration that works online an offline. Get ready to reap various benifits of zero hassle `,
+    }
+  ],
+BUILDING: [
+    {
+      title: "Building",
       subTitle: "made super easy",
       // image:"",
       description: `Ramp us your sales by launching a gift card program with ease using 99minds. With a simple integration that works online an offline. Get ready to reap various benifits of zero hassle `,

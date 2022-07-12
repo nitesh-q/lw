@@ -52,9 +52,9 @@ const CouponWork = ({}) => {
       <div className="container">
         <Title
           sClass="sec_title text-center mb_70"
-          Title="Learn How Customer is using Coupons"
+          title="Learn How Customer is using Coupons"
           tClass="t_color3"
-          TitleP="A list of carousals with case studies involving multiple companies"
+          titleP="A list of carousals with case studies involving multiple companies"
         />
         <div className="row app_service_info">
           {COUPONS_WORK_DATA.map((items) => {
@@ -88,6 +88,7 @@ const CouponWork = ({}) => {
         </div>
       </div>
     </section>
+    
   );
 };
 export default CouponWork;

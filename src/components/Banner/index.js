@@ -40,10 +40,13 @@ const Banner = ({
                 {config.map((i, index) => {
                   return (
                     <>
-                      <h2 key={index} className={`${titleClass}`}>
+                      <h2 key={index}>
                         {i.title}
+                        <br/>
+                        <span>
+                        {i.subTitle}
+                        </span>
                       </h2>
-                      <h2>{i.subTitle}</h2>
                       <p>{i.description}</p>
                     </>
                   );

@@ -14,7 +14,7 @@ import Icons from "../../shared/assets";
 import {
   TESTIMONIAL_CONFIG,
   BANNERS_CONFIG,
-  REFERRAL_TAB_CONFIG
+  GIFTCARD_TABS_CONFIG,
 } from "../../config";
 
 const REFERRAL_FEATURES = [
@@ -52,11 +52,11 @@ const REFERRAL_FEATURES = [
   },
 ];
 
-const Referral = () => {
+const Building = () => {
   return (
     <Layout>
       <Banner
-        config={BANNERS_CONFIG.REFERRAL}
+        config={BANNERS_CONFIG.BUILDING}
         titleClass={`bannerTitle`}
         sllService={true}
         mClass={"mb_90"}
@@ -79,7 +79,7 @@ const Referral = () => {
         title={"Your One-Stop Destination"}
         description="To create and manage all your Gift Card Campaigns"
       />
-      <TabComponent config={REFERRAL_TAB_CONFIG} pClass={"pt_0"} />
+      <TabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} />
       <Testimonial
         title="Testimonials"
         subTitle="Hear from our Clients"
@@ -91,4 +91,4 @@ const Referral = () => {
     </Layout>
   );
 };
-export default Referral;
+export default Building;
