@@ -43,33 +43,18 @@ export const LOYALTY_TABS_CONFIG = {
       label: "Reward Page",
       selected: "true",
       image: Icons.RewardPage.default,
-      title: "Manage a loyalty program that your customers love",
+      title: "Build a rewards experience that your customers love",
       description1: "",
       description2: "",
       list: [
         {
-          id: 1,
-          title: "Points expiration : ",
+          title: "Customization : ",
           description:
-            "Remind customers about any points about to expire with built-in reminder emails.",
+            "Make an on-brand launcher with a full range of customizable settings including changing the background and button colors, labels, and more.",
         },
         {
-          id: 2,
-          title: "Custom branding : ",
-          description:
-            "Give your points a name like “stars” or “glam bucks” to create a loyalty experience that matches your brand.",
-        },
-        {
-          id: 3,
-          title: "Limit settings : ",
-          description:
-            "Decide how often your customers can earn points for any given action",
-        },
-        {
-          id: 4,
-          title: "Integration : ",
-          description:
-            "Integrate with different tools and vendors you already use to run your business, including all of the major ecommerce platforms, email/SMS marketing solutions, productivity apps, and more",
+          title: "Points Branding : ",
+          description: "Create the perfect on-brand point names.",
         },
       ],
     },
@@ -78,33 +63,19 @@ export const LOYALTY_TABS_CONFIG = {
       label: "Promote",
       selected: "true",
       image: Icons.RewardPage.default,
-      title: "Manage a loyalty program that your customers love",
+      title: "Promote",
       description1: "",
       description2: "",
       list: [
         {
-          id: 1,
-          title: "Points expiration : ",
+          title: "",
           description:
-            "Remind customers about any points about to expire with built-in reminder emails.",
+            "Automate email and texts to customers to confirm enrollment and keep them updated on their rewards.",
         },
         {
-          id: 2,
-          title: "Custom branding : ",
+          title: "",
           description:
-            "Give your points a name like “stars” or “glam bucks” to create a loyalty experience that matches your brand.",
-        },
-        {
-          id: 3,
-          title: "Limit settings : ",
-          description:
-            "Decide how often your customers can earn points for any given action",
-        },
-        {
-          id: 4,
-          title: "Integration : ",
-          description:
-            "Integrate with different tools and vendors you already use to run your business, including all of the major ecommerce platforms, email/SMS marketing solutions, productivity apps, and more",
+            "Market loyalty enrollees with automated text message campaigns and email campaigns via 99minds automation Marketing.",
         },
       ],
     },
@@ -113,36 +84,22 @@ export const LOYALTY_TABS_CONFIG = {
       label: "Reports & Analytics",
       selected: "true",
       image: Icons.RewardPage.default,
-      title: "Manage a loyalty program that your customers love",
+      title:
+        "Track sales and see the impact of your Loyalty program in one place",
       description1: "",
       description2: "",
       list: [
         {
-          id: 1,
-          title: "Points expiration : ",
+          title: "",
           description:
-            "Remind customers about any points about to expire with built-in reminder emails.",
+            "Your 99minds Dashboard tracks data like total loyalty customers, loyalty rewards, and top loyalty customers.",
         },
         {
-          id: 2,
-          title: "Custom branding : ",
+          title: "",
           description:
-            "Give your points a name like “stars” or “glam bucks” to create a loyalty experience that matches your brand.",
-        },
-        {
-          id: 3,
-          title: "Limit settings : ",
-          description:
-            "Decide how often your customers can earn points for any given action",
-        },
-        {
-          id: 4,
-          title: "Integration : ",
-          description:
-            "Integrate with different tools and vendors you already use to run your business, including all of the major ecommerce platforms, email/SMS marketing solutions, productivity apps, and more",
+            "You can even compare average spending and visits from loyalty versus non-loyalty customers.",
         },
       ],
     },
   ],
 };
-

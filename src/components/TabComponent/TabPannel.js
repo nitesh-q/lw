@@ -8,10 +8,10 @@ const TabPannel = ({ item, rClass,icon }) => {
     <section className="customer_engagement_one d-flex-row justify-content-center align-items-start">
       <div className="container">
         <div className="row  flex-row-reverse ">
-          <div className={`col-lg-7 h_500 ${rClass}`}>
+          <div className={`col-lg-7 `}>
             <div className="customer_engagement_img">
               <Fade bottom cascade>
-                <img src={item.image} alt="features_img" />
+                <img className="img-fluid" src={item.image} alt="features_img" />
               </Fade>
             </div>
           </div>
