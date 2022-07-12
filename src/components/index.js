@@ -14,5 +14,6 @@ export { default as Services } from "./Services";
 export { default as CouponWork } from "./couponWork";
 export {default as CTAService} from "./Services/CTAService"
 export {default as DigitalBanner} from "./DigitalBanner"
+export {default as CouponBanner } from "./CouponBanner"
 
 

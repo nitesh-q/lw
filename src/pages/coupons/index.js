@@ -8,6 +8,7 @@ import {
   Header,
   Services,
   CouponWork,
+  CouponBanner,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -59,20 +60,13 @@ const COUPON_FEATURES = [
   },
 ];
 
-const GiftCard = () => {
+const Coupons = () => {
   return (
     <Layout>
-      <Banner
-        config={BANNERS_CONFIG.COUPONS}
-        titleClass={`bannerTitle`}
-        allService={true}
-        mClass={"mb_90"}
-        wClass={"mw_125"}
-      />
-      <TrustedMerchants />
+      <CouponBanner config={BANNERS_CONFIG.COUPONS} />
 
       <Header
-        className={"bg_white mt_125"}
+        className={"bg_white mt_220"}
         title={"Key features."}
         description={"All your gift card needs, covered"}
       />
@@ -92,4 +86,4 @@ const GiftCard = () => {
     </Layout>
   );
 };
-export default GiftCard;
+export default Coupons;

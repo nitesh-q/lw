@@ -3,7 +3,7 @@ import { SupportedBrand, startedFreeForm } from "../../components";
 import { Reveal } from "react-reveal";
 import StartedFreeForm from "../StartedFreeForm";
 
-;
+
 
 const Banner = ({
   config,
