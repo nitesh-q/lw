@@ -36,7 +36,7 @@ export const CHILD_ROUTES = {
   COUPONS: "/coupons",
   REFERRAL: "/referral",
   AUTOMATION: "/automated-workflows",
-  B2B_GIFTCARDS: "/b2bGiftcards",
+  B2B_GIFTCARDS: "/b2b-giftcards",
   RESOURCES_1: "/giftcard",
   RESOURCES_2: "/giftcard",
   DEVELOPERS_1: "/giftcard",

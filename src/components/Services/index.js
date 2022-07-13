@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 
 const Service = () => {
   return (
-    <section className=" service_provide mb_50">
+    <section className=" service_provide mb_50 mt_50">
       <div className="container">
         <div className="row">
           <div className="col-lg-4 ">

@@ -9,6 +9,7 @@ export const TESTIMONIAL_CONFIG = {
       authorPost: "UI/UX designer",
       description: `Why I say old chap that is spiffing barney, nancy boy bleeder chimney pot Richard cheers the little rotter so I said, easy peasy buggered blower bevvy A bit of how's your father.!`,
       company: Icons.Besttop_01.default,
+      
     },
     {
       id: 2,

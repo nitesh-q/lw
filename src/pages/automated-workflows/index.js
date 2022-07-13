@@ -9,6 +9,7 @@ import {
   Header,
   TabComponent,
   Services,
+  Partner,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -107,8 +108,9 @@ const Automation = () => {
         mClass={"mb_90"}
       />
 
-      <TrustedMerchants />
-      <Work />
+     
+      <Partner pClass={"sec_pad"} oClass={'logo_item_opacity'}/>
+    
       <WorkFeatures aClass="agency_featured_area_two" data={AUTOMATION_WORK_FEATURES} title="How it works" />
 
       {AUTOMATION_FEATURES.map((card) => (

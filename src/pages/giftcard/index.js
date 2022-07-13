@@ -8,6 +8,7 @@ import {
   Features,
   Header,
   TabComponent,
+  Partner
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -16,6 +17,7 @@ import {
   BANNERS_CONFIG,
   GIFTCARD_TABS_CONFIG,
 } from "../../config";
+
 
 
 const GIFTCARD = [
@@ -97,10 +99,11 @@ const GiftCard = () => {
         wClass={"mw_125"}
       />
 
-      <TrustedMerchants />
+      {/* <TrustedMerchants /> */}
+      <Partner pClass={"sec_pad"} oClass={'logo_item_opacity'} />
 
       <Header
-        className={"bg_white mt_125"}
+        className={"bg_white"}
         title={"Gift Card & Platform features."}
         description={"All your gift card needs, covered"}
       />
@@ -126,7 +129,7 @@ const GiftCard = () => {
           "Empower Your Brick & Click Store With Powerful Integrations"
         }
       />
-      <TryAction pClass={"pt_0"} />
+      <TryAction />
     </Layout>
   );
 };

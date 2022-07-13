@@ -5,7 +5,7 @@ import Icons from "../../shared/assets";
 
 const WorkFeatures = ({ aClass, data,title }) => {
   return (
-    <section className={`agency_featured_area bg_color ${aClass}`}>
+    <section className={`agency_featured_area pt_0 ${aClass}`}>
       <div className="container">
         <h2
           className="f_size_30 f_600 t_color3 l_height40 text-center wow fadeInUp"

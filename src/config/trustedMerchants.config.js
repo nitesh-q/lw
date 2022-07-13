@@ -21,9 +21,9 @@ export const MERCHANTS_CONFIG= {
       id: 5,
       image: Icons.Fylnn.default,
     },
-    {
-      id: 6,
-      image: Icons.Cariloha.default,
-    },
+    // {
+    //   id: 6,
+    //   image: Icons.Cariloha.default,
+    // },
   ],
 };

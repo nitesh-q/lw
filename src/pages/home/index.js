@@ -11,6 +11,7 @@ import {
   TabComponent,
   SupportedBrand,
   DigitalBanner,
+  Partner
 } from "../../components";
 import {
   HOME_TAB1_CONFIG,
@@ -19,32 +20,19 @@ import {
   HOME_TAB2_CONFIG,
 } from "../../config";
 
+
 const Home = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-      {/* <Banner
-      config={BANNERS_CONFIG.HOME}
-      supportedBrand={true}
-      startedFreeForm={true}
-      allService={false}
-    /> */}
-      {/* <AppBanner
-        config={BANNERS_CONFIG.HOME}
-        supportedBrand={true}
-        startedFreeForm={true}
-        allService={false}
-    
-      /> */}
-     
       <DigitalBanner 
          config={BANNERS_CONFIG.HOME} />
       <SupportedBrand  />
-      <TrustedMerchants tClass={"top_0"} />
+      {/* <TrustedMerchants tClass={"top_0"} /> */}
+      <Partner oClass={'logo_item_opacity'}/>
       <TabComponent
         config={HOME_TAB1_CONFIG}
-        pClass={"pt_200"}
         rClass={"reduce_height"}
-        mClass={"mt_120"}
+  
       />
       <Header
         className={"mb_50"}
@@ -68,7 +56,7 @@ const Home = () => {
           "Empower Your Brick & Click Store With Powerful Integrations"
         }
       />
-      <TryAction pClass={"pt_0"} />
+      <TryAction />
     </Layout>
   );
 };

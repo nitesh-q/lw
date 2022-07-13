@@ -9,6 +9,7 @@ import {
   Services,
   LoyaltyBanner,
   TabComponent,
+  Partner
 } from "../../components";
 import {
   TESTIMONIAL_CONFIG,
@@ -85,9 +86,11 @@ const Loyalty = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <LoyaltyBanner />
-      <TrustedMerchants tClass={"top_0"} />
+      {/* <TrustedMerchants tClass={"top_0"} /> */}
+      <Partner pClass={"sec_pad"} oClass={'logo_item_opacity'} />
+
       <Header
-        className={"bg_white mt_125 pt_200"}
+        className={"bg_white"}
         title={
           "Build an effective Customer loyalty programs right for yor hand "
         }
