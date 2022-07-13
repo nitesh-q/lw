@@ -8,7 +8,7 @@ import {
   Features,
   Header,
   TabComponent,
-  Partner
+  Partner,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -17,8 +17,6 @@ import {
   BANNERS_CONFIG,
   GIFTCARD_TABS_CONFIG,
 } from "../../config";
-
-
 
 const GIFTCARD = [
   { desc: "100’s of beautiful Gift Cards based on themes" },
@@ -100,7 +98,7 @@ const GiftCard = () => {
       />
 
       {/* <TrustedMerchants /> */}
-      <Partner pClass={"sec_pad"} oClass={'logo_item_opacity'} />
+      <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} />
 
       <Header
         className={"bg_white"}

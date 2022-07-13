@@ -1,7 +1,7 @@
 import React from "react";
 const TryAction = ({pClass}) => (
-  <section className={` sec_pad ${pClass}`}>
-    <div className="container try_call_to_action_area">
+  <section className={`try_call_to_action_area sec_pad ${pClass}`}>
+    <div className="container ">
       <div className="row w_98">
         <div className="col-lg-6  ">
           <div className="try_call_action_text">

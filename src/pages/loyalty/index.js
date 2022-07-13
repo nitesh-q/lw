@@ -9,12 +9,9 @@ import {
   Services,
   LoyaltyBanner,
   TabComponent,
-  Partner
+  Partner,
 } from "../../components";
-import {
-  TESTIMONIAL_CONFIG,
-  LOYALTY_TABS_CONFIG
-} from "../../config";
+import { TESTIMONIAL_CONFIG, LOYALTY_TABS_CONFIG } from "../../config";
 
 import Icons from "../../shared/assets";
 
@@ -86,8 +83,10 @@ const Loyalty = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <LoyaltyBanner />
+
       {/* <TrustedMerchants tClass={"top_0"} /> */}
-      <Partner pClass={"sec_pad"} oClass={'logo_item_opacity'} />
+
+      <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} />
 
       <Header
         className={"bg_white"}

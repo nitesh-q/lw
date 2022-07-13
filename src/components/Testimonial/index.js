@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 
 const settings = {
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 500,
   arrows: true,
@@ -10,6 +10,29 @@ const settings = {
   autoplaySpeed: 3000,
   slidesToShow: 1,
   slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 
 /**
@@ -19,27 +42,30 @@ const settings = {
  */
 const Testimonial = ({ sliderData, bgColor, title, subTitle }) => {
   return (
-    <section className={`agency_testimonial_area ${bgColor}`}>
+    <section className={`agency_testimonial_area sec_pad mb_70 ${bgColor}`}>
       <div className="container">
-        <h2 className="text-center mb_10">{title}</h2>
-        <p className="text-center">{subTitle}</p>
+        <h2 className="f_size_30 f_600 t_color3 l_height40 text-center ">
+          Testimonial
+        </h2>
+        <p className="text-center" >Hear from our Clients</p>
         <div className="agency_testimonial_info">
           <Slider className="testimonial_slider" {...settings}>
-            {sliderData.map((item, index) => {
+            {sliderData.map((item) => {
               return (
-                <div className="testimonial_item text-center left" key={index}>
+                <div
+                  className="testimonial_item text-center left"
+                  key={item.id}
+                >
                   <div className="author_img">
-                    <img src={item.image} alt="author_01" />
+                    <img src={item.image} alt="" />
                   </div>
-                  <div className="mt_15">
-                    <p className="pr_20 pl_20">{item.description}</p>
-                    <h6 className="pr_20 pl_20 mt_20">{item.Name}</h6>
-                    <img
-                      className="pr_20 pl_20 h_30 mt_20"
-                      src={item.company}
-                      alt=""
-                    />
+                  <div className="author_description">
+                    <h4 className="f_500 t_color3 f_size_18">
+                      {item.Name}
+                    </h4>
+                    {/* <h6>{item.authorPost}</h6> */}
                   </div>
+                  <p>{item.description}</p>
                 </div>
               );
             })}
