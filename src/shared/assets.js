@@ -71,9 +71,16 @@ const Icons = {
   Workflow: require("../images/automation/workflow.png"),
   Centralize: require("../images/automation/centralize.png"),
 
+  //....................Automation Page ......................
+  icon01:require("../images/home4/icon01.png"),
+  icon02:require("../images/home4/icon02.png"),
+  icon03:require("../images/home4/icon03.png"),
+  dot:require("../images/home4/dot.png"),
+
 
   video1: require("../images/banners/video_img_01.png"),
   video2: require("../images/banners/video_img_02.png"),
+
 };
 
 export default Icons;

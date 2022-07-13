@@ -8,7 +8,7 @@ const CTAService = ({allService,mClass}) =>{
                     <li className="col "> No Credit Card Required</li>
                     {allService ? (
                       <>
-                        <li className="col"> Free Sign Up</li>
+                        <li className="col "> Free Sign Up</li>
                         <li className="col"> 24/7 Support</li>
                       </>
                     ) : (

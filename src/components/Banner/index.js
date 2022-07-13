@@ -2,6 +2,7 @@ import React from "react";
 import { SupportedBrand, startedFreeForm } from "../../components";
 import { Reveal } from "react-reveal";
 import StartedFreeForm from "../StartedFreeForm";
+import CTAService from "../Services/CTAService";
 
 
 
@@ -74,7 +75,8 @@ const Banner = ({
                     </div>
                   )}
                 </div>
-                <div className={`row mt_15 flex ${mClass} `}>
+               <CTAService allService={allService}/> 
+                {/* <div className={`row mt_15 flex ${mClass} `}>
                   <li className="col "> No Credit Card Required</li>
                   {allService ? (
                     <>
@@ -84,7 +86,7 @@ const Banner = ({
                   ) : (
                     ""
                   )}
-                </div>
+                </div> */}
                 {supportedBrand ? <SupportedBrand /> : ""}
               </div>
             </Reveal>

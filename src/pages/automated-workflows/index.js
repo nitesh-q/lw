@@ -18,6 +18,7 @@ import {
   GIFTCARD_TABS_CONFIG,
 } from "../../config";
 import Work from "../../components/work";
+import WorkFeatures from "../../components/WorkFeature";
 
 const BOOST_Loyalty = [
   {
@@ -33,7 +34,6 @@ const CENTRALIZE_DATA = [
   { desc: "Shopping Cart Abandonment Rate (CAR)" },
   { desc: " Net Promoter Score (NPS)" },
 ];
-
 
 const AUTOMATION_FEATURES = [
   {
@@ -69,6 +69,34 @@ const AUTOMATION_FEATURES = [
   },
 ];
 
+const AUTOMATION_WORK_FEATURES = [
+  {
+    rowClass: "row flex-row-reverse",
+    aClass: "pr_70 pl_70",
+    fimage: Icons.Work1.default,
+    iImg: Icons.icon01.default,
+    ftitle: "Set up Trigger",
+    descriptions:
+      "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
+  },
+  {
+    rowClass:"row agency_featured_item_two",
+    aClass:"pl_100",
+    fimage:Icons.Work2.default,
+    iImg:Icons.icon02.default,
+    ftitle:"Logic Conditions",
+    descriptions:"Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!"
+  },
+  {
+    rowClass:"row flex-row-reverse",
+    aClass:"pr_70 pl_70",
+    fimage:Icons.Work3.default,
+    iImg:Icons.icon03.default,
+    ftitle:"Execute Action",
+    descriptions:"Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!"
+  }
+];
+
 const Automation = () => {
   return (
     <Layout>
@@ -81,6 +109,7 @@ const Automation = () => {
 
       <TrustedMerchants />
       <Work />
+      <WorkFeatures aClass="agency_featured_area_two" data={AUTOMATION_WORK_FEATURES} title="How it works" />
 
       {AUTOMATION_FEATURES.map((card) => (
         <Features ptClass="pt_0" {...{ ...card }} url="#" />
