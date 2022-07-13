@@ -52,11 +52,11 @@ const REFERRAL_FEATURES = [
   },
 ];
 
-const Building = () => {
+const StoreCredit = () => {
   return (
     <Layout>
       <Banner
-        config={BANNERS_CONFIG.BUILDING}
+        config={BANNERS_CONFIG.DISCOUNTS}
         titleClass={`bannerTitle`}
         sllService={true}
         mClass={"mb_90"}
@@ -91,4 +91,4 @@ const Building = () => {
     </Layout>
   );
 };
-export default Building;
+export default StoreCredit;

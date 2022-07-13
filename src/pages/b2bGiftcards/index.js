@@ -52,11 +52,11 @@ const REFERRAL_FEATURES = [
   },
 ];
 
-const Discounts = () => {
+const B2BGIFTCARDS = () => {
   return (
     <Layout>
       <Banner
-        config={BANNERS_CONFIG.DISCOUNTS}
+        config={BANNERS_CONFIG.BUILDING}
         titleClass={`bannerTitle`}
         sllService={true}
         mClass={"mb_90"}
@@ -91,4 +91,4 @@ const Discounts = () => {
     </Layout>
   );
 };
-export default Discounts;
+export default B2BGIFTCARDS;
