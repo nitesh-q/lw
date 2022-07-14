@@ -1,4 +1,4 @@
-import { CHILD_ROUTES } from "./route.config";
+import { ROUTES,CHILD_ROUTES } from "./route.config";
 export const FOOTER_SEQUENCE = [
   "COMPANY_WIDGET",
   "ABOUT_WIDGET",
@@ -56,7 +56,7 @@ export const FOOTER_CONFIG = {
       menuItems: [
         { id: 1, url: "#", text: "About Us" },
         { id: 2, url: "#", text: "Blogs" },
-        { id: 3, url: "#", text: "Contact" },
+        { id: 3, url: "/contact", text: "Contact" },
         { id: 4, url: "#", text: "Join Us" },
       ],
     },

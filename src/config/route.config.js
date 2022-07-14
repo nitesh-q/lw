@@ -5,6 +5,7 @@ export const ROUTES = {
   PRICE:"/pricing",
   DEVELOPERS: "./",
   SIGN_IN: "/",
+  
 };
 
 export const ROUTES_LABEL = {
