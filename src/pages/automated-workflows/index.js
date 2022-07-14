@@ -10,6 +10,7 @@ import {
   TabComponent,
   Services,
   Partner,
+  AppBanner,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -102,13 +103,14 @@ const AUTOMATION_WORK_FEATURES = [
 
 const Automation = () => {
   return (
-    <Layout>
-      <Banner
+    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
+      {/* <Banner
         config={BANNERS_CONFIG.AUTOMATION}
         titleClass={`bannerTitle`}
         allService={true}
         mClass={"mb_90"}
-      />
+      /> */}
+      <AppBanner  allService={true} config={BANNERS_CONFIG.AUTOMATION}/>
 
       <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} />
 

@@ -1,6 +1,6 @@
 import React from "react"; 
 
-const CTAService = ({allService,mClass}) =>{
+const CTAService = ({allService="",mClass=""}) =>{
     return(
         <section className="CTA_service">
             <div className="col-lg-12">
