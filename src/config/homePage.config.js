@@ -1,4 +1,5 @@
 import Icons from "../shared/assets";
+import { CHILD_ROUTES } from "./route.config";
 
 export const GIFTCARD_LIST = [
   {
@@ -105,7 +106,8 @@ export const HOME_TAB1_CONFIG = {
       subTitle: "",
       description1: "",
       description2: "",
-      list: GIFTCARD_LIST
+      list: GIFTCARD_LIST,
+      url:CHILD_ROUTES.GIFTCARD
     },
     {
       id: "storecredit",
@@ -118,7 +120,8 @@ export const HOME_TAB1_CONFIG = {
         "Offering your customers’ store credit can be a great way of improving customer retention.Merchant can use Store credit:",
       description2:
         " In 99minds, Store credit can be quickly added to customer accounts from the control panel and automation using workflow engine.",
-      list: STORE_CREDIT_LIST
+      list: STORE_CREDIT_LIST,
+      url:"#"
     },
     {
       id: "loyalty",
@@ -130,7 +133,8 @@ export const HOME_TAB1_CONFIG = {
       description1:
         "Reward your customers for purchases and otheractions with points which can be redeemed for discounts.",
       description2: "",
-      list: LOYALTY_LIST
+      list: LOYALTY_LIST,
+      url:CHILD_ROUTES.LOYALTY
     },
 
     {
@@ -142,17 +146,19 @@ export const HOME_TAB1_CONFIG = {
       description1:
         "  Boost your organic sales by adding a customer referral program to your eCommerce store",
       description2: "",
-      list: REFERRAL_LIST
+      list: REFERRAL_LIST,
+      url:CHILD_ROUTES.REFERRAL
     },
     {
       id: "automation",
-      label: "Automation",
+      label: "Automated Workflows",
       image: Icons.Automation_img.default,
-      title: "Automation",
+      title: "Automated Workflows",
       subTitle: "",
       description1:"For ecommerce/retailers brands, Customer acquisition & retention automation enables you to focus on acquiring new customers, and retain customers using:",
       description2: "",
-      list:AUTOMATION_LIST
+      list:AUTOMATION_LIST,
+      url:CHILD_ROUTES.AUTOMATION
     },
 
     {
@@ -164,7 +170,8 @@ export const HOME_TAB1_CONFIG = {
       subTitle: "Robust coupon creation",
       description1:"Generate millions of unique coupons in a few clicks, set rules, coupon lengths, etc.",
       description2: "",
-      list: COUPONS_LIST
+      list: COUPONS_LIST,
+      url:CHILD_ROUTES.COUPONS
     },
     {
       id: "wallet",
@@ -175,7 +182,8 @@ export const HOME_TAB1_CONFIG = {
       subTitle: "",
       description1:"Empower customers to store gift cards, loyalty points, coupons,store credit.",
       description2: "",
-      list: WALLET_LIST
+      list: WALLET_LIST,
+      url:"#"
     },
   ],
 };
@@ -200,6 +208,7 @@ export const HOME_TAB2_CONFIG = {
         //     description: "",
         //   },
       ],
+      url:CHILD_ROUTES.REFERRAL
     },
     {
       id: "onboarding",
@@ -218,6 +227,8 @@ export const HOME_TAB2_CONFIG = {
         //   description: "",
         // },
       ],
+      url:"#"
+
     },
     {
       id: "upsell",
@@ -232,6 +243,7 @@ export const HOME_TAB2_CONFIG = {
       list: [
         // { id: 1, title: "", description: "" },
       ],
+      url:"#"
     },
 
     {
@@ -246,6 +258,7 @@ export const HOME_TAB2_CONFIG = {
       list: [
         // { id: 1, title: "", description: "" },
       ],
+      url:"#"
     },
     {
       id: "refund",
@@ -258,6 +271,7 @@ export const HOME_TAB2_CONFIG = {
       list: [
         // { id: 1, title: "", description: "" },
       ],
+      url:"#"
     },
 
     {
@@ -273,6 +287,7 @@ export const HOME_TAB2_CONFIG = {
       list: [
         // { id: 1, title: "", description: "" },
       ],
+      url:"#"
     },
     {
       id: "retain",
@@ -291,6 +306,7 @@ export const HOME_TAB2_CONFIG = {
         //   description: " ",
         // },
       ],
+      url:"#"
     },
   ],
 };

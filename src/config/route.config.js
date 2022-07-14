@@ -20,6 +20,7 @@ export const ROUTES_LABEL = {
   REFERRAL: "Referral Program",
   AUTOMATION: "Automated Workflows",
   B2B_GIFTCARDS: "B2b Gift Cards",
+  STORE_CREDIT:"Store Credit",
   INTEGRATION_1: "Integration 1",
   INTEGRATION_2: "Integration 2",
   INTEGRATION_3: "Integration 3",
@@ -35,6 +36,7 @@ export const CHILD_ROUTES = {
   REFERRAL: "/referral",
   AUTOMATION: "/automated-workflows",
   B2B_GIFTCARDS: "/b2b-giftcards",
+  STORE_CREDIT:"/store-credit",
   DEVELOPERS_1: "/giftcard",
   DEVELOPERS_2: "/giftcard",
 };
@@ -48,6 +50,7 @@ export const CHILDRENS = {
     "REFERRAL",
     "AUTOMATION",
     "B2B_GIFTCARDS",
+    "STORE_CREDIT",
   ],
   INTEGRATION: [
     "INTEGRATION_1",

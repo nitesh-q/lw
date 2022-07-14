@@ -1,3 +1,4 @@
+import { Link,navigate } from "gatsby";
 import React from "react";
 import Fade from "react-reveal/Fade";
 import Icons from "../../shared/assets";
@@ -42,8 +43,9 @@ const TabPannel = ({ item, rClass,icon }) => {
                   <button
                     className="btn btn_get btn_get_two mt-3"
                     type="submit"
+                    onClick={()=>navigate(item.url)}
                   >
-                    Get Started for Free
+                  Learn more
                   </button>
                 </div>
               </div>

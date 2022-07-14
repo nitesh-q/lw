@@ -1,5 +1,6 @@
 import Icons from "../shared/assets";
 
+
 export const BULK_GIFTCARD_LIST = [
   {
     title: "",
@@ -71,6 +72,7 @@ export const GIFTCARD_TABS_CONFIG = {
       description1: "",
       description2: "",
       list: BULK_GIFTCARD_LIST,
+     
     },
     {
       id: "migration",

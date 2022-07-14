@@ -9,6 +9,7 @@ import {
   Header,
   TabComponent,
   Partner,
+  Services,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -128,6 +129,7 @@ const GiftCard = () => {
         }
       />
       <TryAction />
+      <Services />
     </Layout>
   );
 };

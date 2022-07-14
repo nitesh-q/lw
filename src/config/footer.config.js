@@ -1,3 +1,4 @@
+import { CHILD_ROUTES } from "./route.config";
 export const FOOTER_SEQUENCE = [
   "COMPANY_WIDGET",
   "ABOUT_WIDGET",
@@ -29,13 +30,13 @@ export const FOOTER_CONFIG = {
       id: 1,
       title: "Products",
       menuItems: [
-        { id: 1, url: "/giftcard", text: "Gift Cards" },
-        { id: 2, url: "/loyalty", text: "Loyalty Programs" },
-        { id: 3, url: "/coupons", text: "Coupons" },
-        { id: 4, url: "/referral", text: "Referral Programs" },
-        { id: 5, url: "/automation", text: "Automation" },
-        { id: 6, url: "/b2bGiftcards", text: "B2B Gift Cards" },
-        // { id: 7, url: "#", text: "Geolocation" },
+        { id: 1, url:CHILD_ROUTES.GIFTCARD, text: "Gift Cards" },
+        { id: 2, url: CHILD_ROUTES.LOYALTY, text: "Loyalty Programs" },
+        { id: 3, url: CHILD_ROUTES.COUPONS, text: "Coupons" },
+        { id: 4, url: CHILD_ROUTES.REFERRAL, text: "Referral Programs" },
+        { id: 5, url: CHILD_ROUTES.AUTOMATION, text: "Automated Workflows" },
+        { id: 6, url: CHILD_ROUTES.B2B_GIFTCARDS, text: "B2B Gift Cards" },
+        { id: 7, url: CHILD_ROUTES.STORE_CREDIT, text: "Store Credit" },
         // { id: 8, url: "#", text: "Promotion Engine" },
       ],
     },

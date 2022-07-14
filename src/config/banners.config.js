@@ -52,7 +52,7 @@ export const BANNERS_CONFIG = {
   ],
  DISCOUNTS: [
     {
-      title: "Discounts",
+      title: "Store Credit",
       subTitle: "made super easy",
       // image:"",
       description: `Ramp us your sales by launching a gift card program with ease using 99minds. With a simple integration that works online an offline. Get ready to reap various benifits of zero hassle `,
