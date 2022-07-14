@@ -26,6 +26,8 @@ export const ROUTES_LABEL = {
   INTEGRATION_2: "Integration 2",
   INTEGRATION_3: "Integration 3",
   INTEGRATION_4: "Integration 4",
+  INTEGRATION_4: "Integration 4",
+  ALL_INTEGRATIONS:"All Intrgrations",
   DEVELOPERS_1: "Developers 1",
   DEVELOPERS_2: "Developers 2",
 };
@@ -38,6 +40,7 @@ export const CHILD_ROUTES = {
   AUTOMATION: "/automated-workflows",
   B2B_GIFTCARDS: "/b2b-giftcards",
   STORE_CREDIT:"/store-credit",
+  ALL_INTEGRATIONS:"/all-integrations",
   DEVELOPERS_1: "/giftcard",
   DEVELOPERS_2: "/giftcard",
 };
@@ -58,6 +61,7 @@ export const CHILDRENS = {
     "INTEGRATION_2",
     "INTEGRATION_3",
     "INTEGRATION_4",
+    "ALL_INTEGRATIONS",
   ],
 PRICE:[],
   DEVELOPERS: ["DEVELOPERS_1", "DEVELOPERS_2"],
