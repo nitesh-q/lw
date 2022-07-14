@@ -1,5 +1,5 @@
 import React from "react";
-import { TABLE_HEAD, CHECK_ICON, PRICE_LIST } from "../../../config";
+import { TABLE_HEAD, CHECK_ICON, PRICE_LIST,TABLE_BOTTOM } from "../../../config";
 
 const getClassNameForIcon = (icon) => {
   switch (icon) {
@@ -17,9 +17,9 @@ const SequrityPrice = () => {
       <div className="container">
         <div className="hosting_title security_title text-center">
           <h2 className="wow fadeInUp" data-wow-delay="0.2s">
-            <span>SaasLand Packge.</span> Free essentials or ultimate
-            protection?
+            <span>For teams of all sizes, in the cloud</span>
           </h2>
+          <p>Our FREE plan comes with 50 transactions, 1 Campaign, 1 Integration and $0.5 per additional transaction.</p>
         </div>
         <div className="price_info_two price_info_three">
           <div className="price_head">
@@ -32,9 +32,9 @@ const SequrityPrice = () => {
             })}
           </div>
           <div className="price_body">
-            {PRICE_LIST.map((list) => {
+            {PRICE_LIST.map((list,index) => {
               return (
-                <div className="pr_list" key={list.id}>
+                <div className="pr_list" key={index}>
                   <div className="price_item">
                     <h5
                       className="pr_title"
@@ -59,27 +59,24 @@ const SequrityPrice = () => {
                       </div>
                     );
                   })}
+                  
                 </div>
+                
               );
             })}
-            {/* <div className="pr_list">
+            <div className="pr_list">
               <div className="price_item"></div>
-              <div className="price_item">
-                <a href="/#" className="price_btn btn_hover">
-                  Choose This
-                </a>
-              </div>
-              <div className="price_item">
-                <a href="/#" className="price_btn btn_hover">
-                  Choose This
-                </a>
-              </div>
-              <div className="price_item">
-                <a href="/#" className="price_btn btn_hover">
-                  Choose This
-                </a>
-              </div>
-            </div> */}
+              {TABLE_BOTTOM.map((item,index)=>{
+                return (
+                    <div className="price_item">
+                    <a href={item.Url} className="price_btn btn_hover">
+                    {item.Label}
+                    </a>
+                  </div>
+                )
+              })}
+              
+            </div>
           </div>
         </div>
       </div>

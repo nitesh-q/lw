@@ -3,7 +3,7 @@ import Icon1 from "../../images/service/icon1.png";
 import Icon2 from "../../images/service/icon2.png";
 import Icon3 from "../../images/service/icon3.png";
 
-import Fade from "react-reveal/Fade";
+
 
 const Service = () => {
   return (

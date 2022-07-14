@@ -2,7 +2,7 @@ export const ROUTES = {
   HOME: "/home",
   PRODUCTS: "./",
   INTEGRATION: "./",
-  PRICE:"/price",
+  PRICE:"/pricing",
   DEVELOPERS: "./",
   SIGN_IN: "/",
 };
@@ -11,7 +11,7 @@ export const ROUTES_LABEL = {
   HOME: "Home",
   PRODUCTS: "Products",
   INTEGRATION: "Integration",
-  PRICE:"Price",
+  PRICE:"Pricing",
   DEVELOPERS: "Developers",
   SIGN_IN: "Sign In",
   GIFTCARD: "Gift Card",
