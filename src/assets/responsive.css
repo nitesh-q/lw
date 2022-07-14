@@ -1462,7 +1462,7 @@ width: 100 !important;
       }
     .try_call_to_action_area {
         background: #5e2ced;
-        width: 85%;
+        width: 100%;
         height: 500px;
         display: flex;
         align-items: center;

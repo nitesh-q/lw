@@ -77,7 +77,7 @@ class CustomNavbar extends Component {
                           <Link
                             title={ROUTES_LABEL[key]}
                             className="nav-link"
-                            to="/"
+                            to={ROUTES[key]}
                             id={ROUTES_LABEL[key]}
                             {..._props}
                           >

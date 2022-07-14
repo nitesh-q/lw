@@ -7,4 +7,5 @@ export * from "./giftcardPage.config";
 export * from "./loyaltyPage.config";
 export * from "./referralPage.config";
 export * from "./route.config";
+export * from "./priceList.config";
 export { default as Constants } from "./constants";

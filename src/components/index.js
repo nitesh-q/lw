@@ -16,5 +16,7 @@ export {default as CTAService} from "./Services/CTAService"
 export {default as DigitalBanner} from "./DigitalBanner"
 export {default as CouponBanner } from "./CouponBanner"
 export {default as Partner} from "./Partners"
+export {default as Breadcrumb} from "./Common/Title/Breadcrumb"
+
 
 

@@ -77,7 +77,7 @@ const Icons = {
   icon03:require("../images/home4/icon03.png"),
   dot:require("../images/home4/dot.png"),
 
-
+  BREADCRUMB:require("../images/breadcrumb/banner_bg.png"),
   video1: require("../images/banners/video_img_01.png"),
   video2: require("../images/banners/video_img_02.png"),
 
