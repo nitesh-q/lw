@@ -84,7 +84,7 @@ const AUTOMATION_WORK_FEATURES = [
   {
     rowClass: "row agency_featured_item_two",
     aClass: "pl_100",
-    fimage: Icons.Work2.default,
+    fimage: Icons.CustomCoupon.default,
     iImg: Icons.icon02.default,
     ftitle: "Logic Conditions",
     descriptions:
@@ -93,7 +93,7 @@ const AUTOMATION_WORK_FEATURES = [
   {
     rowClass: "row flex-row-reverse",
     aClass: "pr_70 pl_70",
-    fimage: Icons.Work3.default,
+    fimage: Icons.RewardCustomer.default,
     iImg: Icons.icon03.default,
     ftitle: "Execute Action",
     descriptions:
