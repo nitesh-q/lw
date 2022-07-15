@@ -13,14 +13,14 @@ const CouponBanner = ({ config }) => {
                 return (
                   <>
                     <h2 className=" wow fadeInUp" data-wow-delay="0.3s">
-                     {item.title}
+                      {item.title}
                       <span>{item.subTitle}</span>
                     </h2>
                     <p
                       className="f_size_18 l_height30 wow fadeInUp"
                       data-wow-delay="0.5s"
                     >
-                     {item.description}
+                      {item.description}
                     </p>
                   </>
                 );
@@ -49,9 +49,17 @@ const CouponBanner = ({ config }) => {
               <SupportedBrand />
             </div>
           </div>
-          <div className="support_home_img wow fadeInUp" data-wow-delay="0.9s">
-            <img className="img-fluid" src={image} alt="" />
-          </div>
+          {config.map((i,index) => {
+            return (
+              <div
+                className="support_home_img wow fadeInUp"
+                data-wow-delay="0.9s"
+                key={index}
+              >
+                <img className="img-fluid" src={i.image} alt="" />
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

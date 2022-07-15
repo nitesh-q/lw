@@ -30,7 +30,7 @@ export const BANNERS_CONFIG = {
     {
       title: "Powerful ",
       subTitle: "Coupon Generator",
-      // image:"",
+      image:Icons.CouponBanner.default,
       description: `Bulk, Dynamic & Personalize coupons generation for your Store`,
     }
   ],
