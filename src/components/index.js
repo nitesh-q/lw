@@ -18,6 +18,8 @@ export {default as CouponBanner } from "./CouponBanner"
 export {default as Partner} from "./Partners"
 export {default as Breadcrumb} from "./Common/Title/Breadcrumb"
 export{default as ContactForm } from "./Common/ContactForm"
+export {default as FAQ } from "./Common/FAQ"
+export {default as CaseStudies } from "./CaseStudies"
 
 
 

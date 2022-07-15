@@ -3,7 +3,7 @@ export const ROUTES = {
   PRODUCTS: "./",
   INTEGRATION: "./",
   PRICE:"/pricing",
-  DEVELOPERS: "./",
+  CASE_STUDY:"/case-study",
   SIGN_IN: "/",
   
 };
@@ -13,7 +13,7 @@ export const ROUTES_LABEL = {
   PRODUCTS: "Products",
   INTEGRATION: "Integration",
   PRICE:"Pricing",
-  DEVELOPERS: "Developers",
+  CASE_STUDY:"Case Study",
   SIGN_IN: "Sign In",
   GIFTCARD: "Gift Card",
   LOYALTY: "Loyalty",
@@ -64,7 +64,7 @@ export const CHILDRENS = {
     "ALL_INTEGRATIONS",
   ],
 PRICE:[],
-  DEVELOPERS: ["DEVELOPERS_1", "DEVELOPERS_2"],
+CASE_STUDY:[],
   SIGN_IN: [],
 };
 

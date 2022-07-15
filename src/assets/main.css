@@ -12784,6 +12784,14 @@ position: relative;
 /*====================================================*/
 /*====================================================*/
 /*============== faq area css =============*/
+.faq_area h2{
+  font-size: 32px;
+  /* line-height: 40px; */
+  color: #222d39;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+}
 .faq_tab {
   border: 1px solid #f4f4f9;
   background-color: white;
