@@ -9,7 +9,7 @@ const settings = {
   speed: 500,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 200000,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
@@ -49,10 +49,10 @@ const integrations = [
     icon: Icons.Omnisend.default,
     // title: "Bits and bobs cup of tea bubble and squeak brolly.",
   },
-  {
-    icon: Icons.Kalviyo.default,
-    // title: "Bits and bobs cup of tea bubble and squeak brolly.",
-  },
+  // {
+  //   icon: Icons.Kalviyo.default,
+  //   // title: "Bits and bobs cup of tea bubble and squeak brolly.",
+  // },
 ];
 
 const IntegrationCard = ({ title, icon }) => {

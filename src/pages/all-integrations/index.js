@@ -1,7 +1,8 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { Breadcrumb, Services, TryAction, ContactForm } from "../../components";
+import { Breadcrumb, Services, TryAction } from "../../components";
 import Icons from "../../shared/assets";
+import IntegrationGrid from "../../components/IntegrationGrid";
 
 const AllIntegrations = () => {
   return (
@@ -13,6 +14,7 @@ const AllIntegrations = () => {
           Ptitle="All Integrations"
           Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
         />
+        <IntegrationGrid />
         <TryAction />
         <Services />
       </Layout>
