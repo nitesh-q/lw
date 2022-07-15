@@ -31,6 +31,25 @@ const Icons = {
   BigCommerce: require("../images/integrations/BigCommerce.png"),
   Kalviyo: require("../images/integrations/Kalviyo.png"),
   Omnisend: require("../images/integrations/Omnisend.png"),
+  ActiveCampaign: require("../images/integrations/activecampaign.png"),
+  Awsses: require("../images/integrations/awsses.png"),
+  Heartland: require("../images/integrations/heartland-retail.png"),
+  Klaviyo_1: require("../images/integrations/klaviyo_1.png"),
+  mailgun: require("../images/integrations/mailgun.png"),
+  Omnisend_1: require("../images/integrations/omnisend_1.png"),
+  Retail_Pro: require("../images/integrations/retail_pro9.png"),
+  Sendgrid: require("../images/integrations/sendgrid.png"),
+  Stripe: require("../images/integrations/stripe.png"),
+  Vend: require("../images/integrations/vend.png"),
+  WooCommerce: require("../images/integrations/woocommerce.png"),
+  Hike: require("../images/integrations/hike.png"),
+  Shopify_1: require("../images/integrations/shopify.png"),
+  BigCommerce_1: require("../images/integrations/bigcommerce_1.png"),
+
+
+
+
+
 
   //.....................Testimonials......................
   Author_01: require("../images/testimonials/01.png"),

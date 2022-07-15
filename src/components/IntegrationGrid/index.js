@@ -4,7 +4,16 @@ import ImagesLoaded from "imagesloaded/imagesloaded";
 import IntegrationGridCard from "./integrationGirdCard";
 import image1 from "../../images/portfolio/3-columns/_shopify.png";
 import image2 from "../../images/portfolio/3-columns/_BigCommerce.png";
+import Icons from "../../shared/assets";
 
+const Head = {
+  "*": "All",
+  ECommerce: "E-Commerce",
+  POS: "POS",
+  Marketing: "Marketing",
+  Email: "Email",
+  Payment_Processing: "Payment Processing",
+};
 
 const data = [
   {
@@ -16,17 +25,106 @@ const data = [
   },
   {
     label: "E-Commerce",
-    type: "e-commerce",
-    image: image1,
+    type: "ECommerce",
+    image: Icons.Shopify_1.default,
     title: "Shopify",
-    desc: "Personalized discounts your Shopify store was missing",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
   },
   {
-    label: " Marketing Automation",
-    type: "marketing-automation",
-    image: image2,
-    title: "Shopify",
-    desc: "Personalized discounts your Shopify store was missing",
+    label: " POS",
+    type: "POS",
+    image: Icons.Vend.default,
+    title: "VEND",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+  {
+    label: "E-Commerce",
+    type: "ECommerce",
+    image: Icons.BigCommerce_1.default,
+    title: "Big Commerce",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+  
+  
+  {
+    label: " POS",
+    type: "POS",
+    image: Icons.Heartland.default,
+    title: "Heartland Retail",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+  {
+    label: " POS",
+    type: "POS",
+    image: Icons.Hike.default,
+    title: "Hike",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+  {
+    label: " E-Commerce",
+    type: "ECommerce",
+    image: Icons.WooCommerce.default,
+    title: "WooCommerce",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+ 
+  {
+    label: " Payment Processing",
+    type: "Payment_Processing",
+    image: Icons.Stripe.default,
+    title: "Stripe",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+  {
+    label: " Email",
+    type: "Email",
+    image: Icons.Sendgrid.default,
+    title: "SENDGRID",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+  {
+    label: "Email",
+    type: "Email",
+    image: Icons.mailgun.default,
+    title: "MAILGUN",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+  {
+    label: " POS",
+    type: "POS",
+    image: Icons.Retail_Pro.default,
+    title: "Retail Pro 9",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+  {
+    label: "Marketing",
+    type: "Marketing",
+    image: Icons.ActiveCampaign.default,
+    title: "ACTIVE_CAMPAIGN",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+  {
+    label: "Email",
+    type: "Email",
+    image: Icons.Awsses.default,
+    title: "AWS_SES",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+  
+  
+  {
+    label: "Marketing",
+    type: "Marketing",
+    image: Icons.Omnisend_1.default,
+    title: "OMNISEND",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+  },
+  {
+    label: "Marketing",
+    type: "Marketing",
+    image: Icons.Klaviyo_1.default,
+    title: "KLAVIYO",
+    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
   },
 ];
 
@@ -70,15 +168,15 @@ class IntegrationGrid extends Component {
       <section className="portfolio_area sec_pad ">
         <div className="container">
           <div id="portfolio_filter" className="portfolio_filter mb_50">
-            {data.map((i, index) => (
+            {Object.keys(Head).map((key, index) => (
               <div
-                data-filter={i.type}
-                className={`work_portfolio_item ${this.onActive(i.type)}`}
+                data-filter={key}
+                className={`work_portfolio_item ${this.onActive(key)}`}
                 onClick={() => {
-                  this.onFilterChange(i.type);
+                  this.onFilterChange(key);
                 }}
               >
-                {i.label}
+                {Head[key]}
               </div>
             ))}
           </div>

@@ -14,6 +14,13 @@ class IntegrationGridCard extends Component {
           <div>
             <h2>{title}</h2>
             <p>{desc}</p>
+
+            <button
+              className="btn btn_get btn_get_two mt-3"
+              type="submit"
+            >
+              Learn more
+            </button>
           </div>
         </div>
       </div>
