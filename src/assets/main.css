@@ -131,6 +131,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   .container {
     max-width: 1500px;
   }
+  .ccontainer{
+    max-width: 1200px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -6098,7 +6101,9 @@ width: 50%;
 .agency_featured_item {
   margin-top: 130px;
 }
-
+.agency_featured_img img{
+  max-width: 100%;
+}
 .agency_featured_item .agency_featured_content {
   position: relative;
 }
