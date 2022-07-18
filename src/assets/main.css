@@ -3762,10 +3762,6 @@ color: #fff;
     letter-spacing: .18px;
     line-height: 30px;
 }
-/*============= dark_banner_area css ===========*/
-.dark_banner_area{
-  background: #090a21;
-}
 
 /*============= app_banner_area css ===========*/
 .app_banner_area {
@@ -10685,6 +10681,7 @@ margin-top: 20px;
 
 .fact_author_img {
   position: relative;
+  text-align: end;
 }
 
 .fact_author_img .box_three {

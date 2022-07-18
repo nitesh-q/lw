@@ -20,6 +20,9 @@ export {default as Breadcrumb} from "./Common/Title/Breadcrumb"
 export{default as ContactForm } from "./Common/ContactForm"
 export {default as FAQ } from "./Common/FAQ"
 export {default as CaseStudies } from "./CaseStudies"
+export {default as DarkBanner} from "./DarkBanner"
+export {default as Stories} from "./Stories"
+
 
 
 
