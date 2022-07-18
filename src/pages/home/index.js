@@ -22,9 +22,7 @@ const Home = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <DigitalBanner config={BANNERS_CONFIG.HOME} />
-      <SupportedBrand />
-      {/* <TrustedMerchants tClass={"top_0"} /> */}
-      <Partner oClass={"logo_item_opacity"} />
+      <Partner oClass={"logo_item_opacity"} pClass={"sec_pad pb_0"}/>
 
       <TabComponent config={HOME_TAB1_CONFIG} rClass={"reduce_height"} />
       

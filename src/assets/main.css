@@ -258,7 +258,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .w_color {
-  color: #fff;
+  color: #fff !important;
 }
 .t_color1{
   color: #7444FD !important;
@@ -398,6 +398,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .mr_0{
   margin-right: 0px !important;
+}
+
+.p_0{
+  padding: 0px !important;
 }
 
 .pl_1{
@@ -10352,7 +10356,7 @@ margin-top: 20px;
 .partner_info {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: space-between;
+  justify-content: space-between !important;
 
 }
 
@@ -10479,7 +10483,8 @@ margin-top: 20px;
 
 /*=============== partner_logo_area_three css ================*/
 .partner_logo_area_three {
-  padding: 100px 0px;
+  padding: 40px;
+  margin-bottom: 10px;
 }
 
 .partner_logo_area_three .partner_info {
@@ -10502,10 +10507,6 @@ margin-top: 20px;
   transition: all 0.3s linear;
 }
 
-.partner_logo_area_three .partner_info .logo_item:hover img {
-  -webkit-filter: brightness(200%);
-  filter: brightness(200%);
-}
 
 .partner_logo_area_three .partner_info_two .logo_item {
   display: -webkit-box;
@@ -10527,11 +10528,45 @@ margin-top: 20px;
 .partner_logo_area_four {
   padding: 40px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.partner_logo_area_four h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Popppind",sans-serif;
+  margin-bottom: 20px;
+  color: #8891aa;
+}
+.partner_logo_area_four img {
+  display: none;
+
+}
+.partner_logo_area_four img+img {
+  display: block;
+
 }
 
+.partner_img img {
+  display: block;
+  margin-bottom: 0px !important
+}
+.partner_img img+img {
+  display: none;
+ ;
+
+}
 .partner_logo_area_four h4 {
   color: #8891aa;
 }
+
+.partner_white_logo_area_four{
+  padding: 0px;
+  display: contents;
+  margin-bottom: 10px;
+} 
 
 .partner_logo_area_five {
   padding: 200px 0px 70px;

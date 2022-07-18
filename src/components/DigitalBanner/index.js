@@ -6,6 +6,7 @@ import StartedFreeFrom from "../StartedFreeForm";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import CTAService from "../Services/CTAService";
 import Slider from "react-slick";
+import SupportedBrand from "../SupportedBrand";
 
 const settings = {
   dots: true,
@@ -57,20 +58,24 @@ const AppBanner = ({
       <div class="round_shap three "></div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-md-8">
+          <div className="col-lg-6 col-md-8 mt_50">
             <Reveal bottom cascade>
-            <div className="app_hero_banner_content">
-              <h2>Engage,Acquire & Retain Customers</h2>
-              <p>
-                Enrich your Customer Journey with a Gift Card, Store Credit, and
-                Loyalty Program. Empower them to share your brand experience
-                with Refferrals
-              </p>
-            </div>
-                <div className="col-lg-12">
-                  <StartedFreeFrom btnClass={"bg_white t_color1"} />
-                </div>
-                <CTAService allService ={false}/>    
+              <div className="app_hero_banner_content">
+                <h2>Engage,Acquire & Retain Customers</h2>
+                <p>
+                  Enrich your Customer Journey with a Gift Card, Store Credit,
+                  and Loyalty Program. Empower them to share your brand
+                  experience with Refferrals
+                </p>
+              </div>
+              <div className="col-lg-12">
+                <StartedFreeFrom btnClass={"bg_white t_color1"} />
+              </div>
+              <CTAService allService={false} />
+              <SupportedBrand
+                pClass={"partner_white_logo_area_four"}
+                fclass={"w_color"}
+              imgClass={"partner_img mb_0"}/>
             </Reveal>
           </div>
         </div>

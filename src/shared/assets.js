@@ -18,17 +18,25 @@ const Icons = {
 
   // .................trusted-merchants..................
   Woo: require("../images/trusted-merchents/woo.png"),
+  Woo_Logo: require("../images/trusted-merchents/woocommerce-logo.png"),
+
   Shopify: require("../images/trusted-merchents/shopify.png"),
-  Commerce: require("../images/trusted-merchents/commerce.png"),
+  Shopify_Logo: require("../images/trusted-merchents/shopify-logo.png"),
+
+  BigCommerce: require("../images/trusted-merchents/bigcommerce.png"),
+  BigCommerce_Logo: require("../images/trusted-merchents/bigcommerce-logo.png"),
+
   Miva: require("../images/trusted-merchents/miva.png"),
-  Pinstrips: require("../images/trusted-merchents/pinstrip.png"),
-  Besttop: require("../images/trusted-merchents/bestop.png"),
-  Cornor: require("../images/trusted-merchents/cornor.png"),
-  Cariloha: require("../images/trusted-merchents/cariloha.png"),
-  Fylnn: require("../images/trusted-merchents/fylnn.png"),
+  Miva_Logo: require("../images/trusted-merchents/miva-logo.png"),
+
+  Pinstrips: require("../images/trusted-merchents/pinstripes1.png"),
+  Besttop: require("../images/trusted-merchents/bestop-logo.png"),
+  Cornor: require("../images/trusted-merchents/corner-bakery.jpg"),
+  Cariloha: require("../images/trusted-merchents/cariloha_logo.png"),
+  Fylnn: require("../images/trusted-merchents/flynn_logo.jpg"),
 
   //...................Integartion.......................
-  BigCommerce: require("../images/integrations/BigCommerce.png"),
+  BigCommerce_: require("../images/integrations/BigCommerce.png"),
   Kalviyo: require("../images/integrations/Kalviyo.png"),
   Omnisend: require("../images/integrations/Omnisend.png"),
   ActiveCampaign: require("../images/integrations/activecampaign.png"),
@@ -45,11 +53,6 @@ const Icons = {
   Hike: require("../images/integrations/hike.png"),
   Shopify_1: require("../images/integrations/shopify.png"),
   BigCommerce_1: require("../images/integrations/bigcommerce_1.png"),
-
-
-
-
-
 
   //.....................Testimonials......................
   Author_01: require("../images/testimonials/01.png"),
@@ -91,15 +94,14 @@ const Icons = {
   Centralize: require("../images/automation/centralize.png"),
 
   //....................Automation Page ......................
-  icon01:require("../images/home4/icon01.png"),
-  icon02:require("../images/home4/icon02.png"),
-  icon03:require("../images/home4/icon03.png"),
-  dot:require("../images/home4/dot.png"),
+  icon01: require("../images/home4/icon01.png"),
+  icon02: require("../images/home4/icon02.png"),
+  icon03: require("../images/home4/icon03.png"),
+  dot: require("../images/home4/dot.png"),
 
-  BREADCRUMB:require("../images/breadcrumb/banner_bg.png"),
+  BREADCRUMB: require("../images/breadcrumb/banner_bg.png"),
   video1: require("../images/banners/video_img_01.png"),
   video2: require("../images/banners/video_img_02.png"),
-
 };
 
 export default Icons;

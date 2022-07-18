@@ -38,7 +38,7 @@ const settings = {
 };
 const integrations = [
   {
-    icon: Icons.BigCommerce.default,
+    icon: Icons.BigCommerce_.default,
     // title: "Bits and bobs cup of tea bubble and squeak brolly.",
   },
   {

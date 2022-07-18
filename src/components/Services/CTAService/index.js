@@ -4,7 +4,7 @@ const CTAService = ({allService="",mClass=""}) =>{
     return(
         <section className="CTA_service">
             <div className="col-lg-12">
-                  <div className={`row mt_15 flex ${mClass} `}>
+                  <div className={`row mt_15 flex mb_20 ${mClass} `}>
                     <li className="col "> No Credit Card Required</li>
                     {allService ? (
                       <>

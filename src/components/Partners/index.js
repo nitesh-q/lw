@@ -11,7 +11,7 @@ const Partner = ({ pClass, pClasst, oClass }) => {
             <h2>Trusted by 500+ Merchants</h2>
           </Fade>
         </div>
-        <div className={`partner_logo_area_four ${pClasst}`}>
+        <div className={`partner_logo_area_three ${pClasst}`}>
           <div className="row partner_info justify-content-center">
             {MERCHANTS_CONFIG.MERCHANTS.map((item, index) => (
               <div
