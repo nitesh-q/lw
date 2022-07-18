@@ -8,6 +8,7 @@ import {
   Header,
   Services,
   CouponWork,
+  Integration,
   CouponBanner,
 } from "../../components";
 import Layout from "../../components/Layout";
@@ -81,6 +82,7 @@ const Coupons = () => {
         sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
+      <Integration />
       <TryAction />
       <Services />
     </Layout>

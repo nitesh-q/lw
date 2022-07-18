@@ -8,6 +8,8 @@ import {
   Header,
   TabComponent,
   Services,
+  Integration,
+  Partner
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -62,8 +64,7 @@ const StoreCredit = () => {
         mClass={"mb_90"}
         wClass={"mw_125"}
       />
-      <TrustedMerchants />
-
+     <Partner pClass={"sec_pad pb_0"} />
       <Header
         className={"bg_white mt_125"}
         title={"Key features."}
@@ -86,6 +87,7 @@ const StoreCredit = () => {
         sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
+      <Integration />
       <TryAction />
       <Services />
     </Layout>

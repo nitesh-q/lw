@@ -104,13 +104,8 @@ const AUTOMATION_WORK_FEATURES = [
 const Automation = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-      {/* <Banner
-        config={BANNERS_CONFIG.AUTOMATION}
-        titleClass={`bannerTitle`}
-        allService={true}
-        mClass={"mb_90"}
-      /> */}
-      <AppBanner  allService={true} config={BANNERS_CONFIG.AUTOMATION}/>
+      
+      <AppBanner allService={true} config={BANNERS_CONFIG.AUTOMATION} />
 
       <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} />
 
@@ -130,6 +125,7 @@ const Automation = () => {
         sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
+      <Integration />
       <TryAction pClass={"pt_50"} />
       <Services />
     </Layout>

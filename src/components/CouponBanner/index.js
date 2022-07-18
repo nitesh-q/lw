@@ -46,7 +46,7 @@ const CouponBanner = ({ config }) => {
                   </button>
                 </div>
               </form>
-              <SupportedBrand />
+              <SupportedBrand pClass={"pb_0"} />
             </div>
           </div>
           {config.map((i,index) => {

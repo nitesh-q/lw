@@ -3,6 +3,8 @@ import Reveal from "react-reveal/Reveal";
 import Icons from "../../shared/assets";
 import Banner3 from "../../images/loyalty/banner3.svg";
 import Banner4 from "../../images/loyalty/banner3(1).svg";
+import CTAService from "../Services/CTAService";
+import SupportedBrand from "../SupportedBrand";
 
 const LoyaltyBanner = () => {
   return (
@@ -45,6 +47,12 @@ const LoyaltyBanner = () => {
                     Learn more
                   </a>
                 </div>
+                <CTAService allService={true} />
+                <SupportedBrand
+                  pClass={"partner_white_logo_area_four"}
+                  fclass={"w_color mb_25"}
+                  imgClass={"partner_img mb_0"}
+                />
               </div>
             </Reveal>
           </div>

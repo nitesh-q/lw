@@ -10,6 +10,7 @@ import {
   LoyaltyBanner,
   TabComponent,
   Partner,
+  Integration,
 } from "../../components";
 import { TESTIMONIAL_CONFIG, LOYALTY_TABS_CONFIG } from "../../config";
 
@@ -117,6 +118,7 @@ const Loyalty = () => {
         sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
+      <Integration />
       <TryAction />
       <Services />
     </Layout>

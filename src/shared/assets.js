@@ -1,6 +1,7 @@
 const Icons = {
   // .................Home Page ......................
   HomeBanner: require("../images/home/banner.png"),
+  Engage: require("../images/home/engage.png"),
   Giftcard_img: require("../images/home/giftcard.png"),
   StoreCredit_img: require("../images/home/store.png"),
   Automation_img: require("../images/home/automation.png"),
@@ -19,16 +20,12 @@ const Icons = {
   // .................trusted-merchants..................
   Woo: require("../images/trusted-merchents/woo.png"),
   Woo_Logo: require("../images/trusted-merchents/woocommerce-logo.png"),
-
   Shopify: require("../images/trusted-merchents/shopify.png"),
   Shopify_Logo: require("../images/trusted-merchents/shopify-logo.png"),
-
   BigCommerce: require("../images/trusted-merchents/bigcommerce.png"),
   BigCommerce_Logo: require("../images/trusted-merchents/bigcommerce-logo.png"),
-
-  Miva: require("../images/trusted-merchents/miva.png"),
-  Miva_Logo: require("../images/trusted-merchents/miva-logo.png"),
-
+  Miva: require("../images/trusted-merchents/123.png"),
+  Miva_Logo: require("../images/trusted-merchents/333.png"),
   Pinstrips: require("../images/trusted-merchents/pinstripes1.png"),
   Besttop: require("../images/trusted-merchents/bestop-logo.png"),
   Cornor: require("../images/trusted-merchents/corner-bakery.jpg"),

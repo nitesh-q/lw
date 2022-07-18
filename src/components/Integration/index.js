@@ -1,102 +1,68 @@
+
 import React from "react";
 import Icons from "../../shared/assets";
-import Fade from "react-reveal/Fade";
-import Slider from "react-slick";
 
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  arrows: false,
-  autoplay: true,
-  autoplaySpeed: 200000,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
 const integrations = [
   {
-    icon: Icons.BigCommerce_.default,
-    // title: "Bits and bobs cup of tea bubble and squeak brolly.",
+    icon: Icons.BigCommerce_1.default,
   },
   {
-    icon: Icons.Kalviyo.default,
-    // title: "Bits and bobs cup of tea bubble and squeak brolly.",
+    icon: Icons.Klaviyo_1.default,
   },
   {
-    icon: Icons.Omnisend.default,
-    // title: "Bits and bobs cup of tea bubble and squeak brolly.",
+    icon: Icons.Omnisend_1.default,
   },
-  // {
-  //   icon: Icons.Kalviyo.default,
-  //   // title: "Bits and bobs cup of tea bubble and squeak brolly.",
-  // },
+  {
+    icon: Icons.Vend.default,
+  },
+  {
+    icon: Icons.Heartland.default,
+  },
+  {
+    icon: Icons.Hike.default,
+  },
+  {
+    icon: Icons.Sendgrid.default,
+  },
+  {
+    icon: Icons.Stripe.default,
+  },
+  {
+    icon: Icons.WooCommerce.default,
+  },
+  {
+    icon: Icons.ActiveCampaign.default,
+  },
+  {
+    icon: Icons.Retail_Pro.default,
+  },
+  {
+    icon: Icons.Awsses.default,
+  },
+  {
+    icon: Icons.mailgun.default,
+  },
+
 ];
-
-const IntegrationCard = ({ title, icon }) => {
+const Integration = () => {
   return (
-    <div className="iitem">
-      <div className="studies_item">
-        <a href=".#">
-          <img src={icon} alt="" />
-        </a>
-        <div className="text">
-          <a href=".#">
-            <h4></h4>
-          </a>
-          <p>
-            <a href=".#"></a>
-            <a href=".#"></a>
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const Integration = ({ title, description }) => {
-  return (
-    <section className="case_studies_area sec_pad">
+    <section className="security_integration_area">
       <div className="container">
-        <div className=" case_title text-center">
-          <h2
-            className=" f_size_30 f_600 t_color3 l_height40 text-center mb_10 wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
-            {title}
-          </h2>
-          <p>{description}</p>
+        <div className="hosting_title  text-center">
+          <h2 className="wow fadeInUp">Integrations</h2>
+          <p>Empower Your Brick & Click Store With Powerful Integrations</p>
         </div>
-
-        <Slider {...settings} className="case_studies_slider">
+        <div className="row">
           {integrations.map((i, index) => {
             return (
-              <IntegrationCard key={index} title={i.title} icon={i.icon} />
+              <div className="col-lg-3 col-md-4 col-sm-6" key={index}>
+                <a href="/#" className="s_integration_item">
+                  <img src={i.icon} alt="" />
+                </a>
+              </div>
             );
           })}
-        </Slider>
+        </div>
       </div>
     </section>
   );

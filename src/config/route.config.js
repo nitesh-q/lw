@@ -39,7 +39,7 @@ export const CHILD_ROUTES = {
   AUTOMATION: "/automated-workflows",
   B2B_GIFTCARDS: "/b2b-giftcards",
   STORE_CREDIT: "/store-credit",
-  ALL_INTEGRATIONS: "/all-integrations",
+  ALL_INTEGRATIONS: "/integrations",
   DEVELOPERS_1: "/giftcard",
   DEVELOPERS_2: "/giftcard",
 };

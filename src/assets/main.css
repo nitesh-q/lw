@@ -367,9 +367,12 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .mb_15 {
   margin-bottom: 15px;
 }
+.mb_25 {
+  margin-bottom: 25px !important;
+}
 
 .mb_30 {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 
 .mb-30 {
@@ -3759,6 +3762,11 @@ color: #fff;
     letter-spacing: .18px;
     line-height: 30px;
 }
+/*============= dark_banner_area css ===========*/
+.dark_banner_area{
+  background: #090a21;
+}
+
 /*============= app_banner_area css ===========*/
 .app_banner_area {
   background: url(../images/home7/banner.png) no-repeat  center 100%;
@@ -5532,6 +5540,7 @@ width: 50%;
   transition: color 0.2s ease;
 }
 
+
 .s_service_item:hover .solid_overlay {
   opacity: 0;
 }
@@ -6027,7 +6036,6 @@ width: 50%;
 
 .features_info {
   position: relative;
-  padding-bottom: 170px;
 }
 
 .features_info .dot_img {
@@ -10363,7 +10371,7 @@ margin-top: 20px;
 .partner_info .logo_item {
   width: calc(100% / 5);
   margin-bottom: 60px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .partner_info .logo_item img {
@@ -10534,10 +10542,10 @@ margin-top: 20px;
   align-items: center;
 }
 .partner_logo_area_four h3 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-family: "Popppind",sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #8891aa;
 }
 .partner_logo_area_four img {
@@ -12131,7 +12139,7 @@ position: relative;
   margin: 0 auto;
   background-color: white;
   box-shadow: 0px 7px 40px 0px rgb(12 0 46 / 6%);
-  width: 80%;
+  width: 100%;
 }
 
 .app_screenshot_area .app_screen_info {
@@ -12141,14 +12149,14 @@ position: relative;
 }
 
 .app_screenshot_area .app_screenshot_slider .item {
-  padding: 10px 20px 20px;
+  /* padding: 10px 20px 20px; */
 }
 
 .app_screenshot_area .app_screenshot_slider .item .screenshot_img {
-  border: 1px solid #f4f4f9;
+  /* border: 1px solid #f4f4f9;
   border-radius: 4px;
   -webkit-box-shadow: 0px 6px 16px 0px rgba(12, 0, 46, 0.06);
-  box-shadow: 0px 6px 16px 0px rgba(12, 0, 46, 0.06);
+  box-shadow: 0px 6px 16px 0px rgba(12, 0, 46, 0.06); */
 }
 
 .app_screenshot_area .app_screenshot_slider .item .screenshot_img img {
@@ -12156,17 +12164,26 @@ position: relative;
 }
 
 .app_screenshot_area .app_screenshot_slider .slick-dots {
-  margin-top: 40px;
+  margin-top: -40px;
+  position: relative;
+  bottom: 0px;
 }
 
 .app_screenshot_area .app_screenshot_slider .slick-dots li button {
   background: #cfcfe7;
   border: 0px;
-  margin: 0px;
+  margin: 25px;
+  width: 70px;
+  height: 8px;
+  border-radius: 20px;
+  margin: 0px 5px;
+  padding: 4px;
+  display: block;
+  transition: all 0.3s linear;
 }
 
 .app_screenshot_area .app_screenshot_slider .slick-dots li.slick-active button{
-  background: #653cee;
+  background: #fff;
 }
 
 .app_screenshot_area .app_screenshot_slider .owl-prev, .app_screenshot_area .app_screenshot_slider .owl-next {
@@ -12175,7 +12192,7 @@ position: relative;
   width: 50px;
   height: 50px;
   border: 1px solid #d9e1ea;
-  background: #fbfbfd;
+  background: red;
   border-radius: 25px;
   font-size: 20px;
   line-height: 50px;
@@ -19135,21 +19152,23 @@ input[type="text"] {
 }
 
 .hosting_title h2 {
-  font-size: 40px;
-  line-height: 55px;
+  font-size: 30px;
+  line-height: 40px;
   font-weight: 600;
-  color: #2c2c51;
+  font-family: 'Poppins',sans-serif;
+  color: #222d39;
   margin-bottom: 15px;
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .hosting_title p {
-  color: #7b7b93;
+  color: #6a7695;
   font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 .hosting_title .w_color {
@@ -21811,6 +21830,11 @@ a .h_head:hover {
   color: #051441;
   margin-top: 15px;
 }
+.s_integration_item img {
+  width: 150px;
+  height: 90px;
+  object-fit: contain;
+ }
 
 .s_integration_item:hover {
   -webkit-transform: scale(1.03);

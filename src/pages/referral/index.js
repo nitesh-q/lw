@@ -8,13 +8,15 @@ import {
   Header,
   TabComponent,
   Services,
+  Integration,
+  Partner,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
 import {
   TESTIMONIAL_CONFIG,
   BANNERS_CONFIG,
-  REFERRAL_TAB_CONFIG
+  REFERRAL_TAB_CONFIG,
 } from "../../config";
 
 const REFERRAL_FEATURES = [
@@ -62,7 +64,8 @@ const Referral = () => {
         mClass={"mb_90"}
         wClass={"mw_125"}
       />
-      <TrustedMerchants />
+      {/* <TrustedMerchants /> */}
+      <Partner pClass={"sec_pad pb_0"} />
 
       <Header
         className={"bg_white mt_125"}
@@ -86,6 +89,7 @@ const Referral = () => {
         sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
+      <Integration />
       <TryAction />
       <Services />
     </Layout>

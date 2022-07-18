@@ -1,9 +1,7 @@
 import React from "react";
 import Reveal from "react-reveal";
 import Icons from "../../shared/assets";
-import { BANNERS_CONFIG } from "../../config";
 import StartedFreeFrom from "../StartedFreeForm";
-import scrollTo from "gatsby-plugin-smoothscroll";
 import CTAService from "../Services/CTAService";
 import Slider from "react-slick";
 import SupportedBrand from "../SupportedBrand";
@@ -14,34 +12,11 @@ const settings = {
   speed: 500,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 20000,
-  slidesToShow: 2,
+  autoplaySpeed: 200000,
+  slidesToShow: 1,
   slidesToScroll: 1,
-  // responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 3,
-  //         slidesToScroll: 1,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1
-  //       }
-  //     }
-  //   ]
 };
-const AppBanner = ({
+const DigitalBanner = ({
   config,
   supportedBrand,
   startedFreeForm,
@@ -58,7 +33,7 @@ const AppBanner = ({
       <div class="round_shap three "></div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-md-8 mt_50">
+          <div className="col-lg-5  mt_50">
             <Reveal bottom cascade>
               <div className="app_hero_banner_content">
                 <h2>Engage,Acquire & Retain Customers</h2>
@@ -74,36 +49,38 @@ const AppBanner = ({
               <CTAService allService={false} />
               <SupportedBrand
                 pClass={"partner_white_logo_area_four"}
-                fclass={"w_color"}
-              imgClass={"partner_img mb_0"}/>
+                fclass={"w_color mb_25"}
+                imgClass={"partner_img mb_0"}
+              />
             </Reveal>
           </div>
+          <div className="col-lg-7">
+            <div className=" p0 app_screenshot_area">
+              <div className="app_screen_info">
+                <Slider className="app_screenshot_slider" {...settings}>
+                  <div className="item">
+                    <div className="screenshot_img">
+                      <img src={Icons.Engage.default} alt="" />
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div className="screenshot_img">
+                      <img src={Icons.Engage.default} alt="" />
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div className="screenshot_img">
+                      <img src={Icons.Engage.default} alt="" />
+                    </div>
+                  </div>
+                </Slider>
+              </div>
+            </div>
+          </div>
         </div>
-        {/* <div  className="container custom_container p0">
-                <div  className="app_screen_info">
-                    <Slider  className="app_screenshot_slider" {...settings}>
-                        <div  className="item">
-                            <div  className="screenshot_img">
-                                <a href="#"  className="image-link"><img src={Icons.video1.default} alt=""/></a>
-                            </div>
-                        </div>
-                        <div  className="item">
-                            <div  className="screenshot_img">
-                                <a href="#"  className="image-link"><img src={Icons.video2.default} alt=""/></a>
-                            </div>
-                        </div>
-                        <div  className="item">
-                            <div  className="screenshot_img">
-                                <a href="#"  className="image-link"><img src={Icons.video1.default} alt=""/></a>
-                            </div>
-                        </div>
-                      
-                    </Slider>
-                </div>
-            </div> */}
       </div>
     </section>
   );
 };
 
-export default AppBanner;
+export default DigitalBanner;

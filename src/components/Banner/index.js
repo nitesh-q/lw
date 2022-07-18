@@ -76,18 +76,7 @@ const Banner = ({
                   )}
                 </div>
                <CTAService allService={allService}/> 
-                {/* <div className={`row mt_15 flex ${mClass} `}>
-                  <li className="col "> No Credit Card Required</li>
-                  {allService ? (
-                    <>
-                      <li className="col"> Free Sign Up</li>
-                      <li className="col"> 24/7 Support</li>
-                    </>
-                  ) : (
-                    ""
-                  )}
-                </div> */}
-                {supportedBrand ? <SupportedBrand /> : ""}
+                <SupportedBrand    pClass={"partner_white_logo_area_four"} /> 
               </div>
             </Reveal>
           </div>

@@ -5,6 +5,7 @@ import { BANNERS_CONFIG } from "../../config";
 import StartedFreeFrom from "../StartedFreeForm";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import CTAService from "../Services/CTAService";
+import SupportedBrand from "../SupportedBrand";
 const AppBanner = ({
   config,
   supportedBrand,
@@ -51,6 +52,11 @@ const AppBanner = ({
                     <i className="ti-arrow-down"></i>
                   </button>
                 </div> */}
+                 <SupportedBrand
+                  pClass={"partner_white_logo_area_four"}
+                  fclass={"w_color mb_25"}
+                  imgClass={"partner_img mb_0"}
+                />
               </div>
             </Reveal>
           </div>
