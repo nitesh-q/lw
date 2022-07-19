@@ -99,6 +99,11 @@ const Icons = {
   BREADCRUMB: require("../images/breadcrumb/banner_bg.png"),
   video1: require("../images/banners/video_img_01.png"),
   video2: require("../images/banners/video_img_02.png"),
-};
 
+  //....................Case Study.............................
+  Leader: require("../images/home-event/leader.png"),
+  Meetup: require("../images/home-event/meetup.png"),
+  Chat: require("../images/home-event/chat.png"),
+
+};
 export default Icons;

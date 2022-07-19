@@ -9,66 +9,76 @@ const CaseStudies = () => {
             <div className="job_info">
               <div className="info_head">
                 <i className="ti-receipt"></i>
-                <h6 className="f_p f_600 f_size_18 t_color3">
-                  Unique Elements
-                </h6>
+                <h6 className="f_p f_600 f_size_18 t_color3">Brand Name</h6>
+                <p>
+                  Lost the plot lurgy on your bike mate Oxford hanky panky blow
+                  off haggle golly gosh do one.
+                </p>
               </div>
               <div className="info_item">
-                <h6>Owner:</h6>
-                <p>Droit Theme</p>
+                <h6>Product Used</h6>
+                <p><i className="ti-gift"></i>Gift Card</p>
+                <p><i className="ti-star"></i>Loyalty Program </p>
+                <p><i className="ti-ticket"></i>Coupon Genetrator</p>
               </div>
               <div className="info_item">
-                <h6>Live Time:</h6>
-                <p>2 Working Days</p>
+                <p><i className="fas fa-globe-americas"></i>North America</p>
               </div>
               <div className="info_item">
-                <h6>Service Cost:</h6>
-                <p>$250.00</p>
-              </div>
-              <div className="info_item">
-                <h6>Quality:</h6>
-                <p>High</p>
-              </div>
-              <div className="info_item">
-                <h6>Experience</h6>
-                <p>3 Years</p>
+                <p><i className="fa fa-chart-bar"></i>Growth</p>
               </div>
             </div>
           </div>
           <div className="col-lg-7">
             <div className="details_content">
               <div className="sec_title">
+                <h2>Challenge</h2>
                 <p className="f_400 f_size_15">
-                  He lost his bottle a load of old tosh cup of tea brolly
-                  bog-standard matie boy blow off the little rotter morish,
-                  haggle hotpot skive off cuppa don't get shirty with me off his
-                  nut the full monty. Starkers morish down the pub such a fibber
-                  quaint gosh Harry boot owt to do with me the little rotter,
-                  baking cakes Eaton ummm I'm telling pardon me the bee's knees
-                  vagabond Oxford chap, A bit of how's your father bog-standard
-                  hanky panky daft well lavatory bubble and squeak the full
-                  monty. That say nice one grub cup of tea so I said barmy only
-                  a quid, I it's your round gutted mate cup of char golly gosh
-                  dropped a clanger my good sir, James Bond happy days brilliant
-                  blimey I is. Boot Jeffrey cockup the BBC pardon me victoria
-                  sponge Why chip shop what a load of rubbish pukka brolly cuppa
-                  tickety-boo bog-standard cheesed off posh, bugger Eaton
-                  William smashing knackered bog bonnet bobby bender cobblers
-                  only a quid baking cakes the full monty pardon you.{" "}
+                  Substack launched in 2017 with the ambitious goal of
+                  empowering writers, thinkers and creatives to connect directly
+                  with their communities. With monthly subscription payments,
+                  Substack offers customers a business model that is independent
+                  of freelance assignments and ad sales. Instead, it prioritises
+                  and monetises direct relationships with readers. To
+                  successfully bring its concept to life, Substack needed to
+                  simplify every aspect of the subscriber and the writer
+                  experience on the platform.{" "}
                 </p>
+                <h2>Solution</h2>
                 <p className="f_400 f_size_15">
-                  Twit bonnet Jeffrey hunky-dory gormless chancer bog-standard
-                  spiffing good time, young delinquent Charles don't get shirty
-                  with me the BBC is brown bread off his nut a load of old tosh,
-                  chap grub bog skive off pardon me bleeder. Lavatory on your
-                  bike mate happy days the little rotter arse over tit no biggie
-                  at public school wind up car boot bamboozled well barmy
-                  bleeder the wireless bugger, cockup blatant David it's all
-                  gone to pot morish mush sloshed boot A bit of how's your
-                  father skive off cheers a load of old tosh. No biggie mush I
-                  don't want no agro it's your round cack boot say, the full
-                  monty mufty such a fibber up the duff Why, Eaton pardon me
-                  spiffing blower brown bread.
+                  Substack launched in 2017 with the ambitious goal of
+                  empowering writers, thinkers and creatives to connect directly
+                  with their communities. With monthly subscription payments,
+                  Substack offers customers a business model that is independent
+                  of freelance assignments and ad sales. Instead, it prioritises
+                  and monetises direct relationships with readers. To
+                  successfully bring its concept to life, Substack needed to
+                  simplify every aspect of the subscriber and the writer
+                  experience on the platform.
+                </p>
+                <h2>Result</h2>
+                <p className="f_400 f_size_15">
+                  Substack launched in 2017 with the ambitious goal of
+                  empowering writers, thinkers and creatives to connect directly
+                  with their communities. With monthly subscription payments,
+                  Substack offers customers a business model that is independent
+                  of freelance assignments and ad sales. Instead, it prioritises
+                  and monetises direct relationships with readers. To
+                  successfully bring its concept to life, Substack needed to
+                  simplify every aspect of the subscriber and the writer
+                  experience on the platform.
+                </p>
+                <h2>Result</h2>
+                <p className="f_400 f_size_15">
+                  Substack launched in 2017 with the ambitious goal of
+                  empowering writers, thinkers and creatives to connect directly
+                  with their communities. With monthly subscription payments,
+                  Substack offers customers a business model that is independent
+                  of freelance assignments and ad sales. Instead, it prioritises
+                  and monetises direct relationships with readers. To
+                  successfully bring its concept to life, Substack needed to
+                  simplify every aspect of the subscriber and the writer
+                  experience on the platform.
                 </p>
               </div>
             </div>
