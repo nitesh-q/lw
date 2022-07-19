@@ -52,7 +52,7 @@ export const CHILD_ROUTES = {
   BLOG_1: "/",
   BLOG_2: "/",
   CASE_STUDY_LISTING: "/",
-  CASE_STUDY_DETAILS: "/case-study",
+  CASE_STUDY_DETAILS: "/case-studies-details",
   DOCUMENTATION: "/",
 };
 
