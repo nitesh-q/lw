@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Reveal from "react-reveal/Reveal";
 const FeaturesItems = ({
   rowClass,

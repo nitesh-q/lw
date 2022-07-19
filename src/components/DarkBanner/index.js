@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Image1 from "../../images/home6/trust_img2.png";
 
 const POSTS = [

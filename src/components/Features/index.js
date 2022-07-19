@@ -32,8 +32,8 @@ const Features = ({
               {list.map((i, index) => {
                 return (
                   <>
-                    <ul className="pl_1">
-                      <li key={index}>{i.desc}</li>
+                    <ul className="pl_1" key={index}>
+                      <li >{i.desc}</li>
                     </ul>
                   </>
                 );

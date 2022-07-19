@@ -12,7 +12,7 @@ const settings = {
   speed: 500,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 2800,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -65,12 +65,12 @@ const DigitalBanner = ({
                   </div>
                   <div className="item">
                     <div className="screenshot_img">
-                      <img src={Icons.Engage.default} alt="" />
+                      <img src={Icons.Acquire.default} alt="" />
                     </div>
                   </div>
                   <div className="item">
                     <div className="screenshot_img">
-                      <img src={Icons.Engage.default} alt="" />
+                      <img src={Icons.Retain.default} alt="" />
                     </div>
                   </div>
                 </Slider>

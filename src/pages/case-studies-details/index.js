@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import {
-  Breadcrumb,
   CaseStudies,
   DarkBanner,
   EventAbout,
@@ -17,23 +16,21 @@ const CUSTOMER_STORIES = [
     title: "Interchange fees",
     description:
       "Oxford I don't want no agro naff sloshed. I bite your arm off mush hunky-dory nice one ummm I'm telling lurgy we.!",
-      url:".#"
+    url: ".#",
   },
   {
     image: Icons.Meetup.default,
     title: "Our Corporate",
     description:
       "Oxford I don't want no agro naff sloshed. I bite your arm off mush hunky-dory nice one ummm I'm telling lurgy we.!",
-      url:".#"
-
+    url: ".#",
   },
   {
     image: Icons.Chat.default,
     title: "European Regulation",
     description:
       "Oxford I don't want no agro naff sloshed. I bite your arm off mush hunky-dory nice one ummm I'm telling lurgy we.!",
-      url:".#"
-
+    url: ".#",
   },
 ];
 const CaseStudy = () => {

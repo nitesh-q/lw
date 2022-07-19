@@ -2,6 +2,8 @@ const Icons = {
   // .................Home Page ......................
   HomeBanner: require("../images/home/banner.png"),
   Engage: require("../images/home/engage.png"),
+  Acquire: require("../images/home/acquire.png"),
+  Retain: require("../images/home/retain.png"),
   Giftcard_img: require("../images/home/giftcard.png"),
   StoreCredit_img: require("../images/home/store.png"),
   Automation_img: require("../images/home/automation.png"),

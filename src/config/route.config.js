@@ -12,7 +12,6 @@ export const ROUTES_LABEL = {
   PRODUCTS: "Products",
   INTEGRATION: "Integration",
   PRICE: "Pricing",
-  CASE_STUDY: "Case Study",
   SIGN_IN: "Sign In",
   GIFTCARD: "Gift Card",
   LOYALTY: "Loyalty",
@@ -34,7 +33,7 @@ export const ROUTES_LABEL = {
   BLOG_2: "Blog_2",
   DOCUMENTATION: "Documentation",
   CASE_STUDY: "Case Study",
-  CASE_STUDY_LISTING: "Case Study",
+  CASE_STUDY_LISTING: "Case Studies",
   CASE_STUDY_DETAILS: "Case Study Details",
 };
 

@@ -80,7 +80,7 @@ export const COUPONS_LIST=[
     { id: 4, title: "", description: "Promo Codees." },
     { id: 5, title: "", description: "SKU Based Coupon" },
 ]
-export const WALLET_LIST=[
+export const WALLET_LIST_=[
   { id: 1,
     title: "",
     description:"Digital Loyalty Card & Gift Card compatible with Apple & Google Wallet",
@@ -182,7 +182,7 @@ export const HOME_TAB1_CONFIG = {
       subTitle: "",
       description1:"Empower customers to store gift cards, loyalty points, coupons,store credit.",
       description2: "",
-      list: WALLET_LIST,
+      list: WALLET_LIST_,
       url:"#"
     },
   ],

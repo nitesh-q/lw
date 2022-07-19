@@ -17,6 +17,7 @@ const Partner = ({ pClass, pClasst, oClass }) => {
               <div
                 className="logo_item wow fadeInLeft mb_0 mr_0"
                 data-wow-delay="0.1s"
+                key={index}
               >
                 <img className={oClass} src={item.image} alt="" />
               </div>

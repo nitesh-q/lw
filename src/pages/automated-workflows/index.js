@@ -115,8 +115,8 @@ const Automation = () => {
         title="How it works"
       />
 
-      {AUTOMATION_FEATURES.map((card) => (
-        <Features ptClass="pt_0" {...{ ...card }} url="#" />
+      {AUTOMATION_FEATURES.map((card,index) => (
+        <Features ptClass="pt_0" {...{ ...card }} url="#" key={index} />
       ))}
 
       <Testimonial

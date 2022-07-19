@@ -1,5 +1,4 @@
 import React from "react";
-import About from "../../images/home-event/about.jpg";
 import Marker from "../../images/home-event/marker.png";
 import Timer from "../../images/home-event/timer.png";
 import Icons from "../../shared/assets";
