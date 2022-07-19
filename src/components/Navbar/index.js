@@ -7,6 +7,7 @@ import {
   ROUTES,
   ROUTES_LABEL,
   CHILDRENS,
+  CHILDRENS_CHILD,
   CHILD_ROUTES,
   ADD_DEVIDER_BEFORE,
 } from "../../config";
@@ -104,7 +105,35 @@ class CustomNavbar extends Component {
                                       to={CHILD_ROUTES[child]}
                                     >
                                       {ROUTES_LABEL[child]}
+                                      {!!CHILDRENS_CHILD[child]?.length && (
+                                        <i className="ti-angle-right icon"></i>
+                                      )}
                                     </Link>
+                                    <ul
+                                      role="menu"
+                                      className="dropdown-menu"
+                                      aria-labelledby={ROUTES[key]}
+                                    >
+                                      {!!CHILDRENS_CHILD[child]?.length &&
+                                        CHILDRENS_CHILD[child]?.map(
+                                          (i, index) => {
+                                            return (
+                                              <li
+                                                key={index}
+                                                className="dropdown submenu nav-item"
+                                              >
+                                                <Link
+                                                  exact
+                                                  className="nav-link"
+                                                  to={CHILD_ROUTES[i]}
+                                                >
+                                                  {ROUTES_LABEL[i]}
+                                                </Link>
+                                              </li>
+                                            );
+                                          }
+                                        )}
+                                    </ul>
                                   </li>
                                 );
                               })}

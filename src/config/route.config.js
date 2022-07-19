@@ -2,8 +2,8 @@ export const ROUTES = {
   HOME: "/home",
   PRODUCTS: "./",
   INTEGRATION: "./",
+  RESOURCES: "./",
   PRICE: "/pricing",
-  CASE_STUDY: "/case-study",
   SIGN_IN: "/",
 };
 
@@ -25,10 +25,17 @@ export const ROUTES_LABEL = {
   INTEGRATION_2: "Integration 2",
   INTEGRATION_3: "Integration 3",
   INTEGRATION_4: "Integration 4",
-  INTEGRATION_4: "Integration 4",
   ALL_INTEGRATIONS: "All Intrgrations",
   DEVELOPERS_1: "Developers 1",
   DEVELOPERS_2: "Developers 2",
+  RESOURCES: "Resources",
+  BLOG: "Blog",
+  BLOG_1: "Blog_1",
+  BLOG_2: "Blog_2",
+  DOCUMENTATION: "Documentation",
+  CASE_STUDY: "Case Study",
+  CASE_STUDY_LISTING: "Case Study",
+  CASE_STUDY_DETAILS: "Case Study Details",
 };
 
 export const CHILD_ROUTES = {
@@ -42,6 +49,11 @@ export const CHILD_ROUTES = {
   ALL_INTEGRATIONS: "/integrations",
   DEVELOPERS_1: "/giftcard",
   DEVELOPERS_2: "/giftcard",
+  BLOG_1: "/",
+  BLOG_2: "/",
+  CASE_STUDY_LISTING: "/",
+  CASE_STUDY_DETAILS: "/case-study",
+  DOCUMENTATION: "/",
 };
 
 export const CHILDRENS = {
@@ -62,9 +74,15 @@ export const CHILDRENS = {
     "INTEGRATION_4",
     "ALL_INTEGRATIONS",
   ],
+  RESOURCES: ["CASE_STUDY", "BLOG", "DOCUMENTATION"],
   PRICE: [],
-  CASE_STUDY: [],
   SIGN_IN: [],
+};
+
+export const CHILDRENS_CHILD = {
+  BLOG: ["BLOG_1", "BLOG_2"],
+  DOCUMENTATION: [],
+  CASE_STUDY: ["CASE_STUDY_LISTING", "CASE_STUDY_DETAILS"],
 };
 
 export const ADD_DEVIDER_BEFORE = { SIGN_IN: true };

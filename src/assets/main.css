@@ -1236,12 +1236,14 @@ font-weight: 800;
 /* .menu > .nav-item:last-child{
   height: 2px;
   border-left: 5px solid #000000;
+
 } */
 
 .menu > .nav-item.submenu .dropdown-menu {
   margin: 0px;
   border: 0px;
   margin: 0px;
+  top:100%;
   border-radius: 0px;
   left: -40px;
   min-width: 200px;
@@ -1337,6 +1339,10 @@ font-weight: 800;
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
+    white-space: nowrap;
+    white-space: nowrap;
+  font: 400 14px/34px "Poppins", sans-serif;
+  color: #051441;
   }
 }
 
