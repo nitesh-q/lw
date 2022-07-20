@@ -83,7 +83,7 @@ export const LOYALTY_TABS_CONFIG = {
       id: "reportsAnalytics",
       label: "Reports & Analytics",
       selected: "true",
-      image: Icons.RewardPage.default,
+      image: Icons.ReportAnalytic.default,
       title:
         "Track sales and see the impact of your Loyalty program in one place",
       description1: "",

@@ -66,7 +66,7 @@ const Icons = {
   Reload: require("../images/giftcard/reload.png"),
   Upload: require("../images/giftcard/upload.png"),
 
-  //....................Giftcard Page ......................
+  //....................Loyalty Page ......................
   LoyaltyBanner: require("../images/loyalty/loyaltyBanner.png"),
   LoyaltyBanner1: require("../images/loyalty/loyaltyBanner1.png"),
   BannerImg1: require("../images/loyalty/3d.png"),
@@ -76,6 +76,8 @@ const Icons = {
   LoyaltyReward: require("../images/loyalty/loyaltyReward.png"),
   VipTier: require("../images/loyalty/vipTier.png"),
   RewardPage: require("../images/loyalty/rewardPage.png"),
+  ReportAnalytic: require("../images/loyalty/report_analytic.png"),
+
 
   //....................Coupons Page ......................
   CouponBanner: require("../images/coupons/coupon-banner.png"),
