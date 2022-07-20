@@ -17,15 +17,25 @@ const CaseStudies = () => {
               </div>
               <div className="info_item">
                 <h6>Product Used</h6>
-                <p><i className="ti-gift"></i>Gift Card</p>
-                <p><i className="ti-star"></i>Loyalty Program </p>
-                <p><i className="ti-ticket"></i>Coupon Genetrator</p>
+                <p>
+                  <i className="ti-gift"></i>Gift Card
+                </p>
+                <p>
+                  <i className="ti-star"></i>Loyalty Program{" "}
+                </p>
+                <p>
+                  <i className="ti-ticket"></i>Coupon Genetrator
+                </p>
               </div>
               <div className="info_item">
-                <p><i className="fas fa-globe-americas"></i>North America</p>
+                <p>
+                  <i className="fas fa-globe-americas"></i>North America
+                </p>
               </div>
               <div className="info_item">
-                <p><i className="fa fa-chart-bar"></i>Growth</p>
+                <p>
+                  <i className="fa fa-chart-bar"></i>Growth
+                </p>
               </div>
             </div>
           </div>
@@ -33,7 +43,7 @@ const CaseStudies = () => {
             <div className="details_content">
               <div className="sec_title">
                 <h2>Challenge</h2>
-                <p className="f_400 f_size_15">
+                <p className="f_500 f_size_16 f_color_1">
                   Substack launched in 2017 with the ambitious goal of
                   empowering writers, thinkers and creatives to connect directly
                   with their communities. With monthly subscription payments,
@@ -45,7 +55,7 @@ const CaseStudies = () => {
                   experience on the platform.{" "}
                 </p>
                 <h2>Solution</h2>
-                <p className="f_400 f_size_15">
+                <p className="f_500 f_size_16 f_color_1">
                   Substack launched in 2017 with the ambitious goal of
                   empowering writers, thinkers and creatives to connect directly
                   with their communities. With monthly subscription payments,
@@ -57,7 +67,7 @@ const CaseStudies = () => {
                   experience on the platform.
                 </p>
                 <h2>Result</h2>
-                <p className="f_400 f_size_15">
+                <p className="f_500 f_size_16 f_color_1">
                   Substack launched in 2017 with the ambitious goal of
                   empowering writers, thinkers and creatives to connect directly
                   with their communities. With monthly subscription payments,
@@ -69,7 +79,7 @@ const CaseStudies = () => {
                   experience on the platform.
                 </p>
                 <h2>Result</h2>
-                <p className="f_400 f_size_15">
+                <p className="f_500 f_size_16 f_color_1 ">
                   Substack launched in 2017 with the ambitious goal of
                   empowering writers, thinkers and creatives to connect directly
                   with their communities. With monthly subscription payments,

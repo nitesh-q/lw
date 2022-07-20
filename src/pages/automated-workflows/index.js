@@ -3,23 +3,14 @@ import {
   Integration,
   Testimonial,
   TryAction,
-  Banner,
-  TrustedMerchants,
   Features,
-  Header,
-  TabComponent,
   Services,
   Partner,
   AppBanner,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import {
-  TESTIMONIAL_CONFIG,
-  BANNERS_CONFIG,
-  GIFTCARD_TABS_CONFIG,
-} from "../../config";
-import Work from "../../components/work";
+import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
 import WorkFeatures from "../../components/WorkFeature";
 
 const BOOST_Loyalty = [
@@ -104,7 +95,6 @@ const AUTOMATION_WORK_FEATURES = [
 const Automation = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-      
       <AppBanner allService={true} config={BANNERS_CONFIG.AUTOMATION} />
 
       <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} />
@@ -115,7 +105,7 @@ const Automation = () => {
         title="How it works"
       />
 
-      {AUTOMATION_FEATURES.map((card,index) => (
+      {AUTOMATION_FEATURES.map((card, index) => (
         <Features ptClass="pt_0" {...{ ...card }} url="#" key={index} />
       ))}
 

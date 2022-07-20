@@ -3,7 +3,6 @@ import {
   Testimonial,
   TryAction,
   Banner,
-  TrustedMerchants,
   Features,
   Header,
   TabComponent,
@@ -73,8 +72,8 @@ const Referral = () => {
         description={"All your gift card needs, covered"}
       />
 
-      {REFERRAL_FEATURES.map((card) => (
-        <Features ptClass="pt_0" {...{ ...card }} url="#" />
+      {REFERRAL_FEATURES.map((card,index) => (
+        <Features ptClass="pt_0" {...{ ...card }} url="#" key={index} />
       ))}
 
       <Header
