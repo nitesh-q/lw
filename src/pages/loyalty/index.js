@@ -37,7 +37,7 @@ const LOYALTY_REWARD_FEATURES_LIST = [
 
 const LOYALTY_FEATURES = [
   {
-    pClass: "pr_70",
+    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
     col1: "col-lg-7",
     col2: "col-lg-5",
@@ -48,8 +48,8 @@ const LOYALTY_FEATURES = [
     list: CUSTOM_LOYALTY_FEATURES_LIST,
   },
   {
-    ptClass:"pt_0",
-    pClass: "pl_70",
+    // ptClass:"pt_0",
+    // pClass: "pl_70",
     col1: "col-lg-7",
     col2: "col-lg-5",
     img1: Icons.VipTier.default,
@@ -59,8 +59,8 @@ const LOYALTY_FEATURES = [
     list: VIP_TIER_FEATURES_LIST,
   },
   {
-    ptClass:"pt_0",
-    pClass: "pr_70",
+    // ptClass:"pt_0",
+    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
     col1: "col-lg-7",
     col2: "col-lg-5",
@@ -71,8 +71,8 @@ const LOYALTY_FEATURES = [
     list: [],
   },
   {
-    ptClass:"pt_0",
-    pClass: "pl_70",
+    // ptClass:"pt_0",
+    // pClass: "pl_70",
     col1: "col-lg-7",
     col2: "col-lg-5",
     img1: Icons.LoyaltyReward.default,

@@ -21,7 +21,7 @@ import {
 
 const REFERRAL_FEATURES = [
   {
-    pClass: "pr_70",
+    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
     col1: "col-lg-7",
     col2: "col-lg-5",
@@ -32,8 +32,8 @@ const REFERRAL_FEATURES = [
     list: [],
   },
   {
-    ptClass:"pt_0",
-    pClass: "pl_70",
+    // ptClass:"pt_0",
+    // pClass: "pl_70",
     col1: "col-lg-7",
     col2: "col-lg-5",
     img1: Icons.CustomCoupon.default,
@@ -43,8 +43,8 @@ const REFERRAL_FEATURES = [
     list: [],
   },
   {
-    ptClass:"pt_0",
-    pClass: "pr_70",
+    // ptClass:"pt_0",
+    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
     col1: "col-lg-7",
     col2: "col-lg-5",

@@ -17,7 +17,7 @@ import { BANNERS_CONFIG, TESTIMONIAL_CONFIG } from "../../config";
 
 const COUPON_FEATURES = [
   {
-    pClass: "pr_70",
+    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
     col1: "col-lg-7",
     col2: "col-lg-5",
@@ -31,8 +31,8 @@ const COUPON_FEATURES = [
     ],
   },
   {
-    ptClass:"pt_0",
-    pClass: "pl_70",
+    // ptClass:"pt_0",
+    // pClass: "pl_70",
     col1: "col-lg-7",
     col2: "col-lg-5",
     img1: Icons.CustomCoupon.default,
@@ -46,8 +46,8 @@ const COUPON_FEATURES = [
     ],
   },
   {
-    ptClass:"pt_0",
-    pClass: "pr_70",
+    // ptClass:"pt_0",
+    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
     col1: "col-lg-7",
     col2: "col-lg-5",

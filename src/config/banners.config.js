@@ -66,4 +66,12 @@ BUILDING: [
       description: `Ramp us your sales by launching a gift card program with ease using 99minds. With a simple integration that works online an offline. Get ready to reap various benifits of zero hassle `,
     }
   ],
+  INTEGRATION:[
+    {
+      title:"How Sendlane integrates with BigCommerce",
+      // image:Icons.Image_hero.default,
+      subTitle:"",
+      description:"Deep-Data for BigCommerce: Send hyper-targeted email and SMS messaging that generates revenue and creates brand champions."
+    }
+  ]
 };

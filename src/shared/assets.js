@@ -78,7 +78,6 @@ const Icons = {
   RewardPage: require("../images/loyalty/rewardPage.png"),
   ReportAnalytic: require("../images/loyalty/report_analytic.png"),
 
-
   //....................Coupons Page ......................
   CouponBanner: require("../images/coupons/coupon-banner.png"),
   Work1: require("../images/home4/work1.png"),
@@ -109,5 +108,13 @@ const Icons = {
   Meetup: require("../images/home-event/meetup.png"),
   Chat: require("../images/home-event/chat.png"),
 
+  // ...........................................................
+  Image_hero: require("../images/integration/BigCommerce_hero.png"),
+  Image_1: require("../images/integration/BigCommerce_oneClick.png"),
+  Image_2: require("../images/integration/BigCommerce_storeImage-p-500.png"),
+  Image_3: require("../images/integration/integrations-features1-3.png"),
+  Image_4: require("../images/integration/integrations-features1-4-p-500.png"),
+  Image_5: require("../images/integration/integrations-features1-5-p-500.png"),
+  Image_6: require("../images/integration/integrations-features1-6-p-500.png"),
 };
 export default Icons;

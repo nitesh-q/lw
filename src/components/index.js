@@ -6,7 +6,6 @@ export { default as Testimonial } from "./Testimonial";
 export { default as TryAction } from "./TryAction";
 export { default as TrustedMerchants } from "./TrustedMerchants";
 export { default as TrustedMerchants_1 } from "./TrustedMerchants_1";
-
 export { default as SupportedBrand } from "./SupportedBrand";
 export { default as StartedFreeForm } from "./StartedFreeForm";
 export { default as Features } from "./Features";
@@ -25,6 +24,7 @@ export {default as CaseStudyDetails } from "./CaseStudyDetails"
 export {default as DarkBanner} from "./DarkBanner"
 export {default as EventFeature} from "./EventFeature"
 export {default as EventAbout} from "./EventAbout"
+export {default as IntegartionDataPoints} from "./IntegrationDataPoints" 
 
 
 

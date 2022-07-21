@@ -11,7 +11,7 @@ const AllIntegrations = () => {
         <Breadcrumb
           breadcrumbClass="breadcrumb_area"
           imgName={Icons.BREADCRUMB.default}
-          Ptitle="All Integrations"
+          Ptitle="Integrations"
           Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
         />
         <IntegrationGrid />

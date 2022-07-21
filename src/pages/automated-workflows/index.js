@@ -30,7 +30,7 @@ const CENTRALIZE_DATA = [
 
 const AUTOMATION_FEATURES = [
   {
-    pClass: "pl_70",
+    // pClass: "pl_70",
     col1: "col-lg-7",
     col2: "col-lg-5",
     img1: Icons.Centralize.default,
@@ -40,8 +40,8 @@ const AUTOMATION_FEATURES = [
     list: CENTRALIZE_DATA,
   },
   {
-    ptClass:"pt_0",
-    pClass: "pr_70",
+    // ptClass:"pt_0",
+    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
     col1: "col-lg-7",
     col2: "col-lg-5",
@@ -52,8 +52,8 @@ const AUTOMATION_FEATURES = [
     list: [],
   },
   {
-    ptClass:"pt_0",
-    pClass: "pl_70",
+    // ptClass:"pt_0",
+    // pClass: "pl_70",
     col1: "col-lg-7",
     col2: "col-lg-5",
     img1: Icons.AutomationLoyalty.default,

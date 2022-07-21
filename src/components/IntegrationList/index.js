@@ -1,6 +1,6 @@
-
 import React from "react";
 import Icons from "../../shared/assets";
+import { navigate } from "gatsby";
 
 const integrations = [
   {
@@ -27,22 +27,21 @@ const integrations = [
   {
     icon: Icons.Stripe.default,
   },
-  {
-    icon: Icons.WooCommerce.default,
-  },
-  {
-    icon: Icons.ActiveCampaign.default,
-  },
-  {
-    icon: Icons.Retail_Pro.default,
-  },
-  {
-    icon: Icons.Awsses.default,
-  },
-  {
-    icon: Icons.mailgun.default,
-  },
-
+  // {
+  //   icon: Icons.WooCommerce.default,
+  // },
+  // {
+  //   icon: Icons.ActiveCampaign.default,
+  // },
+  // {
+  //   icon: Icons.Retail_Pro.default,
+  // },
+  // {
+  //   icon: Icons.Awsses.default,
+  // },
+  // {
+  //   icon: Icons.mailgun.default,
+  // },
 ];
 const IntegrationList = () => {
   return (
@@ -62,6 +61,16 @@ const IntegrationList = () => {
               </div>
             );
           })}
+        </div>
+        <div className="action_btn d-flex justify-content-center align-items-center mt_30">
+          <a
+            className="agency_banner_btn_two wow fadeInLeft"
+            data-wow-delay="0.7s"
+            onClick={()=>navigate("/integrations")}
+
+          >
+            View all
+          </a>
         </div>
       </div>
     </section>

@@ -802,6 +802,7 @@ color: #51fe23;
 
 .agency_banner_btn_two:hover {
   color: #7444FD;
+  cursor: pointer;
 }
 
 .agency_banner_btn_two:hover:before {
@@ -15874,6 +15875,7 @@ p span {
 
 .Case_studies_grid_info .Case_studies_list_item:hover {
     box-shadow: 0px 20px 40px 0px rgb(12 0 46 / 8%);
+    cursor: pointer;
 }
 .Case_studies_grid_info .Case_studies_list_item .Case_studies_content {
   padding: 25px;
@@ -24881,8 +24883,8 @@ a .h_head:hover {
 
 .price_info_two .price_btn {
   border-radius: 4px;
-  color: #677294;
-  border-color: #dfe3ed;
+  color: #5e2ced;
+  border-color: #5e2ced;
   padding: 0px 32px;
   line-height: 46px;
   margin: 40px 0px;

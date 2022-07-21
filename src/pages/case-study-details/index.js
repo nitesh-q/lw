@@ -33,7 +33,7 @@ const CUSTOMER_STORIES = [
     url: ".#",
   },
 ];
-const CaseStudy = () => {
+const CaseStudyDetail = () => {
   return (
     <div className="body_wrapper">
       <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
@@ -56,4 +56,4 @@ const CaseStudy = () => {
     </div>
   );
 };
-export default CaseStudy;
+export default CaseStudyDetail;
