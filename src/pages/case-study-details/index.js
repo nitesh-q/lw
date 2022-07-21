@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import {
-  CaseStudies,
+  CaseStudyDetails,
   DarkBanner,
   EventAbout,
   EventFeature,
@@ -41,7 +41,7 @@ const CaseStudy = () => {
           Ptitle="Case Study"
           Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
         />
-        <CaseStudies />
+        <CaseStudyDetails />
         <EventFeature
           title={"Read more Customer Stories"}
           desc={

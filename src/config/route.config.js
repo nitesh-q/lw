@@ -18,13 +18,13 @@ export const ROUTES_LABEL = {
   COUPONS: "Coupons",
   REFERRAL: "Referral Program",
   AUTOMATION: "Automated Workflows",
-  B2B_GIFTCARDS: "B2b Gift Cards",
+  B2B_GIFTCARDS: "B2B Gift Cards",
   STORE_CREDIT: "Store Credit",
   INTEGRATION_1: "Integration 1",
   INTEGRATION_2: "Integration 2",
   INTEGRATION_3: "Integration 3",
   INTEGRATION_4: "Integration 4",
-  ALL_INTEGRATIONS: "All Intrgrations",
+  ALL_INTEGRATIONS: "Integrations",
   DEVELOPERS_1: "Developers 1",
   DEVELOPERS_2: "Developers 2",
   RESOURCES: "Resources",
@@ -32,7 +32,7 @@ export const ROUTES_LABEL = {
   BLOG_1: "Blog_1",
   BLOG_2: "Blog_2",
   DOCUMENTATION: "Documentation",
-  CASE_STUDY: "Case Study",
+  CASE_STUDIES: "Case Studies",
 };
 
 export const CHILD_ROUTES = {
@@ -46,7 +46,7 @@ export const CHILD_ROUTES = {
   ALL_INTEGRATIONS: "/integrations",
   DEVELOPERS_1: "/giftcard",
   DEVELOPERS_2: "/giftcard",
-  CASE_STUDY:"/case-studies-details",
+  CASE_STUDIES:"/case-studies",
   BLOG:"/",
   DOCUMENTATION:"/"
 };
@@ -55,12 +55,13 @@ export const CHILDRENS = {
   HOME: [],
   PRODUCTS: [
     "GIFTCARD",
+    "STORE_CREDIT",
     "LOYALTY",
     "COUPONS",
     "REFERRAL",
     "AUTOMATION",
     "B2B_GIFTCARDS",
-    "STORE_CREDIT",
+    
   ],
   INTEGRATION: [
     "INTEGRATION_1",
@@ -69,7 +70,7 @@ export const CHILDRENS = {
     "INTEGRATION_4",
     "ALL_INTEGRATIONS",
   ],
-  RESOURCES: ["CASE_STUDY", "BLOG", "DOCUMENTATION"],
+  RESOURCES: ["CASE_STUDIES", "BLOG", "DOCUMENTATION"],
   PRICE: [],
   SIGN_IN: [],
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-const CaseStudies = () => {
+const CaseStudyDetails = () => {
   return (
     <section className="service_details_area sec_pad">
       <div className="container">
@@ -98,4 +98,4 @@ const CaseStudies = () => {
     </section>
   );
 };
-export default CaseStudies;
+export default CaseStudyDetails;

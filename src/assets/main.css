@@ -15853,7 +15853,110 @@ p span {
 .blog-sidebar .widget.instagram_widget ul li a:hover:before {
   opacity: 1;
 }
+/*===============Case_Studies_area css=============*/
 
+.Case_studies_area_two .Case_studies_list_item:not(:last-child) {
+  margin-bottom: 70px;
+}
+.Case_studies_list_item_two {
+  position: relative;
+}
+
+.Case_studies_list_item_two img {
+  border-radius: 8px;
+}
+.Case_studies_grid_info .Case_studies_list_item {
+  margin-bottom: 60px;
+  border: 1px solid #d5d9e7;
+  border-radius: 8px;
+}
+
+
+.Case_studies_grid_info .Case_studies_list_item:hover {
+    box-shadow: 0px 20px 40px 0px rgb(12 0 46 / 8%);
+}
+.Case_studies_grid_info .Case_studies_list_item .Case_studies_content {
+  padding: 25px;
+}
+.Case_studies_content {
+  /* background-color: white;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.06);
+  box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.06);
+  padding: 30px 47px 42px 50px;
+  position: relative; */
+}
+.Case_studies_list_item_two .Case_studies_content {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+.blog_grid_info .blog_list_item .Case_studies_content .Case_studies_title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.Case_studies_label {
+    background-color: #f0f8ff;
+    border: 2px solid #f0f8ff;
+    border-radius: 4px;
+    color: #00535a;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 0 5px;
+    text-transform: uppercase;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.Case_studies_title {
+  color: #001246;
+  font-family: Poppins,sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  transition: color .3s ease-in-out;
+}
+.Case_studies_content p {
+  color: #677294;
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .18px;
+    line-height: 30px;
+}
+.Case_studies_list_item_two .Case_studies_content .post-info-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.Case_studies_list_item_two .Case_studies_content .learn_btn_two {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 0px;
+  line-height: 20px;
+  display: inline-block;
+  font-weight: 500;
+}
+.Case_studies_content .learn_btn_two {
+  font: 400 14px "Poppins", sans-serif;
+  color: #282835;
+}
+
+.Case_studies_content .learn_btn_two:hover {
+    color: #5e2ced !important;
+}
+.Case_studies_content .learn_btn_two:before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  left: 0;
+  background: #5e2ced;
+  bottom: 0;
+  -webkit-transition: width 0.2s ease;
+  -o-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
 /*========= blog_area_two css ===========*/
 .blog_area_two .blog_list_item:not(:last-child) {
   margin-bottom: 70px;
