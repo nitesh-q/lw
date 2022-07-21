@@ -5,11 +5,10 @@ import {
   TryAction,
   Header,
   TabComponent,
-  SupportedBrand,
   DigitalBanner,
   Partner,
   Services,
-  TrustedMerchants_1,
+
   IntegrationList,
 } from "../../components";
 import {
@@ -24,7 +23,7 @@ const Home = () => {
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <DigitalBanner config={BANNERS_CONFIG.HOME} />
       <Partner oClass={"logo_item_opacity"} pClass={"sec_pad pb_0"}/>
-      <TrustedMerchants_1 />
+   
 
       <TabComponent config={HOME_TAB1_CONFIG} rClass={"reduce_height"} />
       
