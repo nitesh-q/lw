@@ -10,7 +10,7 @@ import {
   LoyaltyBanner,
   TabComponent,
   Partner,
-  Integration,
+  IntegrationList,
 } from "../../components";
 import { TESTIMONIAL_CONFIG, LOYALTY_TABS_CONFIG } from "../../config";
 
@@ -39,7 +39,7 @@ const LOYALTY_FEATURES = [
   {
     pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-6 offset-lg-1",
+    col1: "col-lg-7",
     col2: "col-lg-5",
     img1: Icons.CustomLoyalty.default,
     title: "Custom Loyalty Program",
@@ -48,9 +48,10 @@ const LOYALTY_FEATURES = [
     list: CUSTOM_LOYALTY_FEATURES_LIST,
   },
   {
+    ptClass:"pt_0",
     pClass: "pl_70",
-    col1: "col-lg-6",
-    col2: "col-lg-5 offset-lg-1",
+    col1: "col-lg-7",
+    col2: "col-lg-5",
     img1: Icons.VipTier.default,
     title: "Configure VIP Tiers",
     subTitle: "Set up landmarks to accomplish VIP status",
@@ -58,9 +59,10 @@ const LOYALTY_FEATURES = [
     list: VIP_TIER_FEATURES_LIST,
   },
   {
+    ptClass:"pt_0",
     pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-6 offset-lg-1",
+    col1: "col-lg-7",
     col2: "col-lg-5",
     img1: Icons.LoyaltyPoints.default,
     title: "Select activities for earning Points",
@@ -69,9 +71,10 @@ const LOYALTY_FEATURES = [
     list: [],
   },
   {
+    ptClass:"pt_0",
     pClass: "pl_70",
-    col1: "col-lg-6",
-    col2: "col-lg-5 offset-lg-1",
+    col1: "col-lg-7",
+    col2: "col-lg-5",
     img1: Icons.LoyaltyReward.default,
     title: "Offer Rewards",
     subTitle: "Customers can redeem points for awesome rewards like:",
@@ -98,7 +101,7 @@ const Loyalty = () => {
       />
 
       {LOYALTY_FEATURES.map((card) => (
-        <Features ptClass="pt_0" {...{ ...card }} url="#" />
+        <Features {...{ ...card }} url="#" />
       ))}
 
       <Header
@@ -118,7 +121,7 @@ const Loyalty = () => {
         sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
-      <Integration />
+      <IntegrationList />
       <TryAction />
       <Services />
     </Layout>

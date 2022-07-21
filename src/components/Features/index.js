@@ -14,7 +14,7 @@ const Features = ({
   ptClass,
 }) => {
   return (
-    <section className={`chat_features_area`}>
+    <section className={`chat_features_area ${ptClass}`}>
       <div className=" container container-fluid">
         <div className={`row align-items-center ${rowClass}`}>
           <div className={`${col1}`}>

@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Integration,
+  IntegrationList,
   Testimonial,
   TryAction,
   Features,
@@ -31,8 +31,8 @@ const CENTRALIZE_DATA = [
 const AUTOMATION_FEATURES = [
   {
     pClass: "pl_70",
-    col1: "col-lg-6",
-    col2: "col-lg-5 offset-lg-1",
+    col1: "col-lg-7",
+    col2: "col-lg-5",
     img1: Icons.Centralize.default,
     title: "Centralize Data Platform",
     subTitle: "",
@@ -40,9 +40,10 @@ const AUTOMATION_FEATURES = [
     list: CENTRALIZE_DATA,
   },
   {
+    ptClass:"pt_0",
     pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-6 offset-lg-1",
+    col1: "col-lg-7",
     col2: "col-lg-5",
     img1: Icons.Workflow.default,
     title: "Pre-built Workflow Template",
@@ -51,9 +52,10 @@ const AUTOMATION_FEATURES = [
     list: [],
   },
   {
+    ptClass:"pt_0",
     pClass: "pl_70",
-    col1: "col-lg-6",
-    col2: "col-lg-5 offset-lg-1",
+    col1: "col-lg-7",
+    col2: "col-lg-5",
     img1: Icons.AutomationLoyalty.default,
     title: "Boost Loyalty",
     subTitle: "",
@@ -115,7 +117,7 @@ const Automation = () => {
         sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
-      <Integration />
+      <IntegrationList />
       <TryAction pClass={"pt_50"} />
       <Services />
     </Layout>

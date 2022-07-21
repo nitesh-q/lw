@@ -172,6 +172,7 @@ you can use the generic selector below, but it's slower:
 }
 .icon_close:before {
 	content: "\4d";
+	color: #e63757
 }
 .icon_check:before {
 	content: "\4e";
@@ -187,6 +188,7 @@ you can use the generic selector below, but it's slower:
 }
 .icon_check_alt2:before {
 	content: "\52";
+	color:  #00d27a ;
 }
 .icon_zoom-out_alt:before {
 	content: "\53";

@@ -44,7 +44,7 @@ const integrations = [
   },
 
 ];
-const Integration = () => {
+const IntegrationList = () => {
   return (
     <section className="security_integration_area">
       <div className="container">
@@ -67,4 +67,4 @@ const Integration = () => {
     </section>
   );
 };
-export default Integration;
+export default IntegrationList;

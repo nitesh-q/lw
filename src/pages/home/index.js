@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import {
-  Integration,
   Testimonial,
   TryAction,
   Header,
@@ -10,6 +9,8 @@ import {
   DigitalBanner,
   Partner,
   Services,
+  TrustedMerchants_1,
+  IntegrationList,
 } from "../../components";
 import {
   HOME_TAB1_CONFIG,
@@ -23,6 +24,7 @@ const Home = () => {
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <DigitalBanner config={BANNERS_CONFIG.HOME} />
       <Partner oClass={"logo_item_opacity"} pClass={"sec_pad pb_0"}/>
+      <TrustedMerchants_1 />
 
       <TabComponent config={HOME_TAB1_CONFIG} rClass={"reduce_height"} />
       
@@ -42,7 +44,7 @@ const Home = () => {
         sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
-      <Integration
+      <IntegrationList
         title={"Integrations"}
         description={
           "Empower Your Brick & Click Store With Powerful Integrations"

@@ -23326,14 +23326,18 @@ a .h_head:hover {
 .analytices_logo {
   display: block;
   text-align: center;
-  padding: 25px;
+  margin:  0px 0px 25px 0px;
   border-radius: 6px;
-  margin-top: 20px;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  
 }
-
+.analytices_logo img{
+  width: 150px;
+  height: 80px;
+  object-fit: contain ;
+}
 .analytices_logo:hover {
   background-color: white;
   -webkit-box-shadow: 0px 20px 50px 0px rgba(1, 1, 64, 0.08);
@@ -24955,7 +24959,7 @@ a .h_head:hover {
 }
 
 .price_info_three .price_item .check {
-  color: #0e79de;
+  color: #2c2c51;
 }
 
 .price_info_three .price_item .cros {
@@ -24963,7 +24967,7 @@ a .h_head:hover {
 }
 
 .price_info_three .price_btn:hover {
-  background: #0e79de;
+  background: #5e2ced;
   border-color: #0e79de;
 }
 

@@ -1,10 +1,12 @@
-export { default as Integration } from "./Integration";
+export { default as IntegrationList } from "./IntegrationList";
 export { default as Banner } from "./Banner";
 export { default as AppBanner } from "./AppBanner";
 export { default as LoyaltyBanner } from "./LoyaltyBanner";
 export { default as Testimonial } from "./Testimonial";
 export { default as TryAction } from "./TryAction";
 export { default as TrustedMerchants } from "./TrustedMerchants";
+export { default as TrustedMerchants_1 } from "./TrustedMerchants_1";
+
 export { default as SupportedBrand } from "./SupportedBrand";
 export { default as StartedFreeForm } from "./StartedFreeForm";
 export { default as Features } from "./Features";

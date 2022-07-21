@@ -8,7 +8,7 @@ import {
   Header,
   Services,
   CouponWork,
-  Integration,
+  IntegrationList,
   CouponBanner,
 } from "../../components";
 import Layout from "../../components/Layout";
@@ -19,7 +19,7 @@ const COUPON_FEATURES = [
   {
     pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-6 offset-lg-1",
+    col1: "col-lg-7",
     col2: "col-lg-5",
     img1: Icons.Work1.default,
     title: "Advanced coupon marketing software",
@@ -31,9 +31,10 @@ const COUPON_FEATURES = [
     ],
   },
   {
+    ptClass:"pt_0",
     pClass: "pl_70",
-    col1: "col-lg-6",
-    col2: "col-lg-5 offset-lg-1",
+    col1: "col-lg-7",
+    col2: "col-lg-5",
     img1: Icons.CustomCoupon.default,
     title: "Custom-made coupons",
     subTitle: "",
@@ -45,9 +46,10 @@ const COUPON_FEATURES = [
     ],
   },
   {
+    ptClass:"pt_0",
     pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-6 offset-lg-1",
+    col1: "col-lg-7",
     col2: "col-lg-5",
     img1: Icons.RewardCustomer.default,
     title: "Reward your customers the way they want",
@@ -72,7 +74,7 @@ const Coupons = () => {
         description={"All your gift card needs, covered"}
       />
       {COUPON_FEATURES.map((card) => (
-        <Features ptClass="pt_0" {...{ ...card }} url="#" />
+        <Features  {...{ ...card }} url="#" />
       ))}
       <CouponWork />
 
@@ -82,7 +84,7 @@ const Coupons = () => {
         sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
       />
-      <Integration />
+      <IntegrationList />
       <TryAction />
       <Services />
     </Layout>
