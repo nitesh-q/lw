@@ -11,6 +11,7 @@ export { default as StartedFreeForm } from "./StartedFreeForm";
 export { default as Features } from "./Features";
 export { default as Header } from "./Common/Header";
 export { default as TabComponent } from "./TabComponent";
+export { default as IconTabComponent } from "./IconTabComponent";
 export { default as Services } from "./Services";
 export { default as CouponWork } from "./couponWork";
 export {default as CTAService} from "./Services/CTAService"
@@ -25,6 +26,10 @@ export {default as DarkBanner} from "./DarkBanner"
 export {default as EventFeature} from "./EventFeature"
 export {default as EventAbout} from "./EventAbout"
 export {default as IntegartionDataPoints} from "./IntegrationDataPoints" 
+export {default as CTA} from "./CTA" 
+export {default as CTA_1} from "./CTA_1" 
+
+
 
 
 

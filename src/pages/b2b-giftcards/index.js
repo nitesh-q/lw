@@ -10,6 +10,8 @@ import {
   Services,
   IntegrationList,
   Partner,
+  IconTabComponent,
+  CTA,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -17,6 +19,7 @@ import {
   TESTIMONIAL_CONFIG,
   BANNERS_CONFIG,
   GIFTCARD_TABS_CONFIG,
+  B2B_TABS_CONFIG,
 } from "../../config";
 
 const REFERRAL_FEATURES = [
@@ -60,14 +63,15 @@ const B2BGIFTCARDS = () => {
   return (
     <Layout>
       <Banner
-        config={BANNERS_CONFIG.BUILDING}
+        config={BANNERS_CONFIG.B2B}
         titleClass={`bannerTitle`}
         sllService={true}
         mClass={"mb_90"}
         wClass={"mw_125"}
       />
-      <Partner pClass={"sec_pad pb_0"} />
 
+      <Partner pClass={"sec_pad pb_0"} />
+      <IconTabComponent config={B2B_TABS_CONFIG} />
       <Header
         className={"bg_white mt_125"}
         title={"Key features."}
@@ -75,7 +79,7 @@ const B2BGIFTCARDS = () => {
       />
 
       {REFERRAL_FEATURES.map((card) => (
-        <Features ptClass="pt_0" {...{ ...card }} url="#" />
+        <Features  {...{ ...card }} url="#" />
       ))}
 
       <Header
@@ -91,7 +95,8 @@ const B2BGIFTCARDS = () => {
         bgColor={`bg_color`}
       />
       <IntegrationList />
-      <TryAction />
+      
+      <CTA />
       <Services />
     </Layout>
   );

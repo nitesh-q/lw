@@ -116,5 +116,9 @@ const Icons = {
   Image_4: require("../images/integration/integrations-features1-4-p-500.png"),
   Image_5: require("../images/integration/integrations-features1-5-p-500.png"),
   Image_6: require("../images/integration/integrations-features1-6-p-500.png"),
+
+  //.................................................
+  ComputerImage:require("../images/B2B/computer.png"),
+  B2B_Banner:require("../images/B2B/B2B_Banner.png")
 };
 export default Icons;

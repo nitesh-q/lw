@@ -4,6 +4,7 @@ export * from "./footer.config";
 export * from "./testimonial.config";
 export * from "./homePage.config";
 export * from "./giftcardPage.config";
+export * from "./b2bPage.config";
 export * from "./loyaltyPage.config";
 export * from "./referralPage.config";
 export * from "./route.config";

@@ -58,12 +58,12 @@ export const BANNERS_CONFIG = {
       description: `Ramp us your sales by launching a gift card program with ease using 99minds. With a simple integration that works online an offline. Get ready to reap various benifits of zero hassle `,
     }
   ],
-BUILDING: [
+B2B: [
     {
-      title: "Building",
-      subTitle: "made super easy",
-      // image:"",
-      description: `Ramp us your sales by launching a gift card program with ease using 99minds. With a simple integration that works online an offline. Get ready to reap various benifits of zero hassle `,
+      title: "Sell Physical and",
+      subTitle: "Digital/eGift Card",
+      image:Icons.B2B_Banner.default,
+      description: `Prebuilt Promotional workflows you need to grow store and make more money`,
     }
   ],
   INTEGRATION:[

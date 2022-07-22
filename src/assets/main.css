@@ -407,6 +407,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .mr_0{
   margin-right: 0px !important;
 }
+.ml_40{
+  margin-left: 40px !important;
+}
+
 
 .p_0{
   padding: 0px !important;
@@ -7046,19 +7050,44 @@ width: 50%;
 
 .startup_tab .nav-item .nav-link {
   border: 0px;
-  background: #fbfbfd;
-  padding: 32px 0px;
-  border-radius: 4px;
-  border: 2px solid transparent;
+  background: #fff;
+  padding: 20px 0px;
+  border-radius: 32px;
+  border: 3px solid transparent;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  box-shadow: 0 20px 40px 0 rgb(12 0 46 / 8%);
+  cursor: pointer;
 }
+/* .startup_tab .nav-item .nav-link.active:before{
+  opacity: 1;
+}
+
+.startup_tab .nav-item .nav-link:before{
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: #5699bb;
+  color: red;
+  border: inherit;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 10px);
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+ -webkit-clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  transform: rotate(-45deg);
+  border-radius: 0 0 0 0.3em;
+  opacity: 0;
+  transition: all 0.2s;
+} */
 
 .startup_tab .nav-item .nav-link .icon {
   width: 70px;
   height: 70px;
-  border-radius: 50%;
+  object-fit: contain;
+  /* border-radius: 50%; */
   display: inline-block;
   text-align: center;
   font-size: 30px;
@@ -7068,22 +7097,21 @@ width: 50%;
 }
 
 .startup_tab .nav-item .nav-link h3 {
-  font-size: 18px;
-  line-height: 26px;
-  color: #051441;
-  font-weight: 400;
-  white-space: pre-line;
-  margin-bottom: 0;
+  font-size: 14px;
+  color: #2C2C51;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-top: 15px;
 }
 
 .startup_tab .nav-item .nav-link.active {
-  border-color: #6fadfa;
-  background: #fff;
+  border-color: #5E2CED;
+  /* background: #fff; */
   -webkit-box-shadow: 0px 30px 40px 0px rgba(29, 7, 90, 0.08);
   box-shadow: 0px 30px 40px 0px rgba(29, 7, 90, 0.08);
 }
 
-.startup_tab .nav-item:nth-child(1) .icon {
+/* .startup_tab .nav-item:nth-child(1) .icon {
   background: #fa6fd1;
 }
 
@@ -7121,7 +7149,7 @@ width: 50%;
 
 .startup_tab .nav-item:nth-child(5) .nav-link.active {
   border-color: #fa6666;
-}
+} */
 
 .startup_tab_content .show .startup_tab_img .phone_img, .startup_tab_content .show .startup_tab_img .web_img {
   -webkit-transform: translateX(0);
@@ -7138,14 +7166,14 @@ width: 50%;
 }
 
 .startup_tab_img:before {
-  content: "";
+  /* content: "";
   height: 100%;
   background: url("../images/new/tab_shape_bg.png") no-repeat scroll center 0/contain;
   top: 0px;
   right: -55px;
   left: -55px;
   position: absolute;
-  z-index: -1;
+  z-index: -1; */
 }
 
 .startup_tab_img .web_img {
@@ -12335,7 +12363,18 @@ position: relative;
   overflow: hidden;
   z-index: 1;
 }
-
+.get_started_area  li{
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #ffffff;
+  text-align: center;
+}
+.get_started_area li::marker{
+  content: url(../images/icon/tick-Arrow.svg);
+  color: #51fe23;
+  position: absolute;
+  }
 .get_started_area .shap {
   opacity: 0.03;
 }
@@ -14117,12 +14156,24 @@ height: 1800px !important;
 
 /*=============== seo_subscribe_area css ============*/
 .seo_subscribe_area {
-  /* background-color: #5e2ced; */
-  /* padding: 120px 0px 150px; */
+  background-color: #5e2ced;
+  padding: 120px 0px 120px;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
+.seo_subscribe_area  li{
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #ffffff;
+  text-align: center;
+}
+.seo_subscribe_area li::marker{
+  content: url(../images/icon/tick-Arrow.svg);
+  color: #51fe23;
+  position: absolute;
+  }
 
 .seo_subscribe_area .seo_sec_title h2, .seo_subscribe_area .seo_sec_title p {
   color: #fff;
@@ -23335,7 +23386,9 @@ a .h_head:hover {
 .analytices_logo {
   display: block;
   text-align: center;
-  margin:  0px 0px 25px 0px;
+  /* margin:  0px 0px 25px 0px; */
+  margin-top: 25px;
+  padding: 10px;
   border-radius: 6px;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -23343,8 +23396,8 @@ a .h_head:hover {
   
 }
 .analytices_logo img{
-  width: 150px;
-  height: 80px;
+  width: 128px;
+  height: 60px;
   object-fit: contain ;
 }
 .analytices_logo:hover {

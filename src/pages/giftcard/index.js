@@ -11,6 +11,7 @@ import {
   Partner,
   Services,
   TrustedMerchants_1,
+  CTA_1,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -132,7 +133,8 @@ const GiftCard = () => {
           "Empower Your Brick & Click Store With Powerful Integrations"
         }
       />
-      <TryAction />
+      {/* <TryAction /> */}
+      <CTA_1 />
       <Services />
     </Layout>
   );
