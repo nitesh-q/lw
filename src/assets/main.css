@@ -12235,14 +12235,21 @@ position: relative;
   height: 8px;
   border-radius: 20px;
   margin: 0px 5px;
-  padding: 4px;
+  padding: 0px !important;
   display: block;
   transition: all 0.3s linear;
 }
 
 .app_screenshot_area .app_screenshot_slider .slick-dots li.slick-active button{
   background: #fff;
+  height: 5.34px !important;
+  width: 46.68px;
+  margin: 0px 17px !important;
 }
+/* .app_screenshot_area .app_screenshot_slider .slick-dots li.slick-active button::before{
+  height: 8px;
+  width: 70px;
+} */
 
 .app_screenshot_area .app_screenshot_slider .owl-prev, .app_screenshot_area .app_screenshot_slider .owl-next {
   position: absolute;

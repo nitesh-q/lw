@@ -1,9 +1,8 @@
 import React from "react";
-import Image from "../../images/home-software/logo_01.png";
 import leaf1 from "../../images/home-security/leaf_clients2.png";
 import leaf2 from "../../images/home-security/leaf_clients1.png";
 import { MERCHANTS_CONFIG } from "../../config";
-import Icons from "../../shared/assets";
+
 
 const TrustedMerchants_1 = () => {
   return (
