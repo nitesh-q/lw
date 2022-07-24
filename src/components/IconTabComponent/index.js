@@ -17,7 +17,7 @@ const IconTabComponent = ({ config }) => {
         </div>
         <ul className="nav nav-tabs startup_tab mb_50" id="myTab" role="tablist">
           {config.PANNEL_DATA.map((item, index) => (
-            <Reveal effect="fadeInLeft">
+            
               <li
                 className="nav-item"
                 key={index}
@@ -39,7 +39,7 @@ const IconTabComponent = ({ config }) => {
                   <h3>{item.label}</h3>
                 </a>
               </li>
-            </Reveal>
+        
           ))}
         </ul>
         {config.PANNEL_DATA.map((item, index) =>
