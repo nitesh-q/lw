@@ -3,7 +3,7 @@ import React from "react";
 const StartedFreeForm = ({btnClass}) => {
   return (
     <div className="row w-100 service">
-    <div className="col-lg-8">
+    {/* <div className="col-lg-8">
       <form action="#" className="contact_form_box" method="post">
         <div className="form-group text_box">
           <input
@@ -15,10 +15,10 @@ const StartedFreeForm = ({btnClass}) => {
           />
         </div>
       </form>
-    </div>
-    <div className="col-lg-4">
+    </div> */}
+    <div className="col-lg-8">
       <a href="/" className={`btn btn_get btn_get_two ${btnClass}`}>
-       Start Free Trial
+       Get Started for free
       </a>
     </div>
   </div>

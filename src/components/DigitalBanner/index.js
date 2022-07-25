@@ -12,7 +12,7 @@ const settings = {
   speed: 500,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 2800,
+  autoplaySpeed: 280000,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -33,10 +33,10 @@ const DigitalBanner = ({
       <div class="round_shap three "></div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-5  mt_50">
+          <div className="col-lg-6 col-xl-5  mt_50">
             <Reveal bottom cascade>
               <div className="app_hero_banner_content">
-                <h2>Engage,Acquire & Retain Customers</h2>
+                <h2>Engage, Acquire & Retain Customers</h2>
                 <p>
                   Enrich your Customer Journey with a Gift Card, Store Credit,
                   and Loyalty Program. Empower them to share your brand
@@ -54,23 +54,23 @@ const DigitalBanner = ({
               />
             </Reveal>
           </div>
-          <div className="col-lg-7">
+          <div className="col-lg-6 col-xl-7">
             <div className=" p0 app_screenshot_area">
               <div className="app_screen_info">
                 <Slider className="app_screenshot_slider" {...settings}>
                   <div className="item">
                     <div className="screenshot_img">
-                      <img src={Icons.Engage.default} alt="" />
+                      <img className="img-fluid" src={Icons.Engage.default} alt="" />
                     </div>
                   </div>
                   <div className="item">
                     <div className="screenshot_img">
-                      <img src={Icons.Acquire.default} alt="" />
+                      <img className="img-fluid" src={Icons.Acquire.default} alt="" />
                     </div>
                   </div>
                   <div className="item">
                     <div className="screenshot_img">
-                      <img src={Icons.Retain.default} alt="" />
+                      <img className="img-fluid" src={Icons.Retain.default} alt="" />
                     </div>
                   </div>
                 </Slider>

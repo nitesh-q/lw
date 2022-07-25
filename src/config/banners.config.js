@@ -4,7 +4,7 @@ export const BANNERS_CONFIG = {
   HOME: [
     {
       id: 1,
-      title: "Engage,Acquire & Retain Customers",
+      title: "Engage, Acquire & Retain Customers",
       subTitle: "",
       image: Icons.HomeBanner.default,
       description: `Enrich your Customer Journey with a Gift Card, Store Credit, and Loyalty Program. Empower them to share your brand experience with Refferrals`,

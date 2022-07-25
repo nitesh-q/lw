@@ -2,7 +2,7 @@ import React from "react";
 import { Fade } from "react-reveal";
 import { MERCHANTS_CONFIG } from "../../config";
 
-const Partner = ({ pClass, pClasst, oClass }) => {
+const Partner = ({ pClass, pClasst }) => {
   return (
     <section className={`seo_partner_logo_area ${pClass}`}>
       <div className="container">
@@ -19,7 +19,7 @@ const Partner = ({ pClass, pClasst, oClass }) => {
                 data-wow-delay="0.1s"
                 key={index}
               >
-                <img className={oClass} src={item.image} alt="" />
+                <img src={item.image} alt="" />
               </div>
             ))}
           </div>
