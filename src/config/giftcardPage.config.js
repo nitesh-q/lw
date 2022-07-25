@@ -1,6 +1,5 @@
 import Icons from "../shared/assets";
 
-
 export const BULK_GIFTCARD_LIST = [
   {
     title: "",
@@ -44,19 +43,23 @@ export const MULTI_STORE_LIST = [
 export const RETURN_REFUND_LIST = [
   {
     title: "",
+    description: " Gift card can be issue for merchandise return.",
+  },
+  {
+    title: "",
     description:
-      " Gift card can be issue for merchandise return. Gift card amount can be updated on merchandise return bought on gift card.",
+      " Gift card amount can be updated on merchandise return bought on gift card.",
   },
 ];
-export const WALLET_LIST = [
-  {
-    title: "",
-    description: " Gift card can be store in digital wallet.",
-  },
+export const SCHEDULE_DELIVERY_LIST = [
   {
     title: "",
     description:
-      " Intuitive iOS / Android mobile wallet pass allows for a frictionless consumer experience at checkout in-store and online.",
+      " Schedule Gift card delivery on special occasion like Birthday, Anniversary, Christmas, Hanukkah etc.",
+  },
+  {
+    title: "",
+    description: "Schedule Gift card delivery up to 180 days",
   },
 ];
 
@@ -72,14 +75,13 @@ export const GIFTCARD_TABS_CONFIG = {
       description1: "",
       description2: "",
       list: BULK_GIFTCARD_LIST,
-     
     },
     {
       id: "migration",
-      label: "Migration",
+      label: "Import & Migration",
       selected: "false",
       image: Icons.Upload.default,
-      title: "Migration",
+      title: "Import & Migration",
       description1: "",
       description2: "",
       list: MIGRATION_LIST,
@@ -116,14 +118,14 @@ export const GIFTCARD_TABS_CONFIG = {
       list: RETURN_REFUND_LIST,
     },
     {
-      id: "Wallet",
-      label: "Wallet",
+      id: "schedule_delivery",
+      label: "Schedule Delivery",
       image: Icons.Reload.default,
-      title: "Wallet",
+      title: "Schedule Delivery",
       subTitle: "",
       description1: "",
       description2: "",
-      list: WALLET_LIST,
+      list: SCHEDULE_DELIVERY_LIST,
     },
   ],
 };

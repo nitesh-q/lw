@@ -2,13 +2,10 @@ import React from "react";
 import {
   IntegrationList,
   Testimonial,
-  TryAction,
   Banner,
-  TrustedMerchants,
   Features,
   Header,
   TabComponent,
-  Partner,
   Services,
   TrustedMerchants_1,
   CTA_1,
@@ -24,34 +21,37 @@ import {
 const GIFTCARD = [
   { desc: "100’s of beautiful Gift Cards based on themes" },
   { desc: "Upload your brand design Gift Cards" },
+  {
+    desc: "Customize & Personalize gift card experience with your Picture and Video",
+  },
+  {
+    desc: "Send gift card via Multi-channel like email, Social media, SMS/Text, and Print-at-home.",
+  },
 ];
 const REPORT = [
   {
     desc: "Gift card life-cycle management, tracking, and visibility from issuance to order level redemption",
   },
   {
-    desc: "Gift card life-cycle management, tracking, and visibility from issuance to order level redemption",
+    desc: "Customer data reporting and analytics based on gift card usage.",
   },
 ];
 
 const SCHEDULE = [
-  { desc: "Schedule Gift card delivery up to 180 days" },
   { desc: "Out of stock gift card to retain customer" },
   { desc: "Gift card balance reminder email to customer" },
-  { desc: "Add Promotional fund to existing gift card" },
 ];
 const SALE = [
-  { desc: "Reload Gift card @store, @online" },
-  { desc: "Add Promotional $ value to Gift card from Admin Panel" },
+  {
+    desc: "Sell and Redeem Physical and Digital (eGift) Card issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed, etc.",
+  },
+  { desc: "Check balance, Reload Gift card at store and online" },
 ];
 const GIFTCARD_FEATURES = [
   {
-    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.Giftcard_01.default,
-    title: "Gift Card Designs",
+    title: "Gift Card Platform key features",
     subTitle: "",
     desc: "",
     list: GIFTCARD,
@@ -59,10 +59,18 @@ const GIFTCARD_FEATURES = [
   {
     // ptClass:"pt_0",
     // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
+    img1: Icons.Sale.default,
+    title: "Point of Sale",
+    subTitle: "",
+    desc: "",
+    list: SALE,
+  },
+  {
+    // ptClass:"pt_0",
+    // pClass: "pl_70",
+    rowClass: "flex-row-reverse",
     img1: Icons.Report.default,
-    title: "First ever",
+    title: "Reporting & Analytics",
     subTitle: "",
     desc: "",
     list: REPORT,
@@ -70,25 +78,11 @@ const GIFTCARD_FEATURES = [
   {
     // ptClass:"pt_0",
     // pClass: "pr_70",
-    rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.Schedule.default,
     title: "Schedule Delivery & Gift card for Out of Stock inventory",
     subTitle: "",
     desc: "",
     list: SCHEDULE,
-  },
-  {
-    // ptClass:"pt_0",
-    // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
-    img1: Icons.Sale.default,
-    title: "Point of Sale",
-    subTitle: "",
-    desc: "",
-    list: SALE,
   },
 ];
 
@@ -103,7 +97,6 @@ const GiftCard = () => {
         wClass={"mw_125"}
       />
 
-      {/* <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} /> */}
       <TrustedMerchants_1 />
 
       <Header
@@ -116,7 +109,7 @@ const GiftCard = () => {
         <Features {...{ ...card }} url="#" />
       ))}
 
-      <Header className={"mt_120"} title={"Gift Card & Platform features"} />
+      <Header className={"mt_120"} title={"Additional  key features"} />
 
       <TabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} />
 

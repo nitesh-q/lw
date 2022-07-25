@@ -106,7 +106,7 @@ const Loyalty = () => {
 
       <Header
         className={"mb_50"}
-        title={"Grow your store and drive revenue with Marketing Automation "}
+        title={"How to Customise, Promote and Manage your brand's loyalty program"}
       />
 
       <TabComponent
