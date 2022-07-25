@@ -70,7 +70,7 @@ const Banner = ({
                         className="agency_banner_btn_two wow fadeInLeft"
                         data-wow-delay="0.7s"
                       >
-                        learn more
+                        Learn more
                       </a>
                     </div>
                   )}
