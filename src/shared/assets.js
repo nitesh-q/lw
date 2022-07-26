@@ -65,6 +65,9 @@ const Icons = {
   Import_Migration:require("../images/giftcard/import-migration.png"),
   Reload_01:require("../images/giftcard/reload01.png"),
   Schedule_Delivery:require("../images/giftcard/schedule-delivery.png"),
+  Bulk_Gifcard:require("../images/giftcard/bulk-giftcard.png"),
+  Multi_Store:require("../images/giftcard/multi-store.png"),
+
 
 
 

@@ -22,7 +22,7 @@ import CaseStudiesSlider from "../../components/CaseStudiesSlider";
 
 const Home = () => {
   return (
-    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
+    <Layout >
       <DigitalBanner config={BANNERS_CONFIG.HOME} />
       <Partner oClass={"logo_item_opacity"} pClass={"sec_pad pb_0"}/>
    

@@ -70,7 +70,7 @@ export const GIFTCARD_TABS_CONFIG = {
       id: "bulk_gift_card",
       label: "Bulk Gift Card ",
       selected: "true",
-      image: Icons.Reload_01.default,
+      image: Icons.Bulk_Gifcard.default,
       title: "Bulk Gift Card ",
       description1: "",
       description2: "",
@@ -101,7 +101,7 @@ export const GIFTCARD_TABS_CONFIG = {
     {
       id: "multi-Store",
       label: "Multi-Store",
-      image: Icons.Reload_01.default,
+      image: Icons.Multi_Store.default,
       title: "Multi-Store",
       description1: "  ",
       description2: "",

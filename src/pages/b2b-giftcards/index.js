@@ -47,7 +47,6 @@ const B2BGIFTCARDS = () => {
         titleClass={`bannerTitle`}
         allService={true}
         mClass={"mb_90"}
-        wClass={"mw_125"}
       />
 
       <Partner pClass={"sec_pad pb_0"} />

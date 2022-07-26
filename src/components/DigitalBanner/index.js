@@ -26,16 +26,20 @@ const DigitalBanner = ({
   wClass,
 }) => {
   return (
-    <section className="app_hero_banner_area" id="home">
-      <div class="app_hero_banner_shap "></div>
-      <div class="round_shap one"></div>
-      <div class="round_shap two "></div>
-      <div class="round_shap three "></div>
-      <div className="container">
+    // <section className="app_hero_banner_area" id="home">
+    //   <div class="app_hero_banner_shap "></div>
+    //   <div class="round_shap one"></div>
+    //   <div class="round_shap two "></div>
+    //   <div class="round_shap three "></div>
+    //   <div className="container">
+    <section className="seo_features_one bg_color sec_pad">
+    <div className="container">
         <div className="row">
           <div className="col-lg-6 col-xl-5  mt_50">
             <Reveal bottom cascade>
-              <div className="app_hero_banner_content">
+              {/* <div className="app_hero_banner_content"> */}
+              <div className="seo_features_content">
+
                 <h2>Engage, Acquire & Retain Customers</h2>
                 <p>
                   Enrich your Customer Journey with a Gift Card, Store Credit,
@@ -44,12 +48,12 @@ const DigitalBanner = ({
                 </p>
               </div>
               <div className="col-lg-12">
-                <StartedFreeFrom btnClass={"bg_white t_color1"} />
+                <StartedFreeFrom  />
               </div>
-              <CTAService allService={false} />
+              <CTAService allService={true} />
               <SupportedBrand
                 pClass={"partner_white_logo_area_four"}
-                fclass={"w_color mb_25"}
+                fclass={" mb_25"}
                 imgClass={"partner_img mb_0"}
               />
             </Reveal>

@@ -604,7 +604,7 @@ background-color: #c4c4ca;
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
-  color: #fff;
+  color: #113260;
   /* text-align: end; */
 }
 .CTA_service li::marker{
@@ -12328,7 +12328,7 @@ position: relative;
 }
 
 .app_screenshot_area .app_screenshot_slider .slick-dots li.slick-active button{
-  background: #fff;
+  background: #7444FD;
   height: 5.34px !important;
   width: 46.68px;
   margin: 0px 17px !important;
