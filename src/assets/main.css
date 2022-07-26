@@ -128,9 +128,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   }
 }
 @media (min-width: 2000px) {
-  .container {
+  /* .container {
     max-width: 1500px;
-  }
+  } */
   .ccontainer{
     max-width: 1200px;
   }
@@ -4091,6 +4091,7 @@ color: #51fe23;
       width: 100%;
       /* left: -226px; */
     }
+   
 }
 @media (max-width:1280px) {
   .n_hero_banner_area .svg_two {
@@ -4120,7 +4121,7 @@ color: #51fe23;
   background-image: -webkit-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
   background-image: -ms-linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
   background-image: linear-gradient( 40deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .n_hero_content{

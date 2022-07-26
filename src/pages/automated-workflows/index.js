@@ -105,6 +105,7 @@ const Automation = () => {
         aClass="agency_featured_area_two"
         data={AUTOMATION_WORK_FEATURES}
         title="How it works"
+        dividerImg={Icons.dot.default}
       />
 
       {AUTOMATION_FEATURES.map((card, index) => (

@@ -49,8 +49,10 @@ const CouponBanner = ({ config }) => {
               <SupportedBrand pClass={"pb_0"} />
             </div>
           </div>
+          <div className="row">
           {config.map((i,index) => {
             return (
+              <div className="col-xl-12">
               <div
                 className="support_home_img wow fadeInUp"
                 data-wow-delay="0.9s"
@@ -58,8 +60,10 @@ const CouponBanner = ({ config }) => {
               >
                 <img className="img-fluid" src={i.image} alt="" />
               </div>
+              </div>
             );
           })}
+        </div>
         </div>
       </div>
     </section>

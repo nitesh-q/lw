@@ -62,6 +62,11 @@ const Icons = {
   Report: require("../images/giftcard/report.png"),
   Reload: require("../images/giftcard/reload.png"),
   Upload: require("../images/giftcard/upload.png"),
+  Import_Migration:require("../images/giftcard/import-migration.png"),
+  Reload_01:require("../images/giftcard/reload01.png"),
+  Schedule_Delivery:require("../images/giftcard/schedule-delivery.png"),
+
+
 
   //....................Loyalty Page ......................
   LoyaltyBanner: require("../images/loyalty/loyaltyBanner.png"),
@@ -78,6 +83,7 @@ const Icons = {
   //....................Coupons Page ......................
   CouponBanner: require("../images/coupons/coupon-banner.png"),
   Work1: require("../images/home4/work1.png"),
+  AdvancedCoupon:require("../images/coupons/advanced-coupon.png"),
   CustomCoupon: require("../images/coupons/custom-coupon.png"),
   RewardCustomer: require("../images/coupons/reward-customer.png"),
   Icon1: require("../images/coupons/icon1.png"),
@@ -94,11 +100,17 @@ const Icons = {
   icon01: require("../images/home4/icon01.png"),
   icon02: require("../images/home4/icon02.png"),
   icon03: require("../images/home4/icon03.png"),
+  icon04: require("../images/home4/icon_04.png"),
+
   dot: require("../images/home4/dot.png"),
 
   BREADCRUMB: require("../images/breadcrumb/banner_bg.png"),
   video1: require("../images/banners/video_img_01.png"),
   video2: require("../images/banners/video_img_02.png"),
+
+  //....................Referral Page ......................
+  divider_1: require("../images/home4/divider_1.png"),
+
 
   //....................Case Study.............................
   Leader: require("../images/home-event/leader.png"),

@@ -22,7 +22,7 @@ const COUPON_FEATURES = [
     rowClass: "flex-row-reverse",
     col1: "col-lg-7",
     col2: "col-lg-5",
-    img1: Icons.Work1.default,
+    img1: Icons.AdvancedCoupon.default,
     title: "Advanced coupon marketing software",
     subTitle: "",
     desc: "",
