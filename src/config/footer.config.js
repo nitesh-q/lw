@@ -42,12 +42,12 @@ export const FOOTER_CONFIG = {
     },
     {
       id: 2,
-      title: "Industries",
+      title: "Resources",
       menuItems: [
-        { id: 1, url: "#", text: "Finance" },
-        { id: 2, url: "#", text: "Public Sector" },
-        { id: 3, url: "#", text: "Smart Office" },
-        { id: 4, url: "#", text: "Retail" },
+        { id: 1, url: CHILD_ROUTES.CASE_STUDIES, text: "Case Studies" },
+        { id: 2, url: "#", text: "Blog" },
+        { id: 3, url: "#", text: "Documentation" },
+      
       ],
     },
     {
