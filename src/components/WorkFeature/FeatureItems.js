@@ -2,9 +2,9 @@ import React from "react";
 import Reveal from "react-reveal/Reveal";
 const FeaturesItems = ({
   rowClass,
-  fimage,
+  fImage,
   iImg,
-  ftitle,
+  fTitle,
   descriptions,
   aClass,
 }) => {
@@ -13,7 +13,7 @@ const FeaturesItems = ({
       <div className="col-lg-6">
         <Reveal effect="fadeInLeft">
           <div className="agency_featured_img text-right">
-            <img src={fimage} alt="" />
+            <img src={fImage} alt="" />
           </div>
         </Reveal>
       </div>
@@ -28,11 +28,11 @@ const FeaturesItems = ({
               <span className="dot2"></span>
             </div>
             <img className="number" src={iImg} alt="" />
-            <h3>{ftitle}</h3>
+            <h3>{fTitle}</h3>
             <p>{descriptions}</p>
-            <a href=".#" className="icon mt_30">
+            {/* <a href=".#" className="icon mt_30">
               <i className="ti-arrow-right"></i>
-            </a>
+            </a> */}
           </Reveal>
         </div>
       </div>

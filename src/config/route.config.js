@@ -14,7 +14,7 @@ export const ROUTES_LABEL = {
   PRICE: "Pricing",
   SIGN_IN: "Sign In",
   GIFTCARD: "Gift Card",
-  LOYALTY: "Loyalty",
+  LOYALTY: "Loyalty Program",
   COUPONS: "Coupons",
   REFERRAL: "Referral Program",
   AUTOMATION: "Automated Workflows",

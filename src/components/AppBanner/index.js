@@ -16,7 +16,7 @@ const AppBanner = ({
   wClass,
 }) => {
   return (
-    <section className="app_banner_area" id="home">
+    <section className="app_banner_area banner_top" id="home">
       <div className="container">
         <div className="row">
           <div className="col-lg-5">
@@ -55,7 +55,7 @@ const AppBanner = ({
                  <SupportedBrand
                   pClass={"partner_white_logo_area_four"}
                   fclass={"w_color mb_25"}
-                  imgClass={"partner_img mb_0"}
+                  imgClass={"partner_img "}
                 />
               </div>
             </Reveal>

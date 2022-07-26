@@ -47,16 +47,16 @@ const DigitalBanner = ({
                   and Loyalty Program. Empower them to share your brand
                   experience with Refferrals
                 </p>
-              </div>
+             
               <div className="col-lg-12">
                 <StartedFreeFrom  />
               </div>
-              <CTAService allService={false} />
+              <CTAService allService={allService} />
               <SupportedBrand
                 pClass={"partner_white_logo_area_four"}
                 fclass={" mb_25"}
-                imgClass={"partner_img mb_0"}
               />
+               </div>
             </Reveal>
           </div>
           <div className="col-lg-6 col-xl-7">

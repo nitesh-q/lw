@@ -363,7 +363,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin-bottom: 0px !important;
 }
 .mb_20 {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 .mb_10 {
   margin-bottom: 20px;
@@ -604,7 +604,7 @@ background-color: #c4c4ca;
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
-  color: #113260;
+  color: #fff;
   /* text-align: end; */
 }
 .CTA_service li::marker{
@@ -3400,7 +3400,7 @@ font-weight: 800;
 }
 
 .banner_top {
-  padding-top: 210px;
+  padding-top: 210px !important;
 }
 
 .banner_top h2 {
@@ -3649,10 +3649,10 @@ font-weight: 800;
   transition: all 0.3s ease 0s;
 }
 
-.partner_logo .p_logo_item:hover img {
+/* .partner_logo .p_logo_item:hover img {
   -webkit-filter: contrast(100%);
   filter: contrast(100%);
-}
+} */
 
 /*============== agency_banner_area css =============*/
 .agency_banner_area {
@@ -10475,7 +10475,7 @@ margin-top: 20px;
 .partner_info {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: space-between !important;
+  /* justify-content: space-between !important; */
 
 }
 
@@ -10498,15 +10498,15 @@ margin-top: 20px;
 .logo_item_opacity{
   opacity: 0.7;
 }
-.partner_info .logo_item img:hover {
+/* .partner_info .logo_item img:hover {
   opacity: 3;
 
-}
+} */
 
-.partner_info .logo_item:hover img {
+/* .partner_info .logo_item:hover img {
   -webkit-filter: contrast(100%);
   filter: contrast(100%);
-}
+} */
 
 .subscribe_form_info {
   border-style: solid;
@@ -10660,11 +10660,11 @@ margin-top: 20px;
   color: #8891aa;
 }
 .partner_logo_area_four img {
-  /* display: none; */
+  display: none;
 
 }
 .partner_logo_area_four img+img {
-  /* display: block; */
+  display: block;
 
 }
 

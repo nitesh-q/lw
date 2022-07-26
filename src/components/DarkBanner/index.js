@@ -22,7 +22,7 @@ const POSTS = [
 const DarkBanner = () => {
   return (
     <>
-      <section className="fun_fact_area dk_bg_two pb_0">
+      <section className="fun_fact_area dk_bg_two pb_0 banner_top">
         <div className="container">
           <div className="row flex-row-reverse">
             <div className="col-lg-7 col-md-6">

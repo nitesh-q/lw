@@ -4,7 +4,7 @@ import image from "../../images/erp-home/erp_dashboard.jpg";
 
 const CouponBanner = ({ config }) => {
   return (
-    <section className="support_home_area">
+    <section className="support_home_area ">
       <div className="banner_top">
         <div className="section_container">
           <div className="row">

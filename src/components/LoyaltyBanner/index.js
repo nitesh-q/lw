@@ -8,7 +8,7 @@ import SupportedBrand from "../SupportedBrand";
 
 const LoyaltyBanner = () => {
   return (
-    <section className="n_hero_banner_area">
+    <section className="n_hero_banner_area banner_top">
       <div className="shape_banners">
         <img
           className="img3 wow fadeIn"
@@ -24,8 +24,8 @@ const LoyaltyBanner = () => {
         ></img>
       </div>
 
-      <img className="svg" src={Banner4}></img>
-      <img className="svg_two" src={Banner3}></img>
+      {/* <img className="svg" src={Banner4}></img>
+      <img className="svg_two" src={Banner3}></img> */}
 
       <div className="container">
         <div className="row">
@@ -47,7 +47,7 @@ const LoyaltyBanner = () => {
                     Learn more
                   </a>
                 </div>
-                <CTAService allService={true} />
+                <CTAService allService={false} />
                 <SupportedBrand
                   pClass={"partner_white_logo_area_four"}
                   fclass={"w_color mb_25"}

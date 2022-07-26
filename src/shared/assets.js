@@ -21,8 +21,16 @@ const Icons = {
 
   // .................trusted-merchants..................
   Woo: require("../images/trusted-merchents/woocommerce_01.png"),
+  Woo_Logo: require("../images/trusted-merchents/woocommerce-logo.png"),
+
   Shopify: require("../images/trusted-merchents/shopify02.png"),
+  Shopify_Logo: require("../images/trusted-merchents/shopify-logo.png"),
+  ShopifyPlus: require("../images/trusted-merchents/shopifyPlus.png"),
+  ShopifyPlus_Logo: require("../images/trusted-merchents/shopifyPlus-logo.png"),
+
   BigCommerce: require("../images/trusted-merchents/bigcommerce04.png"),
+  BigCommerce_Logo: require("../images/trusted-merchents/bigcommerce-logo.png"),
+
   Miva: require("../images/trusted-merchents/Miva03.png"),
   Pinstrips: require("../images/trusted-merchents/pinstripes1.png"),
   Besttop: require("../images/trusted-merchents/bestop-logo.png"),

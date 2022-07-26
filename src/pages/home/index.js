@@ -23,7 +23,7 @@ import CaseStudiesSlider from "../../components/CaseStudiesSlider";
 const Home = () => {
   return (
     <Layout >
-      <DigitalBanner config={BANNERS_CONFIG.HOME} />
+      <DigitalBanner config={BANNERS_CONFIG.HOME} allService={false} />
       <Partner oClass={"logo_item_opacity"} pClass={"sec_pad pb_0"}/>
    
 
