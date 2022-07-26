@@ -7307,7 +7307,7 @@ width: 50%;
   border-color: #fa6666;
 }
 .seo_features_content{
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 
 .seo_features_content h2 {
@@ -8212,7 +8212,7 @@ color: #51fe23;
 }
 
 .developer_product_content .develor_tab .nav-item .nav-link {
-  font: 600 14px "Poppins";
+  font: 500 18px "Poppins";
   color: #222D39;
   border: 0px;
   padding: 0px 0px 10px;

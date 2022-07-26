@@ -27,8 +27,8 @@ const Home = () => {
       <Partner oClass={"logo_item_opacity"} pClass={"sec_pad pb_0"}/>
    
 
-      {/* <TabComponent config={HOME_TAB1_CONFIG} rClass={"reduce_height"} /> */}
-      <VerticallyTabComponent config={HOME_TAB1_CONFIG}/>
+      <TabComponent config={HOME_TAB1_CONFIG} rClass={"reduce_height"} />
+      {/* <VerticallyTabComponent config={HOME_TAB1_CONFIG}/> */}
       
       <Header
         className={"mb_50"}

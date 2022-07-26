@@ -128,8 +128,8 @@ const Referral = () => {
         title={"Your One-Stop Destination"}
         description="To create and manage all your Gift Card Campaigns"
       />
-      {/* <TabComponent config={REFERRAL_TAB_CONFIG} pClass={"pt_0"} /> */}
-      <VerticallyTabComponent config={REFERRAL_TAB_CONFIG} pClass={"pt_0"} />
+      <TabComponent config={REFERRAL_TAB_CONFIG} pClass={"pt_0"} />
+      {/* <VerticallyTabComponent config={REFERRAL_TAB_CONFIG} pClass={"pt_0"} /> */}
 
       <Testimonial
         title="Testimonials"

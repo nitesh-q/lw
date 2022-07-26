@@ -10,7 +10,7 @@ import {
   TrustedMerchants_1,
   CTA_1,
   CaseStudiesSlider,
-  VerticallyTabComponent
+  VerticallyTabComponent,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -19,7 +19,6 @@ import {
   BANNERS_CONFIG,
   GIFTCARD_TABS_CONFIG,
 } from "../../config";
-
 
 const GIFTCARD = [
   { desc: "100’s of beautiful Gift Cards based on themes" },
@@ -114,8 +113,8 @@ const GiftCard = () => {
 
       <Header className={"mt_120"} title={"Additional  key features"} />
 
-   
-      <VerticallyTabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} />
+      <TabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} />
+      {/* <VerticallyTabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} /> */}
 
       <Testimonial
         title="Testimonials"

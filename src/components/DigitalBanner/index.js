@@ -9,10 +9,10 @@ import SupportedBrand from "../SupportedBrand";
 const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 700,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 1800,
+  autoplaySpeed: 180000,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -32,10 +32,11 @@ const DigitalBanner = ({
     //   <div class="round_shap two "></div>
     //   <div class="round_shap three "></div>
     //   <div className="container">
-    <section className="seo_features_one bg_color sec_pad">
-    <div className="container">
+    <section className="seo_features_one bg_color sec_pad banner_top">
+     
+    <div className="container ccontainer">
         <div className="row">
-          <div className="col-lg-6 col-xl-5  mt_50">
+          <div className="col-lg-6 col-xl-5 mt_20">
             <Reveal bottom cascade>
               {/* <div className="app_hero_banner_content"> */}
               <div className="seo_features_content">
@@ -50,7 +51,7 @@ const DigitalBanner = ({
               <div className="col-lg-12">
                 <StartedFreeFrom  />
               </div>
-              <CTAService allService={true} />
+              <CTAService allService={false} />
               <SupportedBrand
                 pClass={"partner_white_logo_area_four"}
                 fclass={" mb_25"}
