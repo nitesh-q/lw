@@ -20,7 +20,7 @@ const CTA = () => {
 
           <div className="col-lg-6">
             <div className="row w-100 try_action_service">
-              <div className="col">
+              {/* <div className="col">
                 <form action="#" className="contact_form_box" method="post">
                   <div className="form-group text_box">
                     <input
@@ -31,8 +31,8 @@ const CTA = () => {
                     />
                   </div>
                 </form>
-              </div>
-              <div className="col-lg-5 action_about_btn_col">
+              </div> */}
+              <div className=" action_about_btn_col">
                 <a href="/" className="about_btn">
                   Get Started for free
                 </a>

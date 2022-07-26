@@ -20,14 +20,10 @@ const Icons = {
   Icon: require("../images/home/ellipse_icon.png"),
 
   // .................trusted-merchants..................
-  Woo: require("../images/trusted-merchents/woo.png"),
-  Woo_Logo: require("../images/trusted-merchents/woocommerce-logo.png"),
-  Shopify: require("../images/trusted-merchents/shopify.png"),
-  Shopify_Logo: require("../images/trusted-merchents/shopify-logo.png"),
-  BigCommerce: require("../images/trusted-merchents/bigcommerce.png"),
-  BigCommerce_Logo: require("../images/trusted-merchents/bigcommerce-logo.png"),
-  Miva: require("../images/trusted-merchents/123.png"),
-  Miva_Logo: require("../images/trusted-merchents/333.png"),
+  Woo: require("../images/trusted-merchents/woocommerce_01.png"),
+  Shopify: require("../images/trusted-merchents/shopify02.png"),
+  BigCommerce: require("../images/trusted-merchents/bigcommerce04.png"),
+  Miva: require("../images/trusted-merchents/Miva03.png"),
   Pinstrips: require("../images/trusted-merchents/pinstripes1.png"),
   Besttop: require("../images/trusted-merchents/bestop-logo.png"),
   Cornor: require("../images/trusted-merchents/corner-bakery.jpg"),
@@ -52,6 +48,7 @@ const Icons = {
   Hike: require("../images/integrations/hike.png"),
   Shopify_1: require("../images/integrations/shopify.png"),
   BigCommerce_1: require("../images/integrations/bigcommerce_1.png"),
+  Miva_1: require("../images/integrations/miva-logo.png"),
 
   //.....................Testimonials......................
   Author_01: require("../images/testimonials/01.png"),
@@ -118,7 +115,7 @@ const Icons = {
   Image_6: require("../images/integration/integrations-features1-6-p-500.png"),
 
   //.................................................
-  ComputerImage:require("../images/B2B/computer.png"),
-  B2B_Banner:require("../images/B2B/B2B_Banner.png")
+  ComputerImage: require("../images/B2B/computer.png"),
+  B2B_Banner: require("../images/B2B/B2B_Banner.png"),
 };
 export default Icons;

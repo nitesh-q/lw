@@ -42,14 +42,14 @@ const CaseStudyDetail = () => {
           Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
         />
         <CaseStudyDetails />
-        <EventFeature
+        {/* <EventFeature
           title={"Read more Customer Stories"}
           desc={
             "He lost his bottle squiffy bog bleeding hunky-dory wind up morish tomfoolery spend a penny hanky panky, lemon squeezy vagabond.!"
           }
           config={CUSTOMER_STORIES}
-        />
-        <EventAbout />
+        /> */}
+        {/* <EventAbout /> */}
         <TryAction />
         <Services />
       </Layout>

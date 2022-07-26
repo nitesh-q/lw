@@ -175,10 +175,10 @@ export const HOME_TAB1_CONFIG = {
     },
     {
       id: "wallet",
-      label: "Wallet & Mobile Pass",
+      label: "Digital Wallet",
       selected: "false",
       image: Icons.Wallet_img.default,
-      title: "Wallet & Mobile Pass",
+      title: "Digital Wallet",
       subTitle: "",
       description1:"Empower customers to store gift cards, loyalty points, coupons,store credit.",
       description2: "",
@@ -191,25 +191,25 @@ export const HOME_TAB1_CONFIG = {
 export const HOME_TAB2_CONFIG = {
   HEAD: [{ Title: "" }],
   PANNEL_DATA: [
-    {
-      id: "refferal1",
-      label: "Refferral",
-      selected: "true",
-      image: Icons.Reward.default,
-      title: "Refer a Friend",
-      subTitle: "",
-      description1:
-        " Boost yo organic seles by adding a customer refferal program to your eCommerce store",
-      description2: "",
-      list: [
-        // {
-        //     id: 1,
-        //     title: "",
-        //     description: "",
-        //   },
-      ],
-      url:CHILD_ROUTES.REFERRAL
-    },
+    // {
+    //   id: "refferal1",
+    //   label: "Refferral",
+    //   selected: "true",
+    //   image: Icons.Reward.default,
+    //   title: "Refer a Friend",
+    //   subTitle: "",
+    //   description1:
+    //     " Boost yo organic seles by adding a customer refferal program to your eCommerce store",
+    //   description2: "",
+    //   list: [
+    //     // {
+    //     //     id: 1,
+    //     //     title: "",
+    //     //     description: "",
+    //     //   },
+    //   ],
+    //   url:CHILD_ROUTES.REFERRAL
+    // },
     {
       id: "onboarding",
       label: "Onboarding",

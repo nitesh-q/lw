@@ -10,6 +10,7 @@ import {
   CouponWork,
   IntegrationList,
   CouponBanner,
+  CaseStudiesSlider,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -86,6 +87,7 @@ const Coupons = () => {
       />
       <IntegrationList />
       <TryAction />
+      <CaseStudiesSlider />
       <Services />
     </Layout>
   );

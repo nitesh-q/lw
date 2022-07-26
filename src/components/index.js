@@ -28,6 +28,7 @@ export {default as EventAbout} from "./EventAbout"
 export {default as IntegartionDataPoints} from "./IntegrationDataPoints" 
 export {default as CTA} from "./CTA" 
 export {default as CTA_1} from "./CTA_1" 
+export{default as CaseStudiesSlider} from "./CaseStudiesSlider"
 
 
 

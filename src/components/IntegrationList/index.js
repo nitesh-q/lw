@@ -3,9 +3,7 @@ import Icons from "../../shared/assets";
 import { navigate } from "gatsby";
 
 const integrations = [
-  {
-    icon: Icons.BigCommerce_1.default,
-  },
+ 
   {
     icon: Icons.Klaviyo_1.default,
   },
@@ -33,9 +31,9 @@ const integrations = [
   // {
   //   icon: Icons.ActiveCampaign.default,
   // },
-  // {
-  //   icon: Icons.Retail_Pro.default,
-  // },
+  {
+    icon: Icons.Retail_Pro.default,
+  },
   // {
   //   icon: Icons.Awsses.default,
   // },

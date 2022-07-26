@@ -17,6 +17,8 @@ import {
   TESTIMONIAL_CONFIG,
   HOME_TAB2_CONFIG,
 } from "../../config";
+import VerticallyTabComponent from "../../components/VerticallyTabComponent";
+import CaseStudiesSlider from "../../components/CaseStudiesSlider";
 
 const Home = () => {
   return (
@@ -25,18 +27,21 @@ const Home = () => {
       <Partner oClass={"logo_item_opacity"} pClass={"sec_pad pb_0"}/>
    
 
-      <TabComponent config={HOME_TAB1_CONFIG} rClass={"reduce_height"} />
+      {/* <TabComponent config={HOME_TAB1_CONFIG} rClass={"reduce_height"} /> */}
+      <VerticallyTabComponent config={HOME_TAB1_CONFIG}/>
       
       <Header
         className={"mb_50"}
         title={"Grow your store and drive revenue with Marketing Automation "}
       />
-      <TabComponent
+      {/* <TabComponent
         config={HOME_TAB2_CONFIG}
         pClass={"pt_0"}
         rClass={"reduce_height"}
         icon={true}
-      />
+      /> */}
+      <VerticallyTabComponent  config={HOME_TAB2_CONFIG} icon={true}  pClass={"pt_0"}/>
+
       <Testimonial
         title="Testimonials"
         subTitle="Hear from our Clients"
@@ -50,6 +55,7 @@ const Home = () => {
         }
       />
       <TryAction />
+
       <Services />
     </Layout>
   );

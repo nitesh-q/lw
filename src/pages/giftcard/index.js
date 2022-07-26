@@ -9,6 +9,7 @@ import {
   Services,
   TrustedMerchants_1,
   CTA_1,
+  CaseStudiesSlider,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -128,6 +129,7 @@ const GiftCard = () => {
       />
       {/* <TryAction /> */}
       <CTA_1 />
+      <CaseStudiesSlider />
       <Services />
     </Layout>
   );

@@ -65,24 +65,24 @@ const B2BGIFTCARDS = () => {
       <Banner
         config={BANNERS_CONFIG.B2B}
         titleClass={`bannerTitle`}
-        sllService={true}
+        allService={true}
         mClass={"mb_90"}
         wClass={"mw_125"}
       />
 
       <Partner pClass={"sec_pad pb_0"} />
       <IconTabComponent config={B2B_TABS_CONFIG} />
-      <Header
+      {/* <Header
         className={"bg_white mt_125"}
         title={"Key features."}
         description={"All your gift card needs, covered"}
-      />
+      /> */}
 
-      {REFERRAL_FEATURES.map((card) => (
+      {/* {REFERRAL_FEATURES.map((card) => (
         <Features  {...{ ...card }} url="#" />
-      ))}
+      ))} */}
 
-      <Header
+      {/* <Header
         className={"mt_120"}
         title={"Your One-Stop Destination"}
         description="To create and manage all your Gift Card Campaigns"
@@ -93,7 +93,7 @@ const B2BGIFTCARDS = () => {
         subTitle="Hear from our Clients"
         sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
         bgColor={`bg_color`}
-      />
+      /> */}
       <IntegrationList />
       
       <CTA />

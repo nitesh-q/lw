@@ -1,7 +1,7 @@
 export const ROUTES = {
   HOME: "/home",
   PRODUCTS: "./",
-  INTEGRATION: "./",
+  INTEGRATIONS: "/integrations",
   RESOURCES: "./",
   PRICE: "/pricing",
   SIGN_IN: "/",
@@ -10,7 +10,7 @@ export const ROUTES = {
 export const ROUTES_LABEL = {
   HOME: "Home",
   PRODUCTS: "Products",
-  INTEGRATION: "Integration",
+  INTEGRATIONS: "Integrations",
   PRICE: "Pricing",
   SIGN_IN: "Sign In",
   GIFTCARD: "Gift Card",
@@ -20,11 +20,6 @@ export const ROUTES_LABEL = {
   AUTOMATION: "Automated Workflows",
   B2B_GIFTCARDS: "B2B Gift Cards",
   STORE_CREDIT: "Store Credit",
-  INTEGRATION_1: "Integration 1",
-  INTEGRATION_2: "Integration 2",
-  INTEGRATION_3: "Integration 3",
-  INTEGRATION_4: "Integration 4",
-  ALL_INTEGRATIONS: "Integrations",
   DEVELOPERS_1: "Developers 1",
   DEVELOPERS_2: "Developers 2",
   RESOURCES: "Resources",
@@ -43,16 +38,11 @@ export const CHILD_ROUTES = {
   AUTOMATION: "/automated-workflows",
   B2B_GIFTCARDS: "/b2b-giftcards",
   STORE_CREDIT: "/store-credit",
-  ALL_INTEGRATIONS: "/integrations",
-  INTEGRATION_1:"/integration",
-  INTEGRATION_2:"/integration",
-  INTEGRATION_3:"/integration",
-  INTEGRATION_4:"/integration",
   DEVELOPERS_1: "/giftcard",
   DEVELOPERS_2: "/giftcard",
-  CASE_STUDIES:"/case-studies",
-  BLOG:"/",
-  DOCUMENTATION:"/"
+  CASE_STUDIES: "/case-studies",
+  BLOG: "/",
+  DOCUMENTATION: "/",
 };
 
 export const CHILDRENS = {
@@ -65,20 +55,11 @@ export const CHILDRENS = {
     "REFERRAL",
     "AUTOMATION",
     "B2B_GIFTCARDS",
-    
   ],
-  INTEGRATION: [
-    "INTEGRATION_1",
-    "INTEGRATION_2",
-    "INTEGRATION_3",
-    "INTEGRATION_4",
-    "ALL_INTEGRATIONS",
-  ],
+  INTEGRATIONS: [],
   RESOURCES: ["CASE_STUDIES", "BLOG", "DOCUMENTATION"],
   PRICE: [],
   SIGN_IN: [],
 };
-
-
 
 export const ADD_DEVIDER_BEFORE = { SIGN_IN: true };

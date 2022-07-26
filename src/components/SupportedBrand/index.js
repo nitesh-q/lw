@@ -11,9 +11,9 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
   return (
     <section id="supportedBrand">
       <div className={`partner_logo_area_four  ${pClass}`}>
-        <h3 className={`${fclass} `}>We Support</h3>
+        <h3 className={`${fclass} `}>Install from</h3>
         <div className="row  partner_info">
-          <div
+          {/* <div
             className={` logo_item w_110 ${imgClass} `}
             data-wow-delay="0.1s"
           >
@@ -32,6 +32,38 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
           <div className={`logo_item w_128 ${imgClass}`} data-wow-delay="0.1s">
             <img className="h_25" src={Icons.Woo_Logo.default} alt="" />
             <img className="h_25" src={Icons.Woo.default} alt="" />
+          </div> */}
+          <div
+            className={` logo_item  w_110 ${imgClass} mb_0 `}
+            data-wow-delay="0.1s"
+          >
+            <a href="#">
+              <img className="h_auto" src={Icons.Shopify.default} alt="" />
+            </a>
+          </div>
+          <div
+            className={` logo_item  w_110 ${imgClass}  mb_0   `}
+            data-wow-delay="0.1s"
+          >
+            <a href="#">
+              <img className="h_auto" src={Icons.Woo.default} alt="" />
+            </a>
+          </div>{" "}
+          <div
+            className={` logo_item  w_110 ${imgClass}  mb_0   `}
+            data-wow-delay="0.1s"
+          >
+            <a href="#">
+              <img className="h_auto" src={Icons.BigCommerce.default} alt="" />
+            </a>
+          </div>{" "}
+          <div
+            className={` logo_item  w_110 ${imgClass}  mb_0  `}
+            data-wow-delay="0.1s"
+          >
+            <a href="#">
+              <img className="h_auto" src={Icons.Miva.default} alt="" />
+            </a>
           </div>
         </div>
       </div>
