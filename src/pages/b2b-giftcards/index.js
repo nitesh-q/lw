@@ -1,33 +1,19 @@
 import React from "react";
 import {
-  Testimonial,
-  TryAction,
-  Banner,
-  TrustedMerchants,
-  Features,
-  Header,
-  TabComponent,
   Services,
   IntegrationList,
   Partner,
   IconTabComponent,
   CTA,
+  Banner_1,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import {
-  TESTIMONIAL_CONFIG,
-  BANNERS_CONFIG,
-  GIFTCARD_TABS_CONFIG,
-  B2B_TABS_CONFIG,
-} from "../../config";
+import { BANNERS_CONFIG, B2B_TABS_CONFIG } from "../../config";
 
 const REFERRAL_FEATURES = [
   {
-    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.Work1.default,
     title: "Online and in-store integrations",
     desc: "Forget gift cards that work only online or offline. With 99minds, create campaigns that work absolutely everywhere.",
@@ -35,10 +21,7 @@ const REFERRAL_FEATURES = [
     list: [],
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
+  
     img1: Icons.CustomCoupon.default,
     title: "Point of Sale (POS) Agnostic redemption",
     desc: "Send and redeem physical and eGift cards issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed etc.",
@@ -46,11 +29,8 @@ const REFERRAL_FEATURES = [
     list: [],
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pr_70",
+    
     rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.RewardCustomer.default,
     title: "Multi-Currency Gift Cards",
     subTitle: "",
@@ -62,7 +42,7 @@ const REFERRAL_FEATURES = [
 const B2BGIFTCARDS = () => {
   return (
     <Layout>
-      <Banner
+      <Banner_1
         config={BANNERS_CONFIG.B2B}
         titleClass={`bannerTitle`}
         allService={true}
@@ -95,7 +75,7 @@ const B2BGIFTCARDS = () => {
         bgColor={`bg_color`}
       /> */}
       <IntegrationList />
-      
+
       <CTA />
       <Services />
     </Layout>
