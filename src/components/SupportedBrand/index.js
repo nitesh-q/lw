@@ -98,7 +98,7 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
             >
               <a href="#">
                 <img
-                  className="h_25"
+                  className="h_auto"
                   src={Icons.ShopifyPlus_Logo.default}
                   alt=""
                 />
