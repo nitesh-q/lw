@@ -51,14 +51,14 @@ const LoyaltyBanner = () => {
                 <SupportedBrand
                   pClass={"partner_white_logo_area_four"}
                   fclass={"w_color mb_25"}
-                  imgClass={"partner_img mb_0"}
+                  imgClass={"partner_img "}
                 />
               </div>
             </Reveal>
           </div>
           <div className="col-lg-7">
             <div className="hero_img w-100">
-              <img className="img" src={Icons.LoyaltyBanner1.default} alt="" />
+              <img className="img img-fluid" src={Icons.LoyaltyBanner1.default} alt="" />
             </div>
           </div>
         </div>

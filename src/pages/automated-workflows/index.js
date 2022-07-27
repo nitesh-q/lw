@@ -97,7 +97,7 @@ const AUTOMATION_WORK_FEATURES = [
 const Automation = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-      <AppBanner allService={true} config={BANNERS_CONFIG.AUTOMATION} />
+      <AppBanner allService={false} config={BANNERS_CONFIG.AUTOMATION} />
 
       <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} />
 

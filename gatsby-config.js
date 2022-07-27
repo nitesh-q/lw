@@ -6,6 +6,19 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap` ,
-    `gatsby-plugin-smoothscroll`
+    `gatsby-plugin-smoothscroll`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+          plugins: [
+              {
+                  resolve: `gatsby-remark-images-native-lazy-load`,
+                  options: {
+                      loading: "lazy" // "lazy" | "eager" | "auto"
+                      }
+                  }
+          ],
+      },
+    }
   ],
 }

@@ -195,7 +195,7 @@ class IntegrationGrid extends Component {
                   return null;
                 }
                 return (
-                  <a href=".#">
+                
                     <IntegrationGridCard
                       colClass={`col-lg-4 col-sm-6 ${i.type} `}
                       pImg={i.image}
@@ -203,7 +203,7 @@ class IntegrationGrid extends Component {
                       desc={i.desc}
                       type={i.label}
                     />
-                  </a>
+               
                 );
               })}
             </div>

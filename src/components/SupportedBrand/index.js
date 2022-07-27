@@ -42,10 +42,10 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
                 <img
                   className="h_auto"
                   src={Icons.Shopify_Logo.default}
-                  alt=""
+                  alt="Shopify_Logo"
                 />
 
-                <img className="h_auto" src={Icons.Shopify.default} alt="" />
+                <img className="h_auto" src={Icons.Shopify.default} alt="Shopify" />
               </a>
             </div>
           </div>

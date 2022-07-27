@@ -14,7 +14,7 @@ const Banner_1 = ({
   wClass,
 }) => {
   return (
-    <section className="seo_features_one bg_color sec_pad">
+    <section className="seo_features_one bg_color sec_pad banner_top">
       <div className="container">
         <div className="row flex-row-reverse">
           <div className="col-lg-7 ">

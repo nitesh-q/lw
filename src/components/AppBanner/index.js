@@ -44,14 +44,6 @@ const AppBanner = ({
                   <StartedFreeFrom btnClass={"bg_white t_color1"} />
                 </div>
                 <CTAService allService={allService} />
-                {/* <div className="scroll_btn">
-                  <button
-                    className="scroll_up_btn"
-                    onClick={() => scrollTo("#supportedBrand")}
-                  >
-                    <i className="ti-arrow-down"></i>
-                  </button>
-                </div> */}
                  <SupportedBrand
                   pClass={"partner_white_logo_area_four"}
                   fclass={"w_color mb_25"}

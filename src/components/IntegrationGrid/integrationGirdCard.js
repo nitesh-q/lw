@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { navigate } from "gatsby";
 import { Link } from "gatsby";
 
 class IntegrationGridCard extends Component {
@@ -18,6 +19,7 @@ class IntegrationGridCard extends Component {
             <button
               className="btn btn_get btn_get_two mt-3"
               type="submit"
+              onClick={()=>navigate("/integration")}
             >
               Learn more
             </button>

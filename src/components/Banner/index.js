@@ -29,6 +29,7 @@ const Banner = ({
                       key={index}
                       src={i.image}
                       alt={i.id}
+                      // loading="lazy"
                     />
                   </div>
                 </Reveal>
@@ -76,7 +77,7 @@ const Banner = ({
                   )}
                 </div>
                <CTAService allService={allService}/> 
-                <SupportedBrand    pClass={"partner_white_logo_area_four"} /> 
+                <SupportedBrand pClass={"partner_white_logo_area_four"} /> 
               </div>
             </Reveal>
           </div>

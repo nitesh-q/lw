@@ -18,10 +18,7 @@ import { BANNERS_CONFIG, TESTIMONIAL_CONFIG } from "../../config";
 
 const COUPON_FEATURES = [
   {
-    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.AdvancedCoupon.default,
     title: "Advanced coupon marketing software",
     subTitle: "",
@@ -32,10 +29,6 @@ const COUPON_FEATURES = [
     ],
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.CustomCoupon.default,
     title: "Custom-made coupons",
     subTitle: "",
@@ -47,11 +40,7 @@ const COUPON_FEATURES = [
     ],
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.RewardCustomer.default,
     title: "Reward your customers the way they want",
     subTitle: "",
@@ -75,7 +64,7 @@ const Coupons = () => {
         description={"All your gift card needs, covered"}
       />
       {COUPON_FEATURES.map((card) => (
-        <Features  {...{ ...card }} url="#" />
+        <Features {...{ ...card }} url="#" />
       ))}
       <CouponWork />
 

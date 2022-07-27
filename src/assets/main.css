@@ -538,6 +538,7 @@ height: 30px;
 .mw_125{
   max-width: 125% !important;
 }
+
 .w_128{
   width: 128px;
 }
@@ -4152,7 +4153,7 @@ color: #51fe23;
 
 }
 .n_hero_banner_area .img{
-  width: 100%;
+  /* width: 100%; */
 }
 
 .n_hero_content .hero_banner_btn{
@@ -7368,7 +7369,7 @@ width: 50%;
   font-weight: 500;
   white-space: nowrap;
   color: #113260;
-  text-align: end;
+  /* text-align: end; */
 }
 .seo_features_content li::marker{
   content: url(../images/icon/tick-Arrow.svg);
@@ -12274,7 +12275,7 @@ position: absolute;
 /*====================================================*/
 /*================= app_screenshot_area css =============*/
 .app_screenshot_area {
-  overflow: hidden;
+  overflow: unset;
 }
 .app_screenshot_area .row {
  
@@ -13272,7 +13273,7 @@ height: 1800px !important;
 }
 .portfolio_gallery .portfolio_item .portfolio_img {
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
   overflow: hidden;
   justify-content: center;
     display: flex;

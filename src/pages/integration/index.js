@@ -1,16 +1,13 @@
 import React from "react";
 import {
-  IntegrationList,
-  Testimonial,
+
   TryAction,
   Banner,
-  TrustedMerchants,
+
   Features,
   Header,
-  TabComponent,
-  Partner,
   Services,
-  TrustedMerchants_1,
+
   IntegartionDataPoints,
 } from "../../components";
 import Layout from "../../components/Layout";
@@ -23,10 +20,8 @@ import {
 
 const INTEGRATION_FEATURES = [
   {
-    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
+
     img1: Icons.Image_1.default,
     title: "Easy one-click integration. No, seriously.",
     subTitle: "",
@@ -34,10 +29,6 @@ const INTEGRATION_FEATURES = [
     list: [],
   },
   {
-    // ptClass: "pt_0",
-    // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.Image_2.default,
     title: "Connect all your BigCommerce stores at no extra cost.",
     subTitle: "",
@@ -45,11 +36,8 @@ const INTEGRATION_FEATURES = [
     list: [],
   },
   {
-    // ptClass: "pt_0",
-    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
+
     img1: Icons.Image_3.default,
     title:
       "Leverage automated abandoned cart funnels to recover those lost sales.",
@@ -58,10 +46,6 @@ const INTEGRATION_FEATURES = [
     list: [],
   },
   {
-    // ptClass: "pt_0",
-    // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.Image_4.default,
     title: "Create multivariable segments to increase customer LTV.",
     subTitle: "",
@@ -69,11 +53,8 @@ const INTEGRATION_FEATURES = [
     list: [],
   },
   {
-    // ptClass: "pt_0",
-    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
+
     img1: Icons.Image_5.default,
     title:
       "Provide an exceptional customer experience tailored to each and every customer.",
@@ -82,10 +63,6 @@ const INTEGRATION_FEATURES = [
     list: [],
   },
   {
-    // ptClass: "pt_0",
-    // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.Image_6.default,
     title:
       "Find hidden growth opportunities with better tracking and reporting.",

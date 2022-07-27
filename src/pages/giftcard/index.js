@@ -94,9 +94,9 @@ const GiftCard = () => {
       <Banner
         config={BANNERS_CONFIG.GIFTCARD}
         titleClass={`bannerTitle`}
-        allService={true}
+        allService={false}
         mClass={"mb_90"}
-        wClass={"mw_125"}
+        wClass={"img_width_950"}
       />
 
       <TrustedMerchants_1 />

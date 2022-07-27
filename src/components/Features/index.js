@@ -20,7 +20,7 @@ const Features = ({
           <div className={`col-lg-7`}>
             <div className="chat_features_img chat_features_img_one">
               <Reveal effect="fadeInRight" duration={1000}>
-                <img className="chat_one img-fluid" src={img1} alt="" />
+                <img className="chat_one img-fluid" src={img1} alt="" loading="lazy"/>
               </Reveal>
             </div>
           </div>
