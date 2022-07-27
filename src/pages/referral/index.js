@@ -123,14 +123,6 @@ const Referral = () => {
         <Features {...{ ...card }} url="#" key={index} />
       ))} */}
 
-      <Header
-        className={"mt_120"}
-        title={"Your One-Stop Destination"}
-        description="To create and manage all your Gift Card Campaigns"
-      />
-      <TabComponent config={REFERRAL_TAB_CONFIG} pClass={"pt_0"} />
-      {/* <VerticallyTabComponent config={REFERRAL_TAB_CONFIG} pClass={"pt_0"} /> */}
-
       <Testimonial
         title="Testimonials"
         subTitle="Hear from our Clients"

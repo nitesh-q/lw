@@ -81,11 +81,11 @@ const CaseStudiesSlider = () => {
           <Slider {...settings} className="case_studies_slider">
             {CASE_STUDIES_SLIDER_DATA.map((item, index) => {
               return (
-                <div className="iitem">
+                <div className="iitem" key={index}>
                   <div className="studies_item">
                     <img src={item.image} alt="" />
                     <div className="text">
-                      <div class="label">{item.type}</div>
+                      <div className="label">{item.type}</div>
                       <h4>{item.title}</h4>
                       <p>{item.description}</p>
 

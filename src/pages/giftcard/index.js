@@ -96,7 +96,7 @@ const GiftCard = () => {
         titleClass={`bannerTitle`}
         allService={false}
         mClass={"mb_90"}
-        wClass={"img_width"}
+        wClass={"img_width mw_125"}
       />
 
       <TrustedMerchants_1 />

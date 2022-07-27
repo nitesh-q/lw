@@ -4,16 +4,13 @@ import { Reveal } from "react-reveal";
 import StartedFreeForm from "../StartedFreeForm";
 import CTAService from "../Services/CTAService";
 
-
-
 const Banner = ({
   config,
   supportedBrand,
-  startedFreeForm,
   titleClass,
   allService,
   mClass,
-  wClass
+  wClass,
 }) => {
   return (
     <section className="seo_features_one bg_color sec_pad banner_top">
@@ -29,7 +26,7 @@ const Banner = ({
                       key={index}
                       src={i.image}
                       alt={i.id}
-                      // loading="lazy"
+                      loading="lazy"
                     />
                   </div>
                 </Reveal>
@@ -37,17 +34,15 @@ const Banner = ({
             })}
           </div>
           <div className="col-lg-5">
-          <Reveal bottom cascade>
+            <Reveal bottom cascade>
               <div className="seo_features_content ">
                 {config.map((i, index) => {
                   return (
                     <>
                       <h2 key={index}>
                         {i.title}
-                        <br/>
-                        <span>
-                        {i.subTitle}
-                        </span>
+                        <br />
+                        <span>{i.subTitle}</span>
                       </h2>
                       <p>{i.description}</p>
                     </>
@@ -55,29 +50,10 @@ const Banner = ({
                 })}
 
                 <div className="col-lg-9">
-                  {startedFreeForm ? (
-                    <StartedFreeForm />
-                  ) : (
-                    <div className="action_btn d-flex align-items-center mt_60">
-                      <a
-                        href="/#"
-                        className="btn btn_get btn_get_two fadeInLeft"
-                        data-wow-delay="0.5s"
-                      >
-                        Get Started for Free
-                      </a>
-                      <a
-                        href="/#"
-                        className="agency_banner_btn_two wow fadeInLeft"
-                        data-wow-delay="0.7s"
-                      >
-                        Learn more
-                      </a>
-                    </div>
-                  )}
+                  <StartedFreeForm />
                 </div>
-               <CTAService allService={allService}/> 
-                <SupportedBrand pClass={"partner_white_logo_area_four"} /> 
+                <CTAService allService={allService} />
+                <SupportedBrand pClass={"partner_white_logo_area_four"} />
               </div>
             </Reveal>
           </div>

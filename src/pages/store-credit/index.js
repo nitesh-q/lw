@@ -3,25 +3,18 @@ import {
   Testimonial,
   TryAction,
   Banner,
-  TrustedMerchants,
   Features,
   Header,
-  TabComponent,
   Services,
   Partner,
-  IntegrationList
+  IntegrationList,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import {
-  TESTIMONIAL_CONFIG,
-  BANNERS_CONFIG,
-  GIFTCARD_TABS_CONFIG,
-} from "../../config";
+import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
 
 const REFERRAL_FEATURES = [
   {
-    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
     col1: "col-lg-7",
     col2: "col-lg-5",
@@ -32,10 +25,6 @@ const REFERRAL_FEATURES = [
     list: [],
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.CustomCoupon.default,
     title: "Point of Sale (POS) Agnostic redemption",
     desc: "Send and redeem physical and eGift cards issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed etc.",
@@ -43,11 +32,7 @@ const REFERRAL_FEATURES = [
     list: [],
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.RewardCustomer.default,
     title: "Multi-Currency Gift Cards",
     subTitle: "",
@@ -66,7 +51,7 @@ const StoreCredit = () => {
         mClass={"mb_90"}
         wClass={"mw_125"}
       />
-     <Partner pClass={"sec_pad pb_0"} />
+      <Partner pClass={"sec_pad pb_0"} />
       <Header
         className={"bg_white mt_125"}
         title={"Key features."}
@@ -74,15 +59,9 @@ const StoreCredit = () => {
       />
 
       {REFERRAL_FEATURES.map((card) => (
-        <Features  {...{ ...card }} url="#" />
+        <Features {...{ ...card }} url="#" />
       ))}
 
-      <Header
-        className={"mt_120"}
-        title={"Your One-Stop Destination"}
-        description="To create and manage all your Gift Card Campaigns"
-      />
-      <TabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} />
       <Testimonial
         title="Testimonials"
         subTitle="Hear from our Clients"

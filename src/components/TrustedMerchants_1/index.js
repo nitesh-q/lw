@@ -11,11 +11,11 @@ const TrustedMerchants_1 = () => {
           <h2 className="wow fadeInUp">
             <span>Our Clients. </span>World-class protection
           </h2>
-          <p className="wow fadeInUp" data-wow-delay="0.3s">
+          {/* <p className="wow fadeInUp" data-wow-delay="0.3s">
             Naff pukka zonked squiffy quaint knees up cup of tea Oxford the BBC
             bloke ummm I'm telling, argy-bargy show off show off pick your nose
             and blow off hanky.!
-          </p>
+          </p> */}
         </div>
         <div className="security_inner ">
           <img
@@ -32,7 +32,7 @@ const TrustedMerchants_1 = () => {
           />
           <div className="row">
             {MERCHANTS_CONFIG.MERCHANTS.map((item, index) => (
-              <div className="col-lg-3 col-sm-4 col-6">
+              <div className="col-lg-3 col-sm-4 col-6" key={index}>
                 <a
                   href="/#"
                   className="analytices_logo wow fadeInUp"
@@ -44,9 +44,9 @@ const TrustedMerchants_1 = () => {
             ))}
           </div>
         </div>
-        <div className="d-flex justify-content-center">
+        {/* <div className="d-flex justify-content-center">
           <div className="action_btn d-flex align-items-center mt_60">
-          <a
+            <a
               href="/#"
               className="agency_banner_btn_two wow fadeInLeft"
               data-wow-delay="0.7s"
@@ -60,9 +60,8 @@ const TrustedMerchants_1 = () => {
             >
               Get Started for Free
             </a>
-           
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

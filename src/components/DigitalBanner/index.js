@@ -27,10 +27,10 @@ const DigitalBanner = ({
 }) => {
   return (
     // <section className="app_hero_banner_area" id="home">
-    //   <div class="app_hero_banner_shap "></div>
-    //   <div class="round_shap one"></div>
-    //   <div class="round_shap two "></div>
-    //   <div class="round_shap three "></div>
+    //   <div className="app_hero_banner_shap "></div>
+    //   <div className="round_shap one"></div>
+    //   <div className="round_shap two "></div>
+    //   <div className="round_shap three "></div>
     //   <div className="container">
     <section className="seo_features_one bg_color sec_pad banner_top">
      

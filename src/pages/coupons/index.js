@@ -66,8 +66,6 @@ const Coupons = () => {
       {COUPON_FEATURES.map((card) => (
         <Features {...{ ...card }} url="#" />
       ))}
-      <CouponWork />
-
       <Testimonial
         title="Testimonials"
         subTitle="Hear from our Clients"

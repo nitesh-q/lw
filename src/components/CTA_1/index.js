@@ -13,7 +13,7 @@ const CTA_1 = () => {
             <div className="try_call_action_text">
               <h2>Try 99minds now</h2>
               <p>
-                The free demo comes with no commitments <br></br>and no credit
+                The free trial comes with no commitments <br></br>and no credit
                 card required
               </p>
             </div>

@@ -125,7 +125,7 @@ export const HOME_TAB1_CONFIG = {
     },
     {
       id: "loyalty",
-      label: "Loyalty",
+      label: "Loyalty Program",
       selected: "false",
       image: Icons.Loyalty_img.default,
       title: "Loyalty",
@@ -150,18 +150,6 @@ export const HOME_TAB1_CONFIG = {
       url:CHILD_ROUTES.REFERRAL
     },
     {
-      id: "automation",
-      label: "Automated Workflows",
-      image: Icons.Automation_img.default,
-      title: "Automated Workflows",
-      subTitle: "",
-      description1:"For ecommerce/retailers brands, Customer acquisition & retention automation enables you to focus on acquiring new customers, and retain customers using:",
-      description2: "",
-      list:AUTOMATION_LIST,
-      url:CHILD_ROUTES.AUTOMATION
-    },
-
-    {
       id: "coupons",
       label: "Coupons",
       selected: "false",
@@ -184,6 +172,17 @@ export const HOME_TAB1_CONFIG = {
       description2: "",
       list: WALLET_LIST_,
       url:"#"
+    },
+    {
+      id: "automation",
+      label: "Automated Workflows",
+      image: Icons.Automation_img.default,
+      title: "Automated Workflows",
+      subTitle: "",
+      description1:"For ecommerce/retailers brands, Customer acquisition & retention automation enables you to focus on acquiring new customers, and retain customers using:",
+      description2: "",
+      list:AUTOMATION_LIST,
+      url:CHILD_ROUTES.AUTOMATION
     },
   ],
 };

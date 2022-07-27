@@ -43,9 +43,6 @@ const LoyaltyBanner = () => {
                   <a href=".#" className="btn_hover hero_banner_btn">
                     Get Started for Free
                   </a>
-                  <a href=".#" className="hero_banner_btn_two">
-                    Learn more
-                  </a>
                 </div>
                 <CTAService allService={false} />
                 <SupportedBrand
@@ -58,7 +55,11 @@ const LoyaltyBanner = () => {
           </div>
           <div className="col-lg-7">
             <div className="hero_img w-100">
-              <img className="img img-fluid" src={Icons.LoyaltyBanner1.default} alt="" />
+              <img
+                className="img img-fluid"
+                src={Icons.LoyaltyBanner1.default}
+                alt=""
+              />
             </div>
           </div>
         </div>

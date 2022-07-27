@@ -8,7 +8,7 @@ const  GridItem =({type, title, description, image })=> {
             <img className="img-fluid" src={image} alt="" />
 
             <div className="Case_studies_content">
-              <div class="portfolio_label">{type}</div>
+              <div className="portfolio_label">{type}</div>
               <h5 className="Case_studies_title">{title}</h5>
 
               <p>{description}</p>

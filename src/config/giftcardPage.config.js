@@ -88,7 +88,7 @@ export const GIFTCARD_TABS_CONFIG = {
     },
     {
       id: "multicurrency",
-      label: "Multicurrency",
+      label: "Multi-Currency",
       selected: "false",
       image: Icons.Reload_01.default,
       title: "Multicurrency",

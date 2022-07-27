@@ -80,17 +80,7 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
               </a>
             </div>
           </div>
-          <div className="col-lg-4">
-            <div
-              className={` logo_item  w_110 ${imgClass}  mb_30  `}
-              data-wow-delay="0.1s"
-            >
-              <a href="#">
-                <img className="h_auto" src={Icons.Miva.default} alt="" />
-                <img className="h_auto" src={Icons.Miva.default} alt="" />
-              </a>
-            </div>
-          </div>
+         
           <div className="col-lg-4">
             <div
               className={` logo_item  w_110 ${imgClass}  mb_30  `}
@@ -110,7 +100,21 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
                 />
               </a>
             </div>
+            
           </div>
+          <div className="col-lg-4">
+            
+           
+          <div
+              className={` logo_item  w_110 ${imgClass}  mb_30  `}
+              data-wow-delay="0.1s"
+            >
+              <a href="#">
+                <img className="h_25" src={Icons.Miva.default} alt="" />
+                <img className="h_25" src={Icons.Miva.default} alt="" />
+              </a>
+            </div>
+            </div>
         </div>
       </div>
     </section>

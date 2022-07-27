@@ -23,8 +23,7 @@ const VerticallyTabComponent = ({ config, pClass, rClass, mClass, icon }) => {
 
         {/* <div className="row accordion" id="accordionExample"> */}
         <div className="row">
-        <div className="col-lg-2"></div>
-          <div className="col-lg-3 col-md-3 mt_50">
+          <div className="col-lg-5 col-md-3 mt_50">
             <ul
               className="nav nav-tabs software_service_tab"
               id="myTab1"

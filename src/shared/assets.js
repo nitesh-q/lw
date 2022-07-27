@@ -31,7 +31,7 @@ const Icons = {
   BigCommerce: require("../images/trusted-merchents/bigcommerce04.png"),
   BigCommerce_Logo: require("../images/trusted-merchents/bigcommerce-logo.png"),
 
-  Miva: require("../images/trusted-merchents/Miva03.png"),
+  Miva: require("../images/trusted-merchents/Miva03(1).png"),
   Pinstrips: require("../images/trusted-merchents/pinstripes1.png"),
   Besttop: require("../images/trusted-merchents/bestop-logo.png"),
   Cornor: require("../images/trusted-merchents/corner-bakery.jpg"),

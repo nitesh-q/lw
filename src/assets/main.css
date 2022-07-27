@@ -4199,6 +4199,7 @@ width: 50%;
   height: 100%;
   width: 50%;
   left: 0;
+  z-index: -1;
 }
 .shape_banners .img3 {
   top: 0;
@@ -10190,10 +10191,10 @@ margin-top: 20px;
   transition: all 0.3s ease;
 }
 
-.about_btn:hover {
+/* .about_btn:hover {
   color: #fff;
   background: #5e2ced;
-}
+} */
 
 .about_img {
   padding: 0px;
@@ -25183,7 +25184,7 @@ a .h_head:hover {
 /*============ analytices_list_area css ============*/
 /*=================== security_customers_logo_area css =============*/
 .security_customers_logo_area {
-  padding: 100px 0px;
+  padding: 120px 0px;
 }
 
 .security_customers_logo_area .hosting_title {
