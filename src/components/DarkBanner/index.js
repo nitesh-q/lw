@@ -23,7 +23,7 @@ const DarkBanner = () => {
   return (
     <>
       <section className="fun_fact_area dk_bg_two pb_0 banner_top">
-        <div className="container">
+        <div className="container ccontainer">
           <div className="row flex-row-reverse">
             <div className="col-lg-7 col-md-6">
               <div className="fact_author_img text-right">

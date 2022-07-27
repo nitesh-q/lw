@@ -17,7 +17,7 @@ const AppBanner = ({
 }) => {
   return (
     <section className="app_banner_area banner_top" id="home">
-      <div className="container">
+      <div className="container ccontainer">
         <div className="row">
           <div className="col-lg-5">
             <Reveal bottom cascade>

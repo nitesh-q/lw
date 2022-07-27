@@ -6,7 +6,7 @@ const CouponBanner = ({ config }) => {
   return (
     <section className="support_home_area ">
       <div className="banner_top">
-        <div className="section_container">
+        <div className="section_container ccontainer">
           <div className="row">
             <div className="col-md-12 text-center">
               {config.map((item, index) => {
@@ -52,13 +52,13 @@ const CouponBanner = ({ config }) => {
           <div className="row">
           {config.map((i,index) => {
             return (
-              <div className="col-xl-12">
+              <div className="col-lg-12">
               <div
                 className="support_home_img wow fadeInUp"
                 data-wow-delay="0.9s"
                 key={index}
               >
-                <img className="img img-fluid" src={i.image} alt="" />
+                <img className="img-fluid" src={i.image} alt="" />
               </div>
               </div>
             );

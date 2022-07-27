@@ -28,27 +28,19 @@ width: 100 !important;
         }
 }
 @media (min-width: 1920px) { 
-     /* .ccontainer {
-    max-width: 1800px; */
-  /* } */
-  .img_width_950{
-    max-width: 950px !important;
+     .ccontainer {
+    max-width: 1800px; 
+   }
+  .img_width{
+    max-width: 1080px !important;
   }
-  .app_screenshot_area .app_screenshot_slider{
-    width: 950px;
-    height: 650px;
-  }
-  .app_screenshot_area .app_screenshot_slider .item .screenshot_img img {
-    /* max-width: 100%; */
-    width: 900px;
-    height: 650px;
-  }
+  
   
     .app_hero_banner_content h2{
         color: #fff;
         font-family: "Poppins",sans-serif;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 55px;
         margin-bottom: 25px;
       }
       .seo_features_content h2 {
@@ -84,7 +76,7 @@ width: 100 !important;
         font-family: Poppins,sans-serif;
         font-weight: 700;
         margin-bottom: 25px;
-        font-size: 40px;
+        font-size: 55px;
         color: #fff;
     }
     .n_hero_banner_area .img {
@@ -96,6 +88,9 @@ width: 100 !important;
     .support_home_area h2 span {
         font-size: 55px;
     }
+    .support_home_img img {
+        max-width: 100%;
+      }
  }
 @media(max-width:1650px){
     .about_content{
@@ -1333,7 +1328,7 @@ width: 100 !important;
         right: 0;
     }
     .support_home_img img{
-        max-width: 100%;
+        /* max-width: 100%; */
     }
     .navbar .offcanfas_menu > .nav-item + .nav-item{
         margin-left: 0;

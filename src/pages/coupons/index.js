@@ -59,7 +59,7 @@ const Coupons = () => {
       <CouponBanner config={BANNERS_CONFIG.COUPONS} />
 
       <Header
-        className={"bg_white mt_220"}
+        className={"bg_white mt_220 "}
         title={"Key features."}
         description={"All your gift card needs, covered"}
       />

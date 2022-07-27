@@ -61,36 +61,36 @@ const REFERRAL_FEATURES = [
   {
     rowClass: "row flex-row-reverse",
     aClass: "pr_70 pl_70",
-    fimage: Icons.Work1.default,
+    fImage: Icons.Work1.default,
     iImg: Icons.icon01.default,
-    ftitle: "Customize Referral Widget & Web page",
+    fTitle: "Customize Referral Widget & Web page",
     descriptions:
       "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
   },
   {
     rowClass: "row agency_featured_item_two",
     aClass: "pl_100",
-    fimage: Icons.Work1.default,
+    fImage: Icons.Work1.default,
     iImg: Icons.icon02.default,
-    ftitle: "Create Social Sharing & Referral link",
+    fTitle: "Create Social Sharing & Referral link",
     descriptions:
       "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
   },
   {
     rowClass: "row flex-row-reverse",
     aClass: "pr_70 pl_70",
-    fimage: Icons.Work1.default,
+    fImage: Icons.Work1.default,
     iImg: Icons.icon03.default,
-    ftitle: "Reward your customers the way they want",
+    fTitle: "Reward your customers the way they want",
     descriptions:
       "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
   },
   {
     rowClass: "row agency_featured_item_two",
     aClass: "pl_100",
-    fimage: Icons.Work1.default,
+    fImage: Icons.Work1.default,
     iImg: Icons.icon04.default,
-    ftitle: "Promote",
+    fTitle: "Promote",
     descriptions: "Send announcement Email or SMS Text to your Customer",
   },
 ];

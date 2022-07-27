@@ -68,25 +68,25 @@ const AUTOMATION_WORK_FEATURES = [
   {
     rowClass: "row flex-row-reverse",
     aClass: "pr_70 pl_70",
-    fimage: Icons.Work1.default,
+    fImage: Icons.Work1.default,
     iImg: Icons.icon01.default,
-    ftitle: "Set up Trigger",
+    fTitle: "Set up Trigger",
     descriptions:
       "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
   },
   {
     rowClass: "row agency_featured_item_two",
     aClass: "pl_100",
-    fimage: Icons.CustomCoupon.default,
+    fImage: Icons.CustomCoupon.default,
     iImg: Icons.icon02.default,
-    ftitle: "Logic Conditions",
+    fTitle: "Logic Conditions",
     descriptions:
       "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
   },
   {
     rowClass: "row flex-row-reverse",
     aClass: "pr_70 pl_70",
-    fimage: Icons.RewardCustomer.default,
+    fImage: Icons.RewardCustomer.default,
     iImg: Icons.icon03.default,
     ftitle: "Execute Action",
     descriptions:
