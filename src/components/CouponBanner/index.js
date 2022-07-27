@@ -58,7 +58,7 @@ const CouponBanner = ({ config }) => {
                 data-wow-delay="0.9s"
                 key={index}
               >
-                <img className="img-fluid" src={i.image} alt="" />
+                <img className="img img-fluid" src={i.image} alt="" />
               </div>
               </div>
             );
