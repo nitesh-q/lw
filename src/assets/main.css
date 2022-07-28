@@ -143,6 +143,23 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 
+/* @media (min-width: 1601px) and (max-width: 1800px){
+  .container-xl{
+    max-width: 1460px;
+  }
+}
+@media (min-width: 1800px) and (max-width: 1920px){
+  .container-xl{
+    max-width: 1616px;
+  }
+}
+@media (min-width: 1920px) {
+  .container-xl{
+    max-width: 1800px;
+  }
+} */
+
+
 .container.custom_container {
   max-width: 1520px;
 }
@@ -26913,7 +26930,7 @@ max-width: 580px;
   margin-top: 15px;
   color: #677294;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: .18px;
   margin-bottom: 0px;

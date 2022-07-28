@@ -41,7 +41,7 @@ const BrandModal =({toggle ,showModal}) =>{
                       <img src={i.icon} />
                       <button>Connect</button>
                     </div>
-                    <p>{i.desc}.</p>
+                    <p>{i.desc}</p>
                   </div>
                 );
               })}

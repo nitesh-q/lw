@@ -34,7 +34,7 @@ const DigitalBanner = ({
     //   <div className="container">
     <section className="seo_features_one bg_color sec_pad banner_top">
      
-    <div className="container-xl container">
+    <div className="container ccontainer">
         <div className="row">
           <div className="col-lg-6 col-xl-5 mt_20">
             <Reveal bottom cascade>
