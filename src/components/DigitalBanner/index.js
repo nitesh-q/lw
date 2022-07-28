@@ -1,7 +1,7 @@
 import React from "react";
 import Reveal from "react-reveal";
 import Icons from "../../shared/assets";
-import StartedFreeFrom from "../StartedFreeForm";
+import StartedFreeFrom from "../StartedFreeButton";
 import CTAService from "../Services/CTAService";
 import Slider from "react-slick";
 import SupportedBrand from "../SupportedBrand";
@@ -34,7 +34,7 @@ const DigitalBanner = ({
     //   <div className="container">
     <section className="seo_features_one bg_color sec_pad banner_top">
      
-    <div className="container ccontainer">
+    <div className="container-xl container">
         <div className="row">
           <div className="col-lg-6 col-xl-5 mt_20">
             <Reveal bottom cascade>

@@ -9,7 +9,7 @@ export { default as TryAction } from "./TryAction";
 export { default as TrustedMerchants } from "./TrustedMerchants";
 export { default as TrustedMerchants_1 } from "./TrustedMerchants_1";
 export { default as SupportedBrand } from "./SupportedBrand";
-export { default as StartedFreeForm } from "./StartedFreeForm";
+export { default as StartedFreeButton } from "./StartedFreeButton";
 export { default as Features } from "./Features";
 export { default as Header } from "./Common/Header";
 export { default as TabComponent } from "./TabComponent";

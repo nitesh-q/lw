@@ -5,6 +5,7 @@ import Banner3 from "../../images/loyalty/banner3.svg";
 import Banner4 from "../../images/loyalty/banner3(1).svg";
 import CTAService from "../Services/CTAService";
 import SupportedBrand from "../SupportedBrand";
+import StartedFreeButton from "../StartedFreeButton";
 
 const LoyaltyBanner = () => {
   return (
@@ -39,10 +40,8 @@ const LoyaltyBanner = () => {
                 <p data-wow-delay="0.3s">
                   Growth is good, but retention is forever
                 </p>
-                <div className="action_btn d-flex align-items-center mt_60">
-                  <a href=".#" className="btn_hover hero_banner_btn">
-                    Get Started for Free
-                  </a>
+                <div className="col-lg-12">
+                  <StartedFreeButton btnClass={"bg_white t_color1"} />
                 </div>
                 <CTAService allService={false} />
                 <SupportedBrand

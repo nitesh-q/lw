@@ -529,6 +529,9 @@ height: 30px;
 .h_400{
   height: 400px;
 }
+.w_60{
+  width: 60px !important;
+}
 .w_98{
   width: 98%;
 }
@@ -1159,6 +1162,9 @@ color: #51fe23;
 /*====================================================*/
 /*====================================================*/
 /*============== header_area css ==============*/
+.sticky-inner-wrapper {
+  z-index: 999 !important;
+}
 .header_area {
   position: fixed;
   width: 100%;
@@ -26856,8 +26862,68 @@ a .h_head:hover {
 
 
 /*====================================================*/
-
-
+.modal-dialog{
+margin: 5rem auto;
+max-width: 580px;
+}
+.modal-header{
+  border: 0px;
+}
+.modal .card{
+  border: 0px;
+}
+.brands-modal h5 {
+ text-align: center;
+ margin-bottom: 20px;
+}
+.brands-modal .modal_items{
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.brands-modal .modal_items .logo_section{
+  display: flex;
+  justify-content: space-between;
+}
+.modal_items img{
+  width: 100px;
+  object-fit: contain;
+}
+.modal_items button{
+    -webkit-box-shadow: none;
+   
+    border-color: #7444FD;
+  
+    white-space: nowrap;
+    font: 500 14px/30px "Poppins";
+    color: #7444FD;
+    border: 1px solid #7444FD;
+    border-radius: 4px;
+    background-color: #fff  ;
+    padding: 0px 15px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    transition-property: color;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    text-align: center;
+}
+.modal_items p{
+  margin-top: 15px;
+  color: #677294;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .18px;
+  margin-bottom: 0px;
+}
+.brands-modal .footer_button{
+  align-items: end;
+  justify-content: end;
+  display: flex;
+  margin-top: 10px;
+}
 /*====================================================*/
 
 /*# sourceMappingURL=style.css.map */

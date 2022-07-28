@@ -1,7 +1,6 @@
 import React from "react";
-import { SupportedBrand, startedFreeForm } from "../../components";
+import { SupportedBrand, StartedFreeButton} from "../../components";
 import { Reveal } from "react-reveal";
-import StartedFreeForm from "../StartedFreeForm";
 import CTAService from "../Services/CTAService";
 
 const Banner = ({
@@ -50,7 +49,7 @@ const Banner = ({
                 })}
 
                 <div className="col-lg-9">
-                  <StartedFreeForm />
+                  <StartedFreeButton />
                 </div>
                 <CTAService allService={allService} />
                 <SupportedBrand pClass={"partner_white_logo_area_four"} />

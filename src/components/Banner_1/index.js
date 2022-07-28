@@ -1,13 +1,12 @@
 import React from "react";
-import { SupportedBrand, startedFreeForm } from "../../components";
+import { SupportedBrand, StartedFreeButton } from "../../components";
 import { Reveal } from "react-reveal";
-import StartedFreeForm from "../StartedFreeForm";
 import CTAService from "../Services/CTAService";
 
 const Banner_1 = ({
   config,
   supportedBrand,
-  startedFreeForm,
+  StartedFree,
   titleClass,
   allService,
   mClass,
@@ -50,26 +49,7 @@ const Banner_1 = ({
                 })}
 
                 <div className="col-lg-9">
-                  {startedFreeForm ? (
-                    <StartedFreeForm />
-                  ) : (
-                    <div className="action_btn d-flex align-items-center mt_60">
-                      <a
-                        href="/#"
-                        className="btn btn_get btn_get_two fadeInLeft"
-                        data-wow-delay="0.5s"
-                      >
-                        Get Started for Free
-                      </a>
-                      <a
-                        href="/#"
-                        className="agency_banner_btn_two wow fadeInLeft"
-                        data-wow-delay="0.7s"
-                      >
-                        Learn more
-                      </a>
-                    </div>
-                  )}
+                    <StartedFreeButton />
                 </div>
               </div>
             </Reveal>

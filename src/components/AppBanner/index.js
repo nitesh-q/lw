@@ -2,7 +2,7 @@ import React from "react";
 import Reveal from "react-reveal";
 import Icons from "../../shared/assets";
 import { BANNERS_CONFIG } from "../../config";
-import StartedFreeFrom from "../StartedFreeForm";
+import StartedFreeButton from "../StartedFreeButton";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import CTAService from "../Services/CTAService";
 import SupportedBrand from "../SupportedBrand";
@@ -41,7 +41,7 @@ const AppBanner = ({
                   );
                 })}
                 <div className="col-lg-12">
-                  <StartedFreeFrom btnClass={"bg_white t_color1"} />
+                  <StartedFreeButton btnClass={"bg_white t_color1"} />
                 </div>
                 <CTAService allService={allService} />
                  <SupportedBrand
