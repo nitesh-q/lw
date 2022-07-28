@@ -22,7 +22,7 @@ const Testimonial = ({ sliderData, bgColor, title, subTitle }) => {
   return (
     <section className={`agency_testimonial_area sec_pad mb_70 ${bgColor}`}>
       <div className="container">
-        <h2 className="f_size_30 f_600 t_color3 l_height40 text-center ">
+        <h2 >
           Testimonial
         </h2>
         <p className="text-center" >Hear from our Clients</p>

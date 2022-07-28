@@ -22,7 +22,7 @@ const Footer = ({ config }) => {
   return (
     <footer className="new_footer_area bg_color">
       <div className="new_footer_top">
-        <div className="container">
+        <div className="container-sm container-xl">
           <div className="row">
             {config.COMPANY_WIDGET.map((widget, index) => {
               return (

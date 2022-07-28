@@ -5,14 +5,14 @@ const TabComponent = ({ config, pClass, rClass, mClass,icon }) => {
   const [activeTab, setActiveTab] = useState(config.PANNEL_DATA[0].id);
   return (
     <section className={`developer_product_area sec_pad ${pClass} ${ mClass}`}>
-      <div className="container">
+      <div className="container-sm container-xl">
         {config.HEAD.map((item, index) => (
-          <h2
+          <h1
             key={index}
-            className="f_size_30 f_600 t_color3 l_height40 text-center mb_50 l_sapcing1"
+            className=""
           >
             {item.Title}
-          </h2>
+          </h1>
         ))}
 
         <div className="row">

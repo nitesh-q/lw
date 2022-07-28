@@ -19,7 +19,7 @@ const Layout = ({ children, slogo, mClass, nClass }) => {
   return (
     <div className="body_wrapper">
       <Navbar
-        cClass="ccontainer p0"
+        cClass="container-xl p0"
         hbtnClass="new_btn"
         mClass={mClass}
         slogo={slogo}

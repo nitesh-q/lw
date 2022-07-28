@@ -44,7 +44,7 @@ const integrations = [
 const IntegrationList = () => {
   return (
     <section className="security_integration_area">
-      <div className="container">
+      <div className="container-sm container-xl">
         <div className="hosting_title  text-center">
           <h2 className="wow fadeInUp">Integrations</h2>
           <p>Empower Your Brick & Click Store With Powerful Integrations</p>

@@ -7,7 +7,7 @@ import Icons from "../../shared/assets";
 const TabPannel = ({ item, rClass,icon }) => {
   return (
     <section className="customer_engagement_one d-flex-row justify-content-center align-items-start">
-      <div className="container">
+      <div className="container-sm container-xl">
         <div className="row  flex-row-reverse ">
           <div className={`col-lg-7 `}>
             <div className="customer_engagement_img">

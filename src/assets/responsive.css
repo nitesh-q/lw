@@ -28,14 +28,22 @@ width: 100 !important;
         }
 }
 @media (min-width: 1920px) { 
-     .ccontainer {
-    max-width: 1800px; 
-   }
-  .img_width{
-    max-width: 1080px !important;
-  }
+    .ccontainer {
+        max-width: 1800px;
+    }
+   .img_width{
+        max-width: 1080px !important;
+    }
   
-  
+    .seo_sec_title h2 {
+        font-size: 43px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        line-height: 40px;
+        color: #222d39;
+        letter-spacing: 0.18px;
+        margin-bottom: 0px;
+    }
     .app_hero_banner_content h2{
         color: #fff;
         font-family: "Poppins",sans-serif;
@@ -90,7 +98,48 @@ width: 100 !important;
     }
     .support_home_img img {
         max-width: 100%;
+    }
+    .developer_product_area h1 {
+        font-size: 43px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        color: #051441;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .erp_action_area h2 {
+        font-size: 43px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        line-height: 40px;
+        color: #222d39;
+        letter-spacing: 0.18px;
+        margin-bottom: 0px;
+    }
+    .agency_testimonial_area h2{
+        font-size: 43px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        line-height: 40px;
+        color: #222d39;
+        letter-spacing: 0.18px;
+        margin-bottom: 0px;
+        text-align: center;
       }
+      .hosting_title h2 {
+        font-size: 43px;
+        line-height: 40px;
+        font-weight: 600;
+        font-family: 'Poppins',sans-serif;
+        color: #222d39;
+        margin-bottom: 15px;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
  }
 @media(max-width:1650px){
     .about_content{

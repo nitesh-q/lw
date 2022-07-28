@@ -71,7 +71,7 @@ const CaseStudiesSlider = () => {
   return (
     <React.Fragment>
       <section className="case_studies_area sec_pad">
-        <div className="container">
+        <div className="container-sm container-xl">
           <Title
             title={"Learn How Customers are using Gift Cards"}
             sClass="sec_title text-center mb_70"

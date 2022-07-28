@@ -143,7 +143,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 
-/* @media (min-width: 1601px) and (max-width: 1800px){
+@media (min-width: 1601px) and (max-width: 1800px){
   .container-xl{
     max-width: 1460px;
   }
@@ -157,7 +157,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   .container-xl{
     max-width: 1800px;
   }
-} */
+}
 
 
 .container.custom_container {
@@ -431,6 +431,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .p_0{
   padding: 0px !important;
+}
+.p_40{
+  padding: 40px !important;
 }
 
 .pl_1{
@@ -8189,7 +8192,18 @@ color: #51fe23;
 /*============== developer_product_area css ================*/
 .developer_product_area {
   background: #ffffff;
-  padding: 125px;
+  padding: 120px;
+}
+.developer_product_area h1 {
+  font-size: 30px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #051441;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .developer_product_content {
@@ -8201,17 +8215,7 @@ color: #51fe23;
 
 }
 
-.developer_product_area h1 {
-  font-size: 40px;
-  font-family: 'Poppins';
-  font-weight: 600;
-  color: #282835;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 
-}
 .developer_product_contant h2 {
   font-size: 30px;
   font-family: 'Poppins';
@@ -10335,7 +10339,16 @@ margin-top: 20px;
 .agency_testimonial_info {
   position: relative;
 }
-
+.agency_testimonial_area h2{
+  font-size: 30px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        line-height: 40px;
+        color: #222d39;
+        letter-spacing: 0.18px;
+        margin-bottom: 0px;
+        text-align: center;
+}
 .agency_testimonial_info .testimonial_slider {
   max-width: 700px;
   border-radius: 6px;
@@ -10505,15 +10518,15 @@ margin-top: 20px;
 }
 
 .partner_info .logo_item {
-  width: calc(100% / 5);
+  /* width: calc(100% / 5); */
   margin-bottom: 60px;
   /* margin-right: 10px; */
 }
 
 .partner_info .logo_item img {
   max-width: 100%;
- width: 150px;
- height: 90px;
+ width: 100%;
+ height: auto;
  object-fit: contain;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
