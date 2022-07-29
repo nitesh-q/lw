@@ -175,7 +175,7 @@ class IntegrationGrid extends Component {
     render() {
       return (
         <section className="portfolio_area sec_pad ">
-          <div className="container">
+          <div className="container-sm container-xl">
             <div id="portfolio_filter" className="portfolio_filter mb_50">
               {Object.keys(Head).map((key, index) => (
                 <div
@@ -197,7 +197,7 @@ class IntegrationGrid extends Component {
                 return (
                 
                     <IntegrationGridCard
-                      colClass={`col-lg-4 col-sm-6 ${i.type} `}
+                      colClass={`col-lg-4 col-sm-6 col-xl-3 ${i.type} `}
                       pImg={i.image}
                       title={i.title}
                       desc={i.desc}

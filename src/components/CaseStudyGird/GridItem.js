@@ -2,7 +2,7 @@ import React from "react";
 import { navigate } from "gatsby";
 const  GridItem =({type, title, description, image })=> {
     return (
-      <div className="col-lg-4 col-sm-6 ">
+      <div className="col-lg-4 col-sm-6 col-xl-3 ">
         <a onClick={()=>navigate("/case-study-details")} >
           <div className="Case_studies_list_item Case_studies_list_item_two">
             <img className="img-fluid" src={image} alt="" />
