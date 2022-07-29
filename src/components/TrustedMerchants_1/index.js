@@ -6,10 +6,10 @@ import { MERCHANTS_CONFIG } from "../../config";
 const TrustedMerchants_1 = () => {
   return (
     <section className="security_customers_logo_area">
-      <div className="container">
+      <div className="container-sm container-xl">
         <div className="hosting_title analytices_title text-center">
           <h2 className="wow fadeInUp">
-            <span>Our Clients. </span>World-class protection
+            <span> </span>Our Clients
           </h2>
           {/* <p className="wow fadeInUp" data-wow-delay="0.3s">
             Naff pukka zonked squiffy quaint knees up cup of tea Oxford the BBC

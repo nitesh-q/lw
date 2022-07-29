@@ -127,14 +127,6 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     max-width: 1200px;
   }
 }
-@media (min-width: 2000px) {
-  /* .container {
-    max-width: 1500px;
-  } */
-  .ccontainer{
-    max-width: 1200px;
-  }
-}
 
 @media (max-width: 767px) {
   .container {
@@ -142,6 +134,14 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   }
 }
 
+@media (min-width: 1400px) {
+  /* .container {
+    max-width: 1500px;
+  } */
+  .container-xl{
+    max-width: 1200px;
+  }
+}
 
 @media (min-width: 1601px) and (max-width: 1800px){
   .container-xl{
@@ -26977,8 +26977,8 @@ max-width: 580px;
   margin-bottom: 0px;
 }
 .brands-modal .footer_button{
-  align-items: end;
-  justify-content: end;
+  align-items: center;
+  justify-content: center;
   display: flex;
   margin-top: 10px;
 }

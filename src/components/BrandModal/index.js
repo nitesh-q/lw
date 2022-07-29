@@ -29,7 +29,7 @@ const BrandModal =({toggle ,showModal}) =>{
         toggle={toggle}
         className="Modal"
       >
-        <ModalHeader toggle={toggle}></ModalHeader>
+        {/* <ModalHeader toggle={toggle}></ModalHeader> */}
         <Card>
           <CardBody>
             <div className="brands-modal">
@@ -57,7 +57,7 @@ const BrandModal =({toggle ,showModal}) =>{
                 </p>
               </div>
               <div className="footer_button">
-                <button className={`btn btn_get btn_get_two`}>Connect</button>
+                <button onClick={toggle} className={`btn btn_get btn_get_two`} >Close</button>
               </div>
             </div>
           </CardBody>

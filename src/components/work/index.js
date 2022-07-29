@@ -6,7 +6,7 @@ import Title from "../Common/Title";
 const Work = ({config}) => {
   return (
     <section className="support_work_area sec_pad">
-      <div className="container">
+      <div className="container-sm container-xl">
         <Title
           sClass="sec_title text-center mb_70"
           title="How its work"
