@@ -1,25 +1,9 @@
 import React, { Component } from "react";
 import Title from "../Common/Title";
 
-const AUTOMATION_WORK = [
-  {
-    title: "Set up Trigger",
-    subTitle: "TRIGGE",
-    desc: "When order status is updated to paid",
-  },
-  {
-    title: "Logic Conditions",
-    subTitle: "CONDITIONS ",
-    desc: "If total value of order is greater than $50",
-  },
-  {
-    title: "Execute Action",
-    subTitle: "ACTION ",
-    desc: "Send a text/email message with a discount gift card",
-  },
-];
 
-const Work = () => {
+
+const Work = ({config}) => {
   return (
     <section className="support_work_area sec_pad">
       <div className="container">
@@ -30,11 +14,11 @@ const Work = () => {
           titleP=""
         />
         <div className="work_content ">
+          <div className="workflow_dot_line "></div>
           <div className="row">
-            
-              {AUTOMATION_WORK.map((i,index) => {
-                return (
-                    <div className="col-lg-4">
+            {config.map((i, index) => {
+              return (
+                <div className="col-lg-4">
                   <div className="work_item">
                     <h5>{i.title}</h5>
                     <p>{i.subTitle} </p>
@@ -42,9 +26,9 @@ const Work = () => {
                       <li>{i.desc}</li>
                     </ul>
                   </div>
-                  </div>
-                );
-              })}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

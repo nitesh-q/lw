@@ -19,6 +19,7 @@ import {
   BANNERS_CONFIG,
   GIFTCARD_TABS_CONFIG,
 } from "../../config";
+import HostingBanner from "../../components/HostingBanner";
 
 const GIFTCARD = [
   { desc: "100’s of beautiful Gift Cards based on themes" },
@@ -59,8 +60,6 @@ const GIFTCARD_FEATURES = [
     list: GIFTCARD,
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pl_70",
     img1: Icons.Sale.default,
     title: "Point of Sale",
     subTitle: "",
@@ -68,8 +67,6 @@ const GIFTCARD_FEATURES = [
     list: SALE,
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pl_70",
     rowClass: "flex-row-reverse",
     img1: Icons.Report.default,
     title: "Reporting & Analytics",
@@ -78,8 +75,6 @@ const GIFTCARD_FEATURES = [
     list: REPORT,
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pr_70",
     img1: Icons.Schedule.default,
     title: "Schedule Delivery & Gift card for Out of Stock inventory",
     subTitle: "",
@@ -91,6 +86,7 @@ const GIFTCARD_FEATURES = [
 const GiftCard = () => {
   return (
     <Layout>
+
       <Banner
         config={BANNERS_CONFIG.GIFTCARD}
         titleClass={`bannerTitle`}

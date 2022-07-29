@@ -44,10 +44,10 @@ export const BANNERS_CONFIG = {
   ],
   AUTOMATION: [
     {
-      title: "Powerful marketing",
-      subTitle: "automation for eCommerce",
+      title: "Powerful marketing automation for eCommerce",
+      subTitle: "",
       image:Icons.AutomationBanner.default,
-      description: `Prebuilt Promotional workflows you need to grow store and make more money`,
+      description: `Create and customize gift cards, store credit, and coupon marketing automation so that you can engage customers at every stage of their journey.`,
     }
   ],
  DISCOUNTS: [

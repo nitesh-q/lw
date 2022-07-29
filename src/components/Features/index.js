@@ -15,8 +15,8 @@ const Features = ({
 }) => {
   return (
     <section className={`chat_features_area ${ptClass}`}>
-      <div className=" container-sm container-xl">
-        <div className={`row align-items-center ${rowClass}`}>
+      <div className=" container container-fluid">
+        <div className={`row  ${rowClass}`}>
           <div className={`col-lg-7`}>
             <div className="chat_features_img chat_features_img_one">
               <Reveal effect="fadeInRight" duration={1000}>

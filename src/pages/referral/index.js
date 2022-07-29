@@ -19,6 +19,7 @@ import {
   BANNERS_CONFIG,
   REFERRAL_TAB_CONFIG,
 } from "../../config";
+import PaymentBanner from "../../components/PaymentBanner";
 
 // const REFERRAL_FEATURES = [
 //   {
@@ -97,22 +98,17 @@ const REFERRAL_FEATURES = [
 
 const Referral = () => {
   return (
-    <Layout>
-      <Banner
+    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
+      <PaymentBanner />
+      {/* <Banner
         config={BANNERS_CONFIG.REFERRAL}
         titleClass={`bannerTitle`}
         sllService={true}
         mClass={"mb_90"}
         wClass={"mw_125"}
-      />
+      /> */}
       {/* <TrustedMerchants /> */}
-      <Partner pClass={"sec_pad pb_0"} />
-
-      <Header
-        className={"bg_white mt_125"}
-        title={"Key features."}
-        description={"All your gift card needs, covered"}
-      />
+      <Partner pClass={"sec_pad "} />
       <WorkFeatures
         aClass="agency_featured_area_two"
         data={REFERRAL_FEATURES}

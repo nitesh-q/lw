@@ -16,7 +16,7 @@ const AppBanner = ({
   wClass,
 }) => {
   return (
-    <section className="app_banner_area banner_top" id="home">
+    <section className="app_banner_area banner_top pb_0" id="home">
       <div className="container ccontainer">
         <div className="row">
           <div className="col-lg-5">
@@ -26,7 +26,7 @@ const AppBanner = ({
                   return (
                     <>
                       <h2
-                        className="f_p f_700 f_size_50 w_color mb_20 wow fadeInLeft"
+                        className=" wow fadeInLeft"
                         data-wow-delay="0.2s"
                       >
                         {i.title}
