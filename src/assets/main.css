@@ -3853,7 +3853,7 @@ color: #fff;
 
 .app_banner_contentmt h2 {
   font-size: 32px;
-  /* line-height: 40px; */
+  line-height: 40px;
   color: #fff;
   font-weight: bold;
   margin-bottom: 25px;
@@ -26944,3 +26944,20 @@ max-width: 580px;
 /*====================================================*/
 
 /*# sourceMappingURL=style.css.map */
+
+
+.workflowsimulation-module {
+    -webkit-animation: workflowsimulation-module--border-dance--U\+BVM 10s linear infinite;
+    animation: workflowsimulation-module--border-dance--U\+BVM 10s linear infinite;
+    background: linear-gradient(90deg,rgba(43,46,50,.5) 50%,transparent 0),linear-gradient(90deg,rgba(43,46,50,.5) 50%,transparent 0),linear-gradient(0deg,rgba(43,46,50,.5) 50%,transparent 0),linear-gradient(0deg,rgba(43,46,50,.5) 50%,transparent 0);
+    background-position: 0 0,200px 100px,0 100px,200px 0;
+    background-repeat: repeat-x,repeat-x,repeat-y,repeat-y;
+    background-size: 15px 4px,15px 4px,4px 15px,4px 15px;
+    bottom: 0;
+    height: 2px;
+    left: 5px;
+    margin: auto;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
