@@ -12,6 +12,7 @@ import {
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
 import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
+import CrmBanner from "../../components/CrmBanner";
 
 const REFERRAL_FEATURES = [
   {
@@ -43,14 +44,16 @@ const REFERRAL_FEATURES = [
 
 const StoreCredit = () => {
   return (
-    <Layout>
-      <Banner
+    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
+      {/* <Banner
         config={BANNERS_CONFIG.DISCOUNTS}
         titleClass={`bannerTitle`}
         sllService={true}
         mClass={"mb_90"}
         wClass={"mw_125"}
-      />
+      /> */}
+      <CrmBanner />
+
       <Partner pClass={"sec_pad pb_0"} />
       <Header
         className={"bg_white mt_125"}

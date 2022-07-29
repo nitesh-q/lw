@@ -33,3 +33,5 @@ export { default as CTA_1 } from "./CTA_1";
 export { default as CaseStudiesSlider } from "./CaseStudiesSlider";
 export { default as VerticallyTabComponent } from "./VerticallyTabComponent";
 export { default as WorkFeatures } from "./WorkFeature";
+export { default as Work } from "./Work";
+

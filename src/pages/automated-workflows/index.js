@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   IntegrationList,
   Testimonial,
@@ -7,11 +7,13 @@ import {
   Services,
   Partner,
   AppBanner,
+  WorkFeatures,
+  Header,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
 import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
-import WorkFeatures from "../../components/WorkFeature";
+import Work from "../../components/work";
 
 const BOOST_Loyalty = [
   {
@@ -30,9 +32,6 @@ const CENTRALIZE_DATA = [
 
 const AUTOMATION_FEATURES = [
   {
-    // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.Centralize.default,
     title: "Centralize Data Platform",
     subTitle: "",
@@ -40,11 +39,7 @@ const AUTOMATION_FEATURES = [
     list: CENTRALIZE_DATA,
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pr_70",
     rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.Workflow.default,
     title: "Pre-built Workflow Template",
     subTitle: "",
@@ -52,10 +47,6 @@ const AUTOMATION_FEATURES = [
     list: [],
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
     img1: Icons.AutomationLoyalty.default,
     title: "Boost Loyalty",
     subTitle: "",
@@ -64,50 +55,70 @@ const AUTOMATION_FEATURES = [
   },
 ];
 
-const AUTOMATION_WORK_FEATURES = [
+// const AUTOMATION_WORK_FEATURES = [
+//   {
+//     rowClass: "row flex-row-reverse",
+//     aClass: "pr_70 pl_70",
+//     fImage: Icons.Work1.default,
+//     iImg: Icons.icon01.default,
+//     fTitle: "Set up Trigger",
+//     descriptions:
+//       "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
+//   },
+//   {
+//     rowClass: "row agency_featured_item_two",
+//     aClass: "pl_100",
+//     fImage: Icons.CustomCoupon.default,
+//     iImg: Icons.icon02.default,
+//     fTitle: "Logic Conditions",
+//     descriptions:
+//       "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
+//   },
+//   {
+//     rowClass: "row flex-row-reverse",
+//     aClass: "pr_70 pl_70",
+//     fImage: Icons.RewardCustomer.default,
+//     iImg: Icons.icon03.default,
+//     ftitle: "Execute Action",
+//     descriptions:
+//       "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
+//   },
+// ];
+
+const AUTOMATION_WORK = [
   {
-    rowClass: "row flex-row-reverse",
-    aClass: "pr_70 pl_70",
-    fImage: Icons.Work1.default,
-    iImg: Icons.icon01.default,
-    fTitle: "Set up Trigger",
-    descriptions:
-      "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
+    title: "Set up Trigger",
+    subTitle: "TRIGGE",
+    desc: "When order status is updated to paid",
   },
   {
-    rowClass: "row agency_featured_item_two",
-    aClass: "pl_100",
-    fImage: Icons.CustomCoupon.default,
-    iImg: Icons.icon02.default,
-    fTitle: "Logic Conditions",
-    descriptions:
-      "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
+    title: "Logic Conditions",
+    subTitle: "CONDITIONS ",
+    desc: "If total value of order is greater than $50",
   },
   {
-    rowClass: "row flex-row-reverse",
-    aClass: "pr_70 pl_70",
-    fImage: Icons.RewardCustomer.default,
-    iImg: Icons.icon03.default,
-    ftitle: "Execute Action",
-    descriptions:
-      "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
+    title: "Execute Action",
+    subTitle: "ACTION ",
+    desc: "Send a text/email message with a discount gift card",
   },
 ];
 
 const Automation = () => {
+ 
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <AppBanner allService={false} config={BANNERS_CONFIG.AUTOMATION} />
 
-      <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} />
+      <Partner pClass={"sec_pad pb_0"} oClass={"logo_item_opacity"} />
+      <Work config={AUTOMATION_WORK} />
 
-      <WorkFeatures
+      {/* <WorkFeatures
         aClass="agency_featured_area_two"
         data={AUTOMATION_WORK_FEATURES}
         title="How it works"
         dividerImg={Icons.dot.default}
-      />
-
+      /> */}
+      <Header className={"bg_white"} title={"features"} description="" />
       {AUTOMATION_FEATURES.map((card, index) => (
         <Features ptClass="pt_0" {...{ ...card }} url="#" key={index} />
       ))}
@@ -122,6 +133,7 @@ const Automation = () => {
       <TryAction pClass={"pt_50"} />
       <Services />
     </Layout>
+
   );
 };
 export default Automation;
