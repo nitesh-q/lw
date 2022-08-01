@@ -1,9 +1,45 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import Title from "../Common/Title";
 
+const Work = ({ config}) => {
+  const [progressIndex, setProgressIndex] = useState(-1);
+  const [doneIndexes, setDoneIndexes] = useState([]);
 
+  const updateProgressIndex = () => {
+    setProgressIndex((p) => {
+      if (p >= config.length) {
+        return -1;
+      }
+      return p + 1;
+    });
+  };
 
-const Work = ({config}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      updateProgressIndex();
+    }, 2000);
+  }, [false]);
+
+  useEffect(() => {
+    if (progressIndex > -1) {
+      setTimeout(() => {
+        updateProgressIndex();
+        setDoneIndexes((p) => {
+          return [...p, progressIndex];
+        });
+      }, 2000);
+    }
+  }, [progressIndex]);
+  useEffect(() => {
+    if (progressIndex === config.length) {
+      setTimeout(() => {
+        setProgressIndex(-1);
+        setDoneIndexes([]);
+        updateProgressIndex();
+      }, 3000);
+    }
+  }, [doneIndexes]);
+
   return (
     <section className="support_work_area sec_pad">
       <div className="container-sm container-xl">
@@ -17,9 +53,41 @@ const Work = ({config}) => {
           <div className="workflow_dot_line "></div>
           <div className="row">
             {config.map((i, index) => {
+              let className = "default";
+              let SpinnerClass = "spinner_container";
+              if (progressIndex === index) className = "progress";
+              if (doneIndexes.includes(index)) className = "ready";
+              if (className === "default")
+                SpinnerClass = "default_spinner_container";
+              if (className === "ready") SpinnerClass = "spinner_container_";
               return (
                 <div className="col-lg-4">
                   <div className="work_item">
+                    <div className={SpinnerClass}>
+                      <svg
+                        className={className}
+                        id="check"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 100 100"
+                        xmlSpace="preserve"
+                      >
+                        <circle
+                          className="circle"
+                          cx="50"
+                          cy="50"
+                          r="46"
+                          fill="transparent"
+                        />
+                        <polyline
+                          className="tick"
+                          points="25,55 45,70 75,33"
+                          fill="transparent"
+                        />
+                        <div className="sign"></div>
+                      </svg>
+                    </div>
                     <h5>{i.title}</h5>
                     <p>{i.subTitle} </p>
                     <ul className="list-unstyled p_list">

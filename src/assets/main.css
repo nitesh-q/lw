@@ -9592,7 +9592,7 @@ color: #282835;
   border: 1px solid #CFC9FA;
   border-radius: 4px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all 0.2s linear;
   margin-left: 25px;
    margin-right: 25px;
@@ -27027,4 +27027,123 @@ max-width: 580px;
   100% {
     background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
   }
+}
+
+.tick {
+  stroke: #fff;
+  stroke-width: 6;
+  transition: all 1s;
+}
+
+.circle {
+  stroke: #63bc01;
+  stroke-width: 6;
+  transform-origin: 50px 50px 0;
+  transition: all 1s;
+}
+.ready{
+  background-color: #63bc01;
+ border-radius: 50%;
+
+}
+
+.progress {
+ border-radius: 50%;
+ background-color: #7444FD;
+ display: inline;
+}
+.progress .tick {
+  opacity: 0;
+}
+
+.ready .tick {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 8s ease-out forwards;
+}
+
+.progress .circle {
+  stroke: #fff;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 1000;
+  animation: spin 3s linear infinite;
+}
+
+.ready .circle {
+  stroke-dashoffset: 66;
+  stroke: #63bc01;
+}
+.default{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: gray;
+}
+.default .circle{
+ display: none;
+}
+.default .tick{
+  display: none
+ ;
+}
+
+.circle {
+  stroke-dasharray: 500;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg);
+    stroke-dashoffset: 66;
+  } 
+  50% {
+    transform: rotate(540deg);
+    stroke-dashoffset: 314;
+  } 
+  100% {
+    transform: rotate(1080deg);
+    stroke-dashoffset: 66;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#check {
+  width: 25px;
+  height: 25px;
+}
+
+.default_spinner_container{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  background-color: gray;
+  left: 95.5%;
+  top: -11px;
+  }
+.spinner_container_{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+position: absolute;
+z-index: 1;
+background-color: #63bc01;
+left: 95.5%;
+top: -11px;
+}
+.spinner_container{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+position: absolute;
+z-index: 1;
+background-color: #7444FD;
+left: 95.5%;
+top: -11px;
 }

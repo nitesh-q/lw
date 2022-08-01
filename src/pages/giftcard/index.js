@@ -86,6 +86,8 @@ const GIFTCARD_FEATURES = [
 const GiftCard = () => {
   return (
     <Layout>
+    {/* <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu"> */}
+
 
       <Banner
         config={BANNERS_CONFIG.GIFTCARD}
@@ -94,11 +96,12 @@ const GiftCard = () => {
         mClass={"mb_90"}
         wClass={"img_width mw_125"}
       />
+      {/* <HostingBanner /> */}
 
       <TrustedMerchants_1 />
 
       <Header
-        className={"bg_white"}
+        className={"bg_white pt_0"}
         title={"Gift Card & Platform features."}
         description={"All your gift card needs, covered"}
       />

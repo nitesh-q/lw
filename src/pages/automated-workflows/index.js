@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import {
   IntegrationList,
   Testimonial,
@@ -104,13 +104,15 @@ const AUTOMATION_WORK = [
 ];
 
 const Automation = () => {
- 
+
   return (
+    
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <AppBanner allService={false} config={BANNERS_CONFIG.AUTOMATION} />
 
       <Partner pClass={"sec_pad pb_0"} oClass={"logo_item_opacity"} />
       <Work config={AUTOMATION_WORK} />
+     
 
       {/* <WorkFeatures
         aClass="agency_featured_area_two"
@@ -118,7 +120,7 @@ const Automation = () => {
         title="How it works"
         dividerImg={Icons.dot.default}
       /> */}
-      <Header className={"bg_white"} title={"features"} description="" />
+      <Header className={"bg_white"} title={"Features"} description="" />
       {AUTOMATION_FEATURES.map((card, index) => (
         <Features ptClass="pt_0" {...{ ...card }} url="#" key={index} />
       ))}
@@ -133,7 +135,6 @@ const Automation = () => {
       <TryAction pClass={"pt_50"} />
       <Services />
     </Layout>
-
   );
 };
 export default Automation;
