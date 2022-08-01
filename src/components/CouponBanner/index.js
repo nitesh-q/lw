@@ -1,6 +1,7 @@
 import React from "react";
 import SupportedBrand from "../SupportedBrand";
 import image from "../../images/erp-home/erp_dashboard.jpg";
+import StartedFreeButton from "../StartedFreeButton";
 
 const CouponBanner = ({ config }) => {
   return (
@@ -26,26 +27,9 @@ const CouponBanner = ({ config }) => {
                 );
               })}
 
-              <form
-                className="mailchimp wow fadeInUp"
-                data-wow-delay="0.6s"
-                method="post"
-              >
-                <div className="input-group subcribes">
-                  <input
-                    type="text"
-                    name="EMAIL"
-                    className="form-control memail"
-                    placeholder="saasland@gmail.com"
-                  />
-                  <button
-                    className="btn btn_submit f_size_15 f_500"
-                    type="submit"
-                  >
-                    Get Started
-                  </button>
-                </div>
-              </form>
+              
+            <StartedFreeButton className="justify-content-center" />
+
               <SupportedBrand pClass={"pb_0"} />
             </div>
           </div>

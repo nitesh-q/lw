@@ -85,18 +85,18 @@ const GIFTCARD_FEATURES = [
 
 const GiftCard = () => {
   return (
-    <Layout>
-    {/* <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu"> */}
+    // <Layout>
+    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
 
 
-      <Banner
+      {/* <Banner
         config={BANNERS_CONFIG.GIFTCARD}
         titleClass={`bannerTitle`}
         allService={false}
         mClass={"mb_90"}
         wClass={"img_width mw_125"}
-      />
-      {/* <HostingBanner /> */}
+      /> */}
+      <HostingBanner />
 
       <TrustedMerchants_1 />
 

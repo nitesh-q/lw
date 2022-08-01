@@ -14,30 +14,48 @@ import Icons from "../../shared/assets";
 import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
 import CrmBanner from "../../components/CrmBanner";
 
-const REFERRAL_FEATURES = [
+const RETURN_REFUNDS_LIST=[
+  { desc: "Automate store credit for merchandise return using return tools like Novaro etc." },
+  { desc: "Add store credit directly in customer wallet." },
+];
+const TIME_COST_LIST=[
+  { desc: "Save time of your customer support team by automating refunds with 99minds store credit and gift certificates." },
+  { desc: "Consolidates system data with better Returns & Refunds Reports."},
+];
+const REWARDS_LIST=[
+  {desc:"Reward your customers with Store Credit."},
+  {desc:"Convert loyalty points to Store credit and Gift vouchers."}
+
+]
+const STORE_CREDIT_FEATURES = [
   {
-    rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
-    img1: Icons.Work1.default,
-    title: "Online and in-store integrations",
-    desc: "Forget gift cards that work only online or offline. With 99minds, create campaigns that work absolutely everywhere.",
+    img1: Icons.Return_Refund_StoreCredit.default,
+    title: "Returns & Refunds",
+    desc: "",
     subTitle: "",
-    list: [],
+    list: RETURN_REFUNDS_LIST,
   },
   {
-    img1: Icons.CustomCoupon.default,
-    title: "Point of Sale (POS) Agnostic redemption",
-    desc: "Send and redeem physical and eGift cards issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed etc.",
+    rowClass: "flex-row-reverse",
+    img1: Icons.Time_Cost_StoreCredit.default,
+    title: "Save Time and Cost",
+    desc: "",
     subTitle: "",
-    list: [],
+    list: TIME_COST_LIST,
+  },
+  {
+    img1: Icons.Rewards_StoreCredit.default,
+    title: "Rewards",
+    subTitle: "",
+    desc: "",
+    list: REWARDS_LIST,
   },
   {
     rowClass: "flex-row-reverse",
-    img1: Icons.RewardCustomer.default,
-    title: "Multi-Currency Gift Cards",
+    img1: Icons.Promotional_StoreCredit.default,
+    title: "Promotional Store Credit",
+    desc: "Entice customer by assigning time sensitive promotional Store Credit to their Account.",
     subTitle: "",
-    desc: "Track coupon usage using coupons transactions associated with Customer & Order ID",
     list: [],
   },
 ];
@@ -61,7 +79,7 @@ const StoreCredit = () => {
         description={"All your gift card needs, covered"}
       />
 
-      {REFERRAL_FEATURES.map((card) => (
+      {STORE_CREDIT_FEATURES.map((card) => (
         <Features {...{ ...card }} url="#" />
       ))}
 

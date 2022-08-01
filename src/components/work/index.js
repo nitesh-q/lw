@@ -1,10 +1,11 @@
 import React, { Component, useEffect, useState } from "react";
 import Title from "../Common/Title";
 
-const Work = ({ config}) => {
+const Work = ({ config }) => {
   const [progressIndex, setProgressIndex] = useState(-1);
   const [doneIndexes, setDoneIndexes] = useState([]);
 
+  //---update the progress of cricular progress svg----
   const updateProgressIndex = () => {
     setProgressIndex((p) => {
       if (p >= config.length) {
@@ -85,7 +86,7 @@ const Work = ({ config}) => {
                           points="25,55 45,70 75,33"
                           fill="transparent"
                         />
-                        <div className="sign"></div>
+                        <div className="sign">-</div>
                       </svg>
                     </div>
                     <h5>{i.title}</h5>

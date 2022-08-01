@@ -161,6 +161,13 @@ width: 100 !important;
         line-height: 70px;
         font-size: 55px;
     }
+    .hosting_banner_area {
+        min-height: 1050px !important;
+    }
+    .hosting_content h2{
+        font-size: 55px;
+        line-height: 70px;
+    }
  }
 @media(max-width:1650px){
    

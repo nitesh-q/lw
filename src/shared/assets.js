@@ -76,6 +76,13 @@ const Icons = {
   Bulk_Gifcard:require("../images/giftcard/bulk-giftcard.png"),
   Multi_Store:require("../images/giftcard/multi-store.png"),
 
+  
+  //....................StoreCredit Page ......................
+  Return_Refund_StoreCredit: require("../images/store-credit/return-Refund-storecredit.png"),
+  Time_Cost_StoreCredit: require("../images/store-credit/time-cost-storecredit.png"),
+  Rewards_StoreCredit: require("../images/store-credit/rewards-storecredit.png"),
+  Promotional_StoreCredit: require("../images/store-credit/promotional-storecredit.png"),
+
 
 
 

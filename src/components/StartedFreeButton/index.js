@@ -21,11 +21,11 @@ const ICONS = [
     desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
   },
 ];
-const StartedFreeButton = ({ btnClass }) => {
+const StartedFreeButton = ({ btnClass,className="" }) => {
   const [showModal, setShowModal] = useState(false);
   const toggle = () => setShowModal(!showModal);
   return (
-    <div className="row w-100 service">
+    <div className={`row w-100 service ${className}`}>
       {/* <div className="col-lg-8">
       <form action="#" className="contact_form_box" method="post">
         <div className="form-group text_box">

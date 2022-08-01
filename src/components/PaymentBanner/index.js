@@ -20,14 +20,11 @@ class PaymentBanner extends Component {
                   data-wow-delay="0.4s"
                 >
                   <h2 className="">
-                    Referral Programs <br />
-                    made super easy
+                    Referral Solution <br />
+                  that works for you
                   </h2>
                   <p className="">
-                    Ramp us your sales by launching a gift card program with
-                    ease using 99minds. With a simple integration that works
-                    online an offline. Get ready to reap various benifits of
-                    zero hassle
+                  Boost your organic sales by adding a customer referral program to your eCommerce & in-store
                   </p>
                   {/* <div className="action_btn d-flex align-items-center mt_60">
                 <a href=".#" className="btn_hover agency_banner_btn">

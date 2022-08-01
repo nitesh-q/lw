@@ -19236,8 +19236,7 @@ input[type="text"] {
 /*================= hosting_banner_area css ==============*/
 .hosting_banner_area {
   background: #020230;
-  min-height: 650px;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19248,18 +19247,20 @@ input[type="text"] {
 }
 
 .hosting_content h2 {
-  font-size: 50px;
-  line-height: 70px;
-  color: #fff;
+  font-family: "Poppins",sans-serif;
+  font-size: 32px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  color: #fff;
 }
 
 .hosting_content p {
-  color: #fff;
+  font-family: Poppins,sans-serif;
   font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .18px;
   line-height: 30px;
-  margin-bottom: 50px;
+  color: #fff;
 }
 
 .hosting_content .hosting_btn {
