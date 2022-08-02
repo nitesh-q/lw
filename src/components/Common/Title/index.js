@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Reveal from "react-reveal/Reveal";
-const Title = ({ title, titleP, tClass, sClass }) => {
+import { Reveal } from "react-reveal";
+const Title = ({ title, titleP, tClass="", sClass="" }) => {
   return (
     <div className={`${sClass}`}>
       <Reveal effect="fadeInUp" duration={1300}>

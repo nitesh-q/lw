@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Reveal } from "react-reveal";
 import Title from "../Common/Title";
 
-const VerticallyTabComponent = ({ config, pClass, rClass, mClass, icon }) => {
+const VerticallyTabComponent = ({ config, pClass="", rClass="", mClass="", icon }) => {
   const [activeTab, setActiveTab] = useState(config.PANNEL_DATA[0].id);
 
   return (

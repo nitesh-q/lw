@@ -3,15 +3,13 @@ import { Reveal } from "react-reveal";
 
 const Features = ({
   img1,
-  rowClass,
+  rowClass="",
   title,
   subTitle,
   desc,
   list,
-  pClass,
-  col1,
-  col2,
-  ptClass,
+  pClass="",
+  ptClass="",
 }) => {
   return (
     <section className={`chat_features_area ${ptClass}`}>

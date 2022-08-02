@@ -197,7 +197,7 @@ class IntegrationGrid extends Component {
                 return (
                 
                     <IntegrationGridCard
-                      colClass={`col-lg-4 col-sm-6 col-xl-3 ${i.type} `}
+                      colClass={`col-lg-4 col-sm-6  ${i.type} `}
                       pImg={i.image}
                       title={i.title}
                       desc={i.desc}
