@@ -155,7 +155,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 @media (min-width: 1920px) {
   .container-xl{
-    max-width: 1800px;
+    max-width: 1616px;
   }
 }
 

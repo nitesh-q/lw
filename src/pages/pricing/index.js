@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { Breadcrumb, FAQ, Services, TryAction } from "../../components";
+import { Breadcrumb, FAQ, Services, Testimonial, TrustedMerchants_1, TryAction } from "../../components";
+import { TESTIMONIAL_CONFIG } from "../../config";
 import Icons from "../../shared/assets";
 import SequrityPrice from "../../components/Common/PriceList";
 
@@ -16,6 +17,13 @@ const Price = () => {
         />
         <SequrityPrice />
         <FAQ />
+        <TrustedMerchants_1 />
+        <Testimonial
+        title="Testimonials"
+        subTitle="Hear from our Clients"
+        sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
+        bgColor={`bg_color`}
+      />
         <TryAction />
         <Services />
       </Layout>

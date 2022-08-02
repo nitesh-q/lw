@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
+import { FAQ } from "../../../config";
 
 const Faq = () => {
+  const [activeTab, setActiveTab] = useState(FAQ[0].id);
   return (
-    <section className="faq_area  sec_pad pt_0">
+    <section className="faq_area  ">
       <div className="container">
         <div className="row">
-          <h2 >FAQ</h2>
+          <h2>FAQs</h2>
           <div className="col-lg-12">
             <div className="tab-content faq_content" id="myTabContent">
               <div
@@ -14,11 +16,46 @@ const Faq = () => {
                 role="tabpanel"
                 aria-labelledby="purchas-tab"
               >
-                <h3 className="f_p f_size_22 f_500 t_color3 mb_20">
+                {/* <h3 className="f_p f_size_22 f_500 t_color3 mb_20">
                   How to purchase
-                </h3>
+                </h3> */}
                 <div id="accordion">
-                  <div className="card">
+                  {FAQ.map((i, index) => {
+                    return (
+                      <div className="card">
+                        <div className="card-header" id={i.id}>
+                          <h5 className="mb-0">
+                            <button
+                              className={`btn btn-link ${
+                                activeTab === i.id ? "" :"collapsed"
+                              }`}
+                              data-bs-toggle="collapse"
+                              data-bs-target={`#collapse${i.id}`}
+                              aria-expanded="true"
+                              aria-controls={`collapse${i.id}`}
+                              onClick={() => setActiveTab(i.id)}
+                            >
+                              {i.question}
+                              <i className="ti-plus"></i>
+                              <i className="ti-minus"></i>
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div
+                          id={`collapse${i.id}`}
+                          className={`collapse ${
+                            activeTab === i.id ? "show" : ""
+                          }`}
+                          aria-labelledby={i.id}
+                          data-parent="#accordion"
+                        >
+                          <div className="card-body">{i.answer.map((item,i)=><Fragment key={i}>{item}<br/></Fragment>)}</div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                  {/* <div className="card">
                     <div className="card-header" id="headingOne">
                       <h5 className="mb-0">
                         <button
@@ -172,7 +209,7 @@ const Faq = () => {
                         Tickety-boo Elizabeth plastered matie.!
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
