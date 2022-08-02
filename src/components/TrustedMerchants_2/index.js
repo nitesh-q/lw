@@ -25,7 +25,7 @@ const TrustedMerchants_2 = ({bgClass}) => {
     <section className={`trusted_merchnants_area ${bgClass}`}>
       <div className="container-sm container-xl">
         <div>
-          <h2>Trusted Merchnats</h2>
+          <h2>Trusted by 500+ Merchnats</h2>
         </div>
         <div className="img">
           {LOGO.map((i, index) => {
