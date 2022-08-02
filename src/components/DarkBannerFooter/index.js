@@ -5,7 +5,7 @@ import React from "react";
 const DarkBannerFooter = ({config,title}) => {
   return (
     <section className="fun_fact_footer_area dk_bg_two pb_50">
-      <div className="container">
+      <div className="container-sm container-xl">
         <div className="">
           <h4 className="w_color f_p f_700 mb_40 text-center">
             {title}

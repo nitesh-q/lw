@@ -28,7 +28,7 @@ const LoyaltyBanner = () => {
       {/* <img className="svg" src={Banner4}></img>
       <img className="svg_two" src={Banner3}></img> */}
 
-      <div className="container ccontainer">
+      <div className="container-sm container-xl">
         <div className="row">
           <div className="col-lg-5">
             <Reveal bottom cascade>

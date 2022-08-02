@@ -11,7 +11,7 @@ class PaymentBanner extends Component {
       <section className="payment_banner_area banner_top">
         <div className="shape one"></div>
         <div className="shape two"></div>
-        <div className="container ccontainer">
+        <div className="container-sm container-xl">
           <div className="row">
             <div className="col-lg-5">
               <Reveal effect="fadeInLeft" duration={500}>

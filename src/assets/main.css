@@ -3764,12 +3764,6 @@ font-weight: 800;
 
 /* ================app_hero_banner_area========== */
 .app_hero_banner_area{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   min-height: 100vh;
   background-image: linear-gradient(57.67deg, #5fffd4 0%, #420fd3 100%);
   /* background-image: -webkit-linear-gradient(40deg,#5f51fb 0%,#767cfd 64%,#8ca7ff 100%); */
@@ -4177,7 +4171,7 @@ color: #51fe23;
 }
 
 .n_hero_content{
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 .n_hero_content h2{
   font-family: Poppins,sans-serif;
@@ -4559,12 +4553,12 @@ width: 50%;
 
 .new_startup_banner_area {
   min-height: 100vh;
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -ms-flex-align: center; */
+  /* align-items: center; */
   background: #563bd1;
   position: relative;
   z-index: 0;
@@ -19274,12 +19268,12 @@ input[type="text"] {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  /* display: flex; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
   position: relative;
 }
 
@@ -22095,8 +22089,8 @@ a .h_head:hover {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  align-items: center;
-  display: flex;
+  /* align-items: center; */
+  /* display: flex; */
   
 }
 .support_home_area h2 {

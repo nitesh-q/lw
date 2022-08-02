@@ -17,11 +17,11 @@ const AppBanner = ({
 }) => {
   return (
     <section className="app_banner_area banner_top pb_0" id="home">
-      <div className="container ccontainer">
+      <div className="container-sm container-xl">
         <div className="row">
           <div className="col-lg-5">
             <Reveal bottom cascade>
-              <div className="app_banner_contentmt mt_40">
+              <div className="app_banner_contentmt ">
                 {config.map((i) => {
                   return (
                     <>

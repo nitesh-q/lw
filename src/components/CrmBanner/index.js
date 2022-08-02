@@ -11,7 +11,7 @@ class CrmBanner extends Component {
   render() {
     return (
       <section className="new_startup_banner_area banner_top">
-        <div className="container ccontainer ">
+        <div className="container-sm container-xl ">
           <div className="row">
             
             <div className="col-lg-5 d-flex align-items-center">

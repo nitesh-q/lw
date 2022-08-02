@@ -14,7 +14,7 @@ const getClassNameForIcon = (icon) => {
 const SequrityPrice = () => {
   return (
     <section className="pricing_area_four sec_pad">
-      <div className="container">
+      <div className="container-sm container-xl">
         <div className="hosting_title security_title text-center">
           <h2 className="wow fadeInUp" data-wow-delay="0.2s">
             <span>For teams of all sizes, in the cloud</span>
