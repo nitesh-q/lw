@@ -3771,7 +3771,8 @@ font-weight: 800;
   -ms-flex-align: center;
   align-items: center;
   min-height: 100vh;
-  background-image: -webkit-linear-gradient(40deg,#5f51fb 0%,#767cfd 64%,#8ca7ff 100%);
+  background-image: linear-gradient(57.67deg, #5fffd4 0%, #420fd3 100%);
+  /* background-image: -webkit-linear-gradient(40deg,#5f51fb 0%,#767cfd 64%,#8ca7ff 100%); */
   /* background-image: -moz-linear-gradient(40deg,#5f51fb 0%,#767cfd 64%,#8ca7ff 100%); */
   /* background-image: -ms-linear-gradient(40deg,#5f51fb 0%,#767cfd 64%,#8ca7ff 100%); */
   position: relative;
@@ -4160,7 +4161,8 @@ color: #51fe23;
   }
 }
 .n_hero_banner_area {
-  background-image: url("../images/banners//down-bg-2.png");
+  /* background-image: url("../images/banners//down-bg-2.png"); */
+  background-image: linear-gradient(67.41deg, #110f33 0%, #280f91 100%);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -7382,7 +7384,9 @@ width: 50%;
 }
 
 .seo_features_one{
-  background-image:url("../images/banners/down-bg.png") ;
+  /* background-image:url("../images/banners/down-bg.png") ; */
+  background-color: transparent;
+  background-image: linear-gradient(-58.2deg, #40dcfd 0%, #5286fd 36%, #632ffd 100%);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -19265,7 +19269,8 @@ input[type="text"] {
 /*================= hosting_banner_area css ==============*/
 .hosting_banner_area {
   /* background: #020230; */
-  background-image: url("../images/banners/down-bg-1.png");
+  /* background-image: url("../images/banners/down-bg-1.png"); */
+  background-image: -webkit-linear-gradient(-50deg,#237efd 0%,#24b0fe 46%,#24e2ff 100%);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -22085,7 +22090,8 @@ a .h_head:hover {
 /*============ support_home_area css ============*/
 .support_home_area {
   /* background: #efeec9; */
-  background-image: url("../images/banners/down-bg-3x.png");
+  /* background-image: url("../images/banners/down-bg-3x.png"); */
+  background-image: -webkit-linear-gradient(125deg,#5f51fb 0%,#ae59cb 64%,#fd609b 100%);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;

@@ -7,9 +7,9 @@ export const LOYALTY_TABS_CONFIG = {
       id: "controlPanel",
       label: "Control Panel",
       selected: "true",
-      image: Icons.RewardPage.default,
-      title: "Manage a loyalty program that your customers love",
-      description1: "",
+      image: Icons.Control_Pannel.default,
+      title: "Control Panel",
+      description1: "Manage a loyalty program that your customers love",
       description2: "",
       list: [
         {
@@ -40,11 +40,11 @@ export const LOYALTY_TABS_CONFIG = {
     },
     {
       id: "rewardPage",
-      label: "Reward Page",
+      label: "Rewards",
       selected: "true",
-      image: Icons.RewardPage.default,
-      title: "Build a rewards experience that your customers love",
-      description1: "",
+      image: Icons.Rewards_Loyalty.default,
+      title: "Rewards",
+      description1: "Build a rewards experience that your customers love",
       description2: "",
       list: [
         {
@@ -62,7 +62,7 @@ export const LOYALTY_TABS_CONFIG = {
       id: "promote",
       label: "Promote",
       selected: "true",
-      image: Icons.RewardPage.default,
+      image: Icons.Promote_Loyalty.default,
       title: "Promote",
       description1: "",
       description2: "",
@@ -84,9 +84,9 @@ export const LOYALTY_TABS_CONFIG = {
       label: "Reports & Analytics",
       selected: "true",
       image: Icons.ReportAnalytic.default,
-      title:
+      title: "Reports & Analytics",
+      description1:
         "Track sales and see the impact of your Loyalty program in one place",
-      description1: "",
       description2: "",
       list: [
         {

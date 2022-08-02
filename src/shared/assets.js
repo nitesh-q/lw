@@ -100,7 +100,9 @@ const Icons = {
   LoyaltyPoints: require("../images/loyalty/loyaltyPoints.png"),
   LoyaltyReward: require("../images/loyalty/loyaltyReward.png"),
   VipTier: require("../images/loyalty/vipTier.png"),
-  RewardPage: require("../images/loyalty/rewardPage.png"),
+  Rewards_Loyalty: require("../images/loyalty/rewards-loyalty.png"),
+  Control_Pannel: require("../images/loyalty/control-pannel.png"),
+  Promote_Loyalty: require("../images/loyalty/promote-loyalty.png"),
   ReportAnalytic: require("../images/loyalty/report_analytic.png"),
 
   //....................Coupons Page ......................
