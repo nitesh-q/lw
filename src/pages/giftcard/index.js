@@ -11,6 +11,7 @@ import {
   CTA_1,
   CaseStudiesSlider,
   VerticallyTabComponent,
+  TrustedMerchants_2,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -97,11 +98,12 @@ const GiftCard = () => {
         wClass={"img_width mw_125"}
       /> */}
       <HostingBanner />
+      <TrustedMerchants_2 />
 
-      <TrustedMerchants_1 />
+      {/* <TrustedMerchants_1 /> */}
 
       <Header
-        className={"bg_white pt_0"}
+        className={"bg_white pt_120 "}
         title={"Gift Card & Platform features."}
         description={"All your gift card needs, covered"}
       />

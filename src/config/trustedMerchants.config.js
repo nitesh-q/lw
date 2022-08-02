@@ -1,5 +1,5 @@
 import Icons from "../shared/assets";
-export const MERCHANTS_CONFIG= {
+export const MERCHANTS_CONFIG = {
   MERCHANTS: [
     {
       id: 1,

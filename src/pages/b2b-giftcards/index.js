@@ -6,6 +6,7 @@ import {
   IconTabComponent,
   CTA,
   Banner_1,
+  TrustedMerchants_2,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -21,7 +22,6 @@ const REFERRAL_FEATURES = [
     list: [],
   },
   {
-  
     img1: Icons.CustomCoupon.default,
     title: "Point of Sale (POS) Agnostic redemption",
     desc: "Send and redeem physical and eGift cards issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed etc.",
@@ -29,7 +29,6 @@ const REFERRAL_FEATURES = [
     list: [],
   },
   {
-    
     rowClass: "flex-row-reverse",
     img1: Icons.RewardCustomer.default,
     title: "Multi-Currency Gift Cards",
@@ -41,7 +40,7 @@ const REFERRAL_FEATURES = [
 
 const B2BGIFTCARDS = () => {
   return (
-    <Layout>
+    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <Banner_1
         config={BANNERS_CONFIG.B2B}
         titleClass={`bannerTitle`}
@@ -49,8 +48,9 @@ const B2BGIFTCARDS = () => {
         mClass={"mb_90"}
         wClass={"img_width_950"}
       />
+      <TrustedMerchants_2 />
 
-      <Partner pClass={"sec_pad pb_0"} />
+      {/* <Partner pClass={"sec_pad pb_0"} /> */}
       <IconTabComponent config={B2B_TABS_CONFIG} />
       {/* <Header
         className={"bg_white mt_125"}

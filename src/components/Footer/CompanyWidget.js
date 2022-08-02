@@ -20,7 +20,7 @@ const CompanyWidget = ({ title, description }) => {
           className="form-control memail"
           placeholder="Email"
         />
-        <button className="btn btn_get btn_get_two" type="submit">
+        <button className="btn btn_get btn_get_three" type="submit">
           Subscribe
         </button>
         <p className="mchimp-errmessage" style={{ display: "none" }}></p>

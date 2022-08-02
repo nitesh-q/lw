@@ -59,7 +59,7 @@ width: 100 !important;
       .seo_features_content h2 {
         font-size: 55px;
         /* line-height: 40px; */
-        color: #222d39;
+        color: #fff;
         font-weight: bold;
         margin-bottom: 25px;
         font-family: "Poppins", sans-serif;
@@ -68,7 +68,7 @@ width: 100 !important;
       .seo_features_content h2 span {
         font-size: 55px;
         /* line-height: 40px; */
-        color: #7444FD;
+        color: #fff;
         font-weight: bold;
         margin-bottom: 25px;
         font-family: "Poppins", sans-serif;
@@ -94,6 +94,10 @@ width: 100 !important;
     }
     .n_hero_banner_area .img {
         max-width: 900px !important;
+    }
+    .support_home_area{
+        min-height: 1050px;
+
     }
     .support_home_area h2 {
         font-size: 55px;
@@ -228,7 +232,7 @@ width: 100 !important;
         font-size: 14px;
         font-weight: 500;
         white-space: nowrap;
-        color: #113260;
+        color: #fff;
         text-align: left;
       }
       .seo_features_content  li::marker{
@@ -257,7 +261,7 @@ width: 100 !important;
         font-size: 14px;
         font-weight: 500;
         white-space: nowrap;
-        color: #113260;
+        color: #fff;
         text-align: left;
       }
       .seo_features_content  li::marker{
@@ -660,7 +664,7 @@ width: 100 !important;
         font-size: 14px;
         font-weight: 500;
         white-space: nowrap;
-        color: #113260;
+        color: #fff;
         text-align: left;
       }
       .seo_features_content  li::marker{
@@ -1632,7 +1636,7 @@ width: 100 !important;
         font-size: 14px;
         font-weight: 500;
         white-space: nowrap;
-        color: #113260;
+        color: #fff;
         text-align: left;
       }
       .seo_features_content  li::marker{

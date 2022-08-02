@@ -68,7 +68,7 @@ const HostingBanner = () => {
                 Get Started
               </a> */}
               <div className="col-lg-12">
-                <StartedFreeButton btnClass={"bg_white t_color1"} />
+                <StartedFreeButton  />
               </div>
               <CTAService allService={false} />
               <SupportedBrand

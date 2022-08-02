@@ -39,7 +39,7 @@ const Features = ({
 
               <a
                 href="/#"
-                className="btn btn_get btn_get_two fadeInLeft"
+                className="btn btn_get btn_get_three fadeInLeft "
                 data-wow-delay="0.5s"
               >
                 Try it free

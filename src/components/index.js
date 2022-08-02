@@ -7,6 +7,7 @@ export { default as Testimonial } from "./Testimonial";
 export { default as TryAction } from "./TryAction";
 export { default as TrustedMerchants } from "./TrustedMerchants";
 export { default as TrustedMerchants_1 } from "./TrustedMerchants_1";
+export { default as TrustedMerchants_2 } from "./TrustedMerchants_2";
 export { default as SupportedBrand } from "./SupportedBrand";
 export { default as StartedFreeButton } from "./StartedFreeButton";
 export { default as Features } from "./Features";

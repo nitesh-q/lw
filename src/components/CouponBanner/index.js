@@ -2,14 +2,15 @@ import React from "react";
 import SupportedBrand from "../SupportedBrand";
 import image from "../../images/erp-home/erp_dashboard.jpg";
 import StartedFreeButton from "../StartedFreeButton";
+import { Reveal } from "react-reveal";
 
 const CouponBanner = ({ config }) => {
   return (
-    <section className="support_home_area ">
-      <div className="banner_top">
-        <div className="section_container ccontainer">
-          <div className="row">
-            <div className="col-md-12 text-center">
+    <section className="support_home_area banner_top ">
+      <div className="container-sm container-xl">
+        <div className="row">
+          <div className="col-lg-5 ">
+            <Reveal effect="fadeInRight" duration={3000}>
               {config.map((item, index) => {
                 return (
                   <>
@@ -27,27 +28,29 @@ const CouponBanner = ({ config }) => {
                 );
               })}
 
-              
-            <StartedFreeButton className="justify-content-center" />
-
-              <SupportedBrand pClass={"pb_0"} />
-            </div>
+              <StartedFreeButton />
+              <SupportedBrand
+                pClass={"partner_white_logo_area_four"}
+                fclass={"w_color mb_25 mt_30"}
+                imgClass={"partner_img "}
+              />
+            </Reveal>
           </div>
-          <div className="row">
-          {config.map((i,index) => {
+          {config.map((i, index) => {
             return (
-              <div className="col-lg-12">
-              <div
-                className="support_home_img wow fadeInUp"
-                data-wow-delay="0.9s"
-                key={index}
-              >
-                <img className="img-fluid" src={i.image} alt="" />
-              </div>
+              <div className="col-lg-7">
+                <Reveal effect="fadeInRight" duration={3000}>
+                  <div
+                    className="support_home_img wow fadeInUp"
+                    data-wow-delay="0.9s"
+                    key={index}
+                  >
+                    <img className="img-fluid" src={i.image} alt="" />
+                  </div>
+                </Reveal>
               </div>
             );
           })}
-        </div>
         </div>
       </div>
     </section>

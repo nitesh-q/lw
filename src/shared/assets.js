@@ -37,6 +37,11 @@ const Icons = {
   Cornor: require("../images/trusted-merchents/corner-bakery.jpg"),
   Cariloha: require("../images/trusted-merchents/cariloha_logo.png"),
   Fylnn: require("../images/trusted-merchents/flynn_logo.jpg"),
+  Pinstrips_1: require("../images/trusted-merchents/pinstripes_1.png"),
+  Besttop_1: require("../images/trusted-merchents/bestop_1.png"),
+  Corner_1: require("../images/trusted-merchents/corner_1.png"),
+  Cariloha_1: require("../images/trusted-merchents/cariloha_1.png"),
+  Fylnn_1: require("../images/trusted-merchents/flynn_1.png"),
 
   //...................Integartion.......................
   BigCommerce_: require("../images/integrations/BigCommerce.png"),

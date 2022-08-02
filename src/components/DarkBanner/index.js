@@ -19,6 +19,25 @@ const POSTS = [
   },
 ];
 
+const CAMPAIGN_DETAILS = [
+  {
+    title: "2 months",
+    description: "Campaign Length",
+  },
+  {
+    title: "7.6x Upsell",
+    description: "On orders with Credit",
+  },
+  {
+    title: "9% Increase",
+    description: "In AOV",
+  },
+  {
+    title: "1 Active",
+    description: " Omnichannel Store",
+    descriptionTwo: "Credit Rewards Program",
+  },
+];
 const DarkBanner = () => {
   return (
     <>
@@ -66,7 +85,7 @@ const DarkBanner = () => {
           </div>
         </div>
       </section>
-      <DarkBannerFooter />
+      <DarkBannerFooter config={CAMPAIGN_DETAILS} title="Campaign Details"/>
     </>
   );
 };

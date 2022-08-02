@@ -9,6 +9,7 @@ import {
   AppBanner,
   WorkFeatures,
   Header,
+  TrustedMerchants_2,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -109,8 +110,9 @@ const Automation = () => {
     
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <AppBanner allService={false} config={BANNERS_CONFIG.AUTOMATION} />
+      <TrustedMerchants_2 bgClass={"bg_color2"} />
 
-      <Partner pClass={"sec_pad pb_0"} oClass={"logo_item_opacity"} />
+      {/* <Partner pClass={"sec_pad pb_0"} oClass={"logo_item_opacity"} /> */}
       <Work config={AUTOMATION_WORK} />
      
 
@@ -120,7 +122,7 @@ const Automation = () => {
         title="How it works"
         dividerImg={Icons.dot.default}
       /> */}
-      <Header className={"bg_white"} title={"Features"} description="" />
+      {/* <Header className={"bg_white"} title={"Features"} description="" />  */}
       {AUTOMATION_FEATURES.map((card, index) => (
         <Features ptClass="pt_0" {...{ ...card }} url="#" key={index} />
       ))}

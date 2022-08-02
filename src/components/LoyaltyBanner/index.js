@@ -41,7 +41,7 @@ const LoyaltyBanner = () => {
                   Growth is good, but retention is forever
                 </p>
                 <div className="col-lg-12">
-                  <StartedFreeButton btnClass={"bg_white t_color1"} />
+                  <StartedFreeButton btnClass={"bg_color2 border_btn"} />
                 </div>
                 <CTAService allService={false} />
                 <SupportedBrand

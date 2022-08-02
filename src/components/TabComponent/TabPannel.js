@@ -41,7 +41,7 @@ const TabPannel = ({ item, rClass,icon }) => {
 
                 <div className="col-lg-9">
                   <button
-                    className="btn btn_get btn_get_two mt-3"
+                    className="btn btn_get btn_get_three mt-3"
                     type="submit"
                     onClick={()=>navigate(item.url)}
                   >

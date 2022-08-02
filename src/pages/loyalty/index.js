@@ -11,6 +11,7 @@ import {
   TabComponent,
   Partner,
   IntegrationList,
+  TrustedMerchants_2,
 } from "../../components";
 import { TESTIMONIAL_CONFIG, LOYALTY_TABS_CONFIG } from "../../config";
 
@@ -90,10 +91,11 @@ const Loyalty = () => {
 
       {/* <TrustedMerchants tClass={"top_0"} /> */}
 
-      <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} />
+      {/* <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} /> */}
+      <TrustedMerchants_2  bgClass={"bg_color2"}/>
 
       <Header
-        className={"bg_white"}
+        className={"bg_white pt_120"}
         title={
           "Build an effective Customer loyalty programs right for yor hand "
         }

@@ -11,6 +11,7 @@ import {
   IntegrationList,
   CouponBanner,
   CaseStudiesSlider,
+  TrustedMerchants_2,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -55,11 +56,12 @@ const COUPON_FEATURES = [
 
 const Coupons = () => {
   return (
-    <Layout>
+    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu" >
       <CouponBanner config={BANNERS_CONFIG.COUPONS} />
+      <TrustedMerchants_2 />
 
       <Header
-        className={"bg_white c_mt_220 pt_0 c_mt"}
+        className={"bg_white pt_120 "}
         title={"Key features."}
         description={"All your coupon needs, covered"}
       />

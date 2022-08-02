@@ -10,21 +10,27 @@ import {
   Services,
 
   IntegrationList,
+  TrustedMerchants_2,
 } from "../../components";
 import {
   HOME_TAB1_CONFIG,
   BANNERS_CONFIG,
   TESTIMONIAL_CONFIG,
   HOME_TAB2_CONFIG,
+  MERCHANTS_CONFIG
 } from "../../config";
 import VerticallyTabComponent from "../../components/VerticallyTabComponent";
 import CaseStudiesSlider from "../../components/CaseStudiesSlider";
+import DarkBannerFooter from "../../components/DarkBannerFooter";
+import Icons from "../../shared/assets";
+
 
 const Home = () => {
   return (
-    <Layout >
+    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu" >
       <DigitalBanner config={BANNERS_CONFIG.HOME} allService={false} />
-      <Partner oClass={"logo_item_opacity"} pClass={"sec_pad pb_0"}/>
+      <TrustedMerchants_2 bgClass={"bg_black"} />
+      {/* <Partner oClass={"logo_item_opacity"} pClass={"sec_pad pb_0"}/> */}
    
 
       <TabComponent config={HOME_TAB1_CONFIG} rClass={"reduce_height"} />

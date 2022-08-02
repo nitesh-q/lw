@@ -48,14 +48,15 @@ const DigitalBanner = ({
                   experience with Refferrals
                 </p>
              
-              <div className="col-lg-12">
+              <div className="col-lg-7">
                 <StartedFreeFrom  />
               </div>
-              <CTAService allService={allService} />
+              <CTAService allService={false} />
               <SupportedBrand
-                pClass={"partner_white_logo_area_four"}
-                fclass={" mb_25"}
-              />
+                  pClass={"partner_white_logo_area_four"}
+                  fclass={"w_color mb_25"}
+                  imgClass={"partner_img "}
+                />
                </div>
             </Reveal>
           </div>
