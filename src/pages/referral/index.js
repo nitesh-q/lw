@@ -99,15 +99,12 @@ const REFERRAL_FEATURES = [
 const Referral = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-      <PaymentBanner />
-      {/* <Banner
+      <Banner
         config={BANNERS_CONFIG.REFERRAL}
-        titleClass={`bannerTitle`}
-        sllService={true}
-        mClass={"mb_90"}
-        wClass={"mw_125"}
-      /> */}
-      {/* <TrustedMerchants /> */}
+        allService={false}
+        bgClass={"bg_banner_1"}
+      />
+  
       <Partner pClass={"sec_pad "} />
       <WorkFeatures
         aClass="agency_featured_area_two"

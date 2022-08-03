@@ -90,7 +90,7 @@ export const GIFTCARD_TABS_CONFIG = {
       id: "multicurrency",
       label: "Multi-Currency",
       selected: "false",
-      image: Icons.Reload_01.default,
+      image: Icons.Multi_Currency.default,
       title: "Multicurrency",
       subTitle: "",
       description1: "",
@@ -110,7 +110,7 @@ export const GIFTCARD_TABS_CONFIG = {
     {
       id: "return_refund",
       label: "Return & Refund",
-      image: Icons.Reload_01.default,
+      image: Icons.Refund_Giftcard.default,
       title: "Return & Refund",
       subTitle: "",
       description1: "",

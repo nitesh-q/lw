@@ -17,7 +17,7 @@ class IntegrationGridCard extends Component {
             <p>{desc}</p>
 
             <button
-              className="btn btn_get btn_get_two mt-3"
+              className="btn btn_get btn_get_three mt-3"
               type="submit"
               onClick={()=>navigate("/integration")}
             >

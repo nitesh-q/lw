@@ -75,11 +75,14 @@ const Icons = {
   Upload: require("../images/giftcard/upload.png"),
   Import_Migration:require("../images/giftcard/import-migration.png"),
   Reload_01:require("../images/giftcard/reload01.png"),
+  Multi_Currency: require("../images/giftcard/multi-currency.png"),
+  Refund_Giftcard: require("../images/giftcard/refund-giftcard.png"),
   Schedule_Delivery:require("../images/giftcard/schedule-delivery.png"),
   Bulk_Gifcard:require("../images/giftcard/bulk-giftcard.png"),
   Multi_Store:require("../images/giftcard/multi-store.png"),
 
   //....................StoreCredit Page ......................
+  Store_Credit_Banner: require("../images/store-credit/store-credit-banner.png"),
   Return_Refund_StoreCredit: require("../images/store-credit/return-Refund-storecredit.png"),
   Time_Cost_StoreCredit: require("../images/store-credit/time-cost-storecredit.png"),
   Rewards_StoreCredit: require("../images/store-credit/rewards-storecredit.png"),
@@ -112,25 +115,22 @@ const Icons = {
   Icon2: require("../images/coupons/icon2.png"),
   Icon3: require("../images/coupons/icon3.png"),
 
-  //....................Coupons Page ......................
+  //....................Automation Page ..........................
   AutomationBanner: require("../images/automation/automationBanner.png"),
   AutomationLoyalty: require("../images/automation/automationloyalty.png"),
   Workflow: require("../images/automation/workflow.png"),
   Centralize: require("../images/automation/centralize.png"),
-
-  //....................Automation Page ......................
   icon01: require("../images/home4/icon01.png"),
   icon02: require("../images/home4/icon02.png"),
   icon03: require("../images/home4/icon03.png"),
   icon04: require("../images/home4/icon_04.png"),
-
   dot: require("../images/home4/dot.png"),
-
   BREADCRUMB: require("../images/breadcrumb/banner_bg.png"),
   video1: require("../images/banners/video_img_01.png"),
   video2: require("../images/banners/video_img_02.png"),
 
   //....................Referral Page ......................
+  Referral_Banner:require("../images/referral-page/referral-banner.png"),
   divider_1: require("../images/home4/divider_1.png"),
 
 

@@ -306,6 +306,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .border_btn{
   border-color: #7444FD !important;
 }
+.bg_banner_1{
+  background-image: linear-gradient(-74.04deg, #778eee 0%, #2e3dbc 100%) !important;
+}
 .bg_color {
   background: #fbfbfd;
 }

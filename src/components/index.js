@@ -1,5 +1,6 @@
 export { default as IntegrationList } from "./IntegrationList";
 export { default as Banner } from "./Banner";
+export { default as CrmBanner } from "./CrmBanner";
 export { default as Banner_1 } from "./Banner_1";
 export { default as AppBanner } from "./AppBanner";
 export { default as LoyaltyBanner } from "./LoyaltyBanner";

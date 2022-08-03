@@ -36,10 +36,10 @@ export const BANNERS_CONFIG = {
   ],
   REFERRAL: [
     {
-      title: "Referral Programs",
-      subTitle: "made super easy",
-      // image:"",
-      description: `Ramp us your sales by launching a gift card program with ease using 99minds. With a simple integration that works online an offline. Get ready to reap various benifits of zero hassle `,
+      title: "Referral Solution that work for you",
+      subTitle: "",
+      image:Icons.Referral_Banner.default,
+      description: `Boost your organic sales by adding a customer referral program to your eCommerce & in-store`,
     }
   ],
   AUTOMATION: [
@@ -50,12 +50,12 @@ export const BANNERS_CONFIG = {
       description: `Create and customize gift cards, store credit, and coupon marketing automation so that you can engage customers at every stage of their journey.`,
     }
   ],
- DISCOUNTS: [
+ STORE_CREDIT: [
     {
-      title: "Store Credit",
-      subTitle: "made super easy",
-      // image:"",
-      description: `Ramp us your sales by launching a gift card program with ease using 99minds. With a simple integration that works online an offline. Get ready to reap various benifits of zero hassle `,
+      title: "Retain Customer with Store Credit Generator",
+      subTitle: "",
+      image:Icons.Store_Credit_Banner.default,
+      description: `Personalize & assign Store Credit to your Customers `,
     }
   ],
 B2B: [

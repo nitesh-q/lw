@@ -1,18 +1,18 @@
 import React from "react";
-import { SupportedBrand, StartedFreeButton} from "../../components";
+import { SupportedBrand, StartedFreeButton } from "../../components";
 import { Reveal } from "react-reveal";
 import CTAService from "../Services/CTAService";
 
 const Banner = ({
   config,
-  supportedBrand,
-  titleClass,
   allService,
-  mClass,
   wClass,
+  bgClass,
 }) => {
   return (
-    <section className="seo_features_one bg_color sec_pad banner_top">
+    <section
+      className={`seo_features_one bg_color sec_pad banner_top ${bgClass}`}
+    >
       <div className="container-sm container-xl">
         <div className="row flex-row-reverse">
           <div className="col-lg-7 ">
@@ -52,7 +52,11 @@ const Banner = ({
                   <StartedFreeButton />
                 </div>
                 <CTAService allService={allService} />
-                <SupportedBrand pClass={"partner_white_logo_area_four"} />
+                <SupportedBrand
+                  pClass={"partner_white_logo_area_four"}
+                  fclass={"w_color mb_25"}
+                  imgClass={"partner_img "}
+                />
               </div>
             </Reveal>
           </div>

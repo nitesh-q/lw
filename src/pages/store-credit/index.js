@@ -2,7 +2,7 @@ import React from "react";
 import {
   Testimonial,
   TryAction,
-  Banner,
+  CrmBanner,
   Features,
   Header,
   Services,
@@ -12,7 +12,7 @@ import {
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
 import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
-import CrmBanner from "../../components/CrmBanner";
+
 
 const RETURN_REFUNDS_LIST=[
   { desc: "Automate store credit for merchandise return using return tools like Novaro etc." },
@@ -29,6 +29,7 @@ const REWARDS_LIST=[
 ]
 const STORE_CREDIT_FEATURES = [
   {
+    rowClass: "flex-row-reverse",
     img1: Icons.Return_Refund_StoreCredit.default,
     title: "Returns & Refunds",
     desc: "",
@@ -36,7 +37,6 @@ const STORE_CREDIT_FEATURES = [
     list: RETURN_REFUNDS_LIST,
   },
   {
-    rowClass: "flex-row-reverse",
     img1: Icons.Time_Cost_StoreCredit.default,
     title: "Save Time and Cost",
     desc: "",
@@ -44,6 +44,7 @@ const STORE_CREDIT_FEATURES = [
     list: TIME_COST_LIST,
   },
   {
+    rowClass: "flex-row-reverse",
     img1: Icons.Rewards_StoreCredit.default,
     title: "Rewards",
     subTitle: "",
@@ -51,7 +52,6 @@ const STORE_CREDIT_FEATURES = [
     list: REWARDS_LIST,
   },
   {
-    rowClass: "flex-row-reverse",
     img1: Icons.Promotional_StoreCredit.default,
     title: "Promotional Store Credit",
     desc: "Entice customer by assigning time sensitive promotional Store Credit to their Account.",
@@ -70,11 +70,11 @@ const StoreCredit = () => {
         mClass={"mb_90"}
         wClass={"mw_125"}
       /> */}
-      <CrmBanner />
+      <CrmBanner config={BANNERS_CONFIG.STORE_CREDIT} />
 
       <Partner pClass={"sec_pad pb_0"} />
       <Header
-        className={"bg_white mt_125"}
+        className={"bg_white"}
         title={"Key features."}
         description={"All your gift card needs, covered"}
       />
