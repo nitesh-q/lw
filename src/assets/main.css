@@ -27057,7 +27057,12 @@ max-width: 580px;
   stroke-width: 6;
   transition: all 1s;
 }
-
+.minus{
+  display: none;
+  stroke: #fff;
+  stroke-width: 7;
+  transition: all 1s;
+}
 .circle {
   stroke: #63bc01;
   stroke-width: 6;
@@ -27065,7 +27070,7 @@ max-width: 580px;
   transition: all 1s;
 }
 .ready{
-  background-color: #63bc01;
+ background-color: #63bc01;
  border-radius: 50%;
 
 }
@@ -27100,16 +27105,18 @@ max-width: 580px;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: lightslategray;
 }
 .default .circle{
  display: none;
 }
 .default .tick{
-  display: none
- ;
+  display: none;
 }
 
+.default .minus {
+display: block;
+}
 .circle {
   stroke-dasharray: 500;
 }
@@ -27146,7 +27153,7 @@ max-width: 580px;
   border-radius: 50%;
   position: absolute;
   z-index: 1;
-  background-color: gray;
+  background-color: lightslategray;
   left: 95.5%;
   top: -11px;
   }

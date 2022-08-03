@@ -27,10 +27,8 @@ const Icons = {
   Shopify_Logo: require("../images/trusted-merchents/shopify-logo.png"),
   ShopifyPlus: require("../images/trusted-merchents/shopifyPlus.png"),
   ShopifyPlus_Logo: require("../images/trusted-merchents/shopifyPlus-logo.png"),
-
   BigCommerce: require("../images/trusted-merchents/bigcommerce04.png"),
   BigCommerce_Logo: require("../images/trusted-merchents/bigcommerce-logo.png"),
-
   Miva: require("../images/trusted-merchents/Miva03(1).png"),
   Pinstrips: require("../images/trusted-merchents/pinstripes1.png"),
   Besttop: require("../images/trusted-merchents/bestop-logo.png"),
@@ -81,7 +79,6 @@ const Icons = {
   Bulk_Gifcard:require("../images/giftcard/bulk-giftcard.png"),
   Multi_Store:require("../images/giftcard/multi-store.png"),
 
-  
   //....................StoreCredit Page ......................
   Return_Refund_StoreCredit: require("../images/store-credit/return-Refund-storecredit.png"),
   Time_Cost_StoreCredit: require("../images/store-credit/time-cost-storecredit.png"),

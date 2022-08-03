@@ -86,7 +86,11 @@ const Work = ({ config }) => {
                           points="25,55 45,70 75,33"
                           fill="transparent"
                         />
-                        <div className="sign">-</div>
+                        <polyline
+                          className="minus"
+                          points="25,55 75,55 8"
+                          fill="transparent"
+                        />
                       </svg>
                     </div>
                     <h5>{i.title}</h5>
