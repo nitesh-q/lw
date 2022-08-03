@@ -20,6 +20,7 @@ import {
   MERCHANTS_CONFIG
 } from "../../config";
 import VerticallyTabComponent from "../../components/VerticallyTabComponent";
+
 import CaseStudiesSlider from "../../components/CaseStudiesSlider";
 import DarkBannerFooter from "../../components/DarkBannerFooter";
 import Icons from "../../shared/assets";
@@ -40,12 +41,6 @@ const Home = () => {
         className={"mb_50"}
         title={"Grow your store and drive revenue with Marketing Automation "}
       />
-      {/* <TabComponent
-        config={HOME_TAB2_CONFIG}
-        pClass={"pt_0"}
-        rClass={"reduce_height"}
-        icon={true}
-      /> */}
       <VerticallyTabComponent  config={HOME_TAB2_CONFIG} icon={true}  pClass={"pt_0"}/>
 
       <Testimonial
@@ -61,7 +56,6 @@ const Home = () => {
         }
       />
       <TryAction />
-
       <Services />
     </Layout>
   );
