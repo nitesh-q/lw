@@ -13,7 +13,7 @@ const FeaturesItems = ({
       <div className="col-lg-6">
         <Reveal effect="fadeInLeft">
           <div className="agency_featured_img text-right">
-            <img src={fImage} alt="" />
+            <img className="img-fluid" src={fImage} alt="" />
           </div>
         </Reveal>
       </div>

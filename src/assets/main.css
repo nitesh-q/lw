@@ -309,6 +309,12 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .bg_banner_1{
   background-image: linear-gradient(-74.04deg, #778eee 0%, #2e3dbc 100%) !important;
 }
+.bg_banner_2{
+  background-image: -webkit-linear-gradient(-50deg,#237efd 0%,#24b0fe 46%,#24e2ff 100%) !important;
+}
+.bg_banner_3{
+  background-image: linear-gradient(150deg, #5fffd4 0%, #420fd3 100%)!important;
+}
 .bg_color {
   background: #fbfbfd;
 }
@@ -3836,7 +3842,9 @@ color: #fff;
 
 /*============= app_banner_area css ===========*/
 .app_banner_area {
-  background: url(../images/banners/down-bg-4.png) no-repeat  center 100%;
+  background: url(../images/home7/banner.png) no-repeat scroll center 100%;
+  padding-top: 230px;
+  padding-bottom: 210px;
   overflow: hidden;
   background-size: cover;
 }
@@ -6204,13 +6212,17 @@ width: 50%;
 }
 
 .agency_featured_item .agency_featured_content h3 {
-  font: 500 26px/36px "Poppins", sans-serif;
-  color: #222d39;
+  font: 600 30px/36px "Poppins", sans-serif;
   margin: 32px 0px 25px;
+  color: #222d39;  
+  letter-spacing: .18px;
 }
 
 .agency_featured_item .agency_featured_content p {
-  font-size: 15px;
+  color: #7b7b93;
+  font-family:"Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .agency_featured_item .agency_featured_content .icon {
@@ -19259,9 +19271,7 @@ input[type="text"] {
 /*============ erp_menu css =============*/
 /*================= hosting_banner_area css ==============*/
 .hosting_banner_area {
-  /* background: #020230; */
-  /* background-image: url("../images/banners/down-bg-1.png"); */
-  background-image: -webkit-linear-gradient(-50deg,#237efd 0%,#24b0fe 46%,#24e2ff 100%);
+  background: #020230;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;

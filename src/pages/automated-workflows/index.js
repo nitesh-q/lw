@@ -5,6 +5,7 @@ import {
   TryAction,
   Features,
   Services,
+  Banner,
   Partner,
   AppBanner,
   WorkFeatures,
@@ -109,7 +110,13 @@ const Automation = () => {
   return (
     
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-      <AppBanner allService={false} config={BANNERS_CONFIG.AUTOMATION} />
+       <Banner
+       config={BANNERS_CONFIG.AUTOMATION}
+        titleClass={`bannerTitle`}
+        allService={false}
+        bgClass={"bg_banner_3"}
+        btnClass={"bg_color2 border_btn"}
+      />
       <TrustedMerchants_2 bgClass={"bg_color2"} />
 
       {/* <Partner pClass={"sec_pad pb_0"} oClass={"logo_item_opacity"} /> */}

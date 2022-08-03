@@ -62,34 +62,32 @@ const REFERRAL_FEATURES = [
   {
     rowClass: "row flex-row-reverse",
     aClass: "pr_70 pl_70",
-    fImage: Icons.Work1.default,
+    fImage: Icons.Referral_Widget.default,
     iImg: Icons.icon01.default,
     fTitle: "Customize Referral Widget & Web page",
-    descriptions:
-      "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
+    descriptions: "",
   },
   {
     rowClass: "row agency_featured_item_two",
     aClass: "pl_100",
-    fImage: Icons.Work1.default,
+    fImage: Icons.Social_Sharing.default,
     iImg: Icons.icon02.default,
     fTitle: "Create Social Sharing & Referral link",
     descriptions:
-      "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
+      "Send and redeem physical and eGift cards issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed etc.",
   },
   {
     rowClass: "row flex-row-reverse",
     aClass: "pr_70 pl_70",
-    fImage: Icons.Work1.default,
+    fImage: Icons.Reward_Referral.default,
     iImg: Icons.icon03.default,
     fTitle: "Reward your customers the way they want",
-    descriptions:
-      "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
+    descriptions: "",
   },
   {
     rowClass: "row agency_featured_item_two",
     aClass: "pl_100",
-    fImage: Icons.Work1.default,
+    fImage: Icons.Promote_Referral.default,
     iImg: Icons.icon04.default,
     fTitle: "Promote",
     descriptions: "Send announcement Email or SMS Text to your Customer",
@@ -104,12 +102,12 @@ const Referral = () => {
         allService={false}
         bgClass={"bg_banner_1"}
       />
-  
+
       <Partner pClass={"sec_pad "} />
       <WorkFeatures
         aClass="agency_featured_area_two"
         data={REFERRAL_FEATURES}
-        title="How it works"
+        title="Key Features"
         dividerImg={Icons.divider_1.default}
       />
       {/* {REFERRAL_FEATURES.map((card,index) => (

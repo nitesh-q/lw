@@ -8,6 +8,7 @@ const Banner = ({
   allService,
   wClass,
   bgClass,
+  btnClass,
 }) => {
   return (
     <section
@@ -49,7 +50,7 @@ const Banner = ({
                 })}
 
                 <div className="col-lg-9">
-                  <StartedFreeButton />
+                  <StartedFreeButton btnClass={btnClass} />
                 </div>
                 <CTAService allService={allService} />
                 <SupportedBrand

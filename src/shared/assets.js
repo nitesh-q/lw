@@ -131,6 +131,10 @@ const Icons = {
 
   //....................Referral Page ......................
   Referral_Banner:require("../images/referral-page/referral-banner.png"),
+  Promote_Referral:require("../images/referral-page/promote-referral.png"),
+  Reward_Referral:require("../images/referral-page/reward-referral.png"),
+  Social_Sharing:require("../images/referral-page/social-sharing.png"),
+  Referral_Widget:require("../images/referral-page/referral-widget.png"),
   divider_1: require("../images/home4/divider_1.png"),
 
 

@@ -20,7 +20,7 @@ import {
   BANNERS_CONFIG,
   GIFTCARD_TABS_CONFIG,
 } from "../../config";
-import HostingBanner from "../../components/HostingBanner";
+
 
 const GIFTCARD = [
   { desc: "100’s of beautiful Gift Cards based on themes" },
@@ -88,16 +88,12 @@ const GiftCard = () => {
   return (
     // <Layout>
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-
-
-      {/* <Banner
+      <Banner
         config={BANNERS_CONFIG.GIFTCARD}
         titleClass={`bannerTitle`}
         allService={false}
-        mClass={"mb_90"}
-        wClass={"img_width mw_125"}
-      /> */}
-      <HostingBanner />
+        bgClass={"bg_banner_2"}
+      />
       <TrustedMerchants_2 />
 
       {/* <TrustedMerchants_1 /> */}
