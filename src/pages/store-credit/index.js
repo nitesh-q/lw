@@ -8,6 +8,7 @@ import {
   Services,
   Partner,
   IntegrationList,
+  TrustedMerchants_2,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -71,8 +72,9 @@ const StoreCredit = () => {
         wClass={"mw_125"}
       /> */}
       <CrmBanner config={BANNERS_CONFIG.STORE_CREDIT} />
+      <TrustedMerchants_2 bgClass={"bg_color2"} />
 
-      <Partner pClass={"sec_pad pb_0"} />
+      {/* <Partner pClass={"sec_pad pb_0"} /> */}
       <Header
         className={"bg_white"}
         title={"Key features."}

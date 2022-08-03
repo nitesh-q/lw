@@ -24,17 +24,18 @@ export const TABLE_BOTTOM = [
 
 export const CHECK_ICON = ["Y", "N"];
 
+export const PRICE_LIST_AMOUNT =  {
+  Column1: "Monthly Price ($)",
+  Free: "$0/m",
+  Lite: "$19/m",
+  Basic: "$49/m",
+  Pro: "$99/m",
+  Ultra: "$199/m",
+  Premium: "$499/m",
+  Enterprise: "Custom",
+};
 export const PRICE_LIST = [
-  {
-    Column1: "Monthly Price ($)",
-    Free: "$0",
-    Lite: "$19",
-    Basic: "$49",
-    Pro: "$99",
-    Ultra: "$199",
-    Premium: "$499",
-    Enterprise: "Custom",
-  },
+ 
   {
     Column1: "Monthly Transactions",
     Free: 50,
@@ -74,6 +75,26 @@ export const PRICE_LIST = [
     Ultra: "Unlimited",
     Premium: "Unlimited",
     Enterprise: "Unlimited",
+  },
+  {
+    Column1: "Store Credits",
+    Free: "N",
+    Lite: "Y",
+    Basic: "Y",
+    Pro: "Y",
+    Ultra: "Y",
+    Premium: "Y",
+    Enterprise: "Y",
+  },
+  {
+    Column1: "Coupons",
+    Free: "N",
+    Lite: "N",
+    Basic: "Y",
+    Pro: "Y",
+    Ultra: "Y",
+    Premium: "Y",
+    Enterprise: "Y",
   },
   {
     Column1: "Check Balance Page",
@@ -125,16 +146,7 @@ export const PRICE_LIST = [
     Premium: "Y",
     Enterprise: "Y",
   },
-  {
-    Column1: "Store Credits",
-    Free: "N",
-    Lite: "Y",
-    Basic: "Y",
-    Pro: "Y",
-    Ultra: "Y",
-    Premium: "Y",
-    Enterprise: "Y",
-  },
+  
   {
     Column1: "Expiring Store Credits",
     Free: "N",
@@ -325,16 +337,7 @@ export const PRICE_LIST = [
     Premium: "Unlimited",
     Enterprise: "Unlimited",
   },
-  {
-    Column1: "Coupons",
-    Free: "N",
-    Lite: "N",
-    Basic: "Y",
-    Pro: "Y",
-    Ultra: "Y",
-    Premium: "Y",
-    Enterprise: "Y",
-  },
+  
   {
     Column1: "Referral Flow",
     Free: "N",

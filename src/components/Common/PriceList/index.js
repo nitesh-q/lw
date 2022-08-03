@@ -1,5 +1,5 @@
 import React from "react";
-import { TABLE_HEAD, CHECK_ICON, PRICE_LIST,TABLE_BOTTOM } from "../../../config";
+import { TABLE_HEAD, CHECK_ICON, PRICE_LIST,TABLE_BOTTOM, PRICE_LIST_AMOUNT } from "../../../config";
 
 const getClassNameForIcon = (icon) => {
   switch (icon) {
@@ -23,10 +23,11 @@ const SequrityPrice = () => {
         </div>
         <div className="price_info_two price_info_three">
           <div className="price_head">
-            {TABLE_HEAD.map((i) => {
+            {TABLE_HEAD.map((i,index) => {
               return (
                 <div className="p_head">
                   <h5>{i}</h5>
+                  <p>{PRICE_LIST_AMOUNT[i]}</p>
                 </div>
               );
             })}

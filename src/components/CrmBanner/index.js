@@ -51,7 +51,7 @@ const CrmBanner = ({config}) => {
           <div className="col-lg-7 wow fadeInLeft" data-wow-delay="0.4s">
             <Reveal left cascade>
               <div className="new_startup_img">
-                <div className="line line_one">
+                {/* <div className="line line_one">
                   <img src={Line01} alt="" />
                 </div>
                 <div className="line line_two">
@@ -59,7 +59,7 @@ const CrmBanner = ({config}) => {
                 </div>
                 <div className="line line_three">
                   <img src={Line03} alt="" />
-                </div>
+                </div> */}
                 {config.map((i, index) => {
                   return (
                 <img className="img-fluid" src={i.image} alt="" />

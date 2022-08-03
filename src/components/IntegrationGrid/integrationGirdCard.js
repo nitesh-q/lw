@@ -16,13 +16,13 @@ class IntegrationGridCard extends Component {
             <h2>{title}</h2>
             <p>{desc}</p>
 
-            <button
+            {/* <button
               className="btn btn_get btn_get_three mt-3"
               type="submit"
               onClick={()=>navigate("/integration")}
             >
               Learn more
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

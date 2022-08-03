@@ -18,7 +18,7 @@ export const ROUTES_LABEL = {
   COUPONS: "Coupons",
   REFERRAL: "Referral Program",
   AUTOMATION: "Automated Workflows",
-  B2B_GIFTCARDS: "B2B Gift Cards",
+  // B2B_GIFTCARDS: "B2B Gift Cards",
   STORE_CREDIT: "Store Credit",
   DEVELOPERS_1: "Developers 1",
   DEVELOPERS_2: "Developers 2",
@@ -27,7 +27,7 @@ export const ROUTES_LABEL = {
   BLOG_1: "Blog_1",
   BLOG_2: "Blog_2",
   DOCUMENTATION: "Documentation",
-  CASE_STUDIES: "Case Studies",
+  // CASE_STUDIES: "Case Studies",
 };
 
 export const CHILD_ROUTES = {

@@ -6129,11 +6129,11 @@ width: 50%;
 
 /*============== agency_featured_area css =============*/
 .agency_featured_area {
-  padding-top: 160px;
+  padding-top: 120px;
 }
 
 .agency_featured_area_two {
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
 
 .features_info {
@@ -10092,8 +10092,8 @@ margin-top: 20px;
 
 .price_info_two .price_head .p_head p {
   margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .price_info_two .price_head .p_head:nth-child(2) {
@@ -25029,8 +25029,8 @@ a .h_head:hover {
 
 .price_info_two .price_head .p_head p {
   margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
   color: #fff;
 }
 
@@ -27208,4 +27208,13 @@ top: -11px;
 height: 60px;
 object-fit: contain;
 width: 150px;
+}
+
+/* ===================google iframe form */
+.google_form{
+  width: 100%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  overflow: hidden;
 }

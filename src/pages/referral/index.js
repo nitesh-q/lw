@@ -11,6 +11,7 @@ import {
   Partner,
   WorkFeatures,
   VerticallyTabComponent,
+  TrustedMerchants_2,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -102,8 +103,9 @@ const Referral = () => {
         allService={false}
         bgClass={"bg_banner_1"}
       />
+      <TrustedMerchants_2 />
 
-      <Partner pClass={"sec_pad "} />
+      {/* <Partner pClass={"sec_pad "} /> */}
       <WorkFeatures
         aClass="agency_featured_area_two"
         data={REFERRAL_FEATURES}
