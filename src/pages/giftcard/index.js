@@ -111,7 +111,6 @@ const GiftCard = () => {
       <Header className={"mt_120"} title={"Additional  key features"} />
 
       <TabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} />
-      {/* <VerticallyTabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} /> */}
 
       <Testimonial
         title="Testimonials"

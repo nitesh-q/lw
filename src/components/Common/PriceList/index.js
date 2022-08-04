@@ -1,5 +1,12 @@
-import React from "react";
-import { TABLE_HEAD, CHECK_ICON, PRICE_LIST,TABLE_BOTTOM, PRICE_LIST_AMOUNT } from "../../../config";
+import React, { useState } from "react";
+import {
+  TABLE_HEAD,
+  CHECK_ICON,
+  TABLE_BOTTOM,
+  PRICE_LIST_AMOUNT,
+  TOP_PRODUCT_PRICE_LIST,
+  REMAINING_PRODUCT_PRICE_LIST,
+} from "../../../config";
 
 const getClassNameForIcon = (icon) => {
   switch (icon) {
@@ -12,6 +19,8 @@ const getClassNameForIcon = (icon) => {
   }
 };
 const SequrityPrice = () => {
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <section className="pricing_area_four sec_pad">
       <div className="container-sm container-xl">
@@ -19,11 +28,14 @@ const SequrityPrice = () => {
           <h2 className="wow fadeInUp" data-wow-delay="0.2s">
             <span>For teams of all sizes, in the cloud</span>
           </h2>
-          <p>Our FREE plan comes with 50 transactions, 1 Campaign, 1 Integration and $0.5 per additional transaction.</p>
+          <p>
+            Our FREE plan comes with 50 transactions, 1 Campaign, 1 Integration
+            and $0.5 per additional transaction.
+          </p>
         </div>
         <div className="price_info_two price_info_three">
           <div className="price_head">
-            {TABLE_HEAD.map((i,index) => {
+            {TABLE_HEAD.map((i, index) => {
               return (
                 <div className="p_head">
                   <h5>{i}</h5>
@@ -33,7 +45,7 @@ const SequrityPrice = () => {
             })}
           </div>
           <div className="price_body">
-            {PRICE_LIST.map((list,index) => {
+            {TOP_PRODUCT_PRICE_LIST.map((list, index) => {
               return (
                 <div className="pr_list" key={index}>
                   <div className="price_item">
@@ -60,23 +72,158 @@ const SequrityPrice = () => {
                       </div>
                     );
                   })}
-                  
                 </div>
-                
               );
             })}
             <div className="pr_list">
               <div className="price_item"></div>
-              {TABLE_BOTTOM.map((item,index)=>{
+              {TABLE_BOTTOM.map((item, index) => {
                 return (
-                    <div className="price_item">
-                    <a href={item.Url} className="price_btn btn_hover">
-                    {item.Label}
+                  <div className="price_item">
+                    <a
+                      href={item.Url}
+                      className={`price_btn btn_hove ${
+                        showMore === true ? "d-none" : ""
+                      }`}
+                    >
+                      {item.Label}
                     </a>
                   </div>
-                )
+                );
               })}
-              
+            </div>
+          </div>
+          <div className="col-lg-12">
+            <div className="tab-content faq_content" id="myTabContent">
+              <div
+                className="tab-pane fade show active"
+                id="purchas"
+                role="tabpanel"
+                aria-labelledby="purchas-tab"
+              >
+                {/* <h3 className="f_p f_size_22 f_500 t_color3 mb_20">
+                  How to purchase
+                </h3> */}
+                <div id="accordion">
+                  {/* {FAQ.map((i, index) => {
+                    return (
+                      <div className="card">
+                        <div className="card-header" id={i.id}>
+                          <h5 className="mb-0">
+                            <button
+                              className={`btn btn-link ${
+                                activeTab === i.id ? "" :"collapsed"
+                              }`}
+                              data-bs-toggle="collapse"
+                              data-bs-target={`#collapse${i.id}`}
+                              aria-expanded="true"
+                              aria-controls={`collapse${i.id}`}
+                              onClick={() => setActiveTab(i.id)}
+                            >
+                              {i.question}
+                              <i className="ti-plus"></i>
+                              <i className="ti-minus"></i>
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div
+                          id={`collapse${i.id}`}
+                          className={`collapse ${
+                            activeTab === i.id ? "show" : ""
+                          }`}
+                          aria-labelledby={i.id}
+                          data-parent="#accordion"
+                        >
+                          <div className="card-body">{i.answer.map((item,i)=><Fragment key={i}>{item}<br/></Fragment>)}</div>
+                        </div>
+                      </div>
+                    );
+                  })} */}
+                  <div className="card">
+                    <div className="card-header" id="tableOne">
+                      <h5 className="mb-0">
+                        <button
+                          className={`btn btn-link text-center ${
+                            showMore === false ? "collapsed" : ""
+                          }`}
+                          data-bs-toggle="collapse"
+                          data-bs-target="#priceTable"
+                          aria-expanded="true"
+                          aria-controls="priceTable"
+                          onClick={() => setShowMore(!showMore)}
+                        >
+                         Complete Price list<i className="ti-angle-down"></i>
+                          <i className="ti-angle-up"></i>
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div
+                      id="priceTable"
+                      aria-labelledby="TableOne"
+                      data-parent="#accordion"
+                      className={`collapse ${showMore === false ? "" : "show"}`}
+                    >
+                      <div className="card-body">
+                        <div className="price_body">
+                          {REMAINING_PRODUCT_PRICE_LIST.map((list, index) => {
+                            return (
+                              <div className="pr_list" key={index}>
+                                <div className="price_item">
+                                  <h5
+                                    className="pr_title"
+                                    data-toggle="tooltip"
+                                    data-placement="top"
+                                    title=""
+                                    data-original-title="Save time by using keyboard shortcuts all across SaasLand"
+                                  >
+                                    {list.Column1}
+                                  </h5>
+                                </div>
+                                {TABLE_HEAD.map((i) => {
+                                  if (!i) {
+                                    return null;
+                                  }
+                                  return (
+                                    <div className="price_item" data-title={i}>
+                                      <h5 className="check">
+                                        {CHECK_ICON.includes(list[i])
+                                          ? null
+                                          : list[i]}
+                                        <i
+                                          className={getClassNameForIcon(
+                                            list[i]
+                                          )}
+                                        ></i>
+                                      </h5>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            );
+                          })}
+                          <div className="pr_list">
+                            <div className="price_item"></div>
+                            {TABLE_BOTTOM.map((item, index) => {
+                              return (
+                                <div className="price_item">
+                                  <a
+                                    href={item.Url}
+                                    className="price_btn btn_hover"
+                                  >
+                                    {item.Label}
+                                  </a>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

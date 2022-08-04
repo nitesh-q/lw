@@ -1,4 +1,4 @@
-import React, { useState,useRef } from "react";
+import React, { useState, useRef } from "react";
 import {
   IntegrationList,
   Testimonial,
@@ -90,28 +90,31 @@ const AUTOMATION_FEATURES = [
 const AUTOMATION_WORK = [
   {
     title: "Set up Trigger",
-    subTitle: "TRIGGE",
+    subTitle: "TRIGGER",
     desc: "When order status is updated to paid",
+    img:[Icons.Shopify_Bag.default,Icons.BigCommerce_Icon.default]
   },
   {
     title: "Logic Conditions",
     subTitle: "CONDITIONS ",
     desc: "If total value of order is greater than $50",
+    img:[Icons._99minds_Logo.default]
+
   },
   {
     title: "Execute Action",
     subTitle: "ACTION ",
     desc: "Send a text/email message with a discount gift card",
+    img:[Icons.Klaviyo_Icon.default,Icons.Omnisend_Icon.default]
+
   },
 ];
 
 const Automation = () => {
-
   return (
-    
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-       <Banner
-       config={BANNERS_CONFIG.AUTOMATION}
+      <Banner
+        config={BANNERS_CONFIG.AUTOMATION}
         titleClass={`bannerTitle`}
         allService={false}
         bgClass={"bg_banner_3"}
@@ -120,16 +123,14 @@ const Automation = () => {
       <TrustedMerchants_2 bgClass={"bg_color2"} />
 
       {/* <Partner pClass={"sec_pad pb_0"} oClass={"logo_item_opacity"} /> */}
-      <Work config={AUTOMATION_WORK} />
-     
-
       {/* <WorkFeatures
         aClass="agency_featured_area_two"
         data={AUTOMATION_WORK_FEATURES}
         title="How it works"
         dividerImg={Icons.dot.default}
       /> */}
-      {/* <Header className={"bg_white"} title={"Features"} description="" />  */}
+      <Work config={AUTOMATION_WORK} />
+
       {AUTOMATION_FEATURES.map((card, index) => (
         <Features ptClass="pt_0" {...{ ...card }} url="#" key={index} />
       ))}

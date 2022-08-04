@@ -1,6 +1,14 @@
 const Icons = {
+  //..................icons.........................
+  Shopify_Bag:require("../images/logo/shopify-bag.png"),
+  BigCommerce_Icon:require("../images/logo/big-commerce-logo.png"),
+  _99minds_Logo:require("../images/logo/99minds-logo.png"),
+  Klaviyo_Icon:require("../images/logo/klaviyo-icon.png"),
+  Omnisend_Icon:require("../images/logo/omnisend-icon.png"),
+
+
+
   // .................Home Page ......................
-  HomeBanner: require("../images/home/banner.png"),
   Engage: require("../images/home/engage.png"),
   Acquire: require("../images/home/acquire.png"),
   Retain: require("../images/home/retain.png"),
@@ -17,12 +25,12 @@ const Icons = {
   Upsell: require("../images/home/upsell.png"),
   Refund: require("../images/home/refund.png"),
   Reward: require("../images/home/reward.png"),
+  Retain01:require("../images/home/retain-1.png"),
   Icon: require("../images/home/ellipse_icon.png"),
 
   // .................trusted-merchants..................
   Woo: require("../images/trusted-merchents/woocommerce_01.png"),
   Woo_Logo: require("../images/trusted-merchents/woocommerce-logo.png"),
-
   Shopify: require("../images/trusted-merchents/shopify02.png"),
   Shopify_Logo: require("../images/trusted-merchents/shopify-logo.png"),
   ShopifyPlus: require("../images/trusted-merchents/shopifyPlus.png"),

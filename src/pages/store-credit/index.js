@@ -76,7 +76,7 @@ const StoreCredit = () => {
 
       {/* <Partner pClass={"sec_pad pb_0"} /> */}
       <Header
-        className={"bg_white"}
+        className={"bg_white pt_120"}
         title={"Key features."}
         description={"All your gift card needs, covered"}
       />

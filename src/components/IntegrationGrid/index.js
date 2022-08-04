@@ -93,7 +93,7 @@ const data = [
     type: "POS",
     image: Icons.Retail_Pro.default,
     title: "Retail Pro 9",
-    desc: "Fully integrate your direct mail and e-gifting campaigns with Salesforce: Send, measure and scale everything using our 1-click integration.",
+    desc: "Sell and redeem gift cards from your Retail Pro 9 POS. Sync gift cards from Retail Pro 9 and different eCommerce platforms.",
   },
   {
     label: "Marketing",

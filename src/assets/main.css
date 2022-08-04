@@ -9624,7 +9624,7 @@ color: #282835;
   text-align: center;
   background-color: white;
   box-shadow: 0 30px 50px 0 #CFC9FA80;
-  padding: 30px 50px 0px;
+  padding: 0px 50px 0px;
   border: 1px solid #CFC9FA;
   border-radius: 4px;
   position: relative;
@@ -9633,6 +9633,10 @@ color: #282835;
   margin-left: 25px;
    margin-right: 25px;
 
+}
+.work_item img {
+  width: 30px;
+  margin: 10px 10px 0px;
 }
 .work_item h5{
   color: #222D39;
@@ -10066,6 +10070,42 @@ margin-top: 20px;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(12, 0, 46, 0.05);
   box-shadow: 0px 4px 5px 0px rgba(12, 0, 46, 0.05);
 }
+.price_info_two .faq_content .tab-pane .card .card-header .btn {
+  color: #576370;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font: 500 18px/26px "Poppins", sans-serif;
+  padding: 20px 30px 20px 0px;
+  position: relative;
+  white-space: normal;
+}
+.price_info_two .faq_content .tab-pane .card .card-header .btn i {
+  position: absolute;
+  right: 0;
+  left: 175px;
+  top: 52%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+  font-size: 20px;
+}
+.price_info_two .faq_content .tab-pane .card .card-header .btn i + i {
+  display: block;
+}
+
+.price_info_two .faq_content .tab-pane .card .card-header .btn.collapsed {
+  color: #576370;
+}
+
+.price_info_two .faq_content .tab-pane .card .card-header .btn.collapsed i {
+  display: block;
+}
+
+.price_info_two .faq_content .tab-pane .card .card-header .btn.collapsed i + i {
+  display: none;
+}
 
 .price_info_two .price_head {
   display: table;
@@ -10181,7 +10221,7 @@ margin-top: 20px;
   border-radius: 45px;
   color: #677294;
   border-color: #dfe3ed;
-  padding: 0px 32px;
+  padding: 0px 20px;
   line-height: 46px;
   margin: 40px 0px;
   -webkit-transition: all 0.2s linear;
@@ -25050,6 +25090,7 @@ a .h_head:hover {
   font-size: 20px;
   font-weight: 600;
   color: #fff;
+  margin: 10px 0px;
 }
 
 .price_info_two .price_item {
@@ -25120,9 +25161,9 @@ a .h_head:hover {
   border-radius: 4px;
   color: #5e2ced;
   border-color: #5e2ced;
-  padding: 0px 32px;
-  line-height: 46px;
-  margin: 40px 0px;
+  padding: 0px 20px;
+  line-height: 36px;
+  margin: 18px 0px;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;

@@ -3,7 +3,13 @@ import React, { useState } from "react";
 import { Reveal } from "react-reveal";
 import Title from "../Common/Title";
 
-const VerticallyTabComponent = ({ config, pClass="", rClass="", mClass="", icon }) => {
+const VerticallyTabComponent = ({
+  config,
+  pClass = "",
+  rClass = "",
+  mClass = "",
+  icon,
+}) => {
   const [activeTab, setActiveTab] = useState(config.PANNEL_DATA[0].id);
 
   return (
@@ -12,7 +18,11 @@ const VerticallyTabComponent = ({ config, pClass="", rClass="", mClass="", icon 
     >
       <div className="container">
         {config.HEAD.map((item, index) => (
-          <Title title={item.Title} sClass="sec_title text-center mb_70"   tClass="t_color3" />
+          <Title
+            title={item.Title}
+            sClass="sec_title text-center mb_70"
+            tClass="t_color3"
+          />
           //   <h2
           //     key={index}
           //     className="f_size_30 f_600 t_color3 l_height40 text-center mb_50 l_sapcing1"
@@ -21,7 +31,6 @@ const VerticallyTabComponent = ({ config, pClass="", rClass="", mClass="", icon 
           //   </h2>
         ))}
 
-        {/* <div className="row accordion" id="accordionExample"> */}
         <div className="row">
           <div className="col-lg-5 col-md-3 mt_50">
             <ul
@@ -54,14 +63,6 @@ const VerticallyTabComponent = ({ config, pClass="", rClass="", mClass="", icon 
                     >
                       {item.label}
                     </a>
-                    {/* <div
-                      className={`collapse ${
-                        activeTab === item.id ? "show" : ""
-                      }`}
-                      data-bs-parent="#accordionExample"
-                    >
-                      {item.title}
-                    </div> */}
                   </li>
                 </>
               ))}
@@ -81,7 +82,7 @@ const VerticallyTabComponent = ({ config, pClass="", rClass="", mClass="", icon 
                     aria-labelledby={`${item.id}-tab`}
                   >
                     {/* <TabPannel item={item} rClass={rClass} icon={icon} /> */}
-                    <Reveal effect="fadeInRight" duration={1000}>
+                    <Reveal effect="fadeInLeft" duration={2000}>
                       <img className="img-fluid" src={item.image} />
                     </Reveal>
                   </div>

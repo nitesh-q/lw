@@ -1,4 +1,5 @@
 import React, { Component, useEffect, useState } from "react";
+import Icons from "../../shared/assets";
 import Title from "../Common/Title";
 
 const Work = ({ config }) => {
@@ -54,19 +55,19 @@ const Work = ({ config }) => {
           <div className="workflow_dot_line "></div>
           <div className="row">
             {config.map((i, index) => {
-              let className = "default";
+              let _className = "default";
               let SpinnerClass = "spinner_container";
-              if (progressIndex === index) className = "progress";
-              if (doneIndexes.includes(index)) className = "ready";
-              if (className === "default")
+              if (progressIndex === index) _className = "progress";
+              if (doneIndexes.includes(index)) _className = "ready";
+              if (_className === "default")
                 SpinnerClass = "default_spinner_container";
-              if (className === "ready") SpinnerClass = "spinner_container_";
+              if (_className === "ready") SpinnerClass = "spinner_container_";
               return (
                 <div className="col-lg-4">
                   <div className="work_item">
                     <div className={SpinnerClass}>
                       <svg
-                        className={className}
+                        className={_className}
                         id="check"
                         version="1.1"
                         xmlns="http://www.w3.org/2000/svg"
@@ -92,6 +93,11 @@ const Work = ({ config }) => {
                           fill="transparent"
                         />
                       </svg>
+                    </div>
+                    <div className="d-flex justify-content-center">
+                      {i.img.map((item, index) => {
+                        return <img src={item} key={index} />;
+                      })}
                     </div>
                     <h5>{i.title}</h5>
                     <p>{i.subTitle} </p>

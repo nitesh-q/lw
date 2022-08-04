@@ -1,4 +1,4 @@
-export const TABLE_HEAD = ["", "Lite", "Basic", "Pro", "Ultra", "Premium"];
+export const TABLE_HEAD = ["", "Lite", "Basic", "Pro", "Ultra", "Premium","Enterprise"];
 export const TABLE_BOTTOM = [
   {
     Url: "#",
@@ -20,11 +20,15 @@ export const TABLE_BOTTOM = [
     Url: "#",
     Label: "Get Started",
   },
+  {
+    Url: "#",
+    Label: "Contact us",
+  },
 ];
 
 export const CHECK_ICON = ["Y", "N"];
 
-export const PRICE_LIST_AMOUNT =  {
+export const PRICE_LIST_AMOUNT = {
   Column1: "Monthly Price ($)",
   Free: "$0/m",
   Lite: "$19/m",
@@ -34,8 +38,7 @@ export const PRICE_LIST_AMOUNT =  {
   Premium: "$499/m",
   Enterprise: "Custom",
 };
-export const PRICE_LIST = [
- 
+export const TOP_PRODUCT_PRICE_LIST = [
   {
     Column1: "Monthly Transactions",
     Free: 50,
@@ -77,9 +80,29 @@ export const PRICE_LIST = [
     Enterprise: "Unlimited",
   },
   {
+    Column1: "Issue Giftcard",
+    Free: "N",
+    Lite: "Y",
+    Basic: "Y",
+    Pro: "Y",
+    Ultra: "Y",
+    Premium: "Y",
+    Enterprise: "Y",
+  },
+  {
     Column1: "Store Credits",
     Free: "N",
     Lite: "Y",
+    Basic: "Y",
+    Pro: "Y",
+    Ultra: "Y",
+    Premium: "Y",
+    Enterprise: "Y",
+  },
+  {
+    Column1: "Loyalty Points",
+    Free: "N",
+    Lite: "N",
     Basic: "Y",
     Pro: "Y",
     Ultra: "Y",
@@ -97,15 +120,27 @@ export const PRICE_LIST = [
     Enterprise: "Y",
   },
   {
-    Column1: "Check Balance Page",
-    Free: "Y",
-    Lite: "Y",
+    Column1: "Referral Flow",
+    Free: "N",
+    Lite: "N",
     Basic: "Y",
     Pro: "Y",
     Ultra: "Y",
     Premium: "Y",
     Enterprise: "Y",
   },
+  {
+    Column1: "Workflows",
+    Free: "N",
+    Lite: 1,
+    Basic: 3,
+    Pro: 6,
+    Ultra: 10,
+    Premium: "Unlimited",
+    Enterprise: "Unlimited",
+  }
+]
+  export const REMAINING_PRODUCT_PRICE_LIST = [
   {
     Column1: "Import Giftcards",
     Free: "N",
@@ -146,7 +181,7 @@ export const PRICE_LIST = [
     Premium: "Y",
     Enterprise: "Y",
   },
-  
+
   {
     Column1: "Expiring Store Credits",
     Free: "N",
@@ -158,14 +193,14 @@ export const PRICE_LIST = [
     Enterprise: "Y",
   },
   {
-    Column1: "Workflows",
-    Free: "N",
-    Lite: 1,
-    Basic: 3,
-    Pro: 6,
-    Ultra: 10,
-    Premium: "Unlimited",
-    Enterprise: "Unlimited",
+    Column1: "Check Balance Page",
+    Free: "Y",
+    Lite: "Y",
+    Basic: "Y",
+    Pro: "Y",
+    Ultra: "Y",
+    Premium: "Y",
+    Enterprise: "Y",
   },
   {
     Column1: "Workflow Delay Action",
@@ -187,16 +222,7 @@ export const PRICE_LIST = [
     Premium: "Y",
     Enterprise: "Y",
   },
-  {
-    Column1: "Issue Giftcard",
-    Free: "N",
-    Lite: "Y",
-    Basic: "Y",
-    Pro: "Y",
-    Ultra: "Y",
-    Premium: "Y",
-    Enterprise: "Y",
-  },
+
   {
     Column1: "Giftcard Discounts &amp; Promotions",
     Free: "N",
@@ -337,27 +363,7 @@ export const PRICE_LIST = [
     Premium: "Unlimited",
     Enterprise: "Unlimited",
   },
-  
-  {
-    Column1: "Referral Flow",
-    Free: "N",
-    Lite: "N",
-    Basic: "Y",
-    Pro: "Y",
-    Ultra: "Y",
-    Premium: "Y",
-    Enterprise: "Y",
-  },
-  {
-    Column1: "Loyalty Points",
-    Free: "N",
-    Lite: "N",
-    Basic: "Y",
-    Pro: "Y",
-    Ultra: "Y",
-    Premium: "Y",
-    Enterprise: "Y",
-  },
+
   {
     Column1: "VIP Tiers",
     Free: "N",

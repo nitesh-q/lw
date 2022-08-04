@@ -292,7 +292,7 @@ export const HOME_TAB2_CONFIG = {
       id: "retain",
       label: "Retain",
       selected: "false",
-      image: Icons.Reward.default,
+      image: Icons.Retain01.default,
       title: "Use reward to retain customers",
       subTitle: "",
       description1:

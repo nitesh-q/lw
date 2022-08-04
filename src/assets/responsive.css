@@ -172,12 +172,52 @@ width: 100 !important;
         font-size: 55px;
         line-height: 70px;
     }
+    .chat_features_content p{
+    color: #7b7b93;
+    font-weight: 400;
+    font-family: "Poppins" , "sans-serif";
+    font-size: 24px;
+    letter-spacing: 0.18px;
+    line-height: 35px;
+    }
     .chat_features_content ul li {
         color: #7b7b93;
         font-weight: 400;
         font-family: "Poppins";
         font-size: 24px;
-        line-height: 30px;
+        line-height: 35px;
+    }
+    .price_info_two .price_item h5 {
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: #222d39;
+    }
+    .price_info_three .price_item .check {
+        color: #2c2c51;
+        font-size: 18px;
+      }
+      .customer_engagement_content ul li {
+        color: #2C2C51;
+        font-weight: 500;
+        font-family: "Poppins";
+        font-size: 24px;
+        letter-spacing: 0.18px;
+        line-height: 35px;
+
+    }
+      .customer_engagement_content ul li span {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .customer_engagement_content h3 {
+        font-size: 24px;
+        line-height: 35px;
+
+    }
+    .customer_engagement_content h6 {
+        font-size: 24px;
+        line-height: 35px;
     }
  }
 @media(max-width:1650px){
