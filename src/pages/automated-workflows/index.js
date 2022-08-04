@@ -57,36 +57,6 @@ const AUTOMATION_FEATURES = [
   },
 ];
 
-// const AUTOMATION_WORK_FEATURES = [
-//   {
-//     rowClass: "row flex-row-reverse",
-//     aClass: "pr_70 pl_70",
-//     fImage: Icons.Work1.default,
-//     iImg: Icons.icon01.default,
-//     fTitle: "Set up Trigger",
-//     descriptions:
-//       "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
-//   },
-//   {
-//     rowClass: "row agency_featured_item_two",
-//     aClass: "pl_100",
-//     fImage: Icons.CustomCoupon.default,
-//     iImg: Icons.icon02.default,
-//     fTitle: "Logic Conditions",
-//     descriptions:
-//       "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
-//   },
-//   {
-//     rowClass: "row flex-row-reverse",
-//     aClass: "pr_70 pl_70",
-//     fImage: Icons.RewardCustomer.default,
-//     iImg: Icons.icon03.default,
-//     ftitle: "Execute Action",
-//     descriptions:
-//       "Why I say old chap that is spiffing bodge, blag pardon me buggered mufty Oxford butty bubble and squeak wind up, brown bread the full monty bloke ruddy cras tickety-boo squiffy. Starkers dropped a clanger lurgy is cack excuse my French what a plonker blower.!",
-//   },
-// ];
-
 const AUTOMATION_WORK = [
   {
     title: "Set up Trigger",
@@ -120,15 +90,7 @@ const Automation = () => {
         bgClass={"bg_banner_3"}
         btnClass={"bg_color2 border_btn"}
       />
-      <TrustedMerchants_2 bgClass={"bg_color2"} />
-
-      {/* <Partner pClass={"sec_pad pb_0"} oClass={"logo_item_opacity"} /> */}
-      {/* <WorkFeatures
-        aClass="agency_featured_area_two"
-        data={AUTOMATION_WORK_FEATURES}
-        title="How it works"
-        dividerImg={Icons.dot.default}
-      /> */}
+      <TrustedMerchants_2  />
       <Work config={AUTOMATION_WORK} />
 
       {AUTOMATION_FEATURES.map((card, index) => (

@@ -13,7 +13,7 @@ const Features = ({
 }) => {
   return (
     <section className={`chat_features_area ${ptClass}`}>
-      <div className=" container-sm container-xl">
+      <div className=" container container-xl">
         <div className={`row  ${rowClass}`}>
           <div className={`col-lg-7`}>
             <div className="chat_features_img chat_features_img_one">

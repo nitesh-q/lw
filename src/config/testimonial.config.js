@@ -3,21 +3,28 @@ import Icons from "../shared/assets";
 export const TESTIMONIAL_CONFIG = {
   TESTIMONIAL_SLIDER_DATA: [
     {
-      id: 1,
-      company: Icons.Author_01.default,
-      Name: "Benjaimn, Marketing Team Lead, Besttop",
+      Name: "Bestops - Lauren Back - Digital Marketing Manager",
       authorPost: "UI/UX designer",
-      description: `Why I say old chap that is spiffing barney, nancy boy bleeder chimney pot Richard cheers the little rotter so I said, easy peasy buggered blower bevvy A bit of how's your father.!`,
-      image: Icons.Besttop_01.default,
-      
+      description: `With 99minds we are able to create one gift cards to make it work across multi-storefront for our multiple brands.`,
+      image: Icons.Testimonial_Bestop.default,
     },
     {
-      id: 2,
-      company: Icons.Author_01.default,
-      Name: "Benjaimn, Marketing Team Lead, Besttop",
+      Name: "Anthony Pinstripes",
+      description: ``,
+      image: Icons.Tesimonial_Pinstripes.default,
+    },
+    {
+      Name: "Cariloha",
+      description: `One stop solution for Marketing and Promotion.Complete automation for gift cards and Coupons based on Customer Journey.`,
+      image: Icons.Testimonial_Cariloha.default,
+    },
+    {
+      Name: "FlynnOhara",
       authorPost: "UI/UX designer",
-      description: `Why I say old chap that is spiffing barney, nancy boy bleeder chimney pot Richard cheers the little rotter so I said, easy peasy buggered blower bevvy A bit of how's your father.!`,
-      image: Icons.Besttop_01.default,
+      description: `99minds helps us to migrate our existing cumbersome bank based gift card program to easy to use gift cards program for 1000 schools and 36 stores.
+      Great support for Physical and Digital gift cards.
+      `,
+      image: Icons.Testimonial_FlynnOHaraUniforms.default,
     },
   ],
 };

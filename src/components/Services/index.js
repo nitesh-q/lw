@@ -8,7 +8,7 @@ import Icon3 from "../../images/service/icon3.png";
 const Service = () => {
   return (
     <section className=" service_provide mb_50 mt_50">
-      <div className="container-sm container-xl">
+      <div className="container">
         <div className="row">
           <div className="col-lg-4 ">
             <div className="service_provide_content justify-content-start">

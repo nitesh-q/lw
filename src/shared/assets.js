@@ -70,8 +70,12 @@ const Icons = {
   Miva_1: require("../images/integrations/miva-logo.png"),
 
   //.....................Testimonials......................
-  Author_01: require("../images/testimonials/01.png"),
-  Besttop_01: require("../images/testimonials/bestop1.png"),
+  Testimonial_Bestop: require("../images/testimonials/Testimonial-Bestop.png"),
+  Testimonial_Cariloha: require("../images/testimonials/Testimonial-Cariloha.png"),
+  Tesimonial_Pinstripes: require("../images/testimonials/Tesimonial-Pinstripes.png"),
+  Testimonial_FlynnOHaraUniforms: require("../images/testimonials/Testimonial-FlynnOHaraUniforms.png"),
+
+
 
   //....................Giftcard Page ......................
   GiftBanner: require("../images/giftcard/giftBanner.png"),

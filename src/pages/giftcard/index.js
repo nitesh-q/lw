@@ -93,6 +93,7 @@ const GiftCard = () => {
         titleClass={`bannerTitle`}
         allService={false}
         bgClass={"bg_banner_2"}
+        wClass={"mw_125"}
       />
       <TrustedMerchants_2 />
 
@@ -127,7 +128,7 @@ const GiftCard = () => {
       />
       {/* <TryAction /> */}
       <CTA_1 />
-      <CaseStudiesSlider />
+      {/* <CaseStudiesSlider /> */}
       <Services />
     </Layout>
   );

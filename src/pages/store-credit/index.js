@@ -64,15 +64,9 @@ const STORE_CREDIT_FEATURES = [
 const StoreCredit = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-      {/* <Banner
-        config={BANNERS_CONFIG.DISCOUNTS}
-        titleClass={`bannerTitle`}
-        sllService={true}
-        mClass={"mb_90"}
-        wClass={"mw_125"}
-      /> */}
+    
       <CrmBanner config={BANNERS_CONFIG.STORE_CREDIT} />
-      <TrustedMerchants_2 bgClass={"bg_color2"} />
+      <TrustedMerchants_2 />
 
       {/* <Partner pClass={"sec_pad pb_0"} /> */}
       <Header

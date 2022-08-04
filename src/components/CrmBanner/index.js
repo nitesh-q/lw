@@ -37,7 +37,7 @@ const CrmBanner = ({config}) => {
                     </a>
                   </div> */}
                 <div className="col-lg-12">
-                  <StartedFreeButton btnClass={"bg_color2 border_btn"} />
+                  <StartedFreeButton  />
                 </div>
                 <CTAService allService={false} />
                 <SupportedBrand

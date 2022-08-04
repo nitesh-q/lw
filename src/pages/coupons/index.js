@@ -76,7 +76,7 @@ const Coupons = () => {
       />
       <IntegrationList />
       <TryAction />
-      <CaseStudiesSlider />
+      {/* <CaseStudiesSlider /> */}
       <Services />
     </Layout>
   );

@@ -82,9 +82,7 @@ const SequrityPrice = () => {
                   <div className="price_item">
                     <a
                       href={item.Url}
-                      className={`price_btn btn_hove ${
-                        showMore === true ? "d-none" : ""
-                      }`}
+                      className={`price_btn btn_hove `}
                     >
                       {item.Label}
                     </a>
@@ -101,45 +99,7 @@ const SequrityPrice = () => {
                 role="tabpanel"
                 aria-labelledby="purchas-tab"
               >
-                {/* <h3 className="f_p f_size_22 f_500 t_color3 mb_20">
-                  How to purchase
-                </h3> */}
                 <div id="accordion">
-                  {/* {FAQ.map((i, index) => {
-                    return (
-                      <div className="card">
-                        <div className="card-header" id={i.id}>
-                          <h5 className="mb-0">
-                            <button
-                              className={`btn btn-link ${
-                                activeTab === i.id ? "" :"collapsed"
-                              }`}
-                              data-bs-toggle="collapse"
-                              data-bs-target={`#collapse${i.id}`}
-                              aria-expanded="true"
-                              aria-controls={`collapse${i.id}`}
-                              onClick={() => setActiveTab(i.id)}
-                            >
-                              {i.question}
-                              <i className="ti-plus"></i>
-                              <i className="ti-minus"></i>
-                            </button>
-                          </h5>
-                        </div>
-
-                        <div
-                          id={`collapse${i.id}`}
-                          className={`collapse ${
-                            activeTab === i.id ? "show" : ""
-                          }`}
-                          aria-labelledby={i.id}
-                          data-parent="#accordion"
-                        >
-                          <div className="card-body">{i.answer.map((item,i)=><Fragment key={i}>{item}<br/></Fragment>)}</div>
-                        </div>
-                      </div>
-                    );
-                  })} */}
                   <div className="card">
                     <div className="card-header" id="tableOne">
                       <h5 className="mb-0">
@@ -153,7 +113,7 @@ const SequrityPrice = () => {
                           aria-controls="priceTable"
                           onClick={() => setShowMore(!showMore)}
                         >
-                         Complete Price list<i className="ti-angle-down"></i>
+                          Complete Price list<i className="ti-angle-down"></i>
                           <i className="ti-angle-up"></i>
                         </button>
                       </h5>
@@ -203,21 +163,6 @@ const SequrityPrice = () => {
                               </div>
                             );
                           })}
-                          <div className="pr_list">
-                            <div className="price_item"></div>
-                            {TABLE_BOTTOM.map((item, index) => {
-                              return (
-                                <div className="price_item">
-                                  <a
-                                    href={item.Url}
-                                    className="price_btn btn_hover"
-                                  >
-                                    {item.Label}
-                                  </a>
-                                </div>
-                              );
-                            })}
-                          </div>
                         </div>
                       </div>
                     </div>

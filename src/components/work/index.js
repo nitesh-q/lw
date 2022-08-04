@@ -43,7 +43,7 @@ const Work = ({ config }) => {
   }, [doneIndexes]);
 
   return (
-    <section className="support_work_area sec_pad">
+    <section className="support_work_area sec_pad pb_145">
       <div className="container-sm container-xl">
         <Title
           sClass="sec_title text-center mb_70"
@@ -94,16 +94,17 @@ const Work = ({ config }) => {
                         />
                       </svg>
                     </div>
-                    <div className="d-flex justify-content-center">
-                      {i.img.map((item, index) => {
-                        return <img src={item} key={index} />;
-                      })}
-                    </div>
+                 
                     <h5>{i.title}</h5>
                     <p>{i.subTitle} </p>
                     <ul className="list-unstyled p_list">
                       <li>{i.desc}</li>
                     </ul>
+                    <div className="d-flex justify-content-center py-4">
+                      {i.img.map((item, index) => {
+                        return <img src={item} key={index} />;
+                      })}
+                    </div>
                   </div>
                 </div>
               );

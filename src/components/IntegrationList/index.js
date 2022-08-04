@@ -44,7 +44,7 @@ const integrations = [
 const IntegrationList = () => {
   return (
     <section className="security_integration_area">
-      <div className="container-sm container-xl">
+      <div className="container">
         <div className="hosting_title  text-center">
           <h2 className="wow fadeInUp">Integrations</h2>
           <p>Empower Your Brick & Click Store With Powerful Integrations</p>
@@ -67,7 +67,7 @@ const IntegrationList = () => {
             onClick={()=>navigate("/integrations")}
 
           >
-            View all
+            View All Integrations <i className="ti-arrow-right" ></i>
           </a>
         </div>
       </div>

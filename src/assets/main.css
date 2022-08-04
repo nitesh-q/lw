@@ -343,8 +343,11 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   color: #263b5e;
 }
 
-.mt_60 {
-  margin-top: 60px;
+.mt_15{
+  margin-top: 15px;
+}
+.mt_20{
+  margin-top: 20px;
 }
 
 .mt_30 {
@@ -354,19 +357,18 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .mt_40 {
   margin-top: 40px;
 }
-.mt_15{
-  margin-top: 15px;
+
+.mt_50 {
+  margin-top: 50px;
 }
-.mt_20{
-  margin-top: 20px;
+.mt_60 {
+  margin-top: 60px;
 }
 
 .mt_70 {
   margin-top: 70px;
 }
-.mt_50 {
-  margin-top: 50px;
-}
+
 
 .mt_75 {
   margin-top: 75px;
@@ -453,6 +455,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 .p_40{
   padding: 40px !important;
+}
+.pb_145{
+  padding-bottom: 145px !important;
 }
 
 .pl_1{
@@ -9636,7 +9641,7 @@ color: #282835;
 }
 .work_item img {
   width: 30px;
-  margin: 10px 10px 0px;
+  margin: 0px 10px 0px;
 }
 .work_item h5{
   color: #222D39;

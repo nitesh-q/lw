@@ -2,7 +2,7 @@ import React from "react";
 const TryAction = ({pClass=""}) => (
   <section className={`try_call_to_action_area sec_pad ${pClass}`}>
     <div className="container ">
-      <div className="row w_98">
+      <div className="row ">
         <div className="col-lg-6  ">
           <div className="try_call_action_text">
             <h2>Try 99minds now</h2>
@@ -14,7 +14,7 @@ const TryAction = ({pClass=""}) => (
         </div>
 
         <div className="col-lg-6">
-          <div className="row w-100 try_action_service">
+          <div className="row try_action_service">
             {/* <div className="col">
               <form action="#" className="contact_form_box" method="post">
                 <div className="form-group text_box">
@@ -34,7 +34,7 @@ const TryAction = ({pClass=""}) => (
             </div>
           </div>
 
-          <div className="row w-100 service ">
+          <div className="row   mt_20 ">
           
             <li className="col "> No Credit Card Required</li>
             <li className="col"> Free Sign Up</li>

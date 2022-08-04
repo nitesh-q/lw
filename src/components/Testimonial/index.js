@@ -8,7 +8,7 @@ const settings = {
   speed: 500,
   arrows: true,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 300000,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -20,7 +20,7 @@ const settings = {
  */
 const Testimonial = ({ sliderData, bgColor, title, subTitle }) => {
   return (
-    <section className={`agency_testimonial_area sec_pad mb_70 ${bgColor}`}>
+    <section className={`agency_testimonial_area sec_pad ${bgColor}`}>
       <div className="container">
         <h2 >
           Testimonial
