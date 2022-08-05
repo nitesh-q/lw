@@ -3984,6 +3984,14 @@ width: 100 !important;
 }
 
 @media (max-width:650px){
+    .modal-content{
+        height: 600px;
+     }
+    .modal{
+        overflow-x: unset;
+        overflow-y: unset;
+        
+    }
     .about_img .about_img_slider .about_item.w45,.about_img .about_img_slider .about_item.w55{
         width: 100%;
     }

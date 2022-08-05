@@ -27036,6 +27036,11 @@ max-width: 580px;
 .modal-header{
   border: 0px;
 }
+.modal{
+  overflow-x: unset;
+  overflow-y: unset;
+  
+}
 .modal .card{
   border: 0px;
 }
