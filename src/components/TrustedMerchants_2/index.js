@@ -27,11 +27,13 @@ const TrustedMerchants_2 = ({bgClass}) => {
         <div>
           <h2>Trusted by 500+ Merchnats</h2>
         </div>
+        <div className="row">
         <div className="img">
           {LOGO.map((i, index) => {
-            return <img className="img-fluid" src={i.image} />;
+            return(<img className="img-fluid" src={i.image} />) 
           })}
         </div>
+      </div>
       </div>
     </section>
   );

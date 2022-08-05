@@ -98,7 +98,7 @@ const Loyalty = () => {
       <Header
         className={"bg_white pt_120"}
         title={
-          "Build an effective Customer loyalty programs right for yor hand "
+          "Build an effective Customer loyalty programs right for your brand "
         }
         description={"All your required key features under one roof"}
       />

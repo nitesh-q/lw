@@ -3,7 +3,7 @@ import Icons from "../shared/assets";
 export const TESTIMONIAL_CONFIG = {
   TESTIMONIAL_SLIDER_DATA: [
     {
-      Name: "Bestops - Lauren Back - Digital Marketing Manager",
+      Name: "Lauren Back - Digital Marketing Manager, Bestops",
       description: `With 99minds we are able to create one gift cards to make it work across multi-storefront for our multiple brands.`,
       image: Icons.Testimonial_Bestop.default,
     },
@@ -18,7 +18,7 @@ export const TESTIMONIAL_CONFIG = {
       image: Icons.Testimonial_Cariloha.default,
     },
     {
-      Name: "FlynnOhara- Thomas Narkiewicz, CTO",
+      Name: "Thomas Narkiewicz - CTO, FlynnOhara",
       description: `99minds helps us to migrate our existing cumbersome bank based gift card program to easy to use gift cards program for 1000 schools and 36 stores.
       Great support for Physical and Digital gift cards.`,
       image: Icons.Testimonial_FlynnOHaraUniforms.default,

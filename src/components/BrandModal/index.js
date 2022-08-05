@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, ModalHeader, Card, CardBody, ModalBody } from "reactstrap";
+import { Modal, ModalHeader, Card, CardBody, ModalBody,ModalFooter } from "reactstrap";
 import Icons from "../../shared/assets";
 
 const ICONS = [
@@ -9,15 +9,15 @@ const ICONS = [
   },
   {
     icon: Icons.Woo.default,
-    desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
+    desc: " Connect a WooCommerce account to sell & redeem gift cards on your store.",
   },
   {
     icon: Icons.BigCommerce.default,
-    desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
+    desc: " Connect a BigCommerce account to sell & redeem gift cards on your store.",
   },
   {
     icon: Icons.ShopifyPlus.default,
-    desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
+    desc: " Connect a Shopify Plus account to sell & redeem gift cards on your store.",
   },
 ];
 
@@ -48,18 +48,21 @@ const BrandModal = ({ toggle, showModal }) => {
                   <button>Connect</button>
                 </div>
                 <p>
-                  Connect a Shopify account to sell & redeem gift cards on your
+                  Connect a Miva account to sell & redeem gift cards on your
                   store.
                 </p>
               </div>
-              <div className="footer_button">
+             
+            </div>
+        
+      </ModalBody>
+      <ModalFooter>
+      <div className="footer_button">
                 <button onClick={toggle} className={`btn btn_get btn_get_two`}>
                   Close
                 </button>
               </div>
-            </div>
-        
-      </ModalBody>
+      </ModalFooter>
     </Modal>
   );
 };

@@ -781,6 +781,8 @@ color: #51fe23; */
 
 .btn_get_two:hover {
   background: #000000;
+  border-color: #000000;
+
   color: #fff;
 }
 .btn_get_three{
@@ -2651,6 +2653,12 @@ font-weight: 800;
 }
 
 /*============ sticky menu css ==============*/
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: flex-start;
+}
 .header_area {
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -27030,7 +27038,7 @@ a .h_head:hover {
 
 /*====================================================*/
 .modal-dialog{
-margin: 5rem auto;
+margin: 2rem auto;
 max-width: 580px;
 }
 .modal-header{
@@ -27039,7 +27047,10 @@ max-width: 580px;
 .modal{
   overflow-x: unset;
   overflow-y: unset;
-  
+}
+.modal-footer{
+  border: 0px;
+  justify-content: center;
 }
 .modal .card{
   border: 0px;
@@ -27275,6 +27286,7 @@ top: -11px;
 height: 60px;
 object-fit: contain;
 width: 150px;
+margin: 15px;
 }
 
 /* ===================google iframe form */

@@ -19,7 +19,7 @@ class CustomNavbar extends Component {
       <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
         <header className="header_area">
           <nav className={`navbar navbar-expand-lg menu_one ${mClass}`}>
-            <div className={`container-sm ${cClass}`}>
+            <div className={`container ${cClass}`}>
               <button
                 className="navbar-toggler collapsed"
                 type="button"

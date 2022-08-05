@@ -662,6 +662,10 @@ width: 100 !important;
 
 
 @media  (max-width:1199px){
+    .trusted_merchnants_area .img{
+        display: block;
+      }
+     
     .menu_one .btn_get {
         margin-left: 20px;
       }
