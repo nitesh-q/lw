@@ -1,4 +1,6 @@
 import React from "react";
+import Tick from "../../images/icon/tick-Arrow.svg"
+
 const TryAction = ({pClass=""}) => (
   <section className={`try_call_to_action_area sec_pad ${pClass}`}>
     <div className="container ">
@@ -34,12 +36,16 @@ const TryAction = ({pClass=""}) => (
             </div>
           </div>
 
-          <div className="row   mt_20 ">
+          <div className="try_call_to_action_service">
           
-            <li className="col "> No Credit Card Required</li>
+         <div className="">   <img src={Tick}  />No Credit Card Required</div>
+          <div className=""> <img src={Tick}  />Free Sign Up</div>
+          <div className=""> <img src={Tick}  />24/7  Support</div>
+
+            {/* <li className="col "> No Credit Card Required</li>
             <li className="col"> Free Sign Up</li>
             <li className="col"> 24/7 Support</li>
-          
+           */}
           </div>
         </div>
       </div>

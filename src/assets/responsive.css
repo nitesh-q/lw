@@ -233,12 +233,12 @@ width: 100 !important;
     .menu_one .btn_get {
         margin-left: 25px;
     }
-    .seo_features_content .flex{
+    /* .seo_features_content .flex{
         display: flex;
         flex-direction: row;
         justify-content: center;
-      }
-      .seo_features_content  li{
+      } */
+      /* .seo_features_content  li{
         font-size: 14px;
         font-weight: 500;
         white-space: nowrap;
@@ -248,7 +248,7 @@ width: 100 !important;
       .seo_features_content  li::marker{
       content: url(../images/icon/tick-Arrow.svg);
       color: #51fe23;
-      }
+      } */
 }
 @media (max-width: 1550px){
     .menu > .nav-item + .nav-item {
@@ -262,7 +262,7 @@ width: 100 !important;
         padding-bottom: 100px;
         padding-top: 150px;
     }
-    .seo_features_content .flex{
+    /* .seo_features_content .flex{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -278,7 +278,7 @@ width: 100 !important;
         content: url(../images/icon/tick-Arrow.svg);
 
       color: #51fe23;
-      }
+      } */
     .s_features_item .s_features_img img{
         max-width: 100%;
     }
@@ -304,9 +304,9 @@ width: 100 !important;
     .call_action_area .action_one {
         left: -720px;
     }
-    .company_widget img,.protype_img{
+    /* .company_widget img,.protype_img{
         max-width: 100%;
-    }
+    } */
     .p_feature_item .p_feture_img_one {
          margin-right: -20px; 
     }
@@ -665,7 +665,7 @@ width: 100 !important;
     .menu_one .btn_get {
         margin-left: 20px;
       }
-    .seo_features_content .flex{
+    /* .seo_features_content .flex{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -681,7 +681,7 @@ width: 100 !important;
         content: url(../images/icon/tick-Arrow.svg);
 
       color: #51fe23;
-      }
+      } */
     .developer_product_area h1 {
         font-size: 30px;
         font-family: 'Poppins';
@@ -1632,27 +1632,7 @@ width: 100 !important;
         text-align: left;
         margin-top: 10px;
       }
-      /* .try_call_to_action_area li::marker{
-      content: '✓';
-      color: #51fe23;
       
-      } */
-      .seo_features_content .flex{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      .seo_features_content  li{
-        font-size: 14px;
-        font-weight: 500;
-        white-space: nowrap;
-        color: #fff;
-        text-align: left;
-      }
-      .seo_features_content  li::marker{
-      content: url(../images/icon/tick-Arrow.svg);
-      color: #51fe23;
-      }
       
       
       .try_call_action_text {
@@ -4413,7 +4393,9 @@ width: 100 !important;
         padding-top: 120px;
     }
    
-    
+    .try_call_to_action_area .service{
+        flex-direction: column;
+      }
     .security_features_inner .s_features_item,.security_features_inner{
         margin-left: 0;
         margin-right: 0;

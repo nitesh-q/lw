@@ -88,7 +88,6 @@ const Automation = () => {
         titleClass={`bannerTitle`}
         allService={false}
         bgClass={"bg_banner_3"}
-        btnClass={"bg_color2 border_btn"}
       />
       <TrustedMerchants_2  />
       <Work config={AUTOMATION_WORK} />

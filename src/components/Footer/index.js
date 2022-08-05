@@ -22,32 +22,37 @@ const Footer = ({ config }) => {
   return (
     <footer className="new_footer_area bg_color">
       <div className="new_footer_top">
-        <div className="container-sm container-xl">
+        <div className="container container-xl">
           <div className="row">
             {config.COMPANY_WIDGET.map((widget, index) => {
               return (
                 <RevealWrapper key={index} className={"col-lg-3 col-md-6"}>
-                  <CompanyWidget {...{ ...widget }} />
+                  {/* <CompanyWidget {...{ ...widget }} /> */}
+                  {config.SOCIAL_LINKS.map((widget, index) => {
+                    return (
+                      <RevealWrapper
+                        key={index}
+                      >
+                        <SocialLink
+                          items={widget.menuItems}
+                          title={widget.title}
+                        />
+                      </RevealWrapper>
+                    );
+                  })}
                 </RevealWrapper>
               );
             })}
 
             {config.WIDGETS.map((widget, index) => {
               return (
-                <RevealWrapper key={index} className={"col-lg-2 col-md-6"}>
+                <RevealWrapper key={index} className={"col-lg-3 col-md-6"}>
                   <AboutWidget items={widget.menuItems} title={widget.title} />
                 </RevealWrapper>
               );
             })}
 
             {/* Social links rendering */}
-            {config.SOCIAL_LINKS.map((widget, index) => {
-              return (
-                <RevealWrapper key={index} className={"col-lg-3 col-md-6"}>
-                  <SocialLink items={widget.menuItems} title={widget.title} />
-                </RevealWrapper>
-              );
-            })}
           </div>
         </div>
 

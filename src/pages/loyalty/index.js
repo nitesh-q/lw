@@ -12,6 +12,7 @@ import {
   Partner,
   IntegrationList,
   TrustedMerchants_2,
+  CTA,
 } from "../../components";
 import { TESTIMONIAL_CONFIG, LOYALTY_TABS_CONFIG } from "../../config";
 
@@ -124,7 +125,7 @@ const Loyalty = () => {
         bgColor={`bg_color`}
       />
       <IntegrationList />
-      <TryAction />
+      <CTA />
       <Services />
     </Layout>
   );
