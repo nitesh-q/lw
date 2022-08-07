@@ -20,20 +20,20 @@ const LOGO = [
   },
 ];
 
-const TrustedMerchants_2 = ({bgClass}) => {
+const TrustedMerchants_2 = ({ bgClass }) => {
   return (
-    <section className={`trusted_merchnants_area ${bgClass}`}>
-      <div className="container-sm container-xl">
+    <section className={`trusted_merchants_area ${bgClass}`}>
+      <div className="container container-xl">
         <div>
-          <h2>Trusted by 500+ Merchnats</h2>
+          <h2>Trusted by 500+ Merchants</h2>
         </div>
         <div className="row">
-        <div className="img">
-          {LOGO.map((i, index) => {
-            return(<img className="img-fluid" src={i.image} />) 
-          })}
+          <div className="img">
+            {LOGO.map((i, index) => {
+              return <img className="img-fluid" src={i.image} />;
+            })}
+          </div>
         </div>
-      </div>
       </div>
     </section>
   );

@@ -46,7 +46,7 @@ const HostingBanner = () => {
           </li>
         </ul> */}
       </Fade>
-      <div className="container-sm container-xl">
+      <div className="container container-xl">
         <div className="row">
           <div className="col-lg-5 d-flex align-items-center">
             <div className="hosting_content">
@@ -68,7 +68,7 @@ const HostingBanner = () => {
                 Get Started
               </a> */}
               <div className="col-lg-12">
-                <StartedFreeButton  />
+                <StartedFreeButton />
               </div>
               <CTAService allService={false} />
               <SupportedBrand
@@ -79,13 +79,13 @@ const HostingBanner = () => {
             </div>
           </div>
           <div className="col-lg-7 ">
-          <Reveal effect="fadeInRight" duration={3000}>
-            <img
-              className="img-fluid wow fadeInRight"
-              data-wow-delay="0.7s"
-              src={Icons.GiftBanner.default}
-              alt=""
-            />
+            <Reveal effect="fadeInRight" duration={3000}>
+              <img
+                className="img-fluid wow fadeInRight"
+                data-wow-delay="0.7s"
+                src={Icons.GiftBanner.default}
+                alt=""
+              />
             </Reveal>
           </div>
         </div>

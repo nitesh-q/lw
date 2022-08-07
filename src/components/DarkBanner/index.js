@@ -42,7 +42,7 @@ const DarkBanner = () => {
   return (
     <>
       <section className="fun_fact_area dk_bg_two pb_0 banner_top">
-        <div className="container-sm container-xl">
+        <div className="container container-xl">
           <div className="row flex-row-reverse">
             <div className="col-lg-7 col-md-6">
               <div className="fact_author_img text-right">
@@ -58,7 +58,7 @@ const DarkBanner = () => {
             </div>
             <div className="col-lg-5 col-md-6">
               <div className="fun_fact_content">
-                <h1 >Trusted</h1>
+                <h1>Trusted</h1>
                 <p className="f_600 w_color f_size_16 l_height28 mb_40">
                   Why I say old chap that is spiffing barney, nancy boy bleeder
                   chimney pot Richard cheers the little rotter so I said, easy
@@ -85,7 +85,7 @@ const DarkBanner = () => {
           </div>
         </div>
       </section>
-      <DarkBannerFooter config={CAMPAIGN_DETAILS} title="Campaign Details"/>
+      <DarkBannerFooter config={CAMPAIGN_DETAILS} title="Campaign Details" />
     </>
   );
 };

@@ -26,7 +26,7 @@ const CUSTOM_LOYALTY_FEATURES_LIST = [
   { desc: "Hybrid Loyalty Program" },
 ];
 const VIP_TIER_FEATURES_LIST = [
-  { desc: "$ Dollar value vs. Points" },
+  { desc: "$ Spend value vs. Points" },
   { desc: "Calendar year vs. Lifetime" },
 ];
 
@@ -109,7 +109,7 @@ const Loyalty = () => {
 
       <Header
         className={"mb_50"}
-        title={"How to Customise, Promote and Manage your brand's loyalty program"}
+        title={"How to Customize, Promote and Manage your brand's loyalty program"}
       />
 
       <TabComponent

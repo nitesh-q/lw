@@ -3,8 +3,6 @@ import Icon1 from "../../images/service/icon1.png";
 import Icon2 from "../../images/service/icon2.png";
 import Icon3 from "../../images/service/icon3.png";
 
-
-
 const Service = () => {
   return (
     <section className=" service_provide mb_50 mt_50">
@@ -18,13 +16,13 @@ const Service = () => {
           </div>
           <div className="col-lg-4">
             <div className="service_provide_content justify-content-start">
-              <img src={Icon2} />
+              <img src={Icon3} />
               <p>Trusted by 500+ Merchants</p>
             </div>
           </div>
           <div className="col-lg-4">
             <div className="service_provide_content position">
-              <img src={Icon3} />
+              <img src={Icon2} />
               <p>Safe and Secure Platform</p>
             </div>
           </div>

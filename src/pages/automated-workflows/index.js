@@ -45,7 +45,7 @@ const AUTOMATION_FEATURES = [
     img1: Icons.Workflow.default,
     title: "Pre-built Workflow Template",
     subTitle: "",
-    desc: "Utilize Average order value (AOV) boost, First Purchase reward,Out of Stock,Punch Card and Refund templates to run your program",
+    desc: "Utilize Average order value (AOV) boost, First Purchase reward, Out of Stock, Punch Card and Refund templates to run your program",
     list: [],
   },
   {

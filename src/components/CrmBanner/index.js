@@ -7,27 +7,32 @@ import img from "../../images/new/startup_banner_img.png";
 import StartedFreeButton from "../StartedFreeButton";
 import CTAService from "../Services/CTAService";
 import SupportedBrand from "../SupportedBrand";
-const CrmBanner = ({config}) => {
+const CrmBanner = ({ config }) => {
   return (
     <section className="new_startup_banner_area banner_top">
-      <div className="container-sm container-xl ">
+      <div className="container container-xl ">
         <div className="row">
           <div className="col-lg-5 d-flex align-items-center">
             <Reveal bottom cascade duraton={1200}>
               <div className="new_startup_content">
-              {config.map((i, index) => {
+                {config.map((i, index) => {
                   return (
-                <>
-                <h2 className="wow fadeInRight" data-wow-delay="0.3s" key={index}>
-                  {i.title}<br />
-                  <span>{i.subTitle}</span>
-                </h2>
-                <p className=" wow fadeInRight" data-wow-delay="0.4s">
-                 {i.description}
-                </p>
-                </>
-                   );
-                  })}
+                    <>
+                      <h2
+                        className="wow fadeInRight"
+                        data-wow-delay="0.3s"
+                        key={index}
+                      >
+                        {i.title}
+                        <br />
+                        <span>{i.subTitle}</span>
+                      </h2>
+                      <p className=" wow fadeInRight" data-wow-delay="0.4s">
+                        {i.description}
+                      </p>
+                    </>
+                  );
+                })}
                 {/* <div
                     className="action_btn d-flex align-items-center mt_40 wow fadeInRight"
                     data-wow-delay="0.6s"
@@ -37,7 +42,7 @@ const CrmBanner = ({config}) => {
                     </a>
                   </div> */}
                 <div className="col-lg-12">
-                  <StartedFreeButton  />
+                  <StartedFreeButton />
                 </div>
                 <CTAService allService={false} />
                 <SupportedBrand
@@ -61,9 +66,8 @@ const CrmBanner = ({config}) => {
                   <img src={Line03} alt="" />
                 </div> */}
                 {config.map((i, index) => {
-                  return (
-                <img className="img-fluid" src={i.image} alt="" />
-                  )})}
+                  return <img className="img-fluid" src={i.image} alt="" />;
+                })}
               </div>
             </Reveal>
           </div>

@@ -662,8 +662,9 @@ width: 100 !important;
 
 
 @media  (max-width:1199px){
-    .trusted_merchnants_area .img{
+    .trusted_merchants_area .img{
         display: block;
+        text-align: center;
       }
      
     .menu_one .btn_get {

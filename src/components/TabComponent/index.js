@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import TabPannel from "./TabPannel";
 
-const TabComponent = ({ config, pClass="", rClass="", mClass="",icon }) => {
+const TabComponent = ({
+  config,
+  pClass = "",
+  rClass = "",
+  mClass = "",
+  icon,
+}) => {
   const [activeTab, setActiveTab] = useState(config.PANNEL_DATA[0].id);
   return (
-    <section className={`developer_product_area sec_pad ${pClass} ${ mClass}`}>
-      <div className="container-sm container-xl">
+    <section className={`developer_product_area sec_pad ${pClass} ${mClass}`}>
+      <div className="container container-xl">
         {config.HEAD.map((item, index) => (
-          <h1
-            key={index}
-            className=""
-          >
+          <h1 key={index} className="">
             {item.Title}
           </h1>
         ))}

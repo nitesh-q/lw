@@ -12,13 +12,13 @@ export const GIFTCARD_LIST = [
     id: 1,
     title: "Omnichannel :",
     description:
-      "Drive Revenue with Omnichannel & Multichannel gift card experience.",
+      " Drive Revenue with Omnichannel & Multichannel gift card experience.",
   },
   {
     id: 1,
     title: "eGift Card :",
     description:
-      "Customer can send gift card via email,Social media, SMS/Text, and Print-at-home.",
+      " Customer can send gift card via email,Social media, SMS/Text, and Print-at-home.",
   },
   {
     id: 1,
@@ -117,7 +117,7 @@ export const HOME_TAB1_CONFIG = {
       title: "Store Credit",
       subTitle: "",
       description1:
-        "Offering your customers’ store credit can be a great way of improving customer retention.Merchant can use Store credit:",
+        "Offering your customer’s store credit can be a great way of improving customer retention.Merchant can use Store credit:",
       description2:
         " In 99minds, Store credit can be quickly added to customer accounts from the control panel and automation using workflow engine.",
       list: STORE_CREDIT_LIST,
@@ -168,7 +168,7 @@ export const HOME_TAB1_CONFIG = {
       image: Icons.Wallet_img.default,
       title: "Digital Wallet",
       subTitle: "",
-      description1:"Empower customers to store gift cards, loyalty points, coupons,store credit.",
+      description1:"Empower customers to store gift cards, loyalty points, coupons, store credit.",
       description2: "",
       list: WALLET_LIST_,
       url:"#"

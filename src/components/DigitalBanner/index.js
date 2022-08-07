@@ -33,31 +33,29 @@ const DigitalBanner = ({
     //   <div className="round_shap three "></div>
     //   <div className="container">
     <section className="seo_features_one bg_color sec_pad banner_top">
-     
-    <div className="container-sm container-xl">
+      <div className="container container-xl">
         <div className="row">
           <div className="col-lg-6 col-xl-5 mt_20">
             <Reveal bottom cascade>
               {/* <div className="app_hero_banner_content"> */}
               <div className="seo_features_content">
-
                 <h2>Engage, Acquire & Retain Customers</h2>
                 <p>
                   Enrich your Customer Journey with a Gift Card, Store Credit,
                   and Loyalty Program. Empower them to share your brand
                   experience with Refferrals
                 </p>
-             
-              <div className="col-lg-7">
-                <StartedFreeFrom  />
-              </div>
-              <CTAService allService={false} />
-              <SupportedBrand
+
+                <div className="col-lg-7">
+                  <StartedFreeFrom />
+                </div>
+                <CTAService allService={false} />
+                <SupportedBrand
                   pClass={"partner_white_logo_area_four"}
                   fclass={"w_color mb_25"}
                   imgClass={"partner_img "}
                 />
-               </div>
+              </div>
             </Reveal>
           </div>
           <div className="col-lg-6 col-xl-7">
@@ -66,17 +64,29 @@ const DigitalBanner = ({
                 <Slider className="app_screenshot_slider" {...settings}>
                   <div className="item">
                     <div className="screenshot_img">
-                      <img className="img-fluid" src={Icons.Engage.default} alt="" />
+                      <img
+                        className="img-fluid"
+                        src={Icons.Engage.default}
+                        alt=""
+                      />
                     </div>
                   </div>
                   <div className="item">
                     <div className="screenshot_img">
-                      <img className="img-fluid" src={Icons.Acquire.default} alt="" />
+                      <img
+                        className="img-fluid"
+                        src={Icons.Acquire.default}
+                        alt=""
+                      />
                     </div>
                   </div>
                   <div className="item">
                     <div className="screenshot_img">
-                      <img className="img-fluid" src={Icons.Retain.default} alt="" />
+                      <img
+                        className="img-fluid"
+                        src={Icons.Retain.default}
+                        alt=""
+                      />
                     </div>
                   </div>
                 </Slider>

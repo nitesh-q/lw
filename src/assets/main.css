@@ -7618,6 +7618,7 @@ color: #51fe23;
   color:#2C2C51;
   font-weight: bold;
   margin-bottom: 25px;
+  margin-top: 15px;
   letter-spacing: 0.18px
 }
 
@@ -27264,12 +27265,12 @@ top: -11px;
 }
 
 /* ====================Trustedmerchants version 2================ */
-.trusted_merchnants_area{
+.trusted_merchants_area{
   padding-bottom: 40px;
   padding-top: 40px;
   background-color: #000000;
 }
-.trusted_merchnants_area h2{
+.trusted_merchants_area h2{
   color: #fff;
   font-family: Poppins,sans-serif;
   font-size: 20px;
@@ -27277,12 +27278,12 @@ top: -11px;
   text-align: center;
   margin-bottom: 30px;
 }
-.trusted_merchnants_area .img{
+.trusted_merchants_area .img{
   display:flex ;
   justify-content: space-between;
   align-items: center;
 }
-.trusted_merchnants_area img{
+.trusted_merchants_area img{
 height: 60px;
 object-fit: contain;
 width: 150px;

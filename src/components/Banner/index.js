@@ -14,7 +14,7 @@ const Banner = ({
     <section
       className={`seo_features_one bg_color sec_pad banner_top ${bgClass}`}
     >
-      <div className="container-sm container-xl">
+      <div className="container container-xl">
         <div className="row flex-row-reverse">
           <div className="col-lg-7 ">
             {config.map((i, index) => {

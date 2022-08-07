@@ -131,14 +131,13 @@ class IntegrationGrid extends Component {
     activeItem: "*",
   };
 
-    componentDidMount() {
-      var imgLoad = new ImagesLoaded("#work-portfolio");
+  componentDidMount() {
+    var imgLoad = new ImagesLoaded("#work-portfolio");
 
-      var _this = this;
+    var _this = this;
     if (typeof window !== `undefined`) {
-
       // import Isotope API
-		const Isotope = require("isotope-layout/js/isotope");
+      const Isotope = require("isotope-layout/js/isotope");
 
       // init Isotope
       imgLoad.on("progress", function (instance, image) {
@@ -148,10 +147,9 @@ class IntegrationGrid extends Component {
         });
       });
     }
-      
-    }
-    onFilterChange = (newFilter) => {
-      if (typeof window !== `undefined`) {
+  }
+  onFilterChange = (newFilter) => {
+    if (typeof window !== `undefined`) {
       const Isotope = require("isotope-layout/js/isotope");
       this.setState({ activeItem: newFilter });
       if (this.iso === undefined) {
@@ -161,58 +159,56 @@ class IntegrationGrid extends Component {
         });
       }
     }
-      // this.iso.arrange({ filter: newFilter });
+    // this.iso.arrange({ filter: newFilter });
 
-      if (newFilter === "*") {
-        this.iso.arrange({ filter: `*` });
-      } else {
-        this.iso.arrange({ filter: `.${newFilter}` });
-      }
-    };
-
-    onActive = (v) => (v === this.state.activeItem ? "active" : "");
-
-    render() {
-      return (
-        <section className="portfolio_area sec_pad ">
-          <div className="container-sm container-xl">
-            <div id="portfolio_filter" className="portfolio_filter mb_50">
-              {Object.keys(Head).map((key, index) => (
-                <div
-                  data-filter={key}
-                  className={`work_portfolio_item ${this.onActive(key)}`}
-                  onClick={() => {
-                    this.onFilterChange(key);
-                  }}
-                >
-                  {Head[key]}
-                </div>
-              ))}
-            </div>
-            <div className="row portfolio_gallery mb_30" id="work-portfolio">
-              {data.map((i, index) => {
-                if (!i.title) {
-                  return null;
-                }
-                return (
-                
-                    <IntegrationGridCard
-                      colClass={`col-lg-4 col-sm-6  ${i.type} `}
-                      pImg={i.image}
-                      title={i.title}
-                      desc={i.desc}
-                      type={i.label}
-                    />
-               
-                );
-              })}
-            </div>
-          </div>
-        </section>
-      );
+    if (newFilter === "*") {
+      this.iso.arrange({ filter: `*` });
+    } else {
+      this.iso.arrange({ filter: `.${newFilter}` });
     }
-//   render() {
-//     return <>Isotope issue is thereq</>;
-//   }
+  };
+
+  onActive = (v) => (v === this.state.activeItem ? "active" : "");
+
+  render() {
+    return (
+      <section className="portfolio_area sec_pad ">
+        <div className="container container-xl">
+          <div id="portfolio_filter" className="portfolio_filter mb_50">
+            {Object.keys(Head).map((key, index) => (
+              <div
+                data-filter={key}
+                className={`work_portfolio_item ${this.onActive(key)}`}
+                onClick={() => {
+                  this.onFilterChange(key);
+                }}
+              >
+                {Head[key]}
+              </div>
+            ))}
+          </div>
+          <div className="row portfolio_gallery mb_30" id="work-portfolio">
+            {data.map((i, index) => {
+              if (!i.title) {
+                return null;
+              }
+              return (
+                <IntegrationGridCard
+                  colClass={`col-lg-4 col-sm-6  ${i.type} `}
+                  pImg={i.image}
+                  title={i.title}
+                  desc={i.desc}
+                  type={i.label}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    );
+  }
+  //   render() {
+  //     return <>Isotope issue is thereq</>;
+  //   }
 }
 export default IntegrationGrid;

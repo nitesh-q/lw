@@ -6,7 +6,7 @@ import { MERCHANTS_CONFIG } from "../../config";
 const TrustedMerchants_1 = () => {
   return (
     <section className="security_customers_logo_area">
-      <div className="container-sm container-xl">
+      <div className="container container-xl">
         <div className="hosting_title analytices_title text-center">
           <h2 className="wow fadeInUp">
             <span> </span>Our Clients

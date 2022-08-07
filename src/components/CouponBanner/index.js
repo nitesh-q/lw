@@ -7,7 +7,7 @@ import { Reveal } from "react-reveal";
 const CouponBanner = ({ config }) => {
   return (
     <section className="support_home_area banner_top ">
-      <div className="container-sm container-xl">
+      <div className="container container-xl">
         <div className="row">
           <div className="col-lg-5 ">
             <Reveal effect="fadeInRight" duration={3000}>

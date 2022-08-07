@@ -11,7 +11,7 @@ class PaymentBanner extends Component {
       <section className="payment_banner_area banner_top">
         <div className="shape one"></div>
         <div className="shape two"></div>
-        <div className="container-sm container-xl">
+        <div className="container container-xl">
           <div className="row">
             <div className="col-lg-5">
               <Reveal effect="fadeInLeft" duration={500}>
@@ -21,10 +21,11 @@ class PaymentBanner extends Component {
                 >
                   <h2 className="">
                     Referral Solution <br />
-                  that works for you
+                    that works for you
                   </h2>
                   <p className="">
-                  Boost your organic sales by adding a customer referral program to your eCommerce & in-store
+                    Boost your organic sales by adding a customer referral
+                    program to your eCommerce & in-store
                   </p>
                   {/* <div className="action_btn d-flex align-items-center mt_60">
                 <a href=".#" className="btn_hover agency_banner_btn">

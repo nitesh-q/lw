@@ -44,7 +44,7 @@ const Work = ({ config }) => {
 
   return (
     <section className="support_work_area sec_pad pb_145">
-      <div className="container-sm container-xl">
+      <div className="container container-xl">
         <Title
           sClass="sec_title text-center mb_70"
           title="How its work"

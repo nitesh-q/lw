@@ -64,7 +64,7 @@ const CASE_STUDIES_DATA = [
 const CaseStudyGird = () => {
   return (
     <section className="Case_studies_area_two sec_pad">
-      <div className="container-sm container-xl">
+      <div className="container container-xl">
         <div className="row">
           <div className="col-lg-12 Case_studies_grid_info">
             <div className="row">

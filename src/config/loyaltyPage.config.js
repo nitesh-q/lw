@@ -28,13 +28,13 @@ export const LOYALTY_TABS_CONFIG = {
           id: 3,
           title: "Limit settings : ",
           description:
-            "Decide how often your customers can earn points for any given action",
+            "Decide how often your customers can earn points for any given action.",
         },
         {
           id: 4,
           title: "Integration : ",
           description:
-            "Integrate with different tools and vendors you already use to run your business, including all of the major ecommerce platforms, email/SMS marketing solutions, productivity apps, and more",
+            "Integrate with different tools and vendors you already use to run your business, including all of the major ecommerce platforms, email/SMS marketing solutions, productivity apps, and more.",
         },
       ],
     },

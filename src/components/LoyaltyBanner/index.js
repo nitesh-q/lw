@@ -12,8 +12,8 @@ const LoyaltyBanner = () => {
     <section className="n_hero_banner_area banner_top">
       <div className="shape_banners">
         <img
-          className="img3 wow fadeIn"
-          data-wow-delay="1.5s"
+          className="img3"
+          data-wow-delay="1s"
           src={Icons.BannerImg1.default}
         ></img>
       </div>
@@ -28,7 +28,7 @@ const LoyaltyBanner = () => {
       {/* <img className="svg" src={Banner4}></img>
       <img className="svg_two" src={Banner3}></img> */}
 
-      <div className="container-sm container-xl">
+      <div className="container container-xl">
         <div className="row">
           <div className="col-lg-5">
             <Reveal bottom cascade>
