@@ -2,53 +2,51 @@ import React from "react";
 import {
   Services,
   IntegrationList,
-  Partner,
   IconTabComponent,
   CTA,
-  Banner_1,
-  TrustedMerchants_2,
+  BannerV1,
+  TrustedMerchantsV2,
 } from "../../components";
 import Layout from "../../components/Layout";
-import Icons from "../../shared/assets";
 import { BANNERS_CONFIG, B2B_TABS_CONFIG } from "../../config";
 
-const REFERRAL_FEATURES = [
-  {
-    rowClass: "flex-row-reverse",
-    img1: Icons.Work1.default,
-    title: "Online and in-store integrations",
-    desc: "Forget gift cards that work only online or offline. With 99minds, create campaigns that work absolutely everywhere.",
-    subTitle: "",
-    list: [],
-  },
-  {
-    img1: Icons.CustomCoupon.default,
-    title: "Point of Sale (POS) Agnostic redemption",
-    desc: "Send and redeem physical and eGift cards issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed etc.",
-    subTitle: "",
-    list: [],
-  },
-  {
-    rowClass: "flex-row-reverse",
-    img1: Icons.RewardCustomer.default,
-    title: "Multi-Currency Gift Cards",
-    subTitle: "",
-    desc: "Track coupon usage using coupons transactions associated with Customer & Order ID",
-    list: [],
-  },
-];
+// const REFERRAL_FEATURES = [
+//   {
+//     rowClass: "flex-row-reverse",
+//     img1: Icons.Work1.default,
+//     title: "Online and in-store integrations",
+//     desc: "Forget gift cards that work only online or offline. With 99minds, create campaigns that work absolutely everywhere.",
+//     subTitle: "",
+//     list: [],
+//   },
+//   {
+//     img1: Icons.CustomCoupon.default,
+//     title: "Point of Sale (POS) Agnostic redemption",
+//     desc: "Send and redeem physical and eGift cards issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed etc.",
+//     subTitle: "",
+//     list: [],
+//   },
+//   {
+//     rowClass: "flex-row-reverse",
+//     img1: Icons.RewardCustomer.default,
+//     title: "Multi-Currency Gift Cards",
+//     subTitle: "",
+//     desc: "Track coupon usage using coupons transactions associated with Customer & Order ID",
+//     list: [],
+//   },
+// ];
 
 const B2BGIFTCARDS = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-      <Banner_1
+      <BannerV1
         config={BANNERS_CONFIG.B2B}
         titleClass={`bannerTitle`}
         allService={true}
         mClass={"mb_90"}
         wClass={"img_width_950"}
       />
-      <TrustedMerchants_2 />
+      <TrustedMerchantsV2 />
 
       {/* <Partner pClass={"sec_pad pb_0"} /> */}
       <IconTabComponent config={B2B_TABS_CONFIG} />

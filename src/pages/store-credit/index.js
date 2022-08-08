@@ -6,28 +6,29 @@ import {
   Features,
   Header,
   Services,
-  Partner,
   IntegrationList,
-  TrustedMerchants_2,
+  TrustedMerchantsV2,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
 import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
 
-
-const RETURN_REFUNDS_LIST=[
-  { desc: "Automate store credit for merchandise return using return tools like Novaro etc." },
+const RETURN_REFUNDS_LIST = [
+  {
+    desc: "Automate store credit for merchandise return using return tools like Novaro etc.",
+  },
   { desc: "Add store credit directly in customer wallet." },
 ];
-const TIME_COST_LIST=[
-  { desc: "Save time of your customer support team by automating refunds with 99minds store credit and gift certificates." },
-  { desc: "Consolidates system data with better Returns & Refunds Reports."},
+const TIME_COST_LIST = [
+  {
+    desc: "Save time of your customer support team by automating refunds with 99minds store credit and gift certificates.",
+  },
+  { desc: "Consolidates system data with better Returns & Refunds Reports." },
 ];
-const REWARDS_LIST=[
-  {desc:"Reward your customers with Store Credit."},
-  {desc:"Convert loyalty points to Store credit and Gift vouchers."}
-
-]
+const REWARDS_LIST = [
+  { desc: "Reward your customers with Store Credit." },
+  { desc: "Convert loyalty points to Store credit and Gift vouchers." },
+];
 const STORE_CREDIT_FEATURES = [
   {
     rowClass: "flex-row-reverse",
@@ -64,9 +65,8 @@ const STORE_CREDIT_FEATURES = [
 const StoreCredit = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-    
       <CrmBanner config={BANNERS_CONFIG.STORE_CREDIT} />
-      <TrustedMerchants_2 />
+      <TrustedMerchantsV2 />
 
       {/* <Partner pClass={"sec_pad pb_0"} /> */}
       <Header

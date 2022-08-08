@@ -1,9 +1,8 @@
 import React from "react";
-import { SupportedBrand, StartedFreeButton } from "../../components";
+import { StartedFreeButton } from "..";
 import { Reveal } from "react-reveal";
-import CTAService from "../Services/CTAService";
 
-const Banner_1 = ({
+const BannerV1 = ({
   config,
   supportedBrand,
   StartedFree,
@@ -49,7 +48,7 @@ const Banner_1 = ({
                 })}
 
                 <div className="col-lg-9">
-                    <StartedFreeButton />
+                  <StartedFreeButton />
                 </div>
               </div>
             </Reveal>
@@ -60,4 +59,4 @@ const Banner_1 = ({
   );
 };
 
-export default Banner_1;
+export default BannerV1;

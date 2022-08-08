@@ -18,7 +18,7 @@ const getClassNameForIcon = (icon) => {
       return null;
   }
 };
-const SequrityPrice = () => {
+const PriceList = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
@@ -176,4 +176,4 @@ const SequrityPrice = () => {
     </section>
   );
 };
-export default SequrityPrice;
+export default PriceList;

@@ -1,11 +1,10 @@
 import React from "react";
-import Layout from "../../components/Layout";
 import "../../assets/main.css";
 
 const Claim = () => {
   return (
     <>
-      <section className="bg_banner_1 sec_pad">
+      <section className="bg_BannerV1 sec_pad">
         <div>
           <h2 className="text-center w_color ">Claim</h2>
         </div>

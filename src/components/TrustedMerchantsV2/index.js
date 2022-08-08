@@ -20,7 +20,7 @@ const LOGO = [
   },
 ];
 
-const TrustedMerchants_2 = ({ bgClass }) => {
+const TrustedMerchantsV2 = ({ bgClass }) => {
   return (
     <section className={`trusted_merchants_area ${bgClass}`}>
       <div className="container container-xl">
@@ -30,7 +30,7 @@ const TrustedMerchants_2 = ({ bgClass }) => {
         <div className="row">
           <div className="img">
             {LOGO.map((i, index) => {
-              return <img className="img-fluid" src={i.image} />;
+              return <img className="img-fluid" src={i.image} alt="" key={index} />;
             })}
           </div>
         </div>
@@ -38,4 +38,4 @@ const TrustedMerchants_2 = ({ bgClass }) => {
     </section>
   );
 };
-export default TrustedMerchants_2;
+export default TrustedMerchantsV2;

@@ -6,42 +6,37 @@ import {
   Header,
   TabComponent,
   DigitalBanner,
-  Partner,
   Services,
-
   IntegrationList,
-  TrustedMerchants_2,
+  TrustedMerchantsV2,
+  VerticallyTabComponent,
 } from "../../components";
 import {
   HOME_TAB1_CONFIG,
   BANNERS_CONFIG,
   TESTIMONIAL_CONFIG,
   HOME_TAB2_CONFIG,
-  MERCHANTS_CONFIG
 } from "../../config";
-import VerticallyTabComponent from "../../components/VerticallyTabComponent";
-
-import CaseStudiesSlider from "../../components/CaseStudiesSlider";
-import DarkBannerFooter from "../../components/DarkBannerFooter";
-import Icons from "../../shared/assets";
-
 
 const Home = () => {
   return (
-    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu" >
+    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <DigitalBanner config={BANNERS_CONFIG.HOME} allService={false} />
-      <TrustedMerchants_2 bgClass={"bg_black"} />
+      <TrustedMerchantsV2 bgClass={"bg_black"} />
       {/* <Partner oClass={"logo_item_opacity"} pClass={"sec_pad pb_0"}/> */}
-   
 
       <TabComponent config={HOME_TAB1_CONFIG} rClass={"reduce_height"} />
       {/* <VerticallyTabComponent config={HOME_TAB1_CONFIG}/> */}
-      
+
       <Header
         className={"mb_50"}
         title={"Grow your store and drive revenue with Marketing Automation "}
       />
-      <VerticallyTabComponent  config={HOME_TAB2_CONFIG} icon={true}  pClass={"pt_0"}/>
+      <VerticallyTabComponent
+        config={HOME_TAB2_CONFIG}
+        icon={true}
+        pClass={"pt_0"}
+      />
 
       <Testimonial
         title="Testimonials"

@@ -2,16 +2,12 @@ import React from "react";
 import {
   Testimonial,
   TryAction,
-  Banner,
-  TrustedMerchants,
   Features,
   Header,
   Services,
-  CouponWork,
   IntegrationList,
   CouponBanner,
-  CaseStudiesSlider,
-  TrustedMerchants_2,
+  TrustedMerchantsV2,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -56,9 +52,9 @@ const COUPON_FEATURES = [
 
 const Coupons = () => {
   return (
-    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu" >
+    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <CouponBanner config={BANNERS_CONFIG.COUPONS} />
-      <TrustedMerchants_2 />
+      <TrustedMerchantsV2 />
 
       <Header
         className={"bg_white pt_120 "}

@@ -36,7 +36,7 @@ export const FOOTER_CONFIG = {
         { id: 4, url: CHILD_ROUTES.COUPONS, text: "Coupons" },
         { id: 5, url: CHILD_ROUTES.REFERRAL, text: "Referral Programs" },
         { id: 6, url: CHILD_ROUTES.AUTOMATION, text: "Automated Workflows" },
-        { id: 7, url: CHILD_ROUTES.B2B_GIFTCARDS, text: "B2B Gift Cards" },
+        // { id: 7, url: CHILD_ROUTES.B2B_GIFTCARDS, text: "B2B Gift Cards" },
         // { id: 8, url: "#", text: "Promotion Engine" },
       ],
     },
@@ -81,23 +81,23 @@ export const FOOTER_CONFIG = {
       menuItems: [
         {
           id: 1,
-          url: "#",
+          url: "https://www.facebook.com/99mindsloyaltypromotionsgiftcard/",
           icon: "ti-facebook",
         },
         {
           id: 2,
-          url: "#",
+          url: "https://twitter.com/99mindmarketing",
           icon: "ti-twitter-alt",
         },
         {
           id: 3,
-          url: "#",
-          icon: "ti-vimeo-alt",
+          url: "https://www.linkedin.com/company/99minds-loyalty-promotions-and-giftcard/",
+          icon: "ti-linkedin",
         },
         {
           id: 4,
-          url: "#",
-          icon: "ti-pinterest",
+          url: "https://www.instagram.com/99mindsloyaltypromotions/",
+          icon: "ti-instagram",
         },
       ],
     },

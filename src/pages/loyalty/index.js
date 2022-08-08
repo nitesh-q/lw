@@ -1,17 +1,14 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import {
-  TrustedMerchants,
   Header,
   Features,
   Testimonial,
-  TryAction,
   Services,
   LoyaltyBanner,
   TabComponent,
-  Partner,
   IntegrationList,
-  TrustedMerchants_2,
+  TrustedMerchantsV2,
   CTA,
 } from "../../components";
 import { TESTIMONIAL_CONFIG, LOYALTY_TABS_CONFIG } from "../../config";
@@ -93,7 +90,7 @@ const Loyalty = () => {
       {/* <TrustedMerchants tClass={"top_0"} /> */}
 
       {/* <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} /> */}
-      <TrustedMerchants_2  bgClass={"bg_color2"}/>
+      <TrustedMerchantsV2 bgClass={"bg_color2"} />
 
       <Header
         className={"bg_white pt_120"}
@@ -109,7 +106,9 @@ const Loyalty = () => {
 
       <Header
         className={"mb_50"}
-        title={"How to Customize, Promote and Manage your brand's loyalty program"}
+        title={
+          "How to Customize, Promote and Manage your brand's loyalty program"
+        }
       />
 
       <TabComponent

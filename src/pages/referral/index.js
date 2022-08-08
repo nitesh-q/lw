@@ -3,24 +3,17 @@ import {
   Testimonial,
   TryAction,
   Banner,
-  Features,
-  Header,
-  TabComponent,
   Services,
   IntegrationList,
-  Partner,
   WorkFeatures,
-  VerticallyTabComponent,
-  TrustedMerchants_2,
+  TrustedMerchantsV2,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
 import {
   TESTIMONIAL_CONFIG,
   BANNERS_CONFIG,
-  REFERRAL_TAB_CONFIG,
 } from "../../config";
-import PaymentBanner from "../../components/PaymentBanner";
 
 // const REFERRAL_FEATURES = [
 //   {
@@ -101,9 +94,9 @@ const Referral = () => {
       <Banner
         config={BANNERS_CONFIG.REFERRAL}
         allService={false}
-        bgClass={"bg_banner_1"}
+        bgClass={"bg_BannerV1"}
       />
-      <TrustedMerchants_2 />
+      <TrustedMerchantsV2 />
 
       {/* <Partner pClass={"sec_pad "} /> */}
       <WorkFeatures

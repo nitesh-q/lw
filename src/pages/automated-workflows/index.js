@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import {
   IntegrationList,
   Testimonial,
@@ -6,11 +6,7 @@ import {
   Features,
   Services,
   Banner,
-  Partner,
-  AppBanner,
-  WorkFeatures,
-  Header,
-  TrustedMerchants_2,
+  TrustedMerchantsV2,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -62,21 +58,19 @@ const AUTOMATION_WORK = [
     title: "Set up Trigger",
     subTitle: "TRIGGER",
     desc: "When order status is updated to paid",
-    img:[Icons.Shopify_Bag.default,Icons.BigCommerce_Icon.default]
+    img: [Icons.Shopify_Bag.default, Icons.BigCommerce_Icon.default],
   },
   {
     title: "Logic Conditions",
     subTitle: "CONDITIONS ",
     desc: "If total value of order is greater than $50",
-    img:[Icons._99minds_Logo.default]
-
+    img: [Icons._99minds_Logo.default],
   },
   {
     title: "Execute Action",
     subTitle: "ACTION ",
     desc: "Send a text/email message with a discount gift card",
-    img:[Icons.Klaviyo_Icon.default,Icons.Omnisend_Icon.default]
-
+    img: [Icons.Klaviyo_Icon.default, Icons.Omnisend_Icon.default],
   },
 ];
 
@@ -89,7 +83,7 @@ const Automation = () => {
         allService={false}
         bgClass={"bg_banner_3"}
       />
-      <TrustedMerchants_2  />
+      <TrustedMerchantsV2 />
       <Work config={AUTOMATION_WORK} />
 
       {AUTOMATION_FEATURES.map((card, index) => (

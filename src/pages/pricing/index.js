@@ -1,9 +1,16 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { Breadcrumb, FAQ, Services, Testimonial, TrustedMerchants_1, TryAction } from "../../components";
+import {
+  Breadcrumb,
+  FAQ,
+  Services,
+  Testimonial,
+  TrustedMerchantsV1,
+  TryAction,
+  PriceList,
+} from "../../components";
 import { TESTIMONIAL_CONFIG } from "../../config";
 import Icons from "../../shared/assets";
-import SequrityPrice from "../../components/Common/PriceList";
 
 const Price = () => {
   return (
@@ -15,15 +22,15 @@ const Price = () => {
           Ptitle="Pricing Plan"
           Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
         />
-        <SequrityPrice />
+        <PriceList />
         <FAQ />
-        <TrustedMerchants_1 />
+        <TrustedMerchantsV1 />
         <Testimonial
-        title="Testimonials"
-        subTitle="Hear from our Clients"
-        sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
-        bgColor={`bg_color`}
-      />
+          title="Testimonials"
+          subTitle="Hear from our Clients"
+          sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
+          bgColor={`bg_color`}
+        />
         <TryAction />
         <Services />
       </Layout>

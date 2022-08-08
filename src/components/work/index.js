@@ -1,5 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
-import Icons from "../../shared/assets";
+import React, { useEffect, useState } from "react";
 import Title from "../Common/Title";
 
 const Work = ({ config }) => {
@@ -94,7 +93,7 @@ const Work = ({ config }) => {
                         />
                       </svg>
                     </div>
-                 
+
                     <h5>{i.title}</h5>
                     <p>{i.subTitle} </p>
                     <ul className="list-unstyled p_list">
@@ -102,7 +101,7 @@ const Work = ({ config }) => {
                     </ul>
                     <div className="d-flex justify-content-center py-4">
                       {i.img.map((item, index) => {
-                        return <img src={item} key={index} />;
+                        return <img src={item} key={index} alt=""/>;
                       })}
                     </div>
                   </div>

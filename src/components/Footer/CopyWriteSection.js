@@ -16,10 +16,14 @@ const CopyWriteSection = ({ copywrite, term, policy }) => {
           <div className="col-lg-4 col-md-4 col-sm-12">
             <ul className="list-unstyled f_menu text-right">
               <li>
-                <a href=".#">{term}</a>
+                <a href="https://app.termly.io/document/terms-of-use-for-saas/30ada467-9d58-4b21-b3ed-e7d79c015bc4">
+                  {term}
+                </a>
               </li>
               <li>
-                <a href=".#">{policy}</a>
+                <a href="https://app.termly.io/document/privacy-policy/e1054a68-e1ab-43c0-92ad-e4b68339718d">
+                  {policy}
+                </a>
               </li>
               <li>
                 <a href="/sitemap/sitemap-0.xml">Sitemap</a>

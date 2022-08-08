@@ -7,11 +7,8 @@ import {
   Header,
   TabComponent,
   Services,
-  TrustedMerchants_1,
   CTA_1,
-  CaseStudiesSlider,
-  VerticallyTabComponent,
-  TrustedMerchants_2,
+  TrustedMerchantsV2,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -20,7 +17,6 @@ import {
   BANNERS_CONFIG,
   GIFTCARD_TABS_CONFIG,
 } from "../../config";
-
 
 const GIFTCARD = [
   { desc: "100’s of beautiful Gift Cards based on themes" },
@@ -94,9 +90,9 @@ const GiftCard = () => {
         allService={false}
         bgClass={"bg_banner_2"}
       />
-      <TrustedMerchants_2 />
+      <TrustedMerchantsV2 />
 
-      {/* <TrustedMerchants_1 /> */}
+      {/* <TrustedMerchantsV1 /> */}
 
       <Header
         className={"bg_white pt_120 "}

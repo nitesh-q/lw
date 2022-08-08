@@ -32,13 +32,13 @@ const SocialLink = ({ title, items }) => {
         <a href="index.html" className="f-logo">
           <img src={CompanyLogo} alt="" />
         </a>
-        <p>Copyright © ${new Date().getFullYear()} 99minds Inc. All rights reserved.`</p>
+        <p>Copyright © ${new Date().getFullYear()} 99minds Inc. All rights reserved.</p>
         <div className="f_social_icon">
           {items.map((item, index) => {
             return (
-              <Link to="/" key={index}>
+              <a href={item.url} key={index} target="_blank">
                 <i className={item.icon}></i>
-              </Link>
+              </a>
             );
           })}
         </div>

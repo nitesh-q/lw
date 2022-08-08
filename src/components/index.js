@@ -1,14 +1,14 @@
 export { default as IntegrationList } from "./IntegrationList";
 export { default as Banner } from "./Banner";
 export { default as CrmBanner } from "./CrmBanner";
-export { default as Banner_1 } from "./Banner_1";
+export { default as BannerV1 } from "./BannerV1";
 export { default as AppBanner } from "./AppBanner";
 export { default as LoyaltyBanner } from "./LoyaltyBanner";
 export { default as Testimonial } from "./Testimonial";
 export { default as TryAction } from "./TryAction";
 export { default as TrustedMerchants } from "./TrustedMerchants";
-export { default as TrustedMerchants_1 } from "./TrustedMerchants_1";
-export { default as TrustedMerchants_2 } from "./TrustedMerchants_2";
+export { default as TrustedMerchantsV1 } from "./TrustedMerchantsV1";
+export { default as TrustedMerchantsV2 } from "./TrustedMerchantsV2";
 export { default as SupportedBrand } from "./SupportedBrand";
 export { default as StartedFreeButton } from "./StartedFreeButton";
 export { default as Features } from "./Features";
@@ -35,3 +35,5 @@ export { default as CaseStudiesSlider } from "./CaseStudiesSlider";
 export { default as VerticallyTabComponent } from "./VerticallyTabComponent";
 export { default as WorkFeatures } from "./WorkFeature";
 export { default as Work } from "./Work";
+export { default as PriceList } from "./Common/PriceList";
+

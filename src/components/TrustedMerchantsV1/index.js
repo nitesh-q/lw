@@ -3,7 +3,7 @@ import leaf1 from "../../images/home-security/leaf_clients2.png";
 import leaf2 from "../../images/home-security/leaf_clients1.png";
 import { MERCHANTS_CONFIG } from "../../config";
 
-const TrustedMerchants_1 = () => {
+const TrustedMerchantsV1 = () => {
   return (
     <section className="security_customers_logo_area">
       <div className="container container-xl">
@@ -66,4 +66,4 @@ const TrustedMerchants_1 = () => {
     </section>
   );
 };
-export default TrustedMerchants_1;
+export default TrustedMerchantsV1;
