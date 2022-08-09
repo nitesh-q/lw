@@ -88,7 +88,8 @@ const GiftCard = () => {
         config={BANNERS_CONFIG.GIFTCARD}
         titleClass={`bannerTitle`}
         allService={false}
-        bgClass={"bg_banner_2"}
+        bgClass={"bg_BannerV1"}
+        
       />
       <TrustedMerchantsV2 />
 

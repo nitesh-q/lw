@@ -1,12 +1,14 @@
 import React from "react";
 import "../../assets/main.css";
+import CustomNavbar from "../../components/Navbar";
 
 const Claim = () => {
   return (
     <>
+    <CustomNavbar slogo="sticky_logo" mClass="menu_four" nClass="w_menu" />
       <section className="bg_BannerV1 sec_pad">
         <div>
-          <h2 className="text-center w_color ">Claim</h2>
+          <h2 className="text-center w_color ">Enter to WIN a Gift Card</h2>
         </div>
       </section>
 

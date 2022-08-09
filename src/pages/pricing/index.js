@@ -20,7 +20,7 @@ const Price = () => {
           breadcrumbClass="breadcrumb_area"
           imgName={Icons.BREADCRUMB.default}
           Ptitle="Pricing Plan"
-          Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
+          Pdescription=""
         />
         <PriceList />
         <FAQ />

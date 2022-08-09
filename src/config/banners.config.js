@@ -20,8 +20,8 @@ export const BANNERS_CONFIG = {
   ],
   LOYALTY: [
     {
-      title: "Loyalty Programs",
-      subTitle: "Forge a strong relationship with your customers",
+      title: "Forge a strong relationship with your customers",
+      subTitle: "",
       image: Icons.LoyaltyBanner.default,
       description: `Growth is good, but retention is forever`,
     },

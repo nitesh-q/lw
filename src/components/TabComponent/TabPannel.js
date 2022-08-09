@@ -42,15 +42,19 @@ const TabPannel = ({ item, rClass, icon }) => {
                 })}
                 <h6>{item.description2}</h6>
 
-                <div className="col-lg-9">
-                  <button
-                    className="btn btn_get btn_get_three mt-3"
-                    type="submit"
-                    onClick={() => navigate(item.url)}
-                  >
-                    Learn more
-                  </button>
-                </div>
+                {item.url ? (
+                  <div className="col-lg-9">
+                    <button
+                      className="btn btn_get btn_get_three mt-3"
+                      type="submit"
+                      onClick={() => navigate(item.url)}
+                    >
+                      Learn more
+                    </button>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             </Fade>
           </div>

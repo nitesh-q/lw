@@ -54,9 +54,9 @@ export const FOOTER_CONFIG = {
       id: 3,
       title: "About Us",
       menuItems: [
-        { id: 1, url: "#", text: "About Us" },
+        { id: 1, url: "/about-us", text: "About Us" },
         { id: 2, url: "/contact", text: "Contact" },
-        { id: 3, url: "#", text: "Join Us" },
+        // { id: 3, url: "#", text: "Join Us" },
       ],
     },
   ],

@@ -94,7 +94,9 @@ const Referral = () => {
       <Banner
         config={BANNERS_CONFIG.REFERRAL}
         allService={false}
-        bgClass={"bg_BannerV1"}
+       
+        bgClass={"bg_banner_2"}
+
       />
       <TrustedMerchantsV2 />
 

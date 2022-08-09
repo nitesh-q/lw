@@ -34,11 +34,10 @@ const LoyaltyBanner = () => {
             <Reveal bottom cascade>
               <div className="n_hero_content">
                 <h2 className="wow fadeInLeft" data-wow-delay="0.2s">
-                  Loyalty Programs <br></br> Forge a strong relationship{" "}
-                  <br></br>with your customers
+                Forge a strong relationship with your customers
                 </h2>
                 <p data-wow-delay="0.3s">
-                  Growth is good, but retention is forever
+                 Customers who enroll in a Loyalty rewards program spend on average of 33% more.
                 </p>
                 <div className="col-lg-12">
                   <StartedFreeButton btnClass={"bg_color2 border_btn"} />

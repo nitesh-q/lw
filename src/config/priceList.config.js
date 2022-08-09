@@ -120,7 +120,7 @@ export const TOP_PRODUCT_PRICE_LIST = [
     Enterprise: "Y",
   },
   {
-    Column1: "Referral Flow",
+    Column1: "Referral Program",
     Free: "N",
     Lite: "N",
     Basic: "Y",
@@ -130,7 +130,7 @@ export const TOP_PRODUCT_PRICE_LIST = [
     Enterprise: "Y",
   },
   {
-    Column1: "Workflows",
+    Column1: "Automation Workflows",
     Free: "N",
     Lite: 1,
     Basic: 3,

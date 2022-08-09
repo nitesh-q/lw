@@ -121,7 +121,7 @@ export const HOME_TAB1_CONFIG = {
       description2:
         " In 99minds, Store credit can be quickly added to customer accounts from the control panel and automation using workflow engine.",
       list: STORE_CREDIT_LIST,
-      url:"#"
+      url:CHILD_ROUTES.STORE_CREDIT
     },
     {
       id: "loyalty",
@@ -171,7 +171,7 @@ export const HOME_TAB1_CONFIG = {
       description1:"Empower customers to store gift cards, loyalty points, coupons, store credit.",
       description2: "",
       list: WALLET_LIST_,
-      url:"#"
+   
     },
     {
       id: "automation",
