@@ -1,8 +1,10 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { FAQ } from "../../../config";
 
 const Faq = () => {
   const [activeTab, setActiveTab] = useState(FAQ[0].id);
+  const [collapseClass, setCollapseClass] = useState("");
+
   return (
     <section className="faq_area  ">
       <div className="container">
@@ -27,7 +29,7 @@ const Faq = () => {
                           <h5 className="mb-0">
                             <button
                               className={`btn btn-link ${
-                                activeTab === i.id ? "" :"collapsed"
+                                activeTab === i.id ? "" : "collapsed"
                               }`}
                               type="button"
                               data-bs-toggle="collapse"
@@ -36,9 +38,11 @@ const Faq = () => {
                               aria-controls={`collapse${i.id}`}
                               onClick={() => setActiveTab(i.id)}
                             >
-                              {console.log("Collapse",i.id)}
                               {i.question}
-                              <i className="ti-plus"></i>
+                              <i
+                                className="ti-plus"
+                                onClick={() => setCollapseClass("collapsing")}
+                              ></i>
                               <i className="ti-minus"></i>
                             </button>
                           </h5>
@@ -46,13 +50,20 @@ const Faq = () => {
 
                         <div
                           id={`collapse${i.id}`}
-                          className={`collapse ${
+                          className={`collapse  ${collapseClass} ${
                             activeTab === i.id ? "show" : ""
                           }`}
                           aria-labelledby={i.id}
                           data-parent="#accordion"
                         >
-                          <div className="card-body">{i.answer.map((item,index)=><>{item}<br/></>)}</div>
+                          <div className="card-body">
+                            {i.answer.map((item, index) => (
+                              <>
+                                {item}
+                                <br />
+                              </>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     );

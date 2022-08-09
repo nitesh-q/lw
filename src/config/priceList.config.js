@@ -80,7 +80,7 @@ export const TOP_PRODUCT_PRICE_LIST = [
     Enterprise: "Unlimited",
   },
   {
-    Column1: "Issue Giftcard",
+    Column1: " Giftcard Program",
     Free: "N",
     Lite: "Y",
     Basic: "Y",
@@ -100,7 +100,7 @@ export const TOP_PRODUCT_PRICE_LIST = [
     Enterprise: "Y",
   },
   {
-    Column1: "Loyalty Points",
+    Column1: "Loyalty Program",
     Free: "N",
     Lite: "N",
     Basic: "Y",
