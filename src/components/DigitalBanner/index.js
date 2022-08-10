@@ -43,7 +43,7 @@ const DigitalBanner = ({
                 <p>
                   Enrich your Customer Journey with a Gift Card, Store Credit,
                   and Loyalty Program. Empower them to share your brand
-                  experience with Refferrals
+                  experience with Referrals
                 </p>
 
                 <div className="col-lg-7">

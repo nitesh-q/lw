@@ -7,7 +7,7 @@ export const BANNERS_CONFIG = {
       title: "Engage, Acquire & Retain Customers",
       subTitle: "",
       // image: ,
-      description: `Enrich your Customer Journey with a Gift Card, Store Credit, and Loyalty Program. Empower them to share your brand experience with Refferrals.`,
+      description: `Enrich your Customer Journey with a Gift Card, Store Credit, and Loyalty Program. Empower them to share your brand experience with Referrals.`,
     },
   ],
   GIFTCARD: [
