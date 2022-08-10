@@ -41,8 +41,8 @@ export const CHILD_ROUTES = {
   DEVELOPERS_1: "/giftcard",
   DEVELOPERS_2: "/giftcard",
   CASE_STUDIES: "/case-studies",
-  BLOG: "/",
-  DOCUMENTATION: "/",
+  BLOG: "/blog",
+  DOCUMENTATION: "https://99minds.zendesk.com/hc/en-us",
 };
 
 export const CHILDRENS = {

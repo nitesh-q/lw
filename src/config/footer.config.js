@@ -46,7 +46,7 @@ export const FOOTER_CONFIG = {
       menuItems: [
         // { id: 1, url: CHILD_ROUTES.CASE_STUDIES, text: "Case Studies" },
         { id: 2, url: "/blog", text: "Blog" },
-        { id: 3, url: "#", text: "Documentation" },
+        { id: 3, url: "https://99minds.zendesk.com/hc/en-us", text: "Documentation" },
       
       ],
     },
