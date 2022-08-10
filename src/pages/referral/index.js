@@ -10,47 +10,7 @@ import {
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import {
-  TESTIMONIAL_CONFIG,
-  BANNERS_CONFIG,
-} from "../../config";
-
-// const REFERRAL_FEATURES = [
-//   {
-//     // pClass: "pr_70",
-//     rowClass: "flex-row-reverse",
-//     col1: "col-lg-7",
-//     col2: "col-lg-5",
-//     img1: Icons.Work1.default,
-//     title: "Online and in-store integrations",
-//     desc: "Forget gift cards that work only online or offline. With 99minds, create campaigns that work absolutely everywhere.",
-//     subTitle: "",
-//     list: [],
-//   },
-//   {
-//     // ptClass:"pt_0",
-//     // pClass: "pl_70",
-//     col1: "col-lg-7",
-//     col2: "col-lg-5",
-//     img1: Icons.CustomCoupon.default,
-//     title: "Point of Sale (POS) Agnostic redemption",
-//     desc: "Send and redeem physical and eGift cards issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed etc.",
-//     subTitle: "",
-//     list: [],
-//   },
-//   {
-//     // ptClass:"pt_0",
-//     // pClass: "pr_70",
-//     rowClass: "flex-row-reverse",
-//     col1: "col-lg-7",
-//     col2: "col-lg-5",
-//     img1: Icons.RewardCustomer.default,
-//     title: "Multi-Currency Gift Cards",
-//     subTitle: "",
-//     desc: "Track coupon usage using coupons transactions associated with Customer & Order ID",
-//     list: [],
-//   },
-// ];
+import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
 
 const REFERRAL_FEATURES = [
   {
@@ -94,22 +54,15 @@ const Referral = () => {
       <Banner
         config={BANNERS_CONFIG.REFERRAL}
         allService={false}
-       
         bgClass={"bg_banner_2"}
-
       />
       <TrustedMerchantsV2 />
-
-      {/* <Partner pClass={"sec_pad "} /> */}
       <WorkFeatures
         aClass="agency_featured_area_two"
         data={REFERRAL_FEATURES}
         title="Key Features"
         dividerImg={Icons.divider_1.default}
       />
-      {/* {REFERRAL_FEATURES.map((card,index) => (
-        <Features {...{ ...card }} url="#" key={index} />
-      ))} */}
 
       <Testimonial
         title="Testimonials"

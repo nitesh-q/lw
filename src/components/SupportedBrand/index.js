@@ -45,7 +45,11 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
                   alt="Shopify_Logo"
                 />
 
-                <img className="h_auto" src={Icons.Shopify.default} alt="Shopify" />
+                <img
+                  className="h_auto"
+                  src={Icons.Shopify.default}
+                  alt="Shopify"
+                />
               </a>
             </div>
           </div>
@@ -67,7 +71,7 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
               data-wow-delay="0.1s"
             >
               <a href="#">
-              <img
+                <img
                   className="h_auto"
                   src={Icons.BigCommerce_Logo.default}
                   alt=""
@@ -80,7 +84,7 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
               </a>
             </div>
           </div>
-         
+
           <div className="col-lg-4">
             <div
               className={` logo_item  w_110 ${imgClass}  mb_30  `}
@@ -100,12 +104,9 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
                 />
               </a>
             </div>
-            
           </div>
           <div className="col-lg-4">
-            
-           
-          <div
+            <div
               className={` logo_item  w_110 ${imgClass}  mb_30  `}
               data-wow-delay="0.1s"
             >
@@ -114,7 +115,7 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
                 <img className="h_25" src={Icons.Miva.default} alt="" />
               </a>
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </section>

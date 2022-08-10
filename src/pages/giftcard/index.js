@@ -122,7 +122,6 @@ const GiftCard = () => {
           "Empower Your Brick & Click Store With Powerful Integrations"
         }
       />
-      {/* <TryAction /> */}
       <CTA_1 />
       {/* <CaseStudiesSlider /> */}
       <Services />

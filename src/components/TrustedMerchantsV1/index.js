@@ -11,11 +11,6 @@ const TrustedMerchantsV1 = () => {
           <h2 className="wow fadeInUp">
             <span> </span>Our Clients
           </h2>
-          {/* <p className="wow fadeInUp" data-wow-delay="0.3s">
-            Naff pukka zonked squiffy quaint knees up cup of tea Oxford the BBC
-            bloke ummm I'm telling, argy-bargy show off show off pick your nose
-            and blow off hanky.!
-          </p> */}
         </div>
         <div className="security_inner ">
           <img

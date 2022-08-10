@@ -86,9 +86,6 @@ const Loyalty = () => {
   return (
     <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
       <LoyaltyBanner />
-
-      {/* <TrustedMerchants tClass={"top_0"} /> */}
-
       {/* <Partner pClass={"sec_pad"} oClass={"logo_item_opacity"} /> */}
       <TrustedMerchantsV2 bgClass={"bg_color2"} />
 

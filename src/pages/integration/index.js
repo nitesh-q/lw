@@ -1,13 +1,10 @@
 import React from "react";
 import {
-
   TryAction,
   Banner,
-
   Features,
   Header,
   Services,
-
   IntegartionDataPoints,
 } from "../../components";
 import Layout from "../../components/Layout";
