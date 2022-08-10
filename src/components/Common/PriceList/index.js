@@ -39,12 +39,46 @@ const PriceList = () => {
               return (
                 <div className="p_head">
                   <h5>{i}</h5>
-                  <p>{PRICE_LIST_AMOUNT[i]}</p>
                 </div>
               );
             })}
           </div>
           <div className="price_body">
+            {PRICE_LIST_AMOUNT.map((list, index) => {
+              return (
+                <div className="pr_list" key={index}>
+                  <div className="price_item">
+                    <h5
+                      className="pr_title"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title=""
+                      data-original-title="Save time by using keyboard shortcuts all across SaasLand"
+                    >
+                      {list.Column1}
+                    </h5>
+                  </div>
+                  {TABLE_HEAD.map((i) => {
+                    console.log("dfdfdfd", i);
+                    if (!i) {
+                      return null;
+                    }
+                    return (
+                      <div className="price_item" data-title={i}>
+                        <div className="d-flex justify-content-center align-items-center">
+                          {i === "Enterprise" ? "" : <sup>$</sup>}
+                          <h5 className="check">
+                            {CHECK_ICON.includes(list[i]) ? null : list[i]}
+                            <i className={getClassNameForIcon(list[i])}></i>
+                          </h5>{" "}
+                          {i === "Enterprise" ? "" : <sub>/month</sub>}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })}
             {TOP_PRODUCT_PRICE_LIST.map((list, index) => {
               return (
                 <div className="pr_list" key={index}>
@@ -80,10 +114,7 @@ const PriceList = () => {
               {TABLE_BOTTOM.map((item, index) => {
                 return (
                   <div className="price_item">
-                    <a
-                      href={item.Url}
-                      className={`price_btn btn_hove `}
-                    >
+                    <a href={item.Url} className={`price_btn btn_hove `}>
                       {item.Label}
                     </a>
                   </div>

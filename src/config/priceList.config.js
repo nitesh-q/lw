@@ -1,4 +1,12 @@
-export const TABLE_HEAD = ["", "Lite", "Basic", "Pro", "Ultra", "Premium","Enterprise"];
+export const TABLE_HEAD = [
+  "",
+  "Lite",
+  "Basic",
+  "Pro",
+  "Ultra",
+  "Premium",
+  "Enterprise",
+];
 export const TABLE_BOTTOM = [
   {
     Url: "#",
@@ -28,16 +36,18 @@ export const TABLE_BOTTOM = [
 
 export const CHECK_ICON = ["Y", "N"];
 
-export const PRICE_LIST_AMOUNT = {
-  Column1: "Monthly Price ($)",
-  Free: "$0/m",
-  Lite: "$19/m",
-  Basic: "$49/m",
-  Pro: "$99/m",
-  Ultra: "$199/m",
-  Premium: "$499/m",
-  Enterprise: "Custom",
-};
+export const PRICE_LIST_AMOUNT = [
+  {
+    Column1: "Monthly Price ($)",
+    Free: "0",
+    Lite: "19",
+    Basic: "49",
+    Pro: "99",
+    Ultra: "199",
+    Premium: "499",
+    Enterprise: "Custom",
+  },
+];
 export const TOP_PRODUCT_PRICE_LIST = [
   {
     Column1: "Monthly Transactions",
@@ -138,9 +148,9 @@ export const TOP_PRODUCT_PRICE_LIST = [
     Ultra: 10,
     Premium: "Unlimited",
     Enterprise: "Unlimited",
-  }
-]
-  export const REMAINING_PRODUCT_PRICE_LIST = [
+  },
+];
+export const REMAINING_PRODUCT_PRICE_LIST = [
   {
     Column1: "Import Giftcards",
     Free: "N",
@@ -434,14 +444,14 @@ export const TOP_PRODUCT_PRICE_LIST = [
     Premium: "N",
     Enterprise: "Y",
   },
-  {
-    Column1: "Infrastructure",
-    Free: "Shared",
-    Lite: "Shared",
-    Basic: "Shared",
-    Pro: "Shared",
-    Ultra: "Shared",
-    Premium: "Shared",
-    Enterprise: "Shared or Dedicated",
-  },
+  // {
+  //   Column1: "Infrastructure",
+  //   Free: "Shared",
+  //   Lite: "Shared",
+  //   Basic: "Shared",
+  //   Pro: "Shared",
+  //   Ultra: "Shared",
+  //   Premium: "Shared",
+  //   Enterprise: "Shared or Dedicated",
+  // },
 ];

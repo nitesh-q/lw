@@ -48,6 +48,9 @@ const Icons = {
   Corner_1: require("../images/trusted-merchents/corner_1.png"),
   Cariloha_1: require("../images/trusted-merchents/cariloha_1.png"),
   Fylnn_1: require("../images/trusted-merchents/flynn_1.png"),
+  Mud_Australia: require("../images/trusted-merchents/Mud-Australia.jpg"),
+  School: require("../images/trusted-merchents/School.png"),
+  Bobbles_Lace: require("../images/trusted-merchents/Bobbles-Lace.png"),
 
   //...................Integartion.......................
   BigCommerce_: require("../images/integrations/BigCommerce.png"),

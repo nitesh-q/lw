@@ -32,7 +32,11 @@ const SocialLink = ({ title, items }) => {
         <a href="index.html" className="f-logo">
           <img src={CompanyLogo} alt="" />
         </a>
-        <p>Copyright © ${new Date().getFullYear()} 99minds Inc. All rights reserved.</p>
+        <p>
+          99minds platform enables you to create coupons, gift cards, discounts,
+          send out referrals, build loyalty programs, and location-based
+          promotions for your customers
+        </p>
         <div className="f_social_icon">
           {items.map((item, index) => {
             return (

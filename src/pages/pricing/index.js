@@ -19,7 +19,7 @@ const Price = () => {
         <Breadcrumb
           breadcrumbClass="breadcrumb_area"
           imgName={Icons.BREADCRUMB.default}
-          Ptitle="Pricing Plan"
+          Ptitle="Pricing"
           Pdescription=""
         />
         <PriceList />

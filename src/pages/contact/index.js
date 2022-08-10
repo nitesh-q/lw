@@ -10,8 +10,8 @@ const contact = () => {
         <Breadcrumb
           breadcrumbClass="breadcrumb_area"
           imgName={Icons.BREADCRUMB.default}
-          Ptitle="Contac Us"
-          Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
+          Ptitle="Contact Us"
+          Pdescription=""
         />
         <ContactForm />
         <TryAction />

@@ -23654,11 +23654,11 @@ a .h_head:hover {
   height: 60px;
   object-fit: contain ;
 }
-.analytices_logo:hover {
+/* .analytices_logo:hover {
   background-color: white;
   -webkit-box-shadow: 0px 20px 50px 0px rgba(1, 1, 64, 0.08);
   box-shadow: 0px 20px 50px 0px rgba(1, 1, 64, 0.08);
-}
+} */
 
 .analytices_logo_content {
   padding-right: 80px;
@@ -24697,7 +24697,7 @@ a .h_head:hover {
 
 .new_footer_top .company_widget p {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 28px;
   color: #6a7695;
   margin: 32px 0px;

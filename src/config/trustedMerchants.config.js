@@ -21,9 +21,17 @@ export const MERCHANTS_CONFIG = {
       id: 5,
       image: Icons.Fylnn.default,
     },
-    // {
-    //   id: 6,
-    //   image: Icons.Cariloha.default,
-    // },
+    {
+      id: 6,
+      image: Icons.Bobbles_Lace.default,
+    },
+    {
+      id: 7,
+      image: Icons.Mud_Australia.default,
+    },
+    {
+      id: 8,
+      image: Icons.School.default,
+    },
   ],
 };

@@ -28,13 +28,13 @@ const TrustedMerchantsV1 = () => {
           <div className="row">
             {MERCHANTS_CONFIG.MERCHANTS.map((item, index) => (
               <div className="col-lg-3 col-sm-4 col-6" key={index}>
-                <a
-                  href="/#"
+                <div
+               
                   className="analytices_logo wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
                   <img src={item.image} alt="" />
-                </a>
+                </div>
               </div>
             ))}
           </div>

@@ -28,6 +28,7 @@
     "gatsby-plugin-sitemap": "^5.17.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-remark-images-native-lazy-load": "^1.0.0",
+    "gatsby-source-custom-api": "^2.3.6",
     "gatsby-source-filesystem": "^4.16.0",
     "gatsby-transformer-remark": "^5.19.0",
     "gatsby-transformer-sharp": "^4.16.0",
