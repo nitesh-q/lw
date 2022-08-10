@@ -1,25 +1,24 @@
 import React, { useState } from "react";
-import Icons from "../../shared/assets";
 import BrandModal from "../BrandModal";
 
-const ICONS = [
-  {
-    icon: Icons.Shopify.default,
-    desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
-  },
-  {
-    icon: Icons.Woo.default,
-    desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
-  },
-  {
-    icon: Icons.BigCommerce.default,
-    desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
-  },
-  {
-    icon: Icons.ShopifyPlus.default,
-    desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
-  },
-];
+// const ICONS = [
+//   {
+//     icon: Icons.Shopify.default,
+//     desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
+//   },
+//   {
+//     icon: Icons.Woo.default,
+//     desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
+//   },
+//   {
+//     icon: Icons.BigCommerce.default,
+//     desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
+//   },
+//   {
+//     icon: Icons.ShopifyPlus.default,
+//     desc: " Connect a Shopify account to sell & redeem gift cards on your store.",
+//   },
+// ];
 const StartedFreeButton = ({ btnClass,className="" }) => {
   const [showModal, setShowModal] = useState(false);
   const toggle = () => setShowModal(!showModal);

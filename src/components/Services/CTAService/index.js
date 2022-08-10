@@ -6,7 +6,7 @@ const CTAService = ({ allService = "", mClass = "" }) => {
     <section className="CTA_service">
       <div className="col-lg-12">
         <div className={`row mt_15 flex mb_20 ${mClass} `}>
-          <img src={Tick} />
+          <img src={Tick} alt="" />
           <li className="col "> No Credit Card Required</li>
           {allService ? (
             <>

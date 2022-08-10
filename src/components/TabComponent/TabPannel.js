@@ -23,7 +23,7 @@ const TabPannel = ({ item, rClass, icon }) => {
           <div className="col-lg-5   ">
             <Fade bottom cascade>
               <div className="customer_engagement_content d-flex-row justify-content-center align-items-start ">
-                {icon ? <img src={Icons.Icon.default} /> : ""}
+                {icon ? <img src={Icons.Icon.default} alt="icpn" /> : ""}
                 <h2 className="">{item.title}</h2>
                 <h3 className="t">{item.subTitle}</h3>
                 <h6 className="">{item.description1}</h6>

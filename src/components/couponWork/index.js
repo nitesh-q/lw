@@ -46,7 +46,7 @@ const COUPONS_WORK_DATA = [
   },
 ];
 
-const CouponWork = ({}) => {
+const CouponWork = () => {
   return (
     <section className="app_service_area sec_pad" id="work">
       <div className="container">
