@@ -116,12 +116,13 @@ class CustomNavbar extends Component {
                   })}
                 </ul>
 
-                <a
+                <button
                   className={`btn_get btn_hover demo hide ${hbtnClass}`}
-                  href="#get-app"
+                  href=""
+                  // onclick="Calendly.initPopupWidget({url: 'https://calendly.com/99minds'});return false;"
                 >
-                  Book a Demo
-                </a>
+                  <Link to="https://calendly.com/99minds"> Book a Demo</Link>
+                </button>
                 {/* <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
                   Sign Up
                 </a> */}
@@ -129,9 +130,16 @@ class CustomNavbar extends Component {
               <div className="demo_btn  ">
                 <ul className={` navbar-nav sign_in_bg`}>
                   <li className="nav-item">
-                    <a className={`btn_get btn_hover `} href="#get-app">
-                      Book a Demo
-                    </a>
+                    <button
+                      className={`btn_get btn_hover `}
+                      href=""
+                      // onclick="Calendly.initPopupWidget({url: 'https://calendly.com/99minds'});return false;"
+                    >
+                      <Link to="https://calendly.com/99minds">
+                        {" "}
+                        Book a Demo
+                      </Link>
+                    </button>
                   </li>
                 </ul>
               </div>

@@ -13,7 +13,7 @@ export const BANNERS_CONFIG = {
   GIFTCARD: [
     {
       title: "Launch a complete gifting program with",
-      subTitle: "Physical and eGift cards.",
+      subTitle: " Physical and eGift cards.",
       image: Icons.GiftBanner.default,
       description: `Customers with gift cards usually spend 32% more than gift card value.`,
     },

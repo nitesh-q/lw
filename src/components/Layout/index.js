@@ -15,6 +15,7 @@ import "../../assets/responsive.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "popper.js";
 
+
 const Layout = ({ children, slogo, mClass, nClass }) => {
   return (
     <div className="body_wrapper">
