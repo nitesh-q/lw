@@ -72,7 +72,7 @@ const StoreCredit = () => {
       <Header
         className={"bg_white pt_120"}
         title={"Key features."}
-        description={"All your gift card needs, covered"}
+        description={"All your store credit needs, covered"}
       />
 
       {STORE_CREDIT_FEATURES.map((card) => (

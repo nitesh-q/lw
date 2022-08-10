@@ -53,9 +53,9 @@ const IntegrationList = () => {
           {integrations.map((i, index) => {
             return (
               <div className="col-lg-3 col-md-4 col-sm-6" key={index}>
-                <a href="/#" className="s_integration_item">
+                <div className="s_integration_item">
                   <img src={i.icon} alt="" />
-                </a>
+                </div>
               </div>
             );
           })}
