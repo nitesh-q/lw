@@ -234,7 +234,7 @@ export const REMAINING_PRODUCT_PRICE_LIST = [
   },
 
   {
-    Column1: "Giftcard Discounts &amp; Promotions",
+    Column1: "Giftcard Discounts & Promotions",
     Free: "N",
     Lite: "Y",
     Basic: "Y",
