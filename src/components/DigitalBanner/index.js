@@ -9,7 +9,7 @@ import SupportedBrand from "../SupportedBrand";
 const settings = {
   dots: true,
   infinite: true,
-  speed: 700,
+  speed: 2000,
   arrows: false,
   autoplay: true,
   autoplaySpeed: 1800,

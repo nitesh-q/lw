@@ -1,11 +1,11 @@
 {
-  "name": "99minds",
+  "name": "www.99minds.io",
   "version": "1.0.0",
   "private": true,
   "description": "99minds",
-  "author": "vikram54",
+  "author": "99minds Inc",
   "keywords": [
-    "gatsby"
+    "99minds"
   ],
   "scripts": {
     "develop": "gatsby develop",
@@ -21,9 +21,12 @@
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^4.17.0",
     "gatsby-plugin-create-client-paths": "^4.9.0",
+    "gatsby-plugin-google-gtag": "^4.20.0",
     "gatsby-plugin-image": "^2.16.1",
     "gatsby-plugin-manifest": "^4.20.0",
     "gatsby-plugin-netlify": "^5.0.0",
+    "gatsby-plugin-no-index": "^1.0.2",
+    "gatsby-plugin-robots-txt": "^1.7.1",
     "gatsby-plugin-sharp": "^4.16.1",
     "gatsby-plugin-sitemap": "^5.17.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
