@@ -3197,7 +3197,7 @@ width: 100 !important;
         text-align: center !important;
     }
     .banner_top h2{
-        font-size: 32px;
+        font-size: 26px;
     }
     .seo_banner_content h2{
         line-height: 48px;
@@ -4435,6 +4435,10 @@ width: 100 !important;
         margin-bottom: 6px;
     }
     .banner_top h2{
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .banner_top h2 span{
         font-size: 26px;
         line-height: 35px;
     }
