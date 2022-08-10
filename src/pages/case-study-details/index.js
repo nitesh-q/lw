@@ -3,36 +3,33 @@ import Layout from "../../components/Layout";
 import {
   CaseStudyDetails,
   DarkBanner,
-  EventAbout,
-  EventFeature,
   Services,
   TryAction,
 } from "../../components";
-import Icons from "../../shared/assets";
 
-const CUSTOMER_STORIES = [
-  {
-    image: Icons.Leader.default,
-    title: "Interchange fees",
-    description:
-      "Oxford I don't want no agro naff sloshed. I bite your arm off mush hunky-dory nice one ummm I'm telling lurgy we.!",
-    url: ".#",
-  },
-  {
-    image: Icons.Meetup.default,
-    title: "Our Corporate",
-    description:
-      "Oxford I don't want no agro naff sloshed. I bite your arm off mush hunky-dory nice one ummm I'm telling lurgy we.!",
-    url: ".#",
-  },
-  {
-    image: Icons.Chat.default,
-    title: "European Regulation",
-    description:
-      "Oxford I don't want no agro naff sloshed. I bite your arm off mush hunky-dory nice one ummm I'm telling lurgy we.!",
-    url: ".#",
-  },
-];
+// const CUSTOMER_STORIES = [
+//   {
+//     image: Icons.Leader.default,
+//     title: "Interchange fees",
+//     description:
+//       "Oxford I don't want no agro naff sloshed. I bite your arm off mush hunky-dory nice one ummm I'm telling lurgy we.!",
+//     url: ".#",
+//   },
+//   {
+//     image: Icons.Meetup.default,
+//     title: "Our Corporate",
+//     description:
+//       "Oxford I don't want no agro naff sloshed. I bite your arm off mush hunky-dory nice one ummm I'm telling lurgy we.!",
+//     url: ".#",
+//   },
+//   {
+//     image: Icons.Chat.default,
+//     title: "European Regulation",
+//     description:
+//       "Oxford I don't want no agro naff sloshed. I bite your arm off mush hunky-dory nice one ummm I'm telling lurgy we.!",
+//     url: ".#",
+//   },
+// ];
 const CaseStudyDetail = () => {
   return (
     <div className="body_wrapper">

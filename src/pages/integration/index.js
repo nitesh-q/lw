@@ -9,11 +9,7 @@ import {
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import {
-  TESTIMONIAL_CONFIG,
-  BANNERS_CONFIG,
-  GIFTCARD_TABS_CONFIG,
-} from "../../config";
+import { BANNERS_CONFIG } from "../../config";
 
 const INTEGRATION_FEATURES = [
   {

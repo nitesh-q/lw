@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { Breadcrumb, FAQ, Services, TryAction } from "../../components";
+import { Breadcrumb, Services, TryAction } from "../../components";
 import Icons from "../../shared/assets";
 import CaseStudyGrid from "../../components/CaseStudyGird";
 

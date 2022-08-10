@@ -1,9 +1,7 @@
 import React from "react";
-
 import FeaturesItems from "./FeatureItems";
-import Icons from "../../shared/assets";
 
-const WorkFeatures = ({ aClass, data, title,dividerImg }) => {
+const WorkFeatures = ({ aClass, data, title, dividerImg }) => {
   return (
     <section className={`agency_featured_area  ${aClass}`}>
       <div className="container">
@@ -15,7 +13,7 @@ const WorkFeatures = ({ aClass, data, title,dividerImg }) => {
         </h2>
         <div className="features_info">
           <img className="dot_img" src={dividerImg} alt="" />
-          {data.map((work,index) => (
+          {data.map((work, index) => (
             <FeaturesItems {...{ ...work }} key={index} />
           ))}
           {/* <div className="dot middle_dot">

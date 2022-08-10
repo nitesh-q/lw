@@ -1,4 +1,4 @@
-import { ROUTES,CHILD_ROUTES } from "./route.config";
+import {CHILD_ROUTES } from "./route.config";
 export const FOOTER_SEQUENCE = [
   "COMPANY_WIDGET",
   "ABOUT_WIDGET",

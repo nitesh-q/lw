@@ -1,4 +1,4 @@
-import { Link, navigate } from "gatsby";
+import { navigate } from "gatsby";
 import React from "react";
 import Fade from "react-reveal/Fade";
 import Icons from "../../shared/assets";

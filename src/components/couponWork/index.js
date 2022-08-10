@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Title from "../Common/Title";
 import Icons from "../../shared/assets";
 
@@ -65,7 +65,7 @@ const CouponWork = ({}) => {
                   data-wow-delay="0.2s"
                 >
                   {/* <i className={`app_icon ${items.icon}`}></i> */}
-                  <img className="" src={items.icon} />
+                  <img className="" src={items.icon} alt="" />
                   <h5 className="f_p f_size_18 f_600 t_color3 mt_40 mb-10">
                     {items.title}
                   </h5>

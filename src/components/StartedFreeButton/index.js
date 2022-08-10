@@ -1,4 +1,3 @@
-import { Modal, ModalHeader, Card, CardBody } from "reactstrap";
 import React, { useState } from "react";
 import Icons from "../../shared/assets";
 import BrandModal from "../BrandModal";
