@@ -8,7 +8,6 @@ const DarkBannerFooter = ({ config, title }) => {
           <h4 className="w_color f_p f_700 mb_40 text-center">{title}</h4>
           <ul>
             {config.map((details, index) => {
-              console.log(details);
               return (
                 <li key={index}>
                   <h3>{details.title}</h3>
