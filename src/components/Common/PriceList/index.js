@@ -59,7 +59,6 @@ const PriceList = () => {
                     </h5>
                   </div>
                   {TABLE_HEAD.map((i) => {
-                    console.log("dfdfdfd", i);
                     if (!i) {
                       return null;
                     }

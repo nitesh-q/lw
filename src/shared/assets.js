@@ -109,7 +109,7 @@ const Icons = {
   //....................Loyalty Page ......................
   LoyaltyBanner: require("../images/loyalty/loyaltyBanner.png"),
   LoyaltyBanner1: require("../images/loyalty/loyaltyBanner1.png"),
-  BannerImg1: require("../images/loyalty/3d.png"),
+  BannerImg1: require("../images/loyalty/3D.png"),
   BannerImg2: require("../images/loyalty/header-btm-shape.png"),
   CustomLoyalty: require("../images/loyalty/customLoyalty.png"),
   LoyaltyPoints: require("../images/loyalty/loyaltyPoints.png"),
