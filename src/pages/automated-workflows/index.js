@@ -15,37 +15,38 @@ import Work from "../../components/work";
 
 const BOOST_Loyalty = [
   {
-    desc: "Integrate rewards logic with data from your marketing & communication app.",
+    description: "Integrate rewards logic with data from your marketing & communication app.",
   },
   {
-    desc: "Connect your store to automate and run more personalized loyalty & reward programs.",
+    description: "Connect your store to automate and run more personalized loyalty & reward programs.",
   },
 ];
 const CENTRALIZE_DATA = [
-  { desc: "Average order value (AOV)" },
-  { desc: "Customer lifetime value (CLV)" },
-  { desc: "Shopping Cart Abandonment Rate (CAR)" },
-  { desc: " Net Promoter Score (NPS)" },
+  { description: "Average order value (AOV)" },
+  { description: "Customer lifetime value (CLV)" },
+  { description: "Shopping Cart Abandonment Rate (CAR)" },
+  { description: " Net Promoter Score (NPS)" },
 ];
 
 const AUTOMATION_FEATURES = [
   {
-    img1: Icons.Centralize.default,
+    rowClass: "flex-row-reverse",
+    image: Icons.Centralize.default,
     title: "Centralize Data Platform",
     subTitle: "",
     desc: "Connect with Centralize Customer data from across customer touchpoints and the dozens of apps in your Brick & Mortar, eCommerce stack. Create workflow utilizing following key eCommerce customer attributes",
     list: CENTRALIZE_DATA,
   },
   {
-    rowClass: "flex-row-reverse",
-    img1: Icons.Workflow.default,
+    image: Icons.Workflow.default,
     title: "Pre-built Workflow Template",
     subTitle: "",
     desc: "Utilize Average order value (AOV) boost, First Purchase reward, Out of Stock, Punch Card and Refund templates to run your program",
     list: [],
   },
   {
-    img1: Icons.AutomationLoyalty.default,
+    rowClass: "flex-row-reverse",
+    image: Icons.AutomationLoyalty.default,
     title: "Boost Loyalty",
     subTitle: "",
     desc: "",

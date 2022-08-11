@@ -11,13 +11,6 @@ const FeaturesItems = ({
   return (
     <div className={`agency_featured_item ${rowClass} `}>
       <div className="col-lg-6">
-        <Reveal effect="fadeInLeft">
-          <div className="agency_featured_img text-right">
-            <img className="img-fluid" src={fImage} alt="" />
-          </div>
-        </Reveal>
-      </div>
-      <div className="col-lg-6">
         <div
           className={`agency_featured_content wow fadeInLeft ${aClass}`}
           data-wow-delay="0.6s"
@@ -35,6 +28,13 @@ const FeaturesItems = ({
             </a> */}
           </Reveal>
         </div>
+      </div>
+      <div className="col-lg-6">
+        <Reveal effect="fadeInLeft">
+          <div className="agency_featured_img text-right">
+            <img className="img-fluid" src={fImage} alt="" />
+          </div>
+        </Reveal>
       </div>
     </div>
   );

@@ -15,36 +15,35 @@ import { BANNERS_CONFIG, TESTIMONIAL_CONFIG } from "../../config";
 
 const COUPON_FEATURES = [
   {
-    rowClass: "flex-row-reverse",
-    img1: Icons.AdvancedCoupon.default,
+    image: Icons.AdvancedCoupon.default,
     title: "Advanced coupon marketing software",
     subTitle: "",
     desc: "",
     list: [
-      { desc: "Efficiently create millions of randomly generated coupons." },
-      { desc: "Set expiry dates and link customer IDs to single coupons." },
-    ],
-  },
-  {
-    img1: Icons.CustomCoupon.default,
-    title: "Custom-made coupons",
-    subTitle: "",
-    desc: "",
-    list: [
-      { desc: "SKU-based" },
-      { desc: "Coupon Category based coupon" },
-      { desc: "BOGO Coupon" },
+      { description: "Efficiently create millions of randomly generated coupons." },
+      { description: "Set expiry dates and link customer IDs to single coupons." },
     ],
   },
   {
     rowClass: "flex-row-reverse",
-    img1: Icons.RewardCustomer.default,
+    image: Icons.CustomCoupon.default,
+    title: "Custom-made coupons",
+    subTitle: "",
+    desc: "",
+    list: [
+      { description: "SKU-based" },
+      { description: "Coupon Category based coupon" },
+      { description: "BOGO Coupon" },
+    ],
+  },
+  {
+    image: Icons.RewardCustomer.default,
     title: "Reward your customers the way they want",
     subTitle: "",
     desc: "",
     list: [
       {
-        desc: "Track coupon usage using coupons transactions associated with Customer & Order ID",
+        description: "Track coupon usage using coupons transactions associated with Customer & Order ID",
       },
     ],
   },

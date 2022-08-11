@@ -2,40 +2,45 @@ import React from "react";
 import { Reveal } from "react-reveal";
 
 const Features = ({
-  img1,
-  rowClass="",
+  image,
+  rowClass = "",
   title,
   subTitle,
+  subHeading,
+  description1,
+  description2,
   desc,
   list,
-  pClass="",
-  ptClass="",
+  pClass = "",
+  ptClass = "",
+  hideClass = "",
 }) => {
   return (
-    <section className={`chat_features_area ${ptClass}`}>
+    <section className={`chat_features_area ${ptClass} ${hideClass}`}>
       <div className=" container container-xl">
         <div className={`row  ${rowClass}`}>
-          <div className={`col-lg-7`}>
-            <div className="chat_features_img chat_features_img_one">
-              <Reveal effect="fadeInRight" duration={1000}>
-                <img className="chat_one img-fluid" src={img1} alt="" loading="lazy"/>
-              </Reveal>
-            </div>
-          </div>
           <div className={`col-lg-5`}>
             <div className={`chat_features_content ${pClass}`}>
               <h2>{title}</h2>
+              <h4>{subHeading}</h4>
               <h6>{subTitle}</h6>
+              <h5>{description1}</h5>
               <p>{desc}</p>
+
               {list.map((i, index) => {
                 return (
                   <>
                     <ul className="pl_1" key={index}>
-                      <li >{i.desc}</li>
+                      <li>
+                        {" "}
+                        {i.title}
+                        <span>{i.description}</span>
+                      </li>
                     </ul>
                   </>
                 );
               })}
+              <h5>{description2}</h5>
 
               {/* <a
                 href="/#"
@@ -44,6 +49,18 @@ const Features = ({
               >
                 Try it free
               </a> */}
+            </div>
+          </div>
+          <div className={`col-lg-7`}>
+            <div className="chat_features_img chat_features_img_one">
+              <Reveal effect="fadeInRight" duration={1000}>
+                <img
+                  className="chat_one img-fluid"
+                  src={image}
+                  alt=""
+                  loading="lazy"
+                />
+              </Reveal>
             </div>
           </div>
         </div>

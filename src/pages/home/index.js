@@ -10,6 +10,7 @@ import {
   IntegrationList,
   TrustedMerchantsV2,
   VerticallyTabComponent,
+  Features,
 } from "../../components";
 import {
   HOME_TAB1_CONFIG,
@@ -24,8 +25,22 @@ const Home = () => {
       <DigitalBanner config={BANNERS_CONFIG.HOME} allService={false} />
       <TrustedMerchantsV2 bgClass={"bg_black"} />
       {/* <Partner oClass={"logo_item_opacity"} pClass={"sec_pad pb_0"}/> */}
+      
+      <Header
+        className={"bg_white pt_120 pb_0"}
+        title={"Customer Engagement & Retention Platform"}
+        hideClass={"section_hide"}      />
 
-      <TabComponent config={HOME_TAB1_CONFIG} rClass={"reduce_height"} />
+      <TabComponent
+        config={HOME_TAB1_CONFIG}
+        rClass={"reduce_height"}
+        hideClass={"tab_hide"}
+      />
+
+      {HOME_TAB1_CONFIG.PANNEL_DATA.map((card) => (
+        <Features {...{ ...card }} url="#" hideClass={"section_hide"} />
+      ))}
+
       <Header
         className={"mb_50"}
         title={"Grow your store and drive revenue with Marketing Automation "}

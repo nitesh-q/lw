@@ -15,46 +15,46 @@ import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
 
 const RETURN_REFUNDS_LIST = [
   {
-    desc: "Automate store credit for merchandise return using return tools like Novaro etc.",
+    description: "Automate store credit for merchandise return using return tools like Novaro etc.",
   },
-  { desc: "Add store credit directly in customer wallet." },
+  { description: "Add store credit directly in customer wallet." },
 ];
 const TIME_COST_LIST = [
   {
-    desc: "Save time of your customer support team by automating refunds with 99minds store credit and gift certificates.",
+    description: "Save time of your customer support team by automating refunds with 99minds store credit and gift certificates.",
   },
-  { desc: "Consolidates system data with better Returns & Refunds Reports." },
+  { description: "Consolidates system data with better Returns & Refunds Reports." },
 ];
 const REWARDS_LIST = [
-  { desc: "Reward your customers with Store Credit." },
-  { desc: "Convert loyalty points to Store credit and Gift vouchers." },
+  { description: "Reward your customers with Store Credit." },
+  { description: "Convert loyalty points to Store credit and Gift vouchers." },
 ];
 const STORE_CREDIT_FEATURES = [
   {
-    rowClass: "flex-row-reverse",
-    img1: Icons.Return_Refund_StoreCredit.default,
+    image: Icons.Return_Refund_StoreCredit.default,
     title: "Returns & Refunds",
     desc: "",
     subTitle: "",
     list: RETURN_REFUNDS_LIST,
   },
   {
-    img1: Icons.Time_Cost_StoreCredit.default,
+    rowClass: "flex-row-reverse",
+    image: Icons.Time_Cost_StoreCredit.default,
     title: "Save Time and Cost",
     desc: "",
     subTitle: "",
     list: TIME_COST_LIST,
   },
   {
-    rowClass: "flex-row-reverse",
-    img1: Icons.Rewards_StoreCredit.default,
+    image: Icons.Rewards_StoreCredit.default,
     title: "Rewards",
     subTitle: "",
     desc: "",
     list: REWARDS_LIST,
   },
   {
-    img1: Icons.Promotional_StoreCredit.default,
+    rowClass: "flex-row-reverse",
+    image: Icons.Promotional_StoreCredit.default,
     title: "Promotional Store Credit",
     desc: "Entice customer by assigning time sensitive promotional Store Credit to their Account.",
     subTitle: "",

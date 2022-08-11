@@ -16,65 +16,51 @@ import { TESTIMONIAL_CONFIG, LOYALTY_TABS_CONFIG } from "../../config";
 import Icons from "../../shared/assets";
 
 const CUSTOM_LOYALTY_FEATURES_LIST = [
-  { desc: "Point Program" },
-  { desc: "VIP Tiered Program" },
-  { desc: "Cash Back Program" },
-  { desc: "Premium Loyalty Program ( Fee-based loyalty program)" },
-  { desc: "Hybrid Loyalty Program" },
+  { description: "Point Program" },
+  { description: "VIP Tiered Program" },
+  { description: "Cash Back Program" },
+  { description: "Premium Loyalty Program ( Fee-based loyalty program)" },
+  { description: "Hybrid Loyalty Program" },
 ];
 const VIP_TIER_FEATURES_LIST = [
-  { desc: "$ Spend value vs. Points" },
-  { desc: "Calendar year vs. Lifetime" },
+  { description: "$ Spend value vs. Points" },
+  { description: "Calendar year vs. Lifetime" },
 ];
 
 const LOYALTY_REWARD_FEATURES_LIST = [
-  { desc: "Free product" },
-  { desc: "Amount discount" },
-  { desc: "Percentage discount" },
-  { desc: "Accelerated points earning" },
+  { description: "Free product" },
+  { description: "Amount discount" },
+  { description: "Percentage discount" },
+  { description: "Accelerated points earning" },
 ];
 
 const LOYALTY_FEATURES = [
   {
-    // pClass: "pr_70",
-    rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
-    img1: Icons.CustomLoyalty.default,
+    image: Icons.CustomLoyalty.default,
     title: "Custom Loyalty Program",
     subTitle: "Design Loyalty program right for your brand",
     desc: "",
     list: CUSTOM_LOYALTY_FEATURES_LIST,
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
-    img1: Icons.VipTier.default,
+    rowClass: "flex-row-reverse",
+    image: Icons.VipTier.default,
     title: "Configure VIP Tiers",
     subTitle: "Set up landmarks to accomplish VIP status",
     desc: "Encourage your customers to attain the next tier with contesting but achievable milestones!",
     list: VIP_TIER_FEATURES_LIST,
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pr_70",
-    rowClass: "flex-row-reverse",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
-    img1: Icons.LoyaltyPoints.default,
+    image: Icons.LoyaltyPoints.default,
     title: "Select activities for earning Points",
     subTitle: "Earning Points for more than just purchases",
     desc: "Choose the terminology that makes sense for you: points, punches, or stars.",
     list: [],
   },
   {
-    // ptClass:"pt_0",
-    // pClass: "pl_70",
-    col1: "col-lg-7",
-    col2: "col-lg-5",
-    img1: Icons.LoyaltyReward.default,
+   
+    rowClass: "flex-row-reverse",
+    image: Icons.LoyaltyReward.default,
     title: "Offer Rewards",
     subTitle: "Customers can redeem points for awesome rewards like:",
     desc: "",
@@ -111,9 +97,12 @@ const Loyalty = () => {
       <TabComponent
         config={LOYALTY_TABS_CONFIG}
         pClass={"pt_0"}
+        hideClass={"tab_hide"}
         //   rClass={"reduce_height"}
       />
-
+  {LOYALTY_TABS_CONFIG.PANNEL_DATA.map((card) => (
+        <Features {...{ ...card }} url="#" hideClass={"section_hide"} />
+      ))}
       <Testimonial
         title="Learn How Customer is using Coupons"
         subTitle="Case Studies Carousel"

@@ -87,15 +87,14 @@ a, .btn, button {
   outline: none;
 }
 
-a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+a:hover, a:focus, .btn:hover, button:hover {
   text-decoration: none;
   outline: none;
 }
-
-.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.btn:focus{
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .seo_sec_title h2 {
@@ -26886,6 +26885,24 @@ a .h_head:hover {
 .chat_features_content h2 span {
   font-weight: 700;
 }
+.chat_features_content h4 {
+    color: #2c2c51;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .18px;
+    line-height: 20px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.chat_features_content h5 {
+  color: #2c2c51;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 .chat_features_content h6 {
   font-size: 18px;
   line-height: 25px;
@@ -26911,6 +26928,13 @@ a .h_head:hover {
   color: #6754e2;
 }
 .chat_features_content ul li{
+  color: #2c2c51;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .18px;
+}
+.chat_features_content ul li span{
   color: #7b7b93;
   font-weight: 400;
   font-family: "Poppins";

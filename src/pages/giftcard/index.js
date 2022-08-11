@@ -19,60 +19,62 @@ import {
 } from "../../config";
 
 const GIFTCARD = [
-  { desc: "100’s of beautiful Gift Cards based on themes" },
-  { desc: "Upload your brand design Gift Cards" },
+  { description: "100’s of beautiful Gift Cards based on themes" },
+  { description: "Upload your brand design Gift Cards" },
   {
-    desc: "Customize & Personalize gift card experience with your Picture and Video",
+    description: "Customize & Personalize gift card experience with your Picture and Video",
   },
   {
-    desc: "Send gift card via Multi-channel like email, Social media, SMS/Text, and Print-at-home.",
+    description: "Send gift card via Multi-channel like email, Social media, SMS/Text, and Print-at-home.",
   },
 ];
 const REPORT = [
   {
-    desc: "Gift card life-cycle management, tracking, and visibility from issuance to order level redemption",
+    description: "Gift card life-cycle management, tracking, and visibility from issuance to order level redemption",
   },
   {
-    desc: "Customer data reporting and analytics based on gift card usage.",
+    description: "Customer data reporting and analytics based on gift card usage.",
   },
 ];
 
 const SCHEDULE = [
-  { desc: "Out of stock gift card to retain customer" },
-  { desc: "Gift card balance reminder email to customer" },
+  { description: "Out of stock gift card to retain customer" },
+  { description: "Gift card balance reminder email to customer" },
 ];
 const SALE = [
   {
-    desc: "Sell and Redeem Physical and Digital (eGift) Card issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed, etc.",
+    description: "Sell and Redeem Physical and Digital (eGift) Card issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed, etc.",
   },
-  { desc: "Check balance, Reload Gift card at store and online" },
+  { description: "Check balance, Reload Gift card at store and online" },
 ];
 const GIFTCARD_FEATURES = [
   {
-    rowClass: "flex-row-reverse",
-    img1: Icons.Giftcard_01.default,
+    
+    image: Icons.Giftcard_01.default,
     title: "Gift Card Platform key features",
     subTitle: "",
     desc: "",
     list: GIFTCARD,
   },
   {
-    img1: Icons.Sale.default,
+    rowClass: "flex-row-reverse",
+    image: Icons.Sale.default,
     title: "Point of Sale",
     subTitle: "",
     desc: "",
     list: SALE,
   },
   {
-    rowClass: "flex-row-reverse",
-    img1: Icons.Report.default,
+   
+    image: Icons.Report.default,
     title: "Reporting & Analytics",
     subTitle: "",
     desc: "",
     list: REPORT,
   },
   {
-    img1: Icons.Schedule.default,
+    rowClass: "flex-row-reverse",
+    image: Icons.Schedule.default,
     title: "Schedule Delivery & Gift card for Out of Stock inventory",
     subTitle: "",
     desc: "",
@@ -107,8 +109,10 @@ const GiftCard = () => {
 
       <Header className={"mt_120"} title={"Additional  key features"} />
 
-      <TabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} />
-
+      <TabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} hideClass={"tab_hide"} />
+      {GIFTCARD_TABS_CONFIG.PANNEL_DATA.map((card) => (
+        <Features {...{ ...card }} url="#" hideClass={"section_hide"} />
+      ))}
       <Testimonial
         title="Testimonials"
         subTitle="Hear from our Clients"

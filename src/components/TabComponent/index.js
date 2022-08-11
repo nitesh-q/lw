@@ -7,10 +7,11 @@ const TabComponent = ({
   rClass = "",
   mClass = "",
   icon,
+  hideClass =""
 }) => {
   const [activeTab, setActiveTab] = useState(config.PANNEL_DATA[0].id);
   return (
-    <section className={`developer_product_area sec_pad ${pClass} ${mClass}`}>
+    <section className={`developer_product_area sec_pad ${pClass} ${mClass} ${hideClass}`}>
       <div className="container container-xl">
         {config.HEAD.map((item, index) => (
           <h1 key={index} className="">

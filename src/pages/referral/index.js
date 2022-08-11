@@ -14,7 +14,7 @@ import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
 
 const REFERRAL_FEATURES = [
   {
-    rowClass: "row flex-row-reverse",
+    rowClass: "row agency_featured_item_two ",
     aClass: "pr_70 pl_70",
     fImage: Icons.Referral_Widget.default,
     iImg: Icons.icon01.default,
@@ -22,7 +22,7 @@ const REFERRAL_FEATURES = [
     descriptions: "",
   },
   {
-    rowClass: "row agency_featured_item_two",
+    rowClass: "row flex-row-reverse",
     aClass: "pl_100",
     fImage: Icons.Social_Sharing.default,
     iImg: Icons.icon02.default,
@@ -31,7 +31,7 @@ const REFERRAL_FEATURES = [
       "Send and redeem physical and eGift cards issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed etc.",
   },
   {
-    rowClass: "row flex-row-reverse",
+    rowClass: "row agency_featured_item_two",
     aClass: "pr_70 pl_70",
     fImage: Icons.Reward_Referral.default,
     iImg: Icons.icon03.default,
@@ -39,7 +39,7 @@ const REFERRAL_FEATURES = [
     descriptions: "",
   },
   {
-    rowClass: "row agency_featured_item_two",
+    rowClass: " row flex-row-reverse",
     aClass: "pl_100",
     fImage: Icons.Promote_Referral.default,
     iImg: Icons.icon04.default,

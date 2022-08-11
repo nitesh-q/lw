@@ -8,6 +8,9 @@
  
 }
 @media(min-width:991px){
+    .section_hide{
+        display: none;
+    }
     .w_120{
         width: 120px !important;
       }
@@ -18,7 +21,7 @@
         width: 110px !important;
       }
       .w_100{
-width: 100 !important;
+      width: 100 !important;
       }
     .demo_btn{
         display:none;
@@ -1600,6 +1603,9 @@ width: 100 !important;
 
 @media (max-width:991px){
    
+    .tab_hide{
+        display: none !important;
+    }
 
     .hidefooter{
         display: none;
@@ -3108,7 +3114,7 @@ width: 100 !important;
         margin-bottom: 60px; */
     }
     .chat_features_img.chat_features_img_one .chat_one{
-        top: -80px;
+        top:20px
     }
     .chat_features_area {
         padding: 70px 0px;

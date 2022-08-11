@@ -5,8 +5,7 @@ export const GIFTCARD_LIST = [
   {
     id: 1,
     title: "Sell :",
-    description:
-      " eGift (Digital) & Physical Gift card online,and in-store",
+    description: " eGift (Digital) & Physical Gift card online,and in-store",
   },
   {
     id: 1,
@@ -32,8 +31,8 @@ export const GIFTCARD_LIST = [
     description:
       " Out of Stock Gift card & Schedule delivery for future occasion",
   },
-]
-export const STORE_CREDIT_LIST= [
+];
+export const STORE_CREDIT_LIST = [
   {
     id: 1,
     title: "",
@@ -59,40 +58,42 @@ export const STORE_CREDIT_LIST= [
     title: "",
     description: " To offer compensation for a poor experience",
   },
-]
-export const LOYALTY_LIST=[
+];
+export const LOYALTY_LIST = [
   { id: 1, title: "", description: "VIP tiers" },
   { id: 2, title: "", description: "Point Program" },
   { id: 3, title: "", description: "Cash Back Loyalty Programs" },
   { id: 4, title: "", description: "Punch card Program" },
   { id: 5, title: "", description: "Premium Loyalty Program" },
-]
-export const REFERRAL_LIST= [
+];
+export const REFERRAL_LIST = [
   { id: 1, title: "", description: "Customizable Widget" },
   { id: 2, title: "", description: "Branded Template experience" },
   { id: 3, title: "", description: "Social Sharing link" },
   { id: 4, title: "", description: "Referral link" },
-]
-export const COUPONS_LIST=[
-    { id: 1, title: "", description: "Bulk Coupons Generation" },
-    { id: 2, title: "", description: "Dynamic Coupons" },
-    { id: 3, title: "", description: "Unique Coupon code" },
-    { id: 4, title: "", description: "Promo Codees." },
-    { id: 5, title: "", description: "SKU Based Coupon" },
-]
-export const WALLET_LIST_=[
-  { id: 1,
+];
+export const COUPONS_LIST = [
+  { id: 1, title: "", description: "Bulk Coupons Generation" },
+  { id: 2, title: "", description: "Dynamic Coupons" },
+  { id: 3, title: "", description: "Unique Coupon code" },
+  { id: 4, title: "", description: "Promo Codees." },
+  { id: 5, title: "", description: "SKU Based Coupon" },
+];
+export const WALLET_LIST_ = [
+  {
+    id: 1,
     title: "",
-    description:"Digital Loyalty Card & Gift Card compatible with Apple & Google Wallet",
+    description:
+      "Digital Loyalty Card & Gift Card compatible with Apple & Google Wallet",
   },
-]
-export const AUTOMATION_LIST= [
+];
+export const AUTOMATION_LIST = [
   { id: 1, title: "", description: "Pre-built workflow template" },
   { id: 2, title: "", description: "Loyalty points & Rewards" },
   { id: 3, title: "", description: "Upsell using Gift Card" },
   { id: 4, title: "", description: "Store credit as Refunds." },
   { id: 5, title: "", description: "Adding unique Promo codes/Coupon" },
-]
+];
 
 export const HOME_TAB1_CONFIG = {
   HEAD: [{ Title: "Customer Engagement & Retention Platform" }],
@@ -103,11 +104,11 @@ export const HOME_TAB1_CONFIG = {
       selected: "true",
       image: Icons.Giftcard_img.default,
       title: "Gift Cards",
-      subTitle: "",
+      subHeading: "",
       description1: "",
       description2: "",
       list: GIFTCARD_LIST,
-      url:CHILD_ROUTES.GIFTCARD
+      url: CHILD_ROUTES.GIFTCARD,
     },
     {
       id: "storecredit",
@@ -115,13 +116,13 @@ export const HOME_TAB1_CONFIG = {
       selected: "false",
       image: Icons.StoreCredit_img.default,
       title: "Store Credit",
-      subTitle: "",
+      subHeading: "",
       description1:
         "Offering your customer’s store credit can be a great way of improving customer retention.Merchant can use Store credit:",
       description2:
         " In 99minds, Store credit can be quickly added to customer accounts from the control panel and automation using workflow engine.",
       list: STORE_CREDIT_LIST,
-      url:CHILD_ROUTES.STORE_CREDIT
+      url: CHILD_ROUTES.STORE_CREDIT,
     },
     {
       id: "loyalty",
@@ -129,12 +130,12 @@ export const HOME_TAB1_CONFIG = {
       selected: "false",
       image: Icons.Loyalty_img.default,
       title: "Loyalty",
-      subTitle: "",
+      subHeading: "",
       description1:
         "Reward your customers for purchases and otheractions with points which can be redeemed for discounts.",
       description2: "",
       list: LOYALTY_LIST,
-      url:CHILD_ROUTES.LOYALTY
+      url: CHILD_ROUTES.LOYALTY,
     },
 
     {
@@ -142,12 +143,12 @@ export const HOME_TAB1_CONFIG = {
       label: "Referral",
       image: Icons.Refferal_img.default,
       title: "Referral",
-      subTitle: "",
+      subHeading: "",
       description1:
         "  Boost your organic sales by adding a customer referral program to your eCommerce store",
       description2: "",
       list: REFERRAL_LIST,
-      url:CHILD_ROUTES.REFERRAL
+      url: CHILD_ROUTES.REFERRAL,
     },
     {
       id: "coupons",
@@ -155,11 +156,12 @@ export const HOME_TAB1_CONFIG = {
       selected: "false",
       image: Icons.Coupons_img.default,
       title: "Coupons",
-      subTitle: "Robust coupon creation",
-      description1:"Generate millions of unique coupons in a few clicks, set rules, coupon lengths, etc.",
+      subHeading: "Robust coupon creation",
+      description1:
+        "Generate millions of unique coupons in a few clicks, set rules, coupon lengths, etc.",
       description2: "",
       list: COUPONS_LIST,
-      url:CHILD_ROUTES.COUPONS
+      url: CHILD_ROUTES.COUPONS,
     },
     {
       id: "wallet",
@@ -167,22 +169,23 @@ export const HOME_TAB1_CONFIG = {
       selected: "false",
       image: Icons.Wallet_img.default,
       title: "Digital Wallet",
-      subTitle: "",
-      description1:"Empower customers to store gift cards, loyalty points, coupons, store credit.",
+      subHeading: "",
+      description1:
+        "Empower customers to store gift cards, loyalty points, coupons, store credit.",
       description2: "",
       list: WALLET_LIST_,
-   
     },
     {
       id: "automation",
       label: "Automated Workflows",
       image: Icons.Automation_img.default,
       title: "Automated Workflows",
-      subTitle: "",
-      description1:"For ecommerce/retailers brands, Customer acquisition & retention automation enables you to focus on acquiring new customers, and retain customers using:",
+      subHeading: "",
+      description1:
+        "For ecommerce/retailers brands, Customer acquisition & retention automation enables you to focus on acquiring new customers, and retain customers using:",
       description2: "",
-      list:AUTOMATION_LIST,
-      url:CHILD_ROUTES.AUTOMATION
+      list: AUTOMATION_LIST,
+      url: CHILD_ROUTES.AUTOMATION,
     },
   ],
 };
@@ -226,8 +229,7 @@ export const HOME_TAB2_CONFIG = {
         //   description: "",
         // },
       ],
-      url:"#"
-
+      url: "#",
     },
     {
       id: "upsell",
@@ -242,7 +244,7 @@ export const HOME_TAB2_CONFIG = {
       list: [
         // { id: 1, title: "", description: "" },
       ],
-      url:"#"
+      url: "#",
     },
 
     {
@@ -257,7 +259,7 @@ export const HOME_TAB2_CONFIG = {
       list: [
         // { id: 1, title: "", description: "" },
       ],
-      url:"#"
+      url: "#",
     },
     {
       id: "refund",
@@ -270,7 +272,7 @@ export const HOME_TAB2_CONFIG = {
       list: [
         // { id: 1, title: "", description: "" },
       ],
-      url:"#"
+      url: "#",
     },
 
     {
@@ -286,7 +288,7 @@ export const HOME_TAB2_CONFIG = {
       list: [
         // { id: 1, title: "", description: "" },
       ],
-      url:"#"
+      url: "#",
     },
     {
       id: "retain",
@@ -305,8 +307,7 @@ export const HOME_TAB2_CONFIG = {
         //   description: " ",
         // },
       ],
-      url:"#"
+      url: "#",
     },
   ],
 };
-
