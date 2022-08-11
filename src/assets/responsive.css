@@ -4398,7 +4398,13 @@ width: 100 !important;
     .reduce_height{
         height: 216px !important ;
     }
-
+    .menu_four .btn_get {
+        background: #fff;
+        border-color: #fff;
+        min-width: 114px;
+        padding: 0 8px;
+        text-align: center;
+    }
     .agency_service_area{
         padding: 70px 0px;
     }
