@@ -89,9 +89,9 @@ const CustomNavbar = ({ mClass, nClass, cClass, slogo, hbtnClass }) => {
                           >
                             {ROUTES_LABEL[key]}
 
-                            {!!CHILDRENS[key].length && (
+                            {/* {!!CHILDRENS[key].length && (
                               <i className="ti-angle-down icon"></i>
-                            )}
+                            )} */}
                           </Link>
 
                           <ul

@@ -26,7 +26,7 @@ const CopyWriteSection = ({ copywrite, term, policy }) => {
                 </a>
               </li>
               <li>
-                <a href="/sitemap.xml">Sitemap</a>
+                <a href="/sitemap/sitemap-0.xml">Sitemap</a>
               </li>
             </ul>
           </div>

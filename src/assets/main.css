@@ -8341,7 +8341,7 @@ color: #51fe23;
 }
 
 .developer_product_content .develor_tab .nav-item .nav-link {
-  font: 500 18px "Poppins";
+  font: 500 16px "Poppins";
   color: #222D39;
   border: 0px;
   padding: 0px 0px 10px;
@@ -14849,7 +14849,7 @@ p {
 }
 
 p span {
-  padding: 3px 8px;
+  padding: 3px 0px;
 }
 
 .bg-dark {

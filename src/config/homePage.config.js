@@ -217,11 +217,10 @@ export const HOME_TAB2_CONFIG = {
       label: "Onboarding",
       selected: "false",
       image: Icons.OnBoarding.default,
-      title: "New User Signup",
-      subTitle: "",
-      description1:
-        "  When someone creates a new account, trigger a one-time discount email immeadiately after completion of the Sign-up form",
-      description2: "",
+      title: "Onboarding",
+      // subTitle: "",
+      // description1: "  When someone creates a new account, trigger a one-time discount email immeadiately after completion of the Sign-up form",
+      // description2: "",
       list: [
         // {
         //   id: 1,
@@ -236,43 +235,43 @@ export const HOME_TAB2_CONFIG = {
       label: "Upsell",
       selected: "false",
       image: Icons.Upsell.default,
-      title: "Sell more products",
-      subTitle: "",
-      description1:
-        "Based on Customer's Order data, Send Promotional Store Credit to Customer",
-      description2: "",
+      title: "Upsell",
+      // subTitle: "",
+      // description1:
+      //   "Based on Customer's Order data, Send Promotional Store Credit to Customer",
+      // description2: "",
       list: [
         // { id: 1, title: "", description: "" },
       ],
-      url: "#",
+      // url: "#",
     },
 
     {
       id: "crosssell",
       label: "Cross Sell",
       image: Icons.CrossSell.default,
-      title: "Sell more related products",
+      title: "Cross Sell",
       subTitle: "",
-      description1:
-        "Send Coupons/Gift card specific to relevent product in the order for future purchase",
-      description2: "",
+      // description1:
+      //   "Send Coupons/Gift card specific to relevent product in the order for future purchase",
+      // description2: "",
       list: [
         // { id: 1, title: "", description: "" },
       ],
-      url: "#",
+      // url: "#",
     },
     {
       id: "refund",
       label: "Refund",
       image: Icons.Refund.default,
-      title: "Use Store credit to refund customer",
-      subTitle: "",
-      description1: "Issue store credit/gift card as refund after goods return",
-      description2: "",
+      title: "Refund",
+      // subTitle: "",
+      // description1: "Issue store credit/gift card as refund after goods return",
+      // description2: "",
       list: [
         // { id: 1, title: "", description: "" },
       ],
-      url: "#",
+      // url: "#",
     },
 
     {
@@ -280,26 +279,26 @@ export const HOME_TAB2_CONFIG = {
       label: "Reward",
       selected: "false",
       image: Icons.Reward.default,
-      title: "Use reward to nurture customers",
-      subTitle: "",
-      description1:
-        " Reward users with store credit/gift card after reaching order count threshold",
-      description2: "",
+      title: "Reward",
+    //   subTitle: "",
+    //   description1:
+    //     " Reward users with store credit/gift card after reaching order count threshold",
+    //   description2: "",
       list: [
         // { id: 1, title: "", description: "" },
       ],
-      url: "#",
+    //   url: "#",
     },
     {
       id: "retain",
       label: "Retain",
       selected: "false",
       image: Icons.Retain01.default,
-      title: "Use reward to retain customers",
-      subTitle: "",
-      description1:
-        "  Automatically trigger a retention campaign when users meet segment conditions such as inactive or canceled",
-      description2: "",
+      title: "Reward",
+      // subTitle: "",
+      // description1:
+      //   "  Automatically trigger a retention campaign when users meet segment conditions such as inactive or canceled",
+      // description2: "",
       list: [
         // {
         //   id: 1,
@@ -307,7 +306,7 @@ export const HOME_TAB2_CONFIG = {
         //   description: " ",
         // },
       ],
-      url: "#",
+      // url: "#",
     },
   ],
 };

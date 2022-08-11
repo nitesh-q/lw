@@ -19,6 +19,7 @@
     "bootstrap": "^5.1.3",
     "gatsby": "^4.16.0",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-advanced-sitemap": "^2.1.0",
     "gatsby-plugin-catch-links": "^4.17.0",
     "gatsby-plugin-create-client-paths": "^4.9.0",
     "gatsby-plugin-google-gtag": "^4.20.0",

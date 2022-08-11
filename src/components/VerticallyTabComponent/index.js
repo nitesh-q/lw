@@ -9,12 +9,13 @@ const VerticallyTabComponent = ({
   rClass = "",
   mClass = "",
   icon,
+  hideClass
 }) => {
   const [activeTab, setActiveTab] = useState(config.PANNEL_DATA[0].id);
 
   return (
     <section
-      className={`software_service_area sec_pad sec_pad ${pClass} ${mClass}`}
+      className={`software_service_area sec_pad sec_pad ${pClass} ${mClass} ${hideClass}`}
     >
       <div className="container">
         {config.HEAD.map((item, index) => (
