@@ -3,7 +3,6 @@ require("dotenv").config({ path: "./.env" });
 const plugins = [
   `gatsby-plugin-image`,
   `gatsby-plugin-sharp`,
-  `gatsby-plugin-sitemap`,
   `gatsby-plugin-smoothscroll`,
   `gatsby-plugin-react-helmet`,
   {
@@ -25,6 +24,14 @@ const plugins = [
       icon: "src/images/icon/logo.png",
     },
   },
+  {
+    resolve: `gatsby-plugin-advanced-sitemap`,
+    additionalSitemaps: [
+      {
+        url: `https://www.99minds.io/blog/sitemap_index.xml`
+      }
+    ]
+  }
 ];
 
 if (process.env.GATSBY_NODE_ENV === "prod") {
