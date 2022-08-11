@@ -12,10 +12,15 @@ import {
   ADD_DEVIDER_BEFORE,
 } from "../../config";
 
-class CustomNavbar extends Component {
-  render() {
-    var { mClass, nClass, cClass, slogo, hbtnClass } = this.props;
-    return (
+
+const CustomNavbar = ({ mClass, nClass, cClass, slogo, hbtnClass }) => {
+  const bookDemo = () => {
+    window?.Calendly?.initPopupWidget({ url: "https://calendly.com/99minds" });
+  };
+
+  return (
+    <React.Fragment>
+
       <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
         <header className="header_area">
           <nav className={`navbar navbar-expand-lg menu_one ${mClass}`}>
@@ -116,12 +121,16 @@ class CustomNavbar extends Component {
                   })}
                 </ul>
 
-                <button
+                {/* <button
                   className={`btn_get btn_hover demo hide ${hbtnClass}`}
                   href=""
-                  // onclick="Calendly.initPopupWidget({url: 'https://calendly.com/99minds'});return false;"
+                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/99minds'});return false;"
                 >
-                  <Link to="https://calendly.com/99minds"> Book a Demo</Link>
+                  Book a Demo
+                </button> */}
+
+                <button className={`btn_get btn_hover `} onClick={bookDemo}>
+                  Book a Demo
                 </button>
                 {/* <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
                   Sign Up
@@ -130,15 +139,8 @@ class CustomNavbar extends Component {
               <div className="demo_btn  ">
                 <ul className={` navbar-nav sign_in_bg`}>
                   <li className="nav-item">
-                    <button
-                      className={`btn_get btn_hover `}
-                      href=""
-                      // onclick="Calendly.initPopupWidget({url: 'https://calendly.com/99minds'});return false;"
-                    >
-                      <Link to="https://calendly.com/99minds">
-                        {" "}
-                        Book a Demo
-                      </Link>
+                    <button onClick={bookDemo} className={`btn_get btn_hover `}>
+                      Book a Demo
                     </button>
                   </li>
                 </ul>
@@ -147,8 +149,8 @@ class CustomNavbar extends Component {
           </nav>
         </header>
       </Sticky>
-    );
-  }
-}
+    </React.Fragment>
+  );
+};
 
 export default CustomNavbar;

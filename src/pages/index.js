@@ -7,7 +7,7 @@ const IndexPage = () => {
     <div>
       <Home />
       {process.env.GATSBY_NODE_ENV === "prod" && <ZohoSalesIQ />}
-   </div>
+    </div>
   );
 };
 

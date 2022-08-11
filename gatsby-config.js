@@ -5,6 +5,7 @@ const plugins = [
   `gatsby-plugin-sharp`,
   `gatsby-plugin-sitemap`,
   `gatsby-plugin-smoothscroll`,
+  `gatsby-plugin-react-helmet`,
   {
     resolve: `gatsby-transformer-remark`,
     options: {
@@ -23,38 +24,34 @@ const plugins = [
     options: {
       icon: "src/images/icon/logo.png",
     },
-  }
+  },
 ];
 
 if (process.env.GATSBY_NODE_ENV === "prod") {
-  plugins.push(
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          process.env.GATSBY_APP_GA_MEASUREMENT_ID, // Google Analytics / GA
-        ],
-      }
-    }
-  );
+  plugins.push({
+    resolve: `gatsby-plugin-google-gtag`,
+    options: {
+      // You can add multiple tracking ids and a pageview event will be fired for all of them.
+      trackingIds: [
+        process.env.GATSBY_APP_GA_MEASUREMENT_ID, // Google Analytics / GA
+      ],
+    },
+  });
 
-  plugins.push(
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        sitemap: 'https://www.example.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
-    }
-  );
+  plugins.push({
+    resolve: "gatsby-plugin-robots-txt",
+    options: {
+      sitemap: "https://www.example.com/sitemap.xml",
+      policy: [{ userAgent: "*", allow: "/" }],
+    },
+  });
 } else {
-  plugins.push(`gatsby-plugin-no-index`)
+  plugins.push(`gatsby-plugin-no-index`);
 }
 
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.99minds.io`,
   },
-  plugins: plugins
+  plugins: plugins,
 };
