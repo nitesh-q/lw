@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import Logo from "../../images/logo/logo.png";
 import Logo1 from "../../images/logo/logo1.png";
@@ -7,7 +7,6 @@ import {
   ROUTES,
   ROUTES_LABEL,
   CHILDRENS,
-  CHILDRENS_CHILD,
   CHILD_ROUTES,
   ADD_DEVIDER_BEFORE,
 } from "../../config";

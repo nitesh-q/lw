@@ -28,11 +28,11 @@ const Testimonial = ({ sliderData, bgColor, title, subTitle }) => {
         <p className="text-center" >Hear from our Clients</p>
         <div className="agency_testimonial_info">
           <Slider className="testimonial_slider" {...settings}>
-            {sliderData.map((item) => {
+            {sliderData.map((item,index) => {
               return (
                 <div
                   className="testimonial_item text-center left"
-                  key={item.id}
+                  key={index}
                 >
                   <div className="author_img">
                     <img src={item.image} alt="" />

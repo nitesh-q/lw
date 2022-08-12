@@ -39,7 +39,7 @@ const StartedFreeButton = ({ btnClass,className="" }) => {
     </div> */}
       <div className="col-lg-8">
         <button
-          className={`btn btn_get btn_get_two ${btnClass}`}
+          className={` btn_get btn_get_two ${btnClass}`}
           onClick={() => toggle()}
         >
           Get Started for free

@@ -177,6 +177,7 @@ class IntegrationGrid extends Component {
           <div id="portfolio_filter" className="portfolio_filter mb_50">
             {Object.keys(Head).map((key, index) => (
               <div
+              key={index}
                 data-filter={key}
                 className={`work_portfolio_item ${this.onActive(key)}`}
                 onClick={() => {
@@ -199,6 +200,7 @@ class IntegrationGrid extends Component {
                   title={i.title}
                   desc={i.desc}
                   type={i.label}
+                  key={index}
                 />
               );
             })}
@@ -207,8 +209,5 @@ class IntegrationGrid extends Component {
       </section>
     );
   }
-  //   render() {
-  //     return <>Isotope issue is thereq</>;
-  //   }
 }
 export default IntegrationGrid;

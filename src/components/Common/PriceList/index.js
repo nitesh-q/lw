@@ -7,6 +7,7 @@ import {
   TOP_PRODUCT_PRICE_LIST,
   REMAINING_PRODUCT_PRICE_LIST,
 } from "../../../config";
+import BrandModal from "../../BrandModal";
 
 const getClassNameForIcon = (icon) => {
   switch (icon) {
@@ -20,6 +21,8 @@ const getClassNameForIcon = (icon) => {
 };
 const PriceList = () => {
   const [showMore, setShowMore] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const toggle = () => setShowModal(!showModal);
 
   return (
     <section className="pricing_area_four sec_pad">
@@ -37,7 +40,7 @@ const PriceList = () => {
           <div className="price_head">
             {TABLE_HEAD.map((i, index) => {
               return (
-                <div className="p_head">
+                <div className="p_head" key={index}>
                   <h5>{i}</h5>
                 </div>
               );
@@ -58,20 +61,22 @@ const PriceList = () => {
                       {list.Column1}
                     </h5>
                   </div>
-                  {TABLE_HEAD.map((i) => {
+                  {TABLE_HEAD.map((i, index) => {
                     if (!i) {
                       return null;
                     }
                     return (
-                      <div className="price_item" data-title={i}>
-                        <div className="d-flex justify-content-center align-items-center">
-                          {i === "Enterprise" ? "" : <sup>$</sup>}
-                          <h5 className="check">
+                      <div className="price_item" data-title={i} key={index}>
+                        <h5 className="check">
+                          <div className="d-flex justify-content-center align-items-center">
+                            {i === "Enterprise" ? "" : <sup>$</sup>}
+
                             {CHECK_ICON.includes(list[i]) ? null : list[i]}
                             <i className={getClassNameForIcon(list[i])}></i>
-                          </h5>{" "}
-                          {i === "Enterprise" ? "" : <sub>/month</sub>}
-                        </div>
+
+                            {i === "Enterprise" ? "" : <sub>/month</sub>}
+                          </div>
+                        </h5>{" "}
                       </div>
                     );
                   })}
@@ -92,12 +97,12 @@ const PriceList = () => {
                       {list.Column1}
                     </h5>
                   </div>
-                  {TABLE_HEAD.map((i) => {
+                  {TABLE_HEAD.map((i, index) => {
                     if (!i) {
                       return null;
                     }
                     return (
-                      <div className="price_item" data-title={i}>
+                      <div className="price_item" data-title={i} key={index}>
                         <h5 className="check">
                           {CHECK_ICON.includes(list[i]) ? null : list[i]}
                           <i className={getClassNameForIcon(list[i])}></i>
@@ -112,11 +117,16 @@ const PriceList = () => {
               <div className="price_item"></div>
               {TABLE_BOTTOM.map((item, index) => {
                 return (
-                  <div className="price_item">
-                    <a href={item.Url} className={`price_btn btn_hove `}>
-                      {item.Label}
-                    </a>
-                  </div>
+                  <>
+                    <div className="price_item " key={index}>
+                      <button
+                        className={`price_btn btn_hove `}
+                        onClick={() => toggle()}
+                      >
+                        {item.Label}
+                      </button>
+                    </div>
+                  </>
                 );
               })}
             </div>
@@ -171,12 +181,12 @@ const PriceList = () => {
                                     {list.Column1}
                                   </h5>
                                 </div>
-                                {TABLE_HEAD.map((i) => {
+                                {TABLE_HEAD.map((i,index) => {
                                   if (!i) {
                                     return null;
                                   }
                                   return (
-                                    <div className="price_item" data-title={i}>
+                                    <div className="price_item" data-title={i} key={index}>
                                       <h5 className="check">
                                         {CHECK_ICON.includes(list[i])
                                           ? null
@@ -203,6 +213,7 @@ const PriceList = () => {
           </div>
         </div>
       </div>
+      <BrandModal toggle={() => toggle()} showModal={showModal} />
     </section>
   );
 };
