@@ -13,27 +13,7 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
       <div className={`partner_logo_area_four  ${pClass}`}>
         <h3 className={`${fclass} `}>Install from</h3>
         <div className="row  partner_info">
-          {/* <div
-            className={` logo_item w_110 ${imgClass} `}
-            data-wow-delay="0.1s"
-          >
-            <img className="h_25" src={Icons.Shopify_Logo.default} alt="" />
-            <img className="h_25" src={Icons.Shopify.default} alt="" />
-          </div>
-          <div className={`logo_item w_128 ${imgClass} `} data-wow-delay="0.1s">
-            <img className="h_25" src={Icons.BigCommerce_Logo.default} alt="" />
-            <img className="h_25" src={Icons.BigCommerce.default} alt="" />
-          </div>
-          <div className={`logo_item w_110 ${imgClass} `} data-wow-delay="0.1s">
-            <img className="h_25" src={Icons.Miva_Logo.default} alt="" />
-            <img className="h_25" src={Icons.Miva.default} alt="" />
-          </div>
-
-          <div className={`logo_item w_128 ${imgClass}`} data-wow-delay="0.1s">
-            <img className="h_25" src={Icons.Woo_Logo.default} alt="" />
-            <img className="h_25" src={Icons.Woo.default} alt="" />
-          </div> */}
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-sm-6  col-xsm-6">
             <div
               className={` logo_item  w_110 ${imgClass} mb_30 `}
               data-wow-delay="0.1s"
@@ -44,7 +24,6 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
                   src={Icons.Shopify_Logo.default}
                   alt="Shopify_Logo"
                 />
-
                 <img
                   className="h_auto"
                   src={Icons.Shopify.default}
@@ -53,7 +32,7 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
               </a>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-sm-6  col-xsm-6">
             <div
               className={` logo_item  w_110 ${imgClass}  mb_30   `}
               data-wow-delay="0.1s"
@@ -65,7 +44,7 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
               </a>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-sm-6  col-xsm-6">
             <div
               className={` logo_item  w_110 ${imgClass}  mb_30   `}
               data-wow-delay="0.1s"
@@ -84,8 +63,7 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
               </a>
             </div>
           </div>
-
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-sm-6  col-xsm-6">
             <div
               className={` logo_item  w_110 ${imgClass}  mb_30  `}
               data-wow-delay="0.1s"
@@ -96,7 +74,6 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
                   src={Icons.ShopifyPlus_Logo.default}
                   alt=""
                 />
-
                 <img
                   className="h_auto"
                   src={Icons.ShopifyPlus.default}
@@ -105,7 +82,7 @@ const SupportedBrand = ({ id, pClass, fclass, imgClass }) => {
               </a>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-sm-6  col-xsm-6">
             <div
               className={` logo_item  w_110 ${imgClass}  mb_30  `}
               data-wow-delay="0.1s"

@@ -35,7 +35,7 @@ const Icons = {
   Shopify_Logo: require("../images/trusted-merchents/shopify-logo.png"),
   ShopifyPlus: require("../images/trusted-merchents/shopifyPlus.png"),
   ShopifyPlus_Logo: require("../images/trusted-merchents/shopifyPlus-logo.png"),
-  BigCommerce: require("../images/trusted-merchents/bigcommerce04.png"),
+  BigCommerce: require("../images/trusted-merchents/bigcommerce.png"),
   BigCommerce_Logo: require("../images/trusted-merchents/bigcommerce-logo.png"),
   Miva: require("../images/trusted-merchents/Miva03(1).png"),
   Pinstrips: require("../images/trusted-merchents/pinstripes1.png"),
