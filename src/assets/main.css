@@ -667,7 +667,7 @@ background-color: #c4c4ca;
   width: 40px;
   object-fit: contain;
 }
-.CTA_service li{
+.CTA_service span{
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
@@ -676,10 +676,10 @@ background-color: #c4c4ca;
   padding: 0px;
 }
 
-.CTA_service li::marker{
+.CTA_service span::marker{
   content: "";
 }
-.CTA_service li::after{
+.CTA_service span::after{
   /* content: url(../images/icon/tick-Arrow.svg);
 color: #51fe23; */
 }
@@ -2050,7 +2050,7 @@ font-weight: 800;
 }
 
 .w_menu .nav-item .nav-link:before {
-  background: #fff;
+  background: #fff ;
 }
 
 .nav_right_btn .login_btn {
@@ -2080,7 +2080,6 @@ font-weight: 800;
     display: none;
   }
 }
-
 .menu_four .btn_get {
   border-color: #fff;
   padding: 0px 30px;
@@ -2319,10 +2318,12 @@ font-weight: 800;
 .navbar-toggler {
   padding: 0px;
   margin-left: 20px;
+  border: transparent;
 }
 
 .navbar-toggler:focus {
   outline: none;
+  box-shadow: none;
 }
 
 .menu_toggle {
@@ -4135,6 +4136,10 @@ color: #51fe23;
   position: relative;
 }
 /* ======================servives============================ */
+.service_provide{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .service_provide img{
   width: 24px;
   margin-right: 12px;
@@ -4146,8 +4151,7 @@ color: #51fe23;
 }
 .service_provide_content{ 
   display: flex; 
-  justify-content: center;
-  width: 24px;
+  justify-content: space-between;
   height: 25px;
   white-space: nowrap;
 }

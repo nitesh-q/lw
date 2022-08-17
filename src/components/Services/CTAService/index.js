@@ -7,12 +7,12 @@ const CTAService = ({ allService = "", mClass = "" }) => {
       <div className="col-lg-12">
         <div className={`row mt_15 flex mb_20 ${mClass} `}>
           <img src={Tick} alt="" />
-          <li className="col "> No Credit Card Required</li>
+          <span className="col "> No Credit Card Required</span>
           {allService ? (
             <>
               <img src={Tick} className="img-fluid" alt="" />{" "}
-              <li className="col "> Free Sign Up</li>
-              <img src={Tick} alt="" /> <li className="col"> 24/7 Support</li>
+              <span className="col "> Free Sign Up</span>
+              <img src={Tick} alt="" /> <span className="col"> 24/7 Support</span>
             </>
           ) : (
             ""

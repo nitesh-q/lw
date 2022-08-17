@@ -2,8 +2,6 @@ import React, { Component } from "react";
 // import Isotope from "isotope-layout/js/isotope";
 import ImagesLoaded from "imagesloaded/imagesloaded";
 import IntegrationGridCard from "./integrationGirdCard";
-import image1 from "../../images/portfolio/3-columns/_shopify.png";
-import image2 from "../../images/portfolio/3-columns/_BigCommerce.png";
 import Icons from "../../shared/assets";
 
 const Head = {

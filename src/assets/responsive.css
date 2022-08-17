@@ -26,9 +26,10 @@
     .demo_btn{
         display:none;
         }
-        .showfooter{
-            display:none
-        }
+    .showfooter{
+        display:none
+    }
+   
 }
 @media (max-width: 576px){
     .col-xsm-6 {
@@ -1609,7 +1610,9 @@
 
 
 @media (max-width:991px){
-   
+    .demo_button{
+        display: none;
+    }
     .tab_hide{
         display: none !important;
     }
@@ -3998,6 +4001,20 @@
     .tracking_banner_area{
         height: auto;
         padding-bottom: 70px;
+    }
+    .try_call_to_action_service{
+        flex-direction: column;
+    }
+    .service_provide{
+        padding: 0px 0px 28px 0px;
+        margin-bottom: 100px;
+    }
+    .service_provide_content{
+        flex-direction: column;
+    }
+    .service_provide_content_item{
+        display: flex;
+        align-items: flex-start;
     }
 }
 

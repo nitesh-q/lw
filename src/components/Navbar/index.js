@@ -11,7 +11,6 @@ import {
   ADD_DEVIDER_BEFORE,
 } from "../../config";
 
-
 const CustomNavbar = ({ mClass, nClass, cClass, slogo, hbtnClass }) => {
   const bookDemo = () => {
     window?.Calendly?.initPopupWidget({ url: "https://calendly.com/99minds" });
@@ -19,7 +18,6 @@ const CustomNavbar = ({ mClass, nClass, cClass, slogo, hbtnClass }) => {
 
   return (
     <React.Fragment>
-
       <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
         <header className="header_area">
           <nav className={`navbar navbar-expand-lg menu_one ${mClass}`}>
@@ -120,15 +118,7 @@ const CustomNavbar = ({ mClass, nClass, cClass, slogo, hbtnClass }) => {
                   })}
                 </ul>
 
-                {/* <button
-                  className={`btn_get btn_hover demo hide ${hbtnClass}`}
-                  href=""
-                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/99minds'});return false;"
-                >
-                  Book a Demo
-                </button> */}
-
-                <button className={`btn_get btn_hover `} onClick={bookDemo}>
+                <button className={`btn_get btn_hover demo_button`} onClick={bookDemo}>
                   Book a Demo
                 </button>
                 {/* <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">

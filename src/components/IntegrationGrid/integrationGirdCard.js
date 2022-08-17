@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { navigate } from "gatsby";
-import { Link } from "gatsby";
+
 
 class IntegrationGridCard extends Component {
   render() {
