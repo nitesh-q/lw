@@ -10,8 +10,13 @@ import {
   IntegrationList,
   TrustedMerchantsV2,
   CTA,
+  SeoHead,
 } from "../../components";
-import { TESTIMONIAL_CONFIG, LOYALTY_TABS_CONFIG } from "../../config";
+import {
+  TESTIMONIAL_CONFIG,
+  LOYALTY_TABS_CONFIG,
+  LOYALTY_SEO_HEAD,
+} from "../../config";
 
 import Icons from "../../shared/assets";
 
@@ -58,7 +63,6 @@ const LOYALTY_FEATURES = [
     list: [],
   },
   {
-   
     rowClass: "flex-row-reverse",
     image: Icons.LoyaltyReward.default,
     title: "Offer Rewards",
@@ -100,7 +104,7 @@ const Loyalty = () => {
         hideClass={"tab_hide"}
         //   rClass={"reduce_height"}
       />
-  {LOYALTY_TABS_CONFIG.PANNEL_DATA.map((card) => (
+      {LOYALTY_TABS_CONFIG.PANNEL_DATA.map((card) => (
         <Features {...{ ...card }} url="#" hideClass={"section_hide"} />
       ))}
       <Testimonial
@@ -116,3 +120,10 @@ const Loyalty = () => {
   );
 };
 export default Loyalty;
+
+//SEO HEAD
+export const Head = () => {
+  return LOYALTY_SEO_HEAD.map((data, index) => (
+    <SeoHead {...{ ...data }} key={index} />
+  ));
+};

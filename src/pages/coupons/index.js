@@ -8,10 +8,15 @@ import {
   IntegrationList,
   CouponBanner,
   TrustedMerchantsV2,
+  SeoHead,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import { BANNERS_CONFIG, TESTIMONIAL_CONFIG } from "../../config";
+import {
+  BANNERS_CONFIG,
+  TESTIMONIAL_CONFIG,
+  COUPONS_SEO_HEAD,
+} from "../../config";
 
 const COUPON_FEATURES = [
   {
@@ -20,8 +25,14 @@ const COUPON_FEATURES = [
     subTitle: "",
     desc: "",
     list: [
-      { description: "Efficiently create millions of randomly generated coupons." },
-      { description: "Set expiry dates and link customer IDs to single coupons." },
+      {
+        description:
+          "Efficiently create millions of randomly generated coupons.",
+      },
+      {
+        description:
+          "Set expiry dates and link customer IDs to single coupons.",
+      },
     ],
   },
   {
@@ -43,7 +54,8 @@ const COUPON_FEATURES = [
     desc: "",
     list: [
       {
-        description: "Track coupon usage using coupons transactions associated with Customer & Order ID",
+        description:
+          "Track coupon usage using coupons transactions associated with Customer & Order ID",
       },
     ],
   },
@@ -77,3 +89,10 @@ const Coupons = () => {
   );
 };
 export default Coupons;
+
+//SEO HEAD
+export const Head = () => {
+  return COUPONS_SEO_HEAD.map((data, index) => (
+    <SeoHead {...{ ...data }} key={index} />
+  ));
+};

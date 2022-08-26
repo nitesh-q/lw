@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { Breadcrumb, Services, TryAction } from "../../components";
+import { Breadcrumb, Services, TryAction,SeoHead } from "../../components";
 import Icons from "../../shared/assets";
 import IntegrationGrid from "../../components/IntegrationGrid";
+import { INTEGRATIONS_SEO_HEAD } from "../../config";
 
 const AllIntegrations = () => {
   return (
@@ -22,3 +23,10 @@ const AllIntegrations = () => {
   );
 };
 export default AllIntegrations;
+
+//SEO HEAD
+export const Head = () => {
+  return INTEGRATIONS_SEO_HEAD.map((data, index) => (
+    <SeoHead {...{ ...data }} key={index} />
+  ));
+};

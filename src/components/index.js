@@ -36,4 +36,6 @@ export { default as VerticallyTabComponent } from "./VerticallyTabComponent";
 export { default as WorkFeatures } from "./WorkFeature";
 export { default as Work } from "./Work";
 export { default as PriceList } from "./Common/PriceList";
+export { default as SeoHead} from "./Seo";
+
 

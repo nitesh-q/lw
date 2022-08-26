@@ -8,22 +8,32 @@ import {
   Services,
   IntegrationList,
   TrustedMerchantsV2,
+  SeoHead,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
+import {
+  TESTIMONIAL_CONFIG,
+  BANNERS_CONFIG,
+  STORE_CREDIT_SEO_HEAD,
+} from "../../config";
 
 const RETURN_REFUNDS_LIST = [
   {
-    description: "Automate store credit for merchandise return using return tools like Novaro etc.",
+    description:
+      "Automate store credit for merchandise return using return tools like Novaro etc.",
   },
   { description: "Add store credit directly in customer wallet." },
 ];
 const TIME_COST_LIST = [
   {
-    description: "Save time of your customer support team by automating refunds with 99minds store credit and gift certificates.",
+    description:
+      "Save time of your customer support team by automating refunds with 99minds store credit and gift certificates.",
   },
-  { description: "Consolidates system data with better Returns & Refunds Reports." },
+  {
+    description:
+      "Consolidates system data with better Returns & Refunds Reports.",
+  },
 ];
 const REWARDS_LIST = [
   { description: "Reward your customers with Store Credit." },
@@ -92,3 +102,10 @@ const StoreCredit = () => {
   );
 };
 export default StoreCredit;
+
+//SEO HEAD
+export const Head = () => {
+  return STORE_CREDIT_SEO_HEAD.map((data, index) => (
+    <SeoHead {...{ ...data }} key={index} />
+  ));
+};

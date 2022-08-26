@@ -10,5 +10,4 @@ export * from "./referralPage.config";
 export * from "./route.config";
 export * from "./priceList.config";
 export * from "./faq.config";
-
-
+export * from "./seoHead.config";

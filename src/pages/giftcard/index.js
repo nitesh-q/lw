@@ -9,6 +9,7 @@ import {
   Services,
   CTA_1,
   TrustedMerchantsV2,
+  SeoHead,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
@@ -16,24 +17,29 @@ import {
   TESTIMONIAL_CONFIG,
   BANNERS_CONFIG,
   GIFTCARD_TABS_CONFIG,
+  GIFTCARD_SEO_HEAD,
 } from "../../config";
 
 const GIFTCARD = [
   { description: "100’s of beautiful Gift Cards based on themes" },
   { description: "Upload your brand design Gift Cards" },
   {
-    description: "Customize & Personalize gift card experience with your Picture and Video",
+    description:
+      "Customize & Personalize gift card experience with your Picture and Video",
   },
   {
-    description: "Send gift card via Multi-channel like email, Social media, SMS/Text, and Print-at-home.",
+    description:
+      "Send gift card via Multi-channel like email, Social media, SMS/Text, and Print-at-home.",
   },
 ];
 const REPORT = [
   {
-    description: "Gift card life-cycle management, tracking, and visibility from issuance to order level redemption",
+    description:
+      "Gift card life-cycle management, tracking, and visibility from issuance to order level redemption",
   },
   {
-    description: "Customer data reporting and analytics based on gift card usage.",
+    description:
+      "Customer data reporting and analytics based on gift card usage.",
   },
 ];
 
@@ -43,13 +49,13 @@ const SCHEDULE = [
 ];
 const SALE = [
   {
-    description: "Sell and Redeem Physical and Digital (eGift) Card issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed, etc.",
+    description:
+      "Sell and Redeem Physical and Digital (eGift) Card issued by any POS like Square, Shopkeep, Vend, Revel, Poynt, Lightspeed, etc.",
   },
   { description: "Check balance, Reload Gift card at store and online" },
 ];
 const GIFTCARD_FEATURES = [
   {
-    
     image: Icons.Giftcard_01.default,
     title: "Gift Card Platform key features",
     subTitle: "",
@@ -65,7 +71,6 @@ const GIFTCARD_FEATURES = [
     list: SALE,
   },
   {
-   
     image: Icons.Report.default,
     title: "Reporting & Analytics",
     subTitle: "",
@@ -91,7 +96,6 @@ const GiftCard = () => {
         titleClass={`bannerTitle`}
         allService={false}
         bgClass={"bg_BannerV1"}
-        
       />
       <TrustedMerchantsV2 />
 
@@ -109,7 +113,11 @@ const GiftCard = () => {
 
       <Header className={"mt_120"} title={"Additional  key features"} />
 
-      <TabComponent config={GIFTCARD_TABS_CONFIG} pClass={"pt_0"} hideClass={"tab_hide"} />
+      <TabComponent
+        config={GIFTCARD_TABS_CONFIG}
+        pClass={"pt_0"}
+        hideClass={"tab_hide"}
+      />
       {GIFTCARD_TABS_CONFIG.PANNEL_DATA.map((card) => (
         <Features {...{ ...card }} url="#" hideClass={"section_hide"} />
       ))}
@@ -133,3 +141,9 @@ const GiftCard = () => {
   );
 };
 export default GiftCard;
+
+export const Head = () => {
+  return GIFTCARD_SEO_HEAD.map((data, index) => (
+    <SeoHead {...{ ...data }} key={index} />
+  ));
+};

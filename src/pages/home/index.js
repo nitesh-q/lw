@@ -11,12 +11,14 @@ import {
   TrustedMerchantsV2,
   VerticallyTabComponent,
   Features,
+  SeoHead,
 } from "../../components";
 import {
   HOME_TAB1_CONFIG,
   BANNERS_CONFIG,
   TESTIMONIAL_CONFIG,
   HOME_TAB2_CONFIG,
+  HOME_SEO_HEAD,
 } from "../../config";
 
 const Home = () => {
@@ -73,3 +75,9 @@ const Home = () => {
   );
 };
 export default Home;
+
+export const Head = () => {
+  return HOME_SEO_HEAD.map((data, index) => (
+    <SeoHead {...{ ...data }} key={index} />
+  ));
+};

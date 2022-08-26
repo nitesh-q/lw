@@ -7,18 +7,25 @@ import {
   Services,
   Banner,
   TrustedMerchantsV2,
+  SeoHead,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
+import {
+  TESTIMONIAL_CONFIG,
+  BANNERS_CONFIG,
+  AUTOMATED_WORKFLOWS_SEO_HEAD,
+} from "../../config";
 import Work from "../../components/work";
 
 const BOOST_Loyalty = [
   {
-    description: "Integrate rewards logic with data from your marketing & communication app.",
+    description:
+      "Integrate rewards logic with data from your marketing & communication app.",
   },
   {
-    description: "Connect your store to automate and run more personalized loyalty & reward programs.",
+    description:
+      "Connect your store to automate and run more personalized loyalty & reward programs.",
   },
 ];
 const CENTRALIZE_DATA = [
@@ -104,3 +111,10 @@ const Automation = () => {
   );
 };
 export default Automation;
+
+//SEO HEAD
+export const Head = () => {
+  return AUTOMATED_WORKFLOWS_SEO_HEAD.map((data, index) => (
+    <SeoHead {...{ ...data }} key={index} />
+  ));
+};

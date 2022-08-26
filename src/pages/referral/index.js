@@ -7,10 +7,15 @@ import {
   IntegrationList,
   WorkFeatures,
   TrustedMerchantsV2,
+  SeoHead,
 } from "../../components";
 import Layout from "../../components/Layout";
 import Icons from "../../shared/assets";
-import { TESTIMONIAL_CONFIG, BANNERS_CONFIG } from "../../config";
+import {
+  TESTIMONIAL_CONFIG,
+  BANNERS_CONFIG,
+  REFERRAL_SEO_HEAD,
+} from "../../config";
 
 const REFERRAL_FEATURES = [
   {
@@ -77,3 +82,10 @@ const Referral = () => {
   );
 };
 export default Referral;
+
+//SEO HEAD
+export const Head = () => {
+  return REFERRAL_SEO_HEAD.map((data, index) => (
+    <SeoHead {...{ ...data }} key={index} />
+  ));
+};

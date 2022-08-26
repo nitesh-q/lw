@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { Breadcrumb, Services, TryAction } from "../../components";
+import { Breadcrumb, Services, TryAction,SeoHead } from "../../components";
 import Icons from "../../shared/assets";
 import CaseStudyGrid from "../../components/CaseStudyGird";
+import { CASE_STUDIES_SEO_HEAD } from "../../config";
 
 const CaseStudies = () => {
   return (
@@ -22,3 +23,11 @@ const CaseStudies = () => {
   );
 };
 export default CaseStudies;
+
+//SEO HEAD
+export const Head = () => {
+  return CASE_STUDIES_SEO_HEAD.map((data, index) => (
+    <SeoHead {...{ ...data }} key={index} />
+  ));
+};
+

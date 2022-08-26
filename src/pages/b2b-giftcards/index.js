@@ -6,11 +6,10 @@ import {
   CTA,
   BannerV1,
   TrustedMerchantsV2,
+  SeoHead,
 } from "../../components";
 import Layout from "../../components/Layout";
-import { BANNERS_CONFIG, B2B_TABS_CONFIG } from "../../config";
-
-
+import { BANNERS_CONFIG, B2B_TABS_CONFIG, B2B_SEO_HEAD } from "../../config";
 
 const B2BGIFTCARDS = () => {
   return (
@@ -32,3 +31,10 @@ const B2BGIFTCARDS = () => {
   );
 };
 export default B2BGIFTCARDS;
+
+//SEO HEAD
+export const Head = () => {
+  return B2B_SEO_HEAD.map((data, index) => (
+    <SeoHead {...{ ...data }} key={index} />
+  ));
+};
