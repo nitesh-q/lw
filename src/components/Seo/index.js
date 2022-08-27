@@ -1,8 +1,9 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const SeoHead = ({ url, title, description, image }) => {
   return (
-    <>
+    <Helmet>
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, user-scalable=1"
@@ -21,7 +22,7 @@ const SeoHead = ({ url, title, description, image }) => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
-    </>
+    </Helmet>
   );
 };
 export default SeoHead;

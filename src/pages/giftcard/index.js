@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import {
   IntegrationList,
   Testimonial,
@@ -89,55 +89,56 @@ const GIFTCARD_FEATURES = [
 
 const GiftCard = () => {
   return (
-    // <Layout>
-    <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
-      <Banner
-        config={BANNERS_CONFIG.GIFTCARD}
-        titleClass={`bannerTitle`}
-        allService={false}
-        bgClass={"bg_BannerV1"}
-      />
-      <TrustedMerchantsV2 />
+    <Fragment>
+      <Layout slogo="sticky_logo" mClass="menu_four" nClass="w_menu">
+        <Banner
+          config={BANNERS_CONFIG.GIFTCARD}
+          titleClass={`bannerTitle`}
+          allService={false}
+          bgClass={"bg_BannerV1"}
+        />
+        <TrustedMerchantsV2 />
 
-      {/* <TrustedMerchantsV1 /> */}
+        {/* <TrustedMerchantsV1 /> */}
 
-      <Header
-        className={"bg_white pt_120 "}
-        title={"Gift Card & Platform features."}
-        description={"All your gift card needs, covered"}
-      />
+        <Header
+          className={"bg_white pt_120 "}
+          title={"Gift Card & Platform features."}
+          description={"All your gift card needs, covered"}
+        />
 
-      {GIFTCARD_FEATURES.map((card) => (
-        <Features {...{ ...card }} url="#" />
-      ))}
+        {GIFTCARD_FEATURES.map((card) => (
+          <Features {...{ ...card }} url="#" />
+        ))}
 
-      <Header className={"mt_120"} title={"Additional  key features"} />
+        <Header className={"mt_120"} title={"Additional  key features"} />
 
-      <TabComponent
-        config={GIFTCARD_TABS_CONFIG}
-        pClass={"pt_0"}
-        hideClass={"tab_hide"}
-      />
-      {GIFTCARD_TABS_CONFIG.PANNEL_DATA.map((card) => (
-        <Features {...{ ...card }} url="#" hideClass={"section_hide"} />
-      ))}
-      <Testimonial
-        title="Testimonials"
-        subTitle="Hear from our Clients"
-        sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
-        bgColor={`bg_color`}
-      />
+        <TabComponent
+          config={GIFTCARD_TABS_CONFIG}
+          pClass={"pt_0"}
+          hideClass={"tab_hide"}
+        />
+        {GIFTCARD_TABS_CONFIG.PANNEL_DATA.map((card) => (
+          <Features {...{ ...card }} url="#" hideClass={"section_hide"} />
+        ))}
+        <Testimonial
+          title="Testimonials"
+          subTitle="Hear from our Clients"
+          sliderData={TESTIMONIAL_CONFIG.TESTIMONIAL_SLIDER_DATA}
+          bgColor={`bg_color`}
+        />
 
-      <IntegrationList
-        title={"Integrations"}
-        description={
-          "Empower Your Brick & Click Store With Powerful Integrations"
-        }
-      />
-      <CTA_1 />
-      {/* <CaseStudiesSlider /> */}
-      <Services />
-    </Layout>
+        <IntegrationList
+          title={"Integrations"}
+          description={
+            "Empower Your Brick & Click Store With Powerful Integrations"
+          }
+        />
+        <CTA_1 />
+        {/* <CaseStudiesSlider /> */}
+        <Services />
+      </Layout>
+    </Fragment>
   );
 };
 export default GiftCard;
