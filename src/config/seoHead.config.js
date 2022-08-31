@@ -31,7 +31,7 @@ export const STORE_CREDIT_SEO_HEAD = [
 export const LOYALTY_SEO_HEAD = [
   {
     url: "https://www.99minds.io/loyalty",
-    title: "Build Everlasting Customer Loyalty For Your Business.",
+    title: "Build Strong Customer Loyalty With 99minds Loyalty Program",
     description:
       "99minds loyalty program enables businesses to increase brand loyalty and forge endless customer relationships that boost customer engagement and retention.",
     image:
@@ -41,7 +41,7 @@ export const LOYALTY_SEO_HEAD = [
 export const COUPONS_SEO_HEAD = [
   {
     url: "https://www.99minds.io/coupons",
-    title: "The Only Coupon Marketing Software You Need",
+    title: "Bulk, Dynamic & Personalized Coupons Generation For Your Store | 99minds",
     description:
       "99minds coupon marketing software lets you efficiently create millions of randomly generated personalised coupons to acquire and engage the right customers.",
     image:
@@ -51,7 +51,7 @@ export const COUPONS_SEO_HEAD = [
 export const REFERRAL_SEO_HEAD = [
   {
     url: "https://www.99minds.io/referral",
-    title: "Dynamic Referral Software to Grow Brand Community",
+    title: "Boost Organic Ecommerce Sales With 99minds Referral Program",
     description:
       "Incentivize your customers to refer your brand experience to their friends and families with 99minds referral program software.",
     image:
@@ -61,7 +61,7 @@ export const REFERRAL_SEO_HEAD = [
 export const AUTOMATED_WORKFLOWS_SEO_HEAD = [
   {
     url: "https://www.99minds.io/automated-workflows",
-    title: "Powerful and Dynamic Marketing  Automation Software",
+    title: "Powerful Marketing Automation For Ecommerce | 99minds",
     description:
       "Automate your marketing efforts with gift cards, coupons and store credit at every stage of your customers journey with 99minds powerful marketing automation.",
     image:
@@ -71,7 +71,7 @@ export const AUTOMATED_WORKFLOWS_SEO_HEAD = [
 export const B2B_SEO_HEAD = [
   {
     url: "https://www.99minds.io/b2b-giftcards",
-    title: "Easy-to-use B2B Corporate Gift Card Services",
+    title: "Easy-to-use B2B Corporate Digital & Physical Gift Cards | 99minds",
     description:
       "Elevate your businesss corporate giftcard services for your employees and clients with our dynamic and flexible B2B gift card software.",
     image:
