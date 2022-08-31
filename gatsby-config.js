@@ -26,12 +26,19 @@ const plugins = [
   },
   {
     resolve: `gatsby-plugin-advanced-sitemap`,
-    additionalSitemaps: [
-      {
-        url: `https://www.99minds.io/blog/sitemap_index.xml`
-      }
-    ]
-  }
+    options: {
+      exclude: [
+        `https://www.99minds.io/case-study-details`,
+        `https://www.99minds.io/b2b-giftcards`,
+        `https://www.99minds.io/integration`,
+    ],
+      additionalSitemaps: [
+        {
+          url: `https://www.99minds.io/blog/sitemap_index.xml`,
+        },
+      ],
+    },
+  },
 ];
 
 if (process.env.GATSBY_NODE_ENV === "prod") {
