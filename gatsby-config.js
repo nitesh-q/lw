@@ -28,9 +28,9 @@ const plugins = [
     resolve: `gatsby-plugin-advanced-sitemap`,
     options: {
       exclude: [
-        `https://www.99minds.io/case-study-details`,
-        `https://www.99minds.io/b2b-giftcards`,
-        `https://www.99minds.io/integration`,
+        `/case-study-details`,
+        `/b2b-giftcards`,
+        `/integration`,
     ],
       additionalSitemaps: [
         {
