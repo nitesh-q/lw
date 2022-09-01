@@ -55,7 +55,7 @@ if (process.env.GATSBY_NODE_ENV === "prod") {
   plugins.push({
     resolve: "gatsby-plugin-robots-txt",
     options: {
-      sitemap: "https://www.example.com/sitemap.xml",
+      sitemap: "https://www.99minds.io/sitemap.xml",
       policy: [{ userAgent: "*", allow: "/" }],
     },
   });
