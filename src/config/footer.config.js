@@ -1,4 +1,4 @@
-import {CHILD_ROUTES } from "./route.config";
+import { CHILD_ROUTES } from "./route.config";
 export const FOOTER_SEQUENCE = [
   "COMPANY_WIDGET",
   "ABOUT_WIDGET",
@@ -30,7 +30,7 @@ export const FOOTER_CONFIG = {
       id: 1,
       title: "Products",
       menuItems: [
-        { id: 1, url:CHILD_ROUTES.GIFTCARD, text: "Gift Cards" },
+        { id: 1, url: CHILD_ROUTES.GIFTCARD, text: "Gift Cards" },
         { id: 2, url: CHILD_ROUTES.STORE_CREDIT, text: "Store Credit" },
         { id: 3, url: CHILD_ROUTES.LOYALTY, text: "Loyalty Programs" },
         { id: 4, url: CHILD_ROUTES.COUPONS, text: "Coupons" },
@@ -46,8 +46,8 @@ export const FOOTER_CONFIG = {
       menuItems: [
         // { id: 1, url: CHILD_ROUTES.CASE_STUDIES, text: "Case Studies" },
         { id: 2, url: "/blog", text: "Blog" },
-        { id: 3, url: "https://99minds.zendesk.com/hc/en-us", text: "Documentation" },
-      
+        { id: 3, url: "https://support.99minds.io/portal/en/home", text: "Documentation" },
+
       ],
     },
     {

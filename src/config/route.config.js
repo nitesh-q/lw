@@ -42,7 +42,7 @@ export const CHILD_ROUTES = {
   DEVELOPERS_2: "/giftcard",
   CASE_STUDIES: "/case-studies",
   BLOG: "/blog",
-  DOCUMENTATION: "https://99minds.zendesk.com/hc/en-us",
+  DOCUMENTATION: "https://support.99minds.io/portal/en/home",
 };
 
 export const CHILDRENS = {
