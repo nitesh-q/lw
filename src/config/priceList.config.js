@@ -149,6 +149,36 @@ export const TOP_PRODUCT_PRICE_LIST = [
     Premium: "Unlimited",
     Enterprise: "Unlimited",
   },
+  {
+    Column1: "Store",
+    Free: "N",
+    Lite: "N",
+    Basic: "N",
+    Pro: "3 stores (incl. physical stores)",
+    Ultra: "5 stores (incl. physical stores)",
+    Premium: "10 stores (incl. physical stores)",
+    Enterprise: "10 stores (incl. physical stores)",
+  },
+  {
+    Column1: "Retail Pro 9 & Runit Integration",
+    Free: "N",
+    Lite: "N",
+    Basic: "N",
+    Pro: "Y",
+    Ultra: "Y",
+    Premium: "Y",
+    Enterprise: "Y",
+  },
+  {
+    Column1: "Minimum plan for Salesforce integration",
+    Free: "N",
+    Lite: "N",
+    Basic: "N",
+    Pro: "N",
+    Ultra: "N",
+    Premium: "Y",
+    Enterprise: "Y",
+  },
 ];
 export const REMAINING_PRODUCT_PRICE_LIST = [
   {
