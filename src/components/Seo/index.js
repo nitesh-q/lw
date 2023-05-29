@@ -8,7 +8,7 @@ const SeoHead = ({ url, title, description, image }) => {
         name="viewport"
         content="width=device-width, initial-scale=1, user-scalable=1"
       />
-      <meta name="facebook-domain-verification" content="84psww6d0imq7ukhz1w3kp1sfbrjdx" />
+      <meta name="facebook-domain-verification" content="z6q8nfdhhh7whevn0wxd0mfv3ebail" />
       <link rel="canonical" href={url} />
       <title>{title}</title>
       <meta name="title" content={title} />
