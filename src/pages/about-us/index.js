@@ -23,6 +23,9 @@ const About = () => {
             <div class="row">
               <div class="col-lg-6 offset-lg-3">
                 <p class="f_400 f_size_16 l_height30 mb-0 text-justify ">
+                  99minds Inc is US Based software company founded in 2019 with
+                  the goal to provide a complete solution for engagement, acquisition
+                  and retention using our gift card and loyalty program services.
                   99minds platform enables you to create coupons, gift cards,
                   discounts, sends out referrals, builds loyalty programs, and
                   location-based promotions for your customers. The best part
