@@ -4,7 +4,7 @@ export const ROUTES = {
   INTEGRATIONS: "/integrations",
   RESOURCES: "./",
   PRICE: "/pricing",
-  SIGN_IN: "/",
+  SIGN_IN: "https://giftcard.99minds.io/access/login",
 };
 
 export const ROUTES_LABEL = {
