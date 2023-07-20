@@ -25,12 +25,12 @@ class LeadForm extends Component {
                   retail businesses to harness the potential of gift cards,
                   driving customer retention, loyalty, and reducing returns.
                 </label>
-                
-                <iframe
-                  width="610px"
+                <div>
+                <iframe 
+                  width="120%"
                   height="630px"
                   src="https://crm.zoho.in/crm/WebFormServeServlet?rid=205c1cfe70d4992dc2177093cc20262a2be02ea8811f8fa1a04f7843a2afd3cagid71ea9139e1fbbeb931227dbcd956ad07d28dee89c93511d9e2b4e07614183e7a"
-                ></iframe>
+                ></iframe></div>
               </div>
               <div className="col-lg-3"></div>
             </div>

@@ -23,7 +23,7 @@ const ThankYou = () => {
                       class="btn_hover btn_four mt_40 drdt-ignore-dark"
                       type="submit"
                     >
-                      Check out this article to read
+                      Check out our engaging blog!
                     </button>
                   </Link>
                   <p
