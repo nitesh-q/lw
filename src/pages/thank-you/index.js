@@ -15,7 +15,7 @@ const ThankYou = () => {
                   Thank you! Your response has been submitted.
                   </h1>
                   <p class="f_400 f_size_16 l_height30 mb-0 text-justify ">
-                    OFeel free to explore our website for more information about our products and services.
+                    Feel free to explore our website for more information about our products and services.
                   </p>
 
                   <Link to="https://www.99minds.io/blog/" target="_blank">
