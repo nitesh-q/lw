@@ -11,11 +11,8 @@ class LeadForm extends Component {
           <div className="sign_info">
             <div className="row">
               <div className="col-lg-3"></div>
-              <div
-                style={{ textAlign: "center" }}
-                className="col-lg-6 text_box"
-              >
-                <img style={{ width: "30%" }} className="mb_40" src={logo} />
+              <div className="col-lg-6 text_box text-center">
+                <img className="mb_40 w-30" src={logo} />
                 <h2 className="f_p f_size_22 t_color3 f_600 l_height28 mb_40">
                   EMPOWER YOUR BUSINESS WITH 99MINDS
                 </h2>
