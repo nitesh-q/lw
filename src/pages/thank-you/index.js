@@ -26,7 +26,14 @@ const ThankYou = () => {
                       Check out our engaging blog!
                     </button>
                   </Link>
-
+                  <p
+                    class="mchimp-errmessage drdt-ignore-dark d-none"
+                  ></p>
+                  <p
+                    class="mchimp-sucmessage drdt-ignore-dark d-none"
+                  >
+                    {" "}
+                  </p>
                 </div>
               </div>
             </div>
