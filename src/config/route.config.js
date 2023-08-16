@@ -28,6 +28,8 @@ export const ROUTES_LABEL = {
   BLOG_2: "Blog_2",
   DOCUMENTATION: "Documentation",
   // CASE_STUDIES: "Case Studies",
+  // COUPON_GENERATOR:"Coupon Generator",//coupongenerate 
+ 
 };
 
 export const CHILD_ROUTES = {
@@ -43,6 +45,8 @@ export const CHILD_ROUTES = {
   CASE_STUDIES: "/case-studies",
   BLOG: "/blog",
   DOCUMENTATION: "https://support.99minds.io/portal/en/home",
+  // COUPON_GENERATOR:"/coupon-generator",//coupongenerate 
+  
 };
 
 export const CHILDRENS = {
@@ -55,6 +59,7 @@ export const CHILDRENS = {
     "REFERRAL",
     "AUTOMATION",
     "B2B_GIFTCARDS",
+    // "COUPON_GENERATOR"//coupongenerate 
   ],
   INTEGRATIONS: [],
   RESOURCES: ["CASE_STUDIES", "BLOG", "DOCUMENTATION"],
